@@ -54,6 +54,8 @@ byte-exactly.
 | `gui.py`, `gui_garrison.py`, `gui_buildings.py` | the window: tabs Faction / Units & armies / Buildings / Map, New/Edit mode |
 | `log.py` | `faction_tool.log` next to the exe: loads, previews, writes, restores, status lines, every error box and Tk callback traceback; **Log** button. Ask the user for it with system.log.txt |
 | `mapedit.py` | moving towns and ports: `place_problem`, `apply_places` |
+| `diplomacy.py`, `gui_diplomacy.py` | core_attitudes / faction_relationships: `read`, `set_relations` (only lines naming the faction), Diplomacy tab, map Diplomacy colours; opts `relations` |
+| `check.py` | Check mod: file/consistency report; deep = `rehearse` every faction in memory (VAN 4 min) |
 | `cli.py` | `list towns names example new scan newmod slim manifest restore` |
 
 Tests: `python -m unittest discover -s tests` (a synthetic mini-mod; 20+ tests,
@@ -122,6 +124,8 @@ Done and tested in game: new faction by template; separate mod folder; scan +
 ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
 (texts, colours, AI, denari, playable, take/give towns, capital, leader/heir);
 Map M1 (view, political, click towns) and M2 (characters, drag own in Edit).
+Moving towns/ports tested in game (roads and sea routes follow). Settlement level/
+population, Check mod and Diplomacy tab built, not yet tested in game.
 M3 (new armies/agents/fleets placed on the map) built and unit-tested, waiting for the user's in-game test.
 Manifests in `docs/reference/`: vanilla game (without `bi`) and REX's own files
 (`rex_manifest.json.gz`; 50 of them replace vanilla files).
@@ -140,5 +144,6 @@ template's building descriptions; Restore and recreate them.
    `bi` now has REX's overlay; subtract `rex_manifest`); no hurry.
 3. Mod finder: remember the game folder and last mod (`%APPDATA%`), list mods.
 4. Own unit/building roster per faction (ownership / EDB factions lists).
-5. Later: diplomacy tab, appearance (banners, logos via REX sprite packer,
+5. Run Check mod (deep) on other mods the user sends (only .txt + world/maps).
+6. Later: appearance (banners, logos via REX sprite packer,
    recolour), unit/building editors, model viewer, map/region editor.
