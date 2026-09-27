@@ -1,4 +1,7 @@
-# RTW Faction Tool - notes for Claude
+# RTW Campaign Editor (formerly RTW Faction Tool) - notes for Claude
+
+The package is still `faction_tool`, backups `faction_tool_backups`, the log `faction_tool.log`
+(kept for compatibility); the window, exe and README say RTW Campaign Editor.
 
 Read this first. It is the project's memory between sessions: who the user is,
 how to work with him, what the tool does, what was learned the hard way, and
