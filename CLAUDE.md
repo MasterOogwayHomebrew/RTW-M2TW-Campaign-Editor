@@ -52,6 +52,7 @@ byte-exactly.
 | `scan.py` | Scan mod (mentions of a faction in the whole mod), ignore list, game manifest |
 | `mapdata.py`, `gui_map.py` | Map tab: background drawn from map_ground_types (the user prefers it to the painted radar map), political layer, cities, ports, characters, drag |
 | `gui.py`, `gui_garrison.py`, `gui_buildings.py` | the window: tabs Faction / Units & armies / Buildings / Map, New/Edit mode |
+| `log.py` | `faction_tool.log` next to the exe: loads, previews, writes, restores, status lines, every error box and Tk callback traceback; **Log** button. Ask the user for it with system.log.txt |
 | `cli.py` | `list towns names example new scan newmod slim manifest restore` |
 
 Tests: `python -m unittest discover -s tests` (a synthetic mini-mod; 20+ tests,
@@ -95,6 +96,11 @@ restore byte-identical). GUI checks: `xvfb-run -a python3.12 script.py` with
 - The balanced army pool takes only land generals' units (not admirals' ships).
 - New characters go **before** the faction's `character_record` / `relative`
   lines; a `character` after them crashes on load (`WORLD::finalise_faction_groupings`).
+- EDU `category non_combatant` (townsfolk) is never offered as a unit.
+- Some map regions have no settlement at the start (vanilla Galatia): hollow on
+  the map, cannot be taken (founding a town is future work).
+- After Apply the window reloads; in Edit it re-reads the faction (a stale town
+  list once gave the user's towns away).
 - Vanilla EDU gives ships by **culture** (`ownership roman, greek, ...`), so a
   faction's units = its name, its culture or `all` in ownership.
 
