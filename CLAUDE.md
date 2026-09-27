@@ -96,6 +96,8 @@ restore byte-identical). GUI checks: `xvfb-run -a python3.12 script.py` with
 - The balanced army pool takes only land generals' units (not admirals' ships).
 - New characters go **before** the faction's `character_record` / `relative`
   lines; a `character` after them crashes on load (`WORLD::finalise_faction_groupings`).
+- `_chars_at`: every character edit.py adds (captains, arriving characters, new
+  armies) goes before the family tree; `characters_after_tree` refuses to write otherwise.
 - EDU `category non_combatant` (townsfolk) is never offered as a unit.
 - Some map regions have no settlement at the start (vanilla Galatia): hollow on
   the map, cannot be taken (founding a town is future work).
@@ -120,7 +122,8 @@ template's building descriptions; Restore and recreate them.
 
 ## Next
 
-1. User's in-game test of M3 again after the crash fix (fleets: HLR marks every
+1. User's in-game test: existing armies/fleets/agents in the list (units, remove),
+   garrison shown as it stands, empty-town warning; and M3 again after the crash fix (fleets: HLR marks every
    ship a mercenary; vanilla gives ships by culture).
 2. Use the vanilla + REX manifests in Scan (game file / REX file / changed / mod
    file) and newmod. **Later** the user sends a game manifest with `bi` (his
