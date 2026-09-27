@@ -56,6 +56,7 @@ byte-exactly.
 | `mapedit.py` | moving towns and ports: `place_problem`, `apply_places` |
 | `diplomacy.py`, `gui_diplomacy.py` | core_attitudes / faction_relationships: `read`, `set_relations` (only lines naming the faction), Diplomacy tab, map Diplomacy colours; opts `relations` |
 | `check.py` | Check mod: file/consistency report; deep = `rehearse` every faction in memory (VAN 4 min) |
+| `regionedit.py` | new regions / region borders: `region_problems`, `apply_regions`, `free_colour`; Map Regions mode (paint, right-click pick, Its town/port); opts `regions` {painted, new} |
 | `cli.py` | `list towns names example new scan newmod slim manifest restore` |
 
 Tests: `python -m unittest discover -s tests` (a synthetic mini-mod; 20+ tests,
@@ -110,6 +111,12 @@ restore byte-identical). GUI checks: `xvfb-run -a python3.12 script.py` with
   characters on a moved town move with it, fleets within 2 tiles of a moved port
   sail to the sea next to the new one (`port_fleets`, `sea_spot`). Ports stand on a coastal land tile of
   their region (all 75 vanilla / 315 HLR ports). Plan has `binary()`/`delete()`.
+- **A region** = map_regions colour area + town pixel (+ port), 8 lines in
+  descr_regions (name, settlement, creator, rebels, r g b, resources, triumph,
+  farming), region + settlement names appended to the campaign's
+  descr_regions_and_settlement_name_lookup.txt, `{Name}` labels in
+  `<campaign>_regions_and_settlement_names.txt`, optional settlement block; delete map.rwm.
+  Not yet tested in game.
 - The settlement `level` in descr_strat does not follow the buildings: the tool
   raises it to the core_building level's settlement_min (`buildings.sized`),
   population to POP_MIN; opts `sizes` {region: {level, population}} by hand.
