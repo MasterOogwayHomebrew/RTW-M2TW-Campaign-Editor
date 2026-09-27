@@ -100,18 +100,18 @@ Done and tested in game: new faction by template; separate mod folder; scan +
 ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
 (texts, colours, AI, denari, playable, take/give towns, capital, leader/heir);
 Map M1 (view, political, click towns) and M2 (characters, drag own in Edit).
+M3 (new armies/agents/fleets placed on the map) built and unit-tested, waiting for the user's in-game test.
 Game manifest of vanilla (without `bi`) in `docs/reference/`.
 
-**Warn the user once more if it comes up**: factions he made before the
+**Warn the user once more if it comes up**: factions the user made before the
 multi-line text fix (Saba, Galatia, Byzantium in HLR) may have cut the
 template's building descriptions; Restore and recreate them.
 
 ## Next
 
-1. **M3**: new field armies, agents (spy/diplomat/assassin/merchant) and fleets
-   (admiral + ship units) - create in Units & armies (card picker), place on
-   the Map (green/red tiles via `tile_problem`), for a new faction and in Edit.
-2. Game manifest again with `bi` (expansions are no longer skipped), then use it
+1. User's in-game test of M3 (fleets: HLR marks every ship a mercenary).
+2. Game manifest again with `bi` (expansions are no longer skipped), plus a
+   separate manifest of the unpacked REX download (= REX's own files), then use them
    in Scan (game file / changed game file / mod file) and newmod.
 3. Mod finder: remember the game folder and last mod (`%APPDATA%`), list mods.
 4. Own unit/building roster per faction (ownership / EDB factions lists).
