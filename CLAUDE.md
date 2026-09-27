@@ -99,8 +99,9 @@ restore byte-identical). GUI checks: `xvfb-run -a python3.12 script.py` with
 - `_chars_at`: every character edit.py adds (captains, arriving characters, new
   armies) goes before the family tree; `characters_after_tree` refuses to write otherwise.
 - EDU `category non_combatant` (townsfolk) is never offered as a unit.
-- Some map regions have no settlement at the start (vanilla Galatia): hollow on
-  the map, cannot be taken (founding a town is future work).
+- A region descr_strat leaves out (vanilla: Galatia/Ancyra, Dalmatia, Arabia,
+  Atropatene, Boihaemum, Pripet, Locus_Gepidae) is a rebel **village** in the
+  game (no buildings). Taking it writes `village_block` into the new owner's block.
 - After Apply the window reloads; in Edit it re-reads the faction (a stale town
   list once gave the user's towns away).
 - Vanilla EDU gives ships by **culture** (`ownership roman, greek, ...`), so a
