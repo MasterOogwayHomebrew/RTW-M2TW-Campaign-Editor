@@ -128,13 +128,14 @@ restore byte-identical). GUI checks: `xvfb-run -a python3.12 script.py` with
 - Vanilla EDU gives ships by **culture** (`ownership roman, greek, ...`), so a
   faction's units = its name, its culture or `all` in ownership.
 
-## Status (end of 2026-09-27 session)
+## Status (2026-09-28: v0.1.0 released - tag v0.1.0, exe attached by CI from the tag, notes = CHANGELOG.md)
 
 Done and tested in game: new faction by template; separate mod folder; scan +
 ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
 (texts, colours, AI, denari, playable, take/give towns, capital, leader/heir);
 Map M1 (view, political, click towns) and M2 (characters, drag own in Edit).
-Moving towns/ports tested in game (roads and sea routes follow). Settlement level/
+Moving towns/ports tested in game (roads and sea routes follow). New regions tested in game (HLR).
+Version lives in gui.VERSION and CHANGELOG.md; a release = bump both, push main, push tag vX.Y.Z. Settlement level/
 population, Check mod and Diplomacy tab built, not yet tested in game.
 M3 (new armies/agents/fleets placed on the map) built and unit-tested, waiting for the user's in-game test.
 Manifests in `docs/reference/`: vanilla game (without `bi`) and REX's own files
