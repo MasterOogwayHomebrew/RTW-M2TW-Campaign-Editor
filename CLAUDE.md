@@ -101,7 +101,8 @@ ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
 (texts, colours, AI, denari, playable, take/give towns, capital, leader/heir);
 Map M1 (view, political, click towns) and M2 (characters, drag own in Edit).
 M3 (new armies/agents/fleets placed on the map) built and unit-tested, waiting for the user's in-game test.
-Game manifest of vanilla (without `bi`) in `docs/reference/`.
+Manifests in `docs/reference/`: vanilla game (without `bi`) and REX's own files
+(`rex_manifest.json.gz`; 50 of them replace vanilla files).
 
 **Warn the user once more if it comes up**: factions the user made before the
 multi-line text fix (Saba, Galatia, Byzantium in HLR) may have cut the
@@ -110,9 +111,9 @@ template's building descriptions; Restore and recreate them.
 ## Next
 
 1. User's in-game test of M3 (fleets: HLR marks every ship a mercenary).
-2. Game manifest again with `bi` (expansions are no longer skipped), plus a
-   separate manifest of the unpacked REX download (= REX's own files), then use them
-   in Scan (game file / changed game file / mod file) and newmod.
+2. Use the vanilla + REX manifests in Scan (game file / REX file / changed / mod
+   file) and newmod. **Later** the user sends a game manifest with `bi` (his
+   `bi` now has REX's overlay; subtract `rex_manifest`); no hurry.
 3. Mod finder: remember the game folder and last mod (`%APPDATA%`), list mods.
 4. Own unit/building roster per faction (ownership / EDB factions lists).
 5. Later: diplomacy tab, appearance (banners, logos via REX sprite packer,
