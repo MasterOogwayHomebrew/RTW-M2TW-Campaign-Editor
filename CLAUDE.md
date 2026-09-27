@@ -113,6 +113,9 @@ restore byte-identical). GUI checks: `xvfb-run -a python3.12 script.py` with
 - The settlement `level` in descr_strat does not follow the buildings: the tool
   raises it to the core_building level's settlement_min (`buildings.sized`),
   population to POP_MIN; opts `sizes` {region: {level, population}} by hand.
+- Every change the window keeps calls `remember()` first (snapshot of UNDO_KEYS);
+  new kept state must be added to UNDO_KEYS. After a reload the map is read again
+  (`_cmap_for = None`) - a stale map once refused to move a town back.
 - After Apply the window reloads; in Edit it re-reads the faction (a stale town
   list once gave the user's towns away).
 - Vanilla EDU gives ships by **culture** (`ownership roman, greek, ...`), so a
