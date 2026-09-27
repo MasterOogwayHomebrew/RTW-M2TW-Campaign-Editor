@@ -93,6 +93,10 @@ restore byte-identical). GUI checks: `xvfb-run -a python3.12 script.py` with
 - `descr_sm_factions.json` (REX) may lack a faction - fine. Logos: sprite names in
   `ui/strat3.sd.xml` / `shared2.sd.xml` (`FACTION_LOGO_<F>`) - future banner work.
 - The balanced army pool takes only land generals' units (not admirals' ships).
+- New characters go **before** the faction's `character_record` / `relative`
+  lines; a `character` after them crashes on load (`WORLD::finalise_faction_groupings`).
+- Vanilla EDU gives ships by **culture** (`ownership roman, greek, ...`), so a
+  faction's units = its name, its culture or `all` in ownership.
 
 ## Status (end of 2026-09-27 session)
 
@@ -110,7 +114,8 @@ template's building descriptions; Restore and recreate them.
 
 ## Next
 
-1. User's in-game test of M3 (fleets: HLR marks every ship a mercenary).
+1. User's in-game test of M3 again after the crash fix (fleets: HLR marks every
+   ship a mercenary; vanilla gives ships by culture).
 2. Use the vanilla + REX manifests in Scan (game file / REX file / changed / mod
    file) and newmod. **Later** the user sends a game manifest with `bi` (his
    `bi` now has REX's overlay; subtract `rex_manifest`); no hurry.
