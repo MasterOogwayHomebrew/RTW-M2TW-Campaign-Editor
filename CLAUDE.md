@@ -105,7 +105,8 @@ restore byte-identical). GUI checks: `xvfb-run -a python3.12 script.py` with
   game (no buildings). Taking it writes `village_block` into the new owner's block.
 - **Moving towns/ports** (`mapedit.py`): repaint map_regions.tga (old pixel ->
   region colour, new -> black/white), delete `map.rwm` (game rebuilds it),
-  characters on a moved town move with it. Ports stand on a coastal land tile of
+  characters on a moved town move with it, fleets within 2 tiles of a moved port
+  sail to the sea next to the new one (`port_fleets`, `sea_spot`). Ports stand on a coastal land tile of
   their region (all 75 vanilla / 315 HLR ports). Plan has `binary()`/`delete()`.
 - The settlement `level` in descr_strat does not follow the buildings: the tool
   raises it to the core_building level's settlement_min (`buildings.sized`),
