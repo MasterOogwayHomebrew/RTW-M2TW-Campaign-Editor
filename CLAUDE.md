@@ -53,6 +53,7 @@ byte-exactly.
 | `mapdata.py`, `gui_map.py` | Map tab: background drawn from map_ground_types (the user prefers it to the painted radar map), political layer, cities, ports, characters, drag |
 | `gui.py`, `gui_garrison.py`, `gui_buildings.py` | the window: tabs Faction / Units & armies / Buildings / Map, New/Edit mode |
 | `log.py` | `faction_tool.log` next to the exe: loads, previews, writes, restores, status lines, every error box and Tk callback traceback; **Log** button. Ask the user for it with system.log.txt |
+| `mapedit.py` | moving towns and ports: `place_problem`, `apply_places` |
 | `cli.py` | `list towns names example new scan newmod slim manifest restore` |
 
 Tests: `python -m unittest discover -s tests` (a synthetic mini-mod; 20+ tests,
@@ -102,6 +103,10 @@ restore byte-identical). GUI checks: `xvfb-run -a python3.12 script.py` with
 - A region descr_strat leaves out (vanilla: Galatia/Ancyra, Dalmatia, Arabia,
   Atropatene, Boihaemum, Pripet, Locus_Gepidae) is a rebel **village** in the
   game (no buildings). Taking it writes `village_block` into the new owner's block.
+- **Moving towns/ports** (`mapedit.py`): repaint map_regions.tga (old pixel ->
+  region colour, new -> black/white), delete `map.rwm` (game rebuilds it),
+  characters on a moved town move with it. Ports stand on a coastal land tile of
+  their region (all 75 vanilla / 315 HLR ports). Plan has `binary()`/`delete()`.
 - After Apply the window reloads; in Edit it re-reads the faction (a stale town
   list once gave the user's towns away).
 - Vanilla EDU gives ships by **culture** (`ownership roman, greek, ...`), so a
