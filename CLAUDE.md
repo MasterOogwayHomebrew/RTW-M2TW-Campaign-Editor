@@ -50,7 +50,7 @@ byte-exactly.
 | `units.py`, `buildings.py` | EDU and EDB parsing, card/building pictures (culture fallbacks via `descr_ui_buildings.txt`) |
 | `newmod.py` | a separate mod folder `<game>/<name>` (text copied, the rest hard-linked, `Start_<name>.bat`), `slim` |
 | `scan.py` | Scan mod (mentions of a faction in the whole mod), ignore list, game manifest |
-| `mapdata.py`, `gui_map.py` | Map tab: radar_map1.tga background (or drawn from ground types), political layer, cities, ports, characters, drag |
+| `mapdata.py`, `gui_map.py` | Map tab: background drawn from map_ground_types (the user prefers it to the painted radar map), political layer, cities, ports, characters, drag |
 | `gui.py`, `gui_garrison.py`, `gui_buildings.py` | the window: tabs Faction / Units & armies / Buildings / Map, New/Edit mode |
 | `cli.py` | `list towns names example new scan newmod slim manifest restore` |
 
