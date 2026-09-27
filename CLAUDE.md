@@ -107,6 +107,9 @@ restore byte-identical). GUI checks: `xvfb-run -a python3.12 script.py` with
   region colour, new -> black/white), delete `map.rwm` (game rebuilds it),
   characters on a moved town move with it. Ports stand on a coastal land tile of
   their region (all 75 vanilla / 315 HLR ports). Plan has `binary()`/`delete()`.
+- The settlement `level` in descr_strat does not follow the buildings: the tool
+  raises it to the core_building level's settlement_min (`buildings.sized`),
+  population to POP_MIN; opts `sizes` {region: {level, population}} by hand.
 - After Apply the window reloads; in Edit it re-reads the faction (a stale town
   list once gave the user's towns away).
 - Vanilla EDU gives ships by **culture** (`ownership roman, greek, ...`), so a
