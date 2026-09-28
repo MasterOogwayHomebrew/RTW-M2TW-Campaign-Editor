@@ -60,6 +60,8 @@ byte-exactly.
 | `diplomacy.py`, `gui_diplomacy.py` | core_attitudes / faction_relationships: `read`, `set_relations` (only lines naming the faction), Diplomacy tab, map Diplomacy colours; opts `relations` |
 | `check.py` | Check mod: file/consistency report; deep = `rehearse` every faction in memory (VAN 4 min) |
 | `regionedit.py` | new regions / region borders: `region_problems`, `apply_regions`, `free_colour`; Map Regions mode (paint, right-click pick, Its town/port); opts `regions` {painted, new} |
+| `roster.py`, `gui_roster.py` | what a faction has: `roster()`, `give_unit`/`take_unit` (EDU ownership + EDB recruit factions + cards), `set_level` (level `requires factions`), `apply(plan, faction, {'unit:<t>'|'building:<c>:<l>': give})`; Roster tab (Edit), opts `roster`, App.roster_set in UNDO_KEYS |
+| `settings.py` | faction_tool_settings.json next to the log: map_legend, mod_data (last mod), game, campaigns {data: campaign}; `newmod.list_mods(game)` / `game_of(data)` fill the Mod list |
 | `cli.py` | `list towns names example new scan newmod slim manifest restore` |
 
 Tests: `python -m unittest discover -s tests` (a synthetic mini-mod; 20+ tests,
@@ -133,8 +135,20 @@ restore byte-identical). GUI checks: `xvfb-run -a python3.12 script.py` with
   list once gave the user's towns away).
 - Vanilla EDU gives ships by **culture** (`ownership roman, greek, ...`), so a
   faction's units = its name, its culture or `all` in ownership.
+- **Keep what is tied together in step** (the user's standing request: "a change pulls along
+  everything connected to it; no code bolted on top that does not know the old"). A unit is the
+  faction's only when EDU ownership + an EDB recruit line (in a level it may build) + its cards
+  agree (`roster.py`). Renames follow (`editors.rename_unit / rename_dictionary / rename_chain`:
+  recruit lines, every campaign's descr_strat units / town buildings, descr_mercenaries,
+  descr_rebel_factions, building_present requirements). Pending Roster picks change what the
+  garrison and building pickers offer (`App._roster_units`, `BuildingsEditor.roster`).
+- EDB parsing: `editors.chain_tree` (levels with head/open/close, capability, upgrades; braces
+  closed on one line do not count). `factions {` must not match `building_factions {` (HLR uses it).
+- Editor lines: adds are placed by `line_place` (capability / upgrades block made when missing),
+  keyed by the block's first line (a rename keeps it); removal never of `required_keys` (keys every
+  unit / level has) or structure lines; `check_text` refuses unknown units / chains / levels.
 
-## Status (2026-09-28: v0.1.0 released: github.com/MasterOogwayHomebrew/RTW-faction-tool/releases/tag/v0.1.0)
+## Status (2026-09-28: v0.5.0 in the works; v0.1.0 released: github.com/MasterOogwayHomebrew/RTW-faction-tool/releases/tag/v0.1.0)
 
 Done and tested in game: new faction by template; separate mod folder; scan +
 ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
@@ -251,6 +265,20 @@ copy_building + copy_text_entries; RecordEditor "Copy as new...".
   and map_<f>.tga made by the tool from its start regions (the template's map as the
   background, the faction's land tinted in its colour, map_regions scaled to it).
 
+## Done in 0.5.0 (not yet tested in game)
+
+Mod remembered + Mod list (settings.py, newmod.list_mods / game_of); Roster tab (roster.py,
+gui_roster.py); editors: Add line... / x remove / Tied to it / renames drag along / checks;
+Scan tells files apart by manifests (scan.Origins: this PC's <game>/rtw_manifest.json.gz, else the
+bundled RTW Gold or M2 manifest, + REX; md5 only when the size matches, cached); the manifests go
+into the exe (build.yml / release.yml `--add-data "docs/reference/*.json.gz;reference"`,
+scan.reference_dir). faction_tool_settings.json is no longer tracked (.gitignore).
+
+Found, not fixed yet: a mod made by New mod folder on the **plain game** is slimmed (only changed
+files), and the tool cannot load its campaign (descr_regions etc. are in the game's data):
+ModData would need the game's data as a fallback, with edits of fallback files written into the
+mod folder. Mods built on HLR are full copies and are fine.
+
 ## Next
 
 1. User's in-game test: existing armies/fleets/agents in the list (units, remove),
@@ -259,8 +287,8 @@ copy_building + copy_text_entries; RecordEditor "Copy as new...".
 2. Use the vanilla + REX manifests in Scan (game file / REX file / changed / mod
    file) and newmod. **Later** the user sends a game manifest with `bi` (his
    `bi` now has REX's overlay; subtract `rex_manifest`); no hurry.
-3. Mod finder: remember the game folder and last mod (`%APPDATA%`), list mods.
-4. Own unit/building roster per faction (ownership / EDB factions lists).
+3. (done in 0.5.0: mod finder, roster) - the user tests Roster and Add line in the game.
+4. Slimmed plain-game mods: load them with the game's data as a fallback (see 0.5.0 notes).
 5. Run Check mod (deep) on other mods the user sends (only .txt + world/maps).
 6. Later: appearance (banners, logos via REX sprite packer,
    recolour), unit/building editors, model viewer, map/region editor.
