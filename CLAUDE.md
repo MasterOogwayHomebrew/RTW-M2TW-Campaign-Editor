@@ -278,6 +278,26 @@ copy_building + copy_text_entries; RecordEditor "Copy as new...".
   campaign-select maps (factionart.future(plan) = the map as the plan leaves it;
   region_factions -> redraw_others(force)). Not tied: radar_map (terrain only).
 
+## TOP PRIORITY (the user, 2026-09-28, very keen): EXPORT / IMPORT packs
+
+"The most important thing: EXPORT of a faction's units etc., so whole packs can go (between mods)."
+A pack = one .zip (manifest.json + the files at their data-relative paths + the text pieces), made
+from one mod and put into another with Preview + backup like every other change.
+- Unit pack: the EDU block; its cards (ui/units, ui/unit_info per faction); export_units.txt
+  entries (name, descr, descr_short); descr_model_battle entry + the models (.cas / .ms3d) and
+  textures it names (incl. per-faction texture lines); mounts / animals / engines it names
+  (descr_mount, descr_animal, descr_engines); EDB recruit lines (as "where it may be recruited",
+  re-placed on import); sounds (voice type is a name - check it exists); M2: descr_model_battle
+  is .modeldb-like and battle models need the mod's own paths.
+- Faction pack: descr_sm_factions entry, names (descr_names + names.txt), all texts, its units
+  (as above), building names/pictures per faction, art (faction_pictures), banners, strat model,
+  traits/ancillaries triggers naming it, descr_strat block optional.
+- Building pack: the chain (or a level) + texts + pictures + models per culture.
+- Import: rename on clashes (editors.rename_* already drag names along), check culture / ownership /
+  voice / mount exist in the target, report what is missing, never overwrite silently.
+- Same game only (RTW<->RTW incl. HLR/REX, M2<->M2); say so.
+The M2 GUI Toolkit has unit transfer - the model for the user's expectations.
+
 ## The user's 0.5.0 test (M2, vanilla, france) - fix all in one big patch, not one by one
 
 The user tests first and collects; do these together when he says so.
