@@ -128,7 +128,9 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
    plainly what was not tested (in game = only the user can).
 7. **Plain words in the UI**: a label says what will happen; set-up fixes and anything that touches
    files the user does not know are offered with a yes, never done silently.
-8. **Keep this file current** at the end of every piece of work: what changed, what was learned,
+8. **Keep ROADMAP.md current** (public, English; the user shares it on GitHub and Discord): tick a step when it is
+   released, mark **(in-game ✓)** when the user confirms it in the game, move items between Testing / Next / Later.
+9. **Keep this file current** at the end of every piece of work: what changed, what was learned,
    what is open.
 
 ## Hard-won rules (do not break)
