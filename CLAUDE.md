@@ -428,6 +428,12 @@ The user tests first and collects; do these together when he says so.
     set-up fix goes through `gamefix.py` (problems / fix_plan; asked on Load, a no remembered in
     settings `fixes_declined`; backup + Restore).
 
+19. **Map "strictly by tiles" = the picture itself, not the grid** (the user, with a screenshot): each tile
+    one colour (the ground type at its middle, what the tool checks), relief and rivers worked out per
+    tile too, then blown up NEAREST (`CampaignMap.background(tiles=True)`; checked: 0 tiles with two
+    colours on M2). Default now; the detailed 2x+1 picture is the other choice in Layers (settings
+    `map_look.ground` = "tiles" | "detailed"; 0.6.0's "tiles" flag is no longer read). Done.
+
 18. **"Preview map changes / Apply map changes"** puzzled the user: it is New faction mode with no
     template/name yet (`App.map_only`), where only map edits can be written. Make it plain: normal
     "Preview / Apply changes" with a hint "no faction chosen - only the map's changes are written",
