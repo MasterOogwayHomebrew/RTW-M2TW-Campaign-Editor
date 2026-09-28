@@ -295,6 +295,28 @@ The user tests first and collects; do these together when he says so.
    ui/faction_symbols -> "faction symbol (in-game panels)", campaign vc_<f>.tga -> "victory
    conditions map", and a line on where the game shows it, like the named ones have.
 
+6. **Tabs barely visible** (the ttk Notebook tab row Faction / Units & armies / ... under the work
+   bar): make them stand out (style: bigger font, padding, selected tab coloured like the work bar).
+7. **M2: faction texts empty** (Name full/short, Adjective, Tooltip, Description on the Faction
+   tab for france). `ModData.text_files` reads only `data/text/*.txt`; M2 keeps text in
+   `data/text/*.strings.bin` (binary, UTF-16) and the .txt only when unpacked (and maybe
+   `text/english`?). Ask the user what lies in his M2 `data/text`. Plan: read .strings.bin
+   (header, count, then key/value UTF-16 with lengths), write the .txt and delete / rewrite the
+   .strings.bin (the game rebuilds the bin from the .txt when the bin is missing - check). M2 keys:
+   expanded.txt {FRANCE}, campaign_descriptions `{IMPERIAL_CAMPAIGN_FRANCE_...}` - check on his files.
+   Everything text-related (names pool strings, units, buildings) needs the same.
+8. **"Real" map** (the user asks if the map can be drawn strictly by tiles): it already is (1 square
+   = 1 tile, colour by map_ground_types). Offer: relief shading from map_heights, rivers from
+   map_features, climate tint (map_climates), a closer-to-the-game look; ask what he misses.
+9. **New region dialog, "Resources" field** confuses: it is descr_regions line 6 = region tags /
+   hidden resources (EDB `hidden_resource` / `resource` requirements, HLR local units; M2: america,
+   crusade, jihad, *_chapter_house...), NOT the map resources (descr_strat `resource` lines, drawn on
+   the map). Rename to "Region tags (hidden resources)", explain, list only the tags used in
+   descr_regions / EDB, not the map resource types.
+10. **New town and port not shown after the New region dialog** outside Regions mode: pending new
+    towns/ports and painted tiles (`MapView._painted`, `region_points`) are drawn only while
+    `region_mode`. Draw them (and the new region's land) on the normal map too until Apply.
+
 ## Collected for the next patch (the user asked to gather, not change yet)
 
 - Unit texture recolour (the user wants it, and the Discord REX people asked for model work): give a unit to
