@@ -371,6 +371,13 @@ resources, fortresses / watchtowers, `landmark`s) x k onto a tile the rules allo
 sea for fleets); descr_sm_landmarks? descr_disasters? map.rwm deleted; check the engine's size limits
 (RTW vanilla vs REX; M2 / M2EX) before offering it. Answered him that it is not there yet.
 
+**Code signing** (the user, 2026-09-28: browsers / SmartScreen warn about the exe): needs a certificate
+the user must get (identity checked): free for open source via **SignPath Foundation** (signpath.org, apply
+with the repo; signs in GitHub Actions), or Azure Trusted Signing (~10 USD/month, identity validation),
+or a paid OV certificate (SmartScreen still warns until reputation grows; EV removes it at once, costly).
+Meanwhile: submit each release exe to Microsoft (microsoft.com/wdsi/filesubmission) as a false positive.
+Once he has one, add the signing step to release.yml / build.yml. License: MIT already (LICENSE, README).
+
 ## TOP PRIORITY (the user, 2026-09-28, very keen): EXPORT / IMPORT packs
 
 "The most important thing: EXPORT of a faction's units etc., so whole packs can go (between mods)."
