@@ -1,7 +1,8 @@
-# RTW Campaign Editor (formerly RTW Faction Tool) - notes for Claude
+# RTW & M2TW Campaign Editor (formerly RTW Campaign Editor, RTW Faction Tool) - notes for Claude
 
 The package is still `faction_tool`, backups `faction_tool_backups`, the log `faction_tool.log`
-(kept for compatibility); the window, exe and README say RTW Campaign Editor.
+(kept for compatibility); the window, exe and README say RTW & M2TW Campaign Editor (0.9.2; exe
+`RTW-M2TW-Campaign-Editor.exe`, folder `RTW-M2TW-Campaign-Editor-files` - the old folder is renamed on start).
 
 Read this first. It is the project's memory between sessions (and between Claude
 accounts - the user hands this file to a new one): who the user is, how to work
@@ -84,7 +85,7 @@ byte-exactly.
 | `scan.py` | Scan mod (mentions of a faction in the whole mod), ignore list, game manifest |
 | `mapdata.py`, `gui_map.py` | Map tab: background drawn from map_ground_types (the user prefers it to the painted radar map), political layer, cities, ports, characters, drag |
 | `gui.py`, `gui_garrison.py`, `gui_buildings.py` | the window: tabs Faction / Units & armies / Buildings / Map, New/Edit mode |
-| `log.py` | `faction_tool.log` in `RTW-Campaign-Editor-files/` next to the exe (0.7.2; older loose files moved in once; from source: the repo root): loads, previews, writes, restores, status lines, every error box and Tk callback traceback; **Log** button. Ask the user for it with system.log.txt |
+| `log.py` | `faction_tool.log` in `RTW-M2TW-Campaign-Editor-files/` next to the exe (0.7.2; older loose files moved in once; from source: the repo root): loads, previews, writes, restores, status lines, every error box and Tk callback traceback; **Log** button. Ask the user for it with system.log.txt |
 | `mapedit.py` | moving towns and ports: `place_problem`, `apply_places` |
 | `diplomacy.py`, `gui_diplomacy.py` | core_attitudes / faction_relationships: `read`, `set_relations` (only lines naming the faction), Diplomacy tab, map Diplomacy colours; opts `relations` |
 | `check.py` | Check mod: file/consistency report; deep = `rehearse` every faction in memory (VAN 4 min) |
@@ -635,11 +636,9 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
 
 ## Open with the user (2026-09-29, before a /clear)
 
-- **Name**: the user wants the tool renamed ("RTW/M2TW or something better"). Offered: "RTW & M2TW Campaign
-  Editor" (recommended), "Classic Total War Campaign Editor", "TW Campaign Editor (Rome & Medieval II)". Waiting
-  for his pick; then change gui APP / window title, exe name (build.yml, release.yml), README, CHANGELOG, and he
-  renames the repo (Settings -> General). Package / backup / log names stay (compatibility). SignPath knows it as
-  "RTW Campaign Editor" - tell them in one line if renamed before they answer.
+- **Name**: renamed to "RTW & M2TW Campaign Editor" in 0.9.2 (the user's pick). The repo is still
+  RTW-faction-tool until the user renames it (Settings -> General; old links redirect). SignPath knows the
+  project as "RTW Campaign Editor" - one line to them if they ask.
 - **SignPath Foundation**: application sent 2026-09-29, only the receipt mail so far ("few business days"). When
   approved: he sends organisation / project / signing-policy slugs, adds secret SIGNPATH_API_TOKEN; then add
   signpath/github-action-submit-signing-request to release.yml. He should enable Private vulnerability reporting.
