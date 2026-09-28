@@ -12,6 +12,13 @@ stands. Keep it up to date at the end of every piece of work.
 text/, world/, ui/, banners/; no models/sounds); `M2/` = his Medieval II data (root .txt, world/, text/ with
 .strings.bin + text/english/*.txt UTF-8 - the game reads the english .txt; tool reads them fine); `EXE/` = M2EX.exe and medieval2.exe (strings only; never commit).
 
+**The user's game files live in the PRIVATE repo `MasterOogwayHomebrew/tw-game-data`** (never
+make it public, never copy its files into this public repo): `M2/data` (Medieval II + M2EX vanilla:
+root files, text/, world/maps/base + campaign) and `RTW/data` (RTW Gold + REX vanilla: root .txt,
+text/, world/ without battle/custom maps, ui/, banners/). In a new session: add_repo it, `git clone
+--depth 1` into /home/user/tw-game-data, copy what a test writes to the scratchpad first. Push in
+batches of ~150 MB (the proxy refuses huge packs). Add new uploads there too (HLR next).
+
 **A new session starts with no game files**: the container is fresh. Ask the user
 to upload what the task needs (his HLR `data` as 7z volumes, vanilla `data`, REX),
 or work from the repo and the synthetic tests only. Earlier sessions kept the files
