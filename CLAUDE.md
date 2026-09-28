@@ -177,6 +177,13 @@ template's building descriptions; Restore and recreate them.
   only), a level picked by hand sets the matching core building, and every chain
   offers the levels of the resulting level (pass it to the editor and redraw).
 
+- Logs for testers: the Log window (Tools > Log) only shows faction_tool.log. Add a
+  "Save logs..." button: one zip (save dialog) with faction_tool.log + the game's
+  newest system.log.txt / REX `<mod>_logs_<stamp>.zip` / `report-*.txt` found near
+  the loaded mod (mod folder, game folder, their `logs`), and say which were found.
+  REX's zip seen from the user: system.log.txt + report-<n>-<date>.txt. Find out
+  where REX writes them on his PC before coding the search.
+
 ## Next
 
 1. User's in-game test: existing armies/fleets/agents in the list (units, remove),
