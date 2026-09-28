@@ -187,6 +187,18 @@ template's building descriptions; Restore and recreate them.
   `report-<n>-<date>.txt` for privacy - do the same). Neither may exist (no crash
   yet; vanilla without REX may not log) - say so instead of failing.
 
+- Medieval II (users asked for the same editor): `docs/reference/m2tw_manifest.json.gz`
+  is the user's M2TW Steam install (2832 files, 16.5 GB; made with the RTW manifest
+  code, so the `mods/` folders are inside). It has `M2EX.exe` (an engine extension,
+  like REX), `medieval2.exe`, `packs/data_0..4.pack`, `tools/unpacker/` (unpack_all.bat,
+  unpacker.exe), launch .bats per expansion. `mods/americas|british_isles|crusades|
+  teutonic` = the Kingdoms campaigns (data + packs). Loose in vanilla `data/`: descr_strat
+  (campaign/imperial_campaign), descr_regions + map_regions.tga (maps/base), EDB, text
+  tables (`data/text/<language>/`, not `data/text/`); still packed: export_descr_unit,
+  descr_sm_factions, descr_names, descr_character, banners - need unpack_all first.
+  Plan: a game mode in the same tool after the RTW patch; needs the unpacked .txt +
+  world/maps of vanilla or a mod.
+
 ## Next
 
 1. User's in-game test: existing armies/fleets/agents in the list (units, remove),
