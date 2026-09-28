@@ -8,9 +8,10 @@ accounts - the user hands this file to a new one): who the user is, how to work
 with him, what the tool does, what was learned the hard way, and where the work
 stands. Keep it up to date at the end of every piece of work.
 
-**Files here now (2026-09-28)**: scratchpad `VAN/` = the user's RTW Gold data (root .txt,
-text/, world/, ui/, banners/; no models/sounds); `M2/` = his Medieval II data (root .txt, world/, text/ with
-.strings.bin + text/english/*.txt UTF-8 - the game reads the english .txt; tool reads them fine); `EXE/` = M2EX.exe and medieval2.exe (strings only; never commit).
+**Files in a session**: a fresh container has none. The user's vanilla files are in the private repo
+`tw-game-data` (below); `EXE/` (M2EX.exe, medieval2.exe - strings only, never commit) was only in the
+2026-09-28 session's scratchpad. The user's M2 upload has **no `ui/` folder** (portrait pools, custom_portraits
+untested on M2) - ask for `ui/<culture>/portraits` + `ui/custom_portraits` when M2 pictures matter.
 
 **The user's game files live in the PRIVATE repo `MasterOogwayHomebrew/tw-game-data`** (never
 make it public, never copy its files into this public repo): `M2/data` (Medieval II + M2EX vanilla:
@@ -258,7 +259,7 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   keyed by the block's first line (a rename keeps it); removal never of `required_keys` (keys every
   unit / level has) or structure lines; `check_text` refuses unknown units / chains / levels.
 
-## Status (2026-09-29: v0.9.0 released (Character editor = FamilyEditor(standalone) in App.editors['characters']; portraits); v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
+## Status (2026-09-29: v0.9.1 released (Edit region..., new regions in the towns list at once, a new faction starts in a new region by one Apply - regionedit.apply_opts is the one writer of region work, plan_land/free_tile(start, own)); v0.9.0 released (Character editor = FamilyEditor(standalone) in App.editors['characters']; portraits); v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
 
 Done and tested in game: new faction by template; separate mod folder; scan +
 ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
@@ -631,6 +632,24 @@ _units_ambient, _units_anims, export_descr_sounds_soldier_voice, _stratmap_voice
 _units_voice, _units_battle_events, _prebattle) and the `_<culture>` building names in
 text/export_buildings.txt. Check first on his files whether REX or the exe caps the
 number of cultures, and how portrait_mapping / rebel_standard_index work.
+
+## Open with the user (2026-09-29, before a /clear)
+
+- **Name**: the user wants the tool renamed ("RTW/M2TW or something better"). Offered: "RTW & M2TW Campaign
+  Editor" (recommended), "Classic Total War Campaign Editor", "TW Campaign Editor (Rome & Medieval II)". Waiting
+  for his pick; then change gui APP / window title, exe name (build.yml, release.yml), README, CHANGELOG, and he
+  renames the repo (Settings -> General). Package / backup / log names stay (compatibility). SignPath knows it as
+  "RTW Campaign Editor" - tell them in one line if renamed before they answer.
+- **SignPath Foundation**: application sent 2026-09-29, only the receipt mail so far ("few business days"). When
+  approved: he sends organisation / project / signing-policy slugs, adds secret SIGNPATH_API_TOKEN; then add
+  signpath/github-action-submit-signing-request to release.yml. He should enable Private vulnerability reporting.
+- **Tester** (a Discord person) will try a version and look for bugs; reply given (releases link + Save logs zip
+  + screenshot/video).
+- **Not tested in game yet**: Family tab / Character editor (0.8-0.9), M2 own portraits, Edit region, new faction
+  in a new region (0.9.1), M2 castle fix (0.7.5), unit packs, M3.
+- The user's wishes not built: M2 battle_models.modeldb; whole-map rescale; faction / building packs; culture of
+  its own; strat-map flags; texture recolour; model viewer; Rome portraits of one's own (only if REX supports a
+  `portrait` line - ask/check REX); portraits for records (M2 may take `portrait` there too - check).
 
 ## Next
 
