@@ -200,7 +200,8 @@ template's building descriptions; Restore and recreate them.
   world/maps of vanilla or a mod.
   The user loaded M2TW in the tool: it already works (same engine family). Still to
   add/check: the new-agent dialog offers only spy/assassin/diplomat (gui.py AGENTS) -
-  M2TW also has merchant, priest, princess (+ heretic, witch, inquisitor are game-made);
+  M2TW also has merchant, priest, princess, inquisitor (the user: it is in the game - the
+  Pope's agent; offer it too; heretic/witch belong to the rebels, check in his files);
   the map already draws M and P letters. Find the other differences against his
   unpacked files (settlement castle vs city, descr_regions religions line, faction
   block fields, descr_sm_factions format, character lines, text in data/text/english).
