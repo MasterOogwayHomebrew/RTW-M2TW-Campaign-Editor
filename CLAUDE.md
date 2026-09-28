@@ -337,6 +337,13 @@ The user tests first and collects; do these together when he says so.
     whether M2 starts after Restore at all (unpacked data may make the game read the text
     vegetation - then descr_vegetation.txt must go). Pending his answer.
 
+14. **New mod folder: "a heap of files"** - the user did not know what a hard link is and was
+    surprised by 29666 files in RTW_New/data. Say it in the dialog and the done message in plain
+    words: the files show full size in Explorer but take no disk space (35 MB really copied);
+    deleting the mod folder never touches the game; only an editor that overwrites a linked file in
+    place changes the original (the tool itself never does). Mod on the plain game made fine (full
+    link copy, loads: 21 factions, 2 campaigns).
+
 Fixed already (on the session branch, 2026-09-28): 7 (text/english), the RTW new-region crash
 (labels) and the core-building crash (see the rules above).
 
