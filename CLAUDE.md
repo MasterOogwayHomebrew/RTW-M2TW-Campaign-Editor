@@ -211,6 +211,14 @@ bottom-up TGA; `gui_editors.RecordEditor`); Plan.apply records new binary files 
   uncompressed), ui/faction_icons, FE_flags. Take the requirements from the template's
   own files (same size and depth), convert PNG/JPG with Pillow, warn on a wrong size.
   Medieval II: check its own list on his unpacked files.
+  The user: a full faction has MANY pictures - from buttons to the campaign-select
+  map that lights up the faction's lands (vanilla campaign folder map_<f>.tga,
+  384x237 24-bit; also leader_pic_<f>.tga, description_<f>.txt there). The clone
+  already copies every picture named after the template (clone.art_files: ui, menu,
+  loading_screen, campaign folder). Plan: a "Faction art" panel listing EVERY file
+  of the faction (same search), with thumbnail, size/format needed and Replace...;
+  and map_<f>.tga made by the tool from its start regions (the template's map as the
+  background, the faction's land tinted in its colour, map_regions scaled to it).
 
 ## Next
 
