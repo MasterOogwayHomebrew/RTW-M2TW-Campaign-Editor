@@ -44,6 +44,13 @@ once); patch `messagebox.show*/askyesno` in the script or a dialog blocks it.
 
 ## What the tool is
 
+**Two games: Rome: Total War (+ REX) and Medieval II: Total War.** The user counts M2TW as
+a supported game now, not an extra: every feature and every new rule is thought through for
+both (M2 differences so far: `mods/<name>/data`, text in `data/text/english`, character lines
+with the sex, `settlement castle`, religions, agent kinds from descr_character; see "Done in
+0.2.0"). What is checked only on Rome must be said so; the M2 parts still need his unpacked
+.txt files for a full test.
+
 Python 3, standard library + **Pillow** (pictures; in the exe build). tkinter
 window + command line. Adds a faction to an RTW mod by cloning a template, or
 **edits an existing one**, previews every change, writes with a backup
