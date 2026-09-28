@@ -223,6 +223,11 @@ copy_building + copy_text_entries; RecordEditor "Copy as new...".
 
 ## Collected for the next patch (the user asked to gather, not change yet)
 
+- Unit texture recolour (the user wants it, and the Discord REX people asked for model work): give a unit to
+  another faction without Blender - descr_model_battle `texture <faction>, <path>` lines per faction; copy
+  the template faction's texture, shift its faction-colour pixels (hue range picked on a preview) to the new
+  faction's colours, write it next to it (same size/format; RTW textures are often .tga.dds - check on his
+  files), add the `texture` line (+ BI/REX variants). Later: a model viewer (.cas).
 - Unit/building editors next steps: 3D models (descr_model_battle, .cas/.ms3d),
   textures, strat model, icons; unit transfer between mods (the M2 GUI Toolkit has it); a real form per field type.
 - The user's long-term idea: once the product is mature, show it to the Total War
