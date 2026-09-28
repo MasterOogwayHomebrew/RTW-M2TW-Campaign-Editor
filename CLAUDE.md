@@ -91,6 +91,7 @@ byte-exactly.
 | `roster.py`, `gui_roster.py` | what a faction has: `roster()`, `give_unit`/`take_unit` (EDU ownership + EDB recruit factions + cards), `set_level` (level `requires factions`), `apply(plan, faction, {'unit:<t>'|'building:<c>:<l>': give})`; Roster tab (Edit), opts `roster`, App.roster_set in UNDO_KEYS |
 | `settings.py` | faction_tool_settings.json next to the log: map_legend, mod_data (last mod), game, campaigns {data: campaign}; `newmod.list_mods(game)` / `game_of(data)` fill the Mod list |
 | `gamefix.py` | set-up problems that stop a game from starting (M2EX vegetation_source text), fixed on Load with a yes |
+| `theme.py` | Light / Dark: one 'clam' ttk style + tk widgets recoloured (a `<Map>` binding on every widget; palette colours map both ways, meaning colours kept); settings `theme`; tabs styled (TNotebook.Tab) |
 | `cli.py` | `list towns names example new scan newmod slim manifest restore` |
 
 Tests: `python -m unittest discover -s tests` (a synthetic mini-mod; 20+ tests,
@@ -206,7 +207,7 @@ restore byte-identical). GUI checks: `xvfb-run -a python3.12 script.py` with
   keyed by the block's first line (a rename keeps it); removal never of `required_keys` (keys every
   unit / level has) or structure lines; `check_text` refuses unknown units / chains / levels.
 
-## Status (2026-09-28: v0.5.0 in the works; v0.1.0 released: github.com/MasterOogwayHomebrew/RTW-faction-tool/releases/tag/v0.1.0)
+## Status (2026-09-28: v0.6.0 built, not released; v0.1.0 released: github.com/MasterOogwayHomebrew/RTW-faction-tool/releases/tag/v0.1.0)
 
 Done and tested in game: new faction by template; separate mod folder; scan +
 ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
@@ -398,6 +399,19 @@ The user tests first and collects; do these together when he says so.
     needs. **Ask the user which two DLLs and from where to where** (not known yet). Every such
     set-up fix goes through `gamefix.py` (problems / fix_plan; asked on Load, a no remembered in
     settings `fixes_declined`; backup + Restore).
+
+**Done in 0.6.0 (2026-09-28, the user said "do it")**: 1 (garrison "own units / mercenaries / own +
+mercenaries"; FieldTable Show by kind + sort by heading, rows keep their index as iid), 2
+(`editors.block_facets` / `chain_group`; RecordEditor Show + Sort), 3 + 5 (`gui_art`: map up to 2x, cards
+reflow; `factionart.PICTURE_KINDS`, `where_shown`), 6 + 15 (theme.py), 8 (`CampaignMap.background(tiles,
+relief, rivers)`, grid at z >= 10; settings `map_look`), 9 (Region tags (hidden resources), `App._region_tag_names`
+= descr_regions line 6 + EDB resource/hidden_resource), 10 (`new_land` + region_points outside Regions mode), 11
+(political alpha 205), 12 (pending_parts / _write: editors first, then the faction; RecordEditor.rebind keeps
+changes while its file's md5 is unchanged; Edit faction switch asks apply/drop/stay; `_baseline` =
+`_faction_state()`), 14 (dialog + done message), 16 (`newmod.mod_target`, `is_medieval2`, `_m2_start`: .cfg
+`[features] mod = mods/<name>` + bat `start "" <exe> @mods\<name>\<name>.cfg`; M2EX.exe strings confirm .cfg
+and mods/<folder>, the @cfg start is the standard M2 one - to be checked by the user). Still open: 17 (which two
+DLLs - asked the user). Not tested in game yet.
 
 Fixed already (on the session branch, 2026-09-28): 13 (gamefix.py: on Load the tool offers to set
 `vegetation_source binary` itself, with the user's yes; tested in the window on his M2 files),
