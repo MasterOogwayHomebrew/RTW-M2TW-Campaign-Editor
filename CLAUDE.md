@@ -410,8 +410,10 @@ relief, rivers)`, grid at z >= 10; settings `map_look`), 9 (Region tags (hidden 
 changes while its file's md5 is unchanged; Edit faction switch asks apply/drop/stay; `_baseline` =
 `_faction_state()`), 14 (dialog + done message), 16 (`newmod.mod_target`, `is_medieval2`, `_m2_start`: .cfg
 `[features] mod = mods/<name>` + bat `start "" <exe> @mods\<name>\<name>.cfg`; M2EX.exe strings confirm .cfg
-and mods/<folder>, the @cfg start is the standard M2 one - to be checked by the user). Still open: 17 (which two
-DLLs - asked the user). Not tested in game yet.
+and mods/<folder>, the @cfg start is the standard M2 one - to be checked by the user). 17 done after: `gamefix.unpack_needed / unpack`
+(msvcp71.dll + msvcr71.dll - medieval2.exe imports both, so they sit in the game folder - copied next to
+tools/unpacker/unpacker.exe, then `cmd /c unpack_all.bat` with newlines on stdin for its pause; offered
+from App.load when ModData fails on a folder with packs/; the real unpack_all.bat not seen yet). Not tested in game yet.
 
 Fixed already (on the session branch, 2026-09-28): 13 (gamefix.py: on Load the tool offers to set
 `vegetation_source binary` itself, with the user's yes; tested in the window on his M2 files),
