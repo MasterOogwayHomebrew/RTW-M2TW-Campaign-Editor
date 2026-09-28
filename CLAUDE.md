@@ -185,6 +185,11 @@ must be re-tested with 0.2.0.
   level allows drops to its chain's biggest allowed level (or none), with a note;
   raising the level or the core building raises the other side (level <-> core) as
   now. Whether raising should also upgrade the other chains: ask the user.
+- Map layers must follow every change at once (e.g. Political after a town is taken,
+  given, moved, a region painted - no stale colours until a redraw/tab change).
+- Regions mode: switch the Political layer off (the regions layer replaces it; the
+  checkbox should show that and come back when Regions is left), and rework the
+  Regions/Resources bars - clearer, less cramped (ask the user what bothers him most).
 
 ## Next
 
