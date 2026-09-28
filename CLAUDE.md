@@ -180,6 +180,13 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   trait's `Characters` line (family / spy / princess ...). Checked on vanilla julii and england (write + Restore
   byte-exact); not yet in game. Open: portraits on the cards, dead people (M2 `dead_until_resurrected` is a
   faction line, not a person), a wife for a man on the map written as a record (vanilla does the same).
+- **Portraits**: Rome - no portrait of one's own in descr_strat (as far as the files show); the game rolls one of
+  ui/<portrait_mapping>/portraits/portraits/young|old|dead/<generals|civilians|rogues>/NNN.tga (69x96, cards
+  44x63 under portraits/cards/ with the same numbers), off-map family ui/<c>/portraits/family/wife|son|daughter.tga
+  (only eastern/egyptian/roman in vanilla). Medieval II (medieval2.exe / M2EX strings): `, portrait <folder>` on the
+  character line -> data/ui/custom_portraits/<folder>/portrait_young|old|dead.tga (norman_prologue uses it); pool
+  ui/%s/portraits/portraits/young|old/%s[_%s]/%03d.tga. family.portraits / set_portraits; the user's M2 upload has no
+  ui/ folder, so M2 pools are untested; ask for ui/<culture>/portraits + ui/custom_portraits.
 - **REX** takes one `-mod:` folder, falls back to the game's `data`; no mod chain.
   REX looks for the sound pack **by the mod's name** (`<mod>/data/sounds/<mod>.idx`),
   so a new mod folder also gets `HLR.idx/.dat` under its own name.
@@ -251,7 +258,7 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   keyed by the block's first line (a rename keeps it); removal never of `required_keys` (keys every
   unit / level has) or structure lines; `check_text` refuses unknown units / chains / levels.
 
-## Status (2026-09-29: v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
+## Status (2026-09-29: v0.9.0 released (Character editor = FamilyEditor(standalone) in App.editors['characters']; portraits); v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
 
 Done and tested in game: new faction by template; separate mod folder; scan +
 ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
