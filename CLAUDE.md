@@ -178,36 +178,25 @@ section like Rome's; text in data/text/english. Still to check with his unpacked
 Still open: the user wants nicer icons later (resources, agents); the M2 crash
 must be re-tested with 0.2.0.
 
+## Done in 0.3.0 (not yet tested in game)
+
+Princess/witch names from 'women' (`strat.first_names`, FEMALE_KINDS); lowering the
+level or core building pulls other buildings down (`BuildingsEditor.fit_down`,
+`App._level_to`); Layers menu in MapView (v_pol, v_borders, ... ; Edit regions saves
+and restores Political/Borders; political() takes borders and painted); work bar at
+the top (`v_work`: new / edit / units / buildings; `App.editor()`, `work_changed`);
+Unit/Building editors (`editors.py` data: unit_blocks, building_blocks, fields,
+set_value, apply_fields, picture targets/needs, tga_bytes = uncompressed 32-bit
+bottom-up TGA; `gui_editors.RecordEditor`); Plan.apply records new binary files as
+'created' (Restore deletes them); template fills denari and colours in New mode.
+
 ## Collected for the next patch (the user asked to gather, not change yet)
 
-- Buildings: lowering the governor's (core) building or the settlement level must
-  pull the other chains down too - each picked level above what the new settlement
-  level allows drops to its chain's biggest allowed level (or none), with a note;
-  raising the level or the core building raises the other side (level <-> core) as
-  now. Whether raising should also upgrade the other chains: ask the user.
-- Map layers must follow every change at once (e.g. Political after a town is taken,
-  given, moved, a region painted - no stale colours until a redraw/tab change).
-- Regions mode: switch the Political layer off (the regions layer replaces it; the
-  checkbox should show that and come back when Regions is left), and rework the
-  Regions/Resources bars - clearer, less cramped (ask the user what bothers him most).
-
-- Names: men get descr_names 'characters' only (right). BUG to fix: a new M2TW
-  princess (female agent) is offered and checked against the men's list - she must
-  take 'women' (add_field + start.extra_characters by the kind's sex).
-- Window layout rework (user's plan):
-  * New faction and Edit faction as separate tabs/sections, not the two radio
-    buttons top right; "create a faction" is a tab on a par with the unit and
-    building editors.
-  * Picking a faction (to edit, or as a template) fills every field it has data for.
-  * Map layers in a drop-down menu (Political, Borders, names, ports, characters,
-    resources, diplomacy...); Regions mode switches Political and Borders off itself.
-- Unit editor and building editor (first steps): every field of the EDU / EDB block
-  as a form (name, cost, upkeep, stats... "like the faction form"), and file import
-  that puts each file where the game wants it - units: card, info picture, 3D model,
-  textures, icons...; buildings: model, card, description picture.
+- Unit/building editors next steps: 3D models (descr_model_battle, .cas/.ms3d),
+  textures, strat model, icons; new unit / new building (copy one, rename, all files);
+  unit transfer between mods (the M2 GUI Toolkit has it); a real form per field type.
 - The user's long-term idea: once the product is mature, show it to the Total War
   publishers.
-
 - Faction art import (like units/buildings): load through the tool every picture that
   makes a faction and have it put in the right place, with the requirements shown up
   front (size, format - 32-bit TGA etc.). RTW: descr_sm_factions `symbol` (strat CAS
