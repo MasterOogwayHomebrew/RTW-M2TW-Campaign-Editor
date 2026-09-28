@@ -164,6 +164,10 @@ template's building descriptions; Restore and recreate them.
   (+ its models/icons). Region-level resource tags are line 6 of descr_regions
   (HLR: hidden_resources that open units). Map: draw resource icons, drag them,
   a Resources brush/mode like Regions.
+- After Restore the Map tab still shows the old map until the tab is changed:
+  load_campaign sets `_cmap_for = None`, but nothing redraws an open Map tab -
+  call show_map() at the end of load_campaign when the Map tab is the current one
+  (the files themselves are restored byte-exactly, incl. map_regions.tga and map.rwm).
 
 ## Next
 
