@@ -205,6 +205,19 @@ template's building descriptions; Restore and recreate them.
   unpacked files (settlement castle vs city, descr_regions religions line, faction
   block fields, descr_sm_factions format, character lines, text in data/text/english).
 
+- Units & armies tab: the "Armies, agents & fleets" list (gui.py, lb_field, height 6,
+  under the towns list) is too small to view and edit. Fleets are in it (admirals ->
+  "fleet"); family members without an army are left out; M2TW priest/princess too.
+  Make it bigger and clearer: e.g. a resizable split with the towns list, or a table
+  (kind, name, units, tile) with icons.
+- M2TW: the user got a crash after taking 5 rebel towns for France, moving the town
+  and port of Rennes and painting 96 tiles to Rennes (backup 20260928_115211_france,
+  restored). Cause unknown - needs his M2TW system.log.txt and unpacked files.
+- M2TW religions: descr_regions entries there have a religions line
+  (`religions { catholic 90 ... }`, as far as known - confirm on his files); a new
+  region needs it (copy the donor region's); show/edit religions per region.
+- M2TW merchant: a proper map icon (now the letter M).
+
 ## Next
 
 1. User's in-game test: existing armies/fleets/agents in the list (units, remove),
