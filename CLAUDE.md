@@ -380,6 +380,12 @@ with the repo; signs in GitHub Actions), or Azure Trusted Signing (~10 USD/month
 or a paid OV certificate (SmartScreen still warns until reputation grows; EV removes it at once, costly).
 Meanwhile: submit each release exe to Microsoft (microsoft.com/wdsi/filesubmission) as a false positive.
 Once he has one, add the signing step to release.yml / build.yml. License: MIT already (LICENSE, README).
+**Applied to SignPath Foundation 2026-09-29** (name RTW Campaign Editor, homepage = repo, download URL =
+README#code-signing-policy, reputation = the YouTube video m1sCPg-Lzsw + releases + REX Discord). README has
+the "Code signing policy" section (their wording) and SECURITY.md exists. When approved: the user sends the
+SignPath organisation / project / signing policy slugs, he adds the API token as a repo secret, then add
+signpath/github-action-submit-signing-request to release.yml (upload the exe as an artifact first). Remind
+him to enable Private vulnerability reporting (Settings -> Security) for SECURITY.md.
 
 ## TOP PRIORITY (the user, 2026-09-28, very keen): EXPORT / IMPORT packs
 
