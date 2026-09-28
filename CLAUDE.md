@@ -179,12 +179,13 @@ template's building descriptions; Restore and recreate them.
 
 - Logs for testers: the Log window (Tools > Log) only shows faction_tool.log. Add a
   "Save logs..." button: one zip (save dialog) with faction_tool.log + the game's
-  newest system.log.txt / REX `<mod>_logs_<stamp>.zip` / `report-*.txt` found near
-  the loaded mod (mod folder, game folder, their `logs`), and say which were found.
-  The `HLR_logs_<stamp>.zip` the user sent comes from HLR's own "collect logs" .bat
-  (zip put in the HLR folder: system.log.txt + report-<n>-<date>.txt); most mods and
-  vanilla have no such .bat, so the tool must find and pack the logs itself. Read
-  that .bat (ask the user for it) to learn where the game/REX write them.
+  logs, for any mod or vanilla, and say which were found. Where they are (from
+  HLR's `Collect_logs.bat`, which makes `<mod>_logs_<stamp>.zip` in the mod folder):
+  `<game>/system.log.txt` (the game's working folder: Start_mod.bat does `cd ..\.`
+  before `REX.exe ... -mod:HLR`) and the newest `<game>/reports/*.txt` (REX crash
+  report `report-<nick>-<n>-<date>.txt`; the .bat strips the nick to
+  `report-<n>-<date>.txt` for privacy - do the same). Neither may exist (no crash
+  yet; vanilla without REX may not log) - say so instead of failing.
 
 ## Next
 
