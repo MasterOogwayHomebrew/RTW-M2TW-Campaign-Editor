@@ -265,7 +265,7 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   keyed by the block's first line (a rename keeps it); removal never of `required_keys` (keys every
   unit / level has) or structure lines; `check_text` refuses unknown units / chains / levels.
 
-## Status (2026-09-29: v0.9.3 released (portrait library portraits.py + PortraitLibrary window; Art select map optional, off = originals kept, sel_map {'on'}); v0.9.2 renamed RTW & M2TW Campaign Editor; v0.9.1 released (Edit region..., new regions in the towns list at once, a new faction starts in a new region by one Apply - regionedit.apply_opts is the one writer of region work, plan_land/free_tile(start, own)); v0.9.0 released (Character editor = FamilyEditor(standalone) in App.editors['characters']; portraits); v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
+## Status (2026-09-29: v0.9.4 (bi descr_regions fix: moddata.region_entries is the one reader/writer layout; bi manifest merged into rtw_gold_steam_manifest as bi/...); v0.9.3 (portrait library portraits.py + PortraitLibrary window; Art select map optional, off = originals kept, sel_map {'on'}); v0.9.2 renamed RTW & M2TW Campaign Editor; v0.9.1 released (Edit region..., new regions in the towns list at once, a new faction starts in a new region by one Apply - regionedit.apply_opts is the one writer of region work, plan_land/free_tile(start, own)); v0.9.0 released (Character editor = FamilyEditor(standalone) in App.editors['characters']; portraits); v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
 
 Done and tested in game: new faction by template; separate mod folder; scan +
 ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
@@ -647,6 +647,10 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
 - **SignPath Foundation**: application sent 2026-09-29, only the receipt mail so far ("few business days"). When
   approved: he sends organisation / project / signing-policy slugs, adds secret SIGNPATH_API_TOKEN; then add
   signpath/github-action-submit-signing-request to release.yml. He should enable Private vulnerability reporting.
+- **Repo renamed** by the user to MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor (GitHub redirects; the session's
+  git remote still says RTW-faction-tool - repointing it was refused by the permission check, pushes work via the
+  redirect). He turned on **code scanning** (security/code-scanning/1): the GitHub tools here cannot read alerts -
+  ask him to paste the alert text (rule, file, line) and fix it.
 - **Tester** (a Discord person) will try a version and look for bugs; reply given (releases link + Save logs zip
   + screenshot/video).
 - **Not tested in game yet**: Family tab / Character editor (0.8-0.9), M2 own portraits, Edit region, new faction
@@ -666,9 +670,7 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
 1. User's in-game test: existing armies/fleets/agents in the list (units, remove),
    garrison shown as it stands, empty-town warning; and M3 again after the crash fix (fleets: HLR marks every
    ship a mercenary; vanilla gives ships by culture).
-2. Use the vanilla + REX manifests in Scan (game file / REX file / changed / mod
-   file) and newmod. **Later** the user sends a game manifest with `bi` (his
-   `bi` now has REX's overlay; subtract `rex_manifest`); no hurry.
+2. (done 0.9.4: the bi manifest is merged into rtw_gold_steam_manifest as bi/..., REX's overlay file left out.)
 3. (done in 0.5.0: mod finder, roster) - the user tests Roster and Add line in the game.
 4. Slimmed plain-game mods: load them with the game's data as a fallback (see 0.5.0 notes).
 5. Run Check mod (deep) on other mods the user sends (only .txt + world/maps).
