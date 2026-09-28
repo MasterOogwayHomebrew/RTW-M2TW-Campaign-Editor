@@ -73,10 +73,13 @@ restore byte-identical). GUI checks: `xvfb-run -a python3.12 script.py` with
 - **One army per settlement** at the start; a second one is refused ("already
   garrisoned") and sticks on the tile. Leader holds the capital, heir the second
   town or a free tile next to it.
-- **Tiles** an army may start on: region's own land, no river/ford/cliff
-  (`map_features` non-black), no sea or mountain in the tile centre of
-  `map_ground_types` (2x+1 resolution), height range inside the tile <= 25
-  (`map_heights`). REX says "invalid tile" otherwise. Pick the flattest nearby.
+- **Tiles** a land character (army or agent alike - the user checked in the game)
+  may start on: land that is not sea, mountains, high mountains or dense forest
+  (map_ground_types tile centre, 2x+1 resolution) and has no river/ford/cliff
+  (`map_features` non-black) - `moddata.land_problem`. Hills, woodland, swamp and
+  steep tiles are fine (the old slope <= 25 rule refused HLR 150,246, a hills tile the
+  game accepts); REX's "invalid tile" crashes were a ford (406,42) and mountains (404,42).
+  A bad drop/placement goes to the nearest good tile (MapView.nearest).
 - **Settlements** move as whole `settlement { }` blocks; two blocks for a region
   is fatal. The capital is the faction's **first** settlement block.
 - **Text tables**: a value runs until the next `{KEY}` or `¬` line - long texts
@@ -150,76 +153,30 @@ Manifests in `docs/reference/`: vanilla game (without `bi`) and REX's own files
 multi-line text fix (Saba, Galatia, Byzantium in HLR) may have cut the
 template's building descriptions; Restore and recreate them.
 
-## Collected for the next patch (the user asked to gather, not change yet)
+## Done in 0.2.0 (the big patch; not yet tested in game)
 
-- New faction mode: dragging another faction's character does nothing - say
-  "move it in Edit of <faction>", or allow moving any character in New mode.
-- Armies refuse tiles agents accept (river/ford/cliff, sea/mountain centre,
-  slope > 25 - the rules from REX's "invalid tile" crashes). Show the exact reason
-  on hover/drag; check in game whether agents need the same rules.
-- Resources: place / move / remove map resources and give them to regions.
-  They are `resource <type>, x, y` lines near the top of descr_strat (vanilla 388
-  lines; HLR 2504, indented, with a `;<town>` comment, some with a quantity column
-  `resource iron, 1, 83, 128` - REX "resource quantity"). Types: descr_sm_resources.txt
-  (+ its models/icons). Region-level resource tags are line 6 of descr_regions
-  (HLR: hidden_resources that open units). Map: draw resource icons, drag them,
-  a Resources brush/mode like Regions.
-- After Restore the Map tab still shows the old map until the tab is changed:
-  load_campaign sets `_cmap_for = None`, but nothing redraws an open Map tab -
-  call show_map() at the end of load_campaign when the Map tab is the current one
-  (the files themselves are restored byte-exactly, incl. map_regions.tga and map.rwm).
+Resources on the map (`resources.py`: read/apply, types from descr_sm_resources,
+region tags = descr_regions line 6; one per tile, towns allowed - HLR keeps 749
+slaves on town tiles; sea refused); tiles as above with the reason shown and the
+nearest good tile; locked-character hint; buildings follow the settlement level
+both ways (`level_picked`, `BuildingsEditor.set_level/core_for`); Map/Diplomacy
+redrawn after reload; Save logs (zip) (`log.pack`: <game>/system.log.txt, newest
+<game>/reports/*.txt without the nick); field list as a table under a split
+(`FieldTable`), double click centres the map; agent signs per kind.
+Medieval II: `strat.character_line` writes the file's dialect (M2: `Name, kind,
+male|female[, leader|heir], age N, x X, y Y`; princess/witch female) - the likely
+cause of the user's crash (captains were written in Rome's form); agent kinds from
+descr_character.txt (`ModData.agent_kinds`, `start.KINDS` takes any agent type);
+religions (`regions()[r]['religions']`, `regionedit.set_religions`, 9th line for new
+regions from the donor; Religions... dialog). `newmod.GAME_EXES` knows M2EX/medieval2.
+M2 facts from the user's files (maps only so far): `settlement castle` blocks with
+core_castle_building; faction blocks have ai_label, denari_kings_purse; resources
+section like Rome's; text in data/text/english. Still to check with his unpacked
+.txt: descr_sm_factions format, names, EDU, a new faction by template, newmod
+(mods live in <game>/mods/<name>, started by a .cfg).
 
-- Buildings tab: settlement level, core building and the other chains out of step
-  (user's screenshot: large_city + proconsuls_palace, yet defenses offer only
-  wooden_pallisade). BuildingsEditor filters levels by `town_level` from the file
-  (the title still says "a town"), not by the level picked/derived in the window.
-  Wanted both ways: a core building sets level + population (done for the combobox
-  only), a level picked by hand sets the matching core building, and every chain
-  offers the levels of the resulting level (pass it to the editor and redraw).
-
-- Logs for testers: the Log window (Tools > Log) only shows faction_tool.log. Add a
-  "Save logs..." button: one zip (save dialog) with faction_tool.log + the game's
-  logs, for any mod or vanilla, and say which were found. Where they are (from
-  HLR's `Collect_logs.bat`, which makes `<mod>_logs_<stamp>.zip` in the mod folder):
-  `<game>/system.log.txt` (the game's working folder: Start_mod.bat does `cd ..\.`
-  before `REX.exe ... -mod:HLR`) and the newest `<game>/reports/*.txt` (REX crash
-  report `report-<nick>-<n>-<date>.txt`; the .bat strips the nick to
-  `report-<n>-<date>.txt` for privacy - do the same). Neither may exist (no crash
-  yet; vanilla without REX may not log) - say so instead of failing.
-
-- Medieval II (users asked for the same editor): `docs/reference/m2tw_manifest.json.gz`
-  is the user's M2TW Steam install (2832 files, 16.5 GB; made with the RTW manifest
-  code, so the `mods/` folders are inside). It has `M2EX.exe` (an engine extension,
-  like REX), `medieval2.exe`, `packs/data_0..4.pack`, `tools/unpacker/` (unpack_all.bat,
-  unpacker.exe), launch .bats per expansion. `mods/americas|british_isles|crusades|
-  teutonic` = the Kingdoms campaigns (data + packs). Loose in vanilla `data/`: descr_strat
-  (campaign/imperial_campaign), descr_regions + map_regions.tga (maps/base), EDB, text
-  tables (`data/text/<language>/`, not `data/text/`); still packed: export_descr_unit,
-  descr_sm_factions, descr_names, descr_character, banners - need unpack_all first.
-  Plan: a game mode in the same tool after the RTW patch; needs the unpacked .txt +
-  world/maps of vanilla or a mod.
-  The user loaded M2TW in the tool: it already works (same engine family). Still to
-  add/check: the new-agent dialog offers only spy/assassin/diplomat (gui.py AGENTS) -
-  M2TW also has merchant, priest, princess, inquisitor (the user: it is in the game - the
-  Pope's agent; offer it too; heretic/witch belong to the rebels, check in his files);
-  the map already draws M and P letters. Find the other differences against his
-  unpacked files (settlement castle vs city, descr_regions religions line, faction
-  block fields, descr_sm_factions format, character lines, text in data/text/english).
-
-- Units & armies tab: the "Armies, agents & fleets" list (gui.py, lb_field, height 6,
-  under the towns list) is too small to view and edit. Fleets are in it (admirals ->
-  "fleet"); family members without an army are left out; M2TW priest/princess too.
-  Make it bigger and clearer: e.g. a resizable split with the towns list, or a table
-  (kind, name, units, tile) with icons.
-- M2TW: the user got a crash after taking 5 rebel towns for France, moving the town
-  and port of Rennes and painting 96 tiles to Rennes (backup 20260928_115211_france,
-  restored). Cause unknown - needs his M2TW system.log.txt and unpacked files.
-- M2TW religions: descr_regions entries there have a religions line
-  (`religions { catholic 90 ... }`, as far as known - confirm on his files); a new
-  region needs it (copy the donor region's); show/edit religions per region.
-- Map icons for every agent kind (now letters, gui_map AGENT_LETTER): spy, assassin,
-  diplomat, merchant, priest, princess (+ heretic/witch/inquisitor if met), each its
-  own icon; drawn by the tool (or the game's own pictures if found in the mod's ui).
+Still open: the user wants nicer icons later (resources, agents); the M2 crash
+must be re-tested with 0.2.0.
 
 ## Next
 
