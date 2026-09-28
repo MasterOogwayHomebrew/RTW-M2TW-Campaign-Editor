@@ -157,6 +157,13 @@ template's building descriptions; Restore and recreate them.
 - Armies refuse tiles agents accept (river/ford/cliff, sea/mountain centre,
   slope > 25 - the rules from REX's "invalid tile" crashes). Show the exact reason
   on hover/drag; check in game whether agents need the same rules.
+- Resources: place / move / remove map resources and give them to regions.
+  They are `resource <type>, x, y` lines near the top of descr_strat (vanilla 388
+  lines; HLR 2504, indented, with a `;<town>` comment, some with a quantity column
+  `resource iron, 1, 83, 128` - REX "resource quantity"). Types: descr_sm_resources.txt
+  (+ its models/icons). Region-level resource tags are line 6 of descr_regions
+  (HLR: hidden_resources that open units). Map: draw resource icons, drag them,
+  a Resources brush/mode like Regions.
 
 ## Next
 
