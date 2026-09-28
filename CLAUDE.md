@@ -383,6 +383,16 @@ Fixed already (on the session branch, 2026-09-28): 7 (text/english), the RTW new
   the template faction's texture, shift its faction-colour pixels (hue range picked on a preview) to the new
   faction's colours, write it next to it (same size/format; RTW textures are often .tga.dds - check on his
   files), add the `texture` line (+ BI/REX variants). Later: a model viewer (.cas).
+- **RTW strat-map flags** (the user sent data/banners, 2026-09-28): banners/symbols1..8.tga.dds =
+  DXT 128x128 RGBA atlases, each 2x2 symbols of 64x64 (32 slots, 28 used in his vanilla: laurel,
+  dagger, lambda, ankh, crown ... elephant; the last 4 slots of symbols7/8 hold duplicates / empty);
+  strat_flag.CAS + strat_flag.tga.dds (the flag cloth), navy_banner.CAS + navy_julii.tga.dds.
+  Guess to check: a faction's slot follows its order in descr_sm_factions (4 per atlas) - a new
+  faction needs its symbol drawn into the next free slot (REX: more factions -> more atlases?).
+  Faction art should list "strat-map flag symbol (slot N of symbolsK)" with a Replace that writes
+  the 64x64 quadrant back as DXT (Pillow reads DDS; writing DXT needs an encoder - check).
+  Also descr_sm_factions `symbol models_strat/symbol_<f>.CAS` (3D strat symbol) and descr_model_strat
+  per-faction `texture <faction>, data/models_strat/textures/navy_<f>.tga` (fleets).
 - Unit/building editors next steps: 3D models (descr_model_battle, .cas/.ms3d),
   textures, strat model, icons; unit transfer between mods (the M2 GUI Toolkit has it); a real form per field type.
 - The user's long-term idea: once the product is mature, show it to the Total War
