@@ -168,6 +168,9 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   less than the settlement level!"): the core chain's 1st level is a town's, 2nd a large town's...,
   a village has none (`buildings.core_settlement / core_level_for`); settlement_min is only where a
   level may be built. A new region bigger than a village gets its core level written.
+- **M2 castles: core_castle_building level = settlement level** (fatal "The castle core building level
+  should be EQUAL the settlement level!", the user's M2_New, 0.7.4 raised Ajaccio motte_and_bailey
+  village -> town): `buildings.core_offset` 0 for a chain named *castle*, 1 for core_building.
 - **REX** takes one `-mod:` folder, falls back to the game's `data`; no mod chain.
   REX looks for the sound pack **by the mod's name** (`<mod>/data/sounds/<mod>.idx`),
   so a new mod folder also gets `HLR.idx/.dat` under its own name.
@@ -239,7 +242,7 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   keyed by the block's first line (a rename keeps it); removal never of `required_keys` (keys every
   unit / level has) or structure lines; `check_text` refuses unknown units / chains / levels.
 
-## Status (2026-09-28: v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
+## Status (2026-09-29: v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
 
 Done and tested in game: new faction by template; separate mod folder; scan +
 ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
