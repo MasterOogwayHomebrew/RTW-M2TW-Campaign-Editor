@@ -92,6 +92,7 @@ byte-exactly.
 | `settings.py` | faction_tool_settings.json next to the log: map_legend, mod_data (last mod), game, campaigns {data: campaign}; `newmod.list_mods(game)` / `game_of(data)` fill the Mod list |
 | `gamefix.py` | set-up problems that stop a game from starting (M2EX vegetation_source text), fixed on Load with a yes |
 | `theme.py` | Light / Dark: one 'clam' ttk style + tk widgets recoloured (a `<Map>` binding on every widget; palette colours map both ways, meaning colours kept); settings `theme`; tabs styled (TNotebook.Tab) |
+| `packs.py` | unit packs: `collect` / `export_pack` / `read_pack` / `plan_names` / `import_pack` (EDU block + descr_model_battle / descr_mount / descr_engines / descr_animals blocks + every file they name + cards + export_units texts + recruit places); Unit editor Export pack... / Import pack... |
 | `cli.py` | `list towns names example new scan newmod slim manifest restore` |
 
 Tests: `python -m unittest discover -s tests` (a synthetic mini-mod; 20+ tests,
@@ -235,7 +236,7 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   keyed by the block's first line (a rename keeps it); removal never of `required_keys` (keys every
   unit / level has) or structure lines; `check_text` refuses unknown units / chains / levels.
 
-## Status (2026-09-28: v0.6.0 built, not released; v0.1.0 released: github.com/MasterOogwayHomebrew/RTW-faction-tool/releases/tag/v0.1.0)
+## Status (2026-09-28: v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
 
 Done and tested in game: new faction by template; separate mod folder; scan +
 ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
@@ -321,6 +322,22 @@ copy_building + copy_text_entries; RecordEditor "Copy as new...".
   settlement blocks, descr_mercenaries pools (new region joins its donor's pool),
   campaign-select maps (factionart.future(plan) = the map as the plan leaves it;
   region_factions -> redraw_others(force)). Not tied: radar_map (terrain only).
+
+## Done in 0.7.0 (2026-09-28; the user: "start the patch and release, test it yourself")
+
+- **Unit packs** (packs.py, Unit editor buttons): tested on the user's RTW files (roman hastati +
+  barb peasant briton into a copy: renamed "... 2", model shared when identical, 9 recruit lines,
+  Restore byte-identical) and in the window (export, import dialog, write, the unit in the list);
+  synthetic test with model / mount / .tga.dds texture / clash rename. Models / textures are only
+  in the pack when the source mod has them (vanilla keeps them in the game's data - said in the
+  export message). Faction and building packs: still to do.
+- **M2 campaign-select map** refit (`factionart._fit_lit`: each vanilla faction's lit pixels against
+  its start regions, IoU, scale per axis; frame now (sx, sy, dx, dy), settings `select_frames2`;
+  M2 vanilla ~ (1.386, 1.40-1.41, -27/-28, 4-5)); solid fill + border lines kept + dark outline.
+  The user saw the old one shifted right in the game.
+- 18, 20, 21, 22 done (see below). Art picture Replace tested in the window: a 200x200 PNG became
+  the 44x63 32-bit captain card and shows after Apply.
+- README: Ko-fi button (ko-fi.com/img/githubbutton_sm.svg) + text; .github/FUNDING.yml `ko_fi: pfadfinder`.
 
 ## TOP PRIORITY (the user, 2026-09-28, very keen): EXPORT / IMPORT packs
 
