@@ -270,6 +270,31 @@ copy_building + copy_text_entries; RecordEditor "Copy as new...".
   campaign-select maps (factionart.future(plan) = the map as the plan leaves it;
   region_factions -> redraw_others(force)). Not tied: radar_map (terrain only).
 
+## The user's 0.5.0 test (M2, vanilla, france) - fix all in one big patch, not one by one
+
+The user tests first and collects; do these together when he says so.
+
+1. **Units & armies, roster "Show"**: mercenaries only mix in (checkbox `v_merc` in
+   `gui_garrison.py` adds them to the rest). Wanted: a simple filter - all / own units only /
+   mercenaries only (+ general's units), next to the category box.
+2. **Unit editor / Building editor lists** (`gui_editors.RecordEditor` left list): sort / filter
+   by faction (owner), by type (category, class; building chain type), mercenaries apart
+   (and agents - the character list too). Now it is one flat list in file order.
+3. **Art tab: lots of empty space** (right of the map preview, right of the 2-column picture
+   list). Use the width: bigger map preview, pictures in as many columns as fit (reflow on
+   resize), or a details pane.
+4. **Art tab, M2 campaign-select map is off**: the lit land is shifted/scaled (France lit over
+   Italy-Alps side, north-west part missing). M2 map_<f>.tga is 384x275 with a wide decorated
+   frame (RTW 384x237); `select_mask` stretches map_regions over the whole picture. Find the map
+   area inside the frame (fit the template's own lit land against its regions, or detect the
+   frame), then draw only there. Also the M2 select maps look different (parchment, borders
+   drawn) - check the look against his original map_france.tga.
+5. **Art tab labels**: many pictures are just "picture" (`factionart.label_of`). Name them all
+   with where/what: menu/battlefield_pics -> "battle-select picture", fe_faction_units ->
+   "units picture on the faction screen", fe_symbols_80 -> "symbol on the faction screen",
+   ui/faction_symbols -> "faction symbol (in-game panels)", campaign vc_<f>.tga -> "victory
+   conditions map", and a line on where the game shows it, like the named ones have.
+
 ## Collected for the next patch (the user asked to gather, not change yet)
 
 - Unit texture recolour (the user wants it, and the Discord REX people asked for model work): give a unit to
