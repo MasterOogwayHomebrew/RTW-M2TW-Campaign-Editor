@@ -215,6 +215,11 @@ copy_building + copy_text_entries; RecordEditor "Copy as new...".
 - Taking or giving towns redraws the other factions' select maps (colour_on_map from
   their own map, inside their old land).
 - Restore of every kind of run checked byte-identical (diff -r against the original).
+- Things tied to regions (keep them in step when regions change): map_regions.tga,
+  descr_regions (+ religions in M2), the name lookup, region labels, map.rwm deleted,
+  settlement blocks, descr_mercenaries pools (new region joins its donor's pool),
+  campaign-select maps (factionart.future(plan) = the map as the plan leaves it;
+  region_factions -> redraw_others(force)). Not tied: radar_map (terrain only).
 
 ## Collected for the next patch (the user asked to gather, not change yet)
 
