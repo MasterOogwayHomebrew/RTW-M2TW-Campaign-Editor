@@ -434,6 +434,11 @@ The user tests first and collects; do these together when he says so.
     so garrison / buildings / capital can be set before one Apply; the plan writes the region and the
     settlement together. Not started - the user said "not yet".
 
+21. **New region dialog: "Built by" and "Rebels there" prefilled from the donor region** - the region the
+    new one's land is painted out of (the one under its town, or most of its tiles): its descr_regions
+    creator (line 3) and rebels (line 4), like tags / farming / religions already come from the donor.
+    Still changeable. Not started - "remember for now".
+
 19. **Map "strictly by tiles" = the picture itself, not the grid** (the user, with a screenshot): each tile
     one colour (the ground type at its middle, what the tool checks), relief and rivers worked out per
     tile too, then blown up NEAREST (`CampaignMap.background(tiles=True)`; checked: 0 tiles with two
