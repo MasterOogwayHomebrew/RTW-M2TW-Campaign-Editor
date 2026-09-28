@@ -150,6 +150,14 @@ Manifests in `docs/reference/`: vanilla game (without `bi`) and REX's own files
 multi-line text fix (Saba, Galatia, Byzantium in HLR) may have cut the
 template's building descriptions; Restore and recreate them.
 
+## Collected for the next patch (the user asked to gather, not change yet)
+
+- New faction mode: dragging another faction's character does nothing - say
+  "move it in Edit of <faction>", or allow moving any character in New mode.
+- Armies refuse tiles agents accept (river/ford/cliff, sea/mountain centre,
+  slope > 25 - the rules from REX's "invalid tile" crashes). Show the exact reason
+  on hover/drag; check in game whether agents need the same rules.
+
 ## Next
 
 1. User's in-game test: existing armies/fleets/agents in the list (units, remove),
