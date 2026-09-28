@@ -191,6 +191,23 @@ must be re-tested with 0.2.0.
   checkbox should show that and come back when Regions is left), and rework the
   Regions/Resources bars - clearer, less cramped (ask the user what bothers him most).
 
+- Names: men get descr_names 'characters' only (right). BUG to fix: a new M2TW
+  princess (female agent) is offered and checked against the men's list - she must
+  take 'women' (add_field + start.extra_characters by the kind's sex).
+- Window layout rework (user's plan):
+  * New faction and Edit faction as separate tabs/sections, not the two radio
+    buttons top right; "create a faction" is a tab on a par with the unit and
+    building editors.
+  * Picking a faction (to edit, or as a template) fills every field it has data for.
+  * Map layers in a drop-down menu (Political, Borders, names, ports, characters,
+    resources, diplomacy...); Regions mode switches Political and Borders off itself.
+- Unit editor and building editor (first steps): every field of the EDU / EDB block
+  as a form (name, cost, upkeep, stats... "like the faction form"), and file import
+  that puts each file where the game wants it - units: card, info picture, 3D model,
+  textures, icons...; buildings: model, card, description picture.
+- The user's long-term idea: once the product is mature, show it to the Total War
+  publishers.
+
 ## Next
 
 1. User's in-game test: existing armies/fleets/agents in the list (units, remove),
