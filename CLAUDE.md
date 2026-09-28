@@ -9,8 +9,8 @@ with him, what the tool does, what was learned the hard way, and where the work
 stands. Keep it up to date at the end of every piece of work.
 
 **Files here now (2026-09-28)**: scratchpad `VAN/` = the user's RTW Gold data (root .txt,
-text/, world/, ui/, banners/; no models/sounds); `M2/` = his Medieval II data (root .txt + world/;
-text/english still to come); `EXE/` = M2EX.exe and medieval2.exe (strings only; never commit).
+text/, world/, ui/, banners/; no models/sounds); `M2/` = his Medieval II data (root .txt, world/, text/ with
+.strings.bin + text/english/*.txt UTF-8 - the game reads the english .txt; tool reads them fine); `EXE/` = M2EX.exe and medieval2.exe (strings only; never commit).
 
 **A new session starts with no game files**: the container is fresh. Ask the user
 to upload what the task needs (his HLR `data` as 7z volumes, vanilla `data`, REX),
@@ -83,6 +83,7 @@ byte-exactly.
 | `regionedit.py` | new regions / region borders: `region_problems`, `apply_regions`, `free_colour`; Map Regions mode (paint, right-click pick, Its town/port); opts `regions` {painted, new} |
 | `roster.py`, `gui_roster.py` | what a faction has: `roster()`, `give_unit`/`take_unit` (EDU ownership + EDB recruit factions + cards), `set_level` (level `requires factions`), `apply(plan, faction, {'unit:<t>'|'building:<c>:<l>': give})`; Roster tab (Edit), opts `roster`, App.roster_set in UNDO_KEYS |
 | `settings.py` | faction_tool_settings.json next to the log: map_legend, mod_data (last mod), game, campaigns {data: campaign}; `newmod.list_mods(game)` / `game_of(data)` fill the Mod list |
+| `gamefix.py` | set-up problems that stop a game from starting (M2EX vegetation_source text), fixed on Load with a yes |
 | `cli.py` | `list towns names example new scan newmod slim manifest restore` |
 
 Tests: `python -m unittest discover -s tests` (a synthetic mini-mod; 20+ tests,
@@ -384,7 +385,17 @@ The user tests first and collects; do these together when he says so.
     starts a mod, the user's M2EX.exe is in scratchpad EXE/). Rome/REX: mods sit in the game root
     (HLR, RTW_New) and start with -mod:<name>; keep that.
 
-Fixed already (on the session branch, 2026-09-28): 4 (M2 select map: `factionart.select_frame`
+17. **M2 first start: unpack + two DLLs by the tool** (the user: "people don't want to dig in
+    files they don't know"): when a vanilla M2 is loaded and nothing is unpacked (no data/*.txt,
+    only packs/), offer (with a yes) to run the unpacker and move the two DLL files the unpack
+    needs. **Ask the user which two DLLs and from where to where** (not known yet). Every such
+    set-up fix goes through `gamefix.py` (problems / fix_plan; asked on Load, a no remembered in
+    settings `fixes_declined`; backup + Restore).
+
+Fixed already (on the session branch, 2026-09-28): 13 (gamefix.py: on Load the tool offers to set
+`vegetation_source binary` itself, with the user's yes; tested in the window on his M2 files),
+M2 faction-screen texts ({F_STRENGTH}, {F_WEAKNESS}, {F_UNIT} -> edit.EXTRA_TEXTS, Faction tab rows
+shown only when the faction has them; M2 has no {F_DESCR} tooltip and no short name), 4 (M2 select map: `factionart.select_frame`
 fits where the map lies - scale 1.314, dx -16, dy 12 on vanilla M2; same shape as the map = the
 Rome stretch; kept in settings `select_frames`), 7 (text/english), the RTW new-region crash
 (labels) and the core-building crash (see the rules above).
