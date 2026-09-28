@@ -198,6 +198,9 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
 - The settlement `level` in descr_strat does not follow the buildings: the tool
   raises it to the core_building level's settlement_min (`buildings.sized`),
   population to POP_MIN; opts `sizes` {region: {level, population}} by hand.
+- **The bottom bar (Preview / Apply ...) and the status line are packed side=bottom before the
+  notebook**; the notebook / editors are packed `after=self.bottom_bar`. Packed after the tabs, the
+  buttons were pushed off the window when a tab was taller (the user lost Apply while filming, 0.6).
 - Every change the window keeps calls `remember()` first (snapshot of UNDO_KEYS);
   new kept state must be added to UNDO_KEYS. After a reload the map is read again
   (`_cmap_for = None`) - a stale map once refused to move a town back.
@@ -236,7 +239,7 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   keyed by the block's first line (a rename keeps it); removal never of `required_keys` (keys every
   unit / level has) or structure lines; `check_text` refuses unknown units / chains / levels.
 
-## Status (2026-09-28: v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
+## Status (2026-09-28: v0.7.1 released (0.7.0 + the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
 
 Done and tested in game: new faction by template; separate mod folder; scan +
 ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
