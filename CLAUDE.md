@@ -98,6 +98,34 @@ Tests: `python -m unittest discover -s tests` (a synthetic mini-mod; 20+ tests,
 restore byte-identical). GUI checks: `xvfb-run -a python3.12 script.py` with
 `PIL.ImageGrab` screenshots (python3.12 has tkinter + Pillow here).
 
+## How we work on the code (the user's standing request - keep to it every time)
+
+"A change pulls along everything connected to it; no code bolted on top that later breaks the old."
+Checked against common advice on keeping old code safe while changing it (write tests that pin the
+current behaviour first, small steps, version control as the safety net, docs as the shared map -
+e.g. logiciel.io "Refactoring Legacy Code Without Breaking Everything", miquido.com legacy
+refactoring guide) and against Total War tool practice (vanilla files protected from accidental
+edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive/romeremastered docs).
+
+1. **Before changing**: grep every caller and every file the thing touches; change the one shared
+   place (a function in moddata / buildings / textio...), never a special case beside it. If two
+   places compute the same fact, merge them first.
+2. **A bug from the game = a test first**: reproduce it on the user's real files (tw-game-data) or a
+   synthetic mini-mod, see it fail, fix, see it pass; then the whole suite. The rule it taught goes
+   into "Hard-won rules" below with the game's own error text.
+3. **Both games**: think every change through for Rome (+REX) and Medieval II; say what was checked
+   on which.
+4. **Files stay byte-exact** except the lines we mean to change; every write has a backup and
+   Restore gives the original back byte for byte (tests check it). Never overwrite silently.
+5. **Small steps, each committed**; the suite green before a push; after a push to main check the
+   Actions run (0.6.0 once broke CI: a test needed Pillow the CI job lacks) before telling the user.
+6. **Check it in the window** (Xvfb + screenshot) and on real files before saying it works; say
+   plainly what was not tested (in game = only the user can).
+7. **Plain words in the UI**: a label says what will happen; set-up fixes and anything that touches
+   files the user does not know are offered with a yes, never done silently.
+8. **Keep this file current** at the end of every piece of work: what changed, what was learned,
+   what is open.
+
 ## Hard-won rules (do not break)
 
 - **Names** written to descr_strat must exist in the name pool (descr_names +
@@ -399,6 +427,11 @@ The user tests first and collects; do these together when he says so.
     needs. **Ask the user which two DLLs and from where to where** (not known yet). Every such
     set-up fix goes through `gamefix.py` (problems / fix_plan; asked on Load, a no remembered in
     settings `fixes_declined`; backup + Restore).
+
+18. **"Preview map changes / Apply map changes"** puzzled the user: it is New faction mode with no
+    template/name yet (`App.map_only`), where only map edits can be written. Make it plain: normal
+    "Preview / Apply changes" with a hint "no faction chosen - only the map's changes are written",
+    and greyed out while nothing waits (user's note, not asked to fix yet).
 
 **Done in 0.6.0 (2026-09-28, the user said "do it")**: 1 (garrison "own units / mercenaries / own +
 mercenaries"; FieldTable Show by kind + sort by heading, rows keep their index as iid), 2
