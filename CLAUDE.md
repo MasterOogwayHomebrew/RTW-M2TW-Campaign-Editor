@@ -203,6 +203,19 @@ select_map {colour, off}; drawn for new factions and edits that take/give towns)
 clone._token_hit also matches _<faction>_ inside names; editors.copy_unit /
 copy_building + copy_text_entries; RecordEditor "Copy as new...".
 
+## Learned in the 0.4.1 run-through (keep)
+
+- rebel_faction_descr.txt keys are rebel types ({Belgae} Belgae Rebels) and may share
+  a faction's name: edit._texts never touches that file and writes the display name
+  only when it changed.
+- HLR keeps map_heights/map_ground_types/map_features... in its campaign folder and
+  has no map_<faction>.tga select maps: select_background takes only real factions'.
+- Never call f.texts() inside a loop over a big file (HLR tables): use entry_end_in /
+  f.text(i). Deep Check on HLR now ~2 min, vanilla 26 s.
+- Taking or giving towns redraws the other factions' select maps (colour_on_map from
+  their own map, inside their old land).
+- Restore of every kind of run checked byte-identical (diff -r against the original).
+
 ## Collected for the next patch (the user asked to gather, not change yet)
 
 - Unit/building editors next steps: 3D models (descr_model_battle, .cas/.ms3d),
