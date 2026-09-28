@@ -192,6 +192,10 @@ bottom-up TGA; `gui_editors.RecordEditor`); Plan.apply records new binary files 
 
 ## Collected for the next patch (the user asked to gather, not change yet)
 
+- Map legend: a panel on the right side of the Map tab saying what every sign means
+  (towns, ports, armies, fleets, each agent kind, resources by type, new towns/ports,
+  colours); it can be hidden/shown, and that choice is remembered between starts
+  (a small settings file next to the log / in %APPDATA%).
 - Unit/building editors next steps: 3D models (descr_model_battle, .cas/.ms3d),
   textures, strat model, icons; new unit / new building (copy one, rename, all files);
   unit transfer between mods (the M2 GUI Toolkit has it); a real form per field type.
