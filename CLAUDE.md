@@ -178,6 +178,14 @@ section like Rome's; text in data/text/english. Still to check with his unpacked
 Still open: the user wants nicer icons later (resources, agents); the M2 crash
 must be re-tested with 0.2.0.
 
+## Collected for the next patch (the user asked to gather, not change yet)
+
+- Buildings: lowering the governor's (core) building or the settlement level must
+  pull the other chains down too - each picked level above what the new settlement
+  level allows drops to its chain's biggest allowed level (or none), with a note;
+  raising the level or the core building raises the other side (level <-> core) as
+  now. Whether raising should also upgrade the other chains: ask the user.
+
 ## Next
 
 1. User's in-game test: existing armies/fleets/agents in the list (units, remove),
