@@ -93,6 +93,7 @@ byte-exactly.
 | `gamefix.py` | set-up problems that stop a game from starting (M2EX vegetation_source text), fixed on Load with a yes |
 | `theme.py` | Light / Dark: one 'clam' ttk style + tk widgets recoloured (a `<Map>` binding on every widget; palette colours map both ways, meaning colours kept); settings `theme`; tabs styled (TNotebook.Tab) |
 | `packs.py` | unit packs: `collect` / `export_pack` / `read_pack` / `plan_names` / `import_pack` (EDU block + descr_model_battle / descr_mount / descr_engines / descr_animals blocks + every file they name + cards + export_units texts + recruit places); Unit editor Export pack... / Import pack... |
+| `family.py`, `gui_family.py` | people and the family tree: `read(f, faction)` (Person: key `map:<name>#n` / `record:<name>#n`, traits, ancillaries, sex, age; tree [[father, wife, [kids]]]), `apply(plan, f, faction, opts family)` (people changes, new records in the file's own form, remove records, tree -> `relative` lines after the records, unchanged lines kept byte-exact), `tree_problems`, `rename_in_tree` (also used by edit._people), `trait_list` / `ancillary_list`; Family tab (Edit), App.family_set in UNDO_KEYS |
 | `cli.py` | `list towns names example new scan newmod slim manifest restore` |
 
 Tests: `python -m unittest discover -s tests` (a synthetic mini-mod; 20+ tests,
@@ -171,6 +172,14 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
 - **M2 castles: core_castle_building level = settlement level** (fatal "The castle core building level
   should be EQUAL the settlement level!", the user's M2_New, 0.7.4 raised Ajaccio motte_and_bailey
   village -> town): `buildings.core_offset` 0 for a chain named *castle*, 1 for core_building.
+- **Family tree** (descr_strat): `relative Father, Wife, Kid, ..., end` per couple, after the `character_record`
+  lines, which come after every `character`; every name on it is a character or record of the faction, so a
+  rename must follow on the relative lines (0.8.0: edit._people now does, via family.rename_in_tree). Rome records
+  carry `command 0, influence 0, management 0, subterfuge 0`, M2 records not; new ones copy a record of the file.
+  Traits: `traits T n , U m` (n = level 1..number of `Level` lines), `ancillaries a, b`; trait kinds from the
+  trait's `Characters` line (family / spy / princess ...). Checked on vanilla julii and england (write + Restore
+  byte-exact); not yet in game. Open: portraits on the cards, dead people (M2 `dead_until_resurrected` is a
+  faction line, not a person), a wife for a man on the map written as a record (vanilla does the same).
 - **REX** takes one `-mod:` folder, falls back to the game's `data`; no mod chain.
   REX looks for the sound pack **by the mod's name** (`<mod>/data/sounds/<mod>.idx`),
   so a new mod folder also gets `HLR.idx/.dat` under its own name.
@@ -242,7 +251,7 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   keyed by the block's first line (a rename keeps it); removal never of `required_keys` (keys every
   unit / level has) or structure lines; `check_text` refuses unknown units / chains / levels.
 
-## Status (2026-09-29: v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
+## Status (2026-09-29: v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
 
 Done and tested in game: new faction by template; separate mod folder; scan +
 ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
