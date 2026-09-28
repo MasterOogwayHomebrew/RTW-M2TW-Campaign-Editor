@@ -181,8 +181,10 @@ template's building descriptions; Restore and recreate them.
   "Save logs..." button: one zip (save dialog) with faction_tool.log + the game's
   newest system.log.txt / REX `<mod>_logs_<stamp>.zip` / `report-*.txt` found near
   the loaded mod (mod folder, game folder, their `logs`), and say which were found.
-  REX's zip seen from the user: system.log.txt + report-<n>-<date>.txt. Find out
-  where REX writes them on his PC before coding the search.
+  The `HLR_logs_<stamp>.zip` the user sent comes from HLR's own "collect logs" .bat
+  (zip put in the HLR folder: system.log.txt + report-<n>-<date>.txt); most mods and
+  vanilla have no such .bat, so the tool must find and pack the logs itself. Read
+  that .bat (ask the user for it) to learn where the game/REX write them.
 
 ## Next
 
