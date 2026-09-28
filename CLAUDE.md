@@ -113,8 +113,16 @@ restore byte-identical). GUI checks: `xvfb-run -a python3.12 script.py` with
   vanilla also lists keys in `lookup_campaign_descriptions.txt`.
 - **Unit cards**: `ui/units/<f>/#<dictionary>.tga`, `ui/unit_info/<f>/<dictionary>_info.tga`;
   a folder left from an earlier attempt must be filled file by file.
-- **Game loads text** from `data/text/english/` and then `data/text/`; the tool
-  edits `data/text/*.txt` only (English only, by the user's choice).
+- **Game loads text** from `data/text/english/` and then `data/text/` (REX log: "Loading string
+  table: data/text/english/..."); a table in english hides the data/text copy. `ModData.text_dirs /
+  text_files / text_file(name)` give the copy the game reads (english first); every text edit goes
+  there. Medieval II keeps its tables only in text/english. English only, by the user's choice.
+  (Until 0.5.x the tool wrote data/text only: RTW new-region labels were not seen -> fatal
+  "Couldn't find region name 'Test1' in stringtable".)
+- **Governor's building = settlement level - 1** (fatal "The core building level should be one
+  less than the settlement level!"): the core chain's 1st level is a town's, 2nd a large town's...,
+  a village has none (`buildings.core_settlement / core_level_for`); settlement_min is only where a
+  level may be built. A new region bigger than a village gets its core level written.
 - **REX** takes one `-mod:` folder, falls back to the game's `data`; no mod chain.
   REX looks for the sound pack **by the mod's name** (`<mod>/data/sounds/<mod>.idx`),
   so a new mod folder also gets `HLR.idx/.dat` under its own name.
@@ -316,6 +324,21 @@ The user tests first and collects; do these together when he says so.
 10. **New town and port not shown after the New region dialog** outside Regions mode: pending new
     towns/ports and painted tiles (`MapView._painted`, `region_points`) are drawn only while
     `region_mode`. Draw them (and the new region's land) on the normal map too until Apply.
+
+11. **Map colours** (political layer): denser - not bright, but clearly visible.
+12. **Apply per session?** The user asked whether he has to Apply per window. In Edit faction one
+    Apply writes every tab at once (he applied twice because the first warned "no army"). But the
+    pending changes belong to one faction and one editor: switching faction / Unit editor loses
+    them. Idea: keep a session list of changes across factions and editors, one Apply.
+13. **M2 crash at start** (M2EX, vanilla data edited in place, 2026-09-28): system.log ends 8 s
+    after start at "Loading vegetation from text: descr_vegetation.txt ... raw_distribution_maps/
+    area_a could not be found ... Failed to load text vegetation database" -> close_game; no
+    campaign loaded, nothing about our files. The tool never touches vegetation. Asked the user
+    whether M2 starts after Restore at all (unpacked data may make the game read the text
+    vegetation - then descr_vegetation.txt must go). Pending his answer.
+
+Fixed already (on the session branch, 2026-09-28): 7 (text/english), the RTW new-region crash
+(labels) and the core-building crash (see the rules above).
 
 ## Collected for the next patch (the user asked to gather, not change yet)
 
