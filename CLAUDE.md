@@ -342,6 +342,17 @@ copy_building + copy_text_entries; RecordEditor "Copy as new...".
   the 44x63 32-bit captain card and shows after Apply.
 - README: Ko-fi button (ko-fi.com/img/githubbutton_sm.svg) + text; .github/FUNDING.yml `ko_fi: pfadfinder`.
 
+## Asked by people (2026-09-28): does cloning update battle_models.modeldb? - NOT YET (M2)
+
+Clone copies the template's `texture <faction>, ...` (+ model_flexi) lines in descr_model_battle.txt
+(clone.texture_lines) - that is what Rome reads, and what M2EX reads with `model_battle_source text`
+(the user's M2EX default). Vanilla M2 / M2EX with `modeldb` read data/unit_models/battle_models.modeldb
+(a Boost text archive: counts and length-prefixed strings; per model a list of faction textures with
+a count) - the clone does not touch it, so there the new faction's units would lack their texture
+entries. To do: read/write modeldb (keep counts in step, byte-exact otherwise), copy the template's
+faction texture entries for the new faction; the same for unit packs (M2 models live there). Need
+the user's battle_models.modeldb (data/unit_models) to build and test on.
+
 ## TOP PRIORITY (the user, 2026-09-28, very keen): EXPORT / IMPORT packs
 
 "The most important thing: EXPORT of a faction's units etc., so whole packs can go (between mods)."
