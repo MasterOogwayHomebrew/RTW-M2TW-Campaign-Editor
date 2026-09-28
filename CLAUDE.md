@@ -360,6 +360,17 @@ scale; the clone shares the template's models (scale unchanged). Idea: the Unit 
 unit's model block(s) (soldier / officer / mount models) with scale and textures, editable, written
 to descr_model_battle and (M2) modeldb. Asked the user which scale they mean.
 
+**"Scale" = rescale the whole campaign map** (Melchon on Discord, 2026-09-28): "a map of 400x200 made
+800x400 keeping the aspect, and everything scaled with it: towns, starting armies, trade goods, navies".
+Not built. Plan (integer factor k first): map_regions.tga NEAREST x k but only ONE black town pixel and
+ONE white port pixel per region (the rest of the kxk block = region colour; the port stays on a coastal
+land tile), the 2x+1 maps (map_ground_types, map_heights (bilinear), map_climates, map_roughness,
+map_fog...) resampled to 2(kW)+1, **map_features rivers kept 1 px wide and connected** (thin after
+scaling), map_trade_routes, radar_map1/2 (2 px per tile), map_FE; every descr_strat x, y (characters,
+resources, fortresses / watchtowers, `landmark`s) x k onto a tile the rules allow (land_problem /
+sea for fleets); descr_sm_landmarks? descr_disasters? map.rwm deleted; check the engine's size limits
+(RTW vanilla vs REX; M2 / M2EX) before offering it. Answered him that it is not there yet.
+
 ## TOP PRIORITY (the user, 2026-09-28, very keen): EXPORT / IMPORT packs
 
 "The most important thing: EXPORT of a faction's units etc., so whole packs can go (between mods)."
