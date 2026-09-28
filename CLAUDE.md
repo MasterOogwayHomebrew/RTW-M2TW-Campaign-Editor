@@ -428,6 +428,12 @@ The user tests first and collects; do these together when he says so.
     set-up fix goes through `gamefix.py` (problems / fix_plan; asked on Load, a no remembered in
     settings `fixes_declined`; backup + Restore).
 
+20. **A new region given to a faction is not in its town list until Apply** (the user: then two Applies,
+    two backups needed; wanted: seen at once, live). The New region dialog's owner should add the new
+    town to the faction's chosen towns (Faction tab list, Units & armies, Buildings, Map) as pending,
+    so garrison / buildings / capital can be set before one Apply; the plan writes the region and the
+    settlement together. Not started - the user said "not yet".
+
 19. **Map "strictly by tiles" = the picture itself, not the grid** (the user, with a screenshot): each tile
     one colour (the ground type at its middle, what the tool checks), relief and rivers worked out per
     tile too, then blown up NEAREST (`CampaignMap.background(tiles=True)`; checked: 0 tiles with two
