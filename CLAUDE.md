@@ -439,6 +439,12 @@ The user tests first and collects; do these together when he says so.
     creator (line 3) and rebels (line 4), like tags / farming / religions already come from the donor.
     Still changeable. Not started - "remember for now".
 
+22. **Religions of a new region (M2)**: the Religions... dialog for a new region opens with all 0 (in all 0%),
+    though the write already copies the donor's line (log: "Test1: religions { ... islam 99 ... heretic 1 }").
+    Prefill the dialog with the donor's religions, and never let a region be written without a line summing
+    to 100 (skipped dialog, zeros, a donor without religions -> the donor's, else the campaign's most common)
+    - a missing / broken religions line may crash M2. Not started - for the big patch.
+
 19. **Map "strictly by tiles" = the picture itself, not the grid** (the user, with a screenshot): each tile
     one colour (the ground type at its middle, what the tool checks), relief and rivers worked out per
     tile too, then blown up NEAREST (`CampaignMap.background(tiles=True)`; checked: 0 tiles with two
