@@ -96,6 +96,7 @@ byte-exactly.
 | `theme.py` | Light / Dark: one 'clam' ttk style + tk widgets recoloured (a `<Map>` binding on every widget; palette colours map both ways, meaning colours kept); settings `theme`; tabs styled (TNotebook.Tab) |
 | `packs.py` | unit packs: `collect` / `export_pack` / `read_pack` / `plan_names` / `import_pack` (EDU block + descr_model_battle / descr_mount / descr_engines / descr_animals blocks + every file they name + cards + export_units texts + recruit places); Unit editor Export pack... / Import pack... |
 | `family.py`, `gui_family.py` | people and the family tree: `read(f, faction)` (Person: key `map:<name>#n` / `record:<name>#n`, traits, ancillaries, sex, age; tree [[father, wife, [kids]]]), `apply(plan, f, faction, opts family)` (people changes, new records in the file's own form, remove records, tree -> `relative` lines after the records, unchanged lines kept byte-exact), `tree_problems`, `rename_in_tree` (also used by edit._people), `trait_list` / `ancillary_list`; Family tab (Edit), App.family_set in UNDO_KEYS |
+| `portraits.py` | the portrait library: `cultures`, `library(mod, culture)` (groups, young/old/dead, cards, mod over game), `sizes`, `add(plan, culture, group, pics)`; window gui_family.PortraitLibrary (Character editor, pending in FamilyEditor.lib_adds) |
 | `cli.py` | `list towns names example new scan newmod slim manifest restore` |
 
 Tests: `python -m unittest discover -s tests` (a synthetic mini-mod; 20+ tests,
@@ -182,6 +183,10 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   trait's `Characters` line (family / spy / princess ...). Checked on vanilla julii and england (write + Restore
   byte-exact); not yet in game. Open: portraits on the cards, dead people (M2 `dead_until_resurrected` is a
   faction line, not a person), a wife for a man on the map written as a record (vanilla does the same).
+- **Portrait pools keep numbers in step** (checked on vanilla RTW): generals young/N, old/N, dead/N and cards
+  young|old|dead/N are the same man, every folder of a group has the same count (roman 479, greek 188, barbarian
+  151 - barbarian writes Young/Old/Dead); civilians/rogues have young/old + cards only. portraits.add writes the
+  next number into all of them in the existing folder case (mod folder; REX portrait_pool merged pools mod+game).
 - **Portraits**: Rome - no portrait of one's own in descr_strat (as far as the files show); the game rolls one of
   ui/<portrait_mapping>/portraits/portraits/young|old|dead/<generals|civilians|rogues>/NNN.tga (69x96, cards
   44x63 under portraits/cards/ with the same numbers), off-map family ui/<c>/portraits/family/wife|son|daughter.tga
@@ -260,7 +265,7 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   keyed by the block's first line (a rename keeps it); removal never of `required_keys` (keys every
   unit / level has) or structure lines; `check_text` refuses unknown units / chains / levels.
 
-## Status (2026-09-29: v0.9.1 released (Edit region..., new regions in the towns list at once, a new faction starts in a new region by one Apply - regionedit.apply_opts is the one writer of region work, plan_land/free_tile(start, own)); v0.9.0 released (Character editor = FamilyEditor(standalone) in App.editors['characters']; portraits); v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
+## Status (2026-09-29: v0.9.3 released (portrait library portraits.py + PortraitLibrary window; Art select map optional, off = originals kept, sel_map {'on'}); v0.9.2 renamed RTW & M2TW Campaign Editor; v0.9.1 released (Edit region..., new regions in the towns list at once, a new faction starts in a new region by one Apply - regionedit.apply_opts is the one writer of region work, plan_land/free_tile(start, own)); v0.9.0 released (Character editor = FamilyEditor(standalone) in App.editors['characters']; portraits); v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
 
 Done and tested in game: new faction by template; separate mod folder; scan +
 ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
@@ -646,6 +651,12 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   + screenshot/video).
 - **Not tested in game yet**: Family tab / Character editor (0.8-0.9), M2 own portraits, Edit region, new faction
   in a new region (0.9.1), M2 castle fix (0.7.5), unit packs, M3.
+- **Art "Remove" button** (the user, 0.9.2): "not delete - remove its path in the file" + "find out whether the game
+  crashes without these pictures". Asked him what he means: most faction pictures are found by the faction's
+  name (no path in any file); only banners (descr_banners), loading_logo / symbol (descr_sm_factions), captain
+  cards (descr_character strat_card) have paths. Needs his answer and an in-game test before building.
+- Performance measured 2026-09-29 (vanilla RTW / M2 copies, Linux Xeon 2.1 GHz): ~100 MB RAM, load ~1-2 s, tabs
+  < 1 s; HLR is ~3x the data (deep Check ~2 min). Exe: Python 3.12 (Windows 8.1+, 64-bit).
 - The user's wishes not built: M2 battle_models.modeldb; whole-map rescale; faction / building packs; culture of
   its own; strat-map flags; texture recolour; model viewer; Rome portraits of one's own (only if REX supports a
   `portrait` line - ask/check REX); portraits for records (M2 may take `portrait` there too - check).
