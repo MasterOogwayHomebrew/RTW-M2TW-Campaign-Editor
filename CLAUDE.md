@@ -169,6 +169,14 @@ template's building descriptions; Restore and recreate them.
   call show_map() at the end of load_campaign when the Map tab is the current one
   (the files themselves are restored byte-exactly, incl. map_regions.tga and map.rwm).
 
+- Buildings tab: settlement level, core building and the other chains out of step
+  (user's screenshot: large_city + proconsuls_palace, yet defenses offer only
+  wooden_pallisade). BuildingsEditor filters levels by `town_level` from the file
+  (the title still says "a town"), not by the level picked/derived in the window.
+  Wanted both ways: a core building sets level + population (done for the combobox
+  only), a level picked by hand sets the matching core building, and every chain
+  offers the levels of the resulting level (pass it to the editor and redraw).
+
 ## Next
 
 1. User's in-game test: existing armies/fleets/agents in the list (units, remove),
