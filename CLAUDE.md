@@ -216,7 +216,9 @@ template's building descriptions; Restore and recreate them.
 - M2TW religions: descr_regions entries there have a religions line
   (`religions { catholic 90 ... }`, as far as known - confirm on his files); a new
   region needs it (copy the donor region's); show/edit religions per region.
-- M2TW merchant: a proper map icon (now the letter M).
+- Map icons for every agent kind (now letters, gui_map AGENT_LETTER): spy, assassin,
+  diplomat, merchant, priest, princess (+ heretic/witch/inquisitor if met), each its
+  own icon; drawn by the tool (or the game's own pictures if found in the mod's ui).
 
 ## Next
 
