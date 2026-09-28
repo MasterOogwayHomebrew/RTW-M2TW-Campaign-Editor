@@ -3,9 +3,19 @@
 The package is still `faction_tool`, backups `faction_tool_backups`, the log `faction_tool.log`
 (kept for compatibility); the window, exe and README say RTW Campaign Editor.
 
-Read this first. It is the project's memory between sessions: who the user is,
-how to work with him, what the tool does, what was learned the hard way, and
-where the work stands.
+Read this first. It is the project's memory between sessions (and between Claude
+accounts - the user hands this file to a new one): who the user is, how to work
+with him, what the tool does, what was learned the hard way, and where the work
+stands. Keep it up to date at the end of every piece of work.
+
+**A new session starts with no game files**: the container is fresh. Ask the user
+to upload what the task needs (his HLR `data` as 7z volumes, vanilla `data`, REX),
+or work from the repo and the synthetic tests only. Earlier sessions kept the files
+under the scratchpad as `VAN/` (vanilla data + REX overlay), `HLR/`, `GAME/` (a
+game folder with a New-mod-folder mod `Nabataea`), `VANCOPY/` (a copy to apply
+and restore on) - recreate that layout when he uploads again. GUI checks: start
+`Xvfb :57 -screen 0 1280x1024x24 &` and run with `DISPLAY=:57` (xvfb-run -a hung
+once); patch `messagebox.show*/askyesno` in the script or a dialog blocks it.
 
 ## The user and how to work with him
 
@@ -135,6 +145,24 @@ restore byte-identical). GUI checks: `xvfb-run -a python3.12 script.py` with
   list once gave the user's towns away).
 - Vanilla EDU gives ships by **culture** (`ownership roman, greek, ...`), so a
   faction's units = its name, its culture or `all` in ownership.
+- **Buildings are one chain for everyone; name, text, picture and model depend on
+  who builds it.** export_buildings.txt: `{<level>}` plain, `{<level>_<culture>}` and
+  `{<level>_<faction>}` (vanilla: roman, greek, egyptian, eastern, barbarian + carthage,
+  parthia; HLR adds celtic, germanic, imazighen and many factions: dacia "Shrine to
+  Hebeleysis", gauls "Shrine to Taranis", armenia "Shrine to Vahagan"...), same for
+  `_desc`, `_desc_short`; the most specific wins (the user's point: the Roman temple of
+  war is Bellona's, the Greek one Ares'). Pictures per culture:
+  `ui/<culture>/buildings/#<culture>_<level>[_constructed].tga` with fallbacks through
+  descr_ui_buildings.txt (`lookup_variants`); models per culture (descr_cultures,
+  descr_building_battle, descr_settlement_plan). Temples of different gods are
+  different chains (temple_of_battle, temple_of_leadership...), given by faction lists.
+  The clone copies the template's faction-suffixed names (checked on HLR: dacia ->
+  15 names). `editors.level_names` lists them in the Building editor.
+- **Editor lines never go beyond what the mod already does** (the user's rule): a key may
+  be added to a place only while that place has fewer lines of it than the most any
+  unit / level of the mod has (`editors.line_limits`, `room_for`; vanilla: 2 officers,
+  1 upgrade per level; HLR: 5 officers, 702 recruit lines in one capability). "If more
+  is needed we'll do it then."
 - **Keep what is tied together in step** (the user's standing request: "a change pulls along
   everything connected to it; no code bolted on top that does not know the old"). A unit is the
   faction's only when EDU ownership + an EDB recruit line (in a level it may build) + its cards
@@ -278,6 +306,24 @@ Found, not fixed yet: a mod made by New mod folder on the **plain game** is slim
 files), and the tool cannot load its campaign (descr_regions etc. are in the game's data):
 ModData would need the game's data as a fallback, with edits of fallback files written into the
 mod folder. Mods built on HLR are full copies and are fine.
+
+## Next big step: a culture of its own (the user asked; not started)
+
+Buildings, settlements and many sounds follow the **culture**, so a faction that should
+look its own needs its own culture. HLR added four (celtic, germanic, imazighen, nomadic)
+over vanilla's seven (REX lifts the limit); `celtic` appears in these HLR files - the
+list of what a new culture touches (clone one like a faction):
+descr_cultures.txt (settlement models per level, fort, portrait_mapping,
+rebel_standard_index), ui/<culture>/ (buildings pictures, cities cards, ...),
+descr_settlement_plan, descr_building_battle, descr_ui_buildings (lookup_variants),
+descr_sm_factions (`culture`), export_descr_unit (ownership by culture),
+export_descr_buildings (factions lists naming cultures), export_descr_character_traits,
+export_descr_ancillaries, descr_banners, descr_offmap_models, descr_strat /
+descr_mercenaries mentions, the sound files (descr_sounds_music, _units_confirm,
+_units_ambient, _units_anims, export_descr_sounds_soldier_voice, _stratmap_voice,
+_units_voice, _units_battle_events, _prebattle) and the `_<culture>` building names in
+text/export_buildings.txt. Check first on his files whether REX or the exe caps the
+number of cultures, and how portrait_mapping / rebel_standard_index work.
 
 ## Next
 
