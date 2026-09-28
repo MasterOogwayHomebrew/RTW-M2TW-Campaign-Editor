@@ -9,7 +9,8 @@ with him, what the tool does, what was learned the hard way, and where the work
 stands. Keep it up to date at the end of every piece of work.
 
 **Files here now (2026-09-28)**: scratchpad `VAN/` = the user's RTW Gold data (root .txt,
-text/, world/, ui/; no models/sounds). The M2 files are still to come (he sent Rome's by mistake).
+text/, world/, ui/, banners/; no models/sounds); `M2/` = his Medieval II data (root .txt + world/;
+text/english still to come); `EXE/` = M2EX.exe and medieval2.exe (strings only; never commit).
 
 **A new session starts with no game files**: the container is fresh. Ask the user
 to upload what the task needs (his HLR `data` as 7z volumes, vanilla `data`, REX),
@@ -339,7 +340,8 @@ The user tests first and collects; do these together when he says so.
    .strings.bin (the game rebuilds the bin from the .txt when the bin is missing - check). M2 keys:
    expanded.txt {FRANCE}, campaign_descriptions `{IMPERIAL_CAMPAIGN_FRANCE_...}` - check on his files.
    Everything text-related (names pool strings, units, buildings) needs the same.
-8. **"Real" map** (the user asks if the map can be drawn strictly by tiles): it already is (1 square
+8. **"Real" map, strictly by tiles for editing** (the user confirmed it is wanted: tile grid when
+   zoomed in, every tile its own square, what is edited = exactly one tile). **"Real" map** (the user asks if the map can be drawn strictly by tiles): it already is (1 square
    = 1 tile, colour by map_ground_types). Offer: relief shading from map_heights, rivers from
    map_features, climate tint (map_climates), a closer-to-the-game look; ask what he misses.
 9. **New region dialog, "Resources" field** confuses: it is descr_regions line 6 = region tags /
@@ -356,7 +358,11 @@ The user tests first and collects; do these together when he says so.
     Apply writes every tab at once (he applied twice because the first warned "no army"). But the
     pending changes belong to one faction and one editor: switching faction / Unit editor loses
     them. Idea: keep a session list of changes across factions and editors, one Apply.
-13. **M2 crash at start** (M2EX, vanilla data edited in place, 2026-09-28): system.log ends 8 s
+13. **M2 crash at start - FOUND (not ours)**: M2EX's data/descr_caps_ex.txt has
+    `vegetation_source  text` (M2EX strings: text = parse descr_vegetation.txt at runtime, needs
+    export/new_vegetation/raw_distribution_maps; binary = vegetation.db, "default for mods"). Fix for
+    the user: `vegetation_source  binary`. Check mod could warn about it (text source + no raw maps).
+    Old notes: (M2EX, vanilla data edited in place, 2026-09-28): system.log ends 8 s
     after start at "Loading vegetation from text: descr_vegetation.txt ... raw_distribution_maps/
     area_a could not be found ... Failed to load text vegetation database" -> close_game; no
     campaign loaded, nothing about our files. The tool never touches vegetation. Asked the user
@@ -373,7 +379,14 @@ The user tests first and collects; do these together when he says so.
 15. **Dark theme** for the window (the user asked): a Light / Dark switch kept in settings.py;
     ttk style + tk widgets (Listbox, Text, Canvas backgrounds), map legend, pictures' frames.
 
-Fixed already (on the session branch, 2026-09-28): 7 (text/english), the RTW new-region crash
+16. **Mods folder**: M2 mods live in <game>/mods/<name> (+ a .cfg to start); `newmod.create_mod`
+    still makes <game>/<name> for M2 too - make it mods/<name> with a .cfg (M2EX: check how it
+    starts a mod, the user's M2EX.exe is in scratchpad EXE/). Rome/REX: mods sit in the game root
+    (HLR, RTW_New) and start with -mod:<name>; keep that.
+
+Fixed already (on the session branch, 2026-09-28): 4 (M2 select map: `factionart.select_frame`
+fits where the map lies - scale 1.314, dx -16, dy 12 on vanilla M2; same shape as the map = the
+Rome stretch; kept in settings `select_frames`), 7 (text/english), the RTW new-region crash
 (labels) and the core-building crash (see the rules above).
 
 ## Collected for the next patch (the user asked to gather, not change yet)
