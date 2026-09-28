@@ -8,6 +8,9 @@ accounts - the user hands this file to a new one): who the user is, how to work
 with him, what the tool does, what was learned the hard way, and where the work
 stands. Keep it up to date at the end of every piece of work.
 
+**Files here now (2026-09-28)**: scratchpad `VAN/` = the user's RTW Gold data (root .txt,
+text/, world/, ui/; no models/sounds). The M2 files are still to come (he sent Rome's by mistake).
+
 **A new session starts with no game files**: the container is fresh. Ask the user
 to upload what the task needs (his HLR `data` as 7z volumes, vanilla `data`, REX),
 or work from the repo and the synthetic tests only. Earlier sessions kept the files
@@ -117,6 +120,9 @@ restore byte-identical). GUI checks: `xvfb-run -a python3.12 script.py` with
   table: data/text/english/..."); a table in english hides the data/text copy. `ModData.text_dirs /
   text_files / text_file(name)` give the copy the game reads (english first); every text edit goes
   there. Medieval II keeps its tables only in text/english. English only, by the user's choice.
+  RTW Gold + REX (the user's vanilla, 2026-09-28): data/text/english/*.txt are **UTF-8 without a
+  BOM** (REX's, dated with the REX install; "¬" = C2 AC), data/text/*.txt UTF-16 - textio detects
+  UTF-8 by decoding (`_utf8`). REX loads the english copy, so edits in data/text were never seen.
   (Until 0.5.x the tool wrote data/text only: RTW new-region labels were not seen -> fatal
   "Couldn't find region name 'Test1' in stringtable".)
 - **Governor's building = settlement level - 1** (fatal "The core building level should be one
@@ -363,6 +369,9 @@ The user tests first and collects; do these together when he says so.
     deleting the mod folder never touches the game; only an editor that overwrites a linked file in
     place changes the original (the tool itself never does). Mod on the plain game made fine (full
     link copy, loads: 21 factions, 2 campaigns).
+
+15. **Dark theme** for the window (the user asked): a Light / Dark switch kept in settings.py;
+    ttk style + tk widgets (Listbox, Text, Canvas backgrounds), map legend, pictures' frames.
 
 Fixed already (on the session branch, 2026-09-28): 7 (text/english), the RTW new-region crash
 (labels) and the core-building crash (see the rules above).
