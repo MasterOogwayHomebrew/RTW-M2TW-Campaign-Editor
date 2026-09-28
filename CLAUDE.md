@@ -353,6 +353,13 @@ entries. To do: read/write modeldb (keep counts in step, byte-exact otherwise), 
 faction texture entries for the new faction; the same for unit packs (M2 models live there). Need
 the user's battle_models.modeldb (data/unit_models) to build and test on.
 
+People also asked "I am guessing there is a scale function as well??" - unclear which scale: most
+likely a model's `scale` line (descr_model_battle / modeldb, e.g. M2 `scale 1.12`, RTW `scale 1.0`,
+optional, size of the soldiers). Now: no editor for it; a unit pack carries the model block with its
+scale; the clone shares the template's models (scale unchanged). Idea: the Unit editor shows the
+unit's model block(s) (soldier / officer / mount models) with scale and textures, editable, written
+to descr_model_battle and (M2) modeldb. Asked the user which scale they mean.
+
 ## TOP PRIORITY (the user, 2026-09-28, very keen): EXPORT / IMPORT packs
 
 "The most important thing: EXPORT of a faction's units etc., so whole packs can go (between mods)."
