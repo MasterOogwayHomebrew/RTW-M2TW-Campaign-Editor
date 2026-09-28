@@ -208,6 +208,17 @@ must be re-tested with 0.2.0.
 - The user's long-term idea: once the product is mature, show it to the Total War
   publishers.
 
+- Faction art import (like units/buildings): load through the tool every picture that
+  makes a faction and have it put in the right place, with the requirements shown up
+  front (size, format - 32-bit TGA etc.). RTW: descr_sm_factions `symbol` (strat CAS
+  model), `loading_logo` (loading_screen/symbols/symbol128_<f>.tga), `logo_index` /
+  `small_logo_index` (sprites in ui/*.sd.xml - REX sprite packer), descr_banners
+  standard/ally textures (models/textures/standard_<f>.tga), menu/symbols/FE_buttons_24
+  and _48 (symbol24/48_<f>[_roll|_select|_grey].tga: vanilla 30x30 and 59x59, 32 bpp,
+  uncompressed), ui/faction_icons, FE_flags. Take the requirements from the template's
+  own files (same size and depth), convert PNG/JPG with Pillow, warn on a wrong size.
+  Medieval II: check its own list on his unpacked files.
+
 ## Next
 
 1. User's in-game test: existing armies/fleets/agents in the list (units, remove),
