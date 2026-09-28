@@ -190,15 +190,23 @@ set_value, apply_fields, picture targets/needs, tga_bytes = uncompressed 32-bit
 bottom-up TGA; `gui_editors.RecordEditor`); Plan.apply records new binary files as
 'created' (Restore deletes them); template fills denari and colours in New mode.
 
+## Done in 0.4.0 (not yet tested in game)
+
+Map legend (MapView._draw_legend on its own canvas, draws with the map's helpers;
+shown/hidden kept in faction_tool_settings.json via settings.py); Art tab
+(gui_art.ArtEditor; factionart.py: faction_pictures, replace_picture in the size and
+depth of the picture replaced or the template's copy, select_background = per-pixel
+middle value of the campaign's map_*.tga (>= 3 of one size), draw_select_map: regions
+mask scaled NEAREST + blur 1, colour * (lum/mean)^0.5 - vanilla tints are hand-picked,
+default_map_colour = primary's hue, s 0.35-0.6, v 0.82; opts art {rel: src},
+select_map {colour, off}; drawn for new factions and edits that take/give towns);
+clone._token_hit also matches _<faction>_ inside names; editors.copy_unit /
+copy_building + copy_text_entries; RecordEditor "Copy as new...".
+
 ## Collected for the next patch (the user asked to gather, not change yet)
 
-- Map legend: a panel on the right side of the Map tab saying what every sign means
-  (towns, ports, armies, fleets, each agent kind, resources by type, new towns/ports,
-  colours); it can be hidden/shown, and that choice is remembered between starts
-  (a small settings file next to the log / in %APPDATA%).
 - Unit/building editors next steps: 3D models (descr_model_battle, .cas/.ms3d),
-  textures, strat model, icons; new unit / new building (copy one, rename, all files);
-  unit transfer between mods (the M2 GUI Toolkit has it); a real form per field type.
+  textures, strat model, icons; unit transfer between mods (the M2 GUI Toolkit has it); a real form per field type.
 - The user's long-term idea: once the product is mature, show it to the Total War
   publishers.
 - Faction art import (like units/buildings): load through the tool every picture that
