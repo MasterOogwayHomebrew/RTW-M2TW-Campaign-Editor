@@ -14,6 +14,11 @@ stands. Keep it up to date at the end of every piece of work.
 2026-09-28 session's scratchpad. The user's M2 upload has **no `ui/` folder** (portrait pools, custom_portraits
 untested on M2) - ask for `ui/<culture>/portraits` + `ui/custom_portraits` when M2 pictures matter.
 
+**Data repos split per game (the user, 2026-09-29)**: `tw-game-data` is to be renamed **`RTW-game-data`** (Rome,
+REX, HLR, BI) and a new private **`M2TW-game-data`** holds Medieval II (M2/data moved there + unit_models/_units).
+The user renames / creates them (the session cannot); then add_repo both, clone into /home/user/RTW-game-data and
+/home/user/M2TW-game-data, move M2/, and read "tw-game-data" below as the right one of the two.
+
 **The user's game files live in the PRIVATE repo `MasterOogwayHomebrew/tw-game-data`** (never
 make it public, never copy its files into this public repo): `M2/data` (Medieval II + M2EX vanilla:
 root files, text/, world/maps/base + campaign) and `RTW/data` (RTW Gold + REX vanilla: root .txt,
@@ -792,8 +797,8 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   - **Got next (2026-09-29)**: HLR text/ (+ russian/), HLR imperial_campaign (without map.rwm - the game rebuilds it),
     HLR enhanced_tweaks/*.json (kirsi / lanjane campaign tweaks, place in HLR assumed data/) -> tw-game-data HLR/data.
     M2 data/unit_models/_units (3336 files: 3082 .mesh + 254 .texture, 817 MB raw, ~310 MB in git): NOT pushed yet -
-    **the user proposed one private repo per game** (agreed: tw-game-data keeps Rome / REX / HLR, a new private
-    tw-game-data-m2 gets M2 + _units; he creates it, the session cannot). Until then _units lives only in the
+    **the user proposed one private repo per game** (agreed: RTW-game-data (renamed tw-game-data) + a new private
+    M2TW-game-data for M2 + _units; he renames / creates them, the session cannot). Until then _units lives only in the
     session scratchpad (he still has the 7z volumes).
   - **Discord question "Can you create new religion with it?"** - the user's answer: edit, not create. True: M2 region
     religion shares are editable (Religions... dialog, regionedit.set_religions); Rome has no religions in vanilla; a
