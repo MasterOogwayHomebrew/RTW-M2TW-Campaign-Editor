@@ -234,6 +234,11 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   Preview with plain words before anything is written, and the New faction tab should say up front
   "this campaign is full (21 of 21)". The user's fix for his video: Restore the nabataea backup, make the
   faction on HLR (or a New mod folder built on it).
+  The user objected "but REX is there": REX's README says only "Removed every single major engine limit like
+  factions, regions, religions, cultures etc." - yet his REX log on plain RTW says maximum 21. REX's own files
+  (docs/reference/rex_manifest) hold no config for it; REX's data/descr_sm_factions.txt has no directive.
+  Guess (unchecked): the lifted limit comes with REX's descr_sm_factions.json (HLR has one, vanilla has none)
+  or with the BI-format game. To settle: HLR's descr_sm_factions.json + ask REX's Discord / README docs.
 - **REX** takes one `-mod:` folder, falls back to the game's `data`; no mod chain.
   REX looks for the sound pack **by the mod's name** (`<mod>/data/sounds/<mod>.idx`),
   so a new mod folder also gets `HLR.idx/.dat` under its own name.
