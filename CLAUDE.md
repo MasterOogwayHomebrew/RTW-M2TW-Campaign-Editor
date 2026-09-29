@@ -872,6 +872,7 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
       `fort 263 330 cerin_amroth_fort culture middle_eastern permanent name Cerin Amroth`. **Our code ignores `fort`
       lines entirely** (not drawn on the Map tab, not counted as taken tiles when placing armies / moving towns) -
       idea: draw them, keep tiles free, later place / edit forts on the map (permanent, name).
+      Console `rename_fort <x> <y> "Name"` (quotes required).
     * **create_resource <x> <y> <resource>** (REX console, RTW + M2TW; updates the strat map and trade scroll) - our
       resources.py already writes descr_strat `resource` lines for a new campaign; the command is for a running game.
       `remove_resource <x> <y>` (RTW + M2TW) removes any regular resource except has_mine ones.
