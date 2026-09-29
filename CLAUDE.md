@@ -353,7 +353,7 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   keyed by the block's first line (a rename keeps it); removal never of `required_keys` (keys every
   unit / level has) or structure lines; `check_text` refuses unknown units / chains / levels.
 
-## Status (2026-09-29: v0.11.0 the user's test round fixed - unique names, faction limit (limits.py), family with existing people, river chain, window fixes; v0.10.0 Terrain editor (terrain.py + gui_terrain.TerrainEditor, App.editors['terrain']); v0.9.4 (bi descr_regions fix: moddata.region_entries is the one reader/writer layout; bi manifest merged into rtw_gold_steam_manifest as bi/...); v0.9.3 (portrait library portraits.py + PortraitLibrary window; Art select map optional, off = originals kept, sel_map {'on'}); v0.9.2 renamed RTW & M2TW Campaign Editor; v0.9.1 released (Edit region..., new regions in the towns list at once, a new faction starts in a new region by one Apply - regionedit.apply_opts is the one writer of region work, plan_land/free_tile(start, own)); v0.9.0 released (Character editor = FamilyEditor(standalone) in App.editors['characters']; portraits); v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
+## Status (2026-09-29: main = v0.11.0 + Terrain Climates (unreleased); v0.11.0 the user's test round fixed - unique names, faction limit (limits.py), family with existing people, river chain, window fixes; v0.10.0 Terrain editor (terrain.py + gui_terrain.TerrainEditor, App.editors['terrain']); v0.9.4 (bi descr_regions fix: moddata.region_entries is the one reader/writer layout; bi manifest merged into rtw_gold_steam_manifest as bi/...); v0.9.3 (portrait library portraits.py + PortraitLibrary window; Art select map optional, off = originals kept, sel_map {'on'}); v0.9.2 renamed RTW & M2TW Campaign Editor; v0.9.1 released (Edit region..., new regions in the towns list at once, a new faction starts in a new region by one Apply - regionedit.apply_opts is the one writer of region work, plan_land/free_tile(start, own)); v0.9.0 released (Character editor = FamilyEditor(standalone) in App.editors['characters']; portraits); v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
 
 Done and tested in game: new faction by template; separate mod folder; scan +
 ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
@@ -754,10 +754,21 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   its own; strat-map flags; texture recolour; model viewer; Rome portraits of one's own (only if REX supports a
   `portrait` line - ask/check REX); portraits for records (M2 may take `portrait` there too - check).
 
-## Where we stopped (2026-09-29, before a /clear)
+## Where we stopped (2026-09-29, the latest /clear - read this block first)
 
-- Released: v0.10.0 (Terrain editor). The user is **testing it in the game now** - wait for his result (logs,
-  screenshots) before new terrain work.
+- **Released: v0.11.0** (the whole test round fixed). **On main, not released (CHANGELOG "Unreleased")**: the
+  Terrain editor's **Climates** mode (see the note under "Asked on Discord (Tymon)" below) - CI green (run
+  36514540391). The user should test it in the game (paint a climate, start the campaign, see the vegetation);
+  release it as 0.11.1 / 0.12.0 when he says "patch" (bump gui.VERSION + CHANGELOG, push main, run release.yml).
+- **Next, in the user's order**: heights brush (raise / lower / smooth; mountains and hills kept high, switchable)
+  + a tilted 3D-like preview; then **a new campaign map from scratch**. A new climate of one's own: only after
+  research (descr_climates + every file keyed by climate, engine caps) - not promised.
+- **Waiting on the user**: in-game test of Climates; bi descr_regions.txt; HLR descr_ex.txt max_factions; SignPath's
+  answer; whether he wants an e-mail drafted to the YouTube reviewer Andy's Take (see Reviewers below).
+- Session set-up for a new session: add_repo MasterOogwayHomebrew/tw-game-data, `git clone --depth 1` into
+  /home/user/tw-game-data; GUI checks under Xvfb :57 with python3.12 (scripts like the scratchpad's clim.py:
+  gui.App(), v_path.set(data), load(), v_work.set('terrain'), work_changed(), editor()).
+- Older (v0.10.0 time): the user tested the Terrain editor in the game - done, see the test round below.
 - Then, in his order: heights brush (+ mountains/hills raise the land, switchable) and a tilted 3D-like preview;
   **a new campaign map from scratch** (one region, one faction, loads in the game) and editing existing maps.
 - **Art pictures of one's own** (2026-09-29, on main, not released - goes into the next release): new faction's
