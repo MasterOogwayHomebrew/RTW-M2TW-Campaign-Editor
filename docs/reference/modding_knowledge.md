@@ -106,6 +106,35 @@ resource_role_source (any resource mineable / the slave resource renamed).
 - descr_settlement_mechanics.xml in RTW (population thresholds per level) - our POP_MIN / level fit should read it.
 - Script keywords `local` / `target` in campaign_script.
 
+### 1b. Pages to read that the container cannot open (asked of the user as PDFs, 2026-09-29)
+
+twcenter.net, its wiki and forums.totalwar.org refuse the container (bot check); the user saves these pages
+(Ctrl+P -> Save as PDF, all pages of a thread) and uploads them:
+- TWC wiki: Hardcoded_Limits_-_RTW, Hardcoded_Limits_-_M2TW, Crash_to_Desktop, Map_heights.tga,
+  Map_heights.hgt, Map.rwm, Descr_strat.txt, Medieval_II:_Total_War_-_Modding_Index, Category:RTW_Modding
+- TWC threads: "The Hardcoded List" (95670), "Crashes and how to fix them" (142374), "How to work with
+  map_heights.hgt instead of map_heights.tga" (794522), "Nakharar's Basics: Descr_strat" (197219), "A Guide to
+  Export_Descr_Buildings.txt" (221100), "Roadmap to the .txt Basic Files" (760594), "[M2TW] Index of Modding
+  Tutorials, Resources & Tools" (580314), "Adding New Faction from Nothing" (79274), "How to Have More Than 64
+  Hard Coded Hidden Resources" (661745), "[Modding] RTW: How to Make an Entirely New Campaign Map" (82292),
+  "REX / M2EX!" (824664)
+- .Org: "A modder's guide to CTDs" (58801), "[Tutorial] Guide to crashes" (88685)
+
+Search excerpts already say: RTW map_regions max 510 x 510, 200 provinces, 21 factions, ancillary effects 0-8,
+20 units per non-regional rebel event; M2TW 7 cultures, 10 religions, 12 character types, 8 ancillaries, 200
+units per faction in custom battle, 500 EDU units, 99 mounts, 9 levels, 128 chains, 200 regions, map_heights /
+climates / ground up to 1021 x 1021; RTW CTD causes: a misspelled name in descr_strat, an officer on an
+elephant / chariot unit, wrong map_regions colours, two wonders in one region, too big radar_map1.tga.
+
+### 1c. map_heights (measured 2026-09-29, vanilla RTW 511 x 313 and M2TW 591 x 379)
+
+Land grey (r = g = b, 0..255; vanilla RTW land mostly 10-20, mountains ~60, high mountains ~84), the sea blue
+(0, 0, b), b nearly always 253 (deeper sea 145-252), exactly under the sea ground types (RTW 0 mismatches, M2TW
+18 edge pixels). map_heights.hgt: two uint32 (w, h) + w*h float32, bottom-up, land ~ 0..max_land_height of
+descr_terrain.txt, sea 253 -> -30, 252 -> -40; not a plain function of the picture (smoothed). TWC wiki: while
+the .hgt is there the game reads it (coast changes need it removed) and never makes it again - so the tool's
+heights brush deletes it (backup) and the game reads the picture.
+
 ## 2. What crashes the game (by file)
 
 | Where | What | Game | Our tool |

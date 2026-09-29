@@ -6,6 +6,9 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
 ## Looking around
 
 - Wheel zooms, left drag moves the map.
+- **Find**: type part of a name - a town (also the name shown for its owner), a port, a general, agent or
+  fleet, a unit in an army (e.g. "hastati"), a fort, a resource. Pick a hit (click, or Down then Enter) and
+  the map centres on it.
 - **Layers**: political colours, borders, diplomacy colours, relief, rivers, a tile grid when zoomed in.
 - The line under the map describes the tile under the mouse: region, owner, ground, and whether an army may
   stand there.

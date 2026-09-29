@@ -279,6 +279,8 @@ why they use JS; our heavy work is in Pillow (C) already; revisit only if a 3D m
   trait's `Characters` line (family / spy / princess ...). Checked on vanilla julii and england (write + Restore
   byte-exact); not yet in game. Open: portraits on the cards, dead people (M2 `dead_until_resurrected` is a
   faction line, not a person), a wife for a man on the map written as a record (vanilla does the same).
+- **Heights** (both games' vanilla measured): map_heights.tga land grey, sea blue (0 0 253); **map_heights.hgt
+  wins over the picture and is never made again by the game** - a heights write must delete it (the brush does).
 - **Terrain** (both games' vanilla checked): map_ground_types.tga is 2W+1 x 2H+1, a tile = the 3x3 block around
   (2x+1, 2y+1); colours in terrain.GROUND (M2 adds 64 64 64 impassable land, 128 128 128 impassable sea).
   map_features.tga is W x H: 0 0 255 river, 0 255 255 ford, 255 255 255 source, 255 255 0 cliff, 255 0 0 volcano,
@@ -839,6 +841,29 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   `portrait` line - ask/check REX); portraits for records (M2 may take `portrait` there too - check).
 
 ## Where we stopped (2026-09-29, the latest /clear - read this block first)
+
+- **FEATURE FREEZE (the user, 2026-09-29)**: after the heights brush + map Find (built this day) - only tests,
+  checks and small fixes until he says otherwise ("we added and looked at nothing"). Faction packs (Rome -> BI)
+  wait for his word.
+- **Heights brush BUILT (the user's picture: a spray can, "the longer you hold, the brighter")**: terrain.
+  height_spray (raise / lower / smooth / level, soft edge (1 - d/r)^2, running float values so small puffs add
+  up, land only = grey pixels), MapView.on_spray (a 50 ms tick while the left button is held, _refresh_bg only the
+  background), CampaignMap.show_heights / heights_view (height_look: grey sqrt-brightened, sea blue) / set_height /
+  height_at; TerrainEditor Heights mode (v_tool, v_strength, v_level; right click picks a height; heights / hbase /
+  _hvals in undo), terrain.apply(heights=) writes map_heights.tga and deletes map_heights.hgt + map.rwm (facts in
+  modding_knowledge 1c). Checked: test_heights_spray_and_restore, the window on vanilla RTW (161 pixels, Preview,
+  undo / redo). M2TW same layout (measured). Not in game. Next (not built): mountains raising the land.
+- **Find on the map BUILT (Discord ask)**: MapView.find_items (towns + shown names, ports, characters with unit
+  names - gui passes chars' unit_names -, forts, resources), Find entry in the bar, a Listbox over the canvas,
+  names ranked first, centre_on. Checked in the window (rom -> Rome first; hastati -> 14 armies).
+- **Rome -> Barbarian Invasion faction (Discord ask)**: units ALREADY go over (unit packs, same game): checked on
+  real files - roman hastati from vanilla RTW into a BI copy for empire_west (EDU, model + texture lines, 3 texts,
+  4 recruit lines); model / texture files stay in the game's data/ (REX -bi falls back to it). A whole faction is
+  not built (a faction pack: descr_sm_factions entry, names, texts, banners / symbols, strat models, descr_strat
+  block). BI is full (21 of 21, REX bi descr_ex max_factions 21 - the tool raises it) and has cultures roman,
+  barbarian, carthaginian, eastern, nomad, hun - NO greek / egyptian, so Greek / Egyptian factions need a culture
+  of their own (REX lifts the cap, the culture itself = the big "culture of its own" step).
+- **Pages for the user to save as PDF**: the list is in modding_knowledge.md 1b (twcenter / .Org block us).
 
 - **What REX / M2EX lift - COLLECTED (the user asked, 2026-09-29)**: docs/reference/modding_knowledge.md section 1a,
   from REX's README + its GitHub Discussions release notes (18/04, 08/06, 15/06, 21/06, 17/08) + descr_ex /

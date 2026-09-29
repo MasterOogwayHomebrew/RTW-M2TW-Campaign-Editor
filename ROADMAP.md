@@ -73,6 +73,8 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 
 ## 🧪 Being tested in the game now
 
+- 🧪 Terrain: heights brush like a spray can - raise, lower, smooth, level (on main, next release)
+- 🧪 Find on the map: towns, ports, armies, agents, fleets, units, forts, resources (on main, next release)
 - 🧪 A new religion for Medieval II (on main, next release): New religion... on the Map tab
 - 🧪 From the modders' guides (on main, next release): off-map sons kept at 16 or younger; flag symbols from descr_standards.txt (BI's sheets, never a rebels' slot); river blocks and rings warned; Check mod counts the engine's limits and finds win conditions / rebels / slaves faults
 - 🧪 The rebels in Edit faction (0.17.1)
@@ -92,7 +94,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 | Step | What it needs |
 |---|---|
 | Signed exe (no browser / SmartScreen warnings) | SignPath Foundation's answer (applied) |
-| Terrain: heights brush (raise, lower, smooth), mountains and hills kept in step with the heights | Time; an in-game test |
+| Terrain: mountains and hills kept in step with the heights (a mountain tile raises the land) | Time; an in-game test |
 | Terrain: a tilted 3D-like preview from the heights and ground | Time |
 | Terrain: the coast (land and sea swapped, with regions and heights); a new climate of one's own | Time; in-game tests |
 | A new campaign map from scratch (one region, one faction, loads in the game), then grown in the editor | Time; in-game tests |
@@ -102,7 +104,8 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 | Check mod: the crash rules modders documented (undeclared ai_label, religions not summing to 100, a region with no town not last, event texts, antitraits, dead ancillaries, absolute paths, a town touching another region) - see docs/reference/modding_knowledge.md | Time |
 | Limits shown up front: units (500), building chains (64 Rome / 128 Medieval II), levels (9), religions (9) | Time |
 | Shadow and emergent factions set in the tool (BI `shadowed_by` / `shadowing`, `spawned_on_event`, Medieval II `dead_until_resurrected`, `undiscovered`) | Time; an in-game test |
-| Terrain: heights brush and a 3D view (asked on Discord again) | Time |
+| Terrain: a 3D view (asked on Discord again) | Time |
+| A faction brought over from Rome into Barbarian Invasion (or between any two Rome mods): a faction pack - its units already go over as unit packs | Time; then an in-game test |
 | A REX settings panel in plain words (faction limit, sprites, arrow visibility, fort upkeep, trade fleets...) | Time |
 | Forts placed and edited on the map (REX: permanent, a name of its own) | Time; an in-game test |
 | The AI's war plans (`invade_*` in descr_campaign_ai_db.xml) explained in plain words on the Faction tab | Time |
