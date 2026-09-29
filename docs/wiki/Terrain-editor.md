@@ -31,8 +31,9 @@ or off.
 
 **Apply** writes `map_ground_types.tga`, `map_features.tga`, `map_climates.tga` and `map_heights.tga` with a
 backup and deletes `map.rwm`, so the game builds its map again on the next start. A heights change also
-deletes `map_heights.hgt`: it is the game's own copy of the heights, read instead of the picture while it is
-there and never made again by the game - without it the game takes `map_heights.tga`. Restore puts it back.
+changes the same points in `map_heights.hgt`: it is the game's own copy of the heights, read instead of the
+picture while it is there and never made again by the game (Medieval II needs it to load), so it is kept and
+kept in step. Land never goes down to pure black - the game may take black for sea.
 
 Painting mountains does not raise the land by itself: ground and heights are separate pictures - use the
 Heights brush there too.
