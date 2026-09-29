@@ -73,8 +73,8 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 
 ## 🧪 Being tested in the game now
 
-- 🧪 Terrain: heights brush like a spray can - raise, lower, smooth, level (on main, next release)
-- 🧪 Find on the map: towns, ports, armies, agents, fleets, units, forts, resources (on main, next release)
+- 🧪 Terrain: heights brush like a spray can - raise, lower, smooth, level (on main, next release) *(in-game ✓ on Rome and Medieval II)*
+- 🧪 Find on the map: towns, ports, armies, agents, fleets, units, forts, resources (on main, next release) *(in-game ✓)*
 - 🧪 A new religion for Medieval II (on main, next release): New religion... on the Map tab
 - 🧪 From the modders' guides (on main, next release): off-map sons kept at 16 or younger; flag symbols from descr_standards.txt (BI's sheets, never a rebels' slot); river blocks and rings warned; Check mod counts the engine's limits and finds win conditions / rebels / slaves faults
 - 🧪 The rebels in Edit faction (0.17.1)
