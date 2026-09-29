@@ -10,6 +10,16 @@ with its pictures. The lists filter (**Show**: a faction, a culture, a category,
 - **Add line...** / **x**: add or remove lines (never beyond what the mod already does, never the lines every
   unit or level has).
 - **Tied to it** shows who owns and recruits a unit, what requires a building.
+- **REX...** (next to a unit's attributes, stat_mental, stat_ground and weapon lines): tick the abilities REX adds,
+  each with its effect in plain words - morale (expendable, steadfast, immune_to_psychology...), fatigue
+  (relentless, inexhaustible...), charge (brace_for_charge, aggressive_push...), terrain (desert_raider,
+  forest_ambusher), garrison (troublemaker, police), unit size (no_scale, single_entity), `sp` shield piercing.
+  They work only under REX. `recruit_priority_offset` (how much the AI recruits the unit) may be added too.
+- **Recruit a unit** writes the file's own form: Rome `recruit "unit" 0`, Medieval II `recruit_pool "unit" 1 0.5
+  4 0` (units at the start, new units a turn, most units waiting, experience); tick "only retraining" for REX's
+  `retrain` / `retrain_pool`.
+- REX's bracket requirements - several `factions { }` groups on one line, each with its own conditions - are
+  read in full; Give joins the first group (Preview says so), Take removes the faction from every group.
 - A rename drags along what is tied to it: recruit lines, the armies of every campaign, mercenary pools,
   rebels, requirements.
 

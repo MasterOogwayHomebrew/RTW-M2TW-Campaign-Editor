@@ -13,7 +13,7 @@ that is the fastest way to a fix.
 Version 0.1: a small script for one mod (Barbarian Empires REX on Rome: Total War) that cloned a faction
 from a template - texts, units, buildings, start towns, leader. Rome only, command line first.
 
-## What it does now (0.16.1)
+## What it does now (0.17.0)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -38,6 +38,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - 📦 Rivers kept joined side to side (the game stops a river at a corner-only step); Preview names a river the game will not draw
 - 📦 Settlement names by the owner's culture (REX renames a town when it changes hands); the map shows the new owner's name at once; every town's names in one table
 - 📦 Big maps load (a tester's map of 5456 x 2464 tiles)
+- 📦 Forts and watchtowers shown on the map; no one is placed on them
 
 ### Characters
 - 📦 Character editor for any faction: names, ages, traits with levels, ancillaries
@@ -49,6 +50,9 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 ### Units, buildings, art
 - 📦 Unit and building editors: every line as a field, add / remove lines, copy as new, renames followed everywhere
 - 📦 Pictures imported into the right place in the right size and format (cards, building pictures, faction art)
+- 📦 Medieval II recruitment (`recruit_pool`) and REX's retrain-only lines read and written everywhere
+- 📦 REX's bracket requirements: several faction groups on one line, each with its own conditions
+- 📦 Unit editor: REX's unit abilities ticked with their effect in plain words (morale, fatigue, charge, terrain, garrison, shield piercing...)
 - 📦 Unit packs: export units with models, textures, mounts, cards and texts into a .zip and import them into another mod
 - 📦 Medieval II `battle_models.modeldb`: a new faction gets its template's textures in every battle model; unit packs carry their modeldb models (renamed on clashes, textured for every new owner)
 - ✅ Faction art: every picture of a faction listed with where the game shows it, Replace... *(in-game ✓)*; a new faction's banners and logo are its own files; Back to the original
@@ -68,6 +72,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 
 ## 🧪 Being tested in the game now
 
+- 🧪 Medieval II recruit_pool lines; REX bracket requirements and unit abilities; forts on the map (0.17.0)
 - 🧪 Family tab and Character editor, own portraits (Medieval II), portrait library
 - 🧪 Edit region; a new faction starting in a new region in one Apply
 - 🧪 Medieval II castle fix (0.7.5), unit packs, new armies / agents / fleets on the map
@@ -90,6 +95,10 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 | Unit editor: a unit's battle models (meshes, textures per faction, scale) shown and edited | modeldb reading is done (0.16.0) |
 | Faction packs and building packs (like unit packs) | Time; then an in-game test |
 | Mods made on the plain game (slimmed folders) loaded with the game's data behind them | Time |
+| A REX settings panel in plain words (faction limit, sprites, arrow visibility, fort upkeep, trade fleets...) | Time |
+| Forts placed and edited on the map (REX: permanent, a name of its own) | Time; an in-game test |
+| The AI's war plans (`invade_*` in descr_campaign_ai_db.xml) explained in plain words on the Faction tab | Time |
+| Open the mod in the game's own campaign-map editor (`REX.exe -strat_ed=a`, M2EX) | Time |
 
 ## 💡 Later
 

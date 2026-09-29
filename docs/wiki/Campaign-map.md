@@ -19,6 +19,12 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
 - **Moving a town or port** repaints its pixel in `map_regions.tga`, moves the characters in it, and deletes
   `map.rwm` - the game builds it again on the next start (the first start takes a little longer).
 
+## Forts
+
+Forts and watchtowers of `descr_strat.txt` (Medieval II, REX: `fort x y ... permanent name ...`) are drawn as small
+towers, the top in the owner's colour; the mouse over one shows its name and whether it is permanent. No army or
+agent is placed on a fort's tile.
+
 ## New regions
 
 Tick **Regions**: every region in its own colour.
