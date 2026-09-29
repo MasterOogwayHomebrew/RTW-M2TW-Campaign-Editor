@@ -190,7 +190,9 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   map_features.tga is W x H: 0 0 255 river, 0 255 255 ford, 255 255 255 source, 255 255 0 cliff, 255 0 0 volcano,
   0 255 0 M2 land bridge. map_heights.tga 2W+1 grey, sea (0 0 253). Ground type and height are separate: a
   mountain tile does not raise the land (next: heights brush keeping mountains/hills high). Map rebuilt by the game
-  when map.rwm is deleted. Asked the user whether "a map with one settlement" means a new map from scratch.
+  when map.rwm is deleted. **New map from scratch: YES** (the user, 2026-09-29): create a campaign map of one's
+  own (all map_*.tga, descr_regions, descr_strat with one region + one faction, texts, win conditions, loads in the
+  game) as well as editing an existing one. WAIT: he tests 0.10.0's Terrain editor in the game first.
 - **Portrait pools keep numbers in step** (checked on vanilla RTW): generals young/N, old/N, dead/N and cards
   young|old|dead/N are the same man, every folder of a group has the same count (roman 479, greek 188, barbarian
   151 - barbarian writes Young/Old/Dead); civilians/rogues have young/old + cards only. portraits.add writes the
