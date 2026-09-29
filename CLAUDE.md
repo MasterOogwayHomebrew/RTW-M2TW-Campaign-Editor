@@ -914,6 +914,16 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   in the owner's culture; the real work is swapping levels the owner cannot have. Check how the game itself
   treats foreign buildings on capture (RTW: destroyed / kept?) before choosing the rule. Test first on BI files (ask for bi/data/ui/
   roman + descr_ui_buildings.txt, or use tw-game-data RTW ui/) and check M2 the same way.
+- **BUG (the user, 2026-09-29, screenshot, BI)**: Edit faction empire_east, a garrison for Numid1 (a town nobody
+  holds): "Numid1: no name in empire_east's name list for a captain" (edit._garrisons: `mod.name_pool(faction)
+  ['characters']` came back empty). The user: "solve it once and for all - the tool is for other mods too, it must
+  find everything". Not reproduced yet: tw-game-data has no bi/data/descr_names.txt (vanilla RTW's format reads
+  fine; REX/bi descr_sm_factions has `faction empire_east, shadowed_by empire_east_rebels`). Suspects:
+  moddata.name_pool (the one reader of descr_names) misses BI's layout (shared / differently named sections, a
+  pool under another faction, names in names.txt only), or the file is taken from the wrong folder. Asked for
+  bi/data/descr_names.txt + bi/data/text/names.txt. Fix in name_pool itself (every caller: start, edit, gui New
+  army, family), a test on the real file, and a plain message saying which file and which faction section was
+  looked at, never a dead end.
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
 - Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.
