@@ -142,6 +142,13 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
 9. **Keep this file current** at the end of every piece of work: what changed, what was learned,
    what is open.
 
+10. **REX first (the user's standing rule, 2026-09-29)**: for every new feature, look first at what REX can do and
+   build on it where it helps - its settings (descr_ex.txt, descr_caps_ex.txt), xml sprites (sprite_format xml),
+   Squirrel / Lua scripts (script/modules/*.nut, EOP-Lua), console commands (rename_settlement, rename_region,
+   rename_faction, ...), lifted limits. Check REX's own docs (`dump_docudemon` output, REX.exe strings, its script/
+   folder) before guessing. Vanilla Rome and Medieval II keep working (say plainly what needs REX), unless the user
+   says to drop them.
+
 ## Hard-won rules (do not break)
 
 - **Names** written to descr_strat must exist in the name pool (descr_names +
