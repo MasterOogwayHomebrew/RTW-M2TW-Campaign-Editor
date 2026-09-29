@@ -782,7 +782,7 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   pools} in UNDO_KEYS, pool_for / leader_pool / refresh_name_combos. (2) **names-by-culture table**:
   gui_culturenames.CultureNamesTable (column per culture, sort, filters, edit in place, grey = culturenames.foreign
   = rename_settlement lines of the mod's own script); App.owners_after is the one "owners after Apply" (map + table).
-  (3) A tester's 5456 x 2464 map loaded (the user, 2026-09-29) - noted in README / wiki / ROADMAP; which file's size
+  
   (tiles or map_regions pixels) not asked.
 - **Released v0.13.0 (2026-09-29, after the evening /clear)**: settlement names by culture + New mod folder -bi / -alx
   (both were Unreleased) + **the name live in the window** (the user: "the change should show on the map in real

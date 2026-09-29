@@ -1,7 +1,7 @@
 # Campaign map
 
 The **Map** tab draws the campaign map tile by tile from the game's own map files: one square = one tile.
-Big maps load too - a tester's mod with a 5456 x 2464 map opened fine.
+Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.tga pixels; vanilla Rome is 255 x 156) opened fine.
 
 ## Looking around
 

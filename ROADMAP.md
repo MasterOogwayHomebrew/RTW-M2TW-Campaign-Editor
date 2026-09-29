@@ -36,7 +36,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - [x] Terrain editor: paint climates (`map_climates.tga`, the mod's own climates)
 - [x] Rivers kept joined side to side (the game stops a river at a corner-only step); Preview names a river the game will not draw
 - [x] Settlement names by the owner's culture (REX renames a town when it changes hands); the map shows the new owner's name at once; every town's names in one table
-- [x] Big maps load (a tester's 5456 x 2464 map)
+- [x] Big maps load (a tester's map of 5456 x 2464 tiles)
 
 ### Characters
 - [x] Character editor for any faction: names, ages, traits with levels, ancillaries
