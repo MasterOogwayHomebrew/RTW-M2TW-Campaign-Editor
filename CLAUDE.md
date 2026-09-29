@@ -789,6 +789,16 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
     equipment_library, weapon_testing - 353 files, 21 MB; M2 .mesh / .texture = the real unit models, useful for a
     model view and texture recolour), editor/ (brush_*.tga), tools/viewer/grass.texture. The re-sent
     battle_models.modeldb is byte-identical to the one already there. Big files still to come from him.
+  - **Got next (2026-09-29)**: HLR text/ (+ russian/), HLR imperial_campaign (without map.rwm - the game rebuilds it),
+    HLR enhanced_tweaks/*.json (kirsi / lanjane campaign tweaks, place in HLR assumed data/) -> tw-game-data HLR/data.
+    M2 data/unit_models/_units (3336 files: 3082 .mesh + 254 .texture, 817 MB raw, ~310 MB in git): NOT pushed yet -
+    **the user proposed one private repo per game** (agreed: tw-game-data keeps Rome / REX / HLR, a new private
+    tw-game-data-m2 gets M2 + _units; he creates it, the session cannot). Until then _units lives only in the
+    session scratchpad (he still has the 7z volumes).
+  - **Discord question "Can you create new religion with it?"** - the user's answer: edit, not create. True: M2 region
+    religion shares are editable (Religions... dialog, regionedit.set_religions); Rome has no religions in vanilla; a
+    new religion (M2 descr_religions.txt + religions text + EDB temples / religion requirements + traits + UI icons)
+    is not built. Idea for later, like a culture of one's own.
   - **Discord**: the Stainless Steel author praised the tool and asked for modeldb (done in 0.16.0, reply text
     given); Espartan asked for castles (done in 0.15.0, reply given); a tester loaded a 5456 x 2464-tile map.
   - **Next ideas (not promised)**: Unit editor model view (a unit's modeldb / descr_model_battle models, textures per
