@@ -704,7 +704,12 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
 - **Files asked of the user for tw-game-data** (2026-09-29): RTW `data/models/textures` (banner .tga.dds),
   `data/loading_screen`; M2 `data/loading_screen`, `data/unit_models/battle_models.modeldb`, `data/ui/<culture>/
   portraits` + `data/ui/custom_portraits`; RTW `bi/data/world/maps/base/descr_regions.txt`. He sends 7z volumes
-  of 30M in the chat; we push them to the private repo only.
+  of 30M in the chat; we push them to the private repo only. **Got 2026-09-29** (in tw-game-data now): RTW
+  models/textures + loading_screen, M2 loading_screen + battle_models.modeldb (Boost text archive, 1 MB). M2
+  southern_european portraits came as .7z.002 only - .001 missing, ask again. Still missing: bi descr_regions.
+  Checked on the real RTW files: macedon -> epirus gets standard_epirus(.tga.dds, DXT5 256x256, 9 mips) +
+  _ally + symbol128_epirus, lines point at them; Replace writes DXT5 with the same mips; macedon untouched;
+  Restore identical (diff -r).
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
 - Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.
