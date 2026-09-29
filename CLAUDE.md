@@ -831,12 +831,15 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
       (wrong conditions), Take leaves it in the other groups. To fix (one shared place): all lists of a line; covers
       = any group; give = a group of its own copying the template's conditions (or refuse with plain words), take =
       out of every group; test with the doc's merchants_wharf example (Rome + M2TW).
+    * .sd.xml sprite sheets (strat3, shared2, battle3, strat_ed, battle_ed, shared_editor + radar; in RTW-game-data
+      RTW/data/ui) - already used by symbols.py for faction logos under sprite_format xml.
     * descr_ex `max_factions` - known (limits.py); the log line `descr_ex.txt: max_factions = 31` confirms it.
     * ALX trait `Immortality` (Characters family, Hidden) restored in RTW + M2TW under REX: generals live past the
       hardcoded 122 - the Character editor may offer it for old characters (ages > 122).
     * descr_strat `use_two_seasons true|false` (false = spring + autumn too; 4 seasons start in winter) and
       `turns_per_year N` (>= 2, a multiple of 4 with 4 seasons; income divided by turns/2), after start/end_date.
-      To check: strat.py keeps unknown header lines byte-exact (it should); a campaign settings panel could set them.
+      **REMOVED from REX for now** (REX note, 2026-09-29: "Turns per year changes have been removed for the time being
+      as additional fixes are needed") - do not build anything on them until REX brings them back.
   - **Discord**: the Stainless Steel author praised the tool and asked for modeldb (done in 0.16.0, reply text
     given); Espartan asked for castles (done in 0.15.0, reply given); a tester loaded a 5456 x 2464-tile map.
   - **Next ideas (not promised)**: Unit editor model view (a unit's modeldb / descr_model_battle models, textures per
