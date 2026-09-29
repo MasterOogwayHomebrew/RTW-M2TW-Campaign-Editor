@@ -3,7 +3,8 @@
 When the game crashes, the tool shows an error, or something looks wrong, please send:
 
 1. **The logs**: in the tool, **Tools -> Save logs (zip)**. One `.zip` with the tool's log and the game's
-   `system.log.txt`, saved in `RTW-M2TW-Campaign-Editor-files\logs` next to the exe.
+   `system.log.txt`, saved in `RTW-M2TW-Campaign-Editor-files\logs` next to the exe - the tool's own
+   `faction_tool.log` lies in the same folder.
 2. **A video or a screenshot** of what you did and what went wrong.
 3. Which game and mod (Rome / REX / BI / Medieval II / M2EX, the mod's name) and the editor's version (in the
    window's title).

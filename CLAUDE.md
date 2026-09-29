@@ -85,7 +85,7 @@ byte-exactly.
 | `scan.py` | Scan mod (mentions of a faction in the whole mod), ignore list, game manifest |
 | `mapdata.py`, `gui_map.py` | Map tab: background drawn from map_ground_types (the user prefers it to the painted radar map), political layer, cities, ports, characters, drag |
 | `gui.py`, `gui_garrison.py`, `gui_buildings.py` | the window: tabs Faction / Units & armies / Buildings / Map, New/Edit mode |
-| `log.py` | `faction_tool.log` in `RTW-M2TW-Campaign-Editor-files/` next to the exe (0.7.2; older loose files moved in once; from source: the repo root): loads, previews, writes, restores, status lines, every error box and Tk callback traceback; **Log** button. Ask the user for it with system.log.txt |
+| `log.py` | `faction_tool.log` in `RTW-M2TW-Campaign-Editor-files/logs/` next to the exe with the Save-logs zips (the user asked, 2026-09-29; `log.home()` = the tool's folder with the settings, `logs_dir()`, an older log moved in once; from source: <repo>/logs, gitignored): loads, previews, writes, restores, status lines, every error box and Tk callback traceback; **Log** button. Ask the user for it with system.log.txt |
 | `mapedit.py` | moving towns and ports: `place_problem`, `apply_places` |
 | `diplomacy.py`, `gui_diplomacy.py` | core_attitudes / faction_relationships: `read`, `set_relations` (only lines naming the faction), Diplomacy tab, map Diplomacy colours; opts `relations` |
 | `check.py` | Check mod: file/consistency report; deep = `rehearse` every faction in memory (VAN 4 min) |

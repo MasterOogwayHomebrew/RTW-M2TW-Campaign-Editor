@@ -6,8 +6,8 @@
    folder, not straight into Downloads or onto the desktop - and put the exe there.
 3. Start it from there.
 
-Next to the exe it makes the folder `RTW-M2TW-Campaign-Editor-files` with its log, its settings and the logs
-zips you send with a bug report. **An update** is simply the new exe in the same folder; the settings stay.
+Next to the exe it makes the folder `RTW-M2TW-Campaign-Editor-files` with its settings, and inside it the
+folder `logs` with the tool's log (`faction_tool.log`) and the logs zips you send with a bug report. **An update** is simply the new exe in the same folder; the settings stay.
 
 ## The browser or Windows warns about the exe
 
