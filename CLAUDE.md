@@ -884,6 +884,10 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
 - Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.
 - ROADMAP.md is public and kept ticked by us (rule 8 above). Discord text for sharing lives in the chat only.
+- **Reviewers** (the user, 2026-09-29): asked about YouTube channel Andy's Take (@AndysTake, strategy / Total War
+  reviews). youtube.com and patreon.com are blocked from the session; search only showed Patreon (patreon.com/andystake,
+  its Discord for patrons). Contact e-mail and paid-review terms not found - the user checks the About tab himself
+  ("View email address" behind a captcha). Advice given: a free, short e-mail with the release link + the video.
 
 ## Next
 
