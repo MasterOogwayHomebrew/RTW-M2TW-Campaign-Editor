@@ -785,6 +785,10 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   (3) A tester's map of **5456 x 2464 tiles** loaded (the user: "pixels"; his screenshot shows tile x 5144, so they
   are map_regions.tga pixels = tiles; vanilla Rome 255 x 156): Map tab, Regions mode, new regions painted, no
   trouble. The game's own map-size limits are still unknown.
+- **The Stainless Steel author on Discord (2026-09-29)**: "Already seen it, looks great! Once you've built the modeldb
+  additions it will be epically useful for modding ... rather than just extremely useful" - battle_models.modeldb
+  (M2 clone / unit packs) is the most wanted next step from known M2 modders; the vanilla file is in tw-game-data
+  M2/data/unit_models.
 - **M2 city / castle BUILT, released 0.15.0 (the user: "do it and release")**: buildings.py - Level.kind ('city' |
   'castle' = the word after the level name), Level.convert_to (int, the target chain's level), Building.convert_to
   (chain); settlement_kind / set_kind (header), has_castles, core_chain, kind_problem (huge_city cannot be a castle:
