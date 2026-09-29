@@ -884,6 +884,16 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
     * **Strat editor launch**: `M2EX.exe --debug.bypass_to_strategy_editor=a` (M2TW + M2EX), `REX.exe -strat_ed=a`
       (Rome + REX) - the game's own campaign-map editor; idea: a button / bat line to open the mod in it.
     * (The user: "all sent", 2026-09-29 - the REX notes above are the whole batch.)
+  - **Where the project began (the user, 2026-09-29)**: his own REX Squirrel module **Sack Settlement** (a 4th capture
+    option: Exterminate + demolish all but core / walls / roads + population to minimum + reward + ruins to the rebels
+    with a garrison from descr_rebel_factions). Kept in RTW-game-data REX/sack_settlement (README + .nut). Facts it
+    proves (tested in game): modules go in `<game>\script\modules\` (REX's script/main.nut plugin squi `loadMods()`
+    requires every .nut of `::scripting.listModules("modules")`, whatever mod runs; the folder is made by hand); API
+    used: ::events.on (GeneralCaptureSettlement, ScrollOpened, ButtonPressed, campaignTick), ::game.faction /
+    factionCount / runConsoleCommand / runScriptCommand, ::stratMap.region / regionCount / settlementAt,
+    settlement.destroyBuilding / population / changeOwner, region.rebelType, ::ui.element (widget rects), canvas
+    onDraw + imageButton, console create_unit / add_money. Capture-scroll layout is hard-coded in the exe; button
+    names loot_settlement_occupy_button / _enslave_button / _extermintate_button (the engine's typo).
     * descr_ex `max_factions` - known (limits.py); the log line `descr_ex.txt: max_factions = 31` confirms it.
     * ALX trait `Immortality` (Characters family, Hidden) restored in RTW + M2TW under REX: generals live past the
       hardcoded 122 - the Character editor may offer it for old characters (ages > 122).
