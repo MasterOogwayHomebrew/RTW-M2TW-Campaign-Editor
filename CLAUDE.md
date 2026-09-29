@@ -770,6 +770,26 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
 
 ## Where we stopped (2026-09-29, the latest /clear - read this block first)
 
+- **STATE AT THE LAST /clear (2026-09-29, evening)** - read this first:
+  - **Released: v0.12.0** (github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/releases/tag/v0.12.0): climates,
+    flag symbols + faction logos (symbols.py), Restore to any backup, BI names + building pictures, recruit cap
+    lifted, descr_ex ancillary / children limits, captain names, Linux tkinter message.
+  - **On main, NOT released (CHANGELOG "Unreleased")**: settlement names by culture (culturenames.py -> marked block
+    in the campaign's campaign_script.txt, REX's documented rename_settlement); new mod folder from bi / alexander
+    starts with `REX.exe -bi` / `-alx`. Release as 0.12.1 / 0.13.0 when the user says "patch".
+  - **The user's standing rules added today**: REX first for every feature (rule 10 above); keep vanilla + M2 working.
+  - **REX documentation** (dump_docudemon: console_commands, docudemon_commands / _conditions / _events) is in
+    tw-game-data REX/documentation - use it before guessing; REX.exe strings also list a Squirrel API (::game,
+    ::events.on, ::stratMap) and an EOP-Lua API (M2TWEOP.callConsole, regionStruct...).
+  - **Waiting on the user (in-game tests)**: names by culture (take Rome with barbarians), `script` line at the end
+    of a Rome descr_strat under REX, `-bi -mod:<name>` together, flag symbol + faction logo of a new faction,
+    climates, BI Eastern Empire building pictures; how vanilla treats foreign buildings on capture (culture
+    conversion wish); the Discord tester's Tarentum garrison logs; Andy's Take's answer.
+  - **Next, in his order**: a REX settings panel (descr_ex / descr_caps_ex with plain words) was proposed - ask;
+    heights brush + tilted 3D preview; a new campaign map from scratch; map rescale only after the engine's size
+    limits are known.
+  - SignPath Foundation refused (reapply later); Linux works from source (checked here under Xvfb).
+
 - **Released: v0.12.0 (2026-09-29)**: climates, flag symbols + faction logos, Restore to any backup, BI names /
   building pictures, recruit cap, descr_ex limits, captain names (family records, M2 two-word names), Linux tkinter
   message; checked on Linux from a clean `git archive` (window under Xvfb, Rome + M2, 0 errors), deep Check Rome
@@ -781,11 +801,8 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
 - **Next, in the user's order**: heights brush (raise / lower / smooth; mountains and hills kept high, switchable)
   + a tilted 3D-like preview; then **a new campaign map from scratch**. A new climate of one's own: only after
   research (descr_climates + every file keyed by climate, engine caps) - not promised.
-- **Waiting on the user**: in-game test of Climates; bi descr_regions.txt; SignPath's answer (none yet, 2026-09-29);
-  Andy's Take's answer (the e-mail was sent by the user, 2026-09-29); SignPath refused (see Open with the user). HLR max_factions = 31 (answered).
-  **Newer REX descr_ex.txt** (uploaded 2026-09-29, max_factions 50): max_num_ancillaries 16 and max_num_children 6
-  there - the Character editor / family tree should read these limits from descr_ex.txt (default 8 / 4) instead of
-  assuming; not built yet.
+- **Waiting on the user** (older list): bi descr_regions.txt; Andy's Take's answer. HLR max_factions = 31 (answered).
+  descr_ex ancillary / children limits: BUILT in 0.12.0 (limits.ex_setting, family.limit_warnings).
 - Session set-up for a new session: add_repo MasterOogwayHomebrew/tw-game-data, `git clone --depth 1` into
   /home/user/tw-game-data; GUI checks under Xvfb :57 with python3.12 (scripts like the scratchpad's clim.py:
   gui.App(), v_path.set(data), load(), v_work.set('terrain'), work_changed(), editor()).
@@ -1053,7 +1070,7 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   (not dropped) unless he says otherwise.
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
-- Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.
+- Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix (M2 modeldb + portraits already received).
 - ROADMAP.md is public and kept ticked by us (rule 8 above). Discord text for sharing lives in the chat only.
 - **Reviewers** (the user, 2026-09-29): asked about YouTube channel Andy's Take (@AndysTake, strategy / Total War
   reviews). youtube.com and patreon.com are blocked from the session; search only showed Patreon (patreon.com/andystake,
