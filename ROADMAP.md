@@ -12,7 +12,7 @@ that is the fastest way to a fix.
 Version 0.1: a small script for one mod (Barbarian Empires REX on Rome: Total War) that cloned a faction
 from a template - texts, units, buildings, start towns, leader. Rome only, command line first.
 
-## What it does now (0.16.0)
+## What it does now (0.16.1)
 
 ### Factions
 - [x] New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art **(in-game ✓)**
@@ -57,7 +57,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 ### Both games
 - [x] Rome: Total War, Barbarian Invasion, Alexander - plain or on REX **(in-game ✓)**
 - [x] Medieval II and Kingdoms - plain or on M2EX: unpacking offered, set-up fixes, castles, `mods/<name>` with its .cfg
-- [x] Medieval II: turn a settlement into a castle or a city (buildings converted the game's own way)
+- [x] Medieval II: turn a settlement into a castle or a city (buildings converted the game's own way) **(in-game ✓ loads)**
 
 ### Safety
 - [x] Preview of every file and line before writing; only the lines meant change, the rest stays byte for byte
