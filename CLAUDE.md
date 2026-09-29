@@ -491,6 +491,10 @@ scaling), map_trade_routes, radar_map1/2 (2 px per tile), map_FE; every descr_st
 resources, fortresses / watchtowers, `landmark`s) x k onto a tile the rules allow (land_problem /
 sea for fleets); descr_sm_landmarks? descr_disasters? map.rwm deleted; check the engine's size limits
 (RTW vanilla vs REX; M2 / M2EX) before offering it. Answered him that it is not there yet.
+**Reply on Discord (2026-09-29)**: "It may throw an error when opening very large maps (hardcoded limits)" - agreed:
+the game's own size limits come first; before a rescale the tool must know the engine's limit (original RTW / BI,
+REX, M2 / M2EX) and refuse or warn in plain words - find the numbers (REX docs / strings, a test map in game).
+The tool itself has no map-size cap (HLR's map loads); not tested on a much bigger map.
 
 **Code signing** (the user, 2026-09-28: browsers / SmartScreen warn about the exe): needs a certificate
 the user must get (identity checked): free for open source via **SignPath Foundation** (signpath.org, apply
