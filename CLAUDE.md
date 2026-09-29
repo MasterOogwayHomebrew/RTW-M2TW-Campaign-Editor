@@ -177,6 +177,15 @@ forum pages / guides.
 
 ## Hard-won rules (do not break)
 
+- **New religion (Medieval II)** (religions.py, 2026-09-29, the user's "Judaism" example): written in
+  descr_religions.txt (the `religions { }` list = what the engine reads + `religion X { pip_path }` block),
+  descr_religions_lookup.txt, text/english/religions.txt `{x}Shown` (missing = silent crash), ui/pips/pip_x.tga
+  (24-bit TGA; the user's M2TW upload has no ui/pips, so a picture must be picked there), every descr_regions.txt
+  religions line (x 0; shares via region_religions in the same Apply - set_religions runs after), map.rwm removed,
+  optional descr_sm_factions `religion`. Limit 9 (MAX_RELIGIONS). Via regionedit.apply_opts 'new_religions' ->
+  App.new_religions (UNDO_KEYS), Map region bar 'New religion...'. Temples / traits / AI of its own: not built,
+  Preview counts the template's mentions.
+
 - **Names** written to descr_strat must exist in the name pool (descr_names +
   names string table) - else crash in `CHARACTER_DB::create/name_set`.
 - **One army per settlement** at the start; a second one is refused ("already
