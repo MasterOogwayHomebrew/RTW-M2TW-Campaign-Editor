@@ -874,6 +874,7 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
       idea: draw them, keep tiles free, later place / edit forts on the map (permanent, name).
     * **create_resource <x> <y> <resource>** (REX console, RTW + M2TW; updates the strat map and trade scroll) - our
       resources.py already writes descr_strat `resource` lines for a new campaign; the command is for a running game.
+      `remove_resource <x> <y>` (RTW + M2TW) removes any regular resource except has_mine ones.
     * descr_ex `max_factions` - known (limits.py); the log line `descr_ex.txt: max_factions = 31` confirms it.
     * ALX trait `Immortality` (Characters family, Hidden) restored in RTW + M2TW under REX: generals live past the
       hardcoded 122 - the Character editor may offer it for old characters (ages > 122).
