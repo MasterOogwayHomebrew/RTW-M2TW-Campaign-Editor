@@ -39,7 +39,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - ✅ Find on the map: towns, ports, armies, agents, fleets, units, forts, resources *(in-game ✓ on Rome and Medieval II; [video](https://youtu.be/6WAdnGovGzA))*
 - 📦 Terrain editor: paint climates (`map_climates.tga`, the mod's own climates)
 - 📦 Rivers kept joined side to side (the game stops a river at a corner-only step); Preview names a river the game will not draw
-- 📦 Settlement names by the owner's culture (REX renames a town when it changes hands); the map shows the new owner's name at once; every town's names in one table
+- ✅ Settlement names by the owner's culture (REX / M2EX rename a town when it changes hands); the map shows the new owner's name at once; every town's names in one table *(in-game ✓ on Medieval II with M2EX; [video](https://youtu.be/umwRyWkHoDE))*
 - 📦 Big maps load (a tester's map of 5456 x 2464 tiles)
 - 📦 Forts and watchtowers shown on the map; no one is placed on them
 
@@ -87,7 +87,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - 🧪 Medieval II battle_models.modeldb: clone and unit packs (0.16.0)
 - 🧪 Medieval II city / castle switch (0.15.0)
 - 🧪 Own name lists, the names-by-culture table (0.14.0)
-- 🧪 Settlement names by culture (0.13.0, REX); a New mod folder from BI / Alexander started with -bi / -alx
+- 🧪 Settlement names by culture on Rome with REX (0.13.0); a New mod folder from BI / Alexander started with -bi / -alx
 
 ## 🔜 Next
 
