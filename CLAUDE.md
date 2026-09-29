@@ -362,7 +362,7 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   keyed by the block's first line (a rename keeps it); removal never of `required_keys` (keys every
   unit / level has) or structure lines; `check_text` refuses unknown units / chains / levels.
 
-## Status (2026-09-29: main = v0.16.1 (castle core fit with a hand-set size); v0.16.0 (modeldb: clone + packs; army steps aside; old .nut migration); v0.15.1 (castles: buildings.castles_allowed = game_kind medieval2 AND castle levels - GUI + with_kind; castle_fits refuses a castle > large_city in edit/start, level_picked refuses it in the window); v0.15.0 (M2 city / castle switch); v0.14.1 (M2 spaced surname keys kept); v0.14.0 released (own name lists, names-by-culture table; Discord text given); v0.13.0 released (names by culture, live on the map); v0.12.0 released; v0.11.0 the user's test round fixed - unique names, faction limit (limits.py), family with existing people, river chain, window fixes; v0.10.0 Terrain editor (terrain.py + gui_terrain.TerrainEditor, App.editors['terrain']); v0.9.4 (bi descr_regions fix: moddata.region_entries is the one reader/writer layout; bi manifest merged into rtw_gold_steam_manifest as bi/...); v0.9.3 (portrait library portraits.py + PortraitLibrary window; Art select map optional, off = originals kept, sel_map {'on'}); v0.9.2 renamed RTW & M2TW Campaign Editor; v0.9.1 released (Edit region..., new regions in the towns list at once, a new faction starts in a new region by one Apply - regionedit.apply_opts is the one writer of region work, plan_land/free_tile(start, own)); v0.9.0 released (Character editor = FamilyEditor(standalone) in App.editors['characters']; portraits); v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
+## Status (2026-09-29: main = v0.16.1 released (castle core fit with a hand-set size); v0.16.0 (modeldb: clone + packs; army steps aside; old .nut migration); v0.15.1 (castles: buildings.castles_allowed = game_kind medieval2 AND castle levels - GUI + with_kind; castle_fits refuses a castle > large_city in edit/start, level_picked refuses it in the window); v0.15.0 (M2 city / castle switch); v0.14.1 (M2 spaced surname keys kept); v0.14.0 released (own name lists, names-by-culture table; Discord text given); v0.13.0 released (names by culture, live on the map); v0.12.0 released; v0.11.0 the user's test round fixed - unique names, faction limit (limits.py), family with existing people, river chain, window fixes; v0.10.0 Terrain editor (terrain.py + gui_terrain.TerrainEditor, App.editors['terrain']); v0.9.4 (bi descr_regions fix: moddata.region_entries is the one reader/writer layout; bi manifest merged into rtw_gold_steam_manifest as bi/...); v0.9.3 (portrait library portraits.py + PortraitLibrary window; Art select map optional, off = originals kept, sel_map {'on'}); v0.9.2 renamed RTW & M2TW Campaign Editor; v0.9.1 released (Edit region..., new regions in the towns list at once, a new faction starts in a new region by one Apply - regionedit.apply_opts is the one writer of region work, plan_land/free_tile(start, own)); v0.9.0 released (Character editor = FamilyEditor(standalone) in App.editors['characters']; portraits); v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
 
 Done and tested in game: new faction by template; separate mod folder; scan +
 ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
@@ -766,11 +766,31 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   placeholder (he tried it with unit cards); instead **Back to the original** (below).
 - Performance measured 2026-09-29 (vanilla RTW / M2 copies, Linux Xeon 2.1 GHz): ~100 MB RAM, load ~1-2 s, tabs
   < 1 s; HLR is ~3x the data (deep Check ~2 min). Exe: Python 3.12 (Windows 8.1+, 64-bit).
-- The user's wishes not built: M2 battle_models.modeldb; whole-map rescale; faction / building packs; culture of
+- The user's wishes not built: whole-map rescale; faction / building packs; culture of
   its own; strat-map flags; texture recolour; model viewer; Rome portraits of one's own (only if REX supports a
   `portrait` line - ask/check REX); portraits for records (M2 may take `portrait` there too - check).
 
 ## Where we stopped (2026-09-29, the latest /clear - read this block first)
+
+- **STATE AT THE /clear OF 2026-09-29 ~12:15 UTC - READ THIS FIRST** (everything is pushed; main = session branch):
+  - **Released today, in order**: v0.13.0 (names by culture live on the map), v0.14.0 (own name lists, all-towns
+    names table), v0.14.1 (M2 surname keys with a space kept), v0.15.0 (M2 city / castle switch), v0.15.1 (castles
+    Medieval II only + never above large_city), v0.16.0 (M2 battle_models.modeldb: clone + unit packs; army steps
+    aside for a moved town; old ft_settlement_names.nut migrated), **v0.16.1 = latest** (castle core fit with a
+    hand-set size). github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/releases
+  - **In-game confirmed today**: M2 city / castle switch loads and runs (scotland, the user's log 14:03).
+  - **Waiting on the user**: files for tw-game-data (asked 2026-09-29: a big mod's modeldb - Stainless Steel best -,
+    Kingdoms modeldb + descr_model_battle, HLR root .txt + text/ + imperial_campaign/, BI descr_regions.txt);
+    in-game tests (🧪 list in ROADMAP: modeldb clone / packs, names by culture under REX, own name lists, BI, climates,
+    flag symbols...); he must UPDATE his exe (his HLR log came from a pre-0.13 build) and say yes to the old
+    names-module fix on Load.
+  - **Discord**: the Stainless Steel author praised the tool and asked for modeldb (done in 0.16.0, reply text
+    given); Espartan asked for castles (done in 0.15.0, reply given); a tester loaded a 5456 x 2464-tile map.
+  - **Next ideas (not promised)**: Unit editor model view (a unit's modeldb / descr_model_battle models, textures per
+    faction, scale); modeldb in Check mod; kind (city / castle) for rebel-owned new regions; REX settings panel;
+    heights brush + tilted preview; new map from scratch; map rescale after the engines' limits are known.
+  - ROADMAP uses coloured emoji now (rule 8).
+
 
 - **Released v0.14.0 (2026-09-29)**: (1) **own name lists** (the user: "add new name lists for e.g. an Arab country; type the
   names in a format - comma or space separated - then surnames in a second step"): namelists.py (parse: commas /
