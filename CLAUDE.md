@@ -270,7 +270,7 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   **SOLVED (the user sent the REX package, 2026-09-29; its text settings are in tw-game-data REX/)**: the limit is
   REX's own setting **`max_factions` in `data/descr_ex.txt`** ("Maximum number of factions (default in M2: 31,
   RTW: 21) / Increase to support more factions in mods"; REX ships `max_factions 21` in data/ and bi/; the file is
-  optional, missing = the default). HLR must set it to 31 or more in its own descr_ex.txt (the user: HLR has 31 factions; the README's old "32 ran fine" is unconfirmed - ask for HLR\data\descr_ex.txt max_factions). Fix for his nabataea: raise
+  optional, missing = the default). HLR must set it to 31 or more in its own descr_ex.txt (the user, 2026-09-29: HLR's max_factions is 31 = exactly its 31 factions, so a 32nd faction on HLR needs it raised - the tool offers that with a yes. The descr_ex.txt he uploaded with that answer says `max_factions 50` and is a newer REX file: also max_num_ancillaries 16, max_num_children 6, ages, bribery, horde, battle visuals - asked which file it is). Fix for his nabataea: raise
   it to 22+ (not yet confirmed in game). To do (next patch): ModData reads max_factions (the mod's descr_ex.txt,
   else the game's data/, else the default: RTW 21 / BI 21 per REX's file / M2 31); the New faction tab shows
   "N of max"; Preview offers, with a yes and a backup, to raise max_factions itself when REX is there
@@ -763,8 +763,11 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
 - **Next, in the user's order**: heights brush (raise / lower / smooth; mountains and hills kept high, switchable)
   + a tilted 3D-like preview; then **a new campaign map from scratch**. A new climate of one's own: only after
   research (descr_climates + every file keyed by climate, engine caps) - not promised.
-- **Waiting on the user**: in-game test of Climates; bi descr_regions.txt; HLR descr_ex.txt max_factions; SignPath's
-  answer; the e-mail to the YouTube reviewer Andy's Take was drafted in the chat (English, free review asked, links: releases, video m1sCPg-Lzsw, wiki) - ask whether he sent it / got an answer.
+- **Waiting on the user**: in-game test of Climates; bi descr_regions.txt; SignPath's answer (none yet, 2026-09-29);
+  Andy's Take's answer (the e-mail was sent by the user, 2026-09-29). HLR max_factions = 31 (answered).
+  **Newer REX descr_ex.txt** (uploaded 2026-09-29, max_factions 50): max_num_ancillaries 16 and max_num_children 6
+  there - the Character editor / family tree should read these limits from descr_ex.txt (default 8 / 4) instead of
+  assuming; not built yet.
 - Session set-up for a new session: add_repo MasterOogwayHomebrew/tw-game-data, `git clone --depth 1` into
   /home/user/tw-game-data; GUI checks under Xvfb :57 with python3.12 (scripts like the scratchpad's clim.py:
   gui.App(), v_path.set(data), load(), v_work.set('terrain'), work_changed(), editor()).
