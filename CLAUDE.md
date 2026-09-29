@@ -857,6 +857,14 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
       invade_buildup (ATTACK_GRIND, waits until ~50 %+ of its targets are ready - why buildup-only AIs look frozen),
       invade_raids (ATTACK_RAID, no conquest), invade_start (masses on the border, never attacks), invade_none. Idea:
       the Faction tab's AI choice explains the ai_label's behaviour in these plain words.
+    * **Projectile visibility (REX / M2EX)**: `distance_visibility <far> <mid> <length_cap> <whiten_cap> <whiten_gain>`
+      in data/descr_projectile_new.txt (Rome + REX) / descr_flaming_projectiles.txt (M2TW + M2EX); REX example
+      0.05 0.10 2.0 0.19 0.0007; vanilla look = `0 0 1 0 0`. Idea: a slider pair in a REX settings panel.
+    * **Replenishment console commands (RTW + M2TW)**: `replen_soldiers <character|settlement> <percentage>`,
+      `replen_all_forts <faction> <percentage> [owner] [not_siege]` (owner = only forts in the faction's own regions,
+      not_siege = skip besieged forts); usable from campaign_script (`for_each settlement in world ... console_command
+      replen_soldiers local 5`, `if not SettlementUnderSiege`). Idea: campaign-script snippets offered by the tool
+      (like the names-by-culture block, culturenames.py writes marked blocks the same way).
     * descr_ex `max_factions` - known (limits.py); the log line `descr_ex.txt: max_factions = 31` confirms it.
     * ALX trait `Immortality` (Characters family, Hidden) restored in RTW + M2TW under REX: generals live past the
       hardcoded 122 - the Character editor may offer it for old characters (ages > 122).
