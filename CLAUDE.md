@@ -764,6 +764,14 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
      unit or building only). To do: the bottom Undo / Redo (and Ctrl+Z / Ctrl+Y) go to the editor on show
      (Terrain: undo stroke / redo stroke - needs a redo stack; Character editor, Unit / Building editors: their
      own steps), or are greyed there with the right editor's name - never a silent click.
+  5. **Terrain editor in the game (RTW, vanilla imperial_campaign, 2026-09-29): no crash, the campaign loads,
+     the painted river is drawn** - the first in-game check of 0.10.0. The user found the game's river rule:
+     **river tiles must touch by an EDGE (4-connected); where two river tiles meet only by a corner, the game
+     does not draw the river there** (his long painted river south of Carthage/Thapsus shows gaps at the
+     diagonal steps). To do: the river brush keeps rivers 4-connected (a diagonal step fills one of the two
+     corner tiles itself - the one that is land and not a town/port), Preview warns about corner-only contacts
+     (terrain river check today only finds a river tile touching no other); same for fords (part of the river)
+     - check M2's rule too. Add to Hard-won rules once built. He is still checking the drawing of all layers.
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
 - Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.
