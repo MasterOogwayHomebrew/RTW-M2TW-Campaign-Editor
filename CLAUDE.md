@@ -692,8 +692,18 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   screenshots) before new terrain work.
 - Then, in his order: heights brush (+ mountains/hills raise the land, switchable) and a tilted 3D-like preview;
   **a new campaign map from scratch** (one region, one faction, loads in the game) and editing existing maps.
-- Waiting on him: Art "Remove" meaning + in-game test of missing pictures; bi descr_regions.txt to confirm the
-  0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.
+- **Art pictures of one's own** (2026-09-29, on main, not released - goes into the next release): new faction's
+  banners / loading logo are its own files; Replace of a shared picture = own copy + repointed line; real DDS
+  writes; Back to the original. Art "Remove" dropped (his test: unlinked pictures = errors + "cats"). To test in
+  game: a clone's banner in battle (standard_<new>.tga.dds written by Pillow DXT5 + mipmaps), the loading logo.
+- **Why the clone exists** (the user's words, keep to it): a clone is a ready template that surely starts in the
+  game, so every change can be checked in the game at once, instead of building a faction from nothing first.
+  It ADDS a faction, never replaces one: everything of the new faction must be its own (files named after it,
+  lines pointing at them); the template must stay untouched whatever is edited on the new one. He expects files
+  named after the new faction (Epirus from Macedon -> *_epirus*), not the template's names.
+- **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
+  decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
+- Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.
 - ROADMAP.md is public and kept ticked by us (rule 8 above). Discord text for sharing lives in the chat only.
 
 ## Next
