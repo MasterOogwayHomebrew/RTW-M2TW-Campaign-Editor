@@ -228,7 +228,7 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   "faction_db.cpp(564) Too many factions described here, maximum is(21). The rest will be ignored", then
   "Invalid ownership type 'slave' found in unit 'barb peasant slave'" (slave, the 22nd, was dropped) -> the
   game closes at start. Vanilla RTW already has 21, so there is NO room for a new faction on plain Rome.
-  HLR (a BI-based mod) runs 31-32 under REX. build.validate warned only above 31 ("Classic RTW stops at 31;
+  HLR has 31 factions with slave (the user, 2026-09-29) - whether a 32nd runs depends on HLR's own max_factions. build.validate warned only above 31 ("Classic RTW stops at 31;
   REX lifts the faction limit") - WRONG for plain RTW. To do (next patch): the limit per game (plain RTW 21;
   BI / Alexander / BI-based mods 31 - check how REX decides, and whether it can be raised), refused in
   Preview with plain words before anything is written, and the New faction tab should say up front
@@ -249,13 +249,13 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   that may be how REX lifts the 21 limit (24 here) - to test once we know its place.
   **The user: the json is from HLR.** It lists 24 factions, not HLR's 31, so it cannot be what HLR runs its
   factions from - REX reads the .txt there; the json is likely a leftover. So what we know: under REX, plain
-  RTW stops at 21 (his log), HLR (BI format) ran 32. He proposed "base the tool strictly on REX, drop vanilla";
+  RTW stops at 21 (his log), HLR has 31. He proposed "base the tool strictly on REX, drop vanilla";
   answered: no - the limit is the game's, REX or not, and people use vanilla / the original exe / M2 too;
   instead the tool knows each game's limit from evidence and says it up front. Awaiting his word.
   **SOLVED (the user sent the REX package, 2026-09-29; its text settings are in tw-game-data REX/)**: the limit is
   REX's own setting **`max_factions` in `data/descr_ex.txt`** ("Maximum number of factions (default in M2: 31,
   RTW: 21) / Increase to support more factions in mods"; REX ships `max_factions 21` in data/ and bi/; the file is
-  optional, missing = the default). HLR must set it higher in its own descr_ex.txt. Fix for his nabataea: raise
+  optional, missing = the default). HLR must set it to 31 or more in its own descr_ex.txt (the user: HLR has 31 factions; the README's old "32 ran fine" is unconfirmed - ask for HLR\data\descr_ex.txt max_factions). Fix for his nabataea: raise
   it to 22+ (not yet confirmed in game). To do (next patch): ModData reads max_factions (the mod's descr_ex.txt,
   else the game's data/, else the default: RTW 21 / BI 21 per REX's file / M2 31); the New faction tab shows
   "N of max"; Preview offers, with a yes and a backup, to raise max_factions itself when REX is there
