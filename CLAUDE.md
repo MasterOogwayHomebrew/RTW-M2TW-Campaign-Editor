@@ -661,6 +661,9 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   git remote still says RTW-faction-tool - repointing it was refused by the permission check, pushes work via the
   redirect). He turned on **code scanning** (security/code-scanning/1): the GitHub tools here cannot read alerts -
   ask him to paste the alert text (rule, file, line) and fix it.
+- **GitHub security settings** (2026-09-29): security policy, advisories, code scanning (CodeQL on every push; alert
+  #1 missing-workflow-permissions fixed by `permissions: contents: read` in both workflows), secret scanning,
+  **private vulnerability reporting and Dependabot alerts all enabled** by the user. New alerts: he pastes the text.
 - **Tester** (a Discord person) will try a version and look for bugs; reply given (releases link + Save logs zip
   + screenshot/video).
 - **Not tested in game yet**: Family tab / Character editor (0.8-0.9), M2 own portraits, Edit region, new faction
@@ -674,6 +677,16 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
 - The user's wishes not built: M2 battle_models.modeldb; whole-map rescale; faction / building packs; culture of
   its own; strat-map flags; texture recolour; model viewer; Rome portraits of one's own (only if REX supports a
   `portrait` line - ask/check REX); portraits for records (M2 may take `portrait` there too - check).
+
+## Where we stopped (2026-09-29, before a /clear)
+
+- Released: v0.10.0 (Terrain editor). The user is **testing it in the game now** - wait for his result (logs,
+  screenshots) before new terrain work.
+- Then, in his order: heights brush (+ mountains/hills raise the land, switchable) and a tilted 3D-like preview;
+  **a new campaign map from scratch** (one region, one faction, loads in the game) and editing existing maps.
+- Waiting on him: Art "Remove" meaning + in-game test of missing pictures; bi descr_regions.txt to confirm the
+  0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.
+- ROADMAP.md is public and kept ticked by us (rule 8 above). Discord text for sharing lives in the chat only.
 
 ## Next
 
