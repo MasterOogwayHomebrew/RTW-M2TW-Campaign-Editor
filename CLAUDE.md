@@ -952,6 +952,16 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   bi/data/descr_names.txt + bi/data/text/names.txt. Fix in name_pool itself (every caller: start, edit, gui New
   army, family), a test on the real file, and a plain message saying which file and which faction section was
   looked at, never a dead end.
+- **Discord tester (2026-09-29, via the user)**: made two new factions + new units, campaign and custom battles run
+  with no crash. Asked: (1) Building editor Add line refused "no building level in this mod has more than 101
+  'recruit' lines in its capability" - that is OUR rule (editors.room_for / line_limits: never beyond what the mod
+  already has), not the game's (HLR has 702 in one capability). Proposed to the user: lift the cap for `recruit`
+  (lines that only list units); workaround now: Unit editor "Copy as new..." of a unit already recruited in that
+  level (copy_unit writes a recruit line next to each of the old one's). Waiting for the user's word. (2) New
+  factions show the template's symbol on the strat-map flags (banners/symbols*.tga.dds slot via descr_sm_factions
+  standard_index) and on the faction button (logo_index sprite in ui/*.sd) - NOT built (see "RTW strat-map
+  flags"); answered "planned". (3) Tarentum garrison "bugged" after switching faction before removing the
+  garrison: units with blank cards in his army panel - not looked at; asked for the Save logs zip + descr_strat.
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
 - Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.
