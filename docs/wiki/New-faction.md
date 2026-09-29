@@ -48,4 +48,9 @@ the game at once, so you can test every change after that straight away. The tem
 - One campaign per run.
 - Copied texts keep the template's wording apart from the names ("the wicked Seleucids..."): edit them in
   the text files if you care.
-- Faction count: classic Rome stops at 31 factions (with `slave`); REX lifts the limit.
+- **Faction count**: the game takes a set number of factions, `slave` included - plain Rome 21, Medieval II 31.
+  REX and M2EX read it from `max_factions` in `data/descr_ex.txt`. After Load the status line says how many
+  there are; if a new faction would go over, Preview offers to raise `max_factions` for you (with REX / M2EX).
+  Over the limit the game closes at start ("Too many factions described here").
+- **Names**: every character of a faction needs a name of its own - the game skips a second one with the same
+  name. The tool picks free names and refuses a taken one.

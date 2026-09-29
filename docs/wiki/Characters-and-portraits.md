@@ -8,13 +8,15 @@ the leader and heir marked. The **Character editor** at the top does the same fo
 
 - Click a person to edit: name (from the faction's name lists - the game crashes on a name without a text),
   age, sex (off the map), traits with their level, ancillaries.
-- **Give a wife...**, **Add a child...**, **Take off the tree**, **Leave out**.
+- **Give a wife...**, **Add a child...**: someone already in the faction (a new faction's heir becomes its
+  leader's son this way) or a new person from the name lists. **Take off the tree**, **Leave out**.
 - A renamed person is renamed on every line of the family tree.
 - The tree is checked before writing (a husband is a man, nobody is their own ancestor...).
 
 ## Portraits
 
-- **Rome**: the game gives every character a random picture of its culture's pool when the campaign starts
+- **Rome**: the tool shows the same man young, old and dead; to see your own pictures in the game, add them to
+  the pool (**Portrait library...**). The game gives every character a random picture of its culture's pool when the campaign starts
   (`ui/<culture>/portraits/portraits/young|old|dead/generals|civilians|rogues/NNN.tga`); family members off the
   map get the family picture.
 - **Medieval II**: a character on the map can have a portrait of his own. **Replace...** under young, old or

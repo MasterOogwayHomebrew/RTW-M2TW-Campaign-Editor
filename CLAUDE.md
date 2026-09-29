@@ -156,6 +156,21 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   steep tiles are fine (the old slope <= 25 rule refused HLR 150,246, a hills tile the
   game accepts); REX's "invalid tile" crashes were a ford (406,42) and mountains (404,42).
   A bad drop/placement goes to the nearest good tile (MapView.nearest).
+- **Character names are unique within a faction** (characters + character_record, as written): REX "descr_strat.txt,
+  at line N: duplicated character name in this faction, skipping" (world.cpp(987)) - the user's nabataea lost an army
+  named like its leader and a spy named like an automatic captain. strat.faction_names / duplicate_names /
+  check_names (build.validate and edit refuse a new duplicate); captains skip taken names; the New army dialog
+  refuses one (App._faction_names). Vanilla RTW / M2 have none.
+- **Rivers** (the user, in game): the game follows a river side to side from where it joins another river (also the
+  sea / map edge / a source - the tool counts those) and stops at a corner-only step; everything past it is not drawn.
+  terrain.river_warnings = pieces (4-connected river/ford/source) joined to nothing; terrain.river_path = the
+  1-tile brush's staircase (gui_terrain.paint, _last_river). 0 such pieces on vanilla RTW / M2 maps.
+- **Faction limit** = limits.py: original exes 21 (Rome) / 31 (M2); REX / M2EX read `max_factions` in
+  data/descr_ex.txt (the mod's, else the game's; REX ships 21, M2EX 31; the user's REX: 22 factions ran with 31).
+  Over it: "Too many factions described here, maximum is(21)" -> closes at start. build -> limits.check raises
+  LimitError (can_raise when REX.exe / M2EX.exe is beside the data); App._faction_plan asks and sets
+  opts raise_faction_limit (once per mod, App._limit_raise); no exe found = warning only. Regions: REX has no
+  setting (HLR > 300 regions run); original-exe region limits unknown - not built.
 - **Settlements** move as whole `settlement { }` blocks; two blocks for a region
   is fatal. The capital is the faction's **first** settlement block.
 - **Text tables**: a value runs until the next `{KEY}` or `¬` line - long texts
@@ -338,7 +353,7 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   keyed by the block's first line (a rename keeps it); removal never of `required_keys` (keys every
   unit / level has) or structure lines; `check_text` refuses unknown units / chains / levels.
 
-## Status (2026-09-29: v0.10.0 Terrain editor (terrain.py + gui_terrain.TerrainEditor, App.editors['terrain']); v0.9.4 (bi descr_regions fix: moddata.region_entries is the one reader/writer layout; bi manifest merged into rtw_gold_steam_manifest as bi/...); v0.9.3 (portrait library portraits.py + PortraitLibrary window; Art select map optional, off = originals kept, sel_map {'on'}); v0.9.2 renamed RTW & M2TW Campaign Editor; v0.9.1 released (Edit region..., new regions in the towns list at once, a new faction starts in a new region by one Apply - regionedit.apply_opts is the one writer of region work, plan_land/free_tile(start, own)); v0.9.0 released (Character editor = FamilyEditor(standalone) in App.editors['characters']; portraits); v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
+## Status (2026-09-29: v0.11.0 the user's test round fixed - unique names, faction limit (limits.py), family with existing people, river chain, window fixes; v0.10.0 Terrain editor (terrain.py + gui_terrain.TerrainEditor, App.editors['terrain']); v0.9.4 (bi descr_regions fix: moddata.region_entries is the one reader/writer layout; bi manifest merged into rtw_gold_steam_manifest as bi/...); v0.9.3 (portrait library portraits.py + PortraitLibrary window; Art select map optional, off = originals kept, sel_map {'on'}); v0.9.2 renamed RTW & M2TW Campaign Editor; v0.9.1 released (Edit region..., new regions in the towns list at once, a new faction starts in a new region by one Apply - regionedit.apply_opts is the one writer of region work, plan_land/free_tile(start, own)); v0.9.0 released (Character editor = FamilyEditor(standalone) in App.editors['characters']; portraits); v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
 
 Done and tested in game: new faction by template; separate mod folder; scan +
 ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
@@ -781,7 +796,7 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   to main that changes docs/wiki (GITHUB_TOKEN, contents: write; pages made only in the web editor are kept).
   The session's git proxy refuses .wiki repos (403, add_repo cannot add them). Keep the pages current with the
   README when features change.
-- **The user's test round (2026-09-29, collect - fix ALL at once when he says he is done, not one by one)**:
+- **The user's test round (2026-09-29) - ALL FIXED in 0.11.0** (kept for the record):
   1. Portrait library (Rome, roman / generals, dark theme): the portraits stand in ONE column down the left, the
      rest of the window empty. Cause (not fixed yet): gui_family.PortraitLibrary.show computes
      `cols = max(1, (cv.winfo_width() or 900) // 56)` - before the canvas is laid out winfo_width() is 1, not 0,

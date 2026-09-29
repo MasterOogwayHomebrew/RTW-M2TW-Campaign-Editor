@@ -12,10 +12,11 @@ that is the fastest way to a fix.
 Version 0.1: a small script for one mod (Barbarian Empires REX on Rome: Total War) that cloned a faction
 from a template - texts, units, buildings, start towns, leader. Rome only, command line first.
 
-## What it does now (0.10.0)
+## What it does now (0.11.0)
 
 ### Factions
 - [x] New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art **(in-game ✓)**
+- [x] Faction limit known and raised with a yes (REX / M2EX `max_factions`) **(in-game ✓ on Rome + REX)**
 - [x] Edit an existing faction: names, texts, colours, AI, money, playable, towns taken or given, capital, leader and heir **(in-game ✓)**
 - [x] Garrisons and buildings per town, with the game's own cards and pictures **(in-game ✓)**
 - [x] Settlement level and population (the governor's building follows the size)
@@ -32,6 +33,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - [x] Map changes, new regions and faction changes written together by one Apply
 - [x] Resources placed, moved and removed; religions per region (Medieval II)
 - [x] Terrain editor: paint ground types, rivers, fords, river sources and cliffs tile by tile **(in-game ✓ on Rome)**
+- [x] Rivers kept joined side to side (the game stops a river at a corner-only step); Preview names a river the game will not draw
 
 ### Characters
 - [x] Character editor for any faction: names, ages, traits with levels, ancillaries
@@ -43,7 +45,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - [x] Unit and building editors: every line as a field, add / remove lines, copy as new, renames followed everywhere
 - [x] Pictures imported into the right place in the right size and format (cards, building pictures, faction art)
 - [x] Unit packs: export units with models, textures, mounts, cards and texts into a .zip and import them into another mod
-- [x] Faction art: every picture of a faction listed with where the game shows it, Replace...
+- [x] Faction art: every picture of a faction listed with where the game shows it, Replace... **(in-game ✓)**; a new faction's banners and logo are its own files; Back to the original
 - [x] Campaign-select map drawn from the faction's towns (optional; the original stays by default)
 
 ### Both games
@@ -68,13 +70,11 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 | Step | What it needs |
 |---|---|
 | Signed exe (no browser / SmartScreen warnings) | SignPath Foundation's answer (applied) |
-| Rivers stay one edge-connected chain (the game stops drawing a river at its first corner-only step) | Time; an in-game test |
 | Terrain: heights brush (raise, lower, smooth), mountains and hills kept in step with the heights | Time; an in-game test |
 | Terrain: a tilted 3D-like preview from the heights and ground | Time |
 | Terrain: climates; the coast (land and sea swapped, with regions and heights) | Time; in-game tests |
 | A new campaign map from scratch (one region, one faction, loads in the game), then grown in the editor | Time; in-game tests |
 | Medieval II: new factions' units in `battle_models.modeldb` | The game's `data/unit_models/battle_models.modeldb` to build and test on |
-| Medieval II: the portrait pools in the library | The game's `ui/<culture>/portraits` and `ui/custom_portraits` |
 | Faction packs and building packs (like unit packs) | Time; then an in-game test |
 | Mods made on the plain game (slimmed folders) loaded with the game's data behind them | Time |
 
