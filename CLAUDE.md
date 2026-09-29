@@ -839,6 +839,24 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
       allows a key only up to what some unit of the mod already has, so on a Rome mod with no recruit_priority_offset
       line anywhere the Unit editor's Add line refuses it (and does not offer it). To fix: a list of keys the engine
       knows (REX EDU keys, M2TW's) that may be added even when the mod has none yet - one place, both games.
+    * **REX console / EDB / EDU additions**: `add_soldiers <character|settlement> <unit_type> <amount>` (absolute
+      amount); `downgrade_building <settlement> <building_level_id>` (one level down, or destroyed at level 0; RTW +
+      M2TW); EDB `retrain` (RTW) / `retrain_pool` (M2TW) = like recruit / recruit_pool but only retraining (both lines
+      for one unit = recruitable); EDU attribute "Immune to Psychology" (the pasted spelling was `immue_to_psychology`
+      - check the real keyword in REX docs / strings before offering it): no fear morale penalties.
+    * **BUG FOUND (ours, M2TW, not fixed yet)**: vanilla M2TW export_descr_buildings has 1475 `recruit_pool` lines
+      and 0 `recruit` lines, but roster.RE_RECRUIT / recruit_lines, editors.rename_unit (recruit lines follow a
+      rename), packs._recruit_places and editors line 114 / 386 / 647 read only `recruit` (line 114 also
+      recruit_pool). So on M2TW: the Roster tab finds no recruit places, a unit rename leaves its recruit_pool lines
+      on the old name (the game then refuses them), unit packs carry no recruit places. Fix in one place: a
+      recruit-line reader for recruit / recruit_pool / retrain / retrain_pool (unit name = the quoted first
+      argument), used by every caller; LIST_KEYS gets retrain + retrain_pool; retrain-only = not recruitable.
+      Test on M2TW-game-data (england) + Rome.
+    * **descr_campaign_ai_db.xml invade values** (inside the AI labels; a faction's ai_label picks the tree):
+      invade_immediate (ATTACK_NORMAL, attacks at once), invade_opportunistic (ATTACK_BLITZ, take + hold one region),
+      invade_buildup (ATTACK_GRIND, waits until ~50 %+ of its targets are ready - why buildup-only AIs look frozen),
+      invade_raids (ATTACK_RAID, no conquest), invade_start (masses on the border, never attacks), invade_none. Idea:
+      the Faction tab's AI choice explains the ai_label's behaviour in these plain words.
     * descr_ex `max_factions` - known (limits.py); the log line `descr_ex.txt: max_factions = 31` confirms it.
     * ALX trait `Immortality` (Characters family, Hidden) restored in RTW + M2TW under REX: generals live past the
       hardcoded 122 - the Character editor may offer it for old characters (ages > 122).
