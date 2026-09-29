@@ -862,6 +862,16 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
      FamilyEditor / family.read with an empty tree, Give a wife / Add a child with no records to copy the form
      from (family.apply copies "a record of the file" - the new block has none: take one from another faction).
      Wait for his command before fixing (he said so again).
+- **Released v0.11.0** (2026-09-29, github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/releases/tag/v0.11.0).
+- **Asked on Discord (Tymon, 2026-09-29): edit map_climates.tga / add a new climate?** Facts (both vanilla):
+  map_climates.tga is 2W+1 x 2H+1 like map_ground_types (RTW 511x313, M2 591x379); each colour is a climate of
+  data/descr_climates.txt (`climate <name>` + `colour r g b` + its vegetation / textures per season): RTW 12
+  (test_climate 236 0 140, sandy_desert, rocky_desert, temperate_grassland_fertile/_infertile, temperate_forest_open/
+  _deep, swamp, highland, alpine, sub_arctic, semi_arid), M2 12 with two named unused1 / unused2 (placeholder
+  slots - a fixed count?). Painting existing climates = the Terrain editor's ground brush on another picture
+  (ROADMAP Next "Terrain: climates") - not built yet. A new climate = a descr_climates entry + every file keyed by
+  climate (vegetation, battle-map textures, ...) and maybe an engine cap (REX's README says cultures/religions
+  limits are lifted, climates not named) - not checked, not promised. Answer given in English for Discord.
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
 - Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.
