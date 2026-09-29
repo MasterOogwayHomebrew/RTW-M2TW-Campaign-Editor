@@ -829,6 +829,24 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
      then Restore of all three, newest first, worked. Only game-side noise (Combat_V_Romans ancillary assert =
      vanilla's, REX sprite warnings). ROADMAP: Terrain editor ticked (in-game ✓ on Rome); the river-chain step
      added to Next. Not checked in game yet: Medieval II terrain, heights (no brush yet).
+  6. **New faction nabataea (from egypt) in the game, vanilla RTW + REX with `max_factions 31` (2026-09-29
+     04:20)**: the campaign loads with 22 factions ("descr_ex.txt: max_factions = 31" in the log) - the limit fix
+     confirmed. The user's own picture (Art Replace) shows everywhere as the faction icon - Art in-game ✓.
+     **Bug (ours): duplicate character names** - REX: "descr_strat.txt, at line 3978 / 3990: duplicated character
+     name in this faction, skipping" (world.cpp(987), logged fatal, the game goes on without them). The tool
+     named the new army "Ptahotem" = the leader's name, and the spy "Heruben" = the captain who came with Petra1
+     (log: "army Ptahotem at 211, 35", "spy Heruben at 208, 34", "captain Heruben leads your garrison").
+     Rule to add: **a character's name must be unique within its faction** (in descr_strat, the first name as
+     written); every name the tool picks (new armies / agents / fleets / captains / heirs / records) must skip
+     names the faction already uses, and Preview must refuse duplicates. Test first on a synthetic mini-mod.
+     Game-side, not ours: REX assert "AI_REQUEST::set_move_position not implemented ... Please tell ***" (a
+     Pontus captain embarking, ai_action_request_controller.cpp(526)) - the game went on to 04:23 - worth
+     reporting to REX; Combat_V_Romans (vanilla).
+  7. **Family tree does not work for a new faction** (the user: nothing can be added). Not looked at yet - the
+     clone writes no character_record / relative lines for the new faction (leader + heir only); check
+     FamilyEditor / family.read with an empty tree, Give a wife / Add a child with no records to copy the form
+     from (family.apply copies "a record of the file" - the new block has none: take one from another faction).
+     Wait for his command before fixing (he said so again).
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
 - Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.
