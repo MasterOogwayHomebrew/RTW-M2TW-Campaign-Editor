@@ -12,7 +12,7 @@ that is the fastest way to a fix.
 Version 0.1: a small script for one mod (Barbarian Empires REX on Rome: Total War) that cloned a faction
 from a template - texts, units, buildings, start towns, leader. Rome only, command line first.
 
-## What it does now (0.13.0)
+## What it does now (0.14.0)
 
 ### Factions
 - [x] New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art **(in-game ✓)**
@@ -35,10 +35,12 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - [x] Terrain editor: paint ground types, rivers, fords, river sources and cliffs tile by tile **(in-game ✓ on Rome)**
 - [x] Terrain editor: paint climates (`map_climates.tga`, the mod's own climates)
 - [x] Rivers kept joined side to side (the game stops a river at a corner-only step); Preview names a river the game will not draw
-- [x] Settlement names by the owner's culture (REX renames a town when it changes hands); the map shows the new owner's name at once
+- [x] Settlement names by the owner's culture (REX renames a town when it changes hands); the map shows the new owner's name at once; every town's names in one table
+- [x] Big maps load (a tester's 5456 x 2464 map)
 
 ### Characters
 - [x] Character editor for any faction: names, ages, traits with levels, ancillaries
+- [x] A faction's own name list (men, surnames, women) typed in three steps
 - [x] Family tree drawn like the game's (couples, children, leader and heir); give a wife, add a child, rename (followed on the tree)
 - [x] Portraits on the tree as the game shows them; Medieval II characters get portraits of their own
 - [x] Portrait library: every portrait of a culture, add new ones (sized and numbered for the game)
@@ -68,6 +70,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - [ ] Medieval II castle fix (0.7.5), unit packs, new armies / agents / fleets on the map
 - [ ] Barbarian Invasion campaign loading (0.9.4 fix); BI's shared name lists and building pictures (0.12.0)
 - [ ] Terrain climates; Rome flag symbols and faction logos (0.12.0)
+- [ ] Own name lists, the names-by-culture table (0.14.0)
 - [ ] Settlement names by culture (0.13.0, REX); a New mod folder from BI / Alexander started with -bi / -alx
 
 ## Next

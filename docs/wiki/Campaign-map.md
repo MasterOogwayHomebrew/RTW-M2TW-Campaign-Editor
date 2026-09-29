@@ -1,6 +1,7 @@
 # Campaign map
 
 The **Map** tab draws the campaign map tile by tile from the game's own map files: one square = one tile.
+Big maps load too - a tester's mod with a 5456 x 2464 map opened fine.
 
 ## Looking around
 
@@ -51,3 +52,9 @@ tool's block), with a backup like every write. Needs REX.
 
 The window shows it at once: take a town for a faction (on the Faction tab or by clicking it on the Map) and its
 label on the map changes to the name for that faction's culture; the towns list shows the name a town has now.
+
+**All towns' names...** (on the Faction tab, in the per-town dialog and under **Tools**) shows every town in one
+table: one column per culture plus *every other*, the owner, its culture and the name shown now. Sort by any
+column, filter by a culture (towns with or without a name for it), by the owner's culture, by what waits for Apply,
+or search. Double click a culture's cell to type a name in place (Enter keeps it, Esc drops it, an empty cell
+removes it). Towns the mod's own campaign script renames are shown grey and are not edited here.

@@ -360,7 +360,7 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   keyed by the block's first line (a rename keeps it); removal never of `required_keys` (keys every
   unit / level has) or structure lines; `check_text` refuses unknown units / chains / levels.
 
-## Status (2026-09-29: main = v0.13.0 released (names by culture, live on the map); v0.12.0 released; v0.11.0 the user's test round fixed - unique names, faction limit (limits.py), family with existing people, river chain, window fixes; v0.10.0 Terrain editor (terrain.py + gui_terrain.TerrainEditor, App.editors['terrain']); v0.9.4 (bi descr_regions fix: moddata.region_entries is the one reader/writer layout; bi manifest merged into rtw_gold_steam_manifest as bi/...); v0.9.3 (portrait library portraits.py + PortraitLibrary window; Art select map optional, off = originals kept, sel_map {'on'}); v0.9.2 renamed RTW & M2TW Campaign Editor; v0.9.1 released (Edit region..., new regions in the towns list at once, a new faction starts in a new region by one Apply - regionedit.apply_opts is the one writer of region work, plan_land/free_tile(start, own)); v0.9.0 released (Character editor = FamilyEditor(standalone) in App.editors['characters']; portraits); v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
+## Status (2026-09-29: main = v0.14.0 (own name lists, names-by-culture table); v0.13.0 released (names by culture, live on the map); v0.12.0 released; v0.11.0 the user's test round fixed - unique names, faction limit (limits.py), family with existing people, river chain, window fixes; v0.10.0 Terrain editor (terrain.py + gui_terrain.TerrainEditor, App.editors['terrain']); v0.9.4 (bi descr_regions fix: moddata.region_entries is the one reader/writer layout; bi manifest merged into rtw_gold_steam_manifest as bi/...); v0.9.3 (portrait library portraits.py + PortraitLibrary window; Art select map optional, off = originals kept, sel_map {'on'}); v0.9.2 renamed RTW & M2TW Campaign Editor; v0.9.1 released (Edit region..., new regions in the towns list at once, a new faction starts in a new region by one Apply - regionedit.apply_opts is the one writer of region work, plan_land/free_tile(start, own)); v0.9.0 released (Character editor = FamilyEditor(standalone) in App.editors['characters']; portraits); v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
 
 Done and tested in game: new faction by template; separate mod folder; scan +
 ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
@@ -770,6 +770,20 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
 
 ## Where we stopped (2026-09-29, the latest /clear - read this block first)
 
+- **v0.14.0 (2026-09-29)**: (1) **own name lists** (the user: "add new name lists for e.g. an Arab country; type the
+  names in a format - comma or space separated - then surnames in a second step"): namelists.py (parse: commas /
+  semicolons / new lines, else spaces; key_of = spaces -> _; problems: >= 1 men + >= 1 women, keys only
+  [A-Za-z0-9_'-]; apply = own descr_names section (replaced when alone, taken out of a shared BI header), names.txt
+  {Key}\t\t\tText and descr_names_lookup.txt keys appended when missing; keep_used: names the faction's characters /
+  records carry in any campaign stay, warned). **Plan.name_pool(faction)** = the pool as the plan leaves
+  descr_names (moddata.pool_in is the one parser) - start / edit / family pick names through it, so the leader of a
+  new faction with its own list takes its names. clone.names writes opts['names'] instead of the copy; edit opts
+  'names'. Window: gui_names.NameListWizard (3 steps, copy / add from any faction), App.name_list {faction|'(new)':
+  pools} in UNDO_KEYS, pool_for / leader_pool / refresh_name_combos. (2) **names-by-culture table**:
+  gui_culturenames.CultureNamesTable (column per culture, sort, filters, edit in place, grey = culturenames.foreign
+  = rename_settlement lines of the mod's own script); App.owners_after is the one "owners after Apply" (map + table).
+  (3) A tester's 5456 x 2464 map loaded (the user, 2026-09-29) - noted in README / wiki / ROADMAP; which file's size
+  (tiles or map_regions pixels) not asked.
 - **Released v0.13.0 (2026-09-29, after the evening /clear)**: settlement names by culture + New mod folder -bi / -alx
   (both were Unreleased) + **the name live in the window** (the user: "the change should show on the map in real
   time - the name of the culture of the faction I took the town for"): culturenames.name_for / labels(table, towns,

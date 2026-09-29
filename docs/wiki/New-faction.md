@@ -13,8 +13,9 @@ the game at once, so you can test every change after that straight away. The tem
    The copied texts use them ("Epirote Spy", "Your forces attack an army of Epirus").
 5. **Starting settlements**: filter by owner (for example `slave` for rebel towns), double-click to add, pick
    the capital. A new region painted on the [[Campaign map]] can be a starting town too.
-6. **Leader** (and the heir if you like): a first name and surname **from the template's name list** - the
-   game crashes on a name that has no text, so the tool only accepts listed names.
+6. **Leader** (and the heir if you like): a first name and surname **from the faction's name list** - the
+   game crashes on a name that has no text, so the tool only accepts listed names. The new faction copies the
+   template's list, or has one of its own: **Name list...** (below).
 7. The other tabs if you want: garrisons, buildings, map, diplomacy, [[Faction art]].
 8. **Preview changes**, then **Create faction**.
 9. Start a **new** campaign - old saves do not know the faction.
@@ -54,3 +55,12 @@ the game at once, so you can test every change after that straight away. The tem
   Over the limit the game closes at start ("Too many factions described here").
 - **Names**: every character of a faction needs a name of its own - the game skips a second one with the same
   name. The tool picks free names and refuses a taken one.
+
+## A name list of its own
+
+**Name list...** (under the leader and heir) gives the faction a name list of its own, in three steps: men's
+names, surnames (may stay empty) and women's names. Type or paste them - one per line, or separated by commas
+(then a name may have spaces: *Abd al-Malik*); without commas or new lines, spaces separate the names. Each step can
+copy or add the names of any faction. The tool writes the faction's own section in `descr_names.txt`, the names the
+game shows in `text/names.txt` and the keys in `descr_names_lookup.txt`; only Latin letters, digits, ' and - are
+taken (the game's files and font take no others). The leader, heir and captains then take names from it.

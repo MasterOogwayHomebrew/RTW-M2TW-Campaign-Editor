@@ -10,6 +10,9 @@ want. Untouched fields and towns stay exactly as they are.
   other towns); take towns out to give them to the faction in **Removed towns go to** (rebels by default).
 - **Capital** puts that town first in the faction's block.
 - **Leader** and **heir**: new names (from the faction's name list) and ages.
+- **Name list...**: the faction's men's names, surnames and women's names, typed in three steps (see
+  [[New faction]]). Names its characters and family already carry stay in the list (Preview says which) - the
+  game crashes on a name that is in no list.
 
 ## Units & armies
 
