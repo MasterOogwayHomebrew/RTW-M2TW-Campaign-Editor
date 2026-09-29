@@ -732,7 +732,10 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
 - **Name**: renamed to "RTW & M2TW Campaign Editor" in 0.9.2 (the user's pick). The repo is still
   RTW-faction-tool until the user renames it (Settings -> General; old links redirect). SignPath knows the
   project as "RTW Campaign Editor" - one line to them if they ask.
-- **SignPath Foundation**: application sent 2026-09-29, only the receipt mail so far ("few business days"). When
+- **SignPath Foundation: REFUSED (2026-09-29, Phillip)** - not enough public signals yet (stars, forks, contributors,
+  articles, Reddit / YouTube mentions, sustained activity); reapply once the project is better known, or a paid
+  SignPath plan. Polite thanks-and-will-reapply reply drafted. Meanwhile: submit each release exe to Microsoft as a
+  false positive; Azure Trusted Signing (~10 USD/month) if he wants signing sooner. Old note: application sent 2026-09-29, only the receipt mail so far ("few business days"). When
   approved: he sends organisation / project / signing-policy slugs, adds secret SIGNPATH_API_TOKEN; then add
   signpath/github-action-submit-signing-request to release.yml. He should enable Private vulnerability reporting.
 - **Repo renamed** by the user to MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor (GitHub redirects; the session's
@@ -768,7 +771,7 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   + a tilted 3D-like preview; then **a new campaign map from scratch**. A new climate of one's own: only after
   research (descr_climates + every file keyed by climate, engine caps) - not promised.
 - **Waiting on the user**: in-game test of Climates; bi descr_regions.txt; SignPath's answer (none yet, 2026-09-29);
-  Andy's Take's answer (the e-mail was sent by the user, 2026-09-29). HLR max_factions = 31 (answered).
+  Andy's Take's answer (the e-mail was sent by the user, 2026-09-29); SignPath refused (see Open with the user). HLR max_factions = 31 (answered).
   **Newer REX descr_ex.txt** (uploaded 2026-09-29, max_factions 50): max_num_ancillaries 16 and max_num_children 6
   there - the Character editor / family tree should read these limits from descr_ex.txt (default 8 / 4) instead of
   assuming; not built yet.
