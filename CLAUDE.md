@@ -167,7 +167,11 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
 
 The user asked (2026-09-29) to gather what the RTW / M2TW modding community knows (limits, crash causes, map rules,
 tools) and plan from it. twcenter.net (+ wiki), forums.totalwar.org, heavengames, moddb, steamcommunity, reddit,
-web.archive.org are BLOCKED from the container (the user can allow hosts: environment settings -> Network access);
+web.archive.org were BLOCKED in the 2026-09-29 session; **the user then set the environment 'Default' to Network
+access Full (2026-09-29) - takes effect in a NEW session. Next session: first check WebFetch on twcenter.net, then
+finish the collection: TWC M2TW / RTW modding indexes, 'Crashes and how to fix them', Hardcoded Limits (RTW / M2TW),
+heavengames 'List of Known Hardcodes', .Org 'A modder's guide to CTDs', 'How to add a religion', descr_strat /
+EDU / EDB guides, mapping guides; add facts with sources to modding_knowledge.md and re-rank the gaps;
 web search excerpts + github.com work. Main find: **Medieval 2 GUI Toolkit** (github.com/ProJ-Yeet/
 Medieval2-GUI-Toolkit, JS + Python local web app, no licence - read for facts only, never copy code) = the closest
 tool to ours, M2TW only (unit transfer with animations / voices, 3D model view, Health check with 45 sourced rules,
