@@ -28,7 +28,7 @@ A fact marked *(said)* comes from one source and was not measured; *(measured)* 
 | Regions (the sea counts as one) | 200 | 199-200; DaC sits at the cap | REX: no cap found (HLR 300+ run) |
 | Factions shown on the campaign-select screen | 20 (so slave playable means one other left out) *(heavengames)* | | |
 | map_regions.tga size | **500 x 500** (descr_terrain; the 2W+1 maps up to 1001 x 1001) *(heavengames)* | vanilla 295 x 189, **510 x 510** (2W+1 maps 1021 x 1021) *(TWC wiki)* | ? - a tester's 5456 x 2464 map loaded in our tool; in game unknown |
-| Landmasses (islands) | 20 *(heavengames)* | many islands of different regions cause map faults *(TWC wiki)* | |
+| Landmasses (islands) | 20 *(heavengames)* - **doubtful: vanilla RTW's map_regions has 32 side-joined land pieces and runs** (measured), so the game counts something else; not checked by the tool | many islands of different regions cause map faults *(TWC wiki)* | |
 | Hidden resources (EDB `hidden_resources` line) | 63 (64 risky) *(heavengames)*; vanilla uses 4 | 64 *(TWC wiki)*; vanilla uses 17 | a TWC tutorial goes past 64 |
 | Resource types (descr_sm_resources) | vanilla 26 | 26 said *(TWC wiki)* - but vanilla M2TW has **28** `type` entries (measured), so the number is doubtful | |
 | Character types (descr_character) | | 12 | |
@@ -78,9 +78,9 @@ Ultimate Docudemons 5.3"), .Org "Adding a new religion", TWC "Crashes and how to
 | descr_strat | spacing unlike the original's "may crash" | RTW | we write the file's own form |
 | descr_strat | a faction's `ai_label` that descr_campaign_ai_db.xml does not declare (`papal_faction` is built in) - crash in that faction's turn | M2TW | **not checked** |
 | descr_regions | a region whose colour does not match map_regions.tga (the most common map crash) | both | new regions get their own colour; **no whole-map check** |
-| descr_regions | every region needs the `slaves` resource (all 103 vanilla RTW regions have it, measured) | RTW | new regions copy the donor's tags; **not checked** |
-| descr_rebel_factions / descr_regions | a rebel type whose units the slave faction may not own: crash *(TWC "Crashes and how to fix them")* | M2TW | **not checked** (rebel garrisons via Edit slave - check the picker) |
-| descr_win_conditions | a region that does not exist: CTD when that faction is played | M2TW | clone copies the template's (they exist); **not checked after region work** |
+| descr_regions | every region needs the `slaves` resource (all 103 vanilla RTW regions have it, measured) - **but HLR's 750 regions have none and run under REX**, M2TW does not use it | RTW | Check mod: warns only when the mod's other regions have it |
+| descr_rebel_factions / descr_regions | a rebel type whose units the slave faction may not own: crash *(TWC "Crashes and how to fix them")*. Vanilla M2TW / BI: 0 such units; vanilla RTW has 5 (roman ones) and runs - so M2TW only | M2TW | Check mod |
+| descr_win_conditions | a region that does not exist: CTD when that faction is played | M2TW | Check mod (hold_regions, outlive) |
 | descr_regions | a region too large: crashes; keep regions one landmass, centres of neighbours <= 50 tiles apart *(TWC wiki)* | M2TW | not checked |
 | descr_regions | religion shares not summing to 100 | M2TW | **not refused everywhere** (new regions: see CLAUDE.md item 22) |
 | descr_regions | triumph value other than 5 "may crash" (Geomod manual); farming 4 average, 6-7 fertile | M2TW | not checked |
@@ -192,7 +192,7 @@ Limit: 9 religions. Shipping mods get it wrong: Third Age misses one name, its l
 
 ## 6. What this means for the tool (gaps, most useful first)
 
-0. **Round 2 finds, by risk** (2026-09-29): (a) Family tab: a living male record over 16 - refuse or warn, and
+0. **Round 2 finds - BUILT 2026-09-29 (a, b, d, e; c/f as Check mod LIMITS)**: (a) Family tab: a living male record over 16 - refuse or warn, and
    make new sons / records default to <= 16 (else to the map); (b) flag slots: read descr_standards (section 4b);
    (c) map limits 500 x 500 (RTW) / 510 x 510 (M2TW) and 20 landmasses before a rescale or a new map; (d) river
    brush: warn on 2 x 2 squares and loops; (e) Check mod: regions without slaves (RTW), rebel types with units
@@ -208,3 +208,11 @@ Limit: 9 religions. Shipping mods get it wrong: Third Age misses one name, its l
    Load and warn before a write would cross one, like the faction limit.
 6. Later, in line with what modders ask: shadow / emergent factions, heights brush + 3D view, unit transfer
    parity with the Toolkit on M2TW (animations, voices), Rome's equivalents the Toolkit does not cover.
+
+## 7. Measured on the user's files (2026-09-29, round 2)
+
+- River shapes: vanilla RTW base, sons_of_mars, M2TW base, norman_prologue - 0 2 x 2 blocks, 0 rings; HLR
+  imperial_campaign - 0 blocks, 6 rings (it runs), so rings are a soft warning.
+- HLR has **750 regions** in descr_regions.txt under REX (limits: the original 200 does not hold for REX).
+- Limits used by vanilla: RTW 104 regions (with the sea), map 255, 265 units, 39 chains, 5 levels, 3 hidden
+  resources; M2TW 113 regions, map 295, 413 units, 64 chains, 7 levels, 16 hidden resources.

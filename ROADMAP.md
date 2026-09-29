@@ -74,6 +74,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 ## 🧪 Being tested in the game now
 
 - 🧪 A new religion for Medieval II (on main, next release): New religion... on the Map tab
+- 🧪 From the modders' guides (on main, next release): off-map sons kept at 16 or younger; flag symbols from descr_standards.txt (BI's sheets, never a rebels' slot); river blocks and rings warned; Check mod counts the engine's limits and finds win conditions / rebels / slaves faults
 - 🧪 The rebels in Edit faction (0.17.1)
 - 🧪 Medieval II recruit_pool lines; REX bracket requirements and unit abilities; forts on the map (0.17.0)
 - 🧪 Family tab and Character editor, own portraits (Medieval II), portrait library
@@ -90,10 +91,6 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 
 | Step | What it needs |
 |---|---|
-| Family tab: warn about a living son / record over 16 kept off the map (the game crashes on it) | Found in modders' guides; vanilla keeps to it; an in-game test |
-| Flag symbols: take the banner sheets from descr_standards.txt (Barbarian Invasion uses symbols9+) and never write a new faction's symbol into the rebels' sheets | Found in the game files; an in-game test |
-| Terrain: warn about 2 x 2 river squares and rivers that close into a loop | Modders' map rules |
-| Check mod: regions without slaves (Rome), rebels with units the rebels may not own, win conditions naming missing regions; the engine limits (map size, landmasses, units per town, hidden resources) shown up front | Modders' crash lists |
 | Signed exe (no browser / SmartScreen warnings) | SignPath Foundation's answer (applied) |
 | Terrain: heights brush (raise, lower, smooth), mountains and hills kept in step with the heights | Time; an in-game test |
 | Terrain: a tilted 3D-like preview from the heights and ground | Time |

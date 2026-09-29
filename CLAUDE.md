@@ -179,17 +179,23 @@ measured on the DaC and ROCSS mods). The knowledge file lists limits, crash rule
 map rules, the religion recipe, the tools, and the gaps -> ROADMAP Next. Keep adding to it when the user sends
 forum pages / guides.
 
-**Round 2 done (2026-09-29, network Full)**: twcenter / its wiki / .Org / moddb / reddit still refuse the container
-(Cloudflare bot check, also in a real Chromium - not bypassed, do not try); **rtw.heavengames.com +
-medieval2.heavengames.com are readable** (all tutorials read; Ferret's hardcode list), steamcommunity too; TWC facts
-via search excerpts. Written into modding_knowledge.md (limits, crash rows, river rules, section 4b flags, gaps
-item 0). Checked on the user's files. **Found, not fixed (ask the user before building)**: (1) Family tab may
-write a living male character_record over 16 (said to crash; vanilla RTW 0/74, M2TW 0/21 are over 16) - sons
-default to parent age - 20, new records to 20; (2) symbols.py maps standard_index k to symbols<k//4+1>, but the
-sheets come from descr_standards.txt `factions` / `rebels_factions` lists (RTW 1-5 / 6-8, BI 9-13 / 14-15), so
-BI reads wrong sheets and a new RTW faction's slot 21 lands on a rebels sheet (symbols6 = black rebel symbols);
-(3) river brush lacks the 2 x 2 square / loop checks; (4) Check mod gaps (slaves, rebel ownership, win
-conditions). ROADMAP Next has them.
+**Round 2 done (2026-09-29, network Full)**: twcenter / its wiki / .Org / moddb / reddit refuse the container
+(Cloudflare bot check, also in a real Chromium). **The user asked to try to bypass it ("it is open information") -
+declined: getting around a bot check is not done; ask him to save pages (Ctrl+S / Print to PDF) and upload them,
+or paste text.** rtw.heavengames.com + medieval2.heavengames.com + steamcommunity are readable (all tutorials read).
+Facts in modding_knowledge.md (sections 1-4b, 7). **BUILT the same day (on main, Unreleased, CHANGELOG + ROADMAP 🧪;
+not in game)**: (1) family.MAX_RECORD_AGE 16 - record_age_problems refuses a new / changed living male record over
+16 (warns for one already in the file), default_record_age (sons 16, others 20), gui_family refuses in the dialog;
+(2) symbols.py reads descr_standards.txt (sheet_lists = factions + rebels_factions; slot_sheet(k) = (k//4)th of
+both; rebel_slots = 4*len(factions) + descr_cultures rebel_standard_index; free_slot only inside faction sheets;
+none free -> _new_faction_sheet appends banners/symbols<max+1>.tga to the faction list, copying the pictures the
+used slots showed, e.g. slave 20 = the trident); checked on vanilla RTW (epirus from macedon -> symbols9, slot 21,
+slave unchanged, Restore identical) and BI lists (huns -> symbols10; free slot 11); TextFile.from_bytes added;
+(3) terrain.river_shapes (2 x 2 blocks, rings; only tiles the edit paints) in Terrain Preview; (4) check.py:
+engine_limits (limits.HARD_LIMITS / LIMIT_WORDS; a fault only without REX / M2EX), win_condition_problems,
+rebel_problems (M2TW only: vanilla RTW has 5 roman rebel units slave does not own and runs), slaves_problems
+(Rome, only when most regions have slaves: HLR's 750 have none). Dropped: the "20 landmasses" limit (vanilla RTW
+has 32 land pieces). To test in game: a new faction's flag on plain RTW (symbols9 in descr_standards), a son at 16.
 
 ## Hard-won rules (do not break)
 
@@ -418,7 +424,7 @@ conditions). ROADMAP Next has them.
   keyed by the block's first line (a rename keeps it); removal never of `required_keys` (keys every
   unit / level has) or structure lines; `check_text` refuses unknown units / chains / levels.
 
-## Status (2026-09-29: main = v0.17.1 released (rebels editable, clone drops shadow/spawn ties); v0.17.0 (M2TW recruit_pool everywhere, REX bracket requirements, REX unit abilities + recruit_priority_offset, forts read / drawn / kept free); v0.16.1 (castle core fit with a hand-set size); v0.16.0 (modeldb: clone + packs; army steps aside; old .nut migration); v0.15.1 (castles: buildings.castles_allowed = game_kind medieval2 AND castle levels - GUI + with_kind; castle_fits refuses a castle > large_city in edit/start, level_picked refuses it in the window); v0.15.0 (M2 city / castle switch); v0.14.1 (M2 spaced surname keys kept); v0.14.0 released (own name lists, names-by-culture table; Discord text given); v0.13.0 released (names by culture, live on the map); v0.12.0 released; v0.11.0 the user's test round fixed - unique names, faction limit (limits.py), family with existing people, river chain, window fixes; v0.10.0 Terrain editor (terrain.py + gui_terrain.TerrainEditor, App.editors['terrain']); v0.9.4 (bi descr_regions fix: moddata.region_entries is the one reader/writer layout; bi manifest merged into rtw_gold_steam_manifest as bi/...); v0.9.3 (portrait library portraits.py + PortraitLibrary window; Art select map optional, off = originals kept, sel_map {'on'}); v0.9.2 renamed RTW & M2TW Campaign Editor; v0.9.1 released (Edit region..., new regions in the towns list at once, a new faction starts in a new region by one Apply - regionedit.apply_opts is the one writer of region work, plan_land/free_tile(start, own)); v0.9.0 released (Character editor = FamilyEditor(standalone) in App.editors['characters']; portraits); v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
+## Status (2026-09-29: main = v0.17.1 released + Unreleased: new religion (M2TW), modders'-guide fixes (family age, flag sheets, river shapes, Check mod limits) (rebels editable, clone drops shadow/spawn ties); v0.17.0 (M2TW recruit_pool everywhere, REX bracket requirements, REX unit abilities + recruit_priority_offset, forts read / drawn / kept free); v0.16.1 (castle core fit with a hand-set size); v0.16.0 (modeldb: clone + packs; army steps aside; old .nut migration); v0.15.1 (castles: buildings.castles_allowed = game_kind medieval2 AND castle levels - GUI + with_kind; castle_fits refuses a castle > large_city in edit/start, level_picked refuses it in the window); v0.15.0 (M2 city / castle switch); v0.14.1 (M2 spaced surname keys kept); v0.14.0 released (own name lists, names-by-culture table; Discord text given); v0.13.0 released (names by culture, live on the map); v0.12.0 released; v0.11.0 the user's test round fixed - unique names, faction limit (limits.py), family with existing people, river chain, window fixes; v0.10.0 Terrain editor (terrain.py + gui_terrain.TerrainEditor, App.editors['terrain']); v0.9.4 (bi descr_regions fix: moddata.region_entries is the one reader/writer layout; bi manifest merged into rtw_gold_steam_manifest as bi/...); v0.9.3 (portrait library portraits.py + PortraitLibrary window; Art select map optional, off = originals kept, sel_map {'on'}); v0.9.2 renamed RTW & M2TW Campaign Editor; v0.9.1 released (Edit region..., new regions in the towns list at once, a new faction starts in a new region by one Apply - regionedit.apply_opts is the one writer of region work, plan_land/free_tile(start, own)); v0.9.0 released (Character editor = FamilyEditor(standalone) in App.editors['characters']; portraits); v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
 
 Done and tested in game: new faction by template; separate mod folder; scan +
 ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
