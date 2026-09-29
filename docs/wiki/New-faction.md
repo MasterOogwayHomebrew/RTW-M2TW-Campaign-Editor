@@ -25,7 +25,9 @@ the game at once, so you can test every change after that straight away. The tem
 - `descr_sm_factions.txt` (+ REX's `.json`): the template's block, before `slave`.
 - `descr_character.txt`, `descr_names.txt`, `export_descr_unit.txt` (ownership),
   `export_descr_buildings.txt` (faction lists), `descr_model_battle.txt` / `descr_model_strat.txt` (texture
-  lines), `descr_banners.txt`, `descr_lbc_db.txt`, `descr_offmap_models.txt`, `descr_building_battle.txt`,
+  lines), Medieval II's `unit_models/battle_models.modeldb` (the template's texture and attachment entries in
+  every battle model, copied for the new faction - a mod folder without its own modeldb gets a copy of the
+  game's), `descr_banners.txt`, `descr_lbc_db.txt`, `descr_offmap_models.txt`, `descr_building_battle.txt`,
   trait and ancillary triggers, win conditions.
 - Texts: every string that names the template, with the new names.
 - `descr_strat.txt`: the faction's block, towns, leader, heir, armies, diplomacy.

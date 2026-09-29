@@ -25,3 +25,10 @@ that let the faction train it, and its cards.
 everything it needs: models, textures, mount, engine or animal, cards, names and descriptions, recruit places.
 **Import pack...** in another mod **of the same game** shows the units with their names there (taken names get
 a free one), asks who owns them, and writes them with a backup. Nothing of the target mod is overwritten.
+
+In Medieval II a unit's battle models live in two places kept in step: `descr_model_battle.txt` (the text the
+game reads under M2EX's `model_battle_source text`) and `unit_models/battle_models.modeldb` (what the game reads
+otherwise). A pack carries both, with every mesh, texture and sprite the model names. On import, a model the
+target mod has with other content is added under a free name in both files, and the unit follows it; every
+faction the units go to gets a texture entry in both (copied from the model's mercenary texture, else its first),
+so no owner sees an untextured unit. Rome packs get the same texture lines for new owners.

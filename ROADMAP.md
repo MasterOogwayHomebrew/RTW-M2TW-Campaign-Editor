@@ -12,7 +12,7 @@ that is the fastest way to a fix.
 Version 0.1: a small script for one mod (Barbarian Empires REX on Rome: Total War) that cloned a faction
 from a template - texts, units, buildings, start towns, leader. Rome only, command line first.
 
-## What it does now (0.15.1)
+## What it does now (0.16.0)
 
 ### Factions
 - [x] New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art **(in-game ✓)**
@@ -49,6 +49,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - [x] Unit and building editors: every line as a field, add / remove lines, copy as new, renames followed everywhere
 - [x] Pictures imported into the right place in the right size and format (cards, building pictures, faction art)
 - [x] Unit packs: export units with models, textures, mounts, cards and texts into a .zip and import them into another mod
+- [x] Medieval II `battle_models.modeldb`: a new faction gets its template's textures in every battle model; unit packs carry their modeldb models (renamed on clashes, textured for every new owner)
 - [x] Faction art: every picture of a faction listed with where the game shows it, Replace... **(in-game ✓)**; a new faction's banners and logo are its own files; Back to the original
 - [x] Campaign-select map drawn from the faction's towns (optional; the original stays by default)
 - [x] Rome: the flag symbol on the campaign map and the faction logos, each faction its own, Replace... in the Art tab
@@ -71,6 +72,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - [ ] Medieval II castle fix (0.7.5), unit packs, new armies / agents / fleets on the map
 - [ ] Barbarian Invasion campaign loading (0.9.4 fix); BI's shared name lists and building pictures (0.12.0)
 - [ ] Terrain climates; Rome flag symbols and faction logos (0.12.0)
+- [ ] Medieval II battle_models.modeldb: clone and unit packs (0.16.0)
 - [ ] Medieval II city / castle switch (0.15.0)
 - [ ] Own name lists, the names-by-culture table (0.14.0)
 - [ ] Settlement names by culture (0.13.0, REX); a New mod folder from BI / Alexander started with -bi / -alx
@@ -84,7 +86,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 | Terrain: a tilted 3D-like preview from the heights and ground | Time |
 | Terrain: the coast (land and sea swapped, with regions and heights); a new climate of one's own | Time; in-game tests |
 | A new campaign map from scratch (one region, one faction, loads in the game), then grown in the editor | Time; in-game tests |
-| Medieval II: new factions' units in `battle_models.modeldb` | The game's `data/unit_models/battle_models.modeldb` to build and test on |
+| Unit editor: a unit's battle models (meshes, textures per faction, scale) shown and edited | modeldb reading is done (0.16.0) |
 | Faction packs and building packs (like unit packs) | Time; then an in-game test |
 | Mods made on the plain game (slimmed folders) loaded with the game's data behind them | Time |
 
