@@ -24,7 +24,7 @@ are found on Load and fixed with a yes.
 `HLR_Saba`) with its own start file. Your base mod is never touched.
 
 - **Rome / REX:** `<game>\<name>\`, started by `Start_<name>.bat` (`-mod:<name>`).
-- **Medieval II:** `<game>\mods\<name>\` with `<name>.cfg`, started by `Start_<name>.bat`.
+- **Medieval II:** `<game>\mods\<name>\` with `<name>.cfg`, started by `Start_<name>.bat` (under M2EX: `M2EX.exe --features.mod=mods/<name>`).
 
 Text files are copied; everything else is a **hard link**: the same file on disk under a second name. Explorer
 shows tens of thousands of files at full size, but they take no extra disk space, and deleting the new mod
