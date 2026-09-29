@@ -784,6 +784,11 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
     in-game tests (🧪 list in ROADMAP: modeldb clone / packs, names by culture under REX, own name lists, BI, climates,
     flag symbols...); he must UPDATE his exe (his HLR log came from a pre-0.13 build) and say yes to the old
     names-module fix on Load.
+  - **Got 2026-09-29 (after the /clear), in tw-game-data M2/data**: models/ (strat/battle markers .cas, a few
+    textures), unit_models/ (_generals_and_captains with .texture files, shields_library, weapons_library,
+    equipment_library, weapon_testing - 353 files, 21 MB; M2 .mesh / .texture = the real unit models, useful for a
+    model view and texture recolour), editor/ (brush_*.tga), tools/viewer/grass.texture. The re-sent
+    battle_models.modeldb is byte-identical to the one already there. Big files still to come from him.
   - **Discord**: the Stainless Steel author praised the tool and asked for modeldb (done in 0.16.0, reply text
     given); Espartan asked for castles (done in 0.15.0, reply given); a tester loaded a 5456 x 2464-tile map.
   - **Next ideas (not promised)**: Unit editor model view (a unit's modeldb / descr_model_battle models, textures per
