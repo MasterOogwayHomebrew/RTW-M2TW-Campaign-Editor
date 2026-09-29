@@ -819,6 +819,24 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
     2, sounds_enviro 7, vegetation 120, geography_new 77, weather_db 4, battlefield_roads 30, water 14; the unit sound
     files and movement modifiers name none by desert / semi_arid (winter / ground terms instead - to read).
     Hard part: descr_vegetation "generate" (raw_distribution_maps; M2EX text vegetation) - research before offering.
+  - **REX docs the user pasted (2026-09-29; more coming)** - REX features the tool must know (rule 10):
+    * EDU `stat_pri_attr ... sp` = shield piercing (halves the enemy's shield value) - a new attribute tag.
+    * descr_caps_ex `trade_fleet_source port_level | capability` (default capability): which buildings raise
+      trade_fleet levels (ports vs merchant wharfs).
+    * **EDB brackets**: `requires ( ( factions { greek, southern_european, } and building_present_min_level port port )
+      or ( factions { middle_eastern, } and ... ) )` - a level may carry SEVERAL factions lists, each with its own
+      conditions. **Gap found in our code**: roster.factions_in / with_factions / covers (and buildings.Level's
+      requires regex, editors / gui_editors callers) read and rewrite only the FIRST `factions { }` of a line, so on
+      such a line the Roster tab says a faction of the second group cannot build it, Give adds to the first group only
+      (wrong conditions), Take leaves it in the other groups. To fix (one shared place): all lists of a line; covers
+      = any group; give = a group of its own copying the template's conditions (or refuse with plain words), take =
+      out of every group; test with the doc's merchants_wharf example (Rome + M2TW).
+    * descr_ex `max_factions` - known (limits.py); the log line `descr_ex.txt: max_factions = 31` confirms it.
+    * ALX trait `Immortality` (Characters family, Hidden) restored in RTW + M2TW under REX: generals live past the
+      hardcoded 122 - the Character editor may offer it for old characters (ages > 122).
+    * descr_strat `use_two_seasons true|false` (false = spring + autumn too; 4 seasons start in winter) and
+      `turns_per_year N` (>= 2, a multiple of 4 with 4 seasons; income divided by turns/2), after start/end_date.
+      To check: strat.py keeps unknown header lines byte-exact (it should); a campaign settings panel could set them.
   - **Discord**: the Stainless Steel author praised the tool and asked for modeldb (done in 0.16.0, reply text
     given); Espartan asked for castles (done in 0.15.0, reply given); a tester loaded a 5456 x 2464-tile map.
   - **Next ideas (not promised)**: Unit editor model view (a unit's modeldb / descr_model_battle models, textures per
