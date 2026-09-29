@@ -916,6 +916,21 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   The user (2026-09-29): as far as he knows the game converts nothing on capture - foreign temples stay until the
   player demolishes them and builds his own; he will check vanilla and say exactly. Wait for his word. Test first on BI files (ask for bi/data/ui/
   roman + descr_ui_buildings.txt, or use tw-game-data RTW ui/) and check M2 the same way.
+- **FIXED (2026-09-29, on main, Unreleased)**: BI names - bi/data/descr_names.txt heads sections with a LIST of
+  factions (`faction: empire_west, empire_west_rebels`, `faction: empire_east, empire_east_rebels`; alemanni has 4
+  sections, the first differs - the first counts; BI has no slave section). moddata.name_sections is the one reader
+  of the headers (name_pool, clone.names: the clone writes `faction: <new>` alone). Checked on the user's bi/data
+  (empire_east 131 men / 430 surnames / 90 women). The user uploaded bi/data root .txt + text/ (no ui/, no world/)
+  - put into tw-game-data RTW/bi/data when convenient. **Restore made smarter** (the user: "clicking every backup
+  one by one?"): plan.restore_to(mod, bdir) undoes bdir and every newer one, newest first; backups() orders by
+  stamp + manifest mtime (one Apply writes terrain + faction backups in the same second - by name the order was
+  wrong); backup_label for the list; the dialog selects the whole range and says how many; cli restore uses it.
+  **His BI log (05:25, mod bi_Empire_east made by New mod folder from bi/data)**: the mod's fallback under REX is
+  the game's data/ (plain RTW), so the menu's imperial_campaign is read with BI's factions ("Expected faction list
+  terminated by end", "Expected start date of campaign" at imperial_campaign descr_strat line 8); barbarian_invasion
+  loaded (REX "armour 1 is beyond this unit's 1 upgrade tiers; clamped" x24 - BI's own lines 478-561?), log ends
+  while loading region labels - asked whether it crashed. To do: a New mod folder made from bi/ must know that REX
+  falls back to data/ not bi/data (copy what BI takes from bi/, and hide / drop imperial_campaign?).
 - **BUG (the user, 2026-09-29, screenshot, BI)**: Edit faction empire_east, a garrison for Numid1 (a town nobody
   holds): "Numid1: no name in empire_east's name list for a captain" (edit._garrisons: `mod.name_pool(faction)
   ['characters']` came back empty). The user: "solve it once and for all - the tool is for other mods too, it must
