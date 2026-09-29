@@ -764,7 +764,7 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   + a tilted 3D-like preview; then **a new campaign map from scratch**. A new climate of one's own: only after
   research (descr_climates + every file keyed by climate, engine caps) - not promised.
 - **Waiting on the user**: in-game test of Climates; bi descr_regions.txt; HLR descr_ex.txt max_factions; SignPath's
-  answer; whether he wants an e-mail drafted to the YouTube reviewer Andy's Take (see Reviewers below).
+  answer; the e-mail to the YouTube reviewer Andy's Take was drafted in the chat (English, free review asked, links: releases, video m1sCPg-Lzsw, wiki) - ask whether he sent it / got an answer.
 - Session set-up for a new session: add_repo MasterOogwayHomebrew/tw-game-data, `git clone --depth 1` into
   /home/user/tw-game-data; GUI checks under Xvfb :57 with python3.12 (scripts like the scratchpad's clim.py:
   gui.App(), v_path.set(data), load(), v_work.set('terrain'), work_changed(), editor()).
