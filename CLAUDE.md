@@ -872,6 +872,14 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   (ROADMAP Next "Terrain: climates") - not built yet. A new climate = a descr_climates entry + every file keyed by
   climate (vegetation, battle-map textures, ...) and maybe an engine cap (REX's README says cultures/religions
   limits are lifted, climates not named) - not checked, not promised. Answer given in English for Discord.
+  **Climates brush BUILT (the user said "da", 2026-09-29; on main, Unreleased, not in game yet)**: Terrain editor
+  third mode "Climates": `terrain.climates(mod)` = [(name, colour, heat)] from descr_climates.txt (commented
+  blocks skipped); `terrain.apply(..., climate=)` writes map_climates.tga in 3x3 blocks like the ground (notes by
+  climate name); paint_problem 'climate' refuses sea only; `CampaignMap.climate_at` + `show_climates` (land tinted
+  in the file's colours, part of the background cache key); gui_terrain keeps self.climate beside ground/features
+  (undo/redo/_state/_restore_to, _signature reads map_climates too); palettes wrap 6 per row (> 8 brushes).
+  Checked in the window on vanilla RTW + M2 (30 tiles sandy_desert, undo/redo, Preview). To test in game: that the
+  painted climate shows (vegetation) after map.rwm is rebuilt. Next per his order: heights brush, then new map.
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
 - Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.

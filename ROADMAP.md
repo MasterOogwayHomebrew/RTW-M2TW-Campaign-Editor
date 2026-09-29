@@ -33,6 +33,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - [x] Map changes, new regions and faction changes written together by one Apply
 - [x] Resources placed, moved and removed; religions per region (Medieval II)
 - [x] Terrain editor: paint ground types, rivers, fords, river sources and cliffs tile by tile **(in-game ✓ on Rome)**
+- [ ] Terrain editor: paint climates (`map_climates.tga`, the mod's own climates) - built, next release
 - [x] Rivers kept joined side to side (the game stops a river at a corner-only step); Preview names a river the game will not draw
 
 ### Characters
@@ -72,7 +73,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 | Signed exe (no browser / SmartScreen warnings) | SignPath Foundation's answer (applied) |
 | Terrain: heights brush (raise, lower, smooth), mountains and hills kept in step with the heights | Time; an in-game test |
 | Terrain: a tilted 3D-like preview from the heights and ground | Time |
-| Terrain: climates; the coast (land and sea swapped, with regions and heights) | Time; in-game tests |
+| Terrain: the coast (land and sea swapped, with regions and heights); a new climate of one's own | Time; in-game tests |
 | A new campaign map from scratch (one region, one faction, loads in the game), then grown in the editor | Time; in-game tests |
 | Medieval II: new factions' units in `battle_models.modeldb` | The game's `data/unit_models/battle_models.modeldb` to build and test on |
 | Faction packs and building packs (like unit packs) | Time; then an in-game test |

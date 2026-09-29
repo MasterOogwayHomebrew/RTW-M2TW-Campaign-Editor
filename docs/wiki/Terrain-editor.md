@@ -6,6 +6,9 @@
   mountains, swamp, and the three kinds of sea.
 - **Rivers, fords, cliffs**: rivers, fords (the tiles where armies cross a river), river sources, cliffs, or
   nothing to rub one out.
+- **Climates**: the mod's own climates (`descr_climates.txt`, in its colours) - what grows on the campaign
+  and battle maps, the snow in winter, the heat that tires men in battle. While this mode is on the map shows
+  each land tile in its climate's colour. The sea keeps its climate. A new climate of your own is not in yet.
 
 Left drag paints (brush 1-6), right click picks the ground of a tile, right drag moves the map, **Grid** on
 or off.
@@ -20,7 +23,7 @@ or off.
 
 ## What it writes
 
-**Apply** writes `map_ground_types.tga` and `map_features.tga` with a backup and deletes `map.rwm`, so the game
+**Apply** writes `map_ground_types.tga`, `map_features.tga` and `map_climates.tga` with a backup and deletes `map.rwm`, so the game
 builds its map again on the next start.
 
 The heights are their own picture (`map_heights.tga`): painting mountains does not raise the land yet - a
