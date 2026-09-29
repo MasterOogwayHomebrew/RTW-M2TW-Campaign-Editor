@@ -912,7 +912,9 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   chain type / same rank - e.g. a barbarian temple -> a roman temple of the same level), or dropped when there is
   none, shown in Preview with plain words. Note: descr_strat buildings carry no culture - the game shows a chain
   in the owner's culture; the real work is swapping levels the owner cannot have. Check how the game itself
-  treats foreign buildings on capture (RTW: destroyed / kept?) before choosing the rule. Test first on BI files (ask for bi/data/ui/
+  treats foreign buildings on capture (RTW: destroyed / kept?) before choosing the rule.
+  The user (2026-09-29): as far as he knows the game converts nothing on capture - foreign temples stay until the
+  player demolishes them and builds his own; he will check vanilla and say exactly. Wait for his word. Test first on BI files (ask for bi/data/ui/
   roman + descr_ui_buildings.txt, or use tw-game-data RTW ui/) and check M2 the same way.
 - **BUG (the user, 2026-09-29, screenshot, BI)**: Edit faction empire_east, a garrison for Numid1 (a town nobody
   holds): "Numid1: no name in empire_east's name list for a captain" (edit._garrisons: `mod.name_pool(faction)
