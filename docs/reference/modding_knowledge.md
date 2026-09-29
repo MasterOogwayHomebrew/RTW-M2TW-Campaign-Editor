@@ -25,32 +25,32 @@ A fact marked *(said)* comes from one source and was not measured; *(measured)* 
 | Limit | Rome (original exe) | Medieval II (original exe) | Lifted by |
 |---|---|---|---|
 | Factions (with the rebels) | 21 (BI 31?) | 31 | REX / M2EX `max_factions` in descr_ex.txt (measured, in-game) |
-| Regions (the sea counts as one) | 200 | 199-200; DaC sits at the cap | REX: no cap found (HLR 300+ run) |
+| Regions (the sea counts as one) | 200 | 199-200; DaC sits at the cap | REX / M2EX: removed (README: "every single major engine limit like factions, regions..."; HLR 750 run) |
 | Factions shown on the campaign-select screen | 20 (so slave playable means one other left out) *(heavengames)* | | |
-| map_regions.tga size | **500 x 500** (descr_terrain; the 2W+1 maps up to 1001 x 1001) *(heavengames)* | vanilla 295 x 189, **510 x 510** (2W+1 maps 1021 x 1021) *(TWC wiki)* | ? - a tester's 5456 x 2464 map loaded in our tool; in game unknown |
+| map_regions.tga size | **500 x 500** (descr_terrain; the 2W+1 maps up to 1001 x 1001) *(heavengames)* | vanilla 295 x 189, **510 x 510** (2W+1 maps 1021 x 1021) *(TWC wiki)* | REX / M2EX: no size cap named; 18/04 fixed "a crash with maps having coordinates greater than 32768"; press text on M2EX: "removes the region, faction and mapsize limits" - no number; a tester's 5456 x 2464 map loaded in our tool |
 | Landmasses (islands) | 20 *(heavengames)* - **doubtful: vanilla RTW's map_regions has 32 side-joined land pieces and runs** (measured), so the game counts something else; not checked by the tool | many islands of different regions cause map faults *(TWC wiki)* | |
 | Hidden resources (EDB `hidden_resources` line) | 63 (64 risky) *(heavengames)*; vanilla uses 4 | 64 *(TWC wiki)*; vanilla uses 17 | a TWC tutorial goes past 64 |
 | Resource types (descr_sm_resources) | vanilla 26 | 26 said *(TWC wiki)* - but vanilla M2TW has **28** `type` entries (measured), so the number is doubtful | |
 | Character types (descr_character) | | 12 | |
-| Cultures | 6 vanilla (+ BI nomad, hun), HLR 11 under REX | **7** *(TWC wiki)* | REX: cultures unlimited (README) |
-| Units in export_descr_unit | 500 (vanilla 265) | 500 (a table in the exe; vanilla 413) | M2EX lifts the unit count *(Toolkit)* |
+| Cultures | 6 vanilla (+ BI nomad, hun), HLR 11 under REX | **7** *(TWC wiki)* | REX / M2EX 08/06: "Uncapped cultures from the hard limit of 7" |
+| Units in export_descr_unit | 500 (vanilla 265) | 500 (a table in the exe; vanilla 413) | M2EX lifts the unit count *(Toolkit; REX's notes do not name it)* |
 | Units a faction may own | 100 - more only drop out of custom battles *(heavengames)* | not checked | |
 | Units recruitable in one town | 32, agents not counted, more = CTD *(heavengames)* - the game's cap on what one town offers, not on recruit lines in one level (HLR has 702 in a capability) | | |
 | Building chains (trees) | 64, more = CTD (vanilla 39) | 128 (vanilla 64) | |
 | Levels per chain | 9 | 9 | |
-| Levels per trait | 9 | | |
+| Levels per trait | 9 | | REX 18/04: trait levels (was 10) and antitraits (was 20) unlimited |
 | Trait threshold points / points per trigger | 600 / 100 *(heavengames)* | | |
 | Kinds on a trait's `Characters` line | only the first works *(heavengames, RTW)*; vanilla RTW has 2 `spy, assassin` traits | lists of several kinds in vanilla (6 traits) - they work | |
-| Antitraits per trait | 10 (1.2) / 20 (1.6) *(said)* | | |
+| Antitraits per trait | 10 (1.2) / 20 (1.6) *(said)* | | REX 18/04: unlimited |
 | ExcludedAncillaries | 3, more = crash *(said)* | | |
-| Religions | none in vanilla | **9** (5 in vanilla: catholic, orthodox, islam, pagan, heretic) *(said, confirmed in game by a modder)*; the TWC wiki says 10 | REX's README: religions unlimited |
+| Religions | none in vanilla | **9** (5 in vanilla: catholic, orthodox, islam, pagan, heretic) *(said, confirmed in game by a modder)*; the TWC wiki says 10 | REX / M2EX 08/06: "Uncapped the number of BI beliefs / M2 religions" (the M2 religion system itself stays hardcoded) |
 | Men per unit | 12 to 60 (normal scale), more = CTD *(heavengames)* - **not true for M2TW** (300 DaC units exceed it) | 4 to 100 | |
 | Attack / charge / armour / defence | 63 (more read as 63) | attack 63 | |
 | Shield | 31 (more read as 31) | | |
 | Turns to build a unit | 1 to 244 | | |
 | Collision mass | 100 | | |
 | armour / weapon_lvl in descr_strat | 0 to 3 | | |
-| Model faces | 20,000 per model *(heavengames)* | | |
+| Model faces | 20,000 per model *(heavengames)* | | REX 08/06: per mesh 21845 faces, 65535 vertices; bones 72 (skinned), 96 (siege engines), 48 (buildings) |
 | stat_health | | 0 to 15 | |
 | Officers per unit | 2 in vanilla files | 3 | |
 | Mount effects | | 3 | |
@@ -61,6 +61,50 @@ Sources: rtw.heavengames.com "A List of Known Hardcodes" (Ferret) and "Adding Ne
 "Hardcoded Limits - M2TW" wiki (via search excerpt), TWC "Hardcoded Limits - RTW/M2TW" wiki pages, heavengames "A List of Known Hardcodes", TWC "The
 Hardcoded List", Toolkit `educeil.py` (sourced to "A Beginner's Guide to the Export_Descr_Unit (M2TW)" and "M2TW
 Ultimate Docudemons 5.3"), .Org "Adding a new religion", TWC "Crashes and how to fix them".
+
+### 1a. What REX / M2EX lift - from REX's own notes (collected 2026-09-29)
+
+Sources: github.com/Pannoniae/rex README and its release notes in GitHub Discussions (#2 18/04, #5 08/06, #8 15/06,
+#10 21/06, #30 17/08), REX's data/descr_ex.txt + descr_caps_ex.txt (RTW-game-data REX/). The repo also holds
+modding/*.md (soldier / mount variation, wasteland regions) and scripting/m2docs = **M2EX's own docudemon output**
+(console commands, commands, conditions, events) beside rtwdocs. The TWC REX / M2EX threads could not be read.
+
+Removed outright (no number to keep to):
+- factions: the fixed 21 / 31 is gone, but the count is still **`max_factions` in descr_ex.txt** (REX ships 21) -
+  17/08: "faction limit is gone (you can increase it in descr_ex.txt)"; regions (README); cultures (was 7);
+  BI beliefs / M2TW religions (was 9-10); climates: **32 slots, 12..32 named custom_1 .. custom_20** (17/08) - the
+  source of the "new climate" guide the user got;
+- trait levels (was 10), antitraits (was 20), a trigger's effects (was 10 traits, 5 advice threads, 20 guild scores,
+  10 faction-standing modifiers) (18/04);
+- character age (was 127 internally), kill count (was 7), M2TW max_number_of_children in descr_campaign_db (was 4);
+  RTW children: descr_ex max_num_children, 15/06 fixed "only the first 4 children listed in descr_strat attached";
+- building construction points (was 255), the 20000-denarii building cost assert, general bodyguard entity cap;
+- campaign map: overlay icons per cell (30), coastline vertices (5000 / 4000), tree vertices (25000), sea routes,
+  roads, movement paths, arrows, battle-zone overlays; aerial map tile models (200 triangles);
+- battle: ground materials per map 32 -> 128, men on the battlefield warning -> 30000, reinforcements -> 30000;
+- models: per mesh 10000 -> 21845 faces, 32752 -> 65535 vertices; bones 72 / 96 (siege) / 48 (buildings);
+  unit textures with attachment sets need not be square;
+- maps with coordinates over 32768 no longer crash (18/04).
+
+Settings with a number (descr_ex.txt, REX defaults): max_factions 21, max_num_ancillaries 8, max_num_children 4,
+ages (max_age_before_death 127, age_of_manhood 16, ...), blood_pool_limit 192 (max 2048), corpse_limit 1600;
+descr_caps_ex: trade_fleet_source capability (more than 3 trade fleets per port), default_recruitment_slots,
+resource_role_source (any resource mineable / the slave resource renamed).
+
+**Not named by REX anywhere** (keep the original numbers as warnings, say "not known under REX"): units in the EDU
+(500; M2EX's lift only from the Toolkit), building chains (64 / 128), levels per chain (9), hidden resources
+(63 / 64), units recruitable in one town (32), units a faction may own (100), map size as a number, ExcludedAncillaries.
+
+**New things REX brings that the tool must know** (not built yet):
+- **Wasteland regions** (RTW + M2TW): descr_regions `Name` / `wasteland` / `r g b` (3 lines; the long form with the
+  settlement replaced by `wasteland` also loads) - no settlement, owner, rebels or economy, no town pixel needed.
+  moddata.region_entries would read `wasteland` as a settlement named so (and as the rebels line on the short form).
+- Ground types **impassable_shrouded 32 32 32** (impassable + always black) and impassable_land 64 64 64 now in RTW
+  too - terrain.GROUND / mapdata know only 64 64 64 and 128 128 128 as Medieval II's.
+- EDU `soldiers { skeleton .. default { .. } armour N { .. } }` block and descr_mount / descr_animals `models { }`
+  (several models per unit / mount); armour_ug_models in RTW. A parser reading only `soldier` misses them.
+- descr_settlement_mechanics.xml in RTW (population thresholds per level) - our POP_MIN / level fit should read it.
+- Script keywords `local` / `target` in campaign_script.
 
 ## 2. What crashes the game (by file)
 

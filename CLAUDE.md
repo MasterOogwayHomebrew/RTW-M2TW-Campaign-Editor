@@ -840,6 +840,19 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
 
 ## Where we stopped (2026-09-29, the latest /clear - read this block first)
 
+- **What REX / M2EX lift - COLLECTED (the user asked, 2026-09-29)**: docs/reference/modding_knowledge.md section 1a,
+  from REX's README + its GitHub Discussions release notes (18/04, 08/06, 15/06, 21/06, 17/08) + descr_ex /
+  descr_caps_ex. Removed: regions, cultures (7), religions / beliefs, climates (32 slots, custom_1..20), trait levels
+  (10) + antitraits (20) + trigger effects, age 127, kill count, M2TW children (4), construction points (255), many
+  campaign-map / model caps; factions still = max_factions. NOT named by REX: EDU units (500), chains (64 / 128),
+  levels (9), hidden resources (63 / 64), 32 units per town, map size number. github.com/Pannoniae/rex also has
+  scripting/m2docs = M2EX's docudemon (we asked the user for it - it is public there) and modding/*.md.
+  **Proposed to the user, not built**: limits.ENGINE_LIFTS from 1a (Check mod stops warning on lifted ones;
+  religions.MAX_RELIGIONS only without REX / M2EX); wasteland regions (descr_regions `wasteland`, 3-line form -
+  region_entries misreads it); impassable_shrouded 32 32 32 / impassable_land in RTW (terrain.GROUND); EDU
+  `soldiers { }` block + mount `models { }` (units.py / packs read only `soldier`); RTW
+  descr_settlement_mechanics.xml population thresholds.
+
 - **STATE AT THE /clear OF 2026-09-29 ~12:15 UTC - READ THIS FIRST** (everything is pushed; main = session branch):
   - **Released today, in order**: v0.13.0 (names by culture live on the map), v0.14.0 (own name lists, all-towns
     names table), v0.14.1 (M2 surname keys with a space kept), v0.15.0 (M2 city / castle switch), v0.15.1 (castles
