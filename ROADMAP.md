@@ -12,7 +12,7 @@ that is the fastest way to a fix.
 Version 0.1: a small script for one mod (Barbarian Empires REX on Rome: Total War) that cloned a faction
 from a template - texts, units, buildings, start towns, leader. Rome only, command line first.
 
-## What it does now (0.14.0)
+## What it does now (0.15.0)
 
 ### Factions
 - [x] New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art **(in-game ✓)**
@@ -56,6 +56,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 ### Both games
 - [x] Rome: Total War, Barbarian Invasion, Alexander - plain or on REX **(in-game ✓)**
 - [x] Medieval II and Kingdoms - plain or on M2EX: unpacking offered, set-up fixes, castles, `mods/<name>` with its .cfg
+- [x] Medieval II: turn a settlement into a castle or a city (buildings converted the game's own way)
 
 ### Safety
 - [x] Preview of every file and line before writing; only the lines meant change, the rest stays byte for byte
@@ -70,6 +71,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - [ ] Medieval II castle fix (0.7.5), unit packs, new armies / agents / fleets on the map
 - [ ] Barbarian Invasion campaign loading (0.9.4 fix); BI's shared name lists and building pictures (0.12.0)
 - [ ] Terrain climates; Rome flag symbols and faction logos (0.12.0)
+- [ ] Medieval II city / castle switch (0.15.0)
 - [ ] Own name lists, the names-by-culture table (0.14.0)
 - [ ] Settlement names by culture (0.13.0, REX); a New mod folder from BI / Alexander started with -bi / -alx
 

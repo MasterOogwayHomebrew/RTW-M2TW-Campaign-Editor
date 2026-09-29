@@ -26,6 +26,16 @@ want. Untouched fields and towns stay exactly as they are.
 Every building chain the faction may build, with the game's picture of each level. The settlement level and
 population follow a governor's building (a town with a governor's palace becomes a large town).
 
+**City or castle (Medieval II).** *Settlement is a* (top right of the Buildings tab) turns the town into a castle or
+a city. In Medieval II that is the settlement's own line in `descr_strat.txt` (`settlement castle`) together with
+its buildings, which are either a city's or a castle's (each level says which in `export_descr_buildings.txt`). The
+tool converts the buildings the game's own way: a level becomes the level its `convert_to` names in the matching
+chain (a city's `wooden_wall` becomes a castle's `castle`, `town_guard` becomes `drill_square`, a church a chapel),
+a level with no such line goes (a castle has no market or town hall), and the governor's building is fitted to the
+settlement (a castle's level equals the settlement's, a city's is one below; a village castle has a motte and
+bailey, a village city none). Only the kind's own buildings are offered afterwards. Castles go up to a large city
+(a citadel); a huge city stays a city. Rome has no castles, so the choice is not shown there.
+
 ## Other tabs
 
 - **Map**: drag the faction's characters, see [[Campaign map]].
