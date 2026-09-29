@@ -163,6 +163,18 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
    folder) before guessing. Vanilla Rome and Medieval II keep working (say plainly what needs REX), unless the user
    says to drop them.
 
+## Modding knowledge (collected 2026-09-29) - docs/reference/modding_knowledge.md
+
+The user asked (2026-09-29) to gather what the RTW / M2TW modding community knows (limits, crash causes, map rules,
+tools) and plan from it. twcenter.net (+ wiki), forums.totalwar.org, heavengames, moddb, steamcommunity, reddit,
+web.archive.org are BLOCKED from the container (the user can allow hosts: environment settings -> Network access);
+web search excerpts + github.com work. Main find: **Medieval 2 GUI Toolkit** (github.com/ProJ-Yeet/
+Medieval2-GUI-Toolkit, JS + Python local web app, no licence - read for facts only, never copy code) = the closest
+tool to ours, M2TW only (unit transfer with animations / voices, 3D model view, Health check with 45 sourced rules,
+measured on the DaC and ROCSS mods). The knowledge file lists limits, crash rules with 'our tool checks it?',
+map rules, the religion recipe, the tools, and the gaps -> ROADMAP Next. Keep adding to it when the user sends
+forum pages / guides.
+
 ## Hard-won rules (do not break)
 
 - **Names** written to descr_strat must exist in the name pool (descr_names +

@@ -97,6 +97,9 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 | Unit editor: a unit's battle models (meshes, textures per faction, scale) shown and edited | modeldb reading is done (0.16.0) |
 | Faction packs and building packs (like unit packs) | Time; then an in-game test |
 | Mods made on the plain game (slimmed folders) loaded with the game's data behind them | Time |
+| New religion for Medieval II (e.g. Judaism): every file it needs, shares per region, the 9-religion limit | Time; an in-game test |
+| Check mod: the crash rules modders documented (undeclared ai_label, religions not summing to 100, a region with no town not last, event texts, antitraits, dead ancillaries, absolute paths, a town touching another region) - see docs/reference/modding_knowledge.md | Time |
+| Limits shown up front: units (500), building chains (64 Rome / 128 Medieval II), levels (9), religions (9) | Time |
 | Shadow and emergent factions set in the tool (BI `shadowed_by` / `shadowing`, `spawned_on_event`, Medieval II `dead_until_resurrected`, `undiscovered`) | Time; an in-game test |
 | Terrain: heights brush and a 3D view (asked on Discord again) | Time |
 | A REX settings panel in plain words (faction limit, sprites, arrow visibility, fort upkeep, trade fleets...) | Time |
