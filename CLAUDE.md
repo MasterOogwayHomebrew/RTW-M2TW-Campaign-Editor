@@ -779,6 +779,12 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
      step (red mark), the rest of the desert river is missing. So: a river must be one edge-connected chain from
      its start (another river, the sea, or a 255 255 255 source tile); Preview should name the tile where the
      drawn river will stop and how many river tiles beyond it the game will not draw.
+     **His logs (2026-09-29 03:23-03:56, vanilla RTW + REX build Sep 27 2026)**: three terrain Applies (ground
+     only; 193 river tiles + 1 shallow sea; 15 cliffs, 13 river, 7 fords + 100 ground tiles of 7 kinds), the
+     game rebuilt map.rwm ("map.rwm out of date - rebuilding") and loaded the campaign with no terrain error;
+     then Restore of all three, newest first, worked. Only game-side noise (Combat_V_Romans ancillary assert =
+     vanilla's, REX sprite warnings). ROADMAP: Terrain editor ticked (in-game ✓ on Rome); the river-chain step
+     added to Next. Not checked in game yet: Medieval II terrain, heights (no brush yet).
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
 - Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.

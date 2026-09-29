@@ -31,7 +31,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - [x] Edit a region's data (builder, rebels, tags, triumph, farming), new or existing
 - [x] Map changes, new regions and faction changes written together by one Apply
 - [x] Resources placed, moved and removed; religions per region (Medieval II)
-- [x] Terrain editor: paint ground types, rivers, fords, river sources and cliffs tile by tile
+- [x] Terrain editor: paint ground types, rivers, fords, river sources and cliffs tile by tile **(in-game ✓ on Rome)**
 
 ### Characters
 - [x] Character editor for any faction: names, ages, traits with levels, ancillaries
@@ -62,13 +62,13 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - [ ] Edit region; a new faction starting in a new region in one Apply
 - [ ] Medieval II castle fix (0.7.5), unit packs, new armies / agents / fleets on the map
 - [ ] Barbarian Invasion campaign loading (0.9.4 fix)
-- [ ] Terrain editor: the game building its map again from painted ground and rivers
 
 ## Next
 
 | Step | What it needs |
 |---|---|
 | Signed exe (no browser / SmartScreen warnings) | SignPath Foundation's answer (applied) |
+| Rivers stay one edge-connected chain (the game stops drawing a river at its first corner-only step) | Time; an in-game test |
 | Terrain: heights brush (raise, lower, smooth), mountains and hills kept in step with the heights | Time; an in-game test |
 | Terrain: a tilted 3D-like preview from the heights and ground | Time |
 | Terrain: climates; the coast (land and sea swapped, with regions and heights) | Time; in-game tests |
