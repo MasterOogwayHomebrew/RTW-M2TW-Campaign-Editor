@@ -48,3 +48,6 @@ name for each culture of its owner, plus a name for every other culture. REX ren
 hands - as soon as a general takes it, and at each of its owner's turns. The tool writes it into the campaign's
 `campaign_script.txt` (it makes one when the campaign has none; a script of the mod's own stays as it is around the
 tool's block), with a backup like every write. Needs REX.
+
+The window shows it at once: take a town for a faction (on the Faction tab or by clicking it on the Map) and its
+label on the map changes to the name for that faction's culture; the towns list shows the name a town has now.
