@@ -833,6 +833,8 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
       out of every group; test with the doc's merchants_wharf example (Rome + M2TW).
     * .sd.xml sprite sheets (strat3, shared2, battle3, strat_ed, battle_ed, shared_editor + radar; in RTW-game-data
       RTW/data/ui) - already used by symbols.py for faction logos under sprite_format xml.
+    * **REX EDU attribute list** (morale / fatigue / combat / terrain / unit size keys and which line each goes on):
+      docs/reference/rex_edu_attributes.md - the engine-known keys for the Unit editor fix below.
     * **EDU (REX)**: row spacing may be smaller than column spacing (formation line); new attributes
       `ai_cannot_skirmish`, `ai_cannot_toggle_formation` (attributes line); `recruit_priority_offset` in RTW EDU like
       M2TW's (AI recruitment weight). Our attributes are free text (no whitelist) - fine. **Gap**: editors.room_for
@@ -842,8 +844,8 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
     * **REX console / EDB / EDU additions**: `add_soldiers <character|settlement> <unit_type> <amount>` (absolute
       amount); `downgrade_building <settlement> <building_level_id>` (one level down, or destroyed at level 0; RTW +
       M2TW); EDB `retrain` (RTW) / `retrain_pool` (M2TW) = like recruit / recruit_pool but only retraining (both lines
-      for one unit = recruitable); EDU attribute "Immune to Psychology" (the pasted spelling was `immue_to_psychology`
-      - check the real keyword in REX docs / strings before offering it): no fear morale penalties.
+      for one unit = recruitable); EDU attribute "Immune to Psychology" (REX's attribute list spells it `immune_to_psychology`,
+      on the stat_mental line): no fear morale penalties.
     * **BUG FOUND (ours, M2TW, not fixed yet)**: vanilla M2TW export_descr_buildings has 1475 `recruit_pool` lines
       and 0 `recruit` lines, but roster.RE_RECRUIT / recruit_lines, editors.rename_unit (recruit lines follow a
       rename), packs._recruit_places and editors line 114 / 386 / 647 read only `recruit` (line 114 also
