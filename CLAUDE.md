@@ -737,6 +737,12 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   to main that changes docs/wiki (GITHUB_TOKEN, contents: write; pages made only in the web editor are kept).
   The session's git proxy refuses .wiki repos (403, add_repo cannot add them). Keep the pages current with the
   README when features change.
+- **The user's test round (2026-09-29, collect - fix ALL at once when he says he is done, not one by one)**:
+  1. Portrait library (Rome, roman / generals, dark theme): the portraits stand in ONE column down the left, the
+     rest of the window empty. Cause (not fixed yet): gui_family.PortraitLibrary.show computes
+     `cols = max(1, (cv.winfo_width() or 900) // 56)` - before the canvas is laid out winfo_width() is 1, not 0,
+     so cols = 1; and nothing re-lays out on `<Configure>`. Fix: take the width after update_idletasks (or the
+     window's), and redraw on the canvas's `<Configure>` (like gui_art's _reflow).
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
 - Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.
