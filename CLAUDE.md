@@ -894,6 +894,17 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   (undo/redo/_state/_restore_to, _signature reads map_climates too); palettes wrap 6 per row (> 8 brushes).
   Checked in the window on vanilla RTW + M2 (30 tiles sandy_desert, undo/redo, Preview). To test in game: that the
   painted climate shows (vegetation) after map.rwm is rebuilt. Next per his order: heights brush, then new map.
+- **BUG (the user, 2026-09-29, screenshot; to fix later - "write it down for now")**: BI, Edit faction, the Roman
+  Empire (Thracia, Achaea... = the eastern empire), Buildings tab: core_building / defenses / barracks / market ...
+  show BARBARIAN pictures (thatched huts) though the culture is roman; academic, amphitheatres, temples: empty boxes.
+  Likely cause (read, not yet checked on BI files): `buildings.BuildingPictures` - (1) `cultures()` ends with EVERY
+  other culture sorted (barbarian first), so a level the roman folder lacks takes the barbarian picture; (2) `find()`
+  loops names outside cultures, so the full level name in a foreign culture beats the roman alias / shorter name;
+  (3) it indexes only `mod.data/ui` - bi/data/ui holds only BI's own pictures, the rest lie in the game's data/ui
+  (the fallback the game uses), so the roman pictures are not seen at all. Fix: search the game's data/ui after
+  the mod's; never a foreign culture's picture (only the culture + its descr_ui_buildings variants), an empty box
+  with "no picture for roman" instead; names inside the culture loop. Test first on BI files (ask for bi/data/ui/
+  roman + descr_ui_buildings.txt, or use tw-game-data RTW ui/) and check M2 the same way.
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
 - Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.
