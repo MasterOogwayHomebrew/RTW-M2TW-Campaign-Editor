@@ -833,6 +833,12 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
       out of every group; test with the doc's merchants_wharf example (Rome + M2TW).
     * .sd.xml sprite sheets (strat3, shared2, battle3, strat_ed, battle_ed, shared_editor + radar; in RTW-game-data
       RTW/data/ui) - already used by symbols.py for faction logos under sprite_format xml.
+    * **EDU (REX)**: row spacing may be smaller than column spacing (formation line); new attributes
+      `ai_cannot_skirmish`, `ai_cannot_toggle_formation` (attributes line); `recruit_priority_offset` in RTW EDU like
+      M2TW's (AI recruitment weight). Our attributes are free text (no whitelist) - fine. **Gap**: editors.room_for
+      allows a key only up to what some unit of the mod already has, so on a Rome mod with no recruit_priority_offset
+      line anywhere the Unit editor's Add line refuses it (and does not offer it). To fix: a list of keys the engine
+      knows (REX EDU keys, M2TW's) that may be added even when the mod has none yet - one place, both games.
     * descr_ex `max_factions` - known (limits.py); the log line `descr_ex.txt: max_factions = 31` confirms it.
     * ALX trait `Immortality` (Characters family, Hidden) restored in RTW + M2TW under REX: generals live past the
       hardcoded 122 - the Character editor may offer it for old characters (ages > 122).
