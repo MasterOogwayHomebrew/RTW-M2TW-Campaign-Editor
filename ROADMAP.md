@@ -12,7 +12,7 @@ that is the fastest way to a fix.
 Version 0.1: a small script for one mod (Barbarian Empires REX on Rome: Total War) that cloned a faction
 from a template - texts, units, buildings, start towns, leader. Rome only, command line first.
 
-## What it does now (0.9.4)
+## What it does now (0.10.0)
 
 ### Factions
 - [x] New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art **(in-game ✓)**
@@ -31,6 +31,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - [x] Edit a region's data (builder, rebels, tags, triumph, farming), new or existing
 - [x] Map changes, new regions and faction changes written together by one Apply
 - [x] Resources placed, moved and removed; religions per region (Medieval II)
+- [x] Terrain editor: paint ground types, rivers, fords, river sources and cliffs tile by tile
 
 ### Characters
 - [x] Character editor for any faction: names, ages, traits with levels, ancillaries
@@ -61,12 +62,17 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - [ ] Edit region; a new faction starting in a new region in one Apply
 - [ ] Medieval II castle fix (0.7.5), unit packs, new armies / agents / fleets on the map
 - [ ] Barbarian Invasion campaign loading (0.9.4 fix)
+- [ ] Terrain editor: the game building its map again from painted ground and rivers
 
 ## Next
 
 | Step | What it needs |
 |---|---|
 | Signed exe (no browser / SmartScreen warnings) | SignPath Foundation's answer (applied) |
+| Terrain: heights brush (raise, lower, smooth), mountains and hills kept in step with the heights | Time; an in-game test |
+| Terrain: a tilted 3D-like preview from the heights and ground | Time |
+| Terrain: climates; the coast (land and sea swapped, with regions and heights) | Time; in-game tests |
+| A new campaign map from scratch (one region, one faction, loads in the game) | Time; the user to confirm the idea |
 | Art: *Remove* a picture, and what the game does without it | An in-game test per kind of picture |
 | Medieval II: new factions' units in `battle_models.modeldb` | The game's `data/unit_models/battle_models.modeldb` to build and test on |
 | Medieval II: the portrait pools in the library | The game's `ui/<culture>/portraits` and `ui/custom_portraits` |
