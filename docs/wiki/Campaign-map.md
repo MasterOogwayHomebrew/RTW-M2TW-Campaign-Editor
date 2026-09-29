@@ -45,6 +45,6 @@ Religions per region (**Religions...**); castles; agents such as merchants, prie
 
 **Names by culture...** (next to *Edit region...* on the Faction tab, and on the Map's region bar) gives a town a
 name for each culture of its owner, plus a name for every other culture. REX renames the town when it changes
-hands - at the start of the turn and whenever the campaign map opens, so right after a siege battle too. The tool
-writes it as a REX script module, `<mod>/script/modules/ft_settlement_names.nut`, with a backup like every write.
-Needs REX.
+hands - as soon as a general takes it, and at each of its owner's turns. The tool writes it into the campaign's
+`campaign_script.txt` (it makes one when the campaign has none; a script of the mod's own stays as it is around the
+tool's block), with a backup like every write. Needs REX.

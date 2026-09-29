@@ -1027,6 +1027,19 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   then fix the module's calls to the documented names and test in game. Written through regionedit.apply_opts
   (regions['culture_names'], App.culture_names in UNDO_KEYS); refused cultures not in descr_cultures; not REX =
   warning, nothing written. Dialog: Faction tab 'Names by culture...' + Map region bar.
+- **Names by culture REWORKED on REX's own documentation (2026-09-29)**: the user sent REX's `dump_docudemon`
+  output (documentation/console_commands.txt, docudemon_commands / _conditions / _events.txt - now in tw-game-data
+  REX/documentation; the campaign-script reference: commands, conditions, events, console commands). The Squirrel
+  module (guessed API) is gone; culturenames.py writes a marked block into the campaign's campaign_script.txt:
+  per town and culture `monitor_event SettlementTurnStart|GeneralCaptureSettlement SettlementName <town>` + `and
+  FactionCultureType <c>` (the default: `and not FactionCultureType` of every listed one) + `console_command
+  rename_settlement <town> "<name>"`, before the script's wait_monitors (added when missing); no script = one made
+  (script ... wait_monitors end_script) + `script` / `campaign_script.txt` at the end of descr_strat (as M2's
+  campaigns). Table on a `; DATA {json}` line. Names latin-1 only. Not tested in game: that `script` at the end of a
+  Rome descr_strat is read (M2 does it), and REX runs it. **The user checked**: REX reads a mod's own folder when the
+  bat names it (-mod:<name>), like ours. **New mod folder from bi / alexander**: REX's own bats start them with
+  `REX.exe -bi` / `-alx` (not -mod); our fallback bat now adds -bi / -alx for a bi / alexander base (newmod._bats) -
+  the cause of the user's bi_Empire_east imperial_campaign errors. Whether `-bi -mod:<name>` together works: to test.
 - **The user's direction (2026-09-29): "the program should be built on full REX support, almost depend on it"**
   (earlier he was answered that vanilla / M2 stay supported - this now tilts the priority: REX first). Plan
   proposed: (1) REX's own docs via dump_docudemon -> derived notes in docs/reference; (2) a REX settings panel
