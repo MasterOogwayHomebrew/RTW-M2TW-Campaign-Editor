@@ -13,7 +13,7 @@ that is the fastest way to a fix.
 Version 0.1: a small script for one mod (Barbarian Empires REX on Rome: Total War) that cloned a faction
 from a template - texts, units, buildings, start towns, leader. Rome only, command line first.
 
-## What it does now (0.17.0)
+## What it does now (0.17.1)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -21,6 +21,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - ✅ Edit an existing faction: names, texts, colours, AI, money, playable, towns taken or given, capital, leader and heir *(in-game ✓)*
 - ✅ Garrisons and buildings per town, with the game's own cards and pictures *(in-game ✓)*
 - 📦 Settlement level and population (the governor's building follows the size)
+- 📦 The rebels edited like any faction: armies, fleets, garrisons, towns, units (each rebel with its `sub_faction`)
 - 📦 Diplomacy: attitudes and starting relations with every other faction
 - 📦 Roster: give or take units and building levels (ownership, recruit lines and cards kept in step)
 - ✅ A separate mod folder in one click (the base mod stays untouched) *(in-game ✓)*
@@ -72,6 +73,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 
 ## 🧪 Being tested in the game now
 
+- 🧪 The rebels in Edit faction (0.17.1)
 - 🧪 Medieval II recruit_pool lines; REX bracket requirements and unit abilities; forts on the map (0.17.0)
 - 🧪 Family tab and Character editor, own portraits (Medieval II), portrait library
 - 🧪 Edit region; a new faction starting in a new region in one Apply
@@ -95,6 +97,8 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 | Unit editor: a unit's battle models (meshes, textures per faction, scale) shown and edited | modeldb reading is done (0.16.0) |
 | Faction packs and building packs (like unit packs) | Time; then an in-game test |
 | Mods made on the plain game (slimmed folders) loaded with the game's data behind them | Time |
+| Shadow and emergent factions set in the tool (BI `shadowed_by` / `shadowing`, `spawned_on_event`, Medieval II `dead_until_resurrected`, `undiscovered`) | Time; an in-game test |
+| Terrain: heights brush and a 3D view (asked on Discord again) | Time |
 | A REX settings panel in plain words (faction limit, sprites, arrow visibility, fort upkeep, trade fleets...) | Time |
 | Forts placed and edited on the map (REX: permanent, a name of its own) | Time; an in-game test |
 | The AI's war plans (`invade_*` in descr_campaign_ai_db.xml) explained in plain words on the Faction tab | Time |

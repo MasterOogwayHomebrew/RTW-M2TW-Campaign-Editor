@@ -3,6 +3,11 @@
 **Edit faction** at the top, then pick the faction. The window fills with what it is now; change what you
 want. Untouched fields and towns stay exactly as they are.
 
+**The rebels** (`slave`) are in the list too: their armies, fleets, agents, garrisons, towns, buildings and
+units are edited like any faction's. A rebel has a `sub_faction` - the faction whose look and name list it
+uses: **+ Army** asks for it (**Rebels of**), a captain for an empty rebel town takes the nearest rebel's.
+The rebels are never playable and have no capital, leader or heir.
+
 ## Faction tab
 
 - Names, tooltip and campaign-screen text, colours, AI, money (denari), playable.
