@@ -239,6 +239,14 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   (docs/reference/rex_manifest) hold no config for it; REX's data/descr_sm_factions.txt has no directive.
   Guess (unchecked): the lifted limit comes with REX's descr_sm_factions.json (HLR has one, vanilla has none)
   or with the BI-format game. To settle: HLR's descr_sm_factions.json + ask REX's Discord / README docs.
+  He then sent a descr_sm_factions.json (2026-09-29): NOT HLR's - it is the Rome Remastered format ("factions":
+  {name: {string, description, culture, ethnicity, tags, namelists{men,women,surnames}, logos{loading screen icon,
+  standard index, rebel standard index, logo index, rebel logo index, strat symbol model, strat rebel symbol
+  model}, colours{primary, secondary, family tree{...}}, movies{intro, victory, defeat}, available in custom
+  battles, prefer naval invasions, default battle ai personality, allow reproduction}}) with 24 factions: the 20
+  vanilla + baktria, epirus, bosporan_kingdom (Remastered's) + slave. His vanilla data (tw-game-data RTW/data)
+  has no .json, and the nabataea write touched none. Asked where the file lies. If REX reads it when present,
+  that may be how REX lifts the 21 limit (24 here) - to test once we know its place.
 - **REX** takes one `-mod:` folder, falls back to the game's `data`; no mod chain.
   REX looks for the sound pack **by the mod's name** (`<mod>/data/sounds/<mod>.idx`),
   so a new mod folder also gets `HLR.idx/.dat` under its own name.
