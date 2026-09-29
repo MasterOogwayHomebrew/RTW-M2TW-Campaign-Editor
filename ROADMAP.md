@@ -103,6 +103,9 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 | Mods made on the plain game (slimmed folders) loaded with the game's data behind them | Time |
 | Check mod: the crash rules modders documented (undeclared ai_label, religions not summing to 100, a region with no town not last, event texts, antitraits, dead ancillaries, absolute paths, a town touching another region) | Time |
 | Limits shown up front on the original exes (REX / M2EX lift most): units (500), building chains (64 Rome / 128 Medieval II), levels (9), religions (9) | Time |
+| Roster: giving a building level also gives the levels below it (a chain is built level by level); taking one also takes the levels above | Time |
+| A religion of one's own, step by step in its own window: name, symbol, text, its temple chain (levels, pictures, effects like the Building editor), which factions follow it - Medieval II and Barbarian Invasion (BI's `descr_beliefs.txt`, `religious_belief` in the buildings); greyed on plain Rome, which has no religions | Time; BI's campaign files for the test |
+| Factions that appear later, each game its own way: Medieval II by date (`dead_until_resurrected`, `spawned_on_event`, an `emergent_faction` event with its regions, armies spawned by the campaign script - like the Mongols and Timurids); Barbarian Invasion hordes (`horde_*` lines) and factions born of a revolt (`spawns_on_revolt`, `shadowed_by`) | Time; in-game tests |
 | Shadow and emergent factions set in the tool (BI `shadowed_by` / `shadowing`, `spawned_on_event`, Medieval II `dead_until_resurrected`, `undiscovered`) | Time; an in-game test |
 | Terrain: a 3D view (asked on Discord again) | Time |
 | A faction brought over from Rome into Barbarian Invasion (or between any two Rome mods): a faction pack - its units already go over as unit packs | Time; then an in-game test |
