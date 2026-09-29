@@ -772,6 +772,13 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
      corner tiles itself - the one that is land and not a town/port), Preview warns about corner-only contacts
      (terrain river check today only finds a river tile touching no other); same for fords (part of the river)
      - check M2's rule too. Add to Hard-won rules once built. He is still checking the drawing of all layers.
+     **Corrected by the user (second screenshot pair, Cyrene - Siwa - Alexandria)**: not gaps - the game
+     **traces a river from where it joins another river (here the Nile at Alexandria; probably also a map edge
+     / the sea / a river source - not checked) and stops at the first corner-only step; everything past it is
+     not drawn at all**. His river painted west from the Nile shows in the game only up to the first diagonal
+     step (red mark), the rest of the desert river is missing. So: a river must be one edge-connected chain from
+     its start (another river, the sea, or a 255 255 255 source tile); Preview should name the tile where the
+     drawn river will stop and how many river tiles beyond it the game will not draw.
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
 - Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.
