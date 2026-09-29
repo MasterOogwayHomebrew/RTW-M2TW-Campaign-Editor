@@ -881,6 +881,9 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
     * `process_cq` / `process_rq [faction] <settlement|all> [amount 1-10]` (RTW + M2TW, same now): finish that many
       items of the construction / recruitment queue (default 1; faction for AI towns, default the player).
       Console / script only - nothing for the tool's files.
+    * **Strat editor launch**: `M2EX.exe --debug.bypass_to_strategy_editor=a` (M2TW + M2EX), `REX.exe -strat_ed=a`
+      (Rome + REX) - the game's own campaign-map editor; idea: a button / bat line to open the mod in it.
+    * (The user: "all sent", 2026-09-29 - the REX notes above are the whole batch.)
     * descr_ex `max_factions` - known (limits.py); the log line `descr_ex.txt: max_factions = 31` confirms it.
     * ALX trait `Immortality` (Characters family, Hidden) restored in RTW + M2TW under REX: generals live past the
       hardcoded 122 - the Character editor may offer it for old characters (ages > 122).
