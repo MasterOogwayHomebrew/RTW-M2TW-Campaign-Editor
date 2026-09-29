@@ -261,6 +261,12 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   "N of max"; Preview offers, with a yes and a backup, to raise max_factions itself when REX is there
   (REX.exe in the game folder); without REX (original exe) the limit cannot be raised - say so. Other REX
   settings of note there: max_num_ancillaries 8, max_num_children 4, ages, faction_unlock (descr_caps_ex).
+  **The user wants it (2026-09-29, "write it down for now")**: the tool does this itself - faction limit shown
+  and raised with a yes - **and the same for regions**. Checked REX's descr_ex.txt / descr_caps_ex.txt: there
+  is NO region setting (only max_factions); HLR has 315 ports, so > 200 regions already run under REX without a
+  setting (the README: "Removed every single major engine limit like factions, regions..."). Without REX the
+  original exes stop at about 200 regions (RTW / BI / M2 - check the exact numbers and error text before
+  building). So: regions - show "N regions" and warn only for the original exe; factions - max_factions as above.
 - **REX** takes one `-mod:` folder, falls back to the game's `data`; no mod chain.
   REX looks for the sound pack **by the mod's name** (`<mod>/data/sounds/<mod>.idx`),
   so a new mod folder also gets `HLR.idx/.dat` under its own name.
