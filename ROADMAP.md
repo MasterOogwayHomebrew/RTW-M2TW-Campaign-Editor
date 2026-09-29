@@ -34,7 +34,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - 📦 Edit a region's data (builder, rebels, tags, triumph, farming), new or existing
 - 📦 Map changes, new regions and faction changes written together by one Apply
 - 📦 Resources placed, moved and removed; religions per region (Medieval II)
-- ✅ Terrain editor: paint ground types, rivers, fords, river sources and cliffs tile by tile *(in-game ✓ on Rome)*
+- ✅ Terrain editor: paint ground types, rivers, fords, river sources and cliffs tile by tile *(in-game ✓ on Rome and Medieval II; [video](https://youtu.be/z0T723riXaU))*
 - 📦 Terrain editor: paint climates (`map_climates.tga`, the mod's own climates)
 - 📦 Rivers kept joined side to side (the game stops a river at a corner-only step); Preview names a river the game will not draw
 - 📦 Settlement names by the owner's culture (REX renames a town when it changes hands); the map shows the new owner's name at once; every town's names in one table
@@ -73,8 +73,8 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 
 ## 🧪 Being tested in the game now
 
-- 🧪 Terrain: heights brush like a spray can - raise, lower, smooth, level (on main, next release) *(in-game ✓ on Rome and Medieval II)*
-- 🧪 Find on the map: towns, ports, armies, agents, fleets, units, forts, resources (on main, next release) *(in-game ✓)*
+- 🧪 Terrain: heights brush like a spray can - raise, lower, smooth, level (on main, next release) *(in-game ✓ on Rome and Medieval II; [video](https://youtu.be/mTdRAWympuw))*
+- 🧪 Find on the map: towns, ports, armies, agents, fleets, units, forts, resources (on main, next release) *(in-game ✓ on Rome and Medieval II; [video](https://youtu.be/6WAdnGovGzA))*
 - 🧪 A new religion for Medieval II (on main, next release): New religion... on the Map tab
 - 🧪 From the modders' guides (on main, next release): off-map sons kept at 16 or younger; flag symbols from descr_standards.txt (BI's sheets, never a rebels' slot); river blocks and rings warned; Check mod counts the engine's limits and finds win conditions / rebels / slaves faults
 - 🧪 The rebels in Edit faction (0.17.1)

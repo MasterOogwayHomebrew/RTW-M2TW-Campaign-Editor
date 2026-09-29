@@ -2,6 +2,9 @@
 
 **Terrain editor** at the top paints the campaign map itself, tile by tile.
 
+**Videos:** [editing rivers, fords, cliffs](https://youtu.be/z0T723riXaU) · [editing a height map](https://youtu.be/mTdRAWympuw) (both checked in the game on Rome
+and Medieval II).
+
 - **Ground**: low / medium / high fertility, wilderness, sparse and dense forest, hills, mountains, high
   mountains, swamp, and the three kinds of sea.
 - **Rivers, fords, cliffs**: rivers, fords (the tiles where armies cross a river), river sources, cliffs, or

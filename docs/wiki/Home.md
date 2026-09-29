@@ -9,6 +9,8 @@ for byte.
 [Releases](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/releases) ·
 **Video:** [what the editor does, in a few minutes](https://www.youtube.com/watch?v=m1sCPg-Lzsw)
 
+**More videos:** [editing rivers, fords, cliffs](https://youtu.be/z0T723riXaU) · [editing a height map](https://youtu.be/mTdRAWympuw) · [searching the map for settlements and units](https://youtu.be/6WAdnGovGzA)
+
 ## Made to be easy
 
 The aim of this tool is to make modding friendly for everyone, not only for people who know every file of
