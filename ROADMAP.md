@@ -12,7 +12,7 @@ that is the fastest way to a fix.
 Version 0.1: a small script for one mod (Barbarian Empires REX on Rome: Total War) that cloned a faction
 from a template - texts, units, buildings, start towns, leader. Rome only, command line first.
 
-## What it does now (0.11.0)
+## What it does now (0.12.0)
 
 ### Factions
 - [x] New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art **(in-game ✓)**
@@ -33,7 +33,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - [x] Map changes, new regions and faction changes written together by one Apply
 - [x] Resources placed, moved and removed; religions per region (Medieval II)
 - [x] Terrain editor: paint ground types, rivers, fords, river sources and cliffs tile by tile **(in-game ✓ on Rome)**
-- [ ] Terrain editor: paint climates (`map_climates.tga`, the mod's own climates) - built, next release
+- [x] Terrain editor: paint climates (`map_climates.tga`, the mod's own climates)
 - [x] Rivers kept joined side to side (the game stops a river at a corner-only step); Preview names a river the game will not draw
 
 ### Characters
@@ -48,6 +48,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - [x] Unit packs: export units with models, textures, mounts, cards and texts into a .zip and import them into another mod
 - [x] Faction art: every picture of a faction listed with where the game shows it, Replace... **(in-game ✓)**; a new faction's banners and logo are its own files; Back to the original
 - [x] Campaign-select map drawn from the faction's towns (optional; the original stays by default)
+- [x] Rome: the flag symbol on the campaign map and the faction logos, each faction its own, Replace... in the Art tab
 
 ### Both games
 - [x] Rome: Total War, Barbarian Invasion, Alexander - plain or on REX **(in-game ✓)**
@@ -55,7 +56,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 
 ### Safety
 - [x] Preview of every file and line before writing; only the lines meant change, the rest stays byte for byte
-- [x] A backup of every write; Restore gives the original back byte for byte; Undo / Redo in the window
+- [x] A backup of every write; Restore gives the original back byte for byte (any write and every later one in one go); Undo / Redo in the window
 - [x] Check mod (consistency report), Scan mod (every mention of a faction; game, REX and mod files told apart)
 - [x] Log, Save logs (zip) for bug reports; Light / Dark look
 
@@ -64,9 +65,8 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - [ ] Family tab and Character editor, own portraits (Medieval II), portrait library
 - [ ] Edit region; a new faction starting in a new region in one Apply
 - [ ] Medieval II castle fix (0.7.5), unit packs, new armies / agents / fleets on the map
-- [ ] Barbarian Invasion campaign loading (0.9.4 fix); BI's shared name lists and building pictures (next release)
-- [ ] Restore any backup together with every later one in one go (next release)
-- [ ] Rome: a faction's own flag symbol on the campaign map and faction logos (Art tab; next release)
+- [ ] Barbarian Invasion campaign loading (0.9.4 fix); BI's shared name lists and building pictures (0.12.0)
+- [ ] Terrain climates; Rome flag symbols and faction logos (0.12.0)
 
 ## Next
 

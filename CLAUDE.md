@@ -756,7 +756,11 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
 
 ## Where we stopped (2026-09-29, the latest /clear - read this block first)
 
-- **Released: v0.11.0** (the whole test round fixed). **On main, not released (CHANGELOG "Unreleased")**: the
+- **Released: v0.12.0 (2026-09-29)**: climates, flag symbols + faction logos, Restore to any backup, BI names /
+  building pictures, recruit cap, descr_ex limits, captain names (family records, M2 two-word names), Linux tkinter
+  message; checked on Linux from a clean `git archive` (window under Xvfb, Rome + M2, 0 errors), deep Check Rome
+  20/21 + M2 18/21 fine (the rest: correct refusals - a one-town faction's leader has nowhere to go).
+  Earlier: **v0.11.0** (the whole test round fixed); then on main the
   Terrain editor's **Climates** mode (see the note under "Asked on Discord (Tymon)" below) - CI green (run
   36514540391). The user should test it in the game (paint a climate, start the campaign, see the vegetation);
   release it as 0.11.1 / 0.12.0 when he says "patch" (bump gui.VERSION + CHANGELOG, push main, run release.yml).
