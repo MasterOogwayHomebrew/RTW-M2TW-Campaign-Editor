@@ -701,6 +701,10 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   It ADDS a faction, never replaces one: everything of the new faction must be its own (files named after it,
   lines pointing at them); the template must stay untouched whatever is edited on the new one. He expects files
   named after the new faction (Epirus from Macedon -> *_epirus*), not the template's names.
+- **Files asked of the user for tw-game-data** (2026-09-29): RTW `data/models/textures` (banner .tga.dds),
+  `data/loading_screen`; M2 `data/loading_screen`, `data/unit_models/battle_models.modeldb`, `data/ui/<culture>/
+  portraits` + `data/ui/custom_portraits`; RTW `bi/data/world/maps/base/descr_regions.txt`. He sends 7z volumes
+  of 30M in the chat; we push them to the private repo only.
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
 - Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.
