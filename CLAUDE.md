@@ -916,6 +916,17 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   The user (2026-09-29): as far as he knows the game converts nothing on capture - foreign temples stay until the
   player demolishes them and builds his own; he will check vanilla and say exactly. Wait for his word. Test first on BI files (ask for bi/data/ui/
   roman + descr_ui_buildings.txt, or use tw-game-data RTW ui/) and check M2 the same way.
+- **Night of 2026-09-29 (the user: "finish everything, I'm off to sleep")** - on main, Unreleased, CI checked:
+  (1) building pictures: buildings.BuildingPictures = the culture + its descr_ui_buildings variants only (the old
+  tail of every other culture gave BI's roman towns barbarian huts), mod ui first then the game's data/ui
+  (buildings._game_data via newmod.game_of - BI and REX mods take what they lack from data/); a level with no
+  picture says so in the Buildings tab info line. Vanilla RTW: only levels a culture cannot build lack a picture
+  (roman: odeon, lyceum... = greek). Checked in the window (julii, Buildings tab). BI ui/ not uploaded - the user
+  should look at the Eastern Empire again. (2) limits.ex_setting(mod, key) reads descr_ex.txt numbers (mod,
+  then game, then default); family.limit_warnings: Preview warns on > max_num_ancillaries (8) per character and
+  on children added past max_num_children (4; M2 not counted). (3) BI root .txt + text/ pushed to tw-game-data
+  RTW/bi/data. NOT done, waiting on him: culture conversion of buildings (his word on vanilla), BI New-mod-folder
+  imperial_campaign errors (did the game crash at 05:25:41?), release (say "patch").
 - **FIXED (2026-09-29, on main, Unreleased)**: BI names - bi/data/descr_names.txt heads sections with a LIST of
   factions (`faction: empire_west, empire_west_rebels`, `faction: empire_east, empire_east_rebels`; alemanni has 4
   sections, the first differs - the first counts; BI has no slave section). moddata.name_sections is the one reader

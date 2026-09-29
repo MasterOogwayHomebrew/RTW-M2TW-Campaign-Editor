@@ -64,7 +64,8 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - [ ] Family tab and Character editor, own portraits (Medieval II), portrait library
 - [ ] Edit region; a new faction starting in a new region in one Apply
 - [ ] Medieval II castle fix (0.7.5), unit packs, new armies / agents / fleets on the map
-- [ ] Barbarian Invasion campaign loading (0.9.4 fix)
+- [ ] Barbarian Invasion campaign loading (0.9.4 fix); BI's shared name lists and building pictures (next release)
+- [ ] Restore any backup together with every later one in one go (next release)
 
 ## Next
 
