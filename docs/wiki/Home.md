@@ -9,6 +9,25 @@ for byte.
 [Releases](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/releases) ·
 **Video:** [what the editor does, in a few minutes](https://www.youtube.com/watch?v=m1sCPg-Lzsw)
 
+## Made to be easy
+
+The aim of this tool is to make modding friendly for everyone, not only for people who know every file of
+the game by heart. You work with factions, towns, armies and the map - the tool finds the files, the lines
+and the formats for you:
+
+- **No digging in files.** Pictures are made the right size and format and put in the right place; names,
+  texts, units, cards and buildings that belong together are kept in step for you.
+- **See it before it happens.** Preview shows every file and line before anything is written.
+- **Nothing is lost.** Every write has a backup, and Restore gives the files back exactly as they were;
+  Undo / Redo work in the window.
+- **Mistakes are caught early.** Things the game would crash on (a name it has no text for, an army on a
+  tile it refuses, a town with two settlements...) are refused or warned about, with the reason in plain
+  words.
+- **Set-up problems fixed with a yes.** Things that stop the game from starting are found when you load it
+  and fixed only when you agree.
+
+Something confusing or hard to find? That counts as a bug too - tell us ([[Reporting a bug]]).
+
 ## Start here
 
 1. [[Installing]] - where to put the exe, what it makes next to it.
