@@ -204,6 +204,16 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   character line -> data/ui/custom_portraits/<folder>/portrait_young|old|dead.tga (norman_prologue uses it); pool
   ui/%s/portraits/portraits/young|old/%s[_%s]/%03d.tga. family.portraits / set_portraits; the user's M2 upload has no
   ui/ folder, so M2 pools are untested; ask for ui/<culture>/portraits + ui/custom_portraits.
+- **Pictures named by path** (descr_banners `standard/rebels/routing/ally_texture`, descr_sm_factions
+  `loading_logo`; clone.PICTURE_LINKS, `picture_links`): a copied faction block keeps the template's paths, so
+  a replaced picture would change the template's too (found 2026-09-29, the user's Epirus-from-Macedon question).
+  `clone.own_pictures` gives the new faction copies named after it (`own_picture_ref`: standard_macedonia ->
+  standard_epirus) when only the template names the file; shared ones (rebels, routing) stay shared until the Art
+  tab's Replace, which writes an own copy (`<name>_<faction>`) and repoints only that faction's line
+  (`factionart.write_art`, pick {'src', 'link', 'exact'}). Rome keeps `x.tga` as `x.tga.dds` (DXT5 + mipmaps):
+  `image_dds` writes the replaced one's format and mip count (Pillow >= 11 encodes DXT). **Back to the original**
+  = `factionart.original_picture` (oldest backup's copy, or manifest `copied_from` for a file the tool made).
+  Checked on vanilla RTW (macedon -> epirus, stand-in textures: the upload has no models/ or loading_screen/).
 - **REX** takes one `-mod:` folder, falls back to the game's `data`; no mod chain.
   REX looks for the sound pack **by the mod's name** (`<mod>/data/sounds/<mod>.idx`),
   so a new mod folder also gets `HLR.idx/.dat` under its own name.
@@ -668,10 +678,8 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   + screenshot/video).
 - **Not tested in game yet**: Family tab / Character editor (0.8-0.9), M2 own portraits, Edit region, new faction
   in a new region (0.9.1), M2 castle fix (0.7.5), unit packs, M3.
-- **Art "Remove" button** (the user, 0.9.2): "not delete - remove its path in the file" + "find out whether the game
-  crashes without these pictures". Asked him what he means: most faction pictures are found by the faction's
-  name (no path in any file); only banners (descr_banners), loading_logo / symbol (descr_sm_factions), captain
-  cards (descr_character strat_card) have paths. Needs his answer and an in-game test before building.
+- **Art "Remove"**: dropped (the user, 2026-09-29): unlinking a picture only gives errors and the game's "cat"
+  placeholder (he tried it with unit cards); instead **Back to the original** (below).
 - Performance measured 2026-09-29 (vanilla RTW / M2 copies, Linux Xeon 2.1 GHz): ~100 MB RAM, load ~1-2 s, tabs
   < 1 s; HLR is ~3x the data (deep Check ~2 min). Exe: Python 3.12 (Windows 8.1+, 64-bit).
 - The user's wishes not built: M2 battle_models.modeldb; whole-map rescale; faction / building packs; culture of

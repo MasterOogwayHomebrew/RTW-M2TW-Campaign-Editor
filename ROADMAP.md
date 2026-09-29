@@ -73,7 +73,6 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 | Terrain: a tilted 3D-like preview from the heights and ground | Time |
 | Terrain: climates; the coast (land and sea swapped, with regions and heights) | Time; in-game tests |
 | A new campaign map from scratch (one region, one faction, loads in the game), then grown in the editor | Time; in-game tests |
-| Art: *Remove* a picture, and what the game does without it | An in-game test per kind of picture |
 | Medieval II: new factions' units in `battle_models.modeldb` | The game's `data/unit_models/battle_models.modeldb` to build and test on |
 | Medieval II: the portrait pools in the library | The game's `ui/<culture>/portraits` and `ui/custom_portraits` |
 | Faction packs and building packs (like unit packs) | Time; then an in-game test |
