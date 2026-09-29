@@ -13,7 +13,7 @@ that is the fastest way to a fix.
 Version 0.1: a small script for one mod (Barbarian Empires REX on Rome: Total War) that cloned a faction
 from a template - texts, units, buildings, start towns, leader. Rome only, command line first.
 
-## What it does now (0.18.0)
+## What it does now (0.18.1)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
