@@ -247,6 +247,11 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   vanilla + baktria, epirus, bosporan_kingdom (Remastered's) + slave. His vanilla data (tw-game-data RTW/data)
   has no .json, and the nabataea write touched none. Asked where the file lies. If REX reads it when present,
   that may be how REX lifts the 21 limit (24 here) - to test once we know its place.
+  **The user: the json is from HLR.** It lists 24 factions, not HLR's 31, so it cannot be what HLR runs its
+  factions from - REX reads the .txt there; the json is likely a leftover. So what we know: under REX, plain
+  RTW stops at 21 (his log), HLR (BI format) ran 32. He proposed "base the tool strictly on REX, drop vanilla";
+  answered: no - the limit is the game's, REX or not, and people use vanilla / the original exe / M2 too;
+  instead the tool knows each game's limit from evidence and says it up front. Awaiting his word.
 - **REX** takes one `-mod:` folder, falls back to the game's `data`; no mod chain.
   REX looks for the sound pack **by the mod's name** (`<mod>/data/sounds/<mod>.idx`),
   so a new mod folder also gets `HLR.idx/.dat` under its own name.
