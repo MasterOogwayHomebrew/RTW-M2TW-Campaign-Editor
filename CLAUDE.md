@@ -196,6 +196,12 @@ engine_limits (limits.HARD_LIMITS / LIMIT_WORDS; a fault only without REX / M2EX
 rebel_problems (M2TW only: vanilla RTW has 5 roman rebel units slave does not own and runs), slaves_problems
 (Rome, only when most regions have slaves: HLR's 750 have none). Dropped: the "20 landmasses" limit (vanilla RTW
 has 32 land pieces). To test in game: a new faction's flag on plain RTW (symbols9 in descr_standards), a son at 16.
+**Then (the user's two remarks)**: (5) names by culture - culturenames.engine(mod) = ('REX' | 'M2EX', present):
+Medieval II needs M2EX.exe, not REX (window texts, Preview; under M2EX a "not yet checked in game" warning - REX's
+docs cover the Rome build only; ask him for M2EX's dump_docudemon); (6) Check mod LIMITS names the engine found
+beside the game, factions vs max_factions, limits.ENGINE_LIFTS (REX regions - HLR 750; M2EX units - said).
+He asked whether languages other than Python would help (the Toolkit uses JS + Python): answered no - a web UI is
+why they use JS; our heavy work is in Pillow (C) already; revisit only if a 3D model view needs it.
 
 ## Hard-won rules (do not break)
 

@@ -216,3 +216,8 @@ Limit: 9 religions. Shipping mods get it wrong: Third Age misses one name, its l
 - HLR has **750 regions** in descr_regions.txt under REX (limits: the original 200 does not hold for REX).
 - Limits used by vanilla: RTW 104 regions (with the sea), map 255, 265 units, 39 chains, 5 levels, 3 hidden
   resources; M2TW 113 regions, map 295, 413 units, 64 chains, 7 levels, 16 hidden resources.
+- REX descr_ex.txt `max_age_of_child 10` ("age a child character becomes an adult") - yet vanilla living male
+  records go up to 15 (RTW, HLR) / 14 (M2TW) and run under REX, so it is not the crash line; no record is 16.
+- Names by culture: REX's documentation has FactionCultureType, SettlementName, SettlementTurnStart,
+  GeneralCaptureSettlement and rename_settlement (Rome build). M2EX's own documentation is not here yet -
+  ask the user to run `dump_docudemon` in M2EX's console and send the documentation folder.

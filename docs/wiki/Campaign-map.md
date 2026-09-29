@@ -56,13 +56,15 @@ religion's), and every region's religions line at 0 %. Then give it its share pe
 (vanilla has 5). Temples, priests and traits of its own are not made - Preview says which files still name
 only the old religions.
 
-## Settlement names by culture (REX)
+## Settlement names by culture (REX / M2EX)
 
 **Names by culture...** (next to *Edit region...* on the Faction tab, and on the Map's region bar) gives a town a
-name for each culture of its owner, plus a name for every other culture. REX renames the town when it changes
+name for each culture of its owner, plus a name for every other culture. The engine (REX on Rome, M2EX on
+Medieval II) renames the town when it changes
 hands - as soon as a general takes it, and at each of its owner's turns. The tool writes it into the campaign's
 `campaign_script.txt` (it makes one when the campaign has none; a script of the mod's own stays as it is around the
-tool's block), with a backup like every write. Needs REX.
+tool's block), with a backup like every write. Needs REX (Rome) or M2EX (Medieval II; written the same way, not
+yet checked in that game).
 
 The window shows it at once: take a town for a faction (on the Faction tab or by clicking it on the Map) and its
 label on the map changes to the name for that faction's culture; the towns list shows the name a town has now.
