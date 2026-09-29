@@ -43,6 +43,10 @@ once); patch `messagebox.show*/askyesno` in the script or a dialog blocks it.
   briefly and directly, and verify before claiming. Call Medieval II **M2TW** in full, not "M2"
   (the user, 2026-09-29) - in answers, repo names, commits and new notes. Repo texts (code, comments,
   README, commits) stay **in English**.
+- **Explain first, then do (the user, 2026-09-29)**: he is not an experienced modder himself - he builds the tool for all
+  modders through us, and does not know what many Discord questions mean. For every modder's question or comment he
+  forwards: explain in plain Russian what it is about (what the game does, which files, why modders want it), then
+  build. Same for GitHub / git terms (fork, star, PR...).
 - He mods **Rome: Total War Gold (Steam)** with **REX** (unofficial 64-bit engine,
   github.com/Pannoniae/rex; README says REX lifts the faction/region limits).
   Main mod: **Barbarian Empires REX Ultimate Edition** in the folder `HLR`
