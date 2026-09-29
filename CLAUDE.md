@@ -1003,6 +1003,30 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   rename on capture by the new owner's culture. Idea (not promised): a per-region table "name for each culture" in the
   tool that writes the expanded.txt keys and the script lines. Not checked: which script event / console_command
   path REX runs from campaign_script.
+- **Settlement names by culture BUILT (the user: "do it", 2026-09-29; on main, Unreleased, not in game)**:
+  culturenames.py - the table {settlement internal name: {culture | '*': shown name}} lives in the REX Squirrel
+  module <mod root>/script/modules/ft_settlement_names.nut (JSON on a `// DATA` line = what the tool reads back;
+  the Squirrel below it is generated). REX facts (REX.exe strings + its script/ folder): squi's main.nut requires
+  every module from `::scripting.listModules("modules")` (VFS, mod scope over the game's - mod scope root assumed
+  = the mod folder next to data, NOT CHECKED); `::events.on("turnChanged"/"campaignMapLoaded", fn)`;
+  `::game.factionCount()`, `::game.faction(i)`, `faction.settlementCount`, `faction.settlement(i)`,
+  `settlement.owner.cultureId` (ui_cards.nut), `settlement.displayName` (labels); assumed: `faction.cultureId`,
+  `settlement.name` (internal), `::game.cultureName(id)` (strings: cultureCount/cultureName), `::game.
+  runConsoleCommand(line)` (string listed beside stratText etc.). Console: `rename_settlement <settlement>
+  <name>` (bare = expanded.txt key, "quoted" = literal), rename_region, rename_faction, dump_region_names.
+  Also a Lua EOP-compat API (eopData/eopScripts/luaPluginScript.lua, M2TWEOP.callConsole, regionStruct,
+  factionStruct.cultureID...). **Asked the user to run `dump_docudemon` in REX's console** (it writes the full
+  documentation of script commands, conditions, events and console commands to documentation/) and send it -
+  then fix the module's calls to the documented names and test in game. Written through regionedit.apply_opts
+  (regions['culture_names'], App.culture_names in UNDO_KEYS); refused cultures not in descr_cultures; not REX =
+  warning, nothing written. Dialog: Faction tab 'Names by culture...' + Map region bar.
+- **The user's direction (2026-09-29): "the program should be built on full REX support, almost depend on it"**
+  (earlier he was answered that vanilla / M2 stay supported - this now tilts the priority: REX first). Plan
+  proposed: (1) REX's own docs via dump_docudemon -> derived notes in docs/reference; (2) a REX settings panel
+  (descr_ex.txt / descr_caps_ex.txt with plain explanations: max_factions, ancillaries, children, ages, sprite_format,
+  sources...); (3) use REX features by default where they help (xml sprites - done, scripts - culture names, rename,
+  REX's limits); (4) Load says plainly which features need REX when it is missing; (5) vanilla and M2 keep working
+  (not dropped) unless he says otherwise.
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
 - Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.

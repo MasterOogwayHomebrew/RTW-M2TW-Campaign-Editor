@@ -40,3 +40,11 @@ Trade goods on the map can be placed, moved and removed; one per tile.
 ## Medieval II
 
 Religions per region (**Religions...**); castles; agents such as merchants, priests and princesses.
+
+## Settlement names by culture (REX)
+
+**Names by culture...** (next to *Edit region...* on the Faction tab, and on the Map's region bar) gives a town a
+name for each culture of its owner, plus a name for every other culture. REX renames the town when it changes
+hands - at the start of the turn and whenever the campaign map opens, so right after a siege battle too. The tool
+writes it as a REX script module, `<mod>/script/modules/ft_settlement_names.nut`, with a backup like every write.
+Needs REX.
