@@ -785,6 +785,17 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   (3) A tester's map of **5456 x 2464 tiles** loaded (the user: "pixels"; his screenshot shows tile x 5144, so they
   are map_regions.tga pixels = tiles; vanilla Rome 255 x 156): Map tab, Regions mode, new regions painted, no
   trouble. The game's own map-size limits are still unknown.
+- **M2 castle vs city - NOT in the tool (found 2026-09-29, Espartan on Discord: "I wanted a castle, I only get
+  cities")**: the user answered him "the core building decides it, pick it on the Buildings tab" - WRONG for us. In
+  M2 a castle is the descr_strat block header `settlement castle` (vanilla imperial_campaign: 50 of them) plus
+  castle-marked levels (EDB: `motte_and_bailey castle requires ...`, `wooden_pallisade city requires ...`; the core
+  chains are core_castle_building (convert_to core_building) / core_building, same for castle_barracks <->
+  barracks). The tool never writes or changes the `castle` header (start / edit / new regions write `settlement`),
+  and the Buildings tab does not filter levels by their city / castle mark, so a castle core in a city block is a
+  mismatch the game may refuse. To build (asked the user): a City / Castle switch per town (Buildings tab + New
+  region dialog, M2 only): header, core chain swapped via convert_to with the level from core_offset (castle =
+  settlement level, city = level - 1), other buildings swapped by convert_to or dropped, the pickers offer only
+  levels marked for that kind; Preview says it in plain words.
 - **0.14.1 (2026-09-29)**: the user: "no spaces in names - the console wants \"Gaius Julius_Caesar\", \"Diodotus
   of_Spartocid\"". Our keys already use _ (key_of); RTW vanilla does too ({of_Scaldis} of Scaldis). But vanilla
   **M2 has surname keys WITH a space** (descr_names: de Avena, Della Corte; 8 factions' characters carry them:
