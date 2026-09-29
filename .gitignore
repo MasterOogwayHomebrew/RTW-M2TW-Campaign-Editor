@@ -7,3 +7,6 @@ faction_tool_backups/
 faction_tool.log*
 faction_tool_settings.json
 logs/
+# working notes live in a private repository, never here
+CLAUDE.md
+notes/
