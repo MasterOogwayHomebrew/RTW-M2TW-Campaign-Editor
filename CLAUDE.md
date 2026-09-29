@@ -744,6 +744,13 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
      so cols = 1; and nothing re-lays out on `<Configure>`. Fix: take the width after update_idletasks (or the
      window's), and redraw on the canvas's `<Configure>` (like gui_art's _reflow). The user: after clicking
      young / old / dead the grid laid out right - confirms it (the second show() sees the real width).
+  2. Traits / ancillaries "not all for everyone - is there sorting by agents, admirals, characters?" (the user,
+     Character editor trait picker). Traits ARE filtered by kind already (gui_family: `Characters` line of the
+     trait vs family.trait_kind: family / spy / assassin / diplomat / admiral; M2 also princess, priest,
+     merchant, inquisitor, witch, heretic). Gaps found (not fixed yet): `Characters all` (2 vanilla RTW traits)
+     is shown for nobody - must match every kind; ancillaries are NOT filtered at all (cb_anc = every
+     ancillary; ancillary_list reads ExcludeCultures but nothing uses it) - filter by the faction's culture
+     (ExcludeCultures) and, where the file says so, by kind; show the kinds a trait is for next to it.
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
 - Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.
