@@ -1,7 +1,8 @@
 # Roadmap
 
 Where RTW & M2TW Campaign Editor stands, what comes next and what each step needs.
-Ticked = built and released; **(in-game ✓)** = also confirmed in the game. Updated with every release
+✅ built and released · 🎮 built, released and confirmed in the game · 🧪 released, being tested in the game now ·
+🔜 next · 💡 later. Updated with every release
 (see [CHANGELOG.md](CHANGELOG.md) for the details).
 
 Found a bug or a crash? Send the logs (**Tools → Save logs (zip)**) and a screenshot or a short video -
@@ -15,69 +16,69 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 ## What it does now (0.16.1)
 
 ### Factions
-- [x] New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art **(in-game ✓)**
-- [x] Faction limit known and raised with a yes (REX / M2EX `max_factions`) **(in-game ✓ on Rome + REX)**
-- [x] Edit an existing faction: names, texts, colours, AI, money, playable, towns taken or given, capital, leader and heir **(in-game ✓)**
-- [x] Garrisons and buildings per town, with the game's own cards and pictures **(in-game ✓)**
-- [x] Settlement level and population (the governor's building follows the size)
-- [x] Diplomacy: attitudes and starting relations with every other faction
-- [x] Roster: give or take units and building levels (ownership, recruit lines and cards kept in step)
-- [x] A separate mod folder in one click (the base mod stays untouched) **(in-game ✓)**
+- 🎮 New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
+- 🎮 Faction limit known and raised with a yes (REX / M2EX `max_factions`) *(in-game ✓ on Rome + REX)*
+- 🎮 Edit an existing faction: names, texts, colours, AI, money, playable, towns taken or given, capital, leader and heir *(in-game ✓)*
+- 🎮 Garrisons and buildings per town, with the game's own cards and pictures *(in-game ✓)*
+- ✅ Settlement level and population (the governor's building follows the size)
+- ✅ Diplomacy: attitudes and starting relations with every other faction
+- ✅ Roster: give or take units and building levels (ownership, recruit lines and cards kept in step)
+- 🎮 A separate mod folder in one click (the base mod stays untouched) *(in-game ✓)*
 
 ### Campaign map
-- [x] The map drawn tile by tile from the game's own map files; political, diplomacy and region colours **(in-game ✓)**
-- [x] Characters on the map: drag to move, new armies, agents and fleets placed by clicking
-- [x] Move towns and ports (roads and sea routes follow) **(in-game ✓)**
-- [x] Paint new regions and move borders **(in-game ✓ on HLR)**
-- [x] Edit a region's data (builder, rebels, tags, triumph, farming), new or existing
-- [x] Map changes, new regions and faction changes written together by one Apply
-- [x] Resources placed, moved and removed; religions per region (Medieval II)
-- [x] Terrain editor: paint ground types, rivers, fords, river sources and cliffs tile by tile **(in-game ✓ on Rome)**
-- [x] Terrain editor: paint climates (`map_climates.tga`, the mod's own climates)
-- [x] Rivers kept joined side to side (the game stops a river at a corner-only step); Preview names a river the game will not draw
-- [x] Settlement names by the owner's culture (REX renames a town when it changes hands); the map shows the new owner's name at once; every town's names in one table
-- [x] Big maps load (a tester's map of 5456 x 2464 tiles)
+- 🎮 The map drawn tile by tile from the game's own map files; political, diplomacy and region colours *(in-game ✓)*
+- ✅ Characters on the map: drag to move, new armies, agents and fleets placed by clicking
+- 🎮 Move towns and ports (roads and sea routes follow) *(in-game ✓)*
+- 🎮 Paint new regions and move borders *(in-game ✓ on HLR)*
+- ✅ Edit a region's data (builder, rebels, tags, triumph, farming), new or existing
+- ✅ Map changes, new regions and faction changes written together by one Apply
+- ✅ Resources placed, moved and removed; religions per region (Medieval II)
+- 🎮 Terrain editor: paint ground types, rivers, fords, river sources and cliffs tile by tile *(in-game ✓ on Rome)*
+- ✅ Terrain editor: paint climates (`map_climates.tga`, the mod's own climates)
+- ✅ Rivers kept joined side to side (the game stops a river at a corner-only step); Preview names a river the game will not draw
+- ✅ Settlement names by the owner's culture (REX renames a town when it changes hands); the map shows the new owner's name at once; every town's names in one table
+- ✅ Big maps load (a tester's map of 5456 x 2464 tiles)
 
 ### Characters
-- [x] Character editor for any faction: names, ages, traits with levels, ancillaries
-- [x] A faction's own name list (men, surnames, women) typed in three steps
-- [x] Family tree drawn like the game's (couples, children, leader and heir); give a wife, add a child, rename (followed on the tree)
-- [x] Portraits on the tree as the game shows them; Medieval II characters get portraits of their own
-- [x] Portrait library: every portrait of a culture, add new ones (sized and numbered for the game)
+- ✅ Character editor for any faction: names, ages, traits with levels, ancillaries
+- ✅ A faction's own name list (men, surnames, women) typed in three steps
+- ✅ Family tree drawn like the game's (couples, children, leader and heir); give a wife, add a child, rename (followed on the tree)
+- ✅ Portraits on the tree as the game shows them; Medieval II characters get portraits of their own
+- ✅ Portrait library: every portrait of a culture, add new ones (sized and numbered for the game)
 
 ### Units, buildings, art
-- [x] Unit and building editors: every line as a field, add / remove lines, copy as new, renames followed everywhere
-- [x] Pictures imported into the right place in the right size and format (cards, building pictures, faction art)
-- [x] Unit packs: export units with models, textures, mounts, cards and texts into a .zip and import them into another mod
-- [x] Medieval II `battle_models.modeldb`: a new faction gets its template's textures in every battle model; unit packs carry their modeldb models (renamed on clashes, textured for every new owner)
-- [x] Faction art: every picture of a faction listed with where the game shows it, Replace... **(in-game ✓)**; a new faction's banners and logo are its own files; Back to the original
-- [x] Campaign-select map drawn from the faction's towns (optional; the original stays by default)
-- [x] Rome: the flag symbol on the campaign map and the faction logos, each faction its own, Replace... in the Art tab
+- ✅ Unit and building editors: every line as a field, add / remove lines, copy as new, renames followed everywhere
+- ✅ Pictures imported into the right place in the right size and format (cards, building pictures, faction art)
+- ✅ Unit packs: export units with models, textures, mounts, cards and texts into a .zip and import them into another mod
+- ✅ Medieval II `battle_models.modeldb`: a new faction gets its template's textures in every battle model; unit packs carry their modeldb models (renamed on clashes, textured for every new owner)
+- 🎮 Faction art: every picture of a faction listed with where the game shows it, Replace... *(in-game ✓)*; a new faction's banners and logo are its own files; Back to the original
+- ✅ Campaign-select map drawn from the faction's towns (optional; the original stays by default)
+- ✅ Rome: the flag symbol on the campaign map and the faction logos, each faction its own, Replace... in the Art tab
 
 ### Both games
-- [x] Rome: Total War, Barbarian Invasion, Alexander - plain or on REX **(in-game ✓)**
-- [x] Medieval II and Kingdoms - plain or on M2EX: unpacking offered, set-up fixes, castles, `mods/<name>` with its .cfg
-- [x] Medieval II: turn a settlement into a castle or a city (buildings converted the game's own way) **(in-game ✓ loads)**
+- 🎮 Rome: Total War, Barbarian Invasion, Alexander - plain or on REX *(in-game ✓)*
+- ✅ Medieval II and Kingdoms - plain or on M2EX: unpacking offered, set-up fixes, castles, `mods/<name>` with its .cfg
+- 🎮 Medieval II: turn a settlement into a castle or a city (buildings converted the game's own way) *(in-game ✓ loads)*
 
 ### Safety
-- [x] Preview of every file and line before writing; only the lines meant change, the rest stays byte for byte
-- [x] A backup of every write; Restore gives the original back byte for byte (any write and every later one in one go); Undo / Redo in the window
-- [x] Check mod (consistency report), Scan mod (every mention of a faction; game, REX and mod files told apart)
-- [x] Log, Save logs (zip) for bug reports; Light / Dark look
+- ✅ Preview of every file and line before writing; only the lines meant change, the rest stays byte for byte
+- ✅ A backup of every write; Restore gives the original back byte for byte (any write and every later one in one go); Undo / Redo in the window
+- ✅ Check mod (consistency report), Scan mod (every mention of a faction; game, REX and mod files told apart)
+- ✅ Log, Save logs (zip) for bug reports; Light / Dark look
 
-## Being tested in the game now
+## 🧪 Being tested in the game now
 
-- [ ] Family tab and Character editor, own portraits (Medieval II), portrait library
-- [ ] Edit region; a new faction starting in a new region in one Apply
-- [ ] Medieval II castle fix (0.7.5), unit packs, new armies / agents / fleets on the map
-- [ ] Barbarian Invasion campaign loading (0.9.4 fix); BI's shared name lists and building pictures (0.12.0)
-- [ ] Terrain climates; Rome flag symbols and faction logos (0.12.0)
-- [ ] Medieval II battle_models.modeldb: clone and unit packs (0.16.0)
-- [ ] Medieval II city / castle switch (0.15.0)
-- [ ] Own name lists, the names-by-culture table (0.14.0)
-- [ ] Settlement names by culture (0.13.0, REX); a New mod folder from BI / Alexander started with -bi / -alx
+- 🧪 Family tab and Character editor, own portraits (Medieval II), portrait library
+- 🧪 Edit region; a new faction starting in a new region in one Apply
+- 🧪 Medieval II castle fix (0.7.5), unit packs, new armies / agents / fleets on the map
+- 🧪 Barbarian Invasion campaign loading (0.9.4 fix); BI's shared name lists and building pictures (0.12.0)
+- 🧪 Terrain climates; Rome flag symbols and faction logos (0.12.0)
+- 🧪 Medieval II battle_models.modeldb: clone and unit packs (0.16.0)
+- 🧪 Medieval II city / castle switch (0.15.0)
+- 🧪 Own name lists, the names-by-culture table (0.14.0)
+- 🧪 Settlement names by culture (0.13.0, REX); a New mod folder from BI / Alexander started with -bi / -alx
 
-## Next
+## 🔜 Next
 
 | Step | What it needs |
 |---|---|
@@ -90,7 +91,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 | Faction packs and building packs (like unit packs) | Time; then an in-game test |
 | Mods made on the plain game (slimmed folders) loaded with the game's data behind them | Time |
 
-## Later
+## 💡 Later
 
 | Step | What it needs |
 |---|---|
