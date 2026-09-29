@@ -103,6 +103,15 @@ Tests: `python -m unittest discover -s tests` (a synthetic mini-mod; 20+ tests,
 restore byte-identical). GUI checks: `xvfb-run -a python3.12 script.py` with
 `PIL.ImageGrab` screenshots (python3.12 has tkinter + Pillow here).
 
+## The aim: user-friendly (the user, 2026-09-29 - weigh every feature against it)
+
+The user wants modding made friendly for everyone, not only for people who know the game's files by heart:
+one works with factions, towns, armies and the map, and the tool finds the files, lines and formats. So:
+no digging in files (pictures converted and placed, tied things kept in step); preview before anything is
+written; nothing lost (backup + byte-exact Restore, Undo/Redo); mistakes the game would crash on refused or
+warned about in plain words; set-up fixes only with a yes. Something confusing or hard to find counts as a
+bug. Said on the wiki's Home page ("Made to be easy", docs/wiki/Home.md).
+
 ## How we work on the code (the user's standing request - keep to it every time)
 
 "A change pulls along everything connected to it; no code bolted on top that later breaks the old."
