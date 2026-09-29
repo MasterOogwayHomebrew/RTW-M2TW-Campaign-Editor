@@ -223,6 +223,17 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   `image_dds` writes the replaced one's format and mip count (Pillow >= 11 encodes DXT). **Back to the original**
   = `factionart.original_picture` (oldest backup's copy, or manifest `copied_from` for a file the tool made).
   Checked on vanilla RTW (macedon -> epirus, stand-in textures: the upload has no models/ or loading_screen/).
+- **Faction limit: plain Rome (the game's own data, imperial_campaign) = 21 factions with slave** - REX
+  (build Sep 27 2026) on vanilla RTW + a 22nd faction (nabataea from egypt, 2026-09-29): fatal
+  "faction_db.cpp(564) Too many factions described here, maximum is(21). The rest will be ignored", then
+  "Invalid ownership type 'slave' found in unit 'barb peasant slave'" (slave, the 22nd, was dropped) -> the
+  game closes at start. Vanilla RTW already has 21, so there is NO room for a new faction on plain Rome.
+  HLR (a BI-based mod) runs 31-32 under REX. build.validate warned only above 31 ("Classic RTW stops at 31;
+  REX lifts the faction limit") - WRONG for plain RTW. To do (next patch): the limit per game (plain RTW 21;
+  BI / Alexander / BI-based mods 31 - check how REX decides, and whether it can be raised), refused in
+  Preview with plain words before anything is written, and the New faction tab should say up front
+  "this campaign is full (21 of 21)". The user's fix for his video: Restore the nabataea backup, make the
+  faction on HLR (or a New mod folder built on it).
 - **REX** takes one `-mod:` folder, falls back to the game's `data`; no mod chain.
   REX looks for the sound pack **by the mod's name** (`<mod>/data/sounds/<mod>.idx`),
   so a new mod folder also gets `HLR.idx/.dat` under its own name.
