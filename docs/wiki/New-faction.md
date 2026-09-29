@@ -1,0 +1,51 @@
+# New faction
+
+A new faction is **cloned from a template** - a faction that already works in the game. The clone starts in
+the game at once, so you can test every change after that straight away. The template is never changed.
+
+## Steps
+
+1. **New faction** at the top, load the mod, pick the campaign.
+2. **Template**: the faction to copy. The new one gets its culture, units, buildings, character models, name
+   lists, trait triggers and pictures.
+3. **Internal name**: lower case, no spaces, for example `epirus`.
+4. **Name (full)**, **Name (short)**, **Adjective**: for example `Kingdom of Epirus`, `Epirus`, `Epirote`.
+   The copied texts use them ("Epirote Spy", "Your forces attack an army of Epirus").
+5. **Starting settlements**: filter by owner (for example `slave` for rebel towns), double-click to add, pick
+   the capital. A new region painted on the [[Campaign map]] can be a starting town too.
+6. **Leader** (and the heir if you like): a first name and surname **from the template's name list** - the
+   game crashes on a name that has no text, so the tool only accepts listed names.
+7. The other tabs if you want: garrisons, buildings, map, diplomacy, [[Faction art]].
+8. **Preview changes**, then **Create faction**.
+9. Start a **new** campaign - old saves do not know the faction.
+
+## What the clone writes
+
+- `descr_sm_factions.txt` (+ REX's `.json`): the template's block, before `slave`.
+- `descr_character.txt`, `descr_names.txt`, `export_descr_unit.txt` (ownership),
+  `export_descr_buildings.txt` (faction lists), `descr_model_battle.txt` / `descr_model_strat.txt` (texture
+  lines), `descr_banners.txt`, `descr_lbc_db.txt`, `descr_offmap_models.txt`, `descr_building_battle.txt`,
+  trait and ancillary triggers, win conditions.
+- Texts: every string that names the template, with the new names.
+- `descr_strat.txt`: the faction's block, towns, leader, heir, armies, diplomacy.
+- **Pictures of its own**: every picture named after the template is copied under the new name
+  (`map_macedon.tga` -> `map_epirus.tga`, `ui/units/macedon/` -> `ui/units/epirus/`). Banner textures and
+  the loading-screen logo, which the files name by path, are copied too (`standard_macedonia.tga` ->
+  `standard_epirus.tga`) and the new faction's lines point at the copies. Pictures several factions share
+  (the rebels' and the routing banner) stay shared until you replace one in [[Faction art]].
+
+## How the towns are handed over
+
+- A town moves as a whole `settlement { }` block, so no region gets two.
+- **One army per town** at the start: the leader holds the capital, the heir the second town (or stands
+  next to the capital).
+- The previous owner's generals and agents move to one of its other towns.
+- The leader's army is sized like the armies of factions with about as many towns (**balanced**), or copied
+  from the template, or just the bodyguard.
+
+## Limits
+
+- One campaign per run.
+- Copied texts keep the template's wording apart from the names ("the wicked Seleucids..."): edit them in
+  the text files if you care.
+- Faction count: classic Rome stops at 31 factions (with `slave`); REX lifts the limit.
