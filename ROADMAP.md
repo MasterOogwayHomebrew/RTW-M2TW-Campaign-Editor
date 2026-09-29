@@ -13,7 +13,7 @@ that is the fastest way to a fix.
 Version 0.1: a small script for one mod (Barbarian Empires REX on Rome: Total War) that cloned a faction
 from a template - texts, units, buildings, start towns, leader. Rome only, command line first.
 
-## What it does now (0.17.1)
+## What it does now (0.18.0)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -35,6 +35,8 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - 📦 Map changes, new regions and faction changes written together by one Apply
 - 📦 Resources placed, moved and removed; religions per region (Medieval II)
 - ✅ Terrain editor: paint ground types, rivers, fords, river sources and cliffs tile by tile *(in-game ✓ on Rome and Medieval II; [video](https://youtu.be/z0T723riXaU))*
+- ✅ Terrain editor: heights brush like a spray can - raise, lower, smooth, level (`map_heights.hgt` kept in step) *(in-game ✓ on Rome and Medieval II; [video](https://youtu.be/mTdRAWympuw))*
+- ✅ Find on the map: towns, ports, armies, agents, fleets, units, forts, resources *(in-game ✓ on Rome and Medieval II; [video](https://youtu.be/6WAdnGovGzA))*
 - 📦 Terrain editor: paint climates (`map_climates.tga`, the mod's own climates)
 - 📦 Rivers kept joined side to side (the game stops a river at a corner-only step); Preview names a river the game will not draw
 - 📦 Settlement names by the owner's culture (REX renames a town when it changes hands); the map shows the new owner's name at once; every town's names in one table
@@ -69,14 +71,12 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - 📦 Preview of every file and line before writing; only the lines meant change, the rest stays byte for byte
 - 📦 A backup of every write; Restore gives the original back byte for byte (any write and every later one in one go); Undo / Redo in the window
 - 📦 Check mod (consistency report), Scan mod (every mention of a faction; game, REX and mod files told apart)
-- 📦 Log, Save logs (zip) for bug reports; Light / Dark look
+- 📦 Log, Save logs (zip) for bug reports; Light / Dark look; smaller windows keep every button, side panels can be dragged wider
 
 ## 🧪 Being tested in the game now
 
-- 🧪 Terrain: heights brush like a spray can - raise, lower, smooth, level (on main, next release) *(in-game ✓ on Rome and Medieval II; [video](https://youtu.be/mTdRAWympuw))*
-- 🧪 Find on the map: towns, ports, armies, agents, fleets, units, forts, resources (on main, next release) *(in-game ✓ on Rome and Medieval II; [video](https://youtu.be/6WAdnGovGzA))*
-- 🧪 A new religion for Medieval II (on main, next release): New religion... on the Map tab
-- 🧪 From the modders' guides (on main, next release): off-map sons kept at 16 or younger; flag symbols from descr_standards.txt (BI's sheets, never a rebels' slot); river blocks and rings warned; Check mod counts the engine's limits and finds win conditions / rebels / slaves faults
+- 🧪 A new religion for Medieval II (0.18.0): New religion... on the Map tab; Medieval II rebels' new armies, agents and fleets (0.18.0 fix)
+- 🧪 From the modders' guides (0.18.0): off-map sons kept at 16 or younger; flag symbols from descr_standards.txt (BI's sheets, never a rebels' slot); river blocks and rings warned; Check mod counts the engine's limits and finds win conditions / rebels / slaves faults
 - 🧪 The rebels in Edit faction (0.17.1)
 - 🧪 Medieval II recruit_pool lines; REX bracket requirements and unit abilities; forts on the map (0.17.0)
 - 🧪 Family tab and Character editor, own portraits (Medieval II), portrait library
