@@ -962,6 +962,25 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   standard_index) and on the faction button (logo_index sprite in ui/*.sd) - NOT built (see "RTW strat-map
   flags"); answered "planned". (3) Tarentum garrison "bugged" after switching faction before removing the
   garrison: units with blank cards in his army panel - not looked at; asked for the Save logs zip + descr_strat.
+- **Flag symbols + faction logos BUILT (the user: "do it now", 2026-09-29; on main, Unreleased, not in game yet)**:
+  symbols.py. Facts (vanilla RTW + REX, checked): `standard_index k` -> banners/symbols<k//4+1>.tga.dds (128x128
+  DXT5, 8 mips), quadrant k%4 = TL, TR, BL, BR (julii 0 laurel, brutii 1 dagger, scipii 2 wolf, senate 3 eagle,
+  macedon 4 lambda); vanilla uses 0-20, BI 0-19 (a faction and its shadow share one), BI adds symbols9-15.
+  `logo_index` / `small_logo_index` = sprite NAMES in ui/strat3.sd.xml (52x52, stratpage_02.tga - full, no room) /
+  ui/shared2.sd.xml (32x32, sharedpage_01.tga); pages in ui/<culture>/interface, REX falls back to
+  ui/roman/interface (REX.exe strings). REX descr_caps_ex.txt `sprite_format xml` ("v7 .sd.xml with runtime atlas
+  packing, allows you to freely add new sprites"; default sd = binary .rsd, which the original exe reads). So: a
+  new faction (build -> symbols.give_own after clone.own_pictures) gets free_slot() (lowest standard_index no
+  faction uses) with the template's quadrant pasted (the sheet re-encoded with image_dds in the sheet's format,
+  written to the mod's banners/), and under xml mode a <page file="faction_logo_<f>.tga"> / faction_logo_small_<f>
+  with one sprite FACTION_LOGO_<F> / SMALL_FACTION_LOGO_<F> appended to the sheet (the mod's copy; byte-exact
+  otherwise), logo lines repointed. Art tab: symbols.entries first (crop of the sheet, 'symbol' flag, key
+  symbol:flag / symbol:logo / symbol:small_logo in App.art_replace; factionart.apply_opts -> symbols.write). No xml
+  mode: logos shown, locked, warning. Rome only (limits.game_kind). Checked: vanilla RTW copy (epirus from macedon:
+  slot 21, own sprites, red flag replace, macedon untouched, Restore byte-identical), window (Edit julii, New epirus),
+  synthetic test. To test in game: the flag on the campaign map, the faction button logo (REX), and a slot > 31
+  (symbols9+ on plain RTW - BI's exe reads them, not checked for RTW data). Also done: Building editor recruit
+  lines uncapped (editors.LIST_KEYS recruit / recruit_pool) - the tester's 101.
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
 - Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.

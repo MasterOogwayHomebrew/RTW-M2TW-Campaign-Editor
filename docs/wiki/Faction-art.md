@@ -27,6 +27,21 @@ There is no *Remove*: without its pictures the game shows errors and a placehold
 The optional part at the top draws a new `map_<faction>.tga` from the faction's towns, in a colour you pick
 (off by default - the original stays). The maps of factions whose land changes follow.
 
+## Flag symbol and faction logos (Rome)
+
+Three pictures of a Rome faction do not live in files of their own but on sheets shared by every faction:
+
+- **Flag symbol on the campaign map** - the symbol on the flags over its armies, fleets and towns. It is one
+  of four symbols on `banners/symbolsN.tga.dds`, picked by `standard_index` in `descr_sm_factions.txt`.
+- **Faction logo** (the faction button at the bottom right of the campaign map, diplomacy) and the **small
+  faction logo** - sprites named by `logo_index` / `small_logo_index`.
+
+A **new faction gets its own**: a free flag slot and, under REX, logo sprites on a page of their own
+(`ui/roman/interface/faction_logo_<faction>.tga`), the template's pictures copied in - so replacing them never
+changes the template's. **Replace...** on an existing faction that shares its slot or sprite does the same
+first. The logos need REX with `sprite_format xml` in `descr_caps_ex.txt` (REX's default): the original game
+reads binary sprite sheets that cannot take new sprites, and the Art tab says so.
+
 ## Not yet
 
-3D models, strat-map flags (the banner symbol atlases) and new sprite logos are not handled yet.
+3D models (the strat-map symbol model, unit models).

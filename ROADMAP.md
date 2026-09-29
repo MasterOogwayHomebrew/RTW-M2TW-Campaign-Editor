@@ -66,6 +66,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - [ ] Medieval II castle fix (0.7.5), unit packs, new armies / agents / fleets on the map
 - [ ] Barbarian Invasion campaign loading (0.9.4 fix); BI's shared name lists and building pictures (next release)
 - [ ] Restore any backup together with every later one in one go (next release)
+- [ ] Rome: a faction's own flag symbol on the campaign map and faction logos (Art tab; next release)
 
 ## Next
 
@@ -86,6 +87,5 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 |---|---|
 | A culture of its own (buildings, settlements, sounds that follow it) | Whether REX / M2EX limit the number of cultures |
 | Rescale the whole campaign map (e.g. 2x, with towns, armies and resources moved along) | The map size limits of REX and M2EX; in-game tests |
-| Strat-map flags and banners of a new faction | Writing DXT textures |
 | Unit texture recolour to a faction's colours; a model viewer | Texture and model files to work on |
 | Rome characters with portraits of their own | Whether REX reads a `portrait` line |
