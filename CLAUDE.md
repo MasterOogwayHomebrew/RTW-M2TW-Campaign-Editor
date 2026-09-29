@@ -782,8 +782,15 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   pools} in UNDO_KEYS, pool_for / leader_pool / refresh_name_combos. (2) **names-by-culture table**:
   gui_culturenames.CultureNamesTable (column per culture, sort, filters, edit in place, grey = culturenames.foreign
   = rename_settlement lines of the mod's own script); App.owners_after is the one "owners after Apply" (map + table).
-  
-  (tiles or map_regions pixels) not asked.
+  (3) A tester's map of **5456 x 2464 tiles** loaded (the user: "pixels"; his screenshot shows tile x 5144, so they
+  are map_regions.tga pixels = tiles; vanilla Rome 255 x 156): Map tab, Regions mode, new regions painted, no
+  trouble. The game's own map-size limits are still unknown.
+- **0.14.1 (2026-09-29)**: the user: "no spaces in names - the console wants \"Gaius Julius_Caesar\", \"Diodotus
+  of_Spartocid\"". Our keys already use _ (key_of); RTW vanilla does too ({of_Scaldis} of Scaldis). But vanilla
+  **M2 has surname keys WITH a space** (descr_names: de Avena, Della Corte; 8 factions' characters carry them:
+  france de Lyon, hre von Saxony, turks al Rashid...) - keep_used rewrote them as de_Avena (another key -> crash).
+  Fixed: used_names matches first name / whole surname, kept keys are namelists.Kept (key_of returns them as they
+  are); names.txt text = key with _ -> space. Wizard FORMAT text explains _.
 - **Released v0.13.0 (2026-09-29, after the evening /clear)**: settlement names by culture + New mod folder -bi / -alx
   (both were Unreleased) + **the name live in the window** (the user: "the change should show on the map in real
   time - the name of the culture of the faction I took the town for"): culturenames.name_for / labels(table, towns,
