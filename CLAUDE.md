@@ -252,6 +252,15 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   RTW stops at 21 (his log), HLR (BI format) ran 32. He proposed "base the tool strictly on REX, drop vanilla";
   answered: no - the limit is the game's, REX or not, and people use vanilla / the original exe / M2 too;
   instead the tool knows each game's limit from evidence and says it up front. Awaiting his word.
+  **SOLVED (the user sent the REX package, 2026-09-29; its text settings are in tw-game-data REX/)**: the limit is
+  REX's own setting **`max_factions` in `data/descr_ex.txt`** ("Maximum number of factions (default in M2: 31,
+  RTW: 21) / Increase to support more factions in mods"; REX ships `max_factions 21` in data/ and bi/; the file is
+  optional, missing = the default). HLR must set it higher in its own descr_ex.txt. Fix for his nabataea: raise
+  it to 22+ (not yet confirmed in game). To do (next patch): ModData reads max_factions (the mod's descr_ex.txt,
+  else the game's data/, else the default: RTW 21 / BI 21 per REX's file / M2 31); the New faction tab shows
+  "N of max"; Preview offers, with a yes and a backup, to raise max_factions itself when REX is there
+  (REX.exe in the game folder); without REX (original exe) the limit cannot be raised - say so. Other REX
+  settings of note there: max_num_ancillaries 8, max_num_children 4, ages, faction_unlock (descr_caps_ex).
 - **REX** takes one `-mod:` folder, falls back to the game's `data`; no mod chain.
   REX looks for the sound pack **by the mod's name** (`<mod>/data/sounds/<mod>.idx`),
   so a new mod folder also gets `HLR.idx/.dat` under its own name.
