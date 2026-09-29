@@ -24,3 +24,14 @@ its own `RTW-M2TW-Campaign-Editor-files` folder.
 
 With Python 3.8 or newer: `python rtw_faction_tool.py` from the repository (standard library; Pillow for the
 pictures: `pip install pillow`).
+
+**Linux** (Mint, Ubuntu, Debian...): the window needs tkinter and Pillow's Tk part, which the distribution
+ships apart from Python. Install them once, then start the tool with `python3`:
+
+```
+sudo apt install python3-tk python3-pil python3-pil.imagetk
+python3 rtw_faction_tool.py
+```
+
+Fedora: `sudo dnf install python3-tkinter python3-pillow-tk`; Arch: `sudo pacman -S tk python-pillow`.
+Without tkinter the tool says what to install instead of a Python error.

@@ -981,6 +981,13 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   synthetic test. To test in game: the flag on the campaign map, the faction button logo (REX), and a slot > 31
   (symbols9+ on plain RTW - BI's exe reads them, not checked for RTW data). Also done: Building editor recruit
   lines uncapped (editors.LIST_KEYS recruit / recruit_pool) - the tester's 101.
+- **Linux user (Discord, 2026-09-29)**: Mint, 0.11.0 source zip: `python` missing (use python3), then
+  "No module named 'tkinter'". rtw_faction_tool.py now says what to install (apt python3-tk python3-pil
+  python3-pil.imagetk; dnf python3-tkinter python3-pillow-tk; pacman tk python-pillow); README + wiki Installing.
+- **The user noticed (2026-09-29)**: changing primary/secondary colour recolours the campaign-map flags (the 3D
+  strat_flag model) in the game - the engine tints banners/strat_flag.tga.dds with the faction colours at run
+  time and draws the standard_index symbol on it; only the symbol is a picture (now replaceable). Battle banners
+  (models/textures/standard_<f>.tga.dds) are full textures, not tinted.
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
 - Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.
