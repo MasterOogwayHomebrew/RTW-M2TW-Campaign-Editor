@@ -706,7 +706,16 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   portraits` + `data/ui/custom_portraits`; RTW `bi/data/world/maps/base/descr_regions.txt`. He sends 7z volumes
   of 30M in the chat; we push them to the private repo only. **Got 2026-09-29** (in tw-game-data now): RTW
   models/textures + loading_screen, M2 loading_screen + battle_models.modeldb (Boost text archive, 1 MB). M2
-  southern_european portraits came as .7z.002 only - .001 missing, ask again. Still missing: bi descr_regions.
+  southern_european (portraits, buildings, cities, interface), northern_european, ui/custom_portraits,
+  ui/generic, ui/*.sd(.xml) sprite sheets also in (eventpics left out: the tool does not use them). Still
+  missing: bi descr_regions. Repo ~620 MB (GitHub advises < 1 GB): pictures only on demand, never whole ui/.
+- **M2 portrait pools (vanilla, checked 2026-09-29)**: ui/southern_european/portraits/portraits/young/<9 groups>
+  (generals 201, others 100, inquisitors/witches 20), old/generals only, dead/NNN = generals, dead/princesses;
+  **no cards folder** (general_card.tga at the portraits root); family/ + family/dead. northern_european and
+  greek have portrait_mapping southern_european (their own folder has only family/). custom_portraits:
+  william, rufus, henry, fernando, hernan (portrait_young/old/dead.tga); harold is named in norman_prologue
+  but has no folder. portraits.library/add now follow this (no cards/old made where the game has none,
+  princesses' dead written).
   Checked on the real RTW files: macedon -> epirus gets standard_epirus(.tga.dds, DXT5 256x256, 9 mips) +
   _ally + symbol128_epirus, lines point at them; Replace writes DXT5 with the same mips; macedon untouched;
   Restore identical (diff -r).
