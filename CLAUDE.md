@@ -309,6 +309,13 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
 - The balanced army pool takes only land generals' units (not admirals' ships).
 - New characters go **before** the faction's `character_record` / `relative`
   lines; a `character` after them crashes on load (`WORLD::finalise_faction_groupings`).
+- **Recruit lines** (0.17.0): Rome `recruit "u" exp`, Medieval II `recruit_pool "u" start per_turn most exp` (vanilla
+  M2TW has 1475 and no `recruit`), REX `retrain` / `retrain_pool` (retrain only; recruit + retrain = recruitable).
+  roster.recruit_of is the one reader; recruit_dialect picks the form to write; editors.recruit_text writes it.
+- **Several factions groups on one requires line** (REX brackets): read all (roster.factions_groups); give joins the
+  first group with a warning, take drops the faction from every group, a group it alone forms is refused with a
+  warning (drop_faction -> None). Never rewrite only the first list.
+- **A `fort` / `watchtower` line ends the character before it** (strat._scan_block marks); its tile is taken.
 - `_chars_at`: every character edit.py adds (captains, arriving characters, new
   armies) goes before the family tree; `characters_after_tree` refuses to write otherwise.
 - EDU `category non_combatant` (townsfolk) is never offered as a unit.
@@ -370,7 +377,7 @@ edits, formats must survive read/write cycles - tw-modding.com, FeralInteractive
   keyed by the block's first line (a rename keeps it); removal never of `required_keys` (keys every
   unit / level has) or structure lines; `check_text` refuses unknown units / chains / levels.
 
-## Status (2026-09-29: main = v0.16.1 released (castle core fit with a hand-set size); v0.16.0 (modeldb: clone + packs; army steps aside; old .nut migration); v0.15.1 (castles: buildings.castles_allowed = game_kind medieval2 AND castle levels - GUI + with_kind; castle_fits refuses a castle > large_city in edit/start, level_picked refuses it in the window); v0.15.0 (M2 city / castle switch); v0.14.1 (M2 spaced surname keys kept); v0.14.0 released (own name lists, names-by-culture table; Discord text given); v0.13.0 released (names by culture, live on the map); v0.12.0 released; v0.11.0 the user's test round fixed - unique names, faction limit (limits.py), family with existing people, river chain, window fixes; v0.10.0 Terrain editor (terrain.py + gui_terrain.TerrainEditor, App.editors['terrain']); v0.9.4 (bi descr_regions fix: moddata.region_entries is the one reader/writer layout; bi manifest merged into rtw_gold_steam_manifest as bi/...); v0.9.3 (portrait library portraits.py + PortraitLibrary window; Art select map optional, off = originals kept, sel_map {'on'}); v0.9.2 renamed RTW & M2TW Campaign Editor; v0.9.1 released (Edit region..., new regions in the towns list at once, a new faction starts in a new region by one Apply - regionedit.apply_opts is the one writer of region work, plan_land/free_tile(start, own)); v0.9.0 released (Character editor = FamilyEditor(standalone) in App.editors['characters']; portraits); v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
+## Status (2026-09-29: main = v0.17.0 released (M2TW recruit_pool everywhere, REX bracket requirements, REX unit abilities + recruit_priority_offset, forts read / drawn / kept free); v0.16.1 (castle core fit with a hand-set size); v0.16.0 (modeldb: clone + packs; army steps aside; old .nut migration); v0.15.1 (castles: buildings.castles_allowed = game_kind medieval2 AND castle levels - GUI + with_kind; castle_fits refuses a castle > large_city in edit/start, level_picked refuses it in the window); v0.15.0 (M2 city / castle switch); v0.14.1 (M2 spaced surname keys kept); v0.14.0 released (own name lists, names-by-culture table; Discord text given); v0.13.0 released (names by culture, live on the map); v0.12.0 released; v0.11.0 the user's test round fixed - unique names, faction limit (limits.py), family with existing people, river chain, window fixes; v0.10.0 Terrain editor (terrain.py + gui_terrain.TerrainEditor, App.editors['terrain']); v0.9.4 (bi descr_regions fix: moddata.region_entries is the one reader/writer layout; bi manifest merged into rtw_gold_steam_manifest as bi/...); v0.9.3 (portrait library portraits.py + PortraitLibrary window; Art select map optional, off = originals kept, sel_map {'on'}); v0.9.2 renamed RTW & M2TW Campaign Editor; v0.9.1 released (Edit region..., new regions in the towns list at once, a new faction starts in a new region by one Apply - regionedit.apply_opts is the one writer of region work, plan_land/free_tile(start, own)); v0.9.0 released (Character editor = FamilyEditor(standalone) in App.editors['characters']; portraits); v0.8.0 released (Family tab: characters, traits, ancillaries, family tree drawn like the game's); v0.7.5 released (M2 castle core level crash; README report box); v0.7.4 released (Art map <= 40 % of the tab's height - it squeezed the picture list); v0.7.3 (Save logs zip -> RTW-Campaign-Editor-files/logs); v0.7.2 (log + settings in RTW-Campaign-Editor-files); v0.7.1 (the bottom buttons fix); v0.7.0 released - the first release since v0.1.2; github.com/MasterOogwayHomebrew/RTW-faction-tool/releases)
 
 Done and tested in game: new faction by template; separate mod folder; scan +
 ignore list; garrisons and buildings by hand with pictures; tabs; Edit mode
@@ -825,7 +832,8 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
       trade_fleet levels (ports vs merchant wharfs).
     * **EDB brackets**: `requires ( ( factions { greek, southern_european, } and building_present_min_level port port )
       or ( factions { middle_eastern, } and ... ) )` - a level may carry SEVERAL factions lists, each with its own
-      conditions. **Gap found in our code**: roster.factions_in / with_factions / covers (and buildings.Level's
+      conditions. **FIXED in 0.17.0** (roster.factions_groups / add_faction / drop_faction; buildings.Level.factions
+      uses factions_in) - **was**: roster.factions_in / with_factions / covers (and buildings.Level's
       requires regex, editors / gui_editors callers) read and rewrite only the FIRST `factions { }` of a line, so on
       such a line the Roster tab says a faction of the second group cannot build it, Give adds to the first group only
       (wrong conditions), Take leaves it in the other groups. To fix (one shared place): all lists of a line; covers
@@ -839,14 +847,15 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
       `ai_cannot_skirmish`, `ai_cannot_toggle_formation` (attributes line); `recruit_priority_offset` in RTW EDU like
       M2TW's (AI recruitment weight). Our attributes are free text (no whitelist) - fine. **Gap**: editors.room_for
       allows a key only up to what some unit of the mod already has, so on a Rome mod with no recruit_priority_offset
-      line anywhere the Unit editor's Add line refuses it (and does not offer it). To fix: a list of keys the engine
+      line anywhere the Unit editor's Add line refuses it (and does not offer it). **FIXED in 0.17.0**: unitattrs.py
+      (ATTRIBUTES + ENGINE_KEYS; keys_seen / room_for allow them; Unit editor REX... dialog). Was to fix: a list of keys the engine
       knows (REX EDU keys, M2TW's) that may be added even when the mod has none yet - one place, both games.
     * **REX console / EDB / EDU additions**: `add_soldiers <character|settlement> <unit_type> <amount>` (absolute
       amount); `downgrade_building <settlement> <building_level_id>` (one level down, or destroyed at level 0; RTW +
       M2TW); EDB `retrain` (RTW) / `retrain_pool` (M2TW) = like recruit / recruit_pool but only retraining (both lines
       for one unit = recruitable); EDU attribute "Immune to Psychology" (REX's attribute list spells it `immune_to_psychology`,
       on the stat_mental line): no fear morale penalties.
-    * **BUG FOUND (ours, M2TW, not fixed yet)**: vanilla M2TW export_descr_buildings has 1475 `recruit_pool` lines
+    * **FIXED in 0.17.0** (roster.recruit_of / recruit_lines / recruit_dialect, editors.recruit_text): **was**: vanilla M2TW export_descr_buildings has 1475 `recruit_pool` lines
       and 0 `recruit` lines, but roster.RE_RECRUIT / recruit_lines, editors.rename_unit (recruit lines follow a
       rename), packs._recruit_places and editors line 114 / 386 / 647 read only `recruit` (line 114 also
       recruit_pool). So on M2TW: the Roster tab finds no recruit places, a unit rename leaves its recruit_pool lines
@@ -871,7 +880,9 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
       [permanent] [name "Name"]` (base game variant only wooden_fort); descr_campaign_db.xml `<destroy_empty_forts_turns
       int="3"/>` under settlement (default 3; destroy_empty_forts false = all permanent); descr_strat `free_upkeep_forts
       N`, `free_upkeep_forts_permanent N`; descr_strat fort line may end with `permanent name Cerin Amroth` (no quotes):
-      `fort 263 330 cerin_amroth_fort culture middle_eastern permanent name Cerin Amroth`. **Our code ignores `fort`
+      `fort 263 330 cerin_amroth_fort culture middle_eastern permanent name Cerin Amroth`. **FIXED in 0.17.0**:
+      strat.Fort / Strat.forts / taken_tiles, ModData.forts, tile_problem + free_tile keep fort tiles, MapView draws
+      them (+ legend). Placing / editing forts not built yet. **Was: our code ignored `fort`
       lines entirely** (not drawn on the Map tab, not counted as taken tiles when placing armies / moving towns) -
       idea: draw them, keep tiles free, later place / edit forts on the map (permanent, name).
       Console `rename_fort <x> <y> "Name"` (quotes required).
@@ -906,7 +917,11 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   - **Next ideas (not promised)**: Unit editor model view (a unit's modeldb / descr_model_battle models, textures per
     faction, scale); modeldb in Check mod; kind (city / castle) for rebel-owned new regions; REX settings panel;
     heights brush + tilted preview; new map from scratch; map rescale after the engines' limits are known.
-  - ROADMAP uses coloured emoji now (rule 8).
+  - ROADMAP uses coloured emoji now (rule 8): 📦 released, ✅ confirmed in game (the user's pick, 2026-09-29).
+  - **v0.17.0 (2026-09-29, the user: "da" to the plan)**: the four fixes above (recruit_pool reader, REX brackets,
+    REX unit abilities / engine keys, forts). Checked: tests (synthetic M2TW pool EDB, bracket EDB, fort line),
+    real vanilla M2TW (england roster: 37 of 46 units with recruit places) + Rome, window under Xvfb (M2TW Roster,
+    Add line in recruit_pool form, REX... dialog, a fort on the Rome map + legend), 0 errors. Not in game yet.
 
 
 - **Released v0.14.0 (2026-09-29)**: (1) **own name lists** (the user: "add new name lists for e.g. an Arab country; type the
