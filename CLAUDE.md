@@ -9,22 +9,24 @@ accounts - the user hands this file to a new one): who the user is, how to work
 with him, what the tool does, what was learned the hard way, and where the work
 stands. Keep it up to date at the end of every piece of work.
 
-**Files in a session**: a fresh container has none. The user's vanilla files are in the private repo
-`tw-game-data` (below); `EXE/` (M2EX.exe, medieval2.exe - strings only, never commit) was only in the
+**Files in a session**: a fresh container has none. The user's vanilla files are in the private repos
+`RTW-game-data` / `M2TW-game-data` (below); `EXE/` (M2EX.exe, medieval2.exe - strings only, never commit) was only in the
 2026-09-28 session's scratchpad. The user's M2 upload has **no `ui/` folder** (portrait pools, custom_portraits
 untested on M2) - ask for `ui/<culture>/portraits` + `ui/custom_portraits` when M2 pictures matter.
 
-**Data repos split per game (the user, 2026-09-29)**: `tw-game-data` is to be renamed **`RTW-game-data`** (Rome,
-REX, HLR, BI) and a new private **`M2TW-game-data`** holds Medieval II (M2/data moved there + unit_models/_units).
-The user renames / creates them (the session cannot); then add_repo both, clone into /home/user/RTW-game-data and
-/home/user/M2TW-game-data, move M2/, and read "tw-game-data" below as the right one of the two.
-
-**The user's game files live in the PRIVATE repo `MasterOogwayHomebrew/tw-game-data`** (never
-make it public, never copy its files into this public repo): `M2/data` (Medieval II + M2EX vanilla:
-root files, text/, world/maps/base + campaign) and `RTW/data` (RTW Gold + REX vanilla: root .txt,
-text/, world/ without battle/custom maps, ui/, banners/). In a new session: add_repo it, `git clone
---depth 1` into /home/user/tw-game-data, copy what a test writes to the scratchpad first. Push in
-batches of ~150 MB (the proxy refuses huge packs). Add new uploads there too (HLR next).
+**The user's game files live in TWO PRIVATE repos, one per game** (split 2026-09-29 at the user's wish; never make
+them public, never copy their files into this public repo; the old `tw-game-data` was renamed to RTW-game-data):
+- **`MasterOogwayHomebrew/RTW-game-data`** - Rome: `RTW/data` (RTW Gold + REX vanilla: root .txt, text/, world/
+  without battle/custom maps, ui/, banners/, models/textures, loading_screen), `RTW/bi/data` (BI root .txt + text/),
+  `REX/` (REX's descr_ex / descr_caps_ex, documentation/ = dump_docudemon), `HLR/data` (text/, enhanced_tweaks/,
+  imperial_campaign without map.rwm).
+- **`MasterOogwayHomebrew/M2TW-game-data`** - Medieval II: `data/` (M2TW + M2EX vanilla: root files, text/,
+  world/maps/base + campaign, ui/ parts, loading_screen/, models/, unit_models/ with battle_models.modeldb and
+  _units (3336 .mesh / .texture), editor/, tools/).
+In a new session: add_repo both, `git clone --depth 1` into /home/user/rtw-game-data and /home/user/m2tw-game-data,
+copy what a test writes to the scratchpad first. Push in batches of ~250 MB raw (the proxy refuses huge packs).
+Older notes below say "tw-game-data M2/data" = M2TW-game-data data/, "tw-game-data RTW|REX|HLR" = RTW-game-data.
+Add new uploads to the repo of their game.
 
 **A new session starts with no game files**: the container is fresh. Ask the user
 to upload what the task needs (his HLR `data` as 7z volumes, vanilla `data`, REX),
@@ -38,7 +40,8 @@ once); patch `messagebox.show*/askyesno` in the script or a dialog blocks it.
 ## The user and how to work with him
 
 - Adam (GitHub `MasterOogwayHomebrew`). Writes in Russian: **answer in Russian**,
-  briefly and directly, and verify before claiming. Repo texts (code, comments,
+  briefly and directly, and verify before claiming. Call Medieval II **M2TW** in full, not "M2"
+  (the user, 2026-09-29) - in answers, repo names, commits and new notes. Repo texts (code, comments,
   README, commits) stay **in English**.
 - He mods **Rome: Total War Gold (Steam)** with **REX** (unofficial 64-bit engine,
   github.com/Pannoniae/rex; README says REX lifts the faction/region limits).
@@ -797,13 +800,25 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   - **Got next (2026-09-29)**: HLR text/ (+ russian/), HLR imperial_campaign (without map.rwm - the game rebuilds it),
     HLR enhanced_tweaks/*.json (kirsi / lanjane campaign tweaks, place in HLR assumed data/) -> tw-game-data HLR/data.
     M2 data/unit_models/_units (3336 files: 3082 .mesh + 254 .texture, 817 MB raw, ~310 MB in git): NOT pushed yet -
-    **the user proposed one private repo per game** (agreed: RTW-game-data (renamed tw-game-data) + a new private
-    M2TW-game-data for M2 + _units; he renames / creates them, the session cannot). Until then _units lives only in the
-    session scratchpad (he still has the 7z volumes).
+    **the user proposed one private repo per game** (done 2026-09-29: RTW-game-data = renamed tw-game-data, M2TW-game-data
+    new, M2TW files + _units moved there and checked md5 for md5).
   - **Discord question "Can you create new religion with it?"** - the user's answer: edit, not create. True: M2 region
     religion shares are editable (Religions... dialog, regionedit.set_religions); Rome has no religions in vanilla; a
     new religion (M2 descr_religions.txt + religions text + EDB temples / religion requirements + traits + UI icons)
     is not built. Idea for later, like a culture of one's own.
+  - **New climate for M2TW - a guide the user got (2026-09-29, not built, not promised)**: "Add new custom climate
+    [max 32 slots] for MED2, use custom1 as reference, name slots custom_[1-20]". Files it names: strat - descr_climates
+    (models, colour id, winter, heat), descr_sounds_stratmap (enviro sound), descr_aerial_map_ground_types (summer /
+    winter textures); battle - descr_sounds_enviro, descr_vegetation (summer / winter vegetation + settings, "you have
+    to generate them"), descr_geography (textures per climate + season), weather_db.xml (weather chance),
+    descr_battle_map_movement_modifiers, descr_battlefield_roads.xml (road textures per climate); winter sounds in
+    descr_sounds_units / _run / _anims / _march / _ambient / descr_sounds_engine; descr_water; text climates.txt;
+    descr_climates_lookup. Checked on vanilla M2TW: the lookup has 13 names (mediterranean ... semi_arid, with unused1 /
+    unused2 as free slots) and NO custom1 - the guide's custom slots and the 32 cap come from some other base (a mod
+    or an engine patch - ask which); vanilla files naming a climate: descr_sounds_stratmap 18, aerial_map_ground_types
+    2, sounds_enviro 7, vegetation 120, geography_new 77, weather_db 4, battlefield_roads 30, water 14; the unit sound
+    files and movement modifiers name none by desert / semi_arid (winter / ground terms instead - to read).
+    Hard part: descr_vegetation "generate" (raw_distribution_maps; M2EX text vegetation) - research before offering.
   - **Discord**: the Stainless Steel author praised the tool and asked for modeldb (done in 0.16.0, reply text
     given); Espartan asked for castles (done in 0.15.0, reply given); a tester loaded a 5456 x 2464-tile map.
   - **Next ideas (not promised)**: Unit editor model view (a unit's modeldb / descr_model_battle models, textures per
