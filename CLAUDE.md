@@ -751,6 +751,19 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
      is shown for nobody - must match every kind; ancillaries are NOT filtered at all (cb_anc = every
      ancillary; ancillary_list reads ExcludeCultures but nothing uses it) - filter by the faction's culture
      (ExcludeCultures) and, where the file says so, by kind; show the kinds a trait is for next to it.
+  3. Rome, Character editor, Portrait: "why can't I Replace?" - the three Replace buttons are shown but greyed
+     (Rome has no portrait line of its own: set_portraits refuses; the grey text on the right says so, but the
+     user did not see it / it does not say what to do instead). Also old / dead show empty boxes though the pool
+     has the same number old and dead. To do: in Rome show the old / dead of the same pool number; replace the
+     greyed buttons with a plain line + a button that helps: "Rome picks from the culture's pool at random -
+     add your picture to the pool (Portrait library...)" (and, when checked, REX: does it read a `portrait`
+     line or a portrait per name? - find out before offering a real Replace).
+  4. Terrain editor: the top **Undo stroke** works, the bottom **Undo / Redo** "does something unknown - maybe
+     undoes elsewhere?". Checked: it undoes nothing - App.undo/_in_editor only sets a status line, and that line
+     is wrong in the Terrain / Character editor ("In the building editor: 'Undo all changes here'..." - it names
+     unit or building only). To do: the bottom Undo / Redo (and Ctrl+Z / Ctrl+Y) go to the editor on show
+     (Terrain: undo stroke / redo stroke - needs a redo stack; Character editor, Unit / Building editors: their
+     own steps), or are greyed there with the right editor's name - never a silent click.
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
 - Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.
