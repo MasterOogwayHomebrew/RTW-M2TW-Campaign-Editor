@@ -903,7 +903,16 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   (3) it indexes only `mod.data/ui` - bi/data/ui holds only BI's own pictures, the rest lie in the game's data/ui
   (the fallback the game uses), so the roman pictures are not seen at all. Fix: search the game's data/ui after
   the mod's; never a foreign culture's picture (only the culture + its descr_ui_buildings variants), an empty box
-  with "no picture for roman" instead; names inside the culture loop. Test first on BI files (ask for bi/data/ui/
+  with "no picture for roman" instead; names inside the culture loop.
+  **The user's wish on top (2026-09-29, to build with this fix)**: a **Culture** choice on the settlement in the
+  Buildings tab - the pictures (and which levels are offered) follow the chosen culture, so one can convert a
+  town's buildings by hand; and when a faction takes a town of another culture (Take towns, a new faction's
+  start towns), the buildings **convert by themselves** to the new owner's culture: a level the new owner may not
+  build (EDB `factions { ... }` / `requires factions`) is swapped for the matching level of its own chain (same
+  chain type / same rank - e.g. a barbarian temple -> a roman temple of the same level), or dropped when there is
+  none, shown in Preview with plain words. Note: descr_strat buildings carry no culture - the game shows a chain
+  in the owner's culture; the real work is swapping levels the owner cannot have. Check how the game itself
+  treats foreign buildings on capture (RTW: destroyed / kept?) before choosing the rule. Test first on BI files (ask for bi/data/ui/
   roman + descr_ui_buildings.txt, or use tw-game-data RTW ui/) and check M2 the same way.
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
