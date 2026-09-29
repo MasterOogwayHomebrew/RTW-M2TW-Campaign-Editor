@@ -995,6 +995,14 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
   strat_flag model) in the game - the engine tints banners/strat_flag.tga.dds with the faction colours at run
   time and draws the standard_index symbol on it; only the symbol is a picture (now replaceable). Battle banners
   (models/textures/standard_<f>.tga.dds) are full textures, not tinted.
+- **Asked on Discord (2026-09-29): settlement names by the owner's culture (scripts)?** Not in the tool. Facts: vanilla
+  RTW / M2 files show no per-culture settlement names (M2 lookup / labels checked). REX.exe has console commands
+  `rename_settlement <settlement> <name>`, `rename_region <region> <name>`, `rename_faction <faction> <name>` (bare
+  name = key in expanded.txt, "quoted" = literal) and `dump_region_names` (writes <campaign>_regions_and_settlement_
+  names.dump.txt), plus Squirrel/Lua scripting (script/*.nut, EOP-Lua plugin). So under REX a campaign script could
+  rename on capture by the new owner's culture. Idea (not promised): a per-region table "name for each culture" in the
+  tool that writes the expanded.txt keys and the script lines. Not checked: which script event / console_command
+  path REX runs from campaign_script.
 - **Keep this file current in git** (the user, again 2026-09-29): every point of a conversation - his answers,
   decisions, what was found - goes into CLAUDE.md and is pushed, not only kept in the chat.
 - Waiting on him: bi descr_regions.txt to confirm the 0.9.4 fix; M2 battle_models.modeldb and M2 ui/<culture>/portraits; SignPath's answer.
