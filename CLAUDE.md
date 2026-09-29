@@ -865,6 +865,15 @@ number of cultures, and how portrait_mapping / rebel_standard_index work.
       not_siege = skip besieged forts); usable from campaign_script (`for_each settlement in world ... console_command
       replen_soldiers local 5`, `if not SettlementUnderSiege`). Idea: campaign-script snippets offered by the tool
       (like the names-by-culture block, culturenames.py writes marked blocks the same way).
+    * **Forts (REX, RTW + M2TW; RTW has no variants)**: console `create_fort <x> <y> <faction> <culture> [variant]
+      [permanent] [name "Name"]` (base game variant only wooden_fort); descr_campaign_db.xml `<destroy_empty_forts_turns
+      int="3"/>` under settlement (default 3; destroy_empty_forts false = all permanent); descr_strat `free_upkeep_forts
+      N`, `free_upkeep_forts_permanent N`; descr_strat fort line may end with `permanent name Cerin Amroth` (no quotes):
+      `fort 263 330 cerin_amroth_fort culture middle_eastern permanent name Cerin Amroth`. **Our code ignores `fort`
+      lines entirely** (not drawn on the Map tab, not counted as taken tiles when placing armies / moving towns) -
+      idea: draw them, keep tiles free, later place / edit forts on the map (permanent, name).
+    * **create_resource <x> <y> <resource>** (REX console, RTW + M2TW; updates the strat map and trade scroll) - our
+      resources.py already writes descr_strat `resource` lines for a new campaign; the command is for a running game.
     * descr_ex `max_factions` - known (limits.py); the log line `descr_ex.txt: max_factions = 31` confirms it.
     * ALX trait `Immortality` (Characters family, Hidden) restored in RTW + M2TW under REX: generals live past the
       hardcoded 122 - the Character editor may offer it for old characters (ages > 122).
