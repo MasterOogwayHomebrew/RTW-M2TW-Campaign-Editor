@@ -179,6 +179,18 @@ measured on the DaC and ROCSS mods). The knowledge file lists limits, crash rule
 map rules, the religion recipe, the tools, and the gaps -> ROADMAP Next. Keep adding to it when the user sends
 forum pages / guides.
 
+**Round 2 done (2026-09-29, network Full)**: twcenter / its wiki / .Org / moddb / reddit still refuse the container
+(Cloudflare bot check, also in a real Chromium - not bypassed, do not try); **rtw.heavengames.com +
+medieval2.heavengames.com are readable** (all tutorials read; Ferret's hardcode list), steamcommunity too; TWC facts
+via search excerpts. Written into modding_knowledge.md (limits, crash rows, river rules, section 4b flags, gaps
+item 0). Checked on the user's files. **Found, not fixed (ask the user before building)**: (1) Family tab may
+write a living male character_record over 16 (said to crash; vanilla RTW 0/74, M2TW 0/21 are over 16) - sons
+default to parent age - 20, new records to 20; (2) symbols.py maps standard_index k to symbols<k//4+1>, but the
+sheets come from descr_standards.txt `factions` / `rebels_factions` lists (RTW 1-5 / 6-8, BI 9-13 / 14-15), so
+BI reads wrong sheets and a new RTW faction's slot 21 lands on a rebels sheet (symbols6 = black rebel symbols);
+(3) river brush lacks the 2 x 2 square / loop checks; (4) Check mod gaps (slaves, rebel ownership, win
+conditions). ROADMAP Next has them.
+
 ## Hard-won rules (do not break)
 
 - **New religion (Medieval II)** (religions.py, 2026-09-29, the user's "Judaism" example): written in

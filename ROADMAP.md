@@ -90,6 +90,10 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 
 | Step | What it needs |
 |---|---|
+| Family tab: warn about a living son / record over 16 kept off the map (the game crashes on it) | Found in modders' guides; vanilla keeps to it; an in-game test |
+| Flag symbols: take the banner sheets from descr_standards.txt (Barbarian Invasion uses symbols9+) and never write a new faction's symbol into the rebels' sheets | Found in the game files; an in-game test |
+| Terrain: warn about 2 x 2 river squares and rivers that close into a loop | Modders' map rules |
+| Check mod: regions without slaves (Rome), rebels with units the rebels may not own, win conditions naming missing regions; the engine limits (map size, landmasses, units per town, hidden resources) shown up front | Modders' crash lists |
 | Signed exe (no browser / SmartScreen warnings) | SignPath Foundation's answer (applied) |
 | Terrain: heights brush (raise, lower, smooth), mountains and hills kept in step with the heights | Time; an in-game test |
 | Terrain: a tilted 3D-like preview from the heights and ground | Time |
