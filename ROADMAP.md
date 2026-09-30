@@ -163,7 +163,7 @@ timeline
 
 | Step | What it needs |
 |---|---|
-| A culture of its own (buildings, settlements, sounds that follow it) | Whether REX / M2EX limit the number of cultures |
+| A culture of its own (buildings, settlements, sounds, and optionally its own interface look - the panels' pictures in `ui/<culture>/interface`), made like a faction clone from a template culture | Whether REX / M2EX limit the number of cultures (HLR runs 11 under REX); the custom-battle culture list is fixed in the game |
 | Rescale the whole campaign map (e.g. 2x, with towns, armies and resources moved along) | The map size limits of REX and M2EX; in-game tests |
 | Unit texture recolour to a faction's colours; a model viewer | Texture and model files to work on |
 | Rome characters with portraits of their own | Whether REX reads a `portrait` line |
