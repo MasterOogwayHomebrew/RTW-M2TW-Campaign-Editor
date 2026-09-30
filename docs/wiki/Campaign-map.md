@@ -41,7 +41,7 @@ Tick **Regions**: every region in its own colour.
    labels, the settlement, `map.rwm` removed.
 
 A new region is in the towns list at once: a new faction can start there, and an edited one can take it, all
-in one Apply. **Edit region...** opens a region's data again.
+in one Apply. **Edit region...** opens a region's data again. **Rename...** (beside the towns list on the Faction tab, or a right click on a town there) changes the names players see of a region and its town - written to the campaign's `<campaign>_regions_and_settlement_names.txt`; the names in the files stay.
 
 ## Resources
 
