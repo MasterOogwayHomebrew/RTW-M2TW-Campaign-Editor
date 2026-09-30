@@ -22,6 +22,24 @@ effects of his traits and his retinue as the files give them; the traits by the 
 (`ui/ancillaries`). The switch above it, **Character** / **Family tree**, shows the whole family instead. The
 panel shows; the form on the left edits (traits, retinue, portraits, name, age).
 
+## Traits and retinue themselves
+
+**Traits and retinue...** (Character editor, top right; also Tools) edits the traits and ancillaries themselves,
+both games: `export_descr_character_traits.txt` and `export_descr_ancillaries.txt`.
+
+- **Traits**: pick one on the left (its name and the name players see; Find filters). Who can have it
+  (`Characters`), and per level the name and description players see, the points it needs (`Threshold`) and what
+  it gives (`Effects`, typed like `Command 1, Loyalty -2`).
+- **Retinue**: the name and description players see, the picture (**Replace picture...** - a picture shared with
+  other ancillaries is not changed: this one gets a picture of its own), the cultures it is barred to, its effects.
+- **New trait / New ancillary (a copy of the picked one)...**: written at once as a copy under the new name - a
+  trait's levels and text keys renamed after it, the texts copied - then edited like the others. No trigger gives
+  a new trait yet: give it to characters in the Character editor.
+- Preview, then **Write it in** (a backup first). The texts go into `text/english/export_VnVs.txt` /
+  `export_ancillaries.txt`; where Medieval II keeps a table only compiled (`.strings.bin`), a `.txt` is made from
+  it. Preview says when a `.strings.bin` lies beside it: if the game shows the old text, remove that file so the
+  game builds it again (not removed by the editor on its own - not checked in the game yet).
+
 ## Portraits
 
 - **Rome**: the tool shows the same man young, old and dead; to see your own pictures in the game, add them to

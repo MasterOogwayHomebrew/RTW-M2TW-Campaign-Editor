@@ -116,6 +116,7 @@ timeline
 - 📦 Map: Edit resources and Edit forts & watchtowers apart, each with its how-to; Rename in the files on the Map
 - 📦 3D view: the mount stands beside the rider; variants counted per part
 - 📦 Character editor as the game's character panel: portrait, attribute pips, traits by their shown names, the retinue as picture cards; the family tree a click away
+- 📦 Traits and retinue: what each trait level and ancillary gives, their names and texts, pictures, new ones as copies
 - 📦 Figures on the campaign map (Art tab): each character type's strat model picked, seen in 3D, its texture replaced; a new faction's figure textures its own
 
 ## 🧪 Being tested in the game now (newest first)
