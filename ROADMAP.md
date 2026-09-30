@@ -113,7 +113,12 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- (nothing yet)
+- 📦 Forts and watchtowers placed, moved and removed on the map (a new one copies the campaign's own line); Barbarian Invasion's watchtowers read
+- 📦 Volcanoes and (Medieval II) land bridges painted in the Terrain editor
+- 📦 Save a copy beside every Import / Replace: pictures, a battle model's files, name calls, portraits
+- 📦 Add-ons from anyone: any REX / M2EX script added, its settings found by themselves, shared as a zip
+- 📦 One path guard for every write and Restore (only the mod's or game's folder)
+- 📦 The work buttons scroll instead of being cut; Rome-only fields hidden on Medieval II; the Religions window names its region
 
 ## 🧪 Being tested in the game now (newest first)
 
@@ -166,7 +171,6 @@ timeline
 | Shadow and emergent factions set in the tool (BI `shadowed_by` / `shadowing`, `spawned_on_event`, Medieval II `dead_until_resurrected`, `undiscovered`) | Time; an in-game test |
 | A faction brought over from Rome into Barbarian Invasion (or between any two Rome mods): a faction pack - its units already go over as unit packs | Time; then an in-game test |
 | A REX settings panel in plain words (faction limit, sprites, arrow visibility, fort upkeep, trade fleets...) | Time |
-| Forts placed and edited on the map (REX: permanent, a name of its own) | Time; an in-game test |
 | The AI's war plans (`invade_*` in descr_campaign_ai_db.xml) explained in plain words on the Faction tab | Time |
 | Open the mod in the game's own campaign-map editor (`REX.exe -strat_ed=a`, M2EX) | Time |
 | The faction screen made whole: the town list moves to its own **Settlements** tab; the Faction tab gets the family tree and the faction's **religion** - picking a religion ties everything to it: temples, priests / imams, the religious units only it recruits (crusaders, Ghazis, Mujahideen...), traits | Time; in-game tests |
@@ -174,8 +178,6 @@ timeline
 | Map modes instead of many layers at once (a mode turns off what clashes with it); the map moves and zooms past its edges like a canvas | Time |
 | Character editor as in the game: portrait, traits and ancillaries with their pictures and the game's descriptions, added from a library; the family tree on the faction screen | Time |
 | 3D for everything: buildings, strat-map models, wonders, ships, agents - viewed, replaced and saved (both games); custom models placed on the map, a mode for wonders | Time |
-| Save the original: an Export beside every Import (cards, pictures, portraits, textures, sounds) | Time |
-| Volcanoes shown, placed and removed on the map | How each game keeps them |
 
 ## 💡 Later
 
@@ -184,7 +186,5 @@ timeline
 | A culture of its own (buildings, settlements, sounds, and optionally its own interface look - the panels' pictures in `ui/<culture>/interface`), made like a faction clone from a template culture | Whether REX / M2EX limit the number of cultures (HLR runs 11 under REX); the custom-battle culture list is fixed in the game |
 | Roads and trade routes: see where the game lays them after a new town or port, warn where no path can run | How the engines lay them; in-game tests |
 | A **clean faction template**: a new faction without the template's own rules and triggers (the Senate, the Pope, crusades, hordes, scripts), its flags and symbols made white to paint | A list of each game's faction-only rules, agreed first |
-| Every file the tool reads or writes checked by one guard (only the loaded game / mod, the tool's folder, files you picked) | A list of every place that opens a file |
-| Add-ons from anyone: add any script, its settings found by themselves, shared as a zip | Where each engine loads scripts |
 | Unit texture recolour to a faction's colours | Texture files to work on |
 | Rome characters with portraits of their own | Whether REX reads a `portrait` line |
