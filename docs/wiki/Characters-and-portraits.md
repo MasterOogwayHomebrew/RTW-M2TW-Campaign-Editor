@@ -13,6 +13,15 @@ the leader and heir marked. The **Character editor** at the top does the same fo
 - A renamed person is renamed on every line of the family tree.
 - The tree is checked before writing (a husband is a man, nobody is their own ancestor...).
 
+**The character panel** (Character editor, both games): on the right the picked person is shown the way the
+game's character panel shows him - the portrait in a frame, name, who he is, age; the attributes as ten pips
+(Medieval II: Command, Chivalry or Dread, Loyalty - Authority for the leader and heir - and Piety; agents their
+own skill: Subterfuge, Influence, Charm, Finance, Piety; Rome: Command, Influence, Management), added up from the
+effects of his traits and his retinue as the files give them; the traits by the names players see
+(`export_VnVs.txt`, or Medieval II's compiled `.strings.bin`) with what each gives; the retinue as picture cards
+(`ui/ancillaries`). The switch above it, **Character** / **Family tree**, shows the whole family instead. The
+panel shows; the form on the left edits (traits, retinue, portraits, name, age).
+
 ## Portraits
 
 - **Rome**: the tool shows the same man young, old and dead; to see your own pictures in the game, add them to

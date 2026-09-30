@@ -115,6 +115,7 @@ timeline
 - 📦 The map is a free canvas (Map tab and Terrain editor): dragged past its edges, zoomed out smaller than the view
 - 📦 Map: Edit resources and Edit forts & watchtowers apart, each with its how-to; Rename in the files on the Map
 - 📦 3D view: the mount stands beside the rider; variants counted per part
+- 📦 Character editor as the game's character panel: portrait, attribute pips, traits by their shown names, the retinue as picture cards; the family tree a click away
 - 📦 Figures on the campaign map (Art tab): each character type's strat model picked, seen in 3D, its texture replaced; a new faction's figure textures its own
 
 ## 🧪 Being tested in the game now (newest first)
