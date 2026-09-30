@@ -42,6 +42,18 @@ changes the template's. **Replace...** on an existing faction that shares its sl
 first. The logos need REX with `sprite_format xml` in `descr_caps_ex.txt` (REX's default): the original game
 reads binary sprite sheets that cannot take new sprites, and the Art tab says so.
 
+## Figures on the campaign map
+
+At the top of the Art tab: every character type of the faction (named character, general, admiral, spy, assassin,
+diplomat - and on Medieval II princess, merchant, priest / bishop / cardinal ...) with the figure that shows it on
+the campaign map - a strat model of `descr_model_strat.txt`, named per faction in `descr_character.txt`. Pick
+another model in the list, **3D** shows it with the faction's texture; Preview, then Apply writes it. A faction
+that shares its entry with others (`faction a, b`) gets an entry of its own, the others keep theirs. A model the
+faction has no texture in gets a texture line (the model's first picture); after Apply its picture is listed
+below to **Replace...** like any other. The figures' textures are Art pictures too ("campaign map figure: ..."),
+and a new faction gets copies of its own of the template's (`diplomat_macedon` -> `diplomat_epirus`), so
+replacing them never changes the template's. Both games.
+
 ## Not yet
 
-3D models (the strat-map symbol model, unit models).
+The strat-map symbol model; a new strat model from files of your own (the list offers the mod's own).
