@@ -84,6 +84,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - 🧪 Medieval II castle fix (0.7.5), unit packs, new armies / agents / fleets on the map
 - 🧪 Barbarian Invasion campaign loading (0.9.4 fix); BI's shared name lists and building pictures (0.12.0)
 - 🧪 Terrain climates; Rome flag symbols and faction logos (0.12.0)
+- 🧪 Replace a unit's battle model (Unit editor, Battle model: Replace model...) - from this mod or another mod of the same game, with its files; the unit's factions get textures; a model made to sit otherwise (foot / horse / camel / elephant / chariot) is warned about (on main, next release)
 - 🧪 Medieval II battle_models.modeldb: clone and unit packs (0.16.0)
 - 🧪 Medieval II city / castle switch (0.15.0)
 - 🧪 Own name lists, the names-by-culture table (0.14.0)
@@ -98,7 +99,8 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 | Terrain: a tilted 3D-like preview from the heights and ground | Time |
 | Terrain: the coast (land and sea swapped, with regions and heights); a new climate of one's own | Time; in-game tests |
 | A new campaign map from scratch (one region, one faction, loads in the game), then grown in the editor | Time; in-game tests |
-| Unit editor: a unit's battle models (meshes, textures per faction, scale) shown and edited | modeldb reading is done (0.16.0) |
+| Unit editor: the unit's model in 3D, turned with the mouse, in each faction's texture | Replace model is done; the .mesh (Medieval II) and .cas (Rome) formats |
+| Unit editor: hear a unit's sounds and replace them | Time |
 | Faction packs and building packs (like unit packs) | Time; then an in-game test |
 | Mods made on the plain game (slimmed folders) loaded with the game's data behind them | Time |
 | Check mod: the crash rules modders documented (undeclared ai_label, religions not summing to 100, a region with no town not last, event texts, antitraits, dead ancillaries, absolute paths, a town touching another region) | Time |
