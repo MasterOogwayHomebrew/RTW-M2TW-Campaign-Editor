@@ -6,7 +6,10 @@ Every line of a unit (`export_descr_unit.txt`) or a building chain (`export_desc
 with its pictures. The lists filter (**Show**: a faction, a culture, a category, mercenaries apart) and sort.
 
 - **Import...** puts a picture in the right size and format in the right place.
-- **Copy as new...** makes a new unit or building from an existing one.
+- **New unit / New building step by step...** makes a new one from an existing one that surely works in the game,
+  in steps you can go back and forth between: names and the texts players read, who owns the unit (or may build
+  the chain), its main numbers (men, attack, armour, cost...), pictures of your own, and last everything it will
+  change, file by file, before it is added. Written on Apply with a backup.
 - **Add line...** / **x**: add or remove lines (never beyond what the mod already does, never the lines every
   unit or level has).
 - **Tied to it** shows who owns and recruits a unit, what requires a building.

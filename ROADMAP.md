@@ -130,6 +130,8 @@ timeline
 - 🧪 Medieval II city / castle switch (0.15.0)
 - 🧪 Own name lists, the names-by-culture table (0.14.0)
 - 🧪 Settlement names by culture on Rome with REX (0.13.0); a New mod folder from BI / Alexander started with -bi / -alx
+- 🧪 New unit / New building step by step (Unit and Building editors): Back / Next between the steps, every file shown before it is added (on main, next release)
+- 🧪 Big maps: a 4080 x 2496 map opens in 2 s and 0.6 GB (was 38 s and 6.6 GB); region painting checked in a moment (on main, next release)
 
 ## 🔜 Next
 
@@ -142,7 +144,6 @@ timeline
 | A new campaign map from scratch (one region, one faction, loads in the game), then grown in the editor | Time; in-game tests |
 | Unit editor: Rome's .cas battle models in 3D (Medieval II's .mesh is done) | Rome .cas files to learn the format on |
 | Unit editor: hear a unit's sounds and replace them | Time |
-| New unit and new building step by step (like New religion): each step with Back / Next, Preview at the end | Time |
 | Faction packs and building packs (like unit packs) | Time; then an in-game test |
 | Mods made on the plain game (slimmed folders) loaded with the game's data behind them | Time |
 | Check mod: the crash rules modders documented (undeclared ai_label, religions not summing to 100, a region with no town not last, event texts, antitraits, dead ancillaries, absolute paths, a town touching another region) | Time |
