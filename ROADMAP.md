@@ -101,7 +101,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 | Terrain: a tilted 3D-like preview from the heights and ground | Time |
 | Terrain: the coast (land and sea swapped, with regions and heights); a new climate of one's own | Time; in-game tests |
 | A new campaign map from scratch (one region, one faction, loads in the game), then grown in the editor | Time; in-game tests |
-| Unit editor: the unit's model in 3D, turned with the mouse, in each faction's texture | Replace model is done; the .mesh (Medieval II) and .cas (Rome) formats |
+| Unit editor: Rome's .cas battle models in 3D (Medieval II's .mesh is done) | Rome .cas files to learn the format on |
 | Unit editor: hear a unit's sounds and replace them | Time |
 | Faction packs and building packs (like unit packs) | Time; then an in-game test |
 | Mods made on the plain game (slimmed folders) loaded with the game's data behind them | Time |
