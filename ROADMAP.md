@@ -52,7 +52,7 @@ timeline
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | new religion | REX settings panel |
 | Safety | - | preview, backup, byte-exact restore, Check / Scan mod | pack check | signed exe |
 
-## What it does now (0.19.0)
+## What it does now (0.19.1)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
