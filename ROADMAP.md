@@ -5,8 +5,8 @@ Where RTW & M2TW Campaign Editor stands, what comes next and what each step need
 🔜 next · 💡 later. Updated with every release
 (see [CHANGELOG.md](CHANGELOG.md) for the details).
 
-Found a bug or a crash? Send the logs (**Tools → Save logs (zip)**) and a screenshot or a short video -
-that is the fastest way to a fix.
+Found a bug or a crash? Press **Report a problem** - the logs (your names cut out) and a screenshot reach the
+author in one click. That is the fastest way to a fix.
 
 ## Where it started
 
@@ -120,6 +120,8 @@ timeline
 
 ## 🧪 Being tested in the game now (newest first)
 
+- 🧪 **Report a problem** (one click, anonymous): the logs, a few words and screenshots go to the author through a small relay - no account, no key inside the exe; names cut out first, everything shown before it goes
+
 - 🧪 Hear a unit and give it a voice (Unit editor, Voice in battle): its name call and orders played from the game's packs, your own .wav as its name call (0.19.2)
 - 🧪 Faction lists with the name players see ("turks - Ryazan"); `factions { all, }` buildings for everyone (0.19.2)
 - 🧪 Replace a unit's battle model (Unit editor, Battle model: Replace model...) - from this mod or another mod of the same game, with its files; the unit's factions get textures; a model made to sit otherwise (foot / horse / camel / elephant / chariot) is warned about; View in 3D (0.19.0)
@@ -181,7 +183,7 @@ timeline
 | A culture of its own (buildings, settlements, sounds, and optionally its own interface look - the panels' pictures in `ui/<culture>/interface`), made like a faction clone from a template culture | Whether REX / M2EX limit the number of cultures (HLR runs 11 under REX); the custom-battle culture list is fixed in the game |
 | Roads and trade routes: see where the game lays them after a new town or port, warn where no path can run | How the engines lay them; in-game tests |
 | A **clean faction template**: a new faction without the template's own rules and triggers (the Senate, the Pope, crusades, hordes, scripts), its flags and symbols made white to paint | A list of each game's faction-only rules, agreed first |
-| **Send a report** in one click (the logs zip shown file by file before it goes); every file the tool reads or writes checked by one guard (only the loaded game / mod, the tool's folder, files you picked) | A safe way to receive files (no key inside the exe) |
+| Every file the tool reads or writes checked by one guard (only the loaded game / mod, the tool's folder, files you picked) | A list of every place that opens a file |
 | Add-ons from anyone: add any script, its settings found by themselves, shared as a zip | Where each engine loads scripts |
 | Unit texture recolour to a faction's colours | Texture files to work on |
 | Rome characters with portraits of their own | Whether REX reads a `portrait` line |

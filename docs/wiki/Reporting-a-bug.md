@@ -2,9 +2,17 @@
 
 When the game crashes, the tool shows an error, or something looks wrong, please send:
 
-1. **The logs**: in the tool, **Tools -> Save logs (zip)**. One `.zip` with the tool's log and the game's
-   `system.log.txt`, saved in `RTW-M2TW-Campaign-Editor-files\logs` next to the exe - the tool's own
-   `faction_tool.log` lies in the same folder.
+1. **The logs**: in the tool, **Report a problem** (bottom right, also Tools -> Send a report...). Write a few
+   words of what happened, add a screenshot if you like, press **Send** - the tool's log, the game's
+   `system.log.txt` and the newest REX crash report go to the author at once, no account needed, and you get a
+   report number (say it on Discord if you want to talk about it). When the tool itself shows an error, it offers
+   the same window.
+   **Anonymous**: before anything leaves, the logs lose your Windows user name (also inside folder paths), the
+   computer's name, e-mail addresses, Steam IDs, IP addresses and the player's name of REX's crash report; add
+   your own words to hide (your nick). **Show what is sent** shows every line that goes. The contact field is
+   optional.
+   Rather send it yourself? **Tools -> Save logs (zip)** (or Save as zip in the report window) - the same logs, the
+   names cut out, saved in `RTW-M2TW-Campaign-Editor-files\logs` next to the exe.
 2. **A video or a screenshot** of what you did and what went wrong.
 3. Which game and mod (Rome / REX / BI / Medieval II / M2EX, the mod's name) and the editor's version (in the
    window's title).
