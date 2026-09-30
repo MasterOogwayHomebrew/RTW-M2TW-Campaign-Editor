@@ -5,7 +5,7 @@ Where RTW & M2TW Campaign Editor stands, what comes next and what each step need
 🔜 next · 💡 later. Updated with every release
 (see [CHANGELOG.md](CHANGELOG.md) for the details).
 
-Found a bug or a crash? Press **Report a problem** - the logs (your names cut out) and a screenshot reach the
+Found a bug or a crash? Press **Report a bug / Suggest** - the logs (your names cut out) and a screenshot reach the
 author in one click. That is the fastest way to a fix.
 
 ## Where it started
@@ -51,7 +51,7 @@ timeline
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | new religion; campaign rules and add-ons | REX settings panel, events and disasters |
 | Safety | - | preview, backup, byte-exact restore, Check / Scan mod | pack check | signed exe |
 
-## What it does now (0.20.0)
+## What it does now (0.20.1)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -117,7 +117,7 @@ timeline
 
 ## 🧪 Being tested in the game now (newest first)
 
-- 🧪 **Report a problem** (one click, anonymous): the logs, a few words and screenshots go to the author through a small relay - no account, no key inside the exe; names cut out first, everything shown before it goes (0.20.0)
+- 🧪 **Report a bug / Suggest** (one click, anonymous): ideas too (0.20.1); the logs, a few words and screenshots go to the author through a small relay - no account, no key inside the exe; names cut out first, everything shown before it goes (0.20.0)
 - 🧪 Settlements tab: every region and town, the names players see, owners, names by culture; rename a region and its town in the files everywhere the mod names them (0.20.0)
 - 🧪 Campaign rules (Tools): every value of the campaign's settings files with a plain explanation - Medieval II's campaign_db, town growth / order / income, diplomacy, recruitment; Rome + REX the people each town level needs; the Unit size choices (0.20.0)
 - 🧪 Add-ons: Sack Settlement for Rome + REX with who may sack (only the player, everyone, hordes, picked factions); the kept buildings and rebel units picked from the mod's own (0.20.0)

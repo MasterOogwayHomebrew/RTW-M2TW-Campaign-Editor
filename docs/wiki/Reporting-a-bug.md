@@ -2,7 +2,7 @@
 
 When the game crashes, the tool shows an error, or something looks wrong, please send:
 
-1. **The logs**: in the tool, **Report a problem** (bottom right, also Tools -> Send a report...). Write a few
+1. **The logs**: in the tool, **Report a bug / Suggest** (bottom right, also Tools -> Report a bug...). Write a few
    words of what happened, add a screenshot if you like, press **Send** - the tool's log, the game's
    `system.log.txt` and the newest REX crash report go to the author at once, no account needed, and you get a
    report number (say it on Discord if you want to talk about it). When the tool itself shows an error, it offers
@@ -20,6 +20,9 @@ When the game crashes, the tool shows an error, or something looks wrong, please
 Send them as a [GitHub issue](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/issues) or on
 Discord. With the logs the cause is usually found and fixed the same day: they name the file, the line and the
 game's own error.
+
+**An idea or a wish?** The same button: pick "an idea", write what the editor should do - it reaches the author
+the same way (no logs needed).
 
 **Security problems**: see
 [SECURITY.md](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/blob/main/SECURITY.md) - report
