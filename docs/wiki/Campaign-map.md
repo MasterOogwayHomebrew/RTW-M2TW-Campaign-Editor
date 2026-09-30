@@ -28,9 +28,10 @@ Forts and watchtowers of `descr_strat.txt` (Medieval II, REX: `fort x y ... perm
 towers, the top in the owner's colour; the mouse over one shows its name and whether it is permanent. No army or
 agent is placed on a fort's tile. Barbarian Invasion's watchtowers (listed after the diplomacy) are drawn too.
 
-With **Edit resources & forts** on, forts and watchtowers are moved like resources: click one to pick it, right
-drag it to another tile (land, no town, port or other fort there), **Delete picked** removes it. **Place new** with
-*fort* or *watchtower* picked adds one: its line is copied from the nearest one the campaign already has (only the
+Tick **Edit forts & watchtowers** (beside Edit resources): a bar opens under the map's buttons. **New**: pick *fort* or
+*watchtower*, press **Place new**, then click a land tile on the map. **Move**: drag one with the right mouse button
+to another tile (land, no town, port or other fort there). **Remove**: click it (it gets a yellow frame), then
+**Delete picked**. A new one: its line is copied from the nearest one the campaign already has (only the
 tile changes), because the exact line differs by game and mod - vanilla Rome and Medieval II have none, so there a
 new one is not offered. Written with Preview / Apply, backed up like every change.
 
@@ -53,7 +54,10 @@ in one Apply. **Edit region...** opens a region's data again. **Rename...** (bes
 
 ## Resources
 
-Trade goods on the map can be placed, moved and removed; one per tile.
+Trade goods on the map can be placed, moved and removed; one per tile. Tick **Edit resources**: a bar opens under
+the map's buttons. **New**: pick the resource, press **Place new**, then click a land tile on the map. **Move**: drag
+one with the right mouse button. **Remove**: click it (it gets a yellow frame), then **Delete picked**. A region's
+resources are the ones on its land; **Region tags (hidden resources)...** edits the region's tag line.
 
 ## Medieval II
 
