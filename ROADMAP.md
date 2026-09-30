@@ -166,6 +166,13 @@ timeline
 | Forts placed and edited on the map (REX: permanent, a name of its own) | Time; an in-game test |
 | The AI's war plans (`invade_*` in descr_campaign_ai_db.xml) explained in plain words on the Faction tab | Time |
 | Open the mod in the game's own campaign-map editor (`REX.exe -strat_ed=a`, M2EX) | Time |
+| The faction screen made whole: the town list moves to its own **Settlements** tab; the Faction tab gets the family tree and the faction's **religion** - picking a religion ties everything to it: temples, priests / imams, the religious units only it recruits (crusaders, Ghazis, Mujahideen...), traits | Time; in-game tests |
+| A **religion layer** on the map: each region's mix of religions (as map makers show it), else coloured by its largest religion as the game's town icon does | How map makers draw mixed shares |
+| Map modes instead of many layers at once (a mode turns off what clashes with it); the map moves and zooms past its edges like a canvas | Time |
+| Character editor as in the game: portrait, traits and ancillaries with their pictures and the game's descriptions, added from a library; the family tree on the faction screen | Time |
+| 3D for everything: buildings, strat-map models, wonders, ships, agents - viewed, replaced and saved (both games); custom models placed on the map, a mode for wonders | Time |
+| Save the original: an Export beside every Import (cards, pictures, portraits, textures, sounds) | Time |
+| Volcanoes shown, placed and removed on the map | How each game keeps them |
 
 ## 💡 Later
 
@@ -173,5 +180,8 @@ timeline
 |---|---|
 | A culture of its own (buildings, settlements, sounds, and optionally its own interface look - the panels' pictures in `ui/<culture>/interface`), made like a faction clone from a template culture | Whether REX / M2EX limit the number of cultures (HLR runs 11 under REX); the custom-battle culture list is fixed in the game |
 | Roads and trade routes: see where the game lays them after a new town or port, warn where no path can run | How the engines lay them; in-game tests |
+| A **clean faction template**: a new faction without the template's own rules and triggers (the Senate, the Pope, crusades, hordes, scripts), its flags and symbols made white to paint | A list of each game's faction-only rules, agreed first |
+| **Send a report** in one click (the logs zip shown file by file before it goes); every file the tool reads or writes checked by one guard (only the loaded game / mod, the tool's folder, files you picked) | A safe way to receive files (no key inside the exe) |
+| Add-ons from anyone: add any script, its settings found by themselves, shared as a zip | Where each engine loads scripts |
 | Unit texture recolour to a faction's colours | Texture files to work on |
 | Rome characters with portraits of their own | Whether REX reads a `portrait` line |
