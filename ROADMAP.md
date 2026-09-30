@@ -15,7 +15,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 
 ## The road so far
 
-The first three days (0.1.0 → 0.19.2): from a one-mod faction cloner to a campaign editor for two games.
+The first three days (0.1.0 → 0.20.0): from a one-mod faction cloner to a campaign editor for two games.
 
 ```mermaid
 timeline
@@ -48,10 +48,10 @@ timeline
 | Campaign map | tiles, moving towns, new regions, terrain, heights, find, town names | resources, climates, forts, big maps | the ring round a town | a new map from scratch, the coast |
 | Characters | - | name lists | character editor, family tree, portraits | - |
 | Units, buildings, art | faction art | editors, unit packs, modeldb, REX abilities | replace a model, 3D view (both games), new unit / building step by step, unit voices | textures from Rome's packs |
-| Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | new religion; campaign rules and add-ons (next release) | REX settings panel, events and disasters |
+| Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | new religion; campaign rules and add-ons | REX settings panel, events and disasters |
 | Safety | - | preview, backup, byte-exact restore, Check / Scan mod | pack check | signed exe |
 
-## What it does now (0.19.2)
+## What it does now (0.20.0)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -113,15 +113,16 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- 📦 Campaign rules (Tools): every value of the campaign's settings files with a plain explanation - Medieval II's campaign_db, town growth / order / income, diplomacy, recruitment; Rome + REX the people each town level needs; the Unit size choices
-- 📦 Add-ons: Sack Settlement for Rome + REX with who may sack (only the player, everyone, hordes, picked factions); the kept buildings and rebel units picked from the mod's own
-- 📦 View in 3D for Rome's .cas models (every vanilla unit, mount and animal), both games take missing model files from the game's data
-- 📦 3D view: weapons off no longer hides the legs, detail levels in the file's order; Unit editor: the battle model and the voice beside the pictures
+- (nothing yet)
 
 ## 🧪 Being tested in the game now (newest first)
 
-- 🧪 **Report a problem** (one click, anonymous): the logs, a few words and screenshots go to the author through a small relay - no account, no key inside the exe; names cut out first, everything shown before it goes
-
+- 🧪 **Report a problem** (one click, anonymous): the logs, a few words and screenshots go to the author through a small relay - no account, no key inside the exe; names cut out first, everything shown before it goes (0.20.0)
+- 🧪 Settlements tab: every region and town, the names players see, owners, names by culture; rename a region and its town in the files everywhere the mod names them (0.20.0)
+- 🧪 Campaign rules (Tools): every value of the campaign's settings files with a plain explanation - Medieval II's campaign_db, town growth / order / income, diplomacy, recruitment; Rome + REX the people each town level needs; the Unit size choices (0.20.0)
+- 🧪 Add-ons: Sack Settlement for Rome + REX with who may sack (only the player, everyone, hordes, picked factions); the kept buildings and rebel units picked from the mod's own (0.20.0)
+- 🧪 View in 3D for Rome's .cas models (every vanilla unit, mount and animal), both games take missing model files from the game's data; weapons off no longer hides the legs, detail levels in order (0.20.0)
+- 🧪 Tools: New religion / Religions of a region (Medieval II); a Medieval II clone's texts say "the Kingdom of Jerusalem" right (0.20.0)
 - 🧪 Hear a unit and give it a voice (Unit editor, Voice in battle): its name call and orders played from the game's packs, your own .wav as its name call (0.19.2)
 - 🧪 Faction lists with the name players see ("turks - Ryazan"); `factions { all, }` buildings for everyone (0.19.2)
 - 🧪 Replace a unit's battle model (Unit editor, Battle model: Replace model...) - from this mod or another mod of the same game, with its files; the unit's factions get textures; a model made to sit otherwise (foot / horse / camel / elephant / chariot) is warned about; View in 3D (0.19.0)
