@@ -84,6 +84,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 - 🧪 Medieval II castle fix (0.7.5), unit packs, new armies / agents / fleets on the map
 - 🧪 Barbarian Invasion campaign loading (0.9.4 fix); BI's shared name lists and building pictures (0.12.0)
 - 🧪 Terrain climates; Rome flag symbols and faction logos (0.12.0)
+- 🧪 Medieval II new faction named in battle banners, accents, one-liners, movies and music; the ring round a town (no other region, no port next to a town on Medieval II) checked when moving towns / ports, painting regions and in Check mod (on main, next release)
 - 🧪 Replace a unit's battle model (Unit editor, Battle model: Replace model...) - from this mod or another mod of the same game, with its files; the unit's factions get textures; a model made to sit otherwise (foot / horse / camel / elephant / chariot) is warned about (on main, next release)
 - 🧪 Medieval II battle_models.modeldb: clone and unit packs (0.16.0)
 - 🧪 Medieval II city / castle switch (0.15.0)
