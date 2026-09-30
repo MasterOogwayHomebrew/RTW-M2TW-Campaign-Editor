@@ -5,7 +5,7 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
 
 ## Looking around
 
-- Wheel zooms, left drag moves the map.
+- Wheel zooms (to the point under the mouse), left drag moves the map - past its edges too: the map is a free canvas with an empty field around it, and zooms out smaller than the window; **Fit** puts it back in the middle.
 - **Find**: type part of a name - a town (also the name shown for its owner), a port, a general, agent or
   fleet, a unit in an army (e.g. "hastati"), a fort, a resource. Pick a hit (click, or Down then Enter) and
   the map zooms in close on it and a ring blinks round it for a few seconds ([video](https://youtu.be/6WAdnGovGzA)).
