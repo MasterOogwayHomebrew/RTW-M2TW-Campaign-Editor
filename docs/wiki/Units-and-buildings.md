@@ -25,6 +25,13 @@ with its pictures. The lists filter (**Show**: a faction, a culture, a category,
   read in full; Give joins the first group (Preview says so), Take removes the faction from every group.
 - A rename drags along what is tied to it: recruit lines, the armies of every campaign, mercenary pools,
   rebels, requirements.
+- **Voice in battle** (units, both games): what the unit says, for each accent (Medieval II,
+  `descr_sounds_accents.txt`) or culture (Rome) of its owners. **Play** plays its own name call ("Khan's Guard!")
+  or any of its orders, straight from the game's sound packs (`data/sounds/*.idx` / `.dat`; a loose file of the same
+  name wins, as in the game). **Put in my own...** makes your `.wav` files its name call: they are copied in under
+  new names, `export_descr_sounds_units_voice.txt` gets the unit its own block (taken out of a line it shares with
+  other units; a new unit gets one), and `data/sounds/events.dat` / `events.idx` are removed with a backup - the game
+  builds them again from the texts on the next start. The voice class is the `voice_type` line.
 
 ## Roster (Edit faction)
 
