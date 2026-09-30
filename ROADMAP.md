@@ -40,7 +40,7 @@ timeline
         0.17 : recruit_pool : REX brackets : Forts : Rebels editable
     section Day 3 - community knowledge, models, packs
         0.18 : New religion (Medieval II) : Heights brush : Find on the map : GPL-3.0
-        0.19 : Replace a battle model : 3D view of Medieval II models : Pack check before install : Big maps 10x lighter
+        0.19 : Replace a battle model : 3D view of Medieval II models : Unit voices : Pack check before install : Big maps 10x lighter
 ```
 
 | Area | Confirmed in game | Released | Being tested | Next |
@@ -52,7 +52,7 @@ timeline
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | new religion | REX settings panel |
 | Safety | - | preview, backup, byte-exact restore, Check / Scan mod | pack check | signed exe |
 
-## What it does now (0.19.1)
+## What it does now (0.19.2)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -131,7 +131,7 @@ timeline
 - 🧪 Own name lists, the names-by-culture table (0.14.0)
 - 🧪 Settlement names by culture on Rome with REX (0.13.0); a New mod folder from BI / Alexander started with -bi / -alx
 - 🧪 New unit / New building step by step (Unit and Building editors): Back / Next between the steps, every file shown before it is added (0.19.0)
-- 🧪 Hear a unit and give it a voice (Unit editor, Voice in battle): its name call and orders played from the game's packs, your own .wav as its name call (Unreleased)
+- 🧪 Hear a unit and give it a voice (Unit editor, Voice in battle): its name call and orders played from the game's packs, your own .wav as its name call (0.19.2)
 - 🧪 Big maps: a 4080 x 2496 map opens in 2 s and 0.6 GB (was 38 s and 6.6 GB); region painting checked in a moment (0.19.0)
 
 ## 🔜 Next
