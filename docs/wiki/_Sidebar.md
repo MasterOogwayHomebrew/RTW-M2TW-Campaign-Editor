@@ -17,6 +17,9 @@
 **Units and buildings**
 - [[Units and buildings]]
 
+**Rules and add-ons**
+- [[Campaign rules and Add-ons]]
+
 **Safety and help**
 - [[Backups and Restore]]
 - [[Reporting a bug]]

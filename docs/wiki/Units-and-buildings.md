@@ -25,6 +25,12 @@ with its pictures. The lists filter (**Show**: a faction, a culture, a category,
   read in full; Give joins the first group (Preview says so), Take removes the faction from every group.
 - A rename drags along what is tied to it: recruit lines, the armies of every campaign, mercenary pools,
   rebels, requirements.
+- **Battle model** (units): each soldier and officer model with an owner's texture and how it sits (foot, horse,
+  camel, elephant, chariot); **Replace model...** takes another model of this mod or of another mod of the same game
+  (with every file it names; the unit's factions get textures on it), **View in 3D...** turns a Medieval II model
+  with the mouse, with each faction's texture, the game's detail levels and weapons on or off.
+
+  ![View in 3D](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/view_in_3d.png)
 - **Voice in battle** (units, both games): what the unit says, for each accent (Medieval II,
   `descr_sounds_accents.txt`) or culture (Rome) of its owners. **Play** plays its own name call ("Khan's Guard!")
   or any of its orders, straight from the game's sound packs (`data/sounds/*.idx` / `.dat`; a loose file of the same
