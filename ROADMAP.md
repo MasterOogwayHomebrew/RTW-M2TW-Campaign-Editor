@@ -131,6 +131,8 @@ timeline
 - 🧪 Own name lists, the names-by-culture table (0.14.0)
 - 🧪 Settlement names by culture on Rome with REX (0.13.0); a New mod folder from BI / Alexander started with -bi / -alx
 - 🧪 New unit / New building step by step (Unit and Building editors): Back / Next between the steps, every file shown before it is added (0.19.0)
+- 🧪 Campaign rules (Tools): every value of the campaign's settings files with a plain explanation - Medieval II's campaign_db, town growth / order / income, diplomacy, recruitment; Rome + REX the people each town level needs; the Unit size choices (Unreleased)
+- 🧪 Add-ons: Sack Settlement for Rome + REX with who may sack (player, everyone, hordes, picked factions) (Unreleased)
 - 🧪 Hear a unit and give it a voice (Unit editor, Voice in battle): its name call and orders played from the game's packs, your own .wav as its name call (0.19.2)
 - 🧪 Big maps: a 4080 x 2496 map opens in 2 s and 0.6 GB (was 38 s and 6.6 GB); region painting checked in a moment (0.19.0)
 
