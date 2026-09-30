@@ -1,5 +1,7 @@
 # Installing
 
+> ⚠️ **Only download the editor from this repository's [Releases](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/releases) page** (or a link the author posted or approved). Never take the exe - or a "fixed" / "patched" copy of it - from another site, a file-sharing link or someone in a chat, and don't pass it on that way: a copy from elsewhere can be changed to harm your PC. Share the link to the Releases page instead.
+
 1. Download `RTW-M2TW-Campaign-Editor.exe` from
    [Releases](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/releases). No install needed.
 2. Make a **new, empty folder** for it, for example `Documents\RTW & M2TW Campaign Editor` - not the game

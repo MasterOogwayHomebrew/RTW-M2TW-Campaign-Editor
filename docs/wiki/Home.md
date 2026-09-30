@@ -6,7 +6,7 @@ game's or a mod's own data files, shows every change before writing it, keeps a 
 for byte.
 
 **Download:** the latest `RTW-M2TW-Campaign-Editor.exe` from
-[Releases](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/releases) ·
+[Releases](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/releases) (only from there - see [[Installing]]) ·
 **▶ Video:** [what the editor does, in a few minutes](https://www.youtube.com/watch?v=m1sCPg-Lzsw)
 
 

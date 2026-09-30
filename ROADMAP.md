@@ -47,7 +47,7 @@ timeline
 | Factions | new faction, faction limit, edit, garrisons, mod folder | settlement size, rebels, diplomacy, roster | - | factions that appear later |
 | Campaign map | tiles, moving towns, new regions, terrain, heights, find, town names | resources, climates, forts, big maps | the ring round a town | a new map from scratch, the coast |
 | Characters | - | name lists | character editor, family tree, portraits | - |
-| Units, buildings, art | faction art | editors, unit packs, modeldb, REX abilities | replace a model, 3D view, new unit / building step by step, unit voices | Rome .cas in 3D |
+| Units, buildings, art | faction art | editors, unit packs, modeldb, REX abilities | replace a model, 3D view (both games), new unit / building step by step, unit voices | textures from Rome's packs |
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | new religion; campaign rules and add-ons (next release) | REX settings panel, events and disasters |
 | Safety | - | preview, backup, byte-exact restore, Check / Scan mod | pack check | signed exe |
 
@@ -115,7 +115,8 @@ timeline
 
 - 📦 Campaign rules (Tools): every value of the campaign's settings files with a plain explanation - Medieval II's campaign_db, town growth / order / income, diplomacy, recruitment; Rome + REX the people each town level needs; the Unit size choices
 - 📦 Add-ons: Sack Settlement for Rome + REX with who may sack (only the player, everyone, hordes, picked factions); the kept buildings and rebel units picked from the mod's own
-- 📦 3D view: weapons off no longer hides the legs; Unit editor: the battle model and the voice beside the pictures
+- 📦 View in 3D for Rome's .cas models (every vanilla unit, mount and animal), both games take missing model files from the game's data
+- 📦 3D view: weapons off no longer hides the legs, detail levels in the file's order; Unit editor: the battle model and the voice beside the pictures
 
 ## 🧪 Being tested in the game now (newest first)
 
@@ -150,7 +151,7 @@ timeline
 | Terrain: the coast (land and sea swapped, with regions and heights); a new climate of one's own | Time; in-game tests |
 | A new campaign map from scratch (one region, one faction, loads in the game), then grown in the editor | Time; in-game tests |
 | Events and disasters shown and edited on the map (`descr_events.txt`, `descr_disasters.txt`); Rome's wonders (`descr_sm_landmarks.txt`) | Time; in-game tests |
-| Unit editor: Rome's .cas battle models in 3D (Medieval II's .mesh is done); Rome's textures read straight from its `data/packs` | Time |
+| Rome's textures read straight from its `data/packs` (when a model's texture is not a loose file) | Time |
 | A bigger campaign map: every tile made 3 x 3 (an odd factor keeps each town, army and resource in the middle of its block), rivers redrawn as thin lines, ports kept on the coast, every coordinate moved along - room for more regions and factions; also grow or cut the map's edges | The map size limits of REX and M2EX; in-game tests |
 | Faction packs and building packs (like unit packs) | Time; then an in-game test |
 | Mods made on the plain game (slimmed folders) loaded with the game's data behind them | Time |
