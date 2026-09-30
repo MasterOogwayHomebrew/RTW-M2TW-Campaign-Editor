@@ -7,7 +7,9 @@ and Medieval II).
 
 - **Ground**: low / medium / high fertility, wilderness, sparse and dense forest, hills, mountains, high
   mountains, swamp, and the three kinds of sea.
-- **Rivers, fords, cliffs**: rivers, fords (the tiles where armies cross a river), river sources, cliffs, or
+- **Rivers, cliffs, volcanoes...**: rivers, fords (the tiles where armies cross a river), river sources, cliffs,
+  volcanoes, land bridges (Medieval II: armies walk across a narrow strait like the Bosporus - a straight strip of 3
+  tiles: land, sea, land; Preview names a bent or broken one), or
   nothing to rub one out.
 - **Climates**: the mod's own climates (`descr_climates.txt`, in its colours) - what grows on the campaign
   and battle maps, the snow in winter, the heat that tires men in battle. While this mode is on the map shows
