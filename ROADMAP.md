@@ -97,7 +97,6 @@ timeline
 - 📦 Unit packs: export units with models, textures, mounts, cards and texts into a .zip and import them into another mod
 - 📦 Medieval II `battle_models.modeldb`: a new faction gets its template's textures in every battle model; unit packs carry their modeldb models (renamed on clashes, textured for every new owner)
 - ✅ Faction art: every picture of a faction listed with where the game shows it, Replace... *(in-game ✓)*; a new faction's banners and logo are its own files; Back to the original
-- 📦 Campaign-select map drawn from the faction's towns (optional; the original stays by default)
 - 📦 Rome: the flag symbol on the campaign map and the faction logos, each faction its own, Replace... in the Art tab
 
 ### Both games
@@ -184,6 +183,7 @@ timeline
 | Step | What it needs |
 |---|---|
 | A culture of its own (buildings, settlements, sounds, and optionally its own interface look - the panels' pictures in `ui/<culture>/interface`), made like a faction clone from a template culture | Whether REX / M2EX limit the number of cultures (HLR runs 11 under REX); the custom-battle culture list is fixed in the game |
+| A new campaign-select map drawn from the faction's towns (built in 0.4, put away for now - the original map stays) | Its look checked in both games' start screens |
 | Roads and trade routes: see where the game lays them after a new town or port, warn where no path can run | How the engines lay them; in-game tests |
 | A **clean faction template**: a new faction without the template's own rules and triggers (the Senate, the Pope, crusades, hordes, scripts), its flags and symbols made white to paint | A list of each game's faction-only rules, agreed first |
 | Unit texture recolour to a faction's colours | Texture files to work on |

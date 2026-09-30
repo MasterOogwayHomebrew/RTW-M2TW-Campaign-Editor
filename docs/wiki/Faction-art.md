@@ -24,8 +24,8 @@ There is no *Remove*: without its pictures the game shows errors and a placehold
 
 ## The campaign-select map
 
-The optional part at the top draws a new `map_<faction>.tga` from the faction's towns, in a colour you pick
-(off by default - the original stays). The maps of factions whose land changes follow.
+Put away for now: a new faction keeps a copy of its template's `map_<faction>.tga` and every other faction's
+map stays the original. Drawing a new one from the faction's towns will come back in a later release.
 
 ## Flag symbol and faction logos (Rome)
 
