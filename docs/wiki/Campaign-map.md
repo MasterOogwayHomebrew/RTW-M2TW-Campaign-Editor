@@ -41,7 +41,9 @@ Tick **Regions**: every region in its own colour.
    labels, the settlement, `map.rwm` removed.
 
 A new region is in the towns list at once: a new faction can start there, and an edited one can take it, all
-in one Apply. **Edit region...** opens a region's data again. **Rename...** (beside the towns list on the Faction tab, or a right click on a town there) changes the names players see of a region and its town - written to the campaign's `<campaign>_regions_and_settlement_names.txt`; the names in the files stay.
+in one Apply. **Edit region...** opens a region's data again. **Rename...** (beside the towns list on the Faction tab, a right click on a town there, or on the Map's Edit regions bar) changes the names players see of a region and its town - written to the campaign's `<campaign>_regions_and_settlement_names.txt`; the names in the files stay.
+
+**Settlements tab:** every region and its town, both names. **Rename in the files...** changes the system names (`Latium`, `Rome`) everywhere the mod uses them - descr_regions, descr_strat, the names lookup and texts of every language, mercenaries, win conditions, campaign scripts, trait and ancillary conditions - as whole words; comments, descriptions and lines naming a faction of the same name stay. Preview first, a backup, `map.rwm` removed. Tip: keep the name players see and the name in the files alike.
 
 ## Resources
 
