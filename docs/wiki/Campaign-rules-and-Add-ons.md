@@ -28,6 +28,21 @@ The **Add-ons** button beside the editors lists ready-made scripts that add some
 settings, **Preview**, **Put it in** - a backup is made first. **Update it** changes the settings later, **Take it
 out** removes it.
 
+### Anyone's add-on (Add an add-on...)
+
+**Add an add-on...** takes a Squirrel script (`.nut`) or a zip with one - REX (Rome) and M2EX (Medieval II) both
+load every `.nut` in `script/modules` by themselves. The script is kept in the editor's own folder
+(`RTW-M2TW-Campaign-Editor-files/addons`) and shown in the list; its settings are found by themselves: the
+UPPER_CASE `local NAME = value` lines at the top (true / false = a tick, a whole number, "text", a list
+`["a", "b"]`, a set `{ a = true }`), with the `//` comment beside or above each as its help. Put it in, Update, Take
+it out work as for the built-in ones (a backup each time). **Share...** saves it as a zip (with your settings or as
+it came) plus a README - give it to others. **Remove from the list** forgets an added one. Only add scripts from
+people you trust: a script runs inside the game.
+
+For authors, optional header lines make it nicer: `// @title Border Tolls`, `// @game rome|medieval2|both`,
+`// @summary ...`, `// @needs ...`, `// @settings A, B` (only these), `// @label VAR Words shown`,
+`// @pick VAR chains|units|factions` (a picker filled from the loaded mod's own buildings, units or factions).
+
 ### Sack Settlement (Rome + REX)
 
 A 4th choice on the capture scroll, under Occupy / Enslave / Exterminate. The town is exterminated the game's own
