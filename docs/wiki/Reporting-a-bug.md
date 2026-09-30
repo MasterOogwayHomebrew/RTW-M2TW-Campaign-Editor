@@ -21,6 +21,8 @@ Send them as a [GitHub issue](https://github.com/MasterOogwayHomebrew/RTW-M2TW-C
 Discord. With the logs the cause is usually found and fixed the same day: they name the file, the line and the
 game's own error.
 
+Video: [how to send a bug report and a suggestion](https://youtu.be/7MbYR9ywNsI).
+
 **An idea or a wish?** The same button: pick "an idea", write what the editor should do - it reaches the author
 the same way (no logs needed).
 

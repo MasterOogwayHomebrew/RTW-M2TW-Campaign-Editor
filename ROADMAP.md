@@ -6,7 +6,7 @@ Where RTW & M2TW Campaign Editor stands, what comes next and what each step need
 (see [CHANGELOG.md](CHANGELOG.md) for the details).
 
 Found a bug or a crash? Press **Report a bug / Suggest** - the logs (your names cut out) and a screenshot reach the
-author in one click. That is the fastest way to a fix.
+author in one click ([video](https://youtu.be/7MbYR9ywNsI)). That is the fastest way to a fix.
 
 ## Where it started
 
