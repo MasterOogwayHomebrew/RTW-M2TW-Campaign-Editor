@@ -26,7 +26,13 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
 
 Forts and watchtowers of `descr_strat.txt` (Medieval II, REX: `fort x y ... permanent name ...`) are drawn as small
 towers, the top in the owner's colour; the mouse over one shows its name and whether it is permanent. No army or
-agent is placed on a fort's tile.
+agent is placed on a fort's tile. Barbarian Invasion's watchtowers (listed after the diplomacy) are drawn too.
+
+With **Edit resources & forts** on, forts and watchtowers are moved like resources: click one to pick it, right
+drag it to another tile (land, no town, port or other fort there), **Delete picked** removes it. **Place new** with
+*fort* or *watchtower* picked adds one: its line is copied from the nearest one the campaign already has (only the
+tile changes), because the exact line differs by game and mod - vanilla Rome and Medieval II have none, so there a
+new one is not offered. Written with Preview / Apply, backed up like every change.
 
 ## New regions
 
