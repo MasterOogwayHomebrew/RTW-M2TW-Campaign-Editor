@@ -11,8 +11,8 @@ the game at once, so you can test every change after that straight away. The tem
 3. **Internal name**: lower case, no spaces, for example `epirus`.
 4. **Name (full)**, **Name (short)**, **Adjective**: for example `Kingdom of Epirus`, `Epirus`, `Epirote`.
    The copied texts use them ("Epirote Spy", "Your forces attack an army of Epirus").
-5. **Starting settlements**: filter by owner (for example `slave` for rebel towns), double-click to add, pick
-   the capital. A new region painted on the [[Campaign map]] can be a starting town too.
+5. **Starting settlements**: filter by owner (for example `slave` for rebel towns), **Add >** (or Enter) to add,
+   pick the capital. A double click (or **Rename...**) changes the names players see of a region and its town. A new region painted on the [[Campaign map]] can be a starting town too.
 6. **Leader** (and the heir if you like): a first name and surname **from the faction's name list** - the
    game crashes on a name that has no text, so the tool only accepts listed names. The new faction copies the
    template's list, or has one of its own: **Name list...** (below).
