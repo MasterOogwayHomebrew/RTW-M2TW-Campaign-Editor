@@ -51,7 +51,7 @@ timeline
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | new religion; campaign rules and add-ons | REX settings panel, events and disasters |
 | Safety | - | preview, backup, byte-exact restore, Check / Scan mod | pack check | signed exe |
 
-## What it does now (0.20.1)
+## What it does now (0.21.0)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -112,15 +112,18 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- 📦 Forts and watchtowers placed, moved and removed on the map (a new one copies the campaign's own line); Barbarian Invasion's watchtowers read
-- 📦 Volcanoes and (Medieval II) land bridges painted in the Terrain editor
-- 📦 Save a copy beside every Import / Replace: pictures, a battle model's files, name calls, portraits
-- 📦 Add-ons from anyone: any REX / M2EX script added, its settings found by themselves, shared as a zip
-- 📦 One path guard for every write and Restore (only the mod's or game's folder)
-- 📦 The work buttons scroll instead of being cut; Rome-only fields hidden on Medieval II; the Religions window names its region
+- (nothing yet)
 
 ## 🧪 Being tested in the game now (newest first)
 
+- 🧪 The main window reorganised: towns picked on the Map, the family on the Faction tab, Add a relative..., a faction's religion (Medieval II), Religions as a work button (0.21.0)
+- 🧪 A unit given to a faction is listed once in a building's description; the Map opens on huge maps (0.21.0)
+- 🧪 Forts and watchtowers placed, moved and removed on the map (a new one copies the campaign's own line); Barbarian Invasion's watchtowers read (0.21.0)
+- 🧪 Volcanoes and (Medieval II) land bridges painted in the Terrain editor (0.21.0)
+- 🧪 Save a copy beside every Import / Replace: pictures, a battle model's files, name calls, portraits (0.21.0)
+- 🧪 Add-ons from anyone: any REX / M2EX script added, its settings found by themselves, shared as a zip (0.21.0)
+- 🧪 One path guard for every write and Restore (only the mod's or game's folder) (0.21.0)
+- 🧪 The work buttons scroll instead of being cut; Rome-only fields hidden on Medieval II; the Religions window names its region (0.21.0)
 - 🧪 **Report a bug / Suggest** (one click, anonymous): ideas too (0.20.1); the logs, a few words and screenshots go to the author through a small relay - no account, no key inside the exe; names cut out first, everything shown before it goes (0.20.0)
 - 🧪 Settlements tab: every region and town, the names players see, owners, names by culture; rename a region and its town in the files everywhere the mod names them (0.20.0)
 - 🧪 Campaign rules (Tools): every value of the campaign's settings files with a plain explanation - Medieval II's campaign_db, town growth / order / income, diplomacy, recruitment; Rome + REX the people each town level needs; the Unit size choices (0.20.0)
