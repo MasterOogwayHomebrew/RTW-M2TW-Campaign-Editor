@@ -15,7 +15,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 
 ## The road so far
 
-36 releases in the first three days (0.1.0 → 0.18.1), from a one-mod faction cloner to a campaign editor for
+37 releases in the first three days (0.1.0 → 0.19.0), from a one-mod faction cloner to a campaign editor for
 two games.
 
 ```mermaid
@@ -40,7 +40,7 @@ timeline
         0.17 : recruit_pool : REX brackets : Forts : Rebels editable
     section Day 3 - community knowledge, models, packs
         0.18 : New religion (Medieval II) : Heights brush : Find on the map : GPL-3.0
-        Next release : Replace a battle model : 3D view of Medieval II models : Pack check before install : Big maps 10x lighter
+        0.19 : Replace a battle model : 3D view of Medieval II models : Pack check before install : Big maps 10x lighter
 ```
 
 | Area | Confirmed in game | Released | Being tested | Next |
@@ -52,7 +52,7 @@ timeline
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | new religion | REX settings panel |
 | Safety | - | preview, backup, byte-exact restore, Check / Scan mod | pack check | signed exe |
 
-## What it does now (0.18.1)
+## What it does now (0.19.0)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -123,15 +123,15 @@ timeline
 - 🧪 Medieval II castle fix (0.7.5), unit packs, new armies / agents / fleets on the map
 - 🧪 Barbarian Invasion campaign loading (0.9.4 fix); BI's shared name lists and building pictures (0.12.0)
 - 🧪 Terrain climates; Rome flag symbols and faction logos (0.12.0)
-- 🧪 Check and install a pack (Tools): every file of a "copy data over the game" mod checked - REX's own files, pictures of another size, whole text files - and put in as picked, with a backup (on main, next release)
-- 🧪 Medieval II new faction named in battle banners, accents, one-liners, movies and music; the ring round a town (no other region, no port next to a town on Medieval II) checked when moving towns / ports, painting regions and in Check mod (on main, next release)
-- 🧪 Replace a unit's battle model (Unit editor, Battle model: Replace model...) - from this mod or another mod of the same game, with its files; the unit's factions get textures; a model made to sit otherwise (foot / horse / camel / elephant / chariot) is warned about (on main, next release)
+- 🧪 Check and install a pack (Tools): every file of a "copy data over the game" mod checked - REX's own files, pictures of another size, whole text files - and put in as picked, with a backup (0.19.0)
+- 🧪 Medieval II new faction named in battle banners, accents, one-liners, movies and music; the ring round a town (no other region, no port next to a town on Medieval II) checked when moving towns / ports, painting regions and in Check mod (0.19.0)
+- 🧪 Replace a unit's battle model (Unit editor, Battle model: Replace model...) - from this mod or another mod of the same game, with its files; the unit's factions get textures; a model made to sit otherwise (foot / horse / camel / elephant / chariot) is warned about (0.19.0)
 - 🧪 Medieval II battle_models.modeldb: clone and unit packs (0.16.0)
 - 🧪 Medieval II city / castle switch (0.15.0)
 - 🧪 Own name lists, the names-by-culture table (0.14.0)
 - 🧪 Settlement names by culture on Rome with REX (0.13.0); a New mod folder from BI / Alexander started with -bi / -alx
-- 🧪 New unit / New building step by step (Unit and Building editors): Back / Next between the steps, every file shown before it is added (on main, next release)
-- 🧪 Big maps: a 4080 x 2496 map opens in 2 s and 0.6 GB (was 38 s and 6.6 GB); region painting checked in a moment (on main, next release)
+- 🧪 New unit / New building step by step (Unit and Building editors): Back / Next between the steps, every file shown before it is added (0.19.0)
+- 🧪 Big maps: a 4080 x 2496 map opens in 2 s and 0.6 GB (was 38 s and 6.6 GB); region painting checked in a moment (0.19.0)
 
 ## 🔜 Next
 
