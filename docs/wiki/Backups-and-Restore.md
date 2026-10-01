@@ -8,9 +8,9 @@ lowest line to get the files back as they were before the tool's first write.
 
 - **Preview changes** shows every file and line before anything is written.
 - **Undo** / **Redo** (Ctrl+Z, Ctrl+Y) step back through what you did in the window before Apply.
-- **Check mod** reads every file the tool uses and reports what it cannot make sense of; the deep check
+- **Check mod files** reads every file the tool uses and reports what it cannot make sense of; the deep check
   rehearses an edit and a new faction for every faction in memory. Nothing is written.
-- **Check mod** with a faction picked also lists everywhere that faction is named in the whole mod, and which files are the game's own,
+- **Check mod files** with a faction picked also lists everywhere that faction is named in the whole mod, and which files are the game's own,
   changed by the mod, REX's or the mod's.
 - A [separate mod folder](First-steps#a-separate-mod-folder-recommended) keeps your base mod untouched.
 

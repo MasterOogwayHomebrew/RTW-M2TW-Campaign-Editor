@@ -49,7 +49,7 @@ timeline
 | Characters | - | name lists | character editor, family tree, portraits | - |
 | Units, buildings, art | faction art | editors, unit packs, modeldb, REX abilities | replace a model, 3D view (both games), new unit / building step by step, unit voices | textures from Rome's packs |
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | new religion; campaign rules and add-ons | REX settings panel, events and disasters |
-| Safety | - | preview, backup, byte-exact restore, Check mod (with where a faction is named) | pack check | signed exe |
+| Safety | - | preview, backup, byte-exact restore, Check mod files (with where a faction is named) | pack check | signed exe |
 
 ## What it does now (0.23.0)
 
@@ -107,7 +107,7 @@ timeline
 ### Safety
 - 📦 Preview of every file and line before writing; only the lines meant change, the rest stays byte for byte
 - 📦 A backup of every write; Restore gives the original back byte for byte (any write and every later one in one go); Undo / Redo in the window
-- 📦 Check mod (consistency report; with a faction picked, every place it is named - game, REX and mod files told apart)
+- 📦 Check mod files (consistency report; with a faction picked, every place it is named - game, REX and mod files told apart)
 - 📦 Log, Save logs (zip) for bug reports; Light / Dark look; smaller windows keep every button, side panels can be dragged wider
 
 ## 📦 Built, comes with the next release
@@ -119,6 +119,7 @@ timeline
 - 🧪 The Map's legend as a palette: pick a town, fort, watchtower, resource, army or agent, click the map to make one (0.22.0)
 - 🧪 Alliances and wars at the start (both games): one status per faction that pulls the AI feelings along, every value in words; Medieval II's diplomacy read as the game writes it (`faction_standings`), a new Medieval II faction at war with the rebels (0.23.0)
 - 🧪 Victory conditions on the Faction tab: regions to hold and take, factions to outlive, Rome's goal - long and short campaign (0.23.0)
+- 🧪 A Settings window (look, language, game folder, the map's look, report contact, set-up questions, folders); Check mod renamed Check mod files (Unreleased)
 - 🧪 The family tree folded behind a Family tree button on the Faction tab; hover texts on the work buttons (0.23.0)
 - 🧪 A faction's religion pulls its temples, guilds, priests and their figures along (Medieval II) (0.22.0)
 - 🧪 Rome's packed textures (data/packs/*.pak) read for the model thumbnails and 3D (0.22.0)
@@ -179,13 +180,14 @@ timeline
 | A bigger campaign map: every tile made 3 x 3 (an odd factor keeps each town, army and resource in the middle of its block), rivers redrawn as thin lines, ports kept on the coast, every coordinate moved along - room for more regions and factions; also grow or cut the map's edges | The map size limits of REX and M2EX; in-game tests |
 | Faction packs and building packs (like unit packs) | Time; then an in-game test |
 | Mods made on the plain game (slimmed folders) loaded with the game's data behind them | Time |
-| Check mod: the crash rules modders documented (undeclared ai_label, religions not summing to 100, a region with no town not last, event texts, antitraits, dead ancillaries, absolute paths, a town touching another region) | Time |
+| Check mod files: the crash rules modders documented (undeclared ai_label, religions not summing to 100, a region with no town not last, event texts, antitraits, dead ancillaries, absolute paths, a town touching another region) | Time |
 | Limits shown up front on the original exes (REX / M2EX lift most): units (500), building chains (64 Rome / 128 Medieval II), levels (9), religions (9) | Time |
 | Roster: giving a building level also gives the levels below it (a chain is built level by level); taking one also takes the levels above | Time |
 | A religion of one's own, step by step in its own window: name, symbol, text, its temple chain (levels, pictures, effects like the Building editor), which factions follow it - Medieval II and Barbarian Invasion (BI's `descr_beliefs.txt`, `religious_belief` in the buildings); greyed on plain Rome, which has no religions | Time; BI's campaign files for the test |
 | Factions that appear later, each game its own way: Medieval II by date (`dead_until_resurrected`, `spawned_on_event`, an `emergent_faction` event with its regions, armies spawned by the campaign script - like the Mongols and Timurids); Barbarian Invasion hordes (`horde_*` lines) and factions born of a revolt (`spawns_on_revolt`, `shadowed_by`) | Time; in-game tests |
 | Shadow and emergent factions set in the tool (BI `shadowed_by` / `shadowing`, `spawned_on_event`, Medieval II `dead_until_resurrected`, `undiscovered`) | Time; an in-game test |
 | A faction brought over from Rome into Barbarian Invasion (or between any two Rome mods): a faction pack - its units already go over as unit packs | Time; then an in-game test |
+| Map: smarter dragging - an agent or an army dropped on a town goes into it (garrison / agent in the town), towns moved with care; the right button opens a menu of what can be done at that spot, and moving the map gets its own gesture | Time; then an in-game test |
 | Saved games edited (money, characters, towns of a running campaign), if the save files can be read safely - to be researched first | Research: the save format of both games |
 | The window in other languages, picked at the first start: Spanish, French, German, Italian, Russian, Turkish (asked on Discord); hover texts in place of long labels so longer words fit | Time; translators to check the words |
 | A REX settings panel in plain words (faction limit, sprites, arrow visibility, fort upkeep, trade fleets...) | Time |
