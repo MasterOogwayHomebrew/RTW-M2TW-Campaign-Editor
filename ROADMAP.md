@@ -142,7 +142,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- (nothing yet)
+- 📦 Bring units and buildings from another mod, step by step (Unit and Building editors), with a wiki guide
 
 ## 🧪 Being tested in the game now (newest first)
 
@@ -213,7 +213,7 @@ timeline
 | Events and disasters shown and edited on the map (`descr_events.txt`, `descr_disasters.txt`); Rome's wonders (`descr_sm_landmarks.txt`) | Time; in-game tests |
 | Rome's textures read straight from its `data/packs` (when a model's texture is not a loose file) | Time |
 | The bigger map, after the alpha: plains really flat and mountains with sharp peaks (heights follow the ground type), clean coasts; coordinates in scripts moved too, grow or cut the map's edges | Time; in-game tests |
-| Faction packs and building packs (like unit packs) | Time; then an in-game test |
+| Faction packs (like unit packs); building chains as a .zip to share | Time; then an in-game test |
 | Mods made on the plain game (slimmed folders) loaded with the game's data behind them | Time |
 | Check mod files: the crash rules modders documented (undeclared ai_label, religions not summing to 100, a region with no town not last, event texts, antitraits, dead ancillaries, absolute paths, a town touching another region) | Time |
 | Limits shown up front on the original exes (REX / M2EX lift most): units (500), building chains (64 Rome / 128 Medieval II), levels (9), religions (9) | Time |

@@ -10,6 +10,8 @@ with its pictures. The lists filter (**Show**: a faction, a culture, a category,
   in steps you can go back and forth between: names and the texts players read, who owns the unit (or may build
   the chain), its main numbers (men, attack, armour, cost...), pictures of your own, and last everything it will
   change, file by file, before it is added. Written on Apply with a backup.
+- **Bring from another mod...** copies units or building chains from another mod of the same game, step by
+  step, with everything they need - see [[Move units and buildings between mods]].
 - **Add line...** / **x**: add or remove lines (never beyond what the mod already does, never the lines every
   unit or level has).
 - **Tied to it** shows who owns and recruits a unit, what requires a building.
