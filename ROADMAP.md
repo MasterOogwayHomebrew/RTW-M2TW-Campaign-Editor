@@ -151,6 +151,8 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Recolour a faction's pictures: unit cards, battle textures, symbols, banners - from the template's colours to the faction's own, light and shade kept
+- 📦 The exe in the game folder, logs saved on every close, M2EX / REX found by any name, missing engine files offered
 - 📦 Buildings and garrisons for many towns: pick towns on the Map (yellow) or by owner / level / city / castle; a building in all of them, or random garrisons under an upkeep limit
 - 📦 The game's log in plain words (Tools): a crash first, errors grouped with what they mean and the mod's line
 - 📦 Reports find the game's log in every mod folder, and say how to switch it on
@@ -243,7 +245,6 @@ timeline
 | The faction screen made whole: the town list moves to its own **Settlements** tab; the Faction tab gets the family tree and the faction's **religion** - picking a religion ties everything to it: temples, priests / imams, the religious units only it recruits (crusaders, Ghazis, Mujahideen...), traits | Time; in-game tests |
 | A **religion layer** on the map: each region's mix of religions (as map makers show it), else coloured by its largest religion as the game's town icon does | How map makers draw mixed shares |
 | Character editor as in the game: portrait, traits and ancillaries with their pictures and the game's descriptions, added from a library; the family tree on the faction screen | Time |
-| Recolour a unit texture's faction colour (vanilla-style uniforms painted in the faction's colour) for a new or edited faction, both games; no other 3D model editing | How to find the colour parts of a texture |
 | 3D for everything: buildings, strat-map models, wonders, ships, agents - viewed, replaced and saved (both games); custom models placed on the map, a mode for wonders | Time |
 
 ## 💡 Later

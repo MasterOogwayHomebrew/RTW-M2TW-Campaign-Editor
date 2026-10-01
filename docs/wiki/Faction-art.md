@@ -54,6 +54,27 @@ below to **Replace...** like any other. The figures' textures are Art pictures t
 and a new faction gets copies of its own of the template's (`diplomat_macedon` -> `diplomat_epirus`), so
 replacing them never changes the template's. Both games.
 
+## Recolour all its pictures
+
+**Recolour all its pictures...** (on the Art tab, also in **Tools**) moves every picture of the faction that
+carries its colours to new ones: unit cards and info pictures, the units' battle textures, the flag symbol,
+banners, captain cards and the loading-screen symbol. Both games.
+
+![Recolour: England's red and yellow to green and gold](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/recolour.png)
+
+- **From the colours of**: the colours the pictures carry now. For a faction cloned from a template it finds the
+  template by itself (its cards are copies of the template's); otherwise the faction's own. Click a colour to pick
+  another.
+- **to**: the faction's own primary and secondary colour from `descr_sm_factions.txt` (the Faction tab sets them),
+  or any picked here.
+- A part counts as the faction's colour when it is coloured and its hue is near the old colour. Where the same
+  picture exists for other factions (a unit card, a battle texture), only what differs between them changes - faces,
+  horses, metal and leather stay. Light and shade are kept. White, grey or black 'from' colours have no hue and stay.
+- Every picture with before / after; untick the ones to keep. A picture other factions use too is left alone (the
+  list says so - give the faction its own first).
+- **Write it** writes each file in its own format (TGA of the same depth, DDS with its compression and mipmaps,
+  Medieval II's `.texture`) with one backup; Restore gives every file back.
+
 ## Not yet
 
 The strat-map symbol model; a new strat model from files of your own (the list offers the mod's own).
