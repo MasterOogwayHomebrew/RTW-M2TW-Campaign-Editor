@@ -75,8 +75,11 @@ The campaign map's flags over armies and towns need nothing: the game paints the
 ## Recolour all its pictures
 
 **Recolour all its pictures...** (on the Art tab, also in **Tools**) moves every picture of the faction that
-carries its colours to new ones: unit cards and info pictures, the units' battle textures, the flag symbol,
-banners, captain cards and the loading-screen symbol. Both games.
+carries its colours to new ones: unit cards and info pictures, the units' battle textures and far-away sprites,
+the campaign-map figures (generals, agents, admirals), the faction symbol's texture, the menu buttons and symbols,
+banners (Rome's standards, Medieval II's battle banners), the flag on its towns in battle (Rome), captain cards and
+the loading-screen symbol. Both games. The campaign map's flags over armies and towns are painted by the game itself
+from the faction's colours.
 
 ![Recolour: England's red and yellow to green and gold](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/recolour.png)
 
@@ -91,8 +94,9 @@ banners, captain cards and the loading-screen symbol. Both games.
 - **Touch up by hand**: paint on the 'after' picture what the test missed (a red line, a rim) with *new primary
   colour* / *new secondary colour*, or give pixels back with *keep as it was*; brush size in the picture's pixels,
   wheel to zoom, right drag to move. The touch-ups go with Write it.
-- Every picture with before / after; untick the ones to keep. A picture other factions use too is left alone (the
-  list says so - give the faction its own first).
+- Every picture with before / after; untick the ones to keep. A picture other factions use too: when a line of
+  the game's files names it (a campaign-map figure, a loading logo), the faction gets a copy of its own, recoloured,
+  and its line points at it; otherwise it is left alone and the list says why.
 - **Write it** writes each file in its own format (TGA of the same depth, DDS with its compression and mipmaps,
   Medieval II's `.texture`) with one backup; Restore gives every file back.
 
