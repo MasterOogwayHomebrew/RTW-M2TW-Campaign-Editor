@@ -112,6 +112,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Rome's packed textures (data/packs/*.pak) read for the model thumbnails and 3D
 - 📦 Events and later factions: the campaign's plagues, volcanoes, earthquakes and historic messages - date, place, texts, new ones
 - 📦 Map colour modes (political / diplomacy / religion / none) and a religion map (Medieval II)
 - 📦 The map is a free canvas (Map tab and Terrain editor): dragged past its edges, zoomed out smaller than the view
