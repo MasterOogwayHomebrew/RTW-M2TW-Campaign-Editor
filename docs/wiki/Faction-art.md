@@ -96,7 +96,11 @@ from the faction's colours.
   wheel to zoom, right drag to move. The touch-ups go with Write it.
 - Every picture with before / after; untick the ones to keep. A picture other factions use too: when a line of
   the game's files names it (a campaign-map figure, a loading logo), the faction gets a copy of its own, recoloured,
-  and its line points at it; otherwise it is left alone and the list says why.
+  and its line points at it. A battle banner, the 3D symbol's texture or a town flag several factions name: the
+  faction it is named after keeps the file and the others get copies of their own first (Medieval II's Normans keep
+  England's old banners); crusade and military order banners stay as they are.
+- What most factions that do not wear the colour have the same (a bronze star, a wooden pole, a face) is never
+  recoloured.
 - **Write it** writes each file in its own format (TGA of the same depth, DDS with its compression and mipmaps,
   Medieval II's `.texture`) with one backup; Restore gives every file back.
 
