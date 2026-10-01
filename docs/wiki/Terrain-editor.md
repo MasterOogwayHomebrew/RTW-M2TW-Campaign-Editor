@@ -26,7 +26,13 @@ or off.
 
 ## What it keeps safe
 
-- Land stays land and sea stays sea (the coast is also the regions and the heights - a later step).
+- **Land and sea**: turn sea into land (a new island, a longer coast) or land into sea (a bay, a strait). Land and
+  sea are written in three places that must agree, so each tile changes all of them: `map_regions.tga` (the
+  region's colour or the sea's), `map_ground_types.tga` (a land ground like its neighbours', or shallow sea) and
+  `map_heights.tga` with `map_heights.hgt` (a low shore, or the sea's depth). New land joins the region of the
+  nearest land, or the one picked in *new land joins*; move borders later on the Map (Regions). Refused: drowning a
+  town, port, character, fort or resource, a region's last land, a river (rub it out first) or a port's last land.
+  The Ground brush keeps land as land and sea as sea.
 - Nothing the game refuses is put under a town, port or character.
 - **Rivers**: the game follows a river side to side from where it joins the sea, a river source or another
   river, and stops where two river tiles touch only by a corner - everything past that point is not drawn.

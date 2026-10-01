@@ -150,6 +150,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Terrain editor: Land and sea - a new island, a bay, a strait (regions, ground, heights and map_heights.hgt changed together)
 - 📦 The bigger map, second alpha: smooth coast, heights 3 x higher in proportion (or as they were), map_heights.hgt rebuilt at the new size, rivers as staircases running on to the new coast
 
 ## 🧪 Being tested in the game now (newest first)
@@ -217,7 +218,7 @@ timeline
 | Signed exe (no browser / SmartScreen warnings) | SignPath Foundation's answer (applied) |
 | Terrain: mountains and hills kept in step with the heights (a mountain tile raises the land) | Time; an in-game test |
 | Terrain: a tilted 3D view from the heights and ground (asked on Discord) | Time |
-| Terrain: the coast (land and sea swapped, with regions and heights); a new climate of one's own | Time; in-game tests |
+| Terrain: a new climate of one's own | Time; in-game tests |
 | A new campaign map from scratch (one region, one faction, loads in the game), then grown in the editor | Time; in-game tests |
 | Events and disasters shown and edited on the map (`descr_events.txt`, `descr_disasters.txt`); Rome's wonders (`descr_sm_landmarks.txt`) | Time; in-game tests |
 | Rome's textures read straight from its `data/packs` (when a model's texture is not a loose file) | Time |
