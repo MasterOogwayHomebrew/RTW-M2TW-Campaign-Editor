@@ -23,6 +23,10 @@ game's own error.
 
 Video: [how to send a bug report and a suggestion](https://youtu.be/7MbYR9ywNsI).
 
+Every report - bug or idea - arrives as its own numbered entry with its logs and is read:
+
+![Reports and ideas sent from the editor](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/reports.png)
+
 **An idea or a wish?** The same button: pick "an idea", write what the editor should do - it reaches the author
 the same way (no logs needed).
 

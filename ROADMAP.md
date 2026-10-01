@@ -134,6 +134,8 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Map: a right-click menu (a town's garrison and buildings, open a character, a new army / agent / fleet on that tile); a character dropped on a town's sign goes into the town
+- 📦 Roster: a building level pulls its chain along (lower levels given with it, higher ones taken with it)
 - 📦 Search on the Units & armies tab: towns by name, armies by name or by a unit inside them (asked in a report)
 - 📦 Fixed: a mod without `descr_names.txt` no longer stops the window when a template is picked (from a report)
 
@@ -206,12 +208,10 @@ timeline
 | Mods made on the plain game (slimmed folders) loaded with the game's data behind them | Time |
 | Check mod files: the crash rules modders documented (undeclared ai_label, religions not summing to 100, a region with no town not last, event texts, antitraits, dead ancillaries, absolute paths, a town touching another region) | Time |
 | Limits shown up front on the original exes (REX / M2EX lift most): units (500), building chains (64 Rome / 128 Medieval II), levels (9), religions (9) | Time |
-| Roster: giving a building level also gives the levels below it (a chain is built level by level); taking one also takes the levels above | Time |
 | A religion of one's own, step by step in its own window: name, symbol, text, its temple chain (levels, pictures, effects like the Building editor), which factions follow it - Medieval II and Barbarian Invasion (BI's `descr_beliefs.txt`, `religious_belief` in the buildings); greyed on plain Rome, which has no religions | Time; BI's campaign files for the test |
 | Factions that appear later, each game its own way: Medieval II by date (`dead_until_resurrected`, `spawned_on_event`, an `emergent_faction` event with its regions, armies spawned by the campaign script - like the Mongols and Timurids); Barbarian Invasion hordes (`horde_*` lines) and factions born of a revolt (`spawns_on_revolt`, `shadowed_by`) | Time; in-game tests |
 | Shadow and emergent factions set in the tool (BI `shadowed_by` / `shadowing`, `spawned_on_event`, Medieval II `dead_until_resurrected`, `undiscovered`) | Time; an in-game test |
 | A faction brought over from Rome into Barbarian Invasion (or between any two Rome mods): a faction pack - its units already go over as unit packs | Time; then an in-game test |
-| Map: smarter dragging - an agent or an army dropped on a town goes into it (garrison / agent in the town), towns moved with care; the right button opens a menu of what can be done at that spot, and moving the map gets its own gesture | Time; then an in-game test |
 | Saved games edited (money, characters, towns of a running campaign), if the save files can be read safely - to be researched first | Research: the save format of both games |
 | The window in other languages, picked at the first start: Spanish, French, German, Italian, Russian, Turkish (asked on Discord); hover texts in place of long labels so longer words fit | Time; translators to check the words |
 | A REX settings panel in plain words (faction limit, sprites, arrow visibility, fort upkeep, trade fleets...) | Time |
