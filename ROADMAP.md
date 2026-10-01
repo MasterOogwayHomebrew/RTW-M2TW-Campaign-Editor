@@ -51,7 +51,7 @@ timeline
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | new religion; campaign rules and add-ons | REX settings panel, events and disasters |
 | Safety | - | preview, backup, byte-exact restore, Check mod (with where a faction is named) | pack check | signed exe |
 
-## What it does now (0.21.0)
+## What it does now (0.22.0)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -112,20 +112,21 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- 📦 The Map's legend as a palette: pick a town, fort, watchtower, resource, army or agent, click the map to make one
-- 📦 A faction's religion pulls its temples, guilds, priests and their figures along (Medieval II)
-- 📦 Rome's packed textures (data/packs/*.pak) read for the model thumbnails and 3D
-- 📦 Events and later factions: the campaign's plagues, volcanoes, earthquakes and historic messages - date, place, texts, new ones
-- 📦 Map colour modes (political / diplomacy / religion / none) and a religion map (Medieval II)
-- 📦 The map is a free canvas (Map tab and Terrain editor): dragged past its edges, zoomed out smaller than the view
-- 📦 Map: Edit resources and Edit forts & watchtowers apart, each with its how-to; Rename in the files on the Map
-- 📦 3D view: the mount stands beside the rider; variants counted per part
-- 📦 Character editor as the game's character panel: portrait, attribute pips, traits by their shown names, the retinue as picture cards; the family tree a click away
-- 📦 Traits and retinue: what each trait level and ancillary gives, their names and texts, pictures, new ones as copies
-- 📦 Figures on the campaign map (Art tab): each character type's strat model picked, seen in 3D, its texture replaced; a new faction's figure textures its own
+- (nothing yet)
 
 ## 🧪 Being tested in the game now (newest first)
 
+- 🧪 The Map's legend as a palette: pick a town, fort, watchtower, resource, army or agent, click the map to make one (0.22.0)
+- 🧪 A faction's religion pulls its temples, guilds, priests and their figures along (Medieval II) (0.22.0)
+- 🧪 Rome's packed textures (data/packs/*.pak) read for the model thumbnails and 3D (0.22.0)
+- 🧪 Events and later factions: the campaign's plagues, volcanoes, earthquakes and historic messages - date, place, texts, new ones (0.22.0)
+- 🧪 Map colour modes (political / diplomacy / religion / none) and a religion map (Medieval II) (0.22.0)
+- 🧪 The map is a free canvas (Map tab and Terrain editor): dragged past its edges, zoomed out smaller than the view (0.22.0)
+- 🧪 Map: Edit resources and Edit forts & watchtowers apart, each with its how-to; Rename in the files on the Map (0.22.0)
+- 🧪 3D view: the mount stands beside the rider; variants counted per part (0.22.0)
+- 🧪 Character editor as the game's character panel: portrait, attribute pips, traits by their shown names, the retinue as picture cards; the family tree a click away (0.22.0)
+- 🧪 Traits and retinue: what each trait level and ancillary gives, their names and texts, pictures, new ones as copies (0.22.0)
+- 🧪 Figures on the campaign map (Art tab): each character type's strat model picked, seen in 3D, its texture replaced; a new faction's figure textures its own (0.22.0)
 - 🧪 The main window reorganised: towns picked on the Map, the family on the Faction tab, Add a relative..., a faction's religion (Medieval II), Religions as a work button (0.21.0)
 - 🧪 A unit given to a faction is listed once in a building's description; the Map opens on huge maps (0.21.0)
 - 🧪 Forts and watchtowers placed, moved and removed on the map (a new one copies the campaign's own line); Barbarian Invasion's watchtowers read (0.21.0)
