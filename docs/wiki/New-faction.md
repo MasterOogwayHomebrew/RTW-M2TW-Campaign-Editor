@@ -16,7 +16,8 @@ the game at once, so you can test every change after that straight away. The tem
 6. **Leader** (and the heir if you like): a first name and surname **from the faction's name list** - the
    game crashes on a name that has no text, so the tool only accepts listed names. The new faction copies the
    template's list, or has one of its own: **Name list...** (below).
-7. The other tabs if you want: garrisons, buildings, map, diplomacy, [[Faction art]].
+7. **Victory** (under the leader): what the player must do to win - starts as the template's.
+   The other tabs if you want: garrisons, buildings, map, diplomacy (alliances and wars at the start), [[Faction art]].
 8. **Preview changes**, then **Create faction**.
 9. Start a **new** campaign - old saves do not know the faction.
 
