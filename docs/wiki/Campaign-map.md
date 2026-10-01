@@ -28,6 +28,36 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
 - **Moving a town or port** repaints its pixel in `map_regions.tga`, moves the characters in it, and deletes
   `map.rwm` - the game builds it again on the next start (the first start takes a little longer).
 
+## Pick towns: a building or garrisons for many towns
+
+Tick **Pick towns** on the Map's bar: the political colours, borders and characters go (the ground only), and a
+click on a town picks it - it turns **yellow** - or unpicks it. A **right click** offers:
+
+- **Add a building to the N picked town(s)...** and **Garrisons for the N picked town(s)...** - both open the window
+  *Buildings and garrisons for many towns* with the picked towns already chosen;
+- **Pick every town of <owner>** (on a town), **Unpick all**.
+
+The same window is in **Tools** and on the Buildings tab (**Many towns at once...**). All towns of the campaign on the
+left - filter them by owner, level, city / castle (Medieval II) or name, **Add all shown** - the chosen ones on the
+right, with **What happens** in each:
+
+![Garrisons for many towns](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/many_towns.png)
+
+- **A building**: pick the chain and level. A town that has the chain gets it raised (never lowered, unless you pick
+  *set it to this level*). Left out, with the reason: a town too small for the level (`settlement_min`), a castle's
+  building in a city or a city's in a castle (Medieval II), a level the owner's `requires factions { }` does not
+  allow (tick the box to put it in anyway - the game loads such a building, the owner just cannot build it again),
+  a port building where the town has no port on the map. **Take a building out** removes a chain. The governor's
+  building (walls / castle) follows the town's level and is not offered.
+- **Garrisons**: units per town *from 2 to 6* (any range up to 20) and the upkeep they may cost together per town
+  (500, 1000... - empty for no limit). **Draw the garrisons** picks them at random from the units each owner may
+  recruit (its `ownership` and a recruit line of some building; generals' bodyguards and - unless ticked - siege
+  engines left out); a rebel town draws from the rebel armies nearest to it, so a Greek town gets Greek rebels.
+  Draw again for others. They join the army that holds the town, or replace its units (a general keeps his
+  bodyguard); a town nobody holds gets a captain.
+
+**Preview** shows every line, **Write it** writes `descr_strat.txt` with a backup - Restore gives it back.
+
 ## Forts
 
 Forts and watchtowers of `descr_strat.txt` (Medieval II, REX: `fort x y ... permanent name ...`) are drawn as small

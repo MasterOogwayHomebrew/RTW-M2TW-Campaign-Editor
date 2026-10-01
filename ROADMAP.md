@@ -151,6 +151,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Buildings and garrisons for many towns: pick towns on the Map (yellow) or by owner / level / city / castle; a building in all of them, or random garrisons under an upkeep limit
 - 📦 The game's log in plain words (Tools): a crash first, errors grouped with what they mean and the mod's line
 - 📦 Reports find the game's log in every mod folder, and say how to switch it on
 

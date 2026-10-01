@@ -43,6 +43,11 @@ with its pictures. The lists filter (**Show**: a faction, a culture, a category,
   other units; a new unit gets one), and `data/sounds/events.dat` / `events.idx` are removed with a backup - the game
   builds them again from the texts on the next start. The voice class is the `voice_type` line.
 
+## Many towns at once
+
+A building level for many towns of any owner, or random garrisons under an upkeep limit: **Tools > Buildings and
+garrisons for many towns** - see [Campaign map: Pick towns](Campaign-map#pick-towns-a-building-or-garrisons-for-many-towns).
+
 ## Roster (Edit faction)
 
 Every unit and building level of the mod and whether the faction has it. **Give** / **Take away**. A unit is
