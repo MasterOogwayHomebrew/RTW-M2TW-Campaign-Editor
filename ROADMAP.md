@@ -8,28 +8,26 @@ Where RTW & M2TW Campaign Editor stands, what comes next and what each step need
 Found a bug or a crash? Press **Report a bug / Suggest** - the logs (your names cut out) and a screenshot reach the
 author in one click ([video](https://youtu.be/7MbYR9ywNsI)). That is the fastest way to a fix.
 
-## 🗺️ The big one (0.25.0): make the whole campaign map 3 x bigger - in one click
+## 🗺️ New in 0.25.0: rescale the whole campaign map 3 x
 
-**The feature modders keep asking for, and - as far as we know - no other tool does: Tools > Make the campaign map 3 x
-bigger.** Every tile of your campaign map becomes a 3 x 3 block, so there is room between the towns for the new
-regions, factions and stories you always wanted - Rome (with REX) and Medieval II (with M2EX) alike.
+**Tools > Make the campaign map 3 x bigger** (alpha), Rome (REX) and Medieval II (M2EX). Each tile of
+`map_regions.tga` becomes a 3 x 3 block; everything tied to the map is converted with it:
 
-And the map stays **ready to play**:
+- **Positions** (`descr_strat.txt`, `descr_events.txt`, ...): towns, characters, fleets, resources, forts,
+  watchtowers, wonders and event places go to the middle of their new block.
+- **Ports**: re-placed on the shore pixel of their own region.
+- **Pictures**: `map_regions`, `map_ground_types`, `map_climates`, `map_features`, `map_trade_routes`, fog,
+  roughness, disasters and radar maps scaled with exact colours (no blending).
+- **Heights**: `map_heights` interpolated between the old points, land and sea kept apart so the coastline matches
+  the regions; roughness interpolated too.
+- **Rivers**: kept 1 pixel wide (the game crashes on a 2-pixel river), redrawn through the block centres.
+- `descr_terrain.txt` gets the new size; `map.rwm` is deleted so the game rebuilds it.
+- Preview of every file, one backup, Restore byte-exact.
 
-- **Every town, port, army, agent, fleet, resource, fort, watchtower, wonder and event position** moves with the
-  map, into the middle of its block - nothing has to be placed again by hand.
-- **Ports stay on their shore**, touching the land of the region they serve.
-- **Regions and borders** grow with the map, every colour exact.
-- **The relief is smooth** - the heights are blended, not blown up into squares, while the coast stays exactly
-  where the regions have it.
-- **Rivers stay 1 pixel wide** (the game crashes on a 2-pixel river), redrawn through the new tiles.
-- Ground, climates, fog, roughness, trade routes, disasters, radar maps and `descr_terrain.txt` all follow;
-  `map.rwm` is removed so the game builds it fresh.
-- **Nothing is lost**: you see every file before it is written, one backup is made, Restore gives every byte back.
-
-Checked on both vanilla campaigns: every one of their 103 / 112 towns, 177 / 216 characters and 75 / 77 ports in
-place. It is an alpha - please try it in the game and tell us how it plays (coordinates inside scripts are not
-moved yet: the tool counts them for you).
+Not converted: coordinates inside scripts (counted and listed). Without REX / M2EX the original exes stop at
+510 tiles - the tool warns. Checked on both vanilla campaigns (103 / 112 towns, 177 / 216 characters, 75 / 77 ports
+in place) and started in the game. Known limits of the alpha: plains are not flattened and mountain ridges are
+softened by the interpolation. Video: [rescaling the whole map](https://youtu.be/kkfI-WulRmU).
 
 ## Where it started
 
@@ -103,6 +101,7 @@ timeline
 - ✅ Settlement names by the owner's culture (REX / M2EX rename a town when it changes hands); the map shows the new owner's name at once; every town's names in one table *(in-game ✓ on Medieval II with M2EX; [video](https://youtu.be/umwRyWkHoDE))*
 - 📦 Big maps load (a tester's map of 5456 x 2464 tiles)
 - 📦 Forts and watchtowers shown on the map; no one is placed on them
+- ✅ Make the campaign map 3 x bigger (alpha): everything on the map moved with it, rivers 1 pixel, the relief smooth *(in-game ✓ alpha; [video](https://youtu.be/kkfI-WulRmU))*
 
 ### Characters
 - 📦 Character editor for any faction: names, ages, traits with levels, ancillaries
@@ -142,7 +141,6 @@ timeline
 - 🧪 The Map's legend as a palette: pick a town, fort, watchtower, resource, army or agent, click the map to make one (0.22.0)
 - 🧪 Alliances and wars at the start (both games): one status per faction that pulls the AI feelings along, every value in words; Medieval II's diplomacy read as the game writes it (`faction_standings`), a new Medieval II faction at war with the rebels (0.23.0)
 - 🧪 Victory conditions on the Faction tab: regions to hold and take, factions to outlive, Rome's goal - long and short campaign (0.23.0)
-- 🧪 Make the campaign map 3 x bigger (alpha, both games): towns, ports, armies, agents, resources, forts, wonders, rivers kept right, the relief smooth; scripts warned (0.24.0, 0.25.0)
 - 🧪 Wonders on the Map (Rome): shown, dragged, added, removed; the map's real size shown over the map (0.25.0)
 - 🧪 A Settings window (look, language, game folder, the map's look, report contact, set-up questions, folders); Check mod renamed Check mod files (0.24.0)
 - 🧪 The family tree folded behind a Family tree button on the Faction tab; hover texts on the work buttons (0.23.0)
