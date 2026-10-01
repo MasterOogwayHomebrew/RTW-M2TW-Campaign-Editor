@@ -200,7 +200,7 @@ timeline
 | A new campaign map from scratch (one region, one faction, loads in the game), then grown in the editor | Time; in-game tests |
 | Events and disasters shown and edited on the map (`descr_events.txt`, `descr_disasters.txt`); Rome's wonders (`descr_sm_landmarks.txt`) | Time; in-game tests |
 | Rome's textures read straight from its `data/packs` (when a model's texture is not a loose file) | Time |
-| The bigger map, after the alpha: coordinates in scripts moved too, grow or cut the map's edges, other factors | In-game tests of the alpha |
+| The bigger map, after the alpha: plains really flat and mountains with sharp peaks (heights follow the ground type), clean coasts; coordinates in scripts moved too, grow or cut the map's edges | Time; in-game tests |
 | Faction packs and building packs (like unit packs) | Time; then an in-game test |
 | Mods made on the plain game (slimmed folders) loaded with the game's data behind them | Time |
 | Check mod files: the crash rules modders documented (undeclared ai_label, religions not summing to 100, a region with no town not last, event texts, antitraits, dead ancillaries, absolute paths, a town touching another region) | Time |
@@ -230,5 +230,7 @@ timeline
 | A new campaign-select map drawn from the faction's towns (built in 0.4, put away for now - the original map stays) | Its look checked in both games' start screens |
 | Roads and trade routes: see where the game lays them after a new town or port, warn where no path can run | How the engines lay them; in-game tests |
 | A **clean faction template**: a new faction without the template's own rules and triggers (the Senate, the Pope, crusades, hordes, scripts), its flags and symbols made white to paint | A list of each game's faction-only rules, agreed first |
-| Unit texture recolour to a faction's colours | Texture files to work on |
 | Rome characters with portraits of their own | Whether REX reads a `portrait` line |
+| **Borders drawn by the tool**: natural region borders that follow mountains, hills and rivers; new regions generated in an area | How map tools of other games do it; in-game tests |
+| **A smaller map** (the reverse of 3 x bigger): the land and heights first, then towns, ports and resources placed back by priority (big towns and capitals stay), regions merged, factions left to the modder | The tool-drawn borders first |
+| **A campaign map from the real world**: pick an area on a world map (e.g. Italy or Sicily), get land, sea, real heights, rivers and climate in the game's format; optional real town names and borders filtered by the map's scale; every step generated or drawn by hand, any step skipped | Open map data (OpenStreetMap, GeoNames, SRTM / Copernicus heights, climate maps); the tool-drawn borders first |
