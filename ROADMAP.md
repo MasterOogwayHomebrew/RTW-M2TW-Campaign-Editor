@@ -112,6 +112,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Map colour modes (political / diplomacy / religion / none) and a religion map (Medieval II)
 - 📦 The map is a free canvas (Map tab and Terrain editor): dragged past its edges, zoomed out smaller than the view
 - 📦 Map: Edit resources and Edit forts & watchtowers apart, each with its how-to; Rename in the files on the Map
 - 📦 3D view: the mount stands beside the rider; variants counted per part
@@ -182,7 +183,6 @@ timeline
 | Open the mod in the game's own campaign-map editor (`REX.exe -strat_ed=a`, M2EX) | Time |
 | The faction screen made whole: the town list moves to its own **Settlements** tab; the Faction tab gets the family tree and the faction's **religion** - picking a religion ties everything to it: temples, priests / imams, the religious units only it recruits (crusaders, Ghazis, Mujahideen...), traits | Time; in-game tests |
 | A **religion layer** on the map: each region's mix of religions (as map makers show it), else coloured by its largest religion as the game's town icon does | How map makers draw mixed shares |
-| Map modes instead of many layers at once (a mode turns off what clashes with it) | Time |
 | Character editor as in the game: portrait, traits and ancillaries with their pictures and the game's descriptions, added from a library; the family tree on the faction screen | Time |
 | 3D for everything: buildings, strat-map models, wonders, ships, agents - viewed, replaced and saved (both games); custom models placed on the map, a mode for wonders | Time |
 
