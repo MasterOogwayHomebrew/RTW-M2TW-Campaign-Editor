@@ -43,7 +43,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 
 ## The road so far
 
-The first four days (0.1.0 → 0.29.0): from a one-mod faction cloner to a campaign editor for two games.
+The first four days (0.1.0 → 0.29.1): from a one-mod faction cloner to a campaign editor for two games.
 
 ```mermaid
 timeline
@@ -78,7 +78,7 @@ timeline
         0.26 : Right-click menu on the map : Search in Units and armies : Building chains kept whole
         0.27 : Units and buildings brought from another mod, step by step
         0.28 : The bigger map smooth - coast, relief 3x higher, its heights file : Land and sea brush - a new island
-        0.29 : Recolour every faction picture : Faction emblem from one picture : Buildings and garrisons for many towns : Natural edges on the bigger map
+        0.29 : Recolour every faction picture : Faction emblem from one picture : Buildings and garrisons for many towns : Natural edges on the bigger map : Raze Settlement for Medieval II (0.29.1)
 ```
 
 | Area | Confirmed in game | Released | Being tested | Next |
@@ -90,7 +90,7 @@ timeline
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | religions, campaign rules, add-ons | REX settings panel, window in other languages |
 | Safety | - | preview, backup, byte-exact restore, Check mod files, report a bug in one click, settings | pack check | signed exe |
 
-## What it does now (0.29.0)
+## What it does now (0.29.1)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -152,11 +152,12 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- 📦 Raze Settlement for Medieval II (M2EX): a 4th button on the capture scroll, the ruins to the rebels
-- 📦 Fixed: a new Medieval II faction keeps its template's AI rule set (`ai_label`) and money every turn (`denari_kings_purse`)
+- (nothing yet)
 
 ## 🧪 Being tested in the game now (newest first)
 
+- 🧪 Raze Settlement for Medieval II (M2EX): a 4th button on the capture scroll, the ruins to the rebels (0.29.1)
+- 🧪 Fixed: a new Medieval II faction keeps its template's AI rule set (`ai_label`) and money every turn (`denari_kings_purse`) (0.29.1)
 - 🧪 Medieval II faction logos (M2EX xml sprite sheets) on the Art tab and in the emblem; shared banners and 3D symbol textures pulled apart so a recolour changes one faction only (0.29.0)
 - 🧪 The bigger map: ground and climates with natural edges (no 3 x 3 squares); the preview says plainly nothing is written until 'Write it' and shows the new size after (0.29.0)
 - 🧪 Faction emblem: one picture made into every place the game shows it (menu buttons in all states, loading screen, logos), each in its own size (0.29.0)
