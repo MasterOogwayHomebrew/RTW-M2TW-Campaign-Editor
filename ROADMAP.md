@@ -43,7 +43,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 
 ## The road so far
 
-The first four days (0.1.0 → 0.27.0): from a one-mod faction cloner to a campaign editor for two games.
+The first four days (0.1.0 → 0.28.0): from a one-mod faction cloner to a campaign editor for two games.
 
 ```mermaid
 timeline
@@ -77,18 +77,19 @@ timeline
         0.25 : Smooth relief on the bigger map : Wonders on the map
         0.26 : Right-click menu on the map : Search in Units and armies : Building chains kept whole
         0.27 : Units and buildings brought from another mod, step by step
+        0.28 : The bigger map smooth - coast, relief 3x higher, its heights file : Land and sea brush - a new island
 ```
 
 | Area | Confirmed in game | Released | Being tested | Next |
 |---|---|---|---|---|
 | Factions | new faction, faction limit, edit, garrisons, mod folder | settlement size, rebels, diplomacy, roster | alliances and wars at the start, victory conditions, building chains kept whole | faction colour on unit textures |
-| Campaign map | tiles, moving towns, new regions, terrain, heights, find, town names, map 3x bigger (alpha) | resources, climates, forts, big maps | wonders, events, right-click menu, drop into a town, legend as a palette | flat plains and sharp peaks, borders drawn by the tool, a map from the real world |
+| Campaign map | tiles, moving towns, new regions, terrain, heights, find, town names, map 3x bigger (alpha) | resources, climates, forts, big maps | the bigger map smooth (coast, heights), land and sea brush, wonders, events, right-click menu, drop into a town | flat plains and sharp peaks, borders drawn by the tool, a map from the real world |
 | Characters | - | name lists | character panel, traits and retinue, family tree, portraits | - |
 | Units, buildings, art | faction art | editors, unit packs, modeldb, REX abilities | units and buildings brought from another mod, replace a model, 3D view of Rome and Medieval II models, new unit / building step by step, unit voices | textures from Rome's packs |
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | religions, campaign rules, add-ons | REX settings panel, window in other languages |
 | Safety | - | preview, backup, byte-exact restore, Check mod files, report a bug in one click, settings | pack check | signed exe |
 
-## What it does now (0.27.0)
+## What it does now (0.28.0)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -150,11 +151,12 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- 📦 Terrain editor: Land and sea - a new island, a bay, a strait (regions, ground, heights and map_heights.hgt changed together)
-- 📦 The bigger map, second alpha: smooth coast, heights 3 x higher in proportion (or as they were), map_heights.hgt rebuilt at the new size, rivers as staircases running on to the new coast
+- (nothing yet)
 
 ## 🧪 Being tested in the game now (newest first)
 
+- 🧪 Terrain editor: Land and sea - a new island, a bay, a strait (regions, ground, heights and map_heights.hgt changed together) (0.28.0)
+- 🧪 The bigger map, second alpha: smooth coast, heights 3 x higher in proportion (or as they were), map_heights.hgt rebuilt at the new size, rivers as staircases running on to the new coast (0.28.0)
 - 🧪 Bring units and buildings from another mod, step by step (Unit and Building editors), with a wiki guide (0.27.0)
 - 🧪 Map: a right-click menu (a town's garrison and buildings, open a character, a new army / agent / fleet on that tile); a character dropped on a town's sign goes into the town (0.26.0)
 - 🧪 Roster: a building level pulls its chain along (lower levels given with it, higher ones taken with it) (0.26.0)
