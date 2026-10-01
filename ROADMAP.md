@@ -72,7 +72,7 @@ timeline
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | new religion; campaign rules and add-ons | REX settings panel, events and disasters |
 | Safety | - | preview, backup, byte-exact restore, Check mod files (with where a faction is named) | pack check | signed exe |
 
-## What it does now (0.25.0)
+## What it does now (0.26.0)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -134,13 +134,14 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- 📦 Map: a right-click menu (a town's garrison and buildings, open a character, a new army / agent / fleet on that tile); a character dropped on a town's sign goes into the town
-- 📦 Roster: a building level pulls its chain along (lower levels given with it, higher ones taken with it)
-- 📦 Search on the Units & armies tab: towns by name, armies by name or by a unit inside them (asked in a report)
-- 📦 Fixed: a mod without `descr_names.txt` no longer stops the window when a template is picked (from a report)
+- (nothing yet)
 
 ## 🧪 Being tested in the game now (newest first)
 
+- 🧪 Map: a right-click menu (a town's garrison and buildings, open a character, a new army / agent / fleet on that tile); a character dropped on a town's sign goes into the town (0.26.0)
+- 🧪 Roster: a building level pulls its chain along (lower levels given with it, higher ones taken with it) (0.26.0)
+- 🧪 Search on the Units & armies tab: towns by name, armies by name or by a unit inside them (asked in a report) (0.26.0)
+- 🧪 Fixed: a mod without `descr_names.txt` no longer stops the window when a template is picked (from a report) (0.26.0)
 - 🧪 The Map's legend as a palette: pick a town, fort, watchtower, resource, army or agent, click the map to make one (0.22.0)
 - 🧪 Alliances and wars at the start (both games): one status per faction that pulls the AI feelings along, every value in words; Medieval II's diplomacy read as the game writes it (`faction_standings`), a new Medieval II faction at war with the rebels (0.23.0)
 - 🧪 Victory conditions on the Faction tab: regions to hold and take, factions to outlive, Rome's goal - long and short campaign (0.23.0)
