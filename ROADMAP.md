@@ -134,7 +134,8 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- (nothing yet)
+- 📦 Search on the Units & armies tab: towns by name, armies by name or by a unit inside them (asked in a report)
+- 📦 Fixed: a mod without `descr_names.txt` no longer stops the window when a template is picked (from a report)
 
 ## 🧪 Being tested in the game now (newest first)
 
