@@ -49,7 +49,7 @@ timeline
 | Characters | - | name lists | character editor, family tree, portraits | - |
 | Units, buildings, art | faction art | editors, unit packs, modeldb, REX abilities | replace a model, 3D view (both games), new unit / building step by step, unit voices | textures from Rome's packs |
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | new religion; campaign rules and add-ons | REX settings panel, events and disasters |
-| Safety | - | preview, backup, byte-exact restore, Check / Scan mod | pack check | signed exe |
+| Safety | - | preview, backup, byte-exact restore, Check mod (with where a faction is named) | pack check | signed exe |
 
 ## What it does now (0.21.0)
 
@@ -107,7 +107,7 @@ timeline
 ### Safety
 - 📦 Preview of every file and line before writing; only the lines meant change, the rest stays byte for byte
 - 📦 A backup of every write; Restore gives the original back byte for byte (any write and every later one in one go); Undo / Redo in the window
-- 📦 Check mod (consistency report), Scan mod (every mention of a faction; game, REX and mod files told apart)
+- 📦 Check mod (consistency report; with a faction picked, every place it is named - game, REX and mod files told apart)
 - 📦 Log, Save logs (zip) for bug reports; Light / Dark look; smaller windows keep every button, side panels can be dragged wider
 
 ## 📦 Built, comes with the next release
