@@ -51,7 +51,7 @@ timeline
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | new religion; campaign rules and add-ons | REX settings panel, events and disasters |
 | Safety | - | preview, backup, byte-exact restore, Check mod files (with where a faction is named) | pack check | signed exe |
 
-## What it does now (0.23.0)
+## What it does now (0.24.0)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -119,8 +119,8 @@ timeline
 - 🧪 The Map's legend as a palette: pick a town, fort, watchtower, resource, army or agent, click the map to make one (0.22.0)
 - 🧪 Alliances and wars at the start (both games): one status per faction that pulls the AI feelings along, every value in words; Medieval II's diplomacy read as the game writes it (`faction_standings`), a new Medieval II faction at war with the rebels (0.23.0)
 - 🧪 Victory conditions on the Faction tab: regions to hold and take, factions to outlive, Rome's goal - long and short campaign (0.23.0)
-- 🧪 Make the campaign map 3 x bigger (alpha, both games): towns, ports, armies, resources, rivers kept right; scripts warned (Unreleased)
-- 🧪 A Settings window (look, language, game folder, the map's look, report contact, set-up questions, folders); Check mod renamed Check mod files (Unreleased)
+- 🧪 Make the campaign map 3 x bigger (alpha, both games): towns, ports, armies, resources, rivers kept right; scripts warned (0.24.0)
+- 🧪 A Settings window (look, language, game folder, the map's look, report contact, set-up questions, folders); Check mod renamed Check mod files (0.24.0)
 - 🧪 The family tree folded behind a Family tree button on the Faction tab; hover texts on the work buttons (0.23.0)
 - 🧪 A faction's religion pulls its temples, guilds, priests and their figures along (Medieval II) (0.22.0)
 - 🧪 Rome's packed textures (data/packs/*.pak) read for the model thumbnails and 3D (0.22.0)
