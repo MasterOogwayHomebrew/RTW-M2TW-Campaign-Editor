@@ -61,3 +61,20 @@ want to hold is burned and left to regrow.
 It is a REX module (`script/modules/sack_settlement.nut`): REX loads it when the campaign starts, whatever mod runs.
 The game's log (`system.log.txt`) then says `[SACK] Sack Settlement module loaded`. Plain Rome has no scripts - the
 add-on does nothing there.
+
+### Raze Settlement (Medieval II + M2EX)
+
+The Medieval II brother of Sack Settlement. Medieval II already has Occupy / Sack / Exterminate on the capture
+scroll; Raze Settlement is a 4th button under them. It presses the game's own Exterminate, then tears down every
+building except the chains you keep (the core chain - walls are its levels in Medieval II - and roads by default),
+removes most of the people, pays a reward per building and per inhabitant, and gives the ruins to the rebels
+(`give_settlement slave`: M2EX turns the town rebel and installs a fresh rebel garrison itself).
+
+- **Who may raze:** only the player (default), everyone, only the computer, or the factions you pick. A computer
+  faction allowed to raze does it whenever it exterminates a town.
+- **The 4th button** off: no button - Exterminate razes for the factions allowed.
+
+It is Lua for M2EX (its EOP-compatible scripts): the file goes to `<mod>/eopData/eopScripts/raze_settlement.lua`,
+and one line in that folder's `luaPluginScript.lua` loads it (the file is made when the mod has none; a mod's own
+lines and handlers keep working - the add-on calls them first). The game's log says `[RAZE] Raze Settlement loaded`.
+Vanilla Medieval II runs no scripts - the add-on does nothing there.

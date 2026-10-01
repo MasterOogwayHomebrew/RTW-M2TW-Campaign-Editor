@@ -152,7 +152,8 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- (nothing yet)
+- 📦 Raze Settlement for Medieval II (M2EX): a 4th button on the capture scroll, the ruins to the rebels
+- 📦 Fixed: a new Medieval II faction keeps its template's AI rule set (`ai_label`) and money every turn (`denari_kings_purse`)
 
 ## 🧪 Being tested in the game now (newest first)
 
