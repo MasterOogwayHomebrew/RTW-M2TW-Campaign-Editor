@@ -112,3 +112,17 @@ table: one column per culture plus *every other*, the owner, its culture and the
 column, filter by a culture (towns with or without a name for it), by the owner's culture, by what waits for Apply,
 or search. Double click a culture's cell to type a name in place (Enter keeps it, Esc drops it, an empty cell
 removes it). Towns the mod's own campaign script renames are shown grey and are not edited here.
+
+## Make the map 3 x bigger (Tools)
+
+**Tools > Make the campaign map 3 x bigger** turns every tile into a 3 x 3 block (both games). Towns, ports, armies,
+agents, fleets, resources, forts, watchtowers, wonders and event positions keep their places; ports stay on their
+shore; the relief is blended smooth; rivers stay 1 pixel wide; every picture of the map and `descr_terrain.txt`
+follow, `map.rwm` is removed. The window lists every file first; one backup, Restore gives it all back.
+Coordinates in scripts are not moved yet (the tool counts them). Past 510 tiles the original exes need REX / M2EX.
+The map's real size is shown over the map, bottom left.
+
+## Wonders (Rome)
+
+Tick **Edit forts, towers & wonders**: the wonders (`landmark` lines of `descr_strat.txt`) show as golden pyramids -
+drag one with the right mouse button, click it and **Delete picked**, or pick `wonder: <type>` and **Place new**.

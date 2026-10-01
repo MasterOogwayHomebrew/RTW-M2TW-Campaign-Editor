@@ -8,6 +8,29 @@ Where RTW & M2TW Campaign Editor stands, what comes next and what each step need
 Found a bug or a crash? Press **Report a bug / Suggest** - the logs (your names cut out) and a screenshot reach the
 author in one click ([video](https://youtu.be/7MbYR9ywNsI)). That is the fastest way to a fix.
 
+## 🗺️ The big one (0.25.0): make the whole campaign map 3 x bigger - in one click
+
+**The feature modders keep asking for, and - as far as we know - no other tool does: Tools > Make the campaign map 3 x
+bigger.** Every tile of your campaign map becomes a 3 x 3 block, so there is room between the towns for the new
+regions, factions and stories you always wanted - Rome (with REX) and Medieval II (with M2EX) alike.
+
+And the map stays **ready to play**:
+
+- **Every town, port, army, agent, fleet, resource, fort, watchtower, wonder and event position** moves with the
+  map, into the middle of its block - nothing has to be placed again by hand.
+- **Ports stay on their shore**, touching the land of the region they serve.
+- **Regions and borders** grow with the map, every colour exact.
+- **The relief is smooth** - the heights are blended, not blown up into squares, while the coast stays exactly
+  where the regions have it.
+- **Rivers stay 1 pixel wide** (the game crashes on a 2-pixel river), redrawn through the new tiles.
+- Ground, climates, fog, roughness, trade routes, disasters, radar maps and `descr_terrain.txt` all follow;
+  `map.rwm` is removed so the game builds it fresh.
+- **Nothing is lost**: you see every file before it is written, one backup is made, Restore gives every byte back.
+
+Checked on both vanilla campaigns: every one of their 103 / 112 towns, 177 / 216 characters and 75 / 77 ports in
+place. It is an alpha - please try it in the game and tell us how it plays (coordinates inside scripts are not
+moved yet: the tool counts them for you).
+
 ## Where it started
 
 Version 0.1: a small script for one mod (Barbarian Empires REX on Rome: Total War) that cloned a faction
@@ -51,7 +74,7 @@ timeline
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | new religion; campaign rules and add-ons | REX settings panel, events and disasters |
 | Safety | - | preview, backup, byte-exact restore, Check mod files (with where a faction is named) | pack check | signed exe |
 
-## What it does now (0.24.0)
+## What it does now (0.25.0)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -119,7 +142,8 @@ timeline
 - 🧪 The Map's legend as a palette: pick a town, fort, watchtower, resource, army or agent, click the map to make one (0.22.0)
 - 🧪 Alliances and wars at the start (both games): one status per faction that pulls the AI feelings along, every value in words; Medieval II's diplomacy read as the game writes it (`faction_standings`), a new Medieval II faction at war with the rebels (0.23.0)
 - 🧪 Victory conditions on the Faction tab: regions to hold and take, factions to outlive, Rome's goal - long and short campaign (0.23.0)
-- 🧪 Make the campaign map 3 x bigger (alpha, both games): towns, ports, armies, resources, rivers kept right; scripts warned (0.24.0)
+- 🧪 Make the campaign map 3 x bigger (alpha, both games): towns, ports, armies, agents, resources, forts, wonders, rivers kept right, the relief smooth; scripts warned (0.24.0, 0.25.0)
+- 🧪 Wonders on the Map (Rome): shown, dragged, added, removed; the map's real size shown over the map (0.25.0)
 - 🧪 A Settings window (look, language, game folder, the map's look, report contact, set-up questions, folders); Check mod renamed Check mod files (0.24.0)
 - 🧪 The family tree folded behind a Family tree button on the Faction tab; hover texts on the work buttons (0.23.0)
 - 🧪 A faction's religion pulls its temples, guilds, priests and their figures along (Medieval II) (0.22.0)
