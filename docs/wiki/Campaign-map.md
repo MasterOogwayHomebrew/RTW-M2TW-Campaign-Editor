@@ -74,6 +74,13 @@ resources are the ones on its land; **Region tags (hidden resources)...** edits 
 
 Religions per region (**Religions...**); castles; agents such as merchants, priests and princesses.
 
+**A faction's religion** (the Religion field of the Faction form) pulls what hangs on it along: the faction leaves
+the old faith's buildings (temples and that faith's guilds - the `religion X` chains of export_descr_buildings.txt,
+their levels and the priest lines in them) and gets the new faith's wherever a faction of that faith has them (one
+of its own culture first, as a model), and its priest, bishop and cardinal on the campaign map take that
+faction's figures. Preview lists every line; units and traits of the old faith (crusaders, jihad, the Pope's
+favour) stay as they are - Preview says so.
+
 **New religion...** (Map tab, Regions) adds a religion of your own - e.g. Judaism - everywhere the game needs
 it: descr_religions.txt (its name and symbol), descr_religions_lookup.txt, text/religions.txt (without its
 text the game crashes silently), its symbol in ui/pips (your picture as a 24-bit TGA, or a copy of another
