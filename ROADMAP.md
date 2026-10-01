@@ -112,6 +112,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Events and later factions: the campaign's plagues, volcanoes, earthquakes and historic messages - date, place, texts, new ones
 - 📦 Map colour modes (political / diplomacy / religion / none) and a religion map (Medieval II)
 - 📦 The map is a free canvas (Map tab and Terrain editor): dragged past its edges, zoomed out smaller than the view
 - 📦 Map: Edit resources and Edit forts & watchtowers apart, each with its how-to; Rename in the files on the Map

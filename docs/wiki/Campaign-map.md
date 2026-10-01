@@ -53,6 +53,16 @@ in one Apply. **Edit region...** opens a region's data again. **Rename...** (bes
 
 **Settlements tab:** every region and its town, both names. **Rename in the files...** (also on the Map: Edit regions, right click the region, then Rename in the files...) changes the system names (`Latium`, `Rome`) everywhere the mod uses them - descr_regions, descr_strat, the names lookup and texts of every language, mercenaries, win conditions, campaign scripts, trait and ancillary conditions - as whole words; comments, descriptions, lines naming a faction of the same name and people's names (descr_names, names.txt, a character named like the town) stay. Preview first, a backup, `map.rwm` removed. Tip: keep the name players see and the name in the files alike.
 
+## Events and factions that appear later
+
+**Tools > Events and later factions...** (both games): the campaign's `descr_events.txt` - historic messages, and
+plagues, volcanoes, earthquakes at a place. Each event's date (Rome: years from the start and optionally summer or
+winter, `14 winter`; Medieval II: a turn, or two turns the game picks one between, `210 220` - a date the game
+would not read is refused), its place (x, y; empty = a message only; **Show on the map**), the title and text
+players see (`historic_events.txt`). **New event...**, **Remove**, Preview, Write it in with a backup. Below the
+list: the factions that start dead and appear later (`dead_until_resurrected` in descr_strat.txt) with the campaign
+script lines that wake them (Medieval II: the Mongols and Timurids) - shown, not changed.
+
 ## Resources
 
 Trade goods on the map can be placed, moved and removed; one per tile. Tick **Edit resources**: a bar opens under
