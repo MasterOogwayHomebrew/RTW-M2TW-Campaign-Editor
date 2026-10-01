@@ -70,6 +70,9 @@ banners, captain cards and the loading-screen symbol. Both games.
 - A part counts as the faction's colour when it is coloured and its hue is near the old colour. Where the same
   picture exists for other factions (a unit card, a battle texture), only what differs between them changes - faces,
   horses, metal and leather stay. Light and shade are kept. White, grey or black 'from' colours have no hue and stay.
+- **Touch up by hand**: paint on the 'after' picture what the test missed (a red line, a rim) with *new primary
+  colour* / *new secondary colour*, or give pixels back with *keep as it was*; brush size in the picture's pixels,
+  wheel to zoom, right drag to move. The touch-ups go with Write it.
 - Every picture with before / after; untick the ones to keep. A picture other factions use too is left alone (the
   list says so - give the faction its own first).
 - **Write it** writes each file in its own format (TGA of the same depth, DDS with its compression and mipmaps,
