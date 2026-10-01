@@ -117,8 +117,13 @@ removes it). Towns the mod's own campaign script renames are shown grey and are 
 
 **Tools > Make the campaign map 3 x bigger** turns every tile into a 3 x 3 block (both games). Towns, ports, armies,
 agents, fleets, resources, forts, watchtowers, wonders and event positions keep their places; ports stay on their
-shore; the relief is blended smooth; rivers stay 1 pixel wide; every picture of the map and `descr_terrain.txt`
-follow, `map.rwm` is removed. The window lists every file first; one backup, Restore gives it all back.
+shore; the coast is drawn smooth, not in squares; the relief is blended smooth, and `map_heights.hgt` (the game's own
+copy of the heights, read instead of the picture) is written at the new size; the hills, mountains and sea floor are
+made 3 x higher so the slopes stay as steep (or keep the old heights: "Write it, heights as they are"); rivers stay
+1 pixel wide and run on to the new coast; every picture of the map and `descr_terrain.txt` follow, `map.rwm` is
+removed. The window lists every file first; one backup, Restore gives it all back.
+
+![The coast of Italy made 3 x bigger: before (squares), after (smooth)](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/bigger_map_coast.png)
 Coordinates in scripts are not moved yet (the tool counts them). Past 510 tiles the original exes need REX / M2EX.
 The map's real size is shown over the map, bottom left.
 

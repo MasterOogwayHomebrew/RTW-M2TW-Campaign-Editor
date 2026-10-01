@@ -26,6 +26,8 @@ What comes along: the unit's lines, its battle models (Medieval II: in `descr_mo
 `battle_models.modeldb`), mount, engine or animal, every mesh / texture / sprite they name, its cards and info
 pictures for each new owner, its name and descriptions, and the recruit lines.
 
+![Step 5: where the brought units are recruited in your mod](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/bring_units.png)
+
 ## Buildings - step by step
 
 The same window from the **Building editor**: **Bring from another mod...**
