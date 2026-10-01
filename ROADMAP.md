@@ -43,7 +43,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 
 ## The road so far
 
-The first four days (0.1.0 → 0.28.0): from a one-mod faction cloner to a campaign editor for two games.
+The first four days (0.1.0 → 0.29.0): from a one-mod faction cloner to a campaign editor for two games.
 
 ```mermaid
 timeline
@@ -78,18 +78,19 @@ timeline
         0.26 : Right-click menu on the map : Search in Units and armies : Building chains kept whole
         0.27 : Units and buildings brought from another mod, step by step
         0.28 : The bigger map smooth - coast, relief 3x higher, its heights file : Land and sea brush - a new island
+        0.29 : Recolour every faction picture : Faction emblem from one picture : Buildings and garrisons for many towns : Natural edges on the bigger map
 ```
 
 | Area | Confirmed in game | Released | Being tested | Next |
 |---|---|---|---|---|
-| Factions | new faction, faction limit, edit, garrisons, mod folder | settlement size, rebels, diplomacy, roster | alliances and wars at the start, victory conditions, building chains kept whole | faction colour on unit textures |
-| Campaign map | tiles, moving towns, new regions, terrain, heights, find, town names, map 3x bigger (alpha) | resources, climates, forts, big maps | the bigger map smooth (coast, heights), land and sea brush, wonders, events, right-click menu, drop into a town | flat plains and sharp peaks, borders drawn by the tool, a map from the real world |
+| Factions | new faction, faction limit, edit, garrisons, mod folder | settlement size, rebels, diplomacy, roster | alliances and wars at the start, victory conditions, building chains kept whole | the new factions' AI |
+| Campaign map | tiles, moving towns, new regions, terrain, heights, find, town names, map 3x bigger (alpha) | resources, climates, forts, big maps | the bigger map smooth (coast, heights, natural edges), many towns at once, land and sea brush, wonders, events, right-click menu, drop into a town | flat plains and sharp peaks, borders drawn by the tool, a map from the real world |
 | Characters | - | name lists | character panel, traits and retinue, family tree, portraits | - |
-| Units, buildings, art | faction art | editors, unit packs, modeldb, REX abilities | units and buildings brought from another mod, replace a model, 3D view of Rome and Medieval II models, new unit / building step by step, unit voices | textures from Rome's packs |
+| Units, buildings, art | faction art | editors, unit packs, modeldb, REX abilities | recolour of every faction picture, faction emblem, units and buildings brought from another mod, replace a model, 3D view of Rome and Medieval II models, new unit / building step by step, unit voices | textures from Rome's packs |
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | religions, campaign rules, add-ons | REX settings panel, window in other languages |
 | Safety | - | preview, backup, byte-exact restore, Check mod files, report a bug in one click, settings | pack check | signed exe |
 
-## What it does now (0.28.0)
+## What it does now (0.29.0)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -151,15 +152,18 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- 📦 Faction emblem: one picture made into every place the game shows it (menu buttons in all states, loading screen, logos), each in its own size
-- 📦 Recolour a faction's pictures: unit cards, battle textures, symbols, banners - from the template's colours to the faction's own, light and shade kept
-- 📦 The exe in the game folder, logs saved on every close, M2EX / REX found by any name, missing engine files offered
-- 📦 Buildings and garrisons for many towns: pick towns on the Map (yellow) or by owner / level / city / castle; a building in all of them, or random garrisons under an upkeep limit
-- 📦 The game's log in plain words (Tools): a crash first, errors grouped with what they mean and the mod's line
-- 📦 Reports find the game's log in every mod folder, and say how to switch it on
+- (nothing yet)
 
 ## 🧪 Being tested in the game now (newest first)
 
+- 🧪 Medieval II faction logos (M2EX xml sprite sheets) on the Art tab and in the emblem; shared banners and 3D symbol textures pulled apart so a recolour changes one faction only (0.29.0)
+- 🧪 The bigger map: ground and climates with natural edges (no 3 x 3 squares); the preview says plainly nothing is written until 'Write it' and shows the new size after (0.29.0)
+- 🧪 Faction emblem: one picture made into every place the game shows it (menu buttons in all states, loading screen, logos), each in its own size (0.29.0)
+- 🧪 Recolour a faction's pictures: unit cards, battle textures, symbols, banners - from the template's colours to the faction's own, light and shade kept (0.29.0)
+- 🧪 The exe in the game folder, logs saved on every close, M2EX / REX found by any name, missing engine files offered (0.29.0)
+- 🧪 Buildings and garrisons for many towns: pick towns on the Map (yellow) or by owner / level / city / castle; a building in all of them, or random garrisons under an upkeep limit (0.29.0)
+- 🧪 The game's log in plain words (Tools): a crash first, errors grouped with what they mean and the mod's line (0.29.0)
+- 🧪 Reports find the game's log in every mod folder, and say how to switch it on (0.29.0)
 - 🧪 Terrain editor: Land and sea - a new island, a bay, a strait (regions, ground, heights and map_heights.hgt changed together) (0.28.0)
 - 🧪 The bigger map, second alpha: smooth coast, heights 3 x higher in proportion (or as they were), map_heights.hgt rebuilt at the new size, rivers as staircases running on to the new coast (0.28.0)
 - 🧪 Bring units and buildings from another mod, step by step (Unit and Building editors), with a wiki guide (0.27.0)
