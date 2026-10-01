@@ -54,6 +54,24 @@ below to **Replace...** like any other. The figures' textures are Art pictures t
 and a new faction gets copies of its own of the template's (`diplomat_macedon` -> `diplomat_epirus`), so
 replacing them never changes the template's. Both games.
 
+## Faction emblem - one picture everywhere
+
+The faction's emblem is shown in many places, each in its own size: the campaign-menu buttons (small and big, each
+normal / mouse over / selected / greyed out), the loading screen, the faction screen (Medieval II), the in-game
+panels' symbol (Medieval II), the faction logo and small logo (Rome, on the game's sprite sheets). **Faction emblem -
+one picture everywhere...** on the Art tab takes one picture (best a square PNG with a clear background) and makes
+all of them from it:
+
+![One emblem made into every place](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/emblem.png)
+
+- each picture keeps its size and format, the emblem fitted where the old one sat (the margins stay clear);
+- the button states are made the way the mod's own are: mouse over brighter, greyed out grey and darker (by as much
+  as the faction's old pictures show), selected brighter with a glow round the new shape in the old glow's colour;
+- a picture the faction shares with another (a loading logo) becomes a copy of its own, its line pointed at it;
+- 'Use it' puts them on the Art tab; Preview and Apply write them with a backup, Restore gives them back.
+
+The campaign map's flags over armies and towns need nothing: the game paints them in the faction's colours itself.
+
 ## Recolour all its pictures
 
 **Recolour all its pictures...** (on the Art tab, also in **Tools**) moves every picture of the faction that

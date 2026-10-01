@@ -151,6 +151,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Faction emblem: one picture made into every place the game shows it (menu buttons in all states, loading screen, logos), each in its own size
 - 📦 Recolour a faction's pictures: unit cards, battle textures, symbols, banners - from the template's colours to the faction's own, light and shade kept
 - 📦 The exe in the game folder, logs saved on every close, M2EX / REX found by any name, missing engine files offered
 - 📦 Buildings and garrisons for many towns: pick towns on the Map (yellow) or by owner / level / city / castle; a building in all of them, or random garrisons under an upkeep limit
