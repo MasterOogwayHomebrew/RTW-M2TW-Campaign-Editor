@@ -44,9 +44,10 @@ bailey, a village city none). Only the kind's own buildings are offered afterwar
 ## Other tabs
 
 - **Map**: drag the faction's characters, see [[Campaign map]].
-- **Diplomacy**: how every faction feels about it (Rome: a number, lower is better, 600 enemies; Medieval II:
-  -1.0 to 1.0) and where they start: **alliance** or **war** from the first turn, both games (neutral = no line;
-  hover a column's **?**).
+- **Diplomacy**: per faction the **Status at the start** (neutral, **alliance** or **war** on the first turn, both
+  games) and the AI feeling both ways (Rome: a number, lower is better, `600 (enemies)`; Medieval II: -1.0 to 1.0).
+  A status pulls the feelings along; hover a column's **?**.
+- **Family tree**: the button at the top of the Faction tab opens it in the form's place.
 - **Victory** (on the Faction tab, under the leader): regions to hold, how many to take, factions to outlive, Rome's
   goal (be emperor / take Rome) - for the long and the short campaign. Only the player needs them, but a playable
   faction without them, or naming a region that does not exist, can crash the game.
