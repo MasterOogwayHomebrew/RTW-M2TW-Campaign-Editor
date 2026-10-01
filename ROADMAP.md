@@ -119,6 +119,7 @@ timeline
 - 🧪 The Map's legend as a palette: pick a town, fort, watchtower, resource, army or agent, click the map to make one (0.22.0)
 - 🧪 Alliances and wars at the start (both games): one status per faction that pulls the AI feelings along, every value in words; Medieval II's diplomacy read as the game writes it (`faction_standings`), a new Medieval II faction at war with the rebels (0.23.0)
 - 🧪 Victory conditions on the Faction tab: regions to hold and take, factions to outlive, Rome's goal - long and short campaign (0.23.0)
+- 🧪 Make the campaign map 3 x bigger (alpha, both games): towns, ports, armies, resources, rivers kept right; scripts warned (Unreleased)
 - 🧪 A Settings window (look, language, game folder, the map's look, report contact, set-up questions, folders); Check mod renamed Check mod files (Unreleased)
 - 🧪 The family tree folded behind a Family tree button on the Faction tab; hover texts on the work buttons (0.23.0)
 - 🧪 A faction's religion pulls its temples, guilds, priests and their figures along (Medieval II) (0.22.0)
@@ -177,7 +178,7 @@ timeline
 | A new campaign map from scratch (one region, one faction, loads in the game), then grown in the editor | Time; in-game tests |
 | Events and disasters shown and edited on the map (`descr_events.txt`, `descr_disasters.txt`); Rome's wonders (`descr_sm_landmarks.txt`) | Time; in-game tests |
 | Rome's textures read straight from its `data/packs` (when a model's texture is not a loose file) | Time |
-| A bigger campaign map: every tile made 3 x 3 (an odd factor keeps each town, army and resource in the middle of its block), rivers redrawn as thin lines, ports kept on the coast, every coordinate moved along - room for more regions and factions; also grow or cut the map's edges | The map size limits of REX and M2EX; in-game tests |
+| The bigger map, after the alpha: coordinates in scripts moved too, grow or cut the map's edges, other factors | In-game tests of the alpha |
 | Faction packs and building packs (like unit packs) | Time; then an in-game test |
 | Mods made on the plain game (slimmed folders) loaded with the game's data behind them | Time |
 | Check mod files: the crash rules modders documented (undeclared ai_label, religions not summing to 100, a region with no town not last, event texts, antitraits, dead ancillaries, absolute paths, a town touching another region) | Time |
