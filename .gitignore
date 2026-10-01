@@ -7,6 +7,9 @@ faction_tool_backups/
 faction_tool.log*
 faction_tool_settings.json
 logs/
+CampaignEditor_logs/
+CampaignEditor_settings.json
+CampaignEditor_backups/
 # working notes live in a private repository, never here
 CLAUDE.md
 notes/

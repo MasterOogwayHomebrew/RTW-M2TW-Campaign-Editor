@@ -12,7 +12,7 @@ When the game crashes, the tool shows an error, or something looks wrong, please
    your own words to hide (your nick). **Show what is sent** shows every line that goes. The contact field is
    optional.
    Rather send it yourself? **Tools -> Save logs (zip)** (or Save as zip in the report window) - the same logs, the
-   names cut out, saved in `RTW-M2TW-Campaign-Editor-files\logs` next to the exe.
+   names cut out, saved in `CampaignEditor_logs` next to the exe.
 2. **A video or a screenshot** of what you did and what went wrong.
 3. Which game and mod (Rome / REX / BI / Medieval II / M2EX, the mod's name) and the editor's version (in the
    window's title).

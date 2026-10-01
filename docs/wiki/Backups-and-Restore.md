@@ -1,6 +1,6 @@
 # Backups and Restore
 
-Every **Apply** first saves the files it changes in `faction_tool_backups` next to `data`, one folder per
+Every **Apply** first saves the files it changes in `CampaignEditor_backups` next to `data` (older versions' `faction_tool_backups` are listed too), one folder per
 write. **Tools -> Restore a backup...** puts them back **byte for byte** and removes what that write created.
 The list shows each write by date, faction and number of files, newest first. Pick the one to go back to and
 **Undo back to here** undoes it and every write after it in one go (newest first, as they must be); pick the

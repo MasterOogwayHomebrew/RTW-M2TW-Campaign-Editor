@@ -4,12 +4,21 @@
 
 1. Download `RTW-M2TW-Campaign-Editor.exe` from
    [Releases](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/releases). No install needed.
-2. Make a **new, empty folder** for it, for example `Documents\RTW & M2TW Campaign Editor` - not the game
-   folder, not straight into Downloads or onto the desktop - and put the exe there.
-3. Start it from there.
+2. Put it into the **game's folder** - beside `RomeTW.exe` / `medieval2.exe` (where REX or M2EX goes too).
+3. Start it from there, or make a shortcut to it (on the desktop or anywhere).
 
-Next to the exe it makes the folder `RTW-M2TW-Campaign-Editor-files` with its settings, and inside it the
-folder `logs` with the tool's log (`faction_tool.log`) and the logs zips you send with a bug report. **An update** is simply the new exe in the same folder; the settings stay.
+It then finds the game and every mod in it by itself (Rome: `<game>\<mod>`, Medieval II: `<game>\mods\<mod>`),
+and whether REX / M2EX is installed (the status line says so after Load). Have both games? Load a mod of the
+other one once with **Browse...** - from then on the Mod list shows the mods of both.
+
+Beside the exe it keeps two things of its own:
+
+- `CampaignEditor_settings.json` - what it remembers between starts;
+- `CampaignEditor_logs` - its log (`CampaignEditor.log`), the logs zips, and `sessions`: on every close the
+  session's log and the game's newest `system.log.txt` are saved there by themselves. **Report a bug** sends them.
+
+**An update** is simply the new exe in the same place; the settings stay. An older version's
+`RTW-M2TW-Campaign-Editor-files` folder is moved in by itself.
 
 ## The browser or Windows warns about the exe
 
@@ -19,8 +28,8 @@ browser and Windows SmartScreen may warn about it:
 - the browser: **Keep**;
 - SmartScreen: **More info -> Run anyway**.
 
-The tool never sends anything over the network. It reads and writes only the game or mod folder you load and
-its own `RTW-M2TW-Campaign-Editor-files` folder.
+The tool sends nothing over the network unless you press **Send** in *Report a bug / Suggest*. It reads and
+writes only the game or mod folder you load and its own two files beside the exe.
 
 ## Without the exe (any OS)
 

@@ -32,7 +32,7 @@ out** removes it.
 
 **Add an add-on...** takes a Squirrel script (`.nut`) or a zip with one - REX (Rome) and M2EX (Medieval II) both
 load every `.nut` in `script/modules` by themselves. The script is kept in the editor's own folder
-(`RTW-M2TW-Campaign-Editor-files/addons`) and shown in the list; its settings are found by themselves: the
+(`CampaignEditor_addons` beside the exe) and shown in the list; its settings are found by themselves: the
 UPPER_CASE `local NAME = value` lines at the top (true / false = a tick, a whole number, "text", a list
 `["a", "b"]`, a set `{ a = true }`), with the `//` comment beside or above each as its help. Put it in, Update, Take
 it out work as for the built-in ones (a backup each time). **Share...** saves it as a zip (with your settings or as
