@@ -33,3 +33,11 @@ the same way (no logs needed).
 **Security problems**: see
 [SECURITY.md](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/blob/main/SECURITY.md) - report
 them privately, not in an issue.
+
+## Read the game's log yourself
+
+**Tools > The game's log in plain words** reads the game's newest `system.log.txt` for the mod and explains it: what
+crashed, which file and line the game could not read (the line is shown as it reads now) and what to do. If no log
+is found, the window says how to switch the game's log on (REX and M2EX keep it on; the original games need two
+lines under `[log]` in their preference file).
+
