@@ -112,6 +112,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 The Map's legend as a palette: pick a town, fort, watchtower, resource, army or agent, click the map to make one
 - 📦 A faction's religion pulls its temples, guilds, priests and their figures along (Medieval II)
 - 📦 Rome's packed textures (data/packs/*.pak) read for the model thumbnails and 3D
 - 📦 Events and later factions: the campaign's plagues, volcanoes, earthquakes and historic messages - date, place, texts, new ones

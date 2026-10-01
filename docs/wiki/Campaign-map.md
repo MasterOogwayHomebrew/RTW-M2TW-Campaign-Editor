@@ -9,6 +9,11 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
 - **Find**: type part of a name - a town (also the name shown for its owner), a port, a general, agent or
   fleet, a unit in an army (e.g. "hastati"), a fort, a resource. Pick a hit (click, or Down then Enter) and
   the map zooms in close on it and a ring blinks round it for a few seconds ([video](https://youtu.be/6WAdnGovGzA)).
+- **The legend is a palette**: the signs on a button (+) are tools - click one (it turns yellow), then click
+  the map to make one there: a **town** (first its region's names; then the click puts the town and the land
+  around it becomes the new region's - paint more with a left drag), a **fort** or **watchtower**, any
+  **resource**, and in New / Edit faction an **army**, **fleet** or **agent** (first its name, then the click).
+  Click the button again to stop.
 - **Colours** (on the map's bar, also in Layers): one colour mode at a time - **Political** (the owners), **Diplomacy** (how the faction stands towards each owner), **Religion** (Medieval II: each region in its main religion's colour, paler where the majority is small; the legend counts the regions), **None** (the ground only).
 - **Layers**: borders, town names, ports, characters, resources, relief, rivers, a tile grid when zoomed in.
 - The line under the map describes the tile under the mouse: region, owner, ground, and whether an army may
