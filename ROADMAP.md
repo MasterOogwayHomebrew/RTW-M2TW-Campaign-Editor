@@ -36,7 +36,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 
 ## The road so far
 
-The first three days (0.1.0 → 0.20.0): from a one-mod faction cloner to a campaign editor for two games.
+The first four days (0.1.0 → 0.26.0): from a one-mod faction cloner to a campaign editor for two games.
 
 ```mermaid
 timeline
@@ -60,17 +60,25 @@ timeline
         0.17 : recruit_pool : REX brackets : Forts : Rebels editable
     section Day 3 - community knowledge, models, packs
         0.18 : New religion (Medieval II) : Heights brush : Find on the map : GPL-3.0
-        0.19 : Replace a battle model : 3D view of Medieval II models : Unit voices : Pack check before install : Big maps 10x lighter
+        0.19 : Replace a battle model : 3D view of unit models : Unit voices : Pack check before install : Big maps 10x lighter
+        0.20 : Report a bug in one click : Settlements tab : 3D view of Rome models too : Campaign rules : Add-ons
+        0.21 : Volcanoes and land bridges : Forts and watchtowers on the map : Main window reorganised
+    section Day 4 - a living campaign map, both games
+        0.22 : Character panel as in the game : Traits and retinue : Events and later factions : Religion map
+        0.23 : Alliances and wars at the start : Victory conditions : Diplomacy in plain words
+        0.24 : Campaign map 3x bigger (alpha) : Settings window
+        0.25 : Smooth relief on the bigger map : Wonders on the map
+        0.26 : Right-click menu on the map : Search in Units and armies : Building chains kept whole
 ```
 
 | Area | Confirmed in game | Released | Being tested | Next |
 |---|---|---|---|---|
-| Factions | new faction, faction limit, edit, garrisons, mod folder | settlement size, rebels, diplomacy, roster | - | factions that appear later |
-| Campaign map | tiles, moving towns, new regions, terrain, heights, find, town names | resources, climates, forts, big maps | the ring round a town | a new map from scratch, the coast |
-| Characters | - | name lists | character editor, family tree, portraits | - |
-| Units, buildings, art | faction art | editors, unit packs, modeldb, REX abilities | replace a model, 3D view (both games), new unit / building step by step, unit voices | textures from Rome's packs |
-| Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | new religion; campaign rules and add-ons | REX settings panel, events and disasters |
-| Safety | - | preview, backup, byte-exact restore, Check mod files (with where a faction is named) | pack check | signed exe |
+| Factions | new faction, faction limit, edit, garrisons, mod folder | settlement size, rebels, diplomacy, roster | alliances and wars at the start, victory conditions, building chains kept whole | faction colour on unit textures |
+| Campaign map | tiles, moving towns, new regions, terrain, heights, find, town names, map 3x bigger (alpha) | resources, climates, forts, big maps | wonders, events, right-click menu, drop into a town, legend as a palette | flat plains and sharp peaks, borders drawn by the tool, a map from the real world |
+| Characters | - | name lists | character panel, traits and retinue, family tree, portraits | - |
+| Units, buildings, art | faction art | editors, unit packs, modeldb, REX abilities | replace a model, 3D view of Rome and Medieval II models, new unit / building step by step, unit voices | textures from Rome's packs |
+| Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | religions, campaign rules, add-ons | REX settings panel, window in other languages |
+| Safety | - | preview, backup, byte-exact restore, Check mod files, report a bug in one click, settings | pack check | signed exe |
 
 ## What it does now (0.26.0)
 
