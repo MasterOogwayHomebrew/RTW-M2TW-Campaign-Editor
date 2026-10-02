@@ -34,7 +34,9 @@ or off.
   sea are written in three places that must agree, so each tile changes all of them: `map_regions.tga` (the
   region's colour or the sea's), `map_ground_types.tga` (a land ground like its neighbours', or shallow sea; new land gets a ring of shallow sea:
   the 8 sea tiles round it that are deeper turn shallow) and
-  `map_heights.tga` with `map_heights.hgt` (a low shore, or the sea's depth). New land joins the region of the
+  `map_heights.tga` with `map_heights.hgt` (new land rises from a low shore inland as the games' own coasts do -
+  2, 8, 12, 14, then 16 grey steps from the sea - so an island never lies flat on the water; new sea: the sea's
+  depth). New land joins the region of the
   nearest land, or the one picked in *new land joins*; move borders later on the Map (Regions). Refused: drowning a
   town, port, character, fort or resource, a region's last land, a river (rub it out first) or a port's last land.
   The Ground brush keeps land as land and sea as sea.
