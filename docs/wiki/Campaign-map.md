@@ -5,6 +5,10 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
 
 ## Looking around
 
+- **Wonders (Rome)**: a double click on one opens its window as the game shows it (picture, title, what it does,
+  descriptions) with **View it in 3D**; **Put a wonder here** (right click on land) places one of the game's seven
+  - Rome's exe and REX know no other types ("dont recognise this wonder type"), so a new wonder is one of them,
+  its model, picture and texts changed if you like.
 - **Delete from the map** (right click): a resource, a fort, a watchtower or a wonder goes with its line; a
   character of any faction goes with everything under him (his army or fleet); one placed but not written yet is
   simply taken out. Refused, in plain words: a faction's leader or heir, and a member of the family tree (take him

@@ -160,6 +160,7 @@ timeline
 - 📦 Faction tab in two columns; the editors' block lines fold away behind a button (from reports)
 - 📦 Bring from another mod / New unit and building: the picked one shown as the game shows it (pictures, texts, effects in plain words); units: one line each for where they are trained; two pictures per building level (from reports)
 - 📦 Faction emblem fitted by hand: move, size, turn, the old emblem's disc or a circle / square, a ground colour, magic wand, paint bucket (from a report)
+- 📦 Wonders (Rome): their window as in the game, 3D view, Put a wonder here (from the author)
 - 📦 Traits and retinue: every bonus the game knows on a right click, in plain words (from a report)
 - 📦 Map: Delete from the map (right click) - resources, forts, towers, wonders, characters of any faction (from a report)
 - 📦 Add-ons put where REX loads them (the game's script/modules); new add-on Player Diplomacy (from a report)
