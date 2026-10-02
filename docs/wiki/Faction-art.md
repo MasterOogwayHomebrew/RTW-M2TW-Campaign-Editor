@@ -76,10 +76,14 @@ bucket** fills one; **Undo**, **Fit again**, **Start over**. **Next** makes all 
 - **the symbol on the flags and banners (Rome)**: the flag symbol on the campaign map gets the symbol alone (no
   disc, no ground), and the faction's **battle banners** (its own standard texture and its allies') are made new
   from the game's own **blank white banner** (the cloth a routing unit carries - Roman, barbarian or eastern, the
-  one nearest the old banner's shape): its cloth dyed in the faction's colour, the folds kept, the symbol painted on
-  it (faint on the allies' banner, as the game's own are); the trim, the experience stars and the pole stay as they
-  are. **Banner...** under a banner picks another blank banner or cloth colour, and a box drawn on a banner moves
-  the symbol there;
+  one nearest the old banner's shape; the game turns a fleeing unit's banner into it, and it is only read, never
+  changed): its cloth dyed in the faction's colour, the folds kept, the symbol painted on it (faint on the allies'
+  banner, as the game's own are); the trim, the experience stars and the pole stay as they are. **Banner...** under
+  a banner picks another blank banner, a **pattern** of up to three colours (plain, two or three stripes upright -
+  a tricolour - or across, halves or bands slanting, quarters, a cross, a slanting cross, a border, a stripe in the
+  middle), the symbol on or off, and a box drawn on a banner moves the symbol there;
+- a picture with a plain background (a white square round the symbol) has it cleared at once, so no square shows on
+  the flags and banners (**Start over** brings it back);
 - 'Use it' puts them on the Art tab; Preview and Apply write them with a backup, Restore gives them back.
 
 The campaign map's flags over armies and towns take their colours from the faction's colours (the game paints them);
