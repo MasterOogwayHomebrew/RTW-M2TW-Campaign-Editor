@@ -36,7 +36,9 @@ with its pictures. The pictures, the battle model and the voice stay in view; th
   camel, elephant, chariot); **Replace model...** takes another model of this mod or of another mod of the same game
   (with every file it names; the unit's factions get textures on it), **View in 3D...** turns the model with the
   mouse - Medieval II's `.mesh` and Rome's `.cas` - with each faction's texture, the game's detail levels and weapons
-  on or off.
+  on or off. Rome: in the T pose (arms out) or as the file stands (**Pose**); a chariot unit on its chariot with its
+  horses and crew in the places `descr_mount.txt` gives; a siege engine unit's engine (`descr_engines.txt`) whole,
+  with its own texture.
 
   ![View in 3D](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/view_in_3d.png)
   ![View in 3D, Rome](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/view_in_3d_rome.png)

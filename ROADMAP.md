@@ -152,6 +152,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Rome 3D: weapons, shields, crests and engine parts on their bones; T pose by default; chariots with horses and crew; siege engines (from a report)
 - 📦 Unit and Building editors without the lag on picking and adding (from a report)
 - 📦 Events: the scroll's picture shown and replaced (every culture), what each kind does in plain words (from a report)
 - 📦 Campaign rules: the REX / M2EX engine settings (descr_ex.txt, descr_caps_ex.txt), each explained by the engine's own comment (from a report)
