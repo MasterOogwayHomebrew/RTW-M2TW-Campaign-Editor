@@ -118,7 +118,10 @@ in one Apply. **Edit region...** opens a region's data again. For a region of th
 plagues, volcanoes, earthquakes at a place. Each event's date (Rome: years from the start and optionally summer or
 winter, `14 winter`; Medieval II: a turn, or two turns the game picks one between, `210 220` - a date the game
 would not read is refused), its place (x, y; empty = a message only; **Show on the map**), the title and text
-players see (`historic_events.txt`). **New event...**, **Remove**, Preview, Write it in with a backup. Below the
+players see (`historic_events.txt`), the **picture players see** on the scroll (a historic event its own
+`ui/<culture>/eventpics/<event>.tga` - **Picture...** puts yours in for every culture, sized like the game's; a
+plague, volcano... shows its kind's `disaster_<kind>.tga`) and **what it does in the game** in plain words.
+**New event...**, **Remove**, Preview, Write it in with a backup. Below the
 list: the factions that start dead and appear later (`dead_until_resurrected` in descr_strat.txt) with the campaign
 script lines that wake them (Medieval II: the Mongols and Timurids) - shown, not changed.
 
