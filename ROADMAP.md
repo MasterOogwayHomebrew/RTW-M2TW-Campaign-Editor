@@ -164,7 +164,7 @@ timeline
 - 📦 Map: Delete from the map (right click) - resources, forts, towers, wonders, characters of any faction (from a report)
 - 📦 Add-ons put where REX loads them (the game's script/modules); new add-on Player Diplomacy (from a report)
 - 📦 Victory regions picked many at once or on the map; map signs grow as the mouse comes near (from a report)
-- 📦 People and family: New person..., the tree on the right on the Faction tab too (from a report)
+- 📦 People and family: one Add a person... step by step, the tree on the right on the Faction tab too (from a report)
 - 📦 Character panel: click the pips to set Command / Influence / ... - the traits fitted to it (from a report)
 - 📦 Building editor: names and descriptions per culture / faction; the editors' list width dragged (from a report)
 - 📦 The new symbol on Rome's 3D battle banners and the campaign map's flag: the game's blank white banner dyed in the faction's colour or a pattern (tricolours, quarters, crosses...), the symbol painted on (from a report)

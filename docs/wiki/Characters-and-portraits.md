@@ -10,10 +10,10 @@ Faction tab too). The **Character editor** at the top does the same for any fact
 
 - Click a person to edit: name (from the faction's name lists - the game crashes on a name without a text),
   age, sex (off the map), traits with their level, ancillaries.
-- **Give a wife...**, **Add a child...**: someone already in the faction (a new faction's heir becomes its
-  leader's son this way) or a new person from the name lists. **New person...**: someone new tied to no one yet -
-  then pick a married man and **Add a child...** (or a man and **Give a wife...**) and choose them there; Preview
-  warns while a new person is still on no tree. **Take off the tree**, **Leave out**.
+- **Add a person...**: one window, step by step - who the new person is (a son, daughter, wife, husband, brother,
+  sister, father and mother, uncle or aunt **of** someone you pick, or the head of a new family tied to no one yet),
+  then the name and age from the name lists, or someone already in the faction (a new faction's heir becomes its
+  leader's son this way). Preview warns while a new person is still on no tree. **Take off the tree**, **Leave out**.
 - A renamed person is renamed on every line of the family tree.
 - The tree is checked before writing (a husband is a man, nobody is their own ancestor...).
 
