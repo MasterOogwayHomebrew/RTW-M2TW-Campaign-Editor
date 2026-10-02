@@ -152,6 +152,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 A town on its region's edge stays its region's - on the Map and in the bigger map (from a report)
 - 📦 Rome 3D: weapons, shields, crests and engine parts on their bones; T pose by default; chariots with horses and crew; siege engines (from a report)
 - 📦 Unit and Building editors without the lag on picking and adding (from a report)
 - 📦 Events: the scroll's picture shown and replaced (every culture), what each kind does in plain words (from a report)
