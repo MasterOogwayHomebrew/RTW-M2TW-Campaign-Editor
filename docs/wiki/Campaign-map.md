@@ -33,6 +33,9 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   it). Click the button again to stop; hiding the legend puts the picked sign down too. The legend is open on the
   first start (**Legend** on the bar hides it).
   Every named character shows as a general's flag, as in the game (family members too).
+- **A double click on a town** (or the right click's **Edit this town...**) opens it straight away: its owner in Edit
+  faction, the town picked on the Buildings tab (level, population, city or castle, buildings; its garrison on Units
+  & armies).
 - **Right click on the map**: on a town - **Give this town to** any faction (written with the next Apply; its
   characters go to the old owner's other towns, a captain's garrison goes with it); on a free tile - **New army /
   agent / fleet here** with the land's owner already picked; on a new character not written yet - **Take it out**.
@@ -55,8 +58,10 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
 Tick **Pick towns** on the Map's bar: the political colours, borders and characters go (the ground only), and a
 click on a town picks it - it and its region turn **yellow** - or unpicks it. A **right click** offers:
 
-- **Add a building to the N picked town(s)...** and **Garrisons for the N picked town(s)...** - both open the window
-  *Buildings and garrisons for many towns* with the picked towns already chosen;
+- **Add a building to the N picked town(s)...**, **Garrisons for the N picked town(s)...** and **City / castle and
+  level for the N picked town(s)...** - all open the window *Buildings and garrisons for many towns* with the picked
+  towns already chosen (the third tab makes them city or castle - Medieval II - and / or of another level: the
+  buildings converted the game's way, the governor's building and the population follow);
 - **Pick every town of <owner>** (on a town), **Unpick all**.
 
 Untick **Pick towns** and every town is unpicked (the same everywhere: switching **Edit resources** or **Edit regions** off drops what was picked or waiting for a click, hiding the legend puts its picked tool down).

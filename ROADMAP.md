@@ -152,6 +152,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 A double click on a town opens it; many towns made city / castle and of another level at once (from Discord)
 - 📦 REX / M2EX: no faction limit - max_factions raised by itself with every new faction (the author's wish)
 - 📦 A town on its region's edge stays its region's - on the Map and in the bigger map (from a report)
 - 📦 Rome 3D: weapons, shields, crests and engine parts on their bones; T pose by default; chariots with horses and crew; siege engines (from a report)
