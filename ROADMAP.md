@@ -152,7 +152,11 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- (nothing yet)
+- 📦 The bigger map keeps the rules of the games' own maps: one coast for regions and heights, every town with its own region round it, every port on a coastal land tile, ground types and climates by tile (forests stay forests), land bridges unbroken (from five reports on Divide and Conquer)
+- 📦 A new faction gets its faction-select buttons and the template's other pictures - also when the template's name holds `_` (greek_cities) or its pictures lie only in the game's data (from a report)
+- 📦 Apply is all or nothing: a file the system refuses (read-only, held by another program) leaves the mod as it was, said in plain words (from two reports)
+- 📦 A mod's engine settings (`descr_ex.txt`, `descr_caps_ex.txt`) read from the mod alone, as REX / M2EX read them
+- 📦 New regions on a big map get a colour (the search tried only 200); a modeldb with models after its count is read; changes waiting for Apply never go into another mod and are never dropped without asking
 
 ## 🧪 Being tested in the game now (newest first)
 
