@@ -43,7 +43,7 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 
 ## The road so far
 
-The first four days (0.1.0 → 0.29.1): from a one-mod faction cloner to a campaign editor for two games.
+The first four days (0.1.0 → 0.29.2): from a one-mod faction cloner to a campaign editor for two games.
 
 ```mermaid
 timeline
@@ -78,7 +78,7 @@ timeline
         0.26 : Right-click menu on the map : Search in Units and armies : Building chains kept whole
         0.27 : Units and buildings brought from another mod, step by step
         0.28 : The bigger map smooth - coast, relief 3x higher, its heights file : Land and sea brush - a new island
-        0.29 : Recolour every faction picture : Faction emblem from one picture : Buildings and garrisons for many towns : Natural edges on the bigger map : Raze Settlement for Medieval II (0.29.1)
+        0.29 : Recolour every faction picture : Faction emblem from one picture : Buildings and garrisons for many towns : Natural edges on the bigger map : Raze Settlement for Medieval II (0.29.1) : Fixes from reports - bigger map rules, all-or-nothing writes, new factions' buttons, the editor into the game folder (0.29.2)
 ```
 
 | Area | Confirmed in game | Released | Being tested | Next |
@@ -90,7 +90,7 @@ timeline
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | religions, campaign rules, add-ons | REX settings panel, window in other languages |
 | Safety | - | preview, backup, byte-exact restore, Check mod files, report a bug in one click, settings | pack check | signed exe |
 
-## What it does now (0.29.1)
+## What it does now (0.29.2)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -152,15 +152,16 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- 📦 Started outside the game's folder, the editor offers (once per version) to put itself there - you pick the game's folder, it copies itself over with its settings and a desktop shortcut
-- 📦 The bigger map keeps the rules of the games' own maps: one coast for regions and heights, every town with its own region round it, every port on a coastal land tile, ground types and climates by tile (forests stay forests), land bridges unbroken (from five reports on Divide and Conquer)
-- 📦 A new faction gets its faction-select buttons and the template's other pictures - also when the template's name holds `_` (greek_cities) or its pictures lie only in the game's data (from a report)
-- 📦 Apply is all or nothing: a file the system refuses (read-only, held by another program) leaves the mod as it was, said in plain words (from two reports)
-- 📦 A mod's engine settings (`descr_ex.txt`, `descr_caps_ex.txt`) read from the mod alone, as REX / M2EX read them
-- 📦 New regions on a big map get a colour (the search tried only 200); a modeldb with models after its count is read; changes waiting for Apply never go into another mod and are never dropped without asking
+- Nothing yet.
 
 ## 🧪 Being tested in the game now (newest first)
 
+- 🧪 Started outside the game's folder, the editor offers (once per version) to put itself there - you pick the game's folder, it copies itself over with its settings and a desktop shortcut (0.29.2)
+- 🧪 The bigger map keeps the rules of the games' own maps: one coast for regions and heights, every town with its own region round it, every port on a coastal land tile, ground types and climates by tile (forests stay forests), land bridges unbroken (from five reports on Divide and Conquer) (0.29.2)
+- 🧪 A new faction gets its faction-select buttons and the template's other pictures - also when the template's name holds `_` (greek_cities) or its pictures lie only in the game's data (from a report) (0.29.2)
+- 🧪 Apply is all or nothing: a file the system refuses (read-only, held by another program) leaves the mod as it was, said in plain words (from two reports) (0.29.2)
+- 🧪 A mod's engine settings (`descr_ex.txt`, `descr_caps_ex.txt`) read from the mod alone, as REX / M2EX read them (0.29.2)
+- 🧪 New regions on a big map get a colour (the search tried only 200); a modeldb with models after its count is read; changes waiting for Apply never go into another mod and are never dropped without asking (0.29.2)
 - 🧪 Raze Settlement for Medieval II (M2EX): a 4th button on the capture scroll, the ruins to the rebels (0.29.1)
 - 🧪 Fixed: a new Medieval II faction keeps its template's AI rule set (`ai_label`) and money every turn (`denari_kings_purse`) (0.29.1)
 - 🧪 Medieval II faction logos (M2EX xml sprite sheets) on the Art tab and in the emblem; shared banners and 3D symbol textures pulled apart so a recolour changes one faction only (0.29.0)
