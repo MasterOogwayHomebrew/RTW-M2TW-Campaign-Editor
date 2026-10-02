@@ -50,7 +50,9 @@ bailey, a village city none). Only the kind's own buildings are offered afterwar
 - **Family tree**: the button at the top of the Faction tab opens it in the form's place.
 - **Victory** (on the Faction tab, under the leader): regions to hold, how many to take, factions to outlive, Rome's
   goal (be emperor / take Rome) - for the long and the short campaign. Only the player needs them, but a playable
-  faction without them, or naming a region that does not exist, can crash the game.
+  faction without them, or naming a region that does not exist, can crash the game. The list of regions or
+  factions takes many at once: drag over the rows, Shift-click a run, **Tick all shown** (with Find), **tick a whole
+  group** (every region a faction holds), or **On the map...** - click towns there, their regions turn yellow.
 - **Art**: see [[Faction art]].
 - **Roster**: give or take units and building levels - see [[Units and buildings]].
 - **Family**: characters, traits, the family tree - see [[Characters and portraits]].
