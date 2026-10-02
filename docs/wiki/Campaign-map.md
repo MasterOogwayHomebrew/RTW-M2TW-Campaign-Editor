@@ -5,6 +5,11 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
 
 ## Looking around
 
+- **Delete from the map** (right click): a resource, a fort, a watchtower or a wonder goes with its line; a
+  character of any faction goes with everything under him (his army or fleet); one placed but not written yet is
+  simply taken out. Refused, in plain words: a faction's leader or heir, and a member of the family tree (take him
+  off the tree in the Character editor first). A town is not deleted alone - every region of the map needs its
+  town; give it to another faction instead (**Give this town to**).
 - A town or character sign grows as the mouse comes near it - softly, the nearer the bigger, and from further away
   when the map is zoomed far out (the signs are small then), so the mouse need not hit the sign itself.
 - Wheel zooms (to the point under the mouse), left drag moves the map - past its edges too: the map is a free canvas with an empty field around it, and zooms out smaller than the window; **Fit** puts it back in the middle.
