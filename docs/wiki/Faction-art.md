@@ -73,9 +73,18 @@ bucket** fills one; **Undo**, **Fit again**, **Start over**. **Next** makes all 
 - the button states are made the way the mod's own are: mouse over brighter, greyed out grey and darker (by as much
   as the faction's old pictures show), selected brighter with a glow round the new shape in the old glow's colour;
 - a picture the faction shares with another (a loading logo) becomes a copy of its own, its line pointed at it;
+- **the symbol on the flags and banners (Rome)**: the flag symbol on the campaign map gets the symbol alone (no
+  disc, no ground), and the faction's **battle banners** (its own standard texture and its allies') get it painted on
+  their cloth: the old symbol is found, filled over with the cloth round it (from its edges inwards, the folds kept),
+  and the new one put in its place, shaded by the cloth's folds. The allies' banner carries the symbol faintly at the
+  same place, so it takes the own banner's places. Where the cloth fools the finder (two colours, a symbol touching
+  the trim) **Put it right...** under the banner opens it large: a brush marks more of the old symbol to fill over
+  (or keeps a part), a box drawn on a banner is where the new symbol goes;
 - 'Use it' puts them on the Art tab; Preview and Apply write them with a backup, Restore gives them back.
 
-The campaign map's flags over armies and towns need nothing: the game paints them in the faction's colours itself.
+The campaign map's flags over armies and towns take their colours from the faction's colours (the game paints them);
+the symbol on them is the flag symbol above. Medieval II's battle banners are heraldic sheets of many pieces - the
+emblem does not paint them yet (Recolour changes their colours).
 
 ## Recolour all its pictures
 
