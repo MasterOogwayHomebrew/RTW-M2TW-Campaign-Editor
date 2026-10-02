@@ -4,8 +4,12 @@
 
 Every line of a unit (`export_descr_unit.txt`) or a building chain (`export_descr_buildings.txt`) as a field,
 with its pictures. The pictures, the battle model and the voice stay in view; the lines fold away behind
-**Every line of the block** (open it to change them; it stays open or closed as you left it). The lists filter (**Show**: a faction, a culture, a category, mercenaries apart) and sort.
+**Every line of the block** (open it to change them; it stays open or closed as you left it). The lists filter (**Show**: a faction, a culture, a category, mercenaries apart) and sort; drag the line between the list and the rest (its grip drawn in the text's colour) to make the list wider - the width is kept.
 
+- **Texts players read** (Building editor, under the pictures): a level's name, short description and
+  description for a culture or a faction (**Texts for**; * = it has texts of its own). The game shows the
+  faction's texts first, else its culture's, else the plain ones; a change is written to `export_buildings.txt`
+  on Apply, with a backup. Both games.
 - **Import...** puts a picture in the right size and format in the right place.
 - **New unit / New building step by step...** makes a new one from an existing one that surely works in the game,
   in steps you can go back and forth between: names and the texts players read, who owns the unit (or may build
