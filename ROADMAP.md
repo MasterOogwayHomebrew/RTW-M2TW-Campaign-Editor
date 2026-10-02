@@ -153,7 +153,7 @@ timeline
 ## 📦 Built, comes with the next release
 
 - 📦 Terrain: impassable land / sea brushes (Medieval II; Rome with REX); new land stands in shallows (from reports)
-- 📦 Map: the sign being placed rides under the mouse; unticking Pick towns unpicks all; the map's size under the map (from reports)
+- 📦 Map: the sign being placed rides under the mouse; switching a mode off unpicks what it picked; no separate forts mode (all in the legend and the right click); readable resource letters; the map's size under the map (from reports)
 - 📦 Edit region holds both names of a region and its town: the names players see and the names in the files (the Map's extra Rename buttons gone)
 - 📦 Units and buildings brought from another mod lose conditions this mod does not have (a hidden resource, a religion) - the game no longer stops at start (from a report)
 - 📦 New forts and watchtowers on campaigns that have none (vanilla Rome and Medieval II), written in the regions section

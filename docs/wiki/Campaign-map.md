@@ -59,7 +59,7 @@ click on a town picks it - it and its region turn **yellow** - or unpicks it. A 
   *Buildings and garrisons for many towns* with the picked towns already chosen;
 - **Pick every town of <owner>** (on a town), **Unpick all**.
 
-Untick **Pick towns** and every town is unpicked (the same everywhere: switching **Edit resources** / **Edit forts** off drops the picked sign).
+Untick **Pick towns** and every town is unpicked (the same everywhere: switching **Edit resources** or **Edit regions** off drops what was picked or waiting for a click, hiding the legend puts its picked tool down).
 
 The same window is in **Tools** and on the Buildings tab (**Many towns at once...**). All towns of the campaign on the
 left - filter them by owner, level, city / castle (Medieval II) or name, **Add all shown** - the chosen ones on the
@@ -88,12 +88,12 @@ Forts and watchtowers of `descr_strat.txt` (Medieval II, REX: `fort x y ... perm
 towers, the top in the owner's colour; the mouse over one shows its name and whether it is permanent. No army or
 agent is placed on a fort's tile. Barbarian Invasion's watchtowers (listed after the diplomacy) are drawn too.
 
-Tick **Edit forts & watchtowers** (beside Edit resources): a bar opens under the map's buttons. **New**: pick *fort* or
-*watchtower*, press **Place new**, then click a land tile on the map. **Move**: drag one with the right mouse button
-to another tile (land, no town, port or other fort there). **Remove**: click it (it gets a yellow frame), then
-**Delete picked**. A new one: its line is copied from the nearest one the campaign already has (only the
-tile changes), because the exact line differs by game and mod - vanilla Rome and Medieval II have none, so there a
-new one is not offered. Written with Preview / Apply, backed up like every change.
+Forts, watchtowers and wonders need no mode of their own - everything is in the legend and on the right click.
+**New**: click *a fort* or *a watchtower* in the legend, then a land tile on the map. **Move**: drag one with the
+right mouse button to another tile (land, no town, port or other fort there). **Remove**: right click it -
+**Delete from the map**. A new one copies the line of the nearest one the campaign already has (only the tile
+changes); a campaign with none (vanilla Rome and Medieval II) gets it written in the regions section. Written with
+Preview / Apply, backed up like every change.
 
 ## New regions
 
@@ -185,5 +185,6 @@ The map's real size is shown under the map, bottom left.
 
 ## Wonders (Rome)
 
-Tick **Edit forts, towers & wonders**: the wonders (`landmark` lines of `descr_strat.txt`) show as golden pyramids -
-drag one with the right mouse button, click it and **Delete picked**, or pick `wonder: <type>` and **Place new**.
+The wonders (`landmark` lines of `descr_strat.txt`) show as golden pyramids - drag one with the right mouse button;
+a double click (or the right click's *about it*) opens its window as the game shows it, with **View it in 3D**; the
+right click on free land has **Put a wonder here**, on a wonder **Delete from the map**.
