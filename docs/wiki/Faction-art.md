@@ -39,7 +39,8 @@ Three pictures of a Rome faction do not live in files of their own but on sheets
 A **new faction gets its own**: a free flag slot and, under REX, logo sprites on a page of their own
 (`ui/roman/interface/faction_logo_<faction>.tga`), the template's pictures copied in - so replacing them never
 changes the template's. **Replace...** on an existing faction that shares its slot or sprite does the same
-first. The logos need REX with `sprite_format xml` in `descr_caps_ex.txt` (REX's default): the original game
+first. The logos need REX with `sprite_format xml` in the mod's own `descr_caps_ex.txt` (a mod without one runs
+on the engine's default `sd`; Load offers to copy the game's): the original game
 reads binary sprite sheets that cannot take new sprites, and the Art tab says so.
 
 ## Figures on the campaign map
