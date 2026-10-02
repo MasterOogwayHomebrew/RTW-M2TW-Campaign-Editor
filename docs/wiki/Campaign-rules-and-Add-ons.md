@@ -33,7 +33,7 @@ out** removes it.
 **Add an add-on...** takes a Squirrel script (`.nut`) or a zip with one - REX (Rome) and M2EX (Medieval II) both
 load every `.nut` in `script/modules` by themselves. The script is kept in the editor's own folder
 (`CampaignEditor_addons` beside the exe) and shown in the list; its settings are found by themselves: the
-UPPER_CASE `local NAME = value` lines at the top (true / false = a tick, a whole number, "text", a list
+UPPER_CASE `local NAME = value` lines at the top (true / false = a tick, a whole number, a number like 3.0, "text", a list
 `["a", "b"]`, a set `{ a = true }`), with the `//` comment beside or above each as its help. Put it in, Update, Take
 it out work as for the built-in ones (a backup each time). **Share...** saves it as a zip (with your settings or as
 it came) plus a README - give it to others. **Remove from the list** forgets an added one. Only add scripts from
@@ -58,9 +58,27 @@ want to hold is burned and left to regrow.
 - **Rebel units if the game raises none:** **Pick...** lists the mod's own units.
 - **The 4th button** off: Exterminate asks Yes / No to sack instead. Button text and tooltip are yours to change.
 
-It is a REX module (`script/modules/sack_settlement.nut`): REX loads it when the campaign starts, whatever mod runs.
-The game's log (`system.log.txt`) then says `[SACK] Sack Settlement module loaded`. Plain Rome has no scripts - the
-add-on does nothing there.
+It is a REX module: it goes into the **game's** `script/modules` (`Rome Total War Gold\script\modules`) - REX's
+own `script/main.nut` loads every `.nut` there when the campaign starts, whatever mod runs. A mod with a script
+plugin of its own (its own `script/manifest.nut` and `main.nut`, like HLR's) does not load modules from its own
+folder, so the editor never puts add-ons there. If the add-on's code is already pasted into the mod's own scripts,
+**Put it in** refuses (it would run twice - two buttons). The game's log (`system.log.txt`) then says `[SACK] Sack
+Settlement module loaded`. Plain Rome has no scripts - the add-on does nothing there.
+
+### Player Diplomacy (Rome + REX)
+
+The computer's factions stop attacking you when it makes no sense - only how they treat **you** changes, their wars
+with each other stay as they are:
+
+- **Truce:** after a ceasefire (whoever asked) a faction plans no invasion of you for the turns you set; a war it
+  declares on you in that time is undone at once.
+- **Client kingdoms** never plan to invade you while they are your protectorates.
+- **Deterrence:** a faction far weaker than you (you **this many times stronger**, 3.0 by default: units in all
+  armies and garrisons plus a number per settlement) does not plan one either; its allies already at war with you
+  count on its side, so a big alliance still comes.
+
+It works through REX's campaign AI hook (calculateLtgd). In the game's console: `sq ::truce_status()`,
+`sq ::truce_set("egypt", 10)`, `sq ::power("egypt")`; its log lines start with `[DIPLO]`.
 
 ### Raze Settlement (Medieval II + M2EX)
 
