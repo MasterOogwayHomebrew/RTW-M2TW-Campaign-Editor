@@ -36,7 +36,11 @@ both games: `export_descr_character_traits.txt` and `export_descr_ancillaries.tx
 
 - **Traits**: pick one on the left (its name and the name players see; Find filters). Who can have it
   (`Characters`), and per level the name and description players see, the points it needs (`Threshold`) and what
-  it gives (`Effects`, typed like `Command 1, Loyalty -2`).
+  it gives (`Effects`, typed like `Command 1, Loyalty -2`). **A right click on an Effects field** lists every
+  bonus the game knows (read from its own exe), in groups - generals and battle, governing towns, character,
+  agents, against a faction / culture / religion, and any other this mod's files use - each with what it does in
+  plain words; a pick is added after a comma with the value 1, ready to type the number over (negative = a
+  penalty).
 - **Retinue**: the name and description players see, the picture (**Replace picture...** - a picture shared with
   other ancillaries is not changed: this one gets a picture of its own), the cultures it is barred to, its effects.
 - **New trait / New ancillary (a copy of the picked one)...**: written at once as a copy under the new name - a
