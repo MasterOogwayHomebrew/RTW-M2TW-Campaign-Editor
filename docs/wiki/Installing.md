@@ -7,6 +7,12 @@
 2. Put it into the **game's folder** - beside `RomeTW.exe` / `medieval2.exe` (where REX or M2EX goes too).
 3. Start it from there, or make a shortcut to it (on the desktop or anywhere).
 
+Started from somewhere else (the Downloads folder, the desktop)? On the first start of each new version it offers
+to **put itself into the game's folder**: press **Pick the game's folder...**, choose the folder where `RomeTW.exe`
+or `medieval2.exe` lies (it checks that the game is there), and it copies itself there with its settings, puts a
+shortcut on the desktop if you like, and starts from there. The copy you started can be deleted then. **Not now**
+asks again with the next version; **Don't ask again** never asks. Settings > Folders has the same button.
+
 It then finds the game and every mod in it by itself (Rome: `<game>\<mod>`, Medieval II: `<game>\mods\<mod>`),
 and whether REX / M2EX is installed (the status line says so after Load). Have both games? Load a mod of the
 other one once with **Browse...** - from then on the Mod list shows the mods of both.
