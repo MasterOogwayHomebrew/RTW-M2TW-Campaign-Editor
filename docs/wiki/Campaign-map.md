@@ -11,9 +11,11 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   the map zooms in close on it and a ring blinks round it for a few seconds ([video](https://youtu.be/6WAdnGovGzA)).
 - **The legend is a palette**: the signs on a button (+) are tools - click one (it turns yellow), then click
   the map to make one there: a **town** (first its region's names; then the click puts the town and the land
-  around it becomes the new region's - paint more with a left drag), a **fort** or **watchtower**, any
+  around it becomes the new region's - paint more with a left drag), a **port** (click a coastal land tile: the
+  port of the region there moves to it, a region without a port gets one), a **fort** or **watchtower**, any
   **resource**, and in New / Edit faction an **army**, **fleet** or **agent** (first its name, then the click).
-  Click the button again to stop.
+  Click the button again to stop. The legend is open on the first start (**Legend** on the bar hides it).
+  Every named character shows as a general's flag, as in the game (family members too).
 - **Colours** (on the map's bar, also in Layers): one colour mode at a time - **Political** (the owners), **Diplomacy** (how the faction stands towards each owner), **Religion** (Medieval II: each region in its main religion's colour, paler where the majority is small; the legend counts the regions), **None** (the ground only).
 - **Layers**: borders, town names, ports, characters, resources, relief, rivers, a tile grid when zoomed in.
 - The line under the map describes the tile under the mouse: region, owner, ground, and whether an army may
@@ -31,7 +33,7 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
 ## Pick towns: a building or garrisons for many towns
 
 Tick **Pick towns** on the Map's bar: the political colours, borders and characters go (the ground only), and a
-click on a town picks it - it turns **yellow** - or unpicks it. A **right click** offers:
+click on a town picks it - it and its region turn **yellow** - or unpicks it. A **right click** offers:
 
 - **Add a building to the N picked town(s)...** and **Garrisons for the N picked town(s)...** - both open the window
   *Buildings and garrisons for many towns* with the picked towns already chosen;
@@ -151,7 +153,7 @@ own region all round it, every port stands on the shore touching the sea and its
 not in squares, and the heights follow the same coast; every tile keeps the ground type and climate of the old tile
 it lies in (a forest stays a forest); land bridges stay unbroken; the relief is blended smooth, and `map_heights.hgt` (the game's own
 copy of the heights, read instead of the picture) is written at the new size; the hills, mountains and sea floor are
-made 3 x higher so the slopes stay as steep (or keep the old heights: "Write it, heights as they are"); rivers stay
+made 3 x higher so the slopes stay as steep (**Write it - hills 3 x higher**; or keep the old heights, a flatter world: **Write it - heights as they are**); rivers stay
 1 pixel wide and run on to the new coast; every picture of the map and `descr_terrain.txt` follow, `map.rwm` is
 removed. The window lists every file first; one backup, Restore gives it all back.
 

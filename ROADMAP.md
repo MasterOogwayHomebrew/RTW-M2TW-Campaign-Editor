@@ -100,7 +100,7 @@ timeline
 - 📦 Settlement level and population (the governor's building follows the size)
 - 📦 The rebels edited like any faction: armies, fleets, garrisons, towns, units (each rebel with its `sub_faction`)
 - 📦 Diplomacy: attitudes and starting relations with every other faction
-- 📦 Roster: give or take units and building levels (ownership, recruit lines and cards kept in step)
+- ✅ Roster: give or take units and building levels (ownership, recruit lines and cards kept in step) *(in-game ✓ Rome + REX: a barbarian archer given to the Julii is recruited in their town)*
 - ✅ A separate mod folder in one click (the base mod stays untouched) *(in-game ✓)*
 
 ### Campaign map
@@ -159,12 +159,13 @@ timeline
 - 📦 Windows open in the middle of the screen; hover texts stay on screen; wide drop-down lists; long field texts shown on hover; '?' visible in the Dark look (from reports)
 - 📦 Faction tab in two columns; the editors' block lines fold away behind a button (from reports)
 - 📦 Bring from another mod / New unit and building: the picked one shown as the game shows it (pictures, texts, effects in plain words); units: one line each for where they are trained; two pictures per building level (from reports)
+- 📦 Map: a port from the legend (a region without one gets one); picked towns' regions in yellow; generals' flags for every named character; painted tiles always visible while painting (from reports)
 - 📦 Check mod files: building lines naming a hidden resource, resource or religion the mod lacks; a screenshot pasted into a report with Ctrl+V (from reports)
 
 ## 🧪 Being tested in the game now (newest first)
 
 - 🧪 Started outside the game's folder, the editor offers (once per version) to put itself there - you pick the game's folder, it copies itself over with its settings and a desktop shortcut (0.29.2)
-- 🧪 The bigger map keeps the rules of the games' own maps: one coast for regions and heights, every town with its own region round it, every port on a coastal land tile, ground types and climates by tile (forests stay forests), land bridges unbroken (from five reports on Divide and Conquer) (0.29.2)
+- ✅ The bigger map keeps the rules of the games' own maps: one coast for regions and heights, every town with its own region round it, every port on a coastal land tile, ground types and climates by tile (forests stay forests), land bridges unbroken (from five reports on Divide and Conquer) (0.29.2) *(in-game ✓ Rome + REX, vanilla campaign played)*
 - 🧪 A new faction gets its faction-select buttons and the template's other pictures - also when the template's name holds `_` (greek_cities) or its pictures lie only in the game's data (from a report) (0.29.2)
 - 🧪 Apply is all or nothing: a file the system refuses (read-only, held by another program) leaves the mod as it was, said in plain words (from two reports) (0.29.2)
 - 🧪 A mod's engine settings (`descr_ex.txt`, `descr_caps_ex.txt`) read from the mod alone, as REX / M2EX read them (0.29.2)
