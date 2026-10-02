@@ -13,9 +13,16 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   the map to make one there: a **town** (first its region's names; then the click puts the town and the land
   around it becomes the new region's - paint more with a left drag), a **port** (click a coastal land tile: the
   port of the region there moves to it, a region without a port gets one), a **fort** or **watchtower**, any
-  **resource**, and in New / Edit faction an **army**, **fleet** or **agent** (first its name, then the click).
+  **resource**, an **army**, **fleet** or **agent** for **any faction**: click the tile and a window asks for the
+  name - the faction is the one holding that land (a fleet: the owner of the nearest land), and another can be
+  picked there. No faction has to be picked first. The faction you make or edit gets it in its list on Units &
+  armies (give it its units there); any other faction's army or fleet starts with the first unit of its nearest
+  army or fleet (its general's bodyguard) and is written with the next Apply.
   Click the button again to stop. The legend is open on the first start (**Legend** on the bar hides it).
   Every named character shows as a general's flag, as in the game (family members too).
+- **Right click on the map**: on a town - **Give this town to** any faction (written with the next Apply; its
+  characters go to the old owner's other towns, a captain's garrison goes with it); on a free tile - **New army /
+  agent / fleet here** with the land's owner already picked; on a new character not written yet - **Take it out**.
 - **Colours** (on the map's bar, also in Layers): one colour mode at a time - **Political** (the owners), **Diplomacy** (how the faction stands towards each owner), **Religion** (Medieval II: each region in its main religion's colour, paler where the majority is small; the legend counts the regions), **None** (the ground only).
 - **Layers**: borders, town names, ports, characters, resources, relief, rivers, a tile grid when zoomed in.
 - The line under the map describes the tile under the mouse: region, owner, ground, and whether an army may

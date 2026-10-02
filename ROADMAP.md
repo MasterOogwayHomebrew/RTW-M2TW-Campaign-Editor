@@ -159,6 +159,7 @@ timeline
 - 📦 Windows open in the middle of the screen; hover texts stay on screen; wide drop-down lists; long field texts shown on hover; '?' visible in the Dark look (from reports)
 - 📦 Faction tab in two columns; the editors' block lines fold away behind a button (from reports)
 - 📦 Bring from another mod / New unit and building: the picked one shown as the game shows it (pictures, texts, effects in plain words); units: one line each for where they are trained; two pictures per building level (from reports)
+- 📦 Map: armies, fleets, agents and towns for any faction - the land clicked says whose, changeable in the window; Give this town to any faction (right click) (the user's wish)
 - 📦 Map: a port from the legend (a region without one gets one); picked towns' regions in yellow; generals' flags for every named character; painted tiles always visible while painting (from reports)
 - 📦 Check mod files: building lines naming a hidden resource, resource or religion the mod lacks; a screenshot pasted into a report with Ctrl+V (from reports)
 
