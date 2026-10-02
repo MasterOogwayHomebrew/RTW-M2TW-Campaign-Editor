@@ -13,7 +13,8 @@ Faction tab too). The **Character editor** at the top does the same for any fact
 - **Add a person...**: one window, step by step - who the new person is (a son, daughter, wife, husband, brother,
   sister, father and mother, uncle or aunt **of** someone you pick, or the head of a new family tied to no one yet),
   then the name and age from the name lists, or someone already in the faction (a new faction's heir becomes its
-  leader's son this way). Preview warns while a new person is still on no tree. **Take off the tree**, **Leave out**.
+  leader's son this way). A new man tied to no one is written as a general on the map (with a bodyguard, in the
+  faction's first town); a new woman tied to no one stays a record (Preview says so). **Take off the tree**, **Leave out**.
 - A renamed person is renamed on every line of the family tree.
 - The tree is checked before writing (a husband is a man, nobody is their own ancestor...).
 
