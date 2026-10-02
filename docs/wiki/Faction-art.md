@@ -60,8 +60,12 @@ replacing them never changes the template's. Both games.
 The faction's emblem is shown in many places, each in its own size: the campaign-menu buttons (small and big, each
 normal / mouse over / selected / greyed out), the loading screen, the faction screen (Medieval II), the in-game
 panels' symbol (Medieval II), the faction logo and small logo (Rome, on the game's sprite sheets). **Faction emblem -
-one picture everywhere...** on the Art tab takes one picture (best a square PNG with a clear background) and makes
-all of them from it:
+one picture everywhere...** on the Art tab takes one picture (best a square PNG with a clear background). First it
+is **fitted by hand**: drag it to move, the mouse wheel makes it bigger or smaller, a slider turns it; the
+**shape** cuts it like the old emblem (most are a disc - its outline is drawn as a yellow guide), as a circle, a
+square or not at all; the **ground** fills the shape behind it (clear, the faction's primary or secondary colour,
+any colour); the **magic wand** clears an area of like colour with one click (a white background), the **paint
+bucket** fills one; **Undo**, **Fit again**, **Start over**. **Next** makes all of them from it:
 
 ![One emblem made into every place](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/emblem.png)
 
