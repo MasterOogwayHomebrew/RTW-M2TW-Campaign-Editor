@@ -152,7 +152,10 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- Nothing yet.
+- 📦 Edit region holds both names of a region and its town: the names players see and the names in the files (the Map's extra Rename buttons gone)
+- 📦 Units and buildings brought from another mod lose conditions this mod does not have (a hidden resource, a religion) - the game no longer stops at start (from a report)
+- 📦 New forts and watchtowers on campaigns that have none (vanilla Rome and Medieval II), written in the regions section
+- 📦 Roster: no error on a double click right after Apply (from a report)
 
 ## 🧪 Being tested in the game now (newest first)
 
