@@ -19,8 +19,11 @@ game's character panel shows him - the portrait in a frame, name, who he is, age
 own skill: Subterfuge, Influence, Charm, Finance, Piety; Rome: Command, Influence, Management), added up from the
 effects of his traits and his retinue as the files give them; the traits by the names players see
 (`export_VnVs.txt`, or Medieval II's compiled `.strings.bin`) with what each gives; the retinue as picture cards
-(`ui/ancillaries`). The switch above it, **Character** / **Family tree**, shows the whole family instead. The
-panel shows; the form on the left edits (traits, retinue, portraits, name, age).
+(`ui/ancillaries`). **A click on the pips sets the attribute** (a person on the map): the traits are fitted to it -
+a trait he has that gives it moves to the level that fits (or comes off), else a trait giving that attribute alone
+is added (GoodCommander for Command, say); the status line says what changed, Undo takes it back, Apply writes it.
+A click on the last filled pip takes one off. The switch above it, **Character** / **Family tree**, shows the whole
+family instead; the form on the left edits the rest (traits, retinue, portraits, name, age).
 
 ## Traits and retinue themselves
 

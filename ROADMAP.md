@@ -160,6 +160,7 @@ timeline
 - 📦 Faction tab in two columns; the editors' block lines fold away behind a button (from reports)
 - 📦 Bring from another mod / New unit and building: the picked one shown as the game shows it (pictures, texts, effects in plain words); units: one line each for where they are trained; two pictures per building level (from reports)
 - 📦 Faction emblem fitted by hand: move, size, turn, the old emblem's disc or a circle / square, a ground colour, magic wand, paint bucket (from a report)
+- 📦 Character panel: click the pips to set Command / Influence / ... - the traits fitted to it (from a report)
 - 📦 Building editor: names and descriptions per culture / faction; the editors' list width dragged (from a report)
 - 📦 The new symbol on Rome's 3D battle banners and the campaign map's flag: the game's blank white banner dyed in the faction's colour or a pattern (tricolours, quarters, crosses...), the symbol painted on (from a report)
 - 📦 Recolour: a bright colour of its own kept (gold next to red), the faction's colours set with the pictures, pictures fit the screen (from reports)
