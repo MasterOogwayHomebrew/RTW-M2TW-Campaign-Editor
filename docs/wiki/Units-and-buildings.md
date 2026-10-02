@@ -53,6 +53,11 @@ with its pictures. The pictures, the battle model and the voice stay in view; th
 A building level for many towns of any owner, or random garrisons under an upkeep limit: **Tools > Buildings and
 garrisons for many towns** - see [Campaign map: Pick towns](Campaign-map#pick-towns-a-building-or-garrisons-for-many-towns).
 
+**One temple per town**: the games take one temple chain (a name starting with `temple_`) per town - two in
+`descr_strat.txt` stop the game ("Settlement specified with multiple temple buildings"). The Buildings tab swaps the
+old temple for the one you pick, the many-towns window skips a town that has another temple, Check mod files names a
+town holding two. A mod that wants more temples names the extra chains without "temple".
+
 ## Roster (Edit faction)
 
 Every unit and building level of the mod and whether the faction has it. **Give** / **Take away**. A unit is
