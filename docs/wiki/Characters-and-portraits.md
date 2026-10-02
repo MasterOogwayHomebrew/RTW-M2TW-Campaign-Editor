@@ -4,12 +4,16 @@
 
 Everyone of the faction: the characters on the map (with traits and ancillaries) and family members off the
 map. The family tree is drawn the way the game shows it: husband and wife side by side, their children below,
-the leader and heir marked. The **Character editor** at the top does the same for any faction, rebels too.
+the leader and heir marked; people tied to no one stand under "Not on the tree", and a faction with several
+families shows each as its own tree. The list and the person are on the left, the tree on the right (on the
+Faction tab too). The **Character editor** at the top does the same for any faction, rebels too.
 
 - Click a person to edit: name (from the faction's name lists - the game crashes on a name without a text),
   age, sex (off the map), traits with their level, ancillaries.
 - **Give a wife...**, **Add a child...**: someone already in the faction (a new faction's heir becomes its
-  leader's son this way) or a new person from the name lists. **Take off the tree**, **Leave out**.
+  leader's son this way) or a new person from the name lists. **New person...**: someone new tied to no one yet -
+  then pick a married man and **Add a child...** (or a man and **Give a wife...**) and choose them there; Preview
+  warns while a new person is still on no tree. **Take off the tree**, **Leave out**.
 - A renamed person is renamed on every line of the family tree.
 - The tree is checked before writing (a husband is a man, nobody is their own ancestor...).
 
