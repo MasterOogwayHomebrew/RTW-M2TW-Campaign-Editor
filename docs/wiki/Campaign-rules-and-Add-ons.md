@@ -14,6 +14,11 @@ Every value of the campaign's settings files, by group, each with a plain explan
 - **Rome under REX** - `descr_settlement_mechanics.xml`: the people each settlement level starts with, needs to grow,
   and holds at most; the weights of the town scroll lines.
 - **REX / M2EX** - `descr_unit_sizes.txt`: the Unit size choices in the options (soldiers x this number).
+- **REX / M2EX engine settings** - `descr_ex.txt` (sound, camera, max factions, bribery, hordes, ages and the family,
+  the battle range disc and colours...) and `descr_caps_ex.txt` (feature switches: recruitment slots per town, sprite
+  format, trade fleets, portrait pools, building downgrade / conversion of culture...), grouped by the file's own
+  headings, each value explained by the comment the engine writes above it. The engines read these two from the mod
+  alone: a mod without them runs on the engine's defaults, and a change puts a copy in the mod.
 
 **Find** looks through every file. A value that differs from the game's own shows the game's beside it, with
 **Reset**. Change values, **Preview**, then **Write it in**: only the value itself changes in the file (the rest

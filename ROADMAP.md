@@ -152,6 +152,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Campaign rules: the REX / M2EX engine settings (descr_ex.txt, descr_caps_ex.txt), each explained by the engine's own comment (from a report)
 - 📦 One temple per town, as the games want: kept in the Buildings tab, the many-towns window and Check mod files
 - 📦 Terrain: impassable land / sea brushes (Medieval II; Rome with REX); new land stands in shallows (from reports)
 - 📦 Map: the sign being placed rides under the mouse; switching a mode off unpicks what it picked; no separate forts mode (all in the legend and the right click); readable resource letters; the map's size under the map (from reports)
