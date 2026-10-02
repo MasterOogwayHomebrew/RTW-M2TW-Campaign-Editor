@@ -156,6 +156,8 @@ timeline
 - 📦 Units and buildings brought from another mod lose conditions this mod does not have (a hidden resource, a religion) - the game no longer stops at start (from a report)
 - 📦 New forts and watchtowers on campaigns that have none (vanilla Rome and Medieval II), written in the regions section
 - 📦 Roster: no error on a double click right after Apply (from a report)
+- 📦 Windows open in the middle of the screen; hover texts stay on screen; wide drop-down lists; long field texts shown on hover; '?' visible in the Dark look (from reports)
+- 📦 Faction tab in two columns; the editors' block lines fold away behind a button (from reports)
 
 ## 🧪 Being tested in the game now (newest first)
 

@@ -3,7 +3,8 @@
 ## Unit editor and Building editor
 
 Every line of a unit (`export_descr_unit.txt`) or a building chain (`export_descr_buildings.txt`) as a field,
-with its pictures. The lists filter (**Show**: a faction, a culture, a category, mercenaries apart) and sort.
+with its pictures. The pictures, the battle model and the voice stay in view; the lines fold away behind
+**Every line of the block** (open it to change them; it stays open or closed as you left it). The lists filter (**Show**: a faction, a culture, a category, mercenaries apart) and sort.
 
 - **Import...** puts a picture in the right size and format in the right place.
 - **New unit / New building step by step...** makes a new one from an existing one that surely works in the game,
