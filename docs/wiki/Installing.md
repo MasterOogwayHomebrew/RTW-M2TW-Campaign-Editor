@@ -15,7 +15,8 @@ Beside the exe it keeps two things of its own:
 
 - `CampaignEditor_settings.json` - what it remembers between starts;
 - `CampaignEditor_logs` - its log (`CampaignEditor.log`), the logs zips, and `sessions`: on every close the
-  session's log and the game's newest `system.log.txt` are saved there by themselves. **Report a bug** sends them.
+  session's log and a copy of the game's newest `system.log.txt` (as `game_system.log.txt` - the game's own log, its
+  errors are the game's, not the editor's) are saved there by themselves. **Report a bug** sends them.
 
 **An update** is simply the new exe in the same place; the settings stay. An older version's
 `RTW-M2TW-Campaign-Editor-files` folder is moved in by itself.
