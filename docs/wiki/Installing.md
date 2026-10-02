@@ -40,7 +40,7 @@ writes only the game or mod folder you load and its own two files beside the exe
 
 ## Without the exe (any OS)
 
-With Python 3.8 or newer: `python rtw_faction_tool.py` from the repository (standard library; Pillow for the
+With Python 3.8 or newer: `python campaign_editor.py` from the repository (standard library; Pillow for the
 pictures: `pip install pillow`).
 
 **Linux** (Mint, Ubuntu, Debian...): the window needs tkinter and Pillow's Tk part, which the distribution
@@ -48,7 +48,7 @@ ships apart from Python. Install them once, then start the tool with `python3`:
 
 ```
 sudo apt install python3-tk python3-pil python3-pil.imagetk
-python3 rtw_faction_tool.py
+python3 campaign_editor.py
 ```
 
 Fedora: `sudo dnf install python3-tkinter python3-pillow-tk`; Arch: `sudo pacman -S tk python-pillow`.
