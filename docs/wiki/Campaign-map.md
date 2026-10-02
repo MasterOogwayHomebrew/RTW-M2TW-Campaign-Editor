@@ -29,7 +29,9 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   picked there. No faction has to be picked first. The faction you make or edit gets it in its list on Units &
   armies (give it its units there); any other faction's army or fleet starts with the first unit of its nearest
   army or fleet (its general's bodyguard) and is written with the next Apply.
-  Click the button again to stop. The legend is open on the first start (**Legend** on the bar hides it).
+  While a sign is picked it rides under the mouse (framed green where it may go, red where not - the reason beside
+  it). Click the button again to stop; hiding the legend puts the picked sign down too. The legend is open on the
+  first start (**Legend** on the bar hides it).
   Every named character shows as a general's flag, as in the game (family members too).
 - **Right click on the map**: on a town - **Give this town to** any faction (written with the next Apply; its
   characters go to the old owner's other towns, a captain's garrison goes with it); on a free tile - **New army /
@@ -56,6 +58,8 @@ click on a town picks it - it and its region turn **yellow** - or unpicks it. A 
 - **Add a building to the N picked town(s)...** and **Garrisons for the N picked town(s)...** - both open the window
   *Buildings and garrisons for many towns* with the picked towns already chosen;
 - **Pick every town of <owner>** (on a town), **Unpick all**.
+
+Untick **Pick towns** and every town is unpicked (the same everywhere: switching **Edit resources** / **Edit forts** off drops the picked sign).
 
 The same window is in **Tools** and on the Buildings tab (**Many towns at once...**). All towns of the campaign on the
 left - filter them by owner, level, city / castle (Medieval II) or name, **Add all shown** - the chosen ones on the
@@ -177,7 +181,7 @@ removed. The window lists every file first; one backup, Restore gives it all bac
 
 ![The coast of Italy made 3 x bigger: before (squares), after (smooth)](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/bigger_map_coast.png)
 Coordinates in scripts are not moved yet (the tool counts them). Past 510 tiles the original exes need REX / M2EX.
-The map's real size is shown over the map, bottom left.
+The map's real size is shown under the map, bottom left.
 
 ## Wonders (Rome)
 

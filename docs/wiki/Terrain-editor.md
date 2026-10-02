@@ -6,7 +6,9 @@
 and Medieval II).
 
 - **Ground**: low / medium / high fertility, wilderness, sparse and dense forest, hills, mountains, high
-  mountains, swamp, and the three kinds of sea.
+  mountains, swamp, and the three kinds of sea; **impassable land** and **impassable sea** (no army walks or sails
+  there - Medieval II, whose map is full of them; Rome only with REX, which knows these ground types - not yet
+  tried in the game on Rome).
 - **Rivers, cliffs, volcanoes...**: rivers, fords (the tiles where armies cross a river), river sources, cliffs,
   volcanoes, land bridges (Medieval II: armies walk across a narrow strait like the Bosporus - a straight strip of 3
   tiles: land, sea, land; Preview names a bent or broken one), or
@@ -30,7 +32,8 @@ or off.
 
 - **Land and sea**: turn sea into land (a new island, a longer coast) or land into sea (a bay, a strait). Land and
   sea are written in three places that must agree, so each tile changes all of them: `map_regions.tga` (the
-  region's colour or the sea's), `map_ground_types.tga` (a land ground like its neighbours', or shallow sea) and
+  region's colour or the sea's), `map_ground_types.tga` (a land ground like its neighbours', or shallow sea; new land gets a ring of shallow sea:
+  the 8 sea tiles round it that are deeper turn shallow) and
   `map_heights.tga` with `map_heights.hgt` (a low shore, or the sea's depth). New land joins the region of the
   nearest land, or the one picked in *new land joins*; move borders later on the Map (Regions). Refused: drowning a
   town, port, character, fort or resource, a region's last land, a river (rub it out first) or a port's last land.

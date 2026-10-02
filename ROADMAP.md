@@ -152,6 +152,8 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Terrain: impassable land / sea brushes (Medieval II; Rome with REX); new land stands in shallows (from reports)
+- 📦 Map: the sign being placed rides under the mouse; unticking Pick towns unpicks all; the map's size under the map (from reports)
 - 📦 Edit region holds both names of a region and its town: the names players see and the names in the files (the Map's extra Rename buttons gone)
 - 📦 Units and buildings brought from another mod lose conditions this mod does not have (a hidden resource, a religion) - the game no longer stops at start (from a report)
 - 📦 New forts and watchtowers on campaigns that have none (vanilla Rome and Medieval II), written in the regions section
@@ -202,7 +204,7 @@ timeline
 - 🧪 The Map's legend as a palette: pick a town, fort, watchtower, resource, army or agent, click the map to make one (0.22.0)
 - 🧪 Alliances and wars at the start (both games): one status per faction that pulls the AI feelings along, every value in words; Medieval II's diplomacy read as the game writes it (`faction_standings`), a new Medieval II faction at war with the rebels (0.23.0)
 - 🧪 Victory conditions on the Faction tab: regions to hold and take, factions to outlive, Rome's goal - long and short campaign (0.23.0)
-- 🧪 Wonders on the Map (Rome): shown, dragged, added, removed; the map's real size shown over the map (0.25.0)
+- 🧪 Wonders on the Map (Rome): shown, dragged, added, removed; the map's real size shown (0.25.0)
 - 🧪 A Settings window (look, language, game folder, the map's look, report contact, set-up questions, folders); Check mod renamed Check mod files (0.24.0)
 - 🧪 The family tree folded behind a Family tree button on the Faction tab; hover texts on the work buttons (0.23.0)
 - 🧪 A faction's religion pulls its temples, guilds, priests and their figures along (Medieval II) (0.22.0)
