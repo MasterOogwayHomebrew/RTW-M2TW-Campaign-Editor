@@ -75,7 +75,7 @@ bucket** fills one; **Undo**, **Fit again**, **Start over**. **Next** makes all 
 - a picture the faction shares with another (a loading logo) becomes a copy of its own, its line pointed at it;
 - **the symbol on the flags and banners (Rome)**: the flag symbol on the campaign map gets the symbol alone (no
   disc, no ground), and the faction's **battle banners** (its own standard texture and its allies') are made new
-  from the game's own **blank white banner** (the cloth a routing unit carries - Roman, barbarian or eastern, the
+  from the game's own **blank white banner** (the cloth a routing unit carries - Roman, barbarian or eastern,
   any of the three for any faction, whatever its culture - picked by its picture in **Banner...**; the game turns a fleeing unit's banner into it, and it is only read, never
   changed): its cloth dyed in the faction's colour, the folds kept, the symbol painted on it (faint on the allies'
   banner, as the game's own are); the trim, the experience stars and the pole stay as they are. **Banner...** under
