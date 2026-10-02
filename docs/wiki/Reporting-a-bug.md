@@ -3,7 +3,8 @@
 When the game crashes, the tool shows an error, or something looks wrong, please send:
 
 1. **The logs**: in the tool, **Report a bug / Suggest** (bottom right, also Tools -> Report a bug...). Write a few
-   words of what happened, add a screenshot if you like, press **Send** - the tool's log, the game's
+   words of what happened, add a screenshot if you like (**Add a screenshot...**, or take one with Win+Shift+S /
+   PrintScreen and press **Ctrl+V** in the report window), press **Send** - the tool's log, the game's
    `system.log.txt` and the newest REX crash report go to the author at once, no account needed, and you get a
    report number (say it on Discord if you want to talk about it). When the tool itself shows an error, it offers
    the same window.

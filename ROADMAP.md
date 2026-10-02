@@ -158,6 +158,8 @@ timeline
 - 📦 Roster: no error on a double click right after Apply (from a report)
 - 📦 Windows open in the middle of the screen; hover texts stay on screen; wide drop-down lists; long field texts shown on hover; '?' visible in the Dark look (from reports)
 - 📦 Faction tab in two columns; the editors' block lines fold away behind a button (from reports)
+- 📦 Bring from another mod / New unit and building: the picked one shown as the game shows it (pictures, texts, effects in plain words); units: one line each for where they are trained; two pictures per building level (from reports)
+- 📦 Check mod files: building lines naming a hidden resource, resource or religion the mod lacks; a screenshot pasted into a report with Ctrl+V (from reports)
 
 ## 🧪 Being tested in the game now (newest first)
 
