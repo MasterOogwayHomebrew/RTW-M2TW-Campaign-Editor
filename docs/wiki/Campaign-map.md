@@ -127,8 +127,14 @@ players see (`historic_events.txt`), the **picture players see** on the scroll (
 `ui/<culture>/eventpics/<event>.tga` - **Picture...** puts yours in for every culture, sized like the game's; a
 plague, volcano... shows its kind's `disaster_<kind>.tga`) and **what it does in the game** in plain words.
 **New event...**, **Remove**, Preview, Write it in with a backup. Below the
-list: the factions that start dead and appear later (`dead_until_resurrected` in descr_strat.txt) with the campaign
-script lines that wake them (Medieval II: the Mongols and Timurids) - shown, not changed.
+list: **the factions that appear later** - they start dead (`dead_until_resurrected` in descr_strat.txt, no towns,
+no characters) and come in *by an event* (`emergent_faction` with a date and a region), *as the shadow of a faction*
+(the side that splits off it in a civil war, Barbarian Invasion's rebels of the empires) or *splitting off a faction
+in a revolt* (Barbarian Invasion's Ostrogoths); the campaign script lines that wake one are shown too (Medieval II:
+the Mongols and Timurids). **Change...** (or a double click) changes how a faction comes in - its date and region,
+its partner, *may come back after it dies* (`re_emergent`); **Another faction...** makes a faction without towns
+and characters appear later. Written with Write it in, every file in step (descr_sm_factions, descr_strat,
+descr_events).
 
 ## Resources
 

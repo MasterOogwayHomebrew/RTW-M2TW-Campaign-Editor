@@ -152,6 +152,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Factions that appear later: by an event, as a faction's shadow (civil war) or splitting off in a revolt - New faction and Tools > Events (from Discord)
 - 📦 A double click on a town opens it; many towns made city / castle and of another level at once (from Discord)
 - 📦 REX / M2EX: no faction limit - max_factions raised by itself with every new faction (the author's wish)
 - 📦 A town on its region's edge stays its region's - on the Map and in the bigger map (from a report)
@@ -277,8 +278,6 @@ timeline
 | Check mod files: the crash rules modders documented (undeclared ai_label, religions not summing to 100, a region with no town not last, event texts, antitraits, dead ancillaries, absolute paths, a town touching another region) | Time |
 | Limits shown up front on the original exes (REX / M2EX lift most): units (500), building chains (64 Rome / 128 Medieval II), levels (9), religions (9) | Time |
 | A religion of one's own, step by step in its own window: name, symbol, text, its temple chain (levels, pictures, effects like the Building editor), which factions follow it - Medieval II and Barbarian Invasion (BI's `descr_beliefs.txt`, `religious_belief` in the buildings); greyed on plain Rome, which has no religions | Time; BI's campaign files for the test |
-| Factions that appear later, each game its own way: Medieval II by date (`dead_until_resurrected`, `spawned_on_event`, an `emergent_faction` event with its regions, armies spawned by the campaign script - like the Mongols and Timurids); Barbarian Invasion hordes (`horde_*` lines) and factions born of a revolt (`spawns_on_revolt`, `shadowed_by`) | Time; in-game tests |
-| Shadow and emergent factions set in the tool (BI `shadowed_by` / `shadowing`, `spawned_on_event`, Medieval II `dead_until_resurrected`, `undiscovered`) | Time; an in-game test |
 | A faction brought over from Rome into Barbarian Invasion (or between any two Rome mods): a faction pack - its units already go over as unit packs | Time; then an in-game test |
 | Saved games edited (money, characters, towns of a running campaign), if the save files can be read safely - to be researched first | Research: the save format of both games |
 | The window in other languages, picked at the first start: Spanish, French, German, Italian, Russian, Turkish (asked on Discord); hover texts in place of long labels so longer words fit | Time; translators to check the words |
