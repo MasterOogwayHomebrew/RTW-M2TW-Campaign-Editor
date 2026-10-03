@@ -88,8 +88,39 @@ bucket** fills one; **Undo**, **Fit again**, **Start over**. **Next** makes all 
 - 'Use it' puts them on the Art tab; Preview and Apply write them with a backup, Restore gives them back.
 
 The campaign map's flags over armies and towns take their colours from the faction's colours (the game paints them);
-the symbol on them is the flag symbol above. Medieval II's battle banners are heraldic sheets of many pieces - the
-emblem does not make them yet (Recolour changes their colours).
+the symbol on them is the flag symbol above.
+
+## Banner... - battle banners from a white banner (both games)
+
+**Banner...** (on the Art tab, beside Recolour) makes the faction's battle banners new, no emblem needed first:
+
+- **the cloth**: a **pattern** of up to three colours on each banner on its own - plain, two or three stripes upright
+  (a tricolour) or across, halves or bands slanting, quarters, a cross, a slanting cross, a border, a stripe in the
+  middle; the cloth's folds and stitching are kept;
+- **a symbol** if you like: **Symbol picture...** takes any picture (a white or plain square round it is cleared),
+  shaded by the folds; a box drawn on a banner puts it there, **Symbol back in the middle** undoes that;
+- **your own drawing**: **Save the template...** saves the white banner as a PNG of the game's size with each banner
+  outlined in red - paint inside the lines in any program, keep the size, then **Put in my own drawing...** takes it
+  in its place (the symbol can still go on top); **Back to the dyed cloth** drops it;
+- **Undo** steps back; **Done** puts the pictures on the Art tab; Preview and Apply write them with a backup in
+  the game's own format, Restore gives them back.
+
+**Rome**: made from the game's own blank white banner (the cloth a routing unit carries - Roman, barbarian or
+eastern, any of the three for any faction), the faction's own banner and the allies' (the symbol faint, as the
+game's own are); the trim, the experience stars and the pole stay as they are.
+
+**Medieval II** has no white banner - every one of the game's banner pictures carries heraldry (even the rebels' a
+cross, the multiplayer ones numbers). But every faction's picture (`banners/textures/faction_banner_<faction>.texture`,
+1024 x 512) holds the same banners in the same places, so the white template is taken from the mod's own pictures:
+per pixel, the light of each against its surroundings, and the middle value of them all - each faction's heraldry
+sits somewhere else, so it goes; the folds, the tooth edges and the holes they share stay; what is alike in nearly
+all of them (the poles, the fittings) keeps its colour. The banners' 3D models (`data/banners/main_*.mesh`, named in
+`descr_banners_new.xml`) say where each banner and pennant lies on the picture: each is dyed on its own, and the
+window shows the banner in 3D (pick infantry, spear, cavalry, missile or general). The translucency picture beside it
+(`_trans`) is left as it is. A banner picture shared with other factions becomes the faction's own copy (its line
+in `descr_banners_new.xml` pointed at it; when the file carries the faction's name, the others get copies of the old
+one instead). Making the template takes a few seconds the first time (kept while the files are unchanged). Royal
+banners (`royal_banner_<faction>`) and crusade / order banners are not made here.
 
 ## Recolour all its pictures
 
