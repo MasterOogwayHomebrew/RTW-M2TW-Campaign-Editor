@@ -153,6 +153,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Sack Settlement for Medieval II (M2EX) as a button of the game's own kind: the same script as Rome's, drawn from the scroll's own button pieces in the game's font; the older Lua copy taken out
 - 📦 Answers to my reports: the author's reply comes back into the editor (report window tab, "(1 new)" on the Report button), and you can answer back with words or a screenshot (from Discord)
 - 📦 The bigger map (x3) moves the campaign's scripts too: spawned armies, moved characters, camera, revealed tiles, 'near a tile' conditions (from a tester's game: scripted armies stood off the map)
 - 📦 Drawn garrisons fit the town: only what its own buildings recruit, else the cheapest units

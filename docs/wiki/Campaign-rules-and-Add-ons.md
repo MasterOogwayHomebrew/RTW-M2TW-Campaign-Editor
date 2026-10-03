@@ -90,19 +90,24 @@ with each other stay as they are:
 It works through REX's campaign AI hook (calculateLtgd). In the game's console: `sq ::truce_status()`,
 `sq ::truce_set("egypt", 10)`, `sq ::power("egypt")`; its log lines start with `[DIPLO]`.
 
-### Raze Settlement (Medieval II + M2EX)
+### Sack Settlement (Medieval II + M2EX)
 
-The Medieval II brother of Sack Settlement. Medieval II already has Occupy / Sack / Exterminate on the capture
-scroll; Raze Settlement is a 4th button under them. It presses the game's own Exterminate, then tears down every
-building except the chains you keep (the core chain - walls are its levels in Medieval II - and roads by default),
-removes most of the people, pays a reward per building and per inhabitant, and gives the ruins to the rebels
-(`give_settlement slave`: M2EX turns the town rebel and installs a fresh rebel garrison itself).
+The Medieval II brother of Rome's Sack Settlement - the same script, as M2EX runs the same scripts as REX.
+Medieval II already has Occupy / Sack / Exterminate on the capture scroll, so its 4th button under them says
+**Raze Settlement** (the words are a setting). It is drawn from the scroll's own text-button pieces, as wide and as
+far apart as the game's three, in the game's font. It presses the game's own Exterminate, then tears down every
+building except the chains you keep (the core chains - walls are their levels in Medieval II - and the roads of
+cities and castles by default), leaves as many people as you pick (never fewer than the town's level allows), pays
+a reward per building and per inhabitant, and gives the ruins to the rebels with a fresh rebel garrison
+(`give_settlement slave`: M2EX turns the town rebel and raises the garrison itself).
 
-- **Who may raze:** only the player (default), everyone, only the computer, or the factions you pick. A computer
-  faction allowed to raze does it whenever it exterminates a town.
-- **The 4th button** off: no button - Exterminate razes for the factions allowed.
+- **Who may raze:** only the player (default), everyone, only factions without a town of their own (hordes), the
+  player and hordes, only the computer, or the factions you pick. A computer faction allowed to raze does it
+  whenever it exterminates a town.
+- **The 4th button** off: Exterminate asks Yes / No to raze instead.
 
-It is Lua for M2EX (its EOP-compatible scripts): the file goes to `<mod>/eopData/eopScripts/raze_settlement.lua`,
-and one line in that folder's `luaPluginScript.lua` loads it (the file is made when the mod has none; a mod's own
-lines and handlers keep working - the add-on calls them first). The game's log says `[RAZE] Raze Settlement loaded`.
-Vanilla Medieval II runs no scripts - the add-on does nothing there.
+It goes into the game's `script/modules`, where M2EX's own scripts load it for every mod. The game's log says
+`[RAZE] Raze Settlement module loaded`; in the console `sq ::raze_loot_probe()` lists what the capture scroll
+reports and `sq ::raze_ui_fonts()` the game's fonts. An older version's Lua copy
+(`eopData/eopScripts/raze_settlement.lua` and its line in `luaPluginScript.lua`) is taken out when this one is put
+in. Vanilla Medieval II runs no scripts - the add-on does nothing there.
