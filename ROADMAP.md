@@ -271,6 +271,9 @@ timeline
 | Step | What it needs |
 |---|---|
 | Signed exe (no browser / SmartScreen warnings) | SignPath Foundation's answer (applied) |
+| REX / M2EX's new unit attributes in the Unit editor with plain words: immune to arrows / to fire, resistance to missiles, enduring fortitude, life steal, stamina hardy_0-123, weapons strong against armour / ignoring armour | Time; in-game tests |
+| Diplomacy: a faction that starts as another's vassal (`client_of`, REX + M2EX; the engine setting switched on by itself) | Time; in-game tests |
+| M2EX monster units (`descr_monsters.txt`) and campaign voice lines per unit | The format from the engine's authors |
 | Terrain: mountains and hills kept in step with the heights (a mountain tile raises the land) | Time; an in-game test |
 | Terrain: a tilted 3D view from the heights and ground (asked on Discord) | Time |
 | Terrain: a new climate of one's own | Time; in-game tests |
