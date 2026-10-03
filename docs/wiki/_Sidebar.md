@@ -24,3 +24,4 @@
 **Safety and help**
 - [[Backups and Restore]]
 - [[Reporting a bug]]
+- [Discord](https://discord.gg/uqA9MEn4Z)

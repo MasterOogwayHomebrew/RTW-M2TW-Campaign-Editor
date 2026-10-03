@@ -7,7 +7,8 @@ for byte.
 
 **Download:** the latest `RTW-M2TW-Campaign-Editor.exe` from
 [Releases](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/releases) (only from there - see [[Installing]]) ·
-**▶ Video:** [what the editor does, in a few minutes](https://www.youtube.com/watch?v=m1sCPg-Lzsw)
+**▶ Video:** [what the editor does, in a few minutes](https://www.youtube.com/watch?v=m1sCPg-Lzsw) ·
+**💬 Discord:** [questions, ideas, news](https://discord.gg/uqA9MEn4Z)
 
 
 ## 🎬 More videos

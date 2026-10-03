@@ -204,7 +204,8 @@ made 3 x higher so the slopes stay as steep (**Write it - hills 3 x higher**; or
 removed. The window lists every file first; one backup, Restore gives it all back.
 
 ![The coast of Italy made 3 x bigger: before (squares), after (smooth)](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/bigger_map_coast.png)
-Coordinates in scripts are not moved yet (the tool counts them). Past 510 tiles the original exes need REX / M2EX.
+The campaign's scripts follow too: every place on the campaign map in `campaign_script.txt` (spawned armies and characters, `reposition_character`, `move`, the camera, `reveal_tile`, forts and resources made by `console_command`, 'near a tile' distances, 'in a rectangle' sizes) goes to its block; battle positions in the same script stay. Lines the editor cannot read for sure, and Lua / Squirrel scripts, are listed to check by hand.
+Past 510 tiles the original exes need REX / M2EX.
 The map's real size is shown under the map, bottom left.
 
 ## Wonders (Rome)

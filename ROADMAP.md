@@ -30,7 +30,8 @@ author in one click ([video](https://youtu.be/7MbYR9ywNsI)). That is the fastest
 - `descr_terrain.txt` gets the new size; `map.rwm` is deleted so the game rebuilds it.
 - Preview of every file, one backup, Restore byte-exact.
 
-Not converted: coordinates inside scripts (counted and listed). Without REX / M2EX the original exes stop at
+Scripts follow too: every campaign-map place in the campaign's scripts (spawned armies and characters, `reposition_character`, `move`, the camera, `reveal_tile`, forts and resources made by `console_command`, 'near a tile' and 'in a rectangle' conditions) goes to its block; battle positions in the same scripts stay. Lines the editor cannot read for sure, and Lua / Squirrel scripts, are listed to check by hand.
+Without REX / M2EX the original exes stop at
 510 tiles - the tool warns. Checked on both vanilla campaigns (103 / 112 towns, 177 / 216 characters, 75 / 77 ports
 in place, no river on the sea, every river end at the sea, a river or the map's edge as in the original). The first
 alpha (0.24-0.27) left the old `map_heights.hgt` in place and kept the heights - flat, square-coasted maps; make the
@@ -152,6 +153,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 The bigger map (x3) moves the campaign's scripts too: spawned armies, moved characters, camera, revealed tiles, 'near a tile' conditions (from a tester's game: scripted armies stood off the map)
 - 📦 Drawn garrisons fit the town: only what its own buildings recruit, else the cheapest units (the author's wish)
 - 📦 Factions that appear later: by an event, as a faction's shadow (civil war) or splitting off in a revolt - New faction and Tools > Events (from Discord)
 - 📦 A double click on a town opens its own window (owner, city / castle, level, population, buildings); many towns made city / castle and of another level at once (from Discord)
@@ -274,7 +276,7 @@ timeline
 | A new campaign map from scratch (one region, one faction, loads in the game), then grown in the editor | Time; in-game tests |
 | Events and disasters shown and edited on the map (`descr_events.txt`, `descr_disasters.txt`); Rome's wonders (`descr_sm_landmarks.txt`) | Time; in-game tests |
 | Rome's textures read straight from its `data/packs` (when a model's texture is not a loose file) | Time |
-| The bigger map, after the alpha: plains really flat and mountains with sharp peaks (heights follow the ground type), clean coasts; coordinates in scripts moved too, grow or cut the map's edges | Time; in-game tests |
+| The bigger map, after the alpha: plains really flat and mountains with sharp peaks (heights follow the ground type), clean coasts; grow or cut the map's edges | Time; in-game tests |
 | Faction packs (like unit packs); building chains as a .zip to share | Time; then an in-game test |
 | Mods made on the plain game (slimmed folders) loaded with the game's data behind them | Time |
 | Check mod files: the crash rules modders documented (undeclared ai_label, religions not summing to 100, a region with no town not last, event texts, antitraits, dead ancillaries, absolute paths, a town touching another region) | Time |
