@@ -7,7 +7,8 @@ When the game crashes, the tool shows an error, or something looks wrong, please
    PrintScreen and press **Ctrl+V** in the report window), press **Send** - the tool's log, the game's
    `system.log.txt` and the newest REX crash report go to the author at once, no account needed, and you get a
    report number (say it on Discord if you want to talk about it). When the tool itself shows an error, it offers
-   the same window.
+   the same window. A long game log is cut to fit: its start (where the game reads the mod's files and says what it
+   does not like), every error and warning line of the middle, and its end.
    **Anonymous**: before anything leaves, the logs lose your Windows user name (also inside folder paths), the
    computer's name, e-mail addresses, Steam IDs, IP addresses and the player's name of REX's crash report; add
    your own words to hide (your nick). **Show what is sent** shows every line that goes. The contact field is
