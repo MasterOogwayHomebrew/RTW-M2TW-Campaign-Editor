@@ -11,7 +11,8 @@ When the game crashes, the tool shows an error, or something looks wrong, please
    **Anonymous**: before anything leaves, the logs lose your Windows user name (also inside folder paths), the
    computer's name, e-mail addresses, Steam IDs, IP addresses and the player's name of REX's crash report; add
    your own words to hide (your nick). **Show what is sent** shows every line that goes. The contact field is
-   optional.
+   optional; with **remember it** ticked (the default) every next report fills it in by itself - it is kept in
+   Settings > Reports too, and unticking it forgets it.
    Rather send it yourself? **Tools -> Save logs (zip)** (or Save as zip in the report window) - the same logs, the
    names cut out, saved in `CampaignEditor_logs` next to the exe.
 2. **A video or a screenshot** of what you did and what went wrong.
