@@ -94,7 +94,7 @@ emblem does not make them yet (Recolour changes their colours).
 ## Recolour all its pictures
 
 **Recolour all its pictures...** (on the Art tab, also in **Tools**) moves every picture of the faction that
-carries its colours to new ones: unit cards and info pictures, the units' battle textures and far-away sprites,
+carries its colours to new ones: unit cards and info pictures, the units' battle textures, weapons and shields (Medieval II) and far-away sprites,
 the campaign-map figures (generals, agents, admirals), the faction symbol's texture, the menu buttons and symbols,
 banners (Rome's standards, Medieval II's battle banners), the flag on its towns in battle (Rome), captain cards and
 the loading-screen symbol. Both games. The campaign map's flags over armies and towns are painted by the game itself
@@ -109,7 +109,11 @@ from the faction's colours.
   or any picked here.
 - A part counts as the faction's colour when it is coloured and its hue is near the old colour. Where the same
   picture exists for other factions (a unit card, a battle texture), only what differs between them changes - faces,
-  horses, metal and leather stay. Light and shade are kept. White, grey or black 'from' colours have no hue and stay.
+  horses, metal and leather stay. Light and shade are kept. A cloak painted duller or darker than the faction's
+  colour is taken whole (its shaded half too). White, grey or black 'from' colours (the Holy Roman Empire's black,
+  France's white) have no hue: they change only on unit cards and battle textures, where the other factions'
+  copies show which parts are the faction's; on symbols (each faction's is another drawing) they stay. Faces and
+  hands are never taken for a red or yellow coat.
 - **Touch up by hand**: paint on the 'after' picture what the test missed (a red line, a rim) with *new primary
   colour* / *new secondary colour*, or give pixels back with *keep as it was*; brush size in the picture's pixels,
   wheel to zoom, right drag to move. The touch-ups go with Write it.
