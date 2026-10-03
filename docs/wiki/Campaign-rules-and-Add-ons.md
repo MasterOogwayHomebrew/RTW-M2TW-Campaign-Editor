@@ -63,8 +63,12 @@ want to hold is burned and left to regrow.
 - **Who may sack:** only the player (default), everyone, only factions without a town of their own (hordes), the
   player and hordes, only the computer, or the factions you pick. A computer faction allowed to sack does it
   whenever it exterminates a town.
-- **Building chains never torn down:** the governor's building (it must stay), walls and roads by default -
-  **Pick...** lists the mod's own chains.
+- **Building chains never torn down:** walls and roads by default (take them out if you like) - **Pick...** lists
+  the mod's own chains. The governor's building (the core chain) always stays, listed or not: without it the town
+  could never be built up again. Every building standing in the town is read in the game, so one added in the
+  editor or brought from another mod (Barbarian Invasion, say) is torn down like the rest.
+- **People left in the ruins:** 600 by default and at least - a town cannot be wiped off the map (the games' own
+  floor is 400 a level).
 - **Rebel units if the game raises none:** **Pick...** lists the mod's own units.
 - **The 4th button** off: Exterminate asks Yes / No to sack instead. Button text and tooltip are yours to change.
 
@@ -96,8 +100,8 @@ The Medieval II brother of Rome's Sack Settlement - the same script, as M2EX run
 Medieval II already has Occupy / Sack / Exterminate on the capture scroll, so its 4th button under them says
 **Raze Settlement** (the words are a setting). It is drawn from the scroll's own text-button pieces, as wide and as
 far apart as the game's three, in the game's font. It presses the game's own Exterminate, then tears down every
-building except the chains you keep (the core chains - walls are their levels in Medieval II - and the roads of
-cities and castles by default), leaves as many people as you pick (never fewer than the town's level allows), pays
+building except the chains you keep (the roads of cities and castles by default; the core chains - walls are their
+levels in Medieval II - always stay), leaves as many people as you pick (600 at least), pays
 a reward per building and per inhabitant, and gives the ruins to the rebels with a fresh rebel garrison
 (`give_settlement slave`: M2EX turns the town rebel and raises the garrison itself).
 
