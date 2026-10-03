@@ -79,8 +79,11 @@ and M2EX (Medieval II) run the same script, so one module works in both games; t
 the engines' condition list (`FactionType england`, `Trait GoodCommander > 0`, `not I_TurnNumber < 3`...), checked
 against what just happened; **run a console command** and **run a campaign-script command** take any line of those
 lists (`kill_character "{general}" Battle`, `set_event_counter my_counter 1`...). **Pick...** beside the line lists
-every one with a search - its form, a sample, where it works, what a condition needs from the event - and under the line
-the editor shows the form of the one typed. A module for both games offers what both engines have (299 conditions,
+every one with a search - its form, a sample, where it works, what a condition needs from the event - and **its
+parameters as fields**: factions, towns, regions, units, characters, traits, retinue members and buildings picked
+from the mod (the event's own `{faction}`, `{town}`, `{general}` first - filled in when the module acts), comparisons
+and choices from a list, with the line put together under them (a line already there is read back into the fields).
+Under the line the builder shows the form of the one typed. A module for both games offers what both engines have (299 conditions,
 142 console and 198 campaign-script commands); for one game, that engine's whole list. The engine's own description
 shows when the game has its `documentation` folder: start the game with REX / M2EX, open the console and type
 `dump_docudemon` once. What an event brings comes from the engines' lists too (REX's 'a general takes a town' has no
