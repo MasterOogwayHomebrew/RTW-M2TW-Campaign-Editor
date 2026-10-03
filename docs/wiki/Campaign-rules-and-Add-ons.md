@@ -89,6 +89,12 @@ shows when the game has its `documentation` folder: start the game with REX / M2
 `dump_docudemon` once. What an event brings comes from the engines' lists too (REX's 'a general takes a town' has no
 old owner; REX has no 'a town grows' event - make such a module for Medieval II only).
 
+**Any event and numbers kept between turns**: **More events...** beside WHEN picks any event of the engines' own
+list (`SettlementTurnEnd`, `CharacterTurnEnd`, `AddedToBuildingQueue` on Medieval II ...), with what it brings. IF
+**a remembered number** and DO **remember a number** / **add to a remembered number** keep numbers between turns and
+in the saved game (the engines' own event counters - campaign_script's `I_EventCounter` reads them too); a name like
+`seen_{town}` keeps one number per town.
+
 `+ another condition...` / `+ another action...` add a line (one that needs what the event does not bring is greyed
 out, with the reason), `x` takes it out. Names come from the loaded mod: its factions, towns, units, building chains
 and levels, traits and retinue members. **In plain words** below says what the module will do, and the line under it
