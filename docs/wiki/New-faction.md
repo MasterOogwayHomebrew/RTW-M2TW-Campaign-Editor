@@ -60,8 +60,12 @@ the game at once, so you can test every change after that straight away. The tem
   REX and M2EX read it from `max_factions` in the mod's own `data/descr_ex.txt` (a mod without one runs on the
   engine's defaults - the game's copy is not read for it). After Load the status line says how many
   there are. REX and M2EX have no faction limit of their own: every new faction raises `max_factions` in the
-  mod's own `descr_ex.txt` by itself, written with the faction (Preview says so; Restore takes it back). Only the
-  original exes stop at 21 / 31 - over that the game closes at start ("Too many factions described here").
+  mod's own `descr_ex.txt` by itself, written with the faction (Preview says so; Restore takes it back) - and any
+  other write puts a line that is too low right too. Only the original exes stop at 21 / 31 - over that the game
+  closes at start ("Too many factions described here").
+- **With REX or M2EX there are no limits at all**: factions, regions, religions, cultures, units, buildings, the
+  family's children and retinue - the editor never refuses or warns for a number; the engine's setting lines
+  (`max_factions`, `max_num_children`, `max_num_ancillaries`) are rewritten to fit by themselves.
 - **Names**: every character of a faction needs a name of its own - the game skips a second one with the same
   name. The tool picks free names and refuses a taken one.
 
