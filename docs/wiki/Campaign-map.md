@@ -84,7 +84,11 @@ right, with **What happens** in each:
 - **Garrisons**: units per town *from 2 to 6* (any range up to 20) and the upkeep they may cost together per town
   (500, 1000... - empty for no limit). **Draw the garrisons** picks them at random from the units each owner may
   recruit (its `ownership` and a recruit line of some building; generals' bodyguards and - unless ticked - siege
-  engines left out); a rebel town draws from the rebel armies nearest to it, so a Greek town gets Greek rebels.
+  engines left out); a rebel town draws from its region's rebel type (`descr_rebel_factions.txt` - the units the game
+  itself raises there in a revolt; without one, from the rebel armies nearest to it), so a Gallic town gets Gallic
+  rebels. **As many units as the game gives such a town** sets the number by the town's level, the way the mod's own
+  towns of that owner have them at the start (vanilla's rebel towns: Medieval II village 5, town 4, large town 7,
+  city 6; Rome 3, 3, 4, 4).
   With **only units the town's own buildings recruit** (on by default) a town gets only what its own buildings
   recruit for its owner - no catapult in a village without a siege workshop, no heavy infantry without barracks; a
   town that recruits none of them gets the two cheapest unit types (peasants, levy spearmen).
