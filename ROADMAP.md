@@ -154,6 +154,7 @@ timeline
 ## 📦 Built, comes with the next release
 
 - 📦 Module builder (both games): your own add-on made of WHEN / IF / DO blocks picked in plain words, no code - the mod's own names, nine examples, settings for the player, Put it in / Share
+- 📦 Module builder: every event, condition, console and campaign-script command of REX / M2EX (from the engines' own lists, with a search and the parameters as fields) and numbers kept between turns
 - 📦 Add-on Avoid Growth (both games): a tick on your town's scroll in the game's own look - the town keeps at most the people it has, may shrink and grows back to that
 - 📦 Test mod: every campaign rule changed in one step (Medieval II 548 values, Rome 162), the game must read them all
 - 📦 Sack Settlement (both games): the governor's building always stays, 600 people at least in the ruins
