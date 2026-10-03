@@ -66,7 +66,7 @@ Something confusing or hard to find? That counts as a bug too - tell us ([[Repor
 - [[Faction art]] - every picture of a faction, banners, the campaign-select map.
 - [[Characters and portraits]] - family tree, traits, portraits and the portrait library.
 - [[Units and buildings]] - the unit and building editors, battle models in 3D, unit voices, the roster, unit packs.
-- [[Campaign rules and Add-ons]] - every campaign setting in plain words; Sack Settlement and other add-ons.
+- [[Campaign rules and Add-ons]] - every campaign setting in plain words; Sack Settlement and other add-ons; the Module builder for your own.
 - [[Backups and Restore]] - how nothing gets lost.
 - [[Reporting a bug]] - what to send when something goes wrong.
 

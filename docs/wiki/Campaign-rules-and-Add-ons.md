@@ -53,6 +53,45 @@ For authors, optional header lines make it nicer: `// @title Border Tolls`, `// 
 `// @summary ...`, `// @needs ...`, `// @settings A, B` (only these), `// @label VAR Words shown`,
 `// @pick VAR chains|units|factions` (a picker filled from the loaded mod's own buildings, units or factions).
 
+### Module builder (your own add-on, no code)
+
+![Module builder](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/module_builder.png)
+
+**Tools > Module builder...** or **Add-ons > New module (no code)...** puts an add-on together from blocks. REX (Rome)
+and M2EX (Medieval II) run the same script, so one module works in both games; the original exes run no scripts.
+
+- **WHEN** - what happens in the game: a faction's turn starts, a town's turn starts (each town), a general takes a
+  town, a building is finished, a unit is trained, a battle ends (for each general in it), a town riots, rebels or
+  grows to its next level, a faction is destroyed, a faction gets a new leader, a son comes of age. Under it the
+  window says what the event brings along (a faction, a town, a general, the town's old owner, a unit).
+- **IF** - only when all of these hold: the faction is the player / a computer faction / one of the factions you pick;
+  its money; its number of towns; the turn (or every N turns); a chance in percent; the town's people; the town is
+  one of those you pick; the town is the faction's capital; the town has a building of a chain; the town's old owner.
+- **DO** - in this order: give money (below 0 takes it) to the faction, the old owner, the player, the rebels or a
+  faction you name; add people to the town, take a share of them, or keep at most a number (a ceiling); build a
+  building level; tear down a chain (the governor's `core_` buildings never); new units in the town; give the town to
+  someone; set war, peace or alliance between two factions; give the general a trait or a retinue member; show the
+  game's own message scroll (title and text); write a line in the game's log; run a console command (for experts).
+  In the log line and the console command `{town}`, `{faction}`, `{owner}`, `{general}`, `{turn}` and `{people}` are
+  filled in.
+
+`+ another condition...` / `+ another action...` add a line (one that needs what the event does not bring is greyed
+out, with the reason), `x` takes it out. Names come from the loaded mod: its factions, towns, units, building chains
+and levels, traits and retinue members. **In plain words** below says what the module will do, and the line under it
+what is still missing.
+
+**What the player may change later**: tick any number or text and it becomes a setting on the Add-ons page (the words
+beside it are what the page shows); **Module on** and **Only once in a campaign** are always there.
+
+Nine examples start it, made for the loaded mod: Help when broke, Loot for taking a town, Plague in big cities,
+A free unit when a barracks is built, Gold for holding the capital, A message on turn 10, Rebellion punished,
+A trait for the conqueror, Avoid Growth for chosen towns. **Show the script** shows what it writes; **Check it** checks
+the names against the mod; **Save to my add-ons** keeps it in the Add-ons list; **Put it in the game** writes it into
+the game's `script/modules` and its messages into the mod's `text/custom_messages.txt` (a backup first - Restore
+undoes it); **Share...** saves it as a zip. A saved module opens in the builder again: **Add-ons > Change it in the
+Module builder...**. Each time it acts, the game's log (`system.log.txt`) gets a line starting with its name, like
+`[HELP_WHEN_BROKE]`.
+
 ### Sack Settlement (Rome + REX)
 
 A 4th choice on the capture scroll, under Occupy / Enslave / Exterminate. The town is exterminated the game's own

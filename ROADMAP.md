@@ -88,7 +88,7 @@ timeline
 | Campaign map | tiles, moving towns, new regions, terrain, heights, find, town names, map 3x bigger (alpha) | resources, climates, forts, big maps | the bigger map smooth (coast, heights, natural edges), many towns at once, land and sea brush, wonders, events, right-click menu, drop into a town | flat plains and sharp peaks, borders drawn by the tool, a map from the real world |
 | Characters | - | name lists | character panel, traits and retinue, family tree, portraits | - |
 | Units, buildings, art | faction art | editors, unit packs, modeldb, REX abilities | recolour of every faction picture, faction emblem, battle banners from a white banner (both games), units and buildings brought from another mod, replace a model, 3D view of Rome and Medieval II models, new unit / building step by step, unit voices | textures from Rome's packs |
-| Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | religions, campaign rules, add-ons | REX settings panel, window in other languages |
+| Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | religions, campaign rules, add-ons, module builder | REX settings panel, window in other languages |
 | Safety | - | preview, backup, byte-exact restore, Check mod files, report a bug in one click, settings | pack check | signed exe |
 
 ## What it does now (0.29.2)
@@ -153,6 +153,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Module builder (both games): your own add-on made of WHEN / IF / DO blocks picked in plain words, no code - the mod's own names, nine examples, settings for the player, Put it in / Share
 - 📦 Add-on Avoid Growth (both games): a tick on your town's scroll in the game's own look - the town keeps at most the people it has, may shrink and grows back to that
 - 📦 Test mod: every campaign rule changed in one step (Medieval II 548 values, Rome 162), the game must read them all
 - 📦 Sack Settlement (both games): the governor's building always stays, 600 people at least in the ruins
