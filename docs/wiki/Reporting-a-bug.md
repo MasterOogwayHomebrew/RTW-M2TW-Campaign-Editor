@@ -6,7 +6,7 @@ When the game crashes, the tool shows an error, or something looks wrong, please
    words of what happened, add a screenshot if you like (**Add a screenshot...**, or take one with Win+Shift+S /
    PrintScreen and press **Ctrl+V** in the report window), press **Send** - the tool's log, the game's
    `system.log.txt` and the newest REX crash report go to the author at once, no account needed, and you get a
-   report number (say it on Discord if you want to talk about it). When the tool itself shows an error, it offers
+   report number. The author's answer comes back to the editor (see *Answers to my reports* below). When the tool itself shows an error, it offers
    the same window. A long game log is cut to fit: its start (where the game reads the mod's files and says what it
    does not like), every error and warning line of the middle, and its end.
    **Anonymous**: before anything leaves, the logs lose your Windows user name (also inside folder paths), the
@@ -29,6 +29,21 @@ Video: [how to send a bug report and a suggestion](https://youtu.be/7MbYR9ywNsI)
 Every report - bug or idea - arrives as its own numbered entry with its logs and is read:
 
 ![Reports and ideas sent from the editor](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/reports.png)
+
+## Answers to my reports
+
+The author answers every report - a question ("which picture?"), "fixed in the next build", or why not. You see the
+answer in the editor itself: the report window's second tab, **Answers to my reports**. It lists the reports you sent
+from this editor, each with its state (open / closed - fixed / closed - not planned) and the talk so far. The editor
+looks for new answers when it starts (every few hours), **Check now** looks at once, and the **Report a bug /
+Suggest** button says "(1 new)" when one came (the status line says it too).
+
+To reply - answer a question, add details, say "still broken in the new build" - pick the report, write in **Your
+answer to the author**, add a screenshot or tick **with the newest logs** if it helps, and press **Send the answer**.
+It goes to the same report.
+
+Private: the editor asks only by the reports' numbers (random, known only to you) and gets back only the answers to
+them. Switch the start-up look off in Settings > Reports.
 
 **An idea or a wish?** The same button: pick "an idea", write what the editor should do - it reaches the author
 the same way (no logs needed).

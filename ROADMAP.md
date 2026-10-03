@@ -153,6 +153,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Answers to my reports: the author's reply comes back into the editor (report window tab, "(1 new)" on the Report button), and you can answer back with words or a screenshot (from Discord)
 - 📦 The bigger map (x3) moves the campaign's scripts too: spawned armies, moved characters, camera, revealed tiles, 'near a tile' conditions (from a tester's game: scripted armies stood off the map)
 - 📦 Drawn garrisons fit the town: only what its own buildings recruit, else the cheapest units (the author's wish)
 - 📦 Factions that appear later: by an event, as a faction's shadow (civil war) or splitting off in a revolt - New faction and Tools > Events (from Discord)
