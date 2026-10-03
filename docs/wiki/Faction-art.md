@@ -15,7 +15,8 @@ matter. **Preview**, then **Apply** writes it with a backup.
   picture of Epirus never changes Macedon's.
 - **Shared pictures**: some pictures are used by several factions (the rebels' and the routing banner). The
   Art tab says who shares one; **Replace...** then makes a copy of the faction's own under its name and points
-  only this faction's line at it. The others keep theirs.
+  only this faction's line at it. The others keep theirs. The same for a battle banner, a town flag or the 3D
+  symbol's texture shared with others: **Replace (its own copy)...** (Edit faction) and **Save a copy...**.
 - **Keep the current one** drops a replacement not written yet.
 - **Back to the original** puts back a picture the tool changed earlier: the version the first backup kept,
   or for a new faction the template's picture it was copied from.
