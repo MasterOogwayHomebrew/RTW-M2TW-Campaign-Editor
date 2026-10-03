@@ -131,8 +131,10 @@ in one Apply. **Edit region...** opens a region's data again. For a region of th
 
 **Tools > Events and later factions...** (both games): the campaign's `descr_events.txt` - historic messages, and
 plagues, volcanoes, earthquakes at a place. Each event's date (Rome: years from the start and optionally summer or
-winter, `14 winter`; Medieval II: a turn, or two turns the game picks one between, `210 220` - a date the game
-would not read is refused), its place (x, y; empty = a message only; **Show on the map**), the title and text
+winter, `14 winter`; Medieval II: years from the start, or two the game picks one between, `210 220` - a date
+the game would not read is refused; beside it the turn and the year it means, from the campaign's `start_date` and
+`timescale`; a new event goes in date order - the games read the events as a queue, one put after a later event
+never fires), its place (x, y; empty = a message only; **Show on the map**), the title and text
 players see (`historic_events.txt`), the **picture players see** on the scroll (a historic event its own
 `ui/<culture>/eventpics/<event>.tga` - **Picture...** puts yours in for every culture, sized like the game's; a
 plague, volcano... shows its kind's `disaster_<kind>.tga`) and **what it does in the game** in plain words.
