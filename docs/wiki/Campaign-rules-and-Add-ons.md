@@ -6,6 +6,11 @@
 
 Every value of the campaign's settings files, by group, each with a plain explanation:
 
+- **Both games** - the top of the loaded campaign's `descr_strat.txt` (group "The campaign ..."): the start and end
+  date (year and season, a minus = BC), `timescale` (years a turn - Medieval II and REX), how seldom brigands and
+  pirates appear, REX / M2EX's `random_persona_weights`, and the switches as on / off: night battles, the date shown
+  as turns (Medieval II), Marian reforms off or already done, rebelling generals, gladiator uprisings. A switch
+  turned off loses its line, one turned on gets a line; the faction lists and everything below stay as they are.
 - **Medieval II** - `descr_campaign_db.xml`: recruitment, religion (witches, heretics, inquisitors), bribery, ages and
   the family tree (coming of age, marriage, children, old age), ransom, autoresolve, sacking and siege gear, revolts,
   hordes, merchants, agents' chances, crusades and jihads. `descr_settlement_mechanics.xml`: each line of the town

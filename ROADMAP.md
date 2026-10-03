@@ -155,10 +155,10 @@ timeline
 
 - 📦 Answers to my reports: the author's reply comes back into the editor (report window tab, "(1 new)" on the Report button), and you can answer back with words or a screenshot (from Discord)
 - 📦 The bigger map (x3) moves the campaign's scripts too: spawned armies, moved characters, camera, revealed tiles, 'near a tile' conditions (from a tester's game: scripted armies stood off the map)
-- 📦 Drawn garrisons fit the town: only what its own buildings recruit, else the cheapest units (the author's wish)
+- 📦 Drawn garrisons fit the town: only what its own buildings recruit, else the cheapest units
 - 📦 Factions that appear later: by an event, as a faction's shadow (civil war) or splitting off in a revolt - New faction and Tools > Events (from Discord)
 - 📦 A double click on a town opens its own window (owner, city / castle, level, population, buildings); many towns made city / castle and of another level at once (from Discord)
-- 📦 REX / M2EX: no faction limit - max_factions raised by itself with every new faction (the author's wish)
+- 📦 REX / M2EX: no faction limit - max_factions raised by itself with every new faction
 - 📦 A town on its region's edge stays its region's - on the Map and in the bigger map (from a report)
 - 📦 Rome 3D: weapons, shields, crests and engine parts on their bones; T pose by default; chariots with horses and crew; siege engines (from a report)
 - 📦 Unit and Building editors without the lag on picking and adding (from a report)
@@ -175,7 +175,7 @@ timeline
 - 📦 Faction tab in two columns; the editors' block lines fold away behind a button (from reports)
 - 📦 Bring from another mod / New unit and building: the picked one shown as the game shows it (pictures, texts, effects in plain words); units: one line each for where they are trained; two pictures per building level (from reports)
 - 📦 Faction emblem fitted by hand: move, size, turn, the old emblem's disc or a circle / square, a ground colour, magic wand, paint bucket (from a report)
-- 📦 Wonders (Rome): their window as in the game, 3D view, Put a wonder here (from the author)
+- 📦 Wonders (Rome): their window as in the game, 3D view, Put a wonder here (from a tester)
 - 📦 Traits and retinue: every bonus the game knows on a right click, in plain words (from a report)
 - 📦 Map: Delete from the map (right click) - resources, forts, towers, wonders, characters of any faction (from a report)
 - 📦 Add-ons put where REX loads them (the game's script/modules); new add-on Player Diplomacy (from a report)
@@ -185,10 +185,10 @@ timeline
 - 📦 Building editor: names and descriptions per culture / faction; the editors' list width dragged (from a report)
 - 📦 The new symbol on Rome's 3D battle banners and the campaign map's flag: the game's blank white banner dyed in the faction's colour or a pattern (tricolours, quarters, crosses...), the symbol painted on (from a report)
 - 📦 Recolour: a bright colour of its own kept (gold next to red), the faction's colours set with the pictures, pictures fit the screen (from reports)
-- 📦 Map: armies, fleets, agents and towns for any faction - the land clicked says whose, changeable in the window; Give this town to any faction (right click) (the user's wish)
+- 📦 Map: armies, fleets, agents and towns for any faction - the land clicked says whose, changeable in the window; Give this town to any faction (right click)
 - 📦 Map: a port from the legend (a region without one gets one); picked towns' regions in yellow; generals' flags for every named character; painted tiles always visible while painting (from reports)
 - 📦 Check mod files: building lines naming a hidden resource, resource or religion the mod lacks; a screenshot pasted into a report with Ctrl+V (from reports)
-- 📦 Banner... on the Art tab, both games: the battle banners from a white banner - a pattern of your colours, a symbol where you draw it, or your own drawing on the saved template; Medieval II's white template made from the mod's own banner sheets, seen in 3D (the author's wish)
+- 📦 Banner... on the Art tab, both games: the battle banners from a white banner - a pattern of your colours, a symbol where you draw it, or your own drawing on the saved template; Medieval II's white template made from the mod's own banner sheets, seen in 3D
 
 ## 🧪 Being tested in the game now (newest first)
 
