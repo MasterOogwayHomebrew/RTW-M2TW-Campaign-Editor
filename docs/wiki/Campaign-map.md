@@ -158,7 +158,7 @@ favour) stay as they are - Preview says so.
 it: descr_religions.txt (its name and symbol), descr_religions_lookup.txt, text/religions.txt (without its
 text the game crashes silently), its symbol in ui/pips (your picture as a 24-bit TGA, or a copy of another
 religion's), and every region's religions line at 0 %. Then give it its share per region with **Religions...**
-(each region adds up to 100) and, if you like, the factions that follow it. The game takes at most 9 religions
+(each region adds up to 100) and, if you like, the factions that follow it. The game takes at most 10 religions (heretic included) without M2EX; with M2EX there is no limit
 (vanilla has 5). Temples, priests and traits of its own are not made - Preview says which files still name
 only the old religions.
 
