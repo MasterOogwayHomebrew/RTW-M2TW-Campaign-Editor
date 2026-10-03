@@ -152,6 +152,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Drawn garrisons fit the town: only what its own buildings recruit, else the cheapest units (the author's wish)
 - 📦 Factions that appear later: by an event, as a faction's shadow (civil war) or splitting off in a revolt - New faction and Tools > Events (from Discord)
 - 📦 A double click on a town opens its own window (owner, city / castle, level, population, buildings); many towns made city / castle and of another level at once (from Discord)
 - 📦 REX / M2EX: no faction limit - max_factions raised by itself with every new faction (the author's wish)

@@ -85,6 +85,9 @@ right, with **What happens** in each:
   (500, 1000... - empty for no limit). **Draw the garrisons** picks them at random from the units each owner may
   recruit (its `ownership` and a recruit line of some building; generals' bodyguards and - unless ticked - siege
   engines left out); a rebel town draws from the rebel armies nearest to it, so a Greek town gets Greek rebels.
+  With **only units the town's own buildings recruit** (on by default) a town gets only what its own buildings
+  recruit for its owner - no catapult in a village without a siege workshop, no heavy infantry without barracks; a
+  town that recruits none of them gets the two cheapest unit types (peasants, levy spearmen).
   Draw again for others. They join the army that holds the town, or replace its units (a general keeps his
   bodyguard); a town nobody holds gets a captain.
 
