@@ -202,7 +202,7 @@ not in squares, and the heights follow the same coast; every tile keeps the grou
 it lies in (a forest stays a forest); land bridges stay unbroken; the relief is blended smooth, and `map_heights.hgt` (the game's own
 copy of the heights, read instead of the picture) is written at the new size; the hills, mountains and sea floor are
 made 3 x higher so the slopes stay as steep (**Write it - hills 3 x higher**; or keep the old heights, a flatter world: **Write it - heights as they are**); rivers stay
-1 pixel wide and run on to the new coast; every picture of the map and `descr_terrain.txt` follow, `map.rwm` is
+1 pixel wide and run on to the new coast (stopping there); the beach stays one tile wide along the new coast; every picture of the map and `descr_terrain.txt` follow, `map.rwm` is
 removed. The window lists every file first; one backup, Restore gives it all back.
 
 ![The coast of Italy made 3 x bigger: before (squares), after (smooth)](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/bigger_map_coast.png)
