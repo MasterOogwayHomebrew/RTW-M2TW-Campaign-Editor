@@ -9,6 +9,8 @@ When the game crashes, the tool shows an error, or something looks wrong, please
    report number. The author's answer comes back to the editor (see *Answers to my reports* below). When the tool itself shows an error, it offers
    the same window. A long game log is cut to fit: its start (where the game reads the mod's files and says what it
    does not like), every error and warning line of the middle, and its end.
+   The editor's log also holds a short picture of the loaded mod (its factions, towns, map size, which files are
+   its own - counts and names, no files), so the author sees what the mod is.
    **Anonymous**: before anything leaves, the logs lose your Windows user name (also inside folder paths), the
    computer's name, e-mail addresses, Steam IDs, IP addresses and the player's name of REX's crash report; add
    your own words to hide (your nick). **Show what is sent** shows every line that goes. The contact field is
