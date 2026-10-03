@@ -33,9 +33,12 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   it). Click the button again to stop; hiding the legend puts the picked sign down too. The legend is open on the
   first start (**Legend** on the bar hides it).
   Every named character shows as a general's flag, as in the game (family members too).
-- **A double click on a town** (or the right click's **Edit this town...**) opens it straight away: its owner in Edit
-  faction, the town picked on the Buildings tab (level, population, city or castle, buildings; its garrison on Units
-  & armies).
+- **A double click on a town** (or the right click's **This town...**) opens the town's own window, both games: its
+  **owner** (hand it to another faction), **city or castle** (Medieval II), **level**, **population** and its
+  **buildings** (add, raise, take out - checked the way the game checks them: too small a town, a castle-only
+  building in a city, one temple per town); the garrison is shown. **Preview**, **Write it in** (a backup first).
+  Another town opens in the same window. **Garrison and characters in Edit faction...** (or the right click's
+  *Edit this town in Edit faction*) opens its owner in Edit faction with the town picked on the Buildings tab.
 - **Right click on the map**: on a town - **Give this town to** any faction (written with the next Apply; its
   characters go to the old owner's other towns, a captain's garrison goes with it); on a free tile - **New army /
   agent / fleet here** with the land's owner already picked; on a new character not written yet - **Take it out**.
