@@ -153,7 +153,10 @@ from the faction's colours.
   wheel to zoom, right drag to move. The touch-ups go with Write it.
 - Every picture with before / after; untick the ones to keep. A picture other factions use too: when a line of
   the game's files names it (a campaign-map figure, a loading logo), the faction gets a copy of its own, recoloured,
-  and its line points at it. A battle banner, the 3D symbol's texture or a town flag several factions name: the
+  and its line points at it. The same for a unit's battle texture (and Medieval II's weapons and shields) the
+  faction wears with others - a new faction wears its template's - or that only the game's data holds (a mod in
+  `mods/`): its own copy goes into the mod beside the original and the model's line for the faction points at it
+  (`descr_model_battle.txt` and the modeldb), the others and the game's files stay as they are. A battle banner, the 3D symbol's texture or a town flag several factions name: the
   faction it is named after keeps the file and the others get copies of their own first (Medieval II's Normans keep
   England's old banners); crusade and military order banners stay as they are.
 - What most factions that do not wear the colour have the same (a bronze star, a wooden pole, a face) is never
