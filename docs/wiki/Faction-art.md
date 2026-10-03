@@ -82,7 +82,7 @@ bucket** fills one; **Undo**, **Fit again**, **Start over**. **Next** makes all 
   banner, as the game's own are); the trim, the experience stars and the pole stay as they are. **Banner...** under
   a banner picks another blank banner, a **pattern** of up to three colours (plain, two or three stripes upright -
   a tricolour - or across, halves or bands slanting, quarters, a cross, a slanting cross, a border, a stripe in the
-  middle), the symbol on or off, and a box drawn on a banner moves the symbol there;
+  middle), the symbol on or off, and the symbol dragged with the left mouse button where it should be;
 - a picture with a plain background (a white square round the symbol) has it cleared at once, so no square shows on
   the flags and banners (**Start over** brings it back);
 - 'Use it' puts them on the Art tab; Preview and Apply write them with a backup, Restore gives them back.
@@ -98,7 +98,10 @@ the symbol on them is the flag symbol above.
   (a tricolour) or across, halves or bands slanting, quarters, a cross, a slanting cross, a border, a stripe in the
   middle; the cloth's folds and stitching are kept;
 - **a symbol** if you like: **Symbol picture...** takes any picture (a white or plain square round it is cleared),
-  shaded by the folds; a box drawn on a banner puts it there, **Symbol back in the middle** undoes that;
+  shaded by the folds; **drag it with the left mouse button** where it should go (a click on another banner or
+  pennant brings it there), **the mouse wheel** over it makes it bigger or smaller; **Snap** lays a grid on each
+  banner - big cells (quarters), medium (eighths) or small (sixteenths) - and the symbol's middle lands on its
+  lines, or no grid to move it freely; **Symbol back in the middle** puts it back;
 - **your own drawing**: **Save the template...** saves the white banner as a PNG of the game's size with each banner
   outlined in red - paint inside the lines in any program, keep the size, then **Put in my own drawing...** takes it
   in its place (the symbol can still go on top); **Back to the dyed cloth** drops it;
