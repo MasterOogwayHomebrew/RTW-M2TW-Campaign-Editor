@@ -153,6 +153,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Add-on Avoid Growth (both games): a tick on your town's scroll in the game's own look - the town keeps at most the people it has, may shrink and grows back to that
 - 📦 Test mod: every campaign rule changed in one step (Medieval II 548 values, Rome 162), the game must read them all
 - 📦 Sack Settlement (both games): the governor's building always stays, 600 people at least in the ruins
 - 📦 Sack Settlement for Medieval II (M2EX) as a button of the game's own kind: the same script as Rome's, drawn from the scroll's own button pieces in the game's font; the older Lua copy taken out
