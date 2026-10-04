@@ -32,7 +32,7 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   While a sign is picked it rides under the mouse (framed green where it may go, red where not - the reason beside
   it). Click the button again to stop; hiding the legend puts the picked sign down too. The legend is open on the
   first start (**Legend** on the bar hides it).
-  Every named character shows as a general's flag, as in the game (family members too).
+  Every named character shows as a general's flag, as in the game (family members too); an army in a town stands as a flag on the town's roof (no army, no flag). Towns, ports and characters grow under the mouse.
 - **A double click on a town** (or the right click's **This town...**) opens the town's own window, both games: its
   **owner** (hand it to another faction), **city or castle** (Medieval II), **level**, **population** and its
   **buildings** (add, raise, take out - checked the way the game checks them: too small a town, a castle-only
