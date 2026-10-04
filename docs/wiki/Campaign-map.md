@@ -47,6 +47,15 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
 - The line under the map describes the tile under the mouse: region, owner, ground, and whether an army may
   stand there.
 
+## Map editor
+
+**Map editor** (the first button of the top row) shows the map alone - no faction to pick, every faction alike:
+drag any faction's towns, ports, armies, agents and fleets with the right button; right click a town to give it to
+any faction, an army or a fleet for **Its units...** (the card picker in a window of its own - a general keeps his
+bodyguard), a character to delete him, an empty tile for a new army, agent or fleet of any faction. Resources, forts,
+wonders and regions work as on the Map tab. **Preview**, then **Apply changes** (a backup first; Restore puts every
+byte back). New faction / Edit faction show all the tabs again; the map's changes stay until written.
+
 ## Towns and characters
 
 - A click on a town adds it to **Chosen** or takes it out.
