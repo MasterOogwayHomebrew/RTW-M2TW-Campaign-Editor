@@ -208,7 +208,7 @@ timeline
 - 📦 Recolour more exact (black / white faction colours, shading, Medieval II shields and the carroccio)
 - 📦 Rebel towns' garrisons drawn as the game makes them (the region's own rebels)
 - 📦 The mod at a glance in the log; reports keep each middle error's message and never send a log twice; the logs folder kept small
-- 📦 Stability for 0.30: one mouse-wheel handler for the whole window; going back to an older version never breaks on what a newer one wrote; the exe checks itself before it is handed out; a full disk, a too-long path, no rights or a file held by the game said in plain words with nothing lost (Restore runs again); no internet never hangs anything; a mod with only its changed files explained on Load; a step left over from a closed window can no longer call a new one
+- 📦 Stability for 0.30: one mouse-wheel handler for the whole window; going back to an older version never breaks on what a newer one wrote; the exe checks itself before it is handed out; a full disk, a too-long path, no rights or a file held by the game said in plain words with nothing lost (Restore runs again); no internet never hangs anything; a mod with only its changed files explained on Load; a step left over from a closed window can no longer call a new one; the code checked with Ruff before every build, files read in passing closed at once
 - 📦 Medieval II banners: every look of the small pennants dyed, no seam on the cavalry banner
 - 📦 Module builder: the engines' builds of 2026-10-04 - a faction made another's protectorate or client
 
