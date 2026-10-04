@@ -138,19 +138,23 @@ folder, so the editor never puts add-ons there. If the add-on's code is already 
 **Put it in** refuses (it would run twice - two buttons). The game's log (`system.log.txt`) then says `[SACK] Sack
 Settlement module loaded`. Plain Rome has no scripts - the add-on does nothing there.
 
-### Avoid Growth (Rome + REX, Medieval II + M2EX)
+### Avoid Growth (Rome with REX, Medieval II with M2EX)
 
-A tick box **Avoid Growth** on the settlement scroll of each of your towns, drawn with the game's own box and tick
-(the same pieces as its other ticks), under the population figures. Tick it and the people the town has right
+A tick box **Avoid Growth** on the settlement scroll of each of your towns, drawn with the game's own small box and
+tick in the small font of its own ticks - in Medieval II in their row (Auto-manage, Construction, Recruitment), right
+of Recruitment; in Rome under the population figures. Tick it and the people the town has right
 now become its **ceiling**: it never grows past it, it still loses people the usual way (recruiting, battles,
 plague, hunger) and then grows back - but only up to the ceiling again. A border town stays the village, town or
 city it is: put it on auto-manage and forget it. Untick it to let the town grow freely again.
 
 - The ceiling is kept in the saved game; a town taken by another faction drops its tick.
-- **Words beside the tick**, **Tooltip**, **Show the ceiling** ("(at most 5000)") are yours to change;
+- The tooltip is short: unticked "Keep the town at the size it has now", ticked "At most 5000 people - it grows
+  back up to that". **Words beside the tick**, both **Tooltips** ({cap} = the ceiling) and
+  **Show the ceiling beside the words too** are yours to change;
   **Move the tick right / down** shifts it on the scroll (in the game's 1024 x 768 units, below 0 = left / up).
-- One script for both games (REX and M2EX run the same scripts), in the game's `script/modules`. The game's log says
-  `[GROWTH] Avoid Growth module loaded`; in the console `sq ::avoid_growth_list()` lists the ticked towns and
+- One script for both games (REX and M2EX run the same scripts), in the game's `script/modules`. Its `[GROWTH]`
+  lines show in the script console (Medieval II with M2EX writes a script's printed lines into system.log.txt only
+  while the game starts up); in the console `sq ::avoid_growth_list()` lists the ticked towns and
   `sq ::avoid_growth_probe()` what the settlement scroll reports.
 
 ### Player Diplomacy (Rome + REX)
