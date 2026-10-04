@@ -13,6 +13,12 @@ lowest line to get the files back as they were before the tool's first write.
 - **Check mod files** with a faction picked also lists everywhere that faction is named in the whole mod, and which files are the game's own,
   changed by the mod, REX's or the mod's.
 - A [separate mod folder](First-steps#a-separate-mod-folder-recommended) keeps your base mod untouched.
+- **A file Windows will not write** (held by the game or another program, read-only, no rights in the folder,
+  the disk full, a path over 260 characters): Apply says which file and what to do, and puts back what it had
+  written already - the mod is never left half changed. Restore that meets such a file stops, keeps the backup
+  whole, and simply runs again once the file is free.
+- **Backups of a newer version** stay listed after going back to an older one; a backup it cannot read is refused
+  in plain words, nothing changed - restore it with the version that made it.
 
 ## Check and install a pack
 

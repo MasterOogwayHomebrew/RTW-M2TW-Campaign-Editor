@@ -27,6 +27,23 @@ Beside the exe it keeps two things of its own:
 **An update** is simply the new exe in the same place; the settings stay. An older version's
 `RTW-M2TW-Campaign-Editor-files` folder is moved in by itself.
 
+## Going back to an older version
+
+Something wrong with a new version? Every version stays on the
+[Releases](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/releases) page: download the one you
+want and put its exe in place of the new one. Nothing else needs to change:
+
+- **your mods** stay as they are - the exe is not part of them;
+- **the settings** a newer version wrote are read where this version knows them; a value it keeps in another form
+  takes this version's default;
+- **backups** a newer version made are listed under Restore; one it keeps in a form this version does not read is
+  refused in plain words and nothing is changed - restore it with the version that made it. The safest way:
+  restore what you want undone *before* going back;
+- **add-ons and Module builder modules** a newer version made stay in the game; this version shows what it can
+  read of them.
+
+Then send a report (**Report a bug**) saying what went wrong with the new one, so it can be fixed.
+
 ## The browser or Windows warns about the exe
 
 The exe is not signed yet (a free certificate from the SignPath Foundation has been applied for), so the
