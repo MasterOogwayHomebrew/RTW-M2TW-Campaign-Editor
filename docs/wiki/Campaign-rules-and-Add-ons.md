@@ -1,6 +1,6 @@
 # Campaign rules and Add-ons
 
-## Campaign rules (Tools > Campaign rules...)
+## Campaign rules (the Campaign rules... button, top row)
 
 ![Campaign rules](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/campaign_rules.png)
 
@@ -57,7 +57,7 @@ For authors, optional header lines make it nicer: `// @title Border Tolls`, `// 
 
 ![Module builder](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/module_builder.png)
 
-**Tools > Module builder...** or **Add-ons > New module (no code)...** puts an add-on together from blocks. REX (Rome)
+**Module builder...** (top row) or **Add-ons > New module (no code)...** puts an add-on together from blocks. REX (Rome)
 and M2EX (Medieval II) run the same script, so one module works in both games; the original exes run no scripts.
 
 - **WHEN** - what happens in the game: a faction's turn starts, a town's turn starts (each town), a general takes a

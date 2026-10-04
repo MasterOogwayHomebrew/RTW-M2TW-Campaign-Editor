@@ -12,7 +12,7 @@ the game at once, so you can test every change after that straight away. The tem
    **Comes into the campaign**: *on the map from the start* (the usual), or later - *by an event* (a date and a
    region), *as the shadow of a faction* (its civil war) or *splitting off a faction in a revolt*. A faction that
    comes later starts dead: no towns, no leader, only its money, nonplayable (the towns and leader below are not
-   used); Tools > Events and later factions changes it afterwards.
+   used); Events... (top row) changes it afterwards.
 4. **Name (full)**, **Name (short)**, **Adjective**: for example `Kingdom of Epirus`, `Epirus`, `Epirote`.
    The copied texts use them ("Epirote Spy", "Your forces attack an army of Epirus").
 5. **Starting settlements**: filter by owner (for example `slave` for rebel towns), **Add >** (or Enter) to add,

@@ -129,7 +129,7 @@ in one Apply. **Edit region...** opens a region's data again. For a region of th
 
 ## Events and factions that appear later
 
-**Tools > Events and later factions...** (both games): the campaign's `descr_events.txt` - historic messages, and
+**Events...** (top row) (both games): the campaign's `descr_events.txt` - historic messages, and
 plagues, volcanoes, earthquakes at a place. Each event's date (Rome: years from the start and optionally summer or
 winter, `14 winter`; Medieval II: years from the start, or two the game picks one between, `210 220` - a date
 the game would not read is refused; beside it the turn and the year it means, from the campaign's `start_date` and
@@ -195,7 +195,7 @@ removes it). Towns the mod's own campaign script renames are shown grey and are 
 
 ## Make the map 3 x bigger (Tools)
 
-**Tools > Make the campaign map 3 x bigger** turns every tile into a 3 x 3 block (both games). Towns, ports, armies,
+**Bigger map (x3)...** (top row) turns every tile into a 3 x 3 block (both games). Towns, ports, armies,
 agents, fleets, resources, forts, watchtowers, wonders and event positions keep their places; every town keeps its
 own region all round it, every port stands on the shore touching the sea and its region; the coast is drawn smooth,
 not in squares, and the heights follow the same coast; every tile keeps the ground type and climate of the old tile
