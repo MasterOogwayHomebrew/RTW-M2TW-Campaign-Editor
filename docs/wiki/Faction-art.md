@@ -119,7 +119,10 @@ per pixel, the light of each against its surroundings, and the middle value of t
 sits somewhere else, so it goes; the folds, the tooth edges and the holes they share stay; what is alike in nearly
 all of them (the poles, the fittings) keeps its colour. The banners' 3D models (`data/banners/main_*.mesh`, named in
 `descr_banners_new.xml`) say where each banner and pennant lies on the picture: each is dyed on its own, and the
-window shows the banner in 3D (pick infantry, spear, cavalry, missile or general). The translucency picture beside it
+window shows the banner in 3D (pick infantry, spear, cavalry, missile or general). Each small pennant has four looks
+on the picture (the game shows the others on other units): all four get the design - the saved template outlines the
+other three in grey, and your own drawing's first pennant is copied into them. The cavalry banner's slit is dyed with
+the cloth round it (no dark seam through the symbol). The translucency picture beside it
 (`_trans`) is left as it is. A banner picture shared with other factions becomes the faction's own copy (its line
 in `descr_banners_new.xml` pointed at it; when the file carries the faction's name, the others get copies of the old
 one instead). Making the template takes a few seconds the first time (kept while the files are unchanged). Royal
