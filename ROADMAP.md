@@ -154,6 +154,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Add-ons > Scripts in the game: every script in the game's script/modules - settings, off / on, delete; the test mod's scripts taken out with one press
 - 📦 Map editor: delete a town with its region - its land goes to a neighbour, every file that ties them follows (descr_regions, descr_strat, mercenaries, win conditions, music); what would break the game is refused in plain words
 - 📦 Map: Select - a box round many things at once, as in a strategy game: give the towns, add a building or garrisons, take characters, resources and forts off the map
 - 📦 The town window has the Buildings and Garrison editors of the main window, for any town

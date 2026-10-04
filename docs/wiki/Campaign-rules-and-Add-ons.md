@@ -53,6 +53,18 @@ For authors, optional header lines make it nicer: `// @title Border Tolls`, `// 
 `// @summary ...`, `// @needs ...`, `// @settings A, B` (only these), `// @label VAR Words shown`,
 `// @pick VAR chains|units|factions` (a picker filled from the loaded mod's own buildings, units or factions).
 
+### Scripts in the game (every script in script/modules)
+
+**Scripts in the game...** (in the Add-ons side bar) lists every script REX (Rome) or M2EX (Medieval II) runs from
+the game's `script/modules` - the editor's add-ons, Module builder modules, ones you added and anyone else's - with
+what each is and whether it runs. Pick one: change its settings (written into its own lines, the rest byte for
+byte), **Turn it off** (renamed `.nut.off`: kept, not run - **Turn it on** brings it back), **Delete it**, **Show the
+code**, **Open the folder**. Every change lists what it does, asks first and makes a backup (Tools > Restore a backup).
+
+The test mod (Tools > Test mod) puts its add-ons and modules into the game's `script/modules` too - they stay there
+when you throw the test mod's folder away. Each carries a mark at its end; **Take out every script the test mod put
+in** removes them all with one press.
+
 ### Module builder (your own add-on, no code)
 
 ![Module builder](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/module_builder.png)
