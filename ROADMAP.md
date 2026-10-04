@@ -154,6 +154,9 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Map editor: delete a town with its region - its land goes to a neighbour, every file that ties them follows (descr_regions, descr_strat, mercenaries, win conditions, music); what would break the game is refused in plain words
+- 📦 Map: Select - a box round many things at once, as in a strategy game: give the towns, add a building or garrisons, take characters, resources and forts off the map
+- 📦 The town window has the Buildings and Garrison editors of the main window, for any town
 - 📦 Module builder (both games): your own add-on made of WHEN / IF / DO blocks picked in plain words, no code - the mod's own names, nine examples, settings for the player, Put it in / Share
 - 📦 Module builder: every event, condition, console and campaign-script command of REX / M2EX (from the engines' own lists, with a search and the parameters as fields) and numbers kept between turns
 - 📦 Add-on Avoid Growth (both games): a tick on your town's scroll in the game's own look - the town keeps at most the people it has, may shrink and grows back to that
@@ -208,7 +211,7 @@ timeline
 - 📦 Recolour more exact (black / white faction colours, shading, Medieval II shields and the carroccio)
 - 📦 Rebel towns' garrisons drawn as the game makes them (the region's own rebels)
 - 📦 The mod at a glance in the log; reports keep each middle error's message and never send a log twice; the logs folder kept small
-- 📦 Map editor: the map alone, no faction to pick - drag and give anything of any faction, any army's units (box selection and deleting a town with its region next)
+- 📦 Map editor: the map alone, no faction to pick - drag and give anything of any faction, any army's units
 - 📦 Stability for 0.30: one mouse-wheel handler for the whole window; going back to an older version never breaks on what a newer one wrote; the exe checks itself before it is handed out; a full disk, a too-long path, no rights or a file held by the game said in plain words with nothing lost (Restore runs again); no internet never hangs anything; a mod with only its changed files explained on Load; a step left over from a closed window can no longer call a new one; the code checked with Ruff before every build, files read in passing closed at once
 - 📦 Medieval II banners: every look of the small pennants dyed, no seam on the cavalry banner
 - 📦 Module builder: the engines' builds of 2026-10-04 - a faction made another's protectorate or client

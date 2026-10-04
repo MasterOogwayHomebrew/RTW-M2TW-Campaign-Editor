@@ -58,6 +58,16 @@ bodyguard), a character to delete him, an empty tile for a new army, agent or fl
 wonders and regions work as on the Map tab. **Preview**, then **Apply changes** (a backup first; Restore puts every
 byte back). New faction / Edit faction show all the tabs again; the map's changes stay until written.
 
+**Delete a town with its region**: right click the town > **Delete this town with its region...**. Its land (and
+its port) becomes the neighbour's it shares the longest border with - or pick another neighbour - and every file
+that ties them follows: its block of `descr_regions.txt`, its settlement in `descr_strat.txt` (the owner's next
+town becomes its capital; the rebels in the town go with it, a faction's characters there stay in the field), the
+mercenary pools, the win conditions and Medieval II's music lists, in every campaign that uses the same map;
+`map.rwm` is removed. Written at once after **Preview**, with a backup. Refused in plain words: a faction's last
+town (it would die as the campaign loads), a region a faction rises in by an event, a town a campaign script names
+(the lines are listed - change them first), an island with no land neighbour. The names lookup and the names
+texts keep the old names (an unused name harms nothing).
+
 ## Towns and characters
 
 - A click on a town adds it to **Chosen** or takes it out.
