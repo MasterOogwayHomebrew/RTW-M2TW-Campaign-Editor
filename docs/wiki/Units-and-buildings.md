@@ -55,7 +55,7 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
 ## Many towns at once
 
 A building level for many towns of any owner, or random garrisons under an upkeep limit: **Many towns...** (top
-row) - see [Campaign map: Pick towns](Campaign-map#pick-towns-a-building-or-garrisons-for-many-towns).
+row) - see [Campaign map: Select](Campaign-map#select-a-box-round-many-things-at-once).
 
 **One temple per town**: the games take one temple chain (a name starting with `temple_`) per town - two in
 `descr_strat.txt` stop the game ("Settlement specified with multiple temple buildings"). The Buildings tab swaps the

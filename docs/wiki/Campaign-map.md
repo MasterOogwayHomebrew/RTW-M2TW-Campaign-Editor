@@ -67,18 +67,24 @@ byte back). New faction / Edit faction show all the tabs again; the map's change
 - **Moving a town or port** repaints its pixel in `map_regions.tga`, moves the characters in it, and deletes
   `map.rwm` - the game builds it again on the next start (the first start takes a little longer).
 
-## Pick towns: a building or garrisons for many towns
+## Select: a box round many things at once
 
-Tick **Pick towns** on the Map's bar: the political colours, borders and characters go (the ground only), and a
-click on a town picks it - it and its region turn **yellow** - or unpicks it. A **right click** offers:
+Tick **Select** on the Map's bar and choose in **what...** the kinds it takes: towns, armies, agents, fleets (ticked at
+first), resources, forts. Then, as in a strategy game, **drag a box with the left button**: everything of those
+kinds inside it is selected (hold **Shift** to add to what is selected). A click selects or unselects one thing. The
+political colours and borders go meanwhile; selected towns and their regions turn **yellow**, selected characters,
+resources and forts get a yellow frame; the **right button drags the map**. A **right click** offers:
 
+- **Give the N selected town(s) to** any faction (written with the next Apply);
+- **Delete the N selected character(s) from the map** (their armies too) - a faction's leader, heir or a man on its
+  family tree stays (the line under the map names them); **Delete the N selected resource(s) / fort(s)**;
 - **Add a building to the N picked town(s)...**, **Garrisons for the N picked town(s)...** and **City / castle and
   level for the N picked town(s)...** - all open the window *Buildings and garrisons for many towns* with the picked
   towns already chosen (the third tab makes them city or castle - Medieval II - and / or of another level: the
   buildings converted the game's way, the governor's building and the population follow);
-- **Pick every town of <owner>** (on a town), **Unpick all**.
+- **Pick every town of <owner>** (on a town), **Unselect all**. One Undo takes a whole job back.
 
-Untick **Pick towns** and every town is unpicked (the same everywhere: switching **Edit resources** or **Edit regions** off drops what was picked or waiting for a click, hiding the legend puts its picked tool down).
+Untick **Select** and nothing stays selected (the same everywhere: switching **Edit resources** or **Edit regions** off drops what was picked or waiting for a click, hiding the legend puts its picked tool down).
 
 The same window is in **Tools** and on the Buildings tab (**Many towns at once...**). All towns of the campaign on the
 left - filter them by owner, level, city / castle (Medieval II) or name, **Add all shown** - the chosen ones on the
