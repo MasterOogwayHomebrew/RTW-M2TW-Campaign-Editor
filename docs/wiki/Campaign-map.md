@@ -33,6 +33,9 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   it). Click the button again to stop; hiding the legend puts the picked sign down too. The legend is open on the
   first start (**Legend** on the bar hides it).
   Every named character shows as a general's flag, as in the game (family members too); an army in a town stands as a flag on the town's roof (no army, no flag). Towns, ports and characters grow under the mouse.
+- **An army in a town** is one flag on the town's roof - part of the town's sign (a square cloth with a triangle cut
+  into its right edge); it is not dragged: right click the town > **Take the army out**, then click a free tile (Esc
+  or a right click stops).
 - **A double click on an army or a fleet** opens its units (any faction's in a window of its own; in Edit faction your
   own opens in Units & armies); **on a fort**, the army that holds it (a fort has no buildings - an empty one says how
   to man it: drag an army onto it).
