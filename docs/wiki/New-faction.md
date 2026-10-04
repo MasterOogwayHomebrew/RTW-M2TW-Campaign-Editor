@@ -10,7 +10,7 @@ the game at once, so you can test every change after that straight away. The tem
    lists, trait triggers and pictures.
 3. **Internal name**: lower case, no spaces, for example `epirus`.
    **Comes into the campaign**: *on the map from the start* (the usual), or later - *by an event* (a date and a
-   region), *as the shadow of a faction* (its civil war) or *splitting off a faction in a revolt*. A faction that
+   region the rebels hold - in another faction's region the game kills it as the campaign loads), *as the shadow of a faction* (its civil war) or *splitting off a faction in a revolt*. A faction that
    comes later starts dead: no towns, no leader, only its money, nonplayable (the towns and leader below are not
    used); Events... (top row) changes it afterwards.
 4. **Name (full)**, **Name (short)**, **Adjective**: for example `Kingdom of Epirus`, `Epirus`, `Epirote`.
