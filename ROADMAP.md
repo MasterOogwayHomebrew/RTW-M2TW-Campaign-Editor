@@ -163,7 +163,7 @@ timeline
 - 📦 Answers to my reports: the author's reply comes back into the editor (report window tab, "(1 new)" on the Report button), and you can answer back with words or a screenshot (from Discord)
 - 📦 The bigger map (x3) moves the campaign's scripts too: spawned armies, moved characters, camera, revealed tiles, 'near a tile' conditions (from a tester's game: scripted armies stood off the map)
 - 📦 Drawn garrisons fit the town: only what its own buildings recruit, else the cheapest units
-- 📦 Factions that appear later: by an event, as a faction's shadow (civil war) or splitting off in a revolt - New faction and Events... (from Discord)
+- 📦 Factions that appear later: by an event, as a faction's shadow (civil war) or splitting off in a revolt - New faction and Events... (from Discord) *(the shadow way in-game ✓ on Medieval II + M2EX)*
 - 📦 A double click on a town opens its own window (owner, city / castle, level, population, buildings); many towns made city / castle and of another level at once (from Discord)
 - 📦 REX / M2EX: no faction limit - max_factions raised by itself with every new faction
 - 📦 A town on its region's edge stays its region's - on the Map and in the bigger map (from a report)
