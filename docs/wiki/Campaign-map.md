@@ -33,12 +33,14 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   it). Click the button again to stop; hiding the legend puts the picked sign down too. The legend is open on the
   first start (**Legend** on the bar hides it).
   Every named character shows as a general's flag, as in the game (family members too); an army in a town stands as a flag on the town's roof (no army, no flag). Towns, ports and characters grow under the mouse.
-- **A double click on a town** (or the right click's **This town...**) opens the town's own window, both games: its
-  **owner** (hand it to another faction), **city or castle** (Medieval II), **level**, **population** and its
-  **buildings** (add, raise, take out - checked the way the game checks them: too small a town, a castle-only
-  building in a city, one temple per town); the garrison is shown. **Preview**, **Write it in** (a backup first).
-  Another town opens in the same window. **Garrison and characters in Edit faction...** (or the right click's
-  *Edit this town in Edit faction*) opens its owner in Edit faction with the town picked on the Buildings tab.
+- **A double click on a town** (or the right click's **This town...**) opens the town's own window, both games, any
+  owner (the Map editor too): its **owner** (hand it to another faction), **city or castle** (Medieval II), **level**,
+  **population**, and two buttons that switch the same window: **Buildings** - the Buildings tab's own editor (the
+  game's pictures, a level picked per chain, checked the way the game checks it: too small a town, a castle-only
+  building in a city, one temple per town) - and **Garrison** - the Units & armies tab's card picker (click a card to
+  add it, a garrison card to take it out; **Suggest** picks units the owner trains there; a named character keeps
+  his bodyguard; a town nobody holds gets a captain). **Preview**, **Write it in** (a backup first). Another town
+  opens in the same window. The right click's *Edit this town in Edit faction* still opens its owner in Edit faction.
 - **Right click on the map**: on a town - **Give this town to** any faction (written with the next Apply; its
   characters go to the old owner's other towns, a captain's garrison goes with it); on a free tile - **New army /
   agent / fleet here** with the land's owner already picked; on a new character not written yet - **Take it out**.
