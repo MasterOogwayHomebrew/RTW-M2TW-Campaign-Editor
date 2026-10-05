@@ -242,7 +242,7 @@ and capes, not in squares, and the heights follow the same coast; the borders be
 region stays in as many pieces as before; a border that ran along a river stays on the new river (each bank
 its own region's), and no lone pixel sticks out of a border; every tile keeps the ground type and climate of the old tile it lies in (a
 forest stays a forest), the edges between them winding, not in 3 x 3 steps; mountains only where the new heights stand high (a range's low edge becomes hills, or the ground beside it); land bridges stay unbroken; the relief is made the natural way - bent with the ground, crags on the mountains (plains stay flat), volcanoes
-keep their cones, lakes get gentle banks, the shore stands clearly above the water and falls to it as on the original maps (no flickering wedges or triangles of water cut into it, no islets, slivers or land bridges in
+keep their cones, lakes get gentle banks, the shore takes the original map's own heights for three points on each side of the water's edge (the sea by the shore as deep as before, not three times deeper) and blends into the bigger map beyond them (no flickering wedges or triangles of water cut into it, no islets, small pools on the land, slivers or land bridges in
 navigable rivers; a river ends one pixel into the water), every
 river in its valley, no slope steeper than the old map's steepest, the land round a town smooth -, and `map_heights.hgt` (the game's own
 copy of the heights, read instead of the picture) is written at the new size; the hills, mountains and sea floor are
