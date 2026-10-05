@@ -37,3 +37,10 @@ Lines that lose something are red and set to keep the mod's file; double click a
 buttons) to choose **put in**, **only its changes** or **keep this mod's**. **Preview**, then **Install** writes
 it with a backup - **Restore** takes the whole install back. Files outside `data` (readmes) are only listed.
 
+## Deleting a whole mod
+
+**Tools > Delete this mod's folder...** (red) deletes the loaded mod's folder with everything in it - its files,
+its backups, its start script. It asks twice; the second time you type the mod's name. Restore cannot bring it back.
+Only a mod folder (`<game>/<mod>` for Rome, `<game>/mods/<mod>` for Medieval II) can be deleted - never the game's
+own data or Barbarian Invasion's / Alexander's.
+

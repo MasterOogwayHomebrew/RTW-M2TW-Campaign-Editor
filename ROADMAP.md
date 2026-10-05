@@ -230,6 +230,9 @@ timeline
 - 📦 Module builder: the engines' builds of 2026-10-04 - a faction made another's protectorate or client
 - 📦 A faction that lives without towns (REX / M2EX's `can_homeless`), a tick in How a faction comes into the campaign
 - 📦 Campaign rules and the Module builder marked experimental (a red line: try it, send a report)
+- 📦 Delete a mod's folder from Tools (asked twice; never the game's own data)
+- 📦 Forts and watchtowers drawn as a stone castle and a wooden lookout
+- 📦 Barbarian Invasion: a new faction's campaign-map figures recoloured; Rome: a faction that comes by an event comes as a horde
 - 📦 Bigger map (x3): no water wedges or foam-ringed squares on the coast, no land bridges over navigable rivers, river mouths one pixel into the water, mountains only where the heights stand high
 
 ## 🧪 Being tested in the game now (newest first)
