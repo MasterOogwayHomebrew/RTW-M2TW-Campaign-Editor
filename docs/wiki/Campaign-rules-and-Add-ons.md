@@ -159,9 +159,9 @@ Settlement module loaded`. Plain Rome has no scripts - the add-on does nothing t
 ### Avoid Growth (Rome with REX, Medieval II with M2EX)
 
 A tick box **Avoid Growth** on the settlement scroll of each of your towns, drawn with the game's own small box and
-tick in the small font of its own ticks - in Medieval II in the row of its own Auto-manage tick, right of it (in a
-build with Construction / Recruitment ticks, right of Recruitment), at any screen size; in Rome under the population
-figures. Tick it and the people the town has right
+tick in the small font of its own ticks - in Medieval II in the row of its own Auto-manage tick, past the Construction
+and Recruitment ticks the game adds there once Auto-manage is on; in Rome and Barbarian Invasion on the free line
+under Automanage; at any screen size. Tick it and the people the town has right
 now become its **ceiling**: it never grows past it, it still loses people the usual way (recruiting, battles,
 plague, hunger) and then grows back - but only up to the ceiling again. A border town stays the village, town or
 city it is: put it on auto-manage and forget it. Untick it to let the town grow freely again.
