@@ -4,6 +4,9 @@
 
 ![Campaign rules](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/campaign_rules.png)
 
+> **Experimental** (a red line at the top of the window): try it at your own risk - a backup is made first and Restore
+> undoes it. If you tried it, please send a report (Report a bug / Suggest).
+
 Every value of the campaign's settings files, by group, each with a plain explanation:
 
 - **Both games** - the top of the loaded campaign's `descr_strat.txt` (group "The campaign ..."): the start and end
@@ -68,6 +71,9 @@ in** removes them all with one press.
 ### Module builder (your own add-on, no code)
 
 ![Module builder](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/module_builder.png)
+
+> **Experimental** (a red line at the top of the window): try it at your own risk - a backup is made first and Restore
+> undoes it. If you tried it, please send a report (Report a bug / Suggest).
 
 **Module builder...** (top row) or **Add-ons > New module (no code)...** puts an add-on together from blocks. REX (Rome)
 and M2EX (Medieval II) run the same script, so one module works in both games; the original exes run no scripts.

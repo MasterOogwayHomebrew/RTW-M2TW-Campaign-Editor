@@ -180,7 +180,7 @@ slavs - only those are offered), *as the shadow of a faction*
 in a revolt* (Barbarian Invasion's Ostrogoths) - these two only in Barbarian Invasion and Medieval II (plain Rome,
 also with REX, crashes with them; one faction never gets both a shadow and a split-off one); the campaign script lines that wake one are shown too (Medieval II:
 the Mongols and Timurids). **Change...** (or a double click) changes how a faction comes in - its date and region,
-its partner, *may come back after it dies* (`re_emergent`); **Another faction...** makes a faction without towns
+its partner, *may come back after it dies* (`re_emergent`), *lives without towns* (REX / M2EX's `can_homeless`: it stays in the game with no town instead of dying or becoming a horde); **Another faction...** makes a faction without towns
 and characters appear later. Written with Write it in, every file in step (descr_sm_factions, descr_strat,
 descr_events).
 

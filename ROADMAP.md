@@ -228,6 +228,8 @@ timeline
 - 📦 Stability for 0.30: one mouse-wheel handler for the whole window; going back to an older version never breaks on what a newer one wrote; the exe checks itself before it is handed out; a full disk, a too-long path, no rights or a file held by the game said in plain words with nothing lost (Restore runs again); no internet never hangs anything; a mod with only its changed files explained on Load; a step left over from a closed window can no longer call a new one; the code checked with Ruff before every build, files read in passing closed at once
 - 📦 Medieval II banners: every look of the small pennants dyed, no seam on the cavalry banner
 - 📦 Module builder: the engines' builds of 2026-10-04 - a faction made another's protectorate or client
+- 📦 A faction that lives without towns (REX / M2EX's `can_homeless`), a tick in How a faction comes into the campaign
+- 📦 Campaign rules and the Module builder marked experimental (a red line: try it, send a report)
 
 ## 🧪 Being tested in the game now (newest first)
 
