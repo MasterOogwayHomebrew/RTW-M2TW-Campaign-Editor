@@ -26,6 +26,11 @@ are found on Load and fixed with a yes.
 - **Rome / REX:** `<game>\<name>\`, started by `Start_<name>.bat` (`-mod:<name>`).
 - **Medieval II:** `<game>\mods\<name>\` with `<name>.cfg`, started by `Start_<name>.bat` (under M2EX: `M2EX.exe --features.mod=mods/<name>`).
 
+**Start the game** (the green button at the bottom right, beside Tools) starts the game with the mod that is
+loaded: its own start script, else the line the engine's own start scripts use (`REX.exe -mod:<name>`, `-bi` /
+`-alx` for the expansions, `M2EX.exe --features.mod=mods/<name>`). Apply your changes first - the game reads the
+files on disk; the button names any change not written yet.
+
 Text files are copied; everything else is a **hard link**: the same file on disk under a second name. Explorer
 shows tens of thousands of files at full size, but they take no extra disk space, and deleting the new mod
 folder never touches the game. Do not overwrite a linked texture in place from an image editor (or tick
