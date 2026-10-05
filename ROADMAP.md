@@ -207,6 +207,7 @@ timeline
 - 📦 The bigger map (x3): rivers stop at the new coast (no sandbar off a river mouth), the beach one tile wide (from a report)
 - 📦 The bigger map (x3) drawn the way nature draws: rivers bend and meander (one pixel wide), the coast, the borders of regions, ground types and climates wind instead of following 3 x 3 squares; the relief gets crags on the mountains and river valleys
 - 📦 The bigger map (x3): no flickering wedges on the coasts, no islets in navigable rivers, volcanoes keep their cones, mountains never flat, lakes with gentle banks (from reports)
+- 📦 The bigger map (x3): a border that ran along a river stays on the new river, no lone pixel sticks out of a border, and a message says what to look over by hand once the map is written (from a report)
 - 📦 Rome: a faction with both a shadow and a faction splitting off it is refused (the game crashed at the end of a turn); a shadow gets no victory conditions (the game stopped reading them) (from the test mod)
 - 📦 The Terrain editor is a tab of the Map editor; the top row moves with the wheel or a drag, no arrows; buttons no wider than their words (from reports)
 - 📦 Shadow and split-off factions offered only in Barbarian Invasion and Medieval II (plain Rome cannot take them)

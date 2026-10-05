@@ -233,12 +233,13 @@ removes it). Towns the mod's own campaign script renames are shown grey and are 
 
 **Bigger map (x3)...** (top row) turns every tile into a 3 x 3 block (both games). Its window says the map's
 size now and after, asks one thing - the heights - and writes when you press **Make the map 3 x bigger** (a backup
-first; it takes about half a minute and says what it is doing). **Show every change...** lists every file first.
+first; it takes a minute or two and says what it is doing). **Show every change...** lists every file first.
 When it is done, **Put the old map back** undoes it at once (later: Tools > Restore a backup...). Towns, ports, armies,
 agents, fleets, resources, forts, watchtowers, wonders and event positions keep their places; every town keeps its
 own region all round it, every port stands on the shore touching the sea and its region; the coast winds with bays
 and capes, not in squares, and the heights follow the same coast; the borders between regions wind too, and every
-region stays in as many pieces as before; every tile keeps the ground type and climate of the old tile it lies in (a
+region stays in as many pieces as before; a border that ran along a river stays on the new river (each bank
+its own region's), and no lone pixel sticks out of a border; every tile keeps the ground type and climate of the old tile it lies in (a
 forest stays a forest), the edges between them winding, not in 3 x 3 steps; land bridges stay unbroken; the relief is made the natural way - bent with the ground, crags on the mountains (plains stay flat), volcanoes
 keep their cones, lakes get gentle banks, the shore stands clearly above the water (no flickering wedges, no islets in
 navigable rivers), every
@@ -248,6 +249,15 @@ made 3 x higher so the slopes stay as steep (**Hills 3 x higher**; or keep the o
 1 pixel wide, bend round their corners and meander gently on straight runs, and run on to the new coast (stopping
 there); the beach stays one tile wide along the new coast; every picture of the map and `descr_terrain.txt` follow, `map.rwm` is
 removed. One backup; Put the old map back (or Restore) gives it all back.
+
+**Look it over yourself.** The new map is drawn from the old one by rules, and no rule gets every map 100 % right -
+here and there a coast, a river or a border can come out a pixel off. When the map is written, a message says what
+to look at in the Map editor and in the game: coasts and river mouths (a stray pixel of land in the water or of water
+on the land), navigable rivers and narrow straits (still open), borders along rivers, every port on the coast, every
+town with its own land round it, mountains and passes. Small things are quick to fix by hand: the Map tab's
+**Paint with** brush for borders, the Terrain tab's Land and sea, heights and ground brushes for the rest. The
+message also lists what the editor could not do itself (script lines with tiles it cannot read for sure, a port it
+could not place).
 
 ![The coast of Italy made 3 x bigger: before (squares), after (smooth)](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/bigger_map_coast.png)
 ![Regions 3 x bigger: in squares (left), the natural way - winding coast and borders (right)](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/bigger_map_natural.png)
