@@ -206,6 +206,9 @@ timeline
 
 - 📦 The bigger map (x3): rivers stop at the new coast (no sandbar off a river mouth), the beach one tile wide (from a report)
 - 📦 The bigger map (x3) drawn the way nature draws: rivers bend and meander (one pixel wide), the coast, the borders of regions, ground types and climates wind instead of following 3 x 3 squares; the relief gets crags on the mountains and river valleys
+- 📦 The bigger map (x3): no flickering wedges on the coasts, no islets in navigable rivers, volcanoes keep their cones, mountains never flat, lakes with gentle banks (from reports)
+- 📦 Rome: a faction with both a shadow and a faction splitting off it is refused (the game crashed at the end of a turn); a shadow gets no victory conditions (the game stopped reading them) (from the test mod)
+- 📦 The top row scrolls with a bar under it on a narrow screen; buttons no wider than their words (from reports)
 - 📦 Terrain editor: Land and sea no longer lags while painting
 - 📦 Test mod: every feature and every option (59 steps), with a table of which step tried each feature
 - 📦 Campaign rules: the campaign's start - dates, years a turn, brigands and pirates, the switches on / off (the top of `descr_strat.txt`), written in the order the game reads them

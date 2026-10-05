@@ -238,7 +238,9 @@ agents, fleets, resources, forts, watchtowers, wonders and event positions keep 
 own region all round it, every port stands on the shore touching the sea and its region; the coast winds with bays
 and capes, not in squares, and the heights follow the same coast; the borders between regions wind too, and every
 region stays in as many pieces as before; every tile keeps the ground type and climate of the old tile it lies in (a
-forest stays a forest), the edges between them winding, not in 3 x 3 steps; land bridges stay unbroken; the relief is made the natural way - bent with the ground, crags on the mountains (plains stay flat), every
+forest stays a forest), the edges between them winding, not in 3 x 3 steps; land bridges stay unbroken; the relief is made the natural way - bent with the ground, crags on the mountains (plains stay flat), volcanoes
+keep their cones, lakes get gentle banks, the shore stands clearly above the water (no flickering wedges, no islets in
+navigable rivers), every
 river in its valley, no slope steeper than the old map's steepest, the land round a town smooth -, and `map_heights.hgt` (the game's own
 copy of the heights, read instead of the picture) is written at the new size; the hills, mountains and sea floor are
 made 3 x higher so the slopes stay as steep (**Hills 3 x higher**; or keep the old heights, a flatter world: **Heights as they are**); rivers stay
