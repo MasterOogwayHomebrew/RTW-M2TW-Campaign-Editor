@@ -258,7 +258,7 @@ river in its valley, no slope steeper than the old map's steepest, the land roun
 copy of the heights, read instead of the picture) is written at the new size; the hills, mountains and sea floor are
 made 3 x higher so the slopes stay as steep (**Hills 3 x higher**; or keep the old heights, a flatter world: **Heights as they are**); rivers stay
 1 pixel wide, bend round their corners and meander gently on straight runs, and run on to the new coast (stopping
-there); the beach stays one tile wide along the new coast; every picture of the map and `descr_terrain.txt` follow, `map.rwm` is
+there); every picture of the map and `descr_terrain.txt` follow, `map.rwm` is
 removed. One backup; Put the old map back (or Restore) gives it all back.
 
 **Look it over yourself.** The new map is drawn from the old one by rules, and no rule gets every map 100 % right -
