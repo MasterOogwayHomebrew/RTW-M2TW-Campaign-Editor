@@ -19,7 +19,8 @@ author in one click ([video](https://youtu.be/7MbYR9ywNsI)). That is the fastest
   too, instead of 3 x 3 squares and straight 45-degree cuts (two waves whose sizes stand in the golden ratio bend
   them, so the pattern never repeats; the same map always comes out alike); every block's middle keeps its old
   value, so nothing changes under a town, army or resource, and every region stays in as many pieces as before. Ports stay on the shore pixel of their own region.
-- **Heights**: `map_heights` interpolated between the old points along its own smooth coast, and
+- **Heights**: `map_heights` the natural way - bent with the ground, crags on the mountains, rivers in their
+  valleys, no slope steeper than the old map's steepest - along the new coast, and
   **`map_heights.hgt`** - the game's float copy, which it reads instead of the picture and never rebuilds - written
   at the new size too. The hills, mountains and sea floor are made **3 x higher** (`max_land_height`,
   `min_sea_height` in `descr_terrain.txt`): the land is 3 x wider, so the slopes stay as steep as they were
@@ -204,7 +205,7 @@ timeline
 - 📦 Banner... on the Art tab, both games: the battle banners from a white banner - a pattern of your colours, a symbol where you draw it, or your own drawing on the saved template; Medieval II's white template made from the mod's own banner sheets, seen in 3D
 
 - 📦 The bigger map (x3): rivers stop at the new coast (no sandbar off a river mouth), the beach one tile wide (from a report)
-- 📦 The bigger map (x3) drawn the way nature draws: rivers bend and meander (one pixel wide), the coast, the borders of regions, ground types and climates wind instead of following 3 x 3 squares
+- 📦 The bigger map (x3) drawn the way nature draws: rivers bend and meander (one pixel wide), the coast, the borders of regions, ground types and climates wind instead of following 3 x 3 squares; the relief gets crags on the mountains and river valleys
 - 📦 Terrain editor: Land and sea no longer lags while painting
 - 📦 Test mod: every feature and every option (59 steps), with a table of which step tried each feature
 - 📦 Campaign rules: the campaign's start - dates, years a turn, brigands and pirates, the switches on / off (the top of `descr_strat.txt`), written in the order the game reads them
