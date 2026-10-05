@@ -15,19 +15,21 @@ author in one click ([video](https://youtu.be/7MbYR9ywNsI)). That is the fastest
 
 - **Positions** (`descr_strat.txt`, `descr_events.txt`, ...): towns, characters, fleets, resources, forts,
   watchtowers, wonders and event places go to the middle of their new block.
-- **Coast**: smooth - a new pixel is land when most of the old land round it is, so the coastline is a rounded
-  line instead of 3 x 3 squares; every block's middle keeps its old value, so nothing changes under a town, army
-  or resource. Ports stay on the shore pixel of their own region.
+- **Coast and borders**: natural - the coastline winds with bays and capes and the borders between regions wind
+  too, instead of 3 x 3 squares and straight 45-degree cuts (two waves whose sizes stand in the golden ratio bend
+  them, so the pattern never repeats; the same map always comes out alike); every block's middle keeps its old
+  value, so nothing changes under a town, army or resource, and every region stays in as many pieces as before. Ports stay on the shore pixel of their own region.
 - **Heights**: `map_heights` interpolated between the old points along its own smooth coast, and
   **`map_heights.hgt`** - the game's float copy, which it reads instead of the picture and never rebuilds - written
   at the new size too. The hills, mountains and sea floor are made **3 x higher** (`max_land_height`,
   `min_sea_height` in `descr_terrain.txt`): the land is 3 x wider, so the slopes stay as steep as they were
   (or keep the old heights - a choice in the window). The sea ground types follow the heights' new coast.
-- **Rivers**: 1 pixel wide (the game crashes on a 2-pixel river), through the block centres, a diagonal step as a
-  staircase; a river mouth runs on to the new coast and stops there (none on the sea).
+- **Rivers**: 1 pixel wide (the game crashes on a 2-pixel river), drawn the way rivers run - bends rounded, gentle
+  meanders on straight runs; a river mouth runs on to the new coast and stops there (none on the sea).
 - **Beach**: one tile wide along the new coast, as in the games' own maps.
-- **Pictures**: `map_ground_types`, `map_climates`, `map_trade_routes`, fog, roughness, disasters and radar maps
-  scaled with exact colours.
+- **Ground and climates by tile**: every new tile the ground type and climate of the old tile it lies in, the edges
+  between kinds winding, no 3 x 3 steps.
+- **Pictures**: `map_trade_routes`, fog, roughness, disasters and radar maps scaled with exact colours.
 - `descr_terrain.txt` gets the new size; `map.rwm` is deleted so the game rebuilds it.
 - Preview of every file, one backup, Restore byte-exact.
 
@@ -202,6 +204,7 @@ timeline
 - 📦 Banner... on the Art tab, both games: the battle banners from a white banner - a pattern of your colours, a symbol where you draw it, or your own drawing on the saved template; Medieval II's white template made from the mod's own banner sheets, seen in 3D
 
 - 📦 The bigger map (x3): rivers stop at the new coast (no sandbar off a river mouth), the beach one tile wide (from a report)
+- 📦 The bigger map (x3) drawn the way nature draws: rivers bend and meander (one pixel wide), the coast, the borders of regions, ground types and climates wind instead of following 3 x 3 squares
 - 📦 Terrain editor: Land and sea no longer lags while painting
 - 📦 Test mod: every feature and every option (59 steps), with a table of which step tried each feature
 - 📦 Campaign rules: the campaign's start - dates, years a turn, brigands and pirates, the switches on / off (the top of `descr_strat.txt`), written in the order the game reads them
