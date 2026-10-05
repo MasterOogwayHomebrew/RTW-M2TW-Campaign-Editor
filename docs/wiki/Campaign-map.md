@@ -235,7 +235,7 @@ removes it). Towns the mod's own campaign script renames are shown grey and are 
 ## Make the map 3 x bigger
 
 **Bigger map (x3)...** (top row) turns every tile into a 3 x 3 block (both games). Its window says the map's
-size now and after, asks two things - the heights, and how the lines are drawn (**Smooth**: coasts, wide rivers drawn as sea, borders and the edges of ground and climates as smooth lines, as water finds its level - the default; **Smooth, lighter**: 1.5 x weaker, closer to the old shapes; **Winding**: bays and capes, every old tile's corner kept) - and writes when you press **Make the map 3 x bigger** (a backup
+size now and after, asks for its values - fields for the hills and mountains (times higher), the smoothing of the lines (coast, rivers drawn as sea, borders, ground, climates: 1 smooth as water finds its level - the default, 0.67 lighter, 0 winding with every old tile's corner kept), narrow rivers kept open, crags on mountains, river valleys and volcano cones; each shows its default and range, a ? says what was tried in the game, **Back to the defaults** resets them; the shore by the water is the games' own and is not among them - and writes when you press **Make the map 3 x bigger** (a backup
 first; it takes a minute or two and says what it is doing). **Show every change...** lists every file first.
 When it is done, **Put the old map back** undoes it at once (later: Tools > Restore a backup...). Towns, ports, armies,
 agents, fleets, resources, forts, watchtowers, wonders and event positions keep their places; every town keeps its
