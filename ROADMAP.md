@@ -156,7 +156,7 @@ timeline
 - 📦 Log, Save logs (zip) for bug reports; Light / Dark look; smaller windows keep every button, side panels can be dragged wider
 
 ## 📦 Built, comes with the next release
-- 📦 Religions in Barbarian Invasion: a new belief (`descr_beliefs.txt`, its pips and texts); the test mod gives it temples of its own
+- ✅ Religions in Barbarian Invasion: a new belief (`descr_beliefs.txt`, its pips and texts); the test mod gives it temples of its own *(in-game ✓ from a tester)*
 - 📦 Bigger map (x3): the values in fields of their own (heights, smoothing of the lines, narrow rivers, crags, valleys, volcanoes) with their defaults, what was tried, and a reset; the shore by the water the games' own (no teeth on diagonal coasts)
 - 📦 Map > New army: Make him a general (his bodyguard leads the army)
 
