@@ -237,7 +237,7 @@ timeline
 - 📦 Delete a mod's folder from Tools (asked twice; never the game's own data)
 - 📦 Forts and watchtowers drawn as a stone castle and a wooden lookout
 - 📦 Barbarian Invasion: a new faction's campaign-map figures recoloured; Rome: a faction that comes by an event comes as a horde
-- 📦 Bigger map (x3): no water wedges or foam-ringed squares on the coast, no land bridges over navigable rivers, river mouths one pixel into the water, mountains only where the heights stand high
+- 📦 Bigger map (x3): no water wedges or foam-ringed squares on the coast, no land bridges over navigable rivers, river mouths ending on the land at the water (never on it), cliffs on the coast, small islands and lakes round, shallow sea along every coast, the beach one pixel wide, mountains only where the heights stand high
 
 ## 🧪 Being tested in the game now (newest first)
 
