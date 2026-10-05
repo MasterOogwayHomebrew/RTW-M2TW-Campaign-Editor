@@ -16,7 +16,7 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   town; give it to another faction instead (**Give this town to**).
 - A town or character sign grows as the mouse comes near it - softly, the nearer the bigger, and from further away
   when the map is zoomed far out (the signs are small then), so the mouse need not hit the sign itself.
-- Wheel zooms (to the point under the mouse), left drag moves the map - past its edges too: the map is a free canvas with an empty field around it, and zooms out smaller than the window; **Fit** puts it back in the middle.
+- Wheel zooms (to the point under the mouse), right drag moves the map (everywhere; a right click without moving opens the menu) - past its edges too: the map is a free canvas with an empty field around it, and zooms out smaller than the window; **Fit** puts it back in the middle.
 - **Find**: type part of a name - a town (also the name shown for its owner), a port, a general, agent or
   fleet, a unit in an army (e.g. "hastati"), a fort, a resource. Pick a hit (click, or Down then Enter) and
   the map zooms in close on it and a ring blinks round it for a few seconds ([video](https://youtu.be/6WAdnGovGzA)).
@@ -59,7 +59,7 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
 ## Map editor
 
 **Map editor** (the first button of the top row) shows the map alone - no faction to pick, every faction alike:
-drag any faction's towns, ports, armies, agents and fleets with the right button; right click a town to give it to
+drag any faction's towns, ports, armies, agents and fleets with the left button; right click a town to give it to
 any faction, an army or a fleet for **Its units...** (the card picker in a window of its own - a general keeps his
 bodyguard), a character to delete him, an empty tile for a new army, agent or fleet of any faction. Resources, forts,
 wonders and regions work as on the Map tab. **Preview**, then **Apply changes** (a backup first; Restore puts every
@@ -78,7 +78,7 @@ texts keep the old names (an unused name harms nothing).
 ## Towns and characters
 
 - A click on a town adds it to **Chosen** or takes it out.
-- A right drag (or Ctrl + left drag) moves characters, towns and ports. The target turns green or red: an
+- A left drag moves characters, towns and ports. The target turns green or red: an
   army needs land it may stand on (no sea, mountains, dense forest, river, ford or cliff) or a town no other
   army holds; a fleet needs sea; an agent any land.
 - **Moving a town or port** repaints its pixel in `map_regions.tga`, moves the characters in it, and deletes
@@ -88,7 +88,8 @@ texts keep the old names (an unused name harms nothing).
 
 Tick **Select** on the Map's bar and choose in **what...** the kinds it takes: towns, armies, agents, fleets (ticked at
 first), resources, forts. Then, as in a strategy game, **drag a box with the left button**: everything of those
-kinds inside it is selected (hold **Shift** to add to what is selected). A click selects or unselects one thing. The
+kinds inside it is added to what is selected (hold **Shift** to take it away instead). A click adds one thing
+(**Shift** + click takes it away); a click on nothing clears the selection. The
 political colours and borders go meanwhile; selected towns and their regions turn **yellow**, selected characters,
 resources and forts get a yellow frame; the **right button drags the map**. A **right click** offers:
 
@@ -138,8 +139,8 @@ towers, the top in the owner's colour; the mouse over one shows its name and whe
 agent is placed on a fort's tile. Barbarian Invasion's watchtowers (listed after the diplomacy) are drawn too.
 
 Forts, watchtowers and wonders need no mode of their own - everything is in the legend and on the right click.
-**New**: click *a fort* or *a watchtower* in the legend, then a land tile on the map. **Move**: drag one with the
-right mouse button to another tile (land, no town, port or other fort there). **Remove**: right click it -
+**New**: click *a fort* or *a watchtower* in the legend, then a land tile on the map. **Move**: drag one to another
+tile (land, no town, port or other fort there). **Remove**: right click it -
 **Delete from the map**. A new one copies the line of the nearest one the campaign already has (only the tile
 changes); a campaign with none (vanilla Rome and Medieval II) gets it written in the regions section. Written with
 Preview / Apply, backed up like every change.
@@ -188,7 +189,7 @@ descr_events).
 
 Trade goods on the map can be placed, moved and removed; one per tile. Tick **Edit resources**: a bar opens under
 the map's buttons. **New**: pick the resource, press **Place new**, then click a land tile on the map. **Move**: drag
-one with the right mouse button. **Remove**: click it (it gets a yellow frame), then **Delete picked**. A region's
+one. **Remove**: click it (it gets a yellow frame), then **Delete picked**. A region's
 resources are the ones on its land; **Region tags (hidden resources)...** edits the region's tag line.
 
 ## Medieval II
@@ -267,6 +268,6 @@ The map's real size is shown under the map, bottom left.
 
 ## Wonders (Rome)
 
-The wonders (`landmark` lines of `descr_strat.txt`) show as golden pyramids - drag one with the right mouse button;
+The wonders (`landmark` lines of `descr_strat.txt`) show as golden pyramids - drag one;
 a double click (or the right click's *about it*) opens its window as the game shows it, with **View it in 3D**; the
 right click on free land has **Put a wonder here**, on a wonder **Delete from the map**.
