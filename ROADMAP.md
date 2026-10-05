@@ -157,6 +157,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Credits - a page and a window that thank everyone who made the editor with us: testers, ideas, supporters ([CREDITS.md](CREDITS.md))
 - 📦 Start the game with the loaded mod from the editor - one green button beside Tools (the mod's start script, or the engine's own line)
 - 📦 Add-ons > Scripts in the game: every script in the game's script/modules - settings, off / on, delete; the test mod's scripts taken out with one press
 - 📦 Map editor: delete a town with its region - its land goes to a neighbour, every file that ties them follows (descr_regions, descr_strat, mercenaries, win conditions, music); what would break the game is refused in plain words
