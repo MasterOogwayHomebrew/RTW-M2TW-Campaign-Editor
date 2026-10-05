@@ -171,7 +171,7 @@ the game would not read is refused; beside it the turn and the year it means, fr
 never fires), its place (x, y; empty = a message only; **Show on the map**), the title and text
 players see (`historic_events.txt`), the **picture players see** on the scroll (a historic event its own
 `ui/<culture>/eventpics/<event>.tga` - **Picture...** puts yours in for every culture, sized like the game's; a
-plague, volcano... shows its kind's `disaster_<kind>.tga`) and **what it does in the game** in plain words.
+plague, volcano... shows its kind's `disaster_<kind>.tga` - **Picture...** replaces it for every event of that kind) and **what it does in the game** in plain words.
 **New event...**, **Remove**, Preview, Write it in with a backup. Below the
 list: **the factions that appear later** - they start dead (`dead_until_resurrected` in descr_strat.txt, no towns,
 no characters) and come in *by an event* (`emergent_faction` with a date and a region the rebels hold, as Barbarian Invasion's
@@ -240,9 +240,9 @@ own region all round it, every port stands on the shore touching the sea and its
 and capes, not in squares, and the heights follow the same coast; the borders between regions wind too, and every
 region stays in as many pieces as before; a border that ran along a river stays on the new river (each bank
 its own region's), and no lone pixel sticks out of a border; every tile keeps the ground type and climate of the old tile it lies in (a
-forest stays a forest), the edges between them winding, not in 3 x 3 steps; land bridges stay unbroken; the relief is made the natural way - bent with the ground, crags on the mountains (plains stay flat), volcanoes
-keep their cones, lakes get gentle banks, the shore stands clearly above the water (no flickering wedges, no islets in
-navigable rivers), every
+forest stays a forest), the edges between them winding, not in 3 x 3 steps; mountains only where the new heights stand high (a range's low edge becomes hills, or the ground beside it); land bridges stay unbroken; the relief is made the natural way - bent with the ground, crags on the mountains (plains stay flat), volcanoes
+keep their cones, lakes get gentle banks, the shore stands clearly above the water (no flickering wedges or triangles of water cut into it, no islets, slivers or land bridges in
+navigable rivers; a river ends one pixel into the water), every
 river in its valley, no slope steeper than the old map's steepest, the land round a town smooth -, and `map_heights.hgt` (the game's own
 copy of the heights, read instead of the picture) is written at the new size; the hills, mountains and sea floor are
 made 3 x higher so the slopes stay as steep (**Hills 3 x higher**; or keep the old heights, a flatter world: **Heights as they are**); rivers stay
