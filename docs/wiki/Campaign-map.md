@@ -104,7 +104,7 @@ resources and forts get a yellow frame; the **right button drags the map**. A **
   buildings converted the game's way, the governor's building and the population follow);
 - **Pick every town of <owner>** (on a town), **Unselect all**. One Undo takes a whole job back.
 
-Untick **Select** and nothing stays selected (the same everywhere: switching **Edit resources** or **Edit regions** off drops what was picked or waiting for a click, hiding the legend puts its picked tool down).
+Untick **Select** and nothing stays selected (the same everywhere: switching **Layers > Resources** or **Edit regions** off drops what was picked or waiting for a click, hiding the legend puts its picked tool down).
 
 The same window is in **Tools** and on the Buildings tab (**Many towns at once...**). All towns of the campaign on the
 left - filter them by owner, level, city / castle (Medieval II) or name, **Add all shown** - the chosen ones on the
@@ -189,9 +189,10 @@ descr_events).
 
 ## Resources
 
-Trade goods on the map can be placed, moved and removed; one per tile. Tick **Edit resources**: a bar opens under
-the map's buttons. **New**: pick the resource, press **Place new**, then click a land tile on the map. **Move**: drag
-one. **Remove**: click it (it gets a yellow frame), then **Delete picked**. A region's
+Trade goods on the map can be placed, moved and removed; one per tile. Show them with **Layers > Resources**: a bar
+opens under the map's buttons. **New**: click the resource in the legend on the right (or pick it in the bar and
+press **Place new**), then click a land tile on the map - a right click or Esc puts it back. **Move**: drag one.
+**Remove**: right click it > **Delete**, or click it (it gets a yellow frame), then **Delete picked**. A region's
 resources are the ones on its land; **Region tags (hidden resources)...** edits the region's tag line.
 
 ## Medieval II
