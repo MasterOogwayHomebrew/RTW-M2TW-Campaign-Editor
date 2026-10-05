@@ -235,7 +235,7 @@ removes it). Towns the mod's own campaign script renames are shown grey and are 
 ## Make the map 3 x bigger
 
 **Bigger map (x3)...** (top row) turns every tile into a 3 x 3 block (both games). Its window says the map's
-size now and after, asks one thing - the heights - and writes when you press **Make the map 3 x bigger** (a backup
+size now and after, asks two things - the heights, and how the lines are drawn (**Smooth**: coasts, wide rivers drawn as sea, borders and the edges of ground and climates as smooth lines, as water finds its level - the default; **Smooth, lighter**: 1.5 x weaker, closer to the old shapes; **Winding**: bays and capes, every old tile's corner kept) - and writes when you press **Make the map 3 x bigger** (a backup
 first; it takes a minute or two and says what it is doing). **Show every change...** lists every file first.
 When it is done, **Put the old map back** undoes it at once (later: Tools > Restore a backup...). Towns, ports, armies,
 agents, fleets, resources, forts, watchtowers, wonders and event positions keep their places; every town keeps its
@@ -243,8 +243,8 @@ own region all round it, every port stands on the shore touching the sea and its
 and capes, not in squares, and the heights follow the same coast; the borders between regions wind too, and every
 region stays in as many pieces as before; a border that ran along a river stays on the new river (each bank
 its own region's), and no lone pixel sticks out of a border; every tile keeps the ground type and climate of the old tile it lies in (a
-forest stays a forest), the edges between them winding, not in 3 x 3 steps; mountains only where the new heights stand high (a range's low edge becomes hills, or the ground beside it); land bridges stay unbroken; the relief is made the natural way - bent with the ground, crags on the mountains (plains stay flat), volcanoes
-keep their cones, lakes get gentle banks, the shore takes the original map's own heights for three points on each side of the water's edge (the sea by the shore as deep as before, not three times deeper) and blends into the bigger map beyond them (no flickering wedges or triangles of water cut into it, no islets, small pools on the land, slivers or land bridges in
+forest stays a forest), the edges between them not in 3 x 3 steps; mountains only where the new heights stand high (a range's low edge becomes hills, or the ground beside it); land bridges stay unbroken; the relief is made the natural way - bent with the ground, crags on the mountains (plains stay flat), volcanoes
+keep their cones, lakes get gentle banks, the shore takes the original map's own heights for three points on each side of the water's edge - the land by its real distance from the water, capes as low as the original's, the sea by the shore as deep as before, not three times deeper - and blends into the bigger map beyond them (no teeth along a diagonal coast, no flickering wedges or triangles of water cut into it, no islets, small pools on the land, slivers or land bridges in
 navigable rivers; a river ends one pixel into the water), every
 river in its valley, no slope steeper than the old map's steepest, the land round a town smooth -, and `map_heights.hgt` (the game's own
 copy of the heights, read instead of the picture) is written at the new size; the hills, mountains and sea floor are
