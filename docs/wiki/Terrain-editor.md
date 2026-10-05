@@ -1,6 +1,6 @@
 # Terrain editor
 
-**Terrain editor** at the top paints the campaign map itself, tile by tile.
+The **Terrain** tab of the **Map editor** (beside its Map) paints the campaign map itself, tile by tile.
 
 **Videos:** [editing rivers, fords, cliffs](https://youtu.be/z0T723riXaU) · [editing a height map](https://youtu.be/mTdRAWympuw) (both checked in the game on Rome
 and Medieval II).

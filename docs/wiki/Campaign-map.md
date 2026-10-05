@@ -177,7 +177,8 @@ list: **the factions that appear later** - they start dead (`dead_until_resurrec
 no characters) and come in *by an event* (`emergent_faction` with a date and a region the rebels hold, as Barbarian Invasion's
 slavs - only those are offered), *as the shadow of a faction*
 (the side that splits off it in a civil war, Barbarian Invasion's rebels of the empires) or *splitting off a faction
-in a revolt* (Barbarian Invasion's Ostrogoths); the campaign script lines that wake one are shown too (Medieval II:
+in a revolt* (Barbarian Invasion's Ostrogoths) - these two only in Barbarian Invasion and Medieval II (plain Rome,
+also with REX, crashes with them; one faction never gets both a shadow and a split-off one); the campaign script lines that wake one are shown too (Medieval II:
 the Mongols and Timurids). **Change...** (or a double click) changes how a faction comes in - its date and region,
 its partner, *may come back after it dies* (`re_emergent`); **Another faction...** makes a faction without towns
 and characters appear later. Written with Write it in, every file in step (descr_sm_factions, descr_strat,
