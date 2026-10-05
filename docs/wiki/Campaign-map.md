@@ -50,7 +50,9 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   opens in the same window. The right click's *Edit this town in Edit faction* still opens its owner in Edit faction.
 - **Right click on the map**: on a town - **Give this town to** any faction (written with the next Apply; its
   characters go to the old owner's other towns, a captain's garrison goes with it); on a free tile - **New army /
-  agent / fleet here** with the land's owner already picked; on a new character not written yet - **Take it out**.
+  agent / fleet here** with the land's owner already picked (a new army's **Make him a general** gives him the
+  faction's general's bodyguard as his first unit - a general with his own name, not a captain); on a new character
+  not written yet - **Take it out**.
 - **Colours** (on the map's bar, also in Layers): one colour mode at a time - **Political** (the owners), **Diplomacy** (how the faction stands towards each owner), **Religion** (Medieval II: each region in its main religion's colour, paler where the majority is small; the legend counts the regions), **None** (the ground only).
 - **Layers**: borders, town names, ports, characters, resources, relief, rivers, a tile grid when zoomed in.
 - The line under the map describes the tile under the mouse: region, owner, ground, and whether an army may
