@@ -157,6 +157,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Discord, YouTube and GitHub buttons; GitHub shows the number of a newer release when one is out (`GitHub (new 0.30)`); Settings and Help now in Tools; the bottom buttons wrap on a narrow window
 - 📦 Credits - a page and a window that thank everyone who made the editor with us: testers, ideas, supporters ([CREDITS.md](CREDITS.md))
 - 📦 Start the game with the loaded mod from the editor - one green button beside Tools (the mod's start script, or the engine's own line)
 - 📦 Add-ons > Scripts in the game: every script in the game's script/modules - settings, off / on, delete; the test mod's scripts taken out with one press

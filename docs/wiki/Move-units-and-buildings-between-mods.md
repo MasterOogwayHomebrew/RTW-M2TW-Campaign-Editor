@@ -21,7 +21,7 @@ Between the two games it is not possible - their models and files differ.
    as in the other mod* (the levels your mod has under the same names - listed under it), any building level of
    **your** mod (e.g. your own barracks), or *not recruited there*.
 8. **Check and write**: every file and line it will write. Read the **WARNINGS** at the end - they say what to
-   finish by hand. **Write it into this mod** makes one backup first; **Restore** (bottom bar) undoes it.
+   finish by hand. **Write it into this mod** makes one backup first; **Tools > Restore a backup...** undoes it.
 
 What comes along: the unit's lines, its battle models (Medieval II: in `descr_model_battle.txt` *and*
 `battle_models.modeldb`), mount, engine or animal, every mesh / texture / sprite they name, its cards and info
@@ -60,4 +60,4 @@ that points at a building your mod has not - change those lines in the Building 
 - **To share units with other people**, use the Unit editor's **Export pack...** (one `.zip`) and **Import
   pack...** on their side. **Tools > Check and install a pack** is something else: it checks a mod that says
   "copy this data folder over the game" before anything is copied.
-- A mistake? **Restore** in the bottom bar gives every file back, byte for byte.
+- A mistake? **Tools > Restore a backup...** gives every file back, byte for byte.

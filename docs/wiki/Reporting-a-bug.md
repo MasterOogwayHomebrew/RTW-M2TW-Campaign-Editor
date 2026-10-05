@@ -15,7 +15,7 @@ When the game crashes, the tool shows an error, or something looks wrong, please
    computer's name, e-mail addresses, Steam IDs, IP addresses and the player's name of REX's crash report; add
    your own words to hide (your nick). **Show what is sent** shows every line that goes. The contact field is
    optional; with **remember it** ticked (the default) every next report fills it in by itself - it is kept in
-   Settings > Reports too, and unticking it forgets it.
+   Tools > Settings > Reports too, and unticking it forgets it.
    Rather send it yourself? **Tools -> Save logs (zip)** (or Save as zip in the report window) - the same logs, the
    names cut out, saved in `CampaignEditor_logs` next to the exe.
 2. **A video or a screenshot** of what you did and what went wrong.
@@ -45,7 +45,7 @@ answer to the author**, add a screenshot or tick **with the newest logs** if it 
 It goes to the same report.
 
 Private: the editor asks only by the reports' numbers (random, known only to you) and gets back only the answers to
-them. Switch the start-up look off in Settings > Reports.
+them. Switch the start-up look off in Tools > Settings > Reports.
 
 **An idea or a wish?** The same button: pick "an idea", write what the editor should do - it reaches the author
 the same way (no logs needed).
