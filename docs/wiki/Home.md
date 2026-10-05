@@ -52,6 +52,10 @@ and the formats for you:
 
 Something confusing or hard to find? That counts as a bug too - tell us ([[Reporting a bug]]).
 
+**Made a mod with it?** Please say so where you share the mod and link to the editor - one line is enough:
+`Made with the RTW & M2TW Campaign Editor: https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor`
+(a request, not a condition - thank you!).
+
 ## Start here
 
 1. [[Installing]] - where to put the exe, what it makes next to it.
