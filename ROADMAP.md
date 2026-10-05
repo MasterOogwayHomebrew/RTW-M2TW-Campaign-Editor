@@ -156,6 +156,9 @@ timeline
 - 📦 Log, Save logs (zip) for bug reports; Light / Dark look; smaller windows keep every button, side panels can be dragged wider
 
 ## 📦 Built, comes with the next release
+- 📦 Religions in Barbarian Invasion: a new belief (`descr_beliefs.txt`, its pips and texts); the test mod gives it temples of its own
+- 📦 Bigger map (x3): the values in fields of their own (heights, smoothing of the lines, narrow rivers, crags, valleys, volcanoes) with their defaults, what was tried, and a reset; the shore by the water the games' own (no teeth on diagonal coasts)
+- 📦 Map > New army: Make him a general (his bodyguard leads the army)
 
 - 📦 Discord, YouTube and GitHub buttons; GitHub shows the number of a newer release when one is out (`GitHub (new 0.30)`); Settings and Help now in Tools; the bottom buttons wrap on a narrow window
 - 📦 Credits - a page and a window that thank everyone who made the editor with us: testers, ideas, supporters ([CREDITS.md](CREDITS.md))
@@ -164,16 +167,16 @@ timeline
 - 📦 Map editor: delete a town with its region - its land goes to a neighbour, every file that ties them follows (descr_regions, descr_strat, mercenaries, win conditions, music); what would break the game is refused in plain words
 - 📦 Map: Select - a box round many things at once, as in a strategy game: give the towns, add a building or garrisons, take characters, resources and forts off the map
 - 📦 The town window has the Buildings and Garrison editors of the main window, for any town
-- 📦 Module builder (both games): your own add-on made of WHEN / IF / DO blocks picked in plain words, no code - the mod's own names, nine examples, settings for the player, Put it in / Share
+- 📦 Module builder (both games): your own add-on made of WHEN / IF / DO blocks picked in plain words, no code - the mod's own names, nine examples, settings for the player, Put it in / Share *(in-game ✓ on Rome + REX, Barbarian Invasion + REX and Medieval II + M2EX: money and messages given, loot for a town taken - from the in-game tester)*
 - 📦 Module builder: every event, condition, console and campaign-script command of REX / M2EX (from the engines' own lists, with a search and the parameters as fields) and numbers kept between turns
-- 📦 Add-on Avoid Growth (both games): a tick on your town's scroll in the game's own look - the town keeps at most the people it has, may shrink and grows back to that
-- 📦 Test mod: every campaign rule changed in one step (Medieval II 548 values, Rome 162), the game must read them all
+- 📦 Add-on Avoid Growth (both games): a tick on your town's scroll in the game's own look - the town keeps at most the people it has, may shrink and grows back to that *(in-game ✓ on Barbarian Invasion + REX: a town ticked and held at its ceiling - from the in-game tester)*
+- 📦 Test mod: every campaign rule changed in one step (Medieval II 548 values, Rome 162), the game must read them all *(in-game ✓: Medieval II + M2EX read all 546 values and played 11 turns, Rome + REX played 10 - from the in-game tester)*
 - 📦 Sack Settlement (both games): the governor's building always stays, 600 people at least in the ruins
-- 📦 Sack Settlement for Medieval II (M2EX) as a button of the game's own kind: the same script as Rome's, drawn from the scroll's own button pieces in the game's font; the older Lua copy taken out
+- 📦 Sack Settlement for Medieval II (M2EX) as a button of the game's own kind: the same script as Rome's, drawn from the scroll's own button pieces in the game's font; the older Lua copy taken out *(in-game ✓: the button on the capture scroll - from the in-game tester)*
 - 📦 Answers to my reports: the author's reply comes back into the editor (report window tab, "(1 new)" on the Report button), and you can answer back with words or a screenshot (from Discord)
 - 📦 The bigger map (x3) moves the campaign's scripts too: spawned armies, moved characters, camera, revealed tiles, 'near a tile' conditions (from a tester's game: scripted armies stood off the map)
 - 📦 Drawn garrisons fit the town: only what its own buildings recruit, else the cheapest units
-- 📦 Factions that appear later: by an event, as a faction's shadow (civil war) or splitting off in a revolt - New faction and Events... (from Discord) *(the shadow way in-game ✓ on Medieval II + M2EX and on Barbarian Invasion + REX)*
+- 📦 Factions that appear later: by an event, as a faction's shadow (civil war) or splitting off in a revolt - New faction and Events... (from Discord) *(in-game ✓: the shadow way on Medieval II + M2EX and Barbarian Invasion + REX; the split-off way and the event way on Medieval II + M2EX - from the in-game tester)*
 - 📦 A double click on a town opens its own window (owner, city / castle, level, population, buildings); many towns made city / castle and of another level at once (from Discord)
 - 📦 REX / M2EX: no faction limit - max_factions raised by itself with every new faction
 - 📦 A town on its region's edge stays its region's - on the Map and in the bigger map (from a report)
@@ -211,7 +214,7 @@ timeline
 - 📦 The bigger map (x3) drawn the way nature draws: rivers bend and meander (one pixel wide), the coast, the borders of regions, ground types and climates wind instead of following 3 x 3 squares; the relief gets crags on the mountains and river valleys
 - 📦 The bigger map (x3): no flickering wedges on the coasts, no islets in navigable rivers, volcanoes keep their cones, mountains never flat, lakes with gentle banks (from reports)
 - 📦 The bigger map (x3): a border that ran along a river stays on the new river, no lone pixel sticks out of a border, and a message says what to look over by hand once the map is written (from a report)
-- 📦 A faction with both a shadow and a faction splitting off it is refused (Rome crashed at the end of a turn; Medieval II gave the revolting town to the shadow); a shadow gets no victory conditions (the game stopped reading them) (from the test mod)
+- 📦 A faction with both a shadow and a faction splitting off it: refused in plain Rome (it crashed at the end of a turn) and Medieval II (the revolting town went to the shadow); Barbarian Invasion + REX takes both *(in-game ✓: three real revolts, no crash - from the in-game tester)*; a shadow gets no victory conditions (the game stopped reading them) (from the test mod)
 - 📦 Medieval II: a faction that comes by an event arrives as a horde - the editor writes its horde lines and its event's text (from the test mod)
 - 📦 The Terrain editor is a tab of the Map editor; the top row moves with the wheel or a drag, no arrows; buttons no wider than their words (from reports)
 - 📦 Shadow and split-off factions offered only in Barbarian Invasion and Medieval II (plain Rome cannot take them)
@@ -229,7 +232,7 @@ timeline
 - 📦 Stability for 0.30: one mouse-wheel handler for the whole window; going back to an older version never breaks on what a newer one wrote; the exe checks itself before it is handed out; a full disk, a too-long path, no rights or a file held by the game said in plain words with nothing lost (Restore runs again); no internet never hangs anything; a mod with only its changed files explained on Load; a step left over from a closed window can no longer call a new one; the code checked with Ruff before every build, files read in passing closed at once
 - 📦 Medieval II banners: every look of the small pennants dyed, no seam on the cavalry banner
 - 📦 Module builder: the engines' builds of 2026-10-04 - a faction made another's protectorate or client
-- 📦 A faction that lives without towns (REX / M2EX's `can_homeless`), a tick in How a faction comes into the campaign
+- 📦 A faction that lives without towns (REX / M2EX's `can_homeless`), a tick in How a faction comes into the campaign - written right before `can_sap`, after the horde's last unit *(in-game ✓: the line read by Rome, Barbarian Invasion and Medieval II - from the in-game tester)*
 - 📦 Campaign rules and the Module builder marked experimental (a red line: try it, send a report)
 - 📦 Delete a mod's folder from Tools (asked twice; never the game's own data)
 - 📦 Forts and watchtowers drawn as a stone castle and a wooden lookout
@@ -269,7 +272,7 @@ timeline
 - 🧪 The family tree folded behind a Family tree button on the Faction tab; hover texts on the work buttons (0.23.0)
 - 🧪 A faction's religion pulls its temples, guilds, priests and their figures along (Medieval II) (0.22.0)
 - 🧪 Rome's packed textures (data/packs/*.pak) read for the model thumbnails and 3D (0.22.0)
-- 🧪 Events and later factions: the campaign's plagues, volcanoes, earthquakes and historic messages - date, place, texts, new ones (0.22.0)
+- ✅ Events and later factions: the campaign's plagues, volcanoes, earthquakes and historic messages - date, place, texts, new ones (0.22.0) *(in-game ✓: earthquakes, plague, floods and messages on Medieval II + M2EX and Rome + REX - from the in-game tester)*
 - 🧪 Map colour modes (political / diplomacy / religion / none) and a religion map (Medieval II) (0.22.0)
 - 🧪 The map is a free canvas (Map tab and Terrain editor): dragged past its edges, zoomed out smaller than the view (0.22.0)
 - 🧪 Map: Edit resources and Edit forts & watchtowers apart, each with its how-to; Rename in the files on the Map (0.22.0)
@@ -286,8 +289,8 @@ timeline
 - 🧪 One path guard for every write and Restore (only the mod's or game's folder) (0.21.0)
 - 🧪 The work buttons scroll instead of being cut; Rome-only fields hidden on Medieval II; the Religions window names its region (0.21.0)
 - 🧪 **Report a bug / Suggest** (one click, anonymous): ideas too (0.20.1); the logs, a few words and screenshots go to the author through a small relay - no account, no key inside the exe; names cut out first, everything shown before it goes (0.20.0)
-- 🧪 Settlements tab: every region and town, the names players see, owners, names by culture; rename a region and its town in the files everywhere the mod names them (0.20.0)
-- 🧪 Campaign rules (Tools): every value of the campaign's settings files with a plain explanation - Medieval II's campaign_db, town growth / order / income, diplomacy, recruitment; Rome + REX the people each town level needs; the Unit size choices (0.20.0)
+- ✅ Settlements tab: every region and town, the names players see, owners, names by culture; rename a region and its town in the files everywhere the mod names them (0.20.0) *(in-game ✓: renamed towns on Medieval II + M2EX and Barbarian Invasion + REX - from the in-game tester)*
+- ✅ Campaign rules (Tools): every value of the campaign's settings files with a plain explanation - Medieval II's campaign_db, town growth / order / income, diplomacy, recruitment; Rome + REX the people each town level needs; the Unit size choices (0.20.0) *(in-game ✓: read and played on Medieval II + M2EX and Rome + REX - from the in-game tester)*
 - 🧪 Add-ons: Sack Settlement for Rome + REX with who may sack (only the player, everyone, hordes, picked factions); the kept buildings and rebel units picked from the mod's own (0.20.0)
 - 🧪 View in 3D for Rome's .cas models (every vanilla unit, mount and animal), both games take missing model files from the game's data; weapons off no longer hides the legs, detail levels in order (0.20.0)
 - 🧪 Tools: New religion / Religions of a region (Medieval II); a Medieval II clone's texts say "the Kingdom of Jerusalem" right (0.20.0)

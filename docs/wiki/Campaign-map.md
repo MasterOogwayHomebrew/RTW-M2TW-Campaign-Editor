@@ -213,6 +213,13 @@ religion's), and every region's religions line at 0 %. Then give it its share pe
 (vanilla has 5). Temples, priests and traits of its own are not made - Preview says which files still name
 only the old religions.
 
+**Barbarian Invasion** (Rome's official expansion, and every mod made from it) has religions too - its beliefs
+(Christianity, Paganism, Zoroastrianism). **New religion...** there writes a new belief into `descr_beliefs.txt` (its
+tag, its three pips - the order and unrest pips copied from the belief picked, the level pip your picture - and its
+name, order and unrest texts in `text/expanded_bi.txt`). Barbarian Invasion has no region shares and no faction
+religion line: a town follows a belief through the buildings that carry it (`religious_belief <tag> <n>` - give a
+temple chain the new tag in the Building editor) and its characters' traits. Plain Rome has no religions.
+
 ## Settlement names by culture (REX / M2EX)
 
 **Names by culture...** (next to *Edit region...* on the Faction tab, and on the Map's region bar) gives a town a
