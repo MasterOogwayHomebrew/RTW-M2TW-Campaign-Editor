@@ -276,6 +276,18 @@ The campaign's scripts follow too: every place on the campaign map in `campaign_
 Past 510 tiles the original exes need REX / M2EX.
 The map's real size is shown under the map, bottom left.
 
+## Grow or cut the map at its edges
+
+**Change size...** beside the map's size under the map adds rows or columns of tiles at any edge - left, right,
+top, bottom - as deep sea (the map's own deepest water, in every picture: regions, heights and `map_heights.hgt`,
+ground, climates, features, fog, roughness, the campaign's `disasters.tga` and radar maps when they are the map's
+size), or cuts them off with a number below 0. Paint land on the new water with the Map editor and the Terrain tab.
+Towns, ports, armies, agents, resources, forts, events and the campaign's scripts move with the map (grown at the
+left or the bottom, every place moves by as many tiles); distances and rectangle sizes in scripts stay.
+`descr_terrain.txt` gets the new size and `map.rwm` goes. A cut that would leave a town, a port, an army, a
+resource, a fort or an event's place off the map is refused, each named with its file and line. One backup; **Put
+the old map back** undoes it. Lua / Squirrel scripts are listed to check by hand, as with the bigger map.
+
 ## Wonders (Rome)
 
 The wonders (`landmark` lines of `descr_strat.txt`) show as golden pyramids - drag one;
