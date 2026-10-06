@@ -33,7 +33,8 @@ files on disk; the button names any change not written yet. Before it starts the
 that starts an exe the game folder lacks is refused in plain words, a Medieval II `.cfg` that does not name the
 mod's folder is asked about, and a 32-bit game exe that can use only 2 GB of memory is noted in the status line.
 
-Text files are copied; everything else is a **hard link**: the same file on disk under a second name. Explorer
-shows tens of thousands of files at full size, but they take no extra disk space, and deleting the new mod
-folder never touches the game. Do not overwrite a linked texture in place from an image editor (or tick
-**Copy every file**).
+Every file is copied, so the new mod stands on its own - to share, to zip, to change in any program. For a mod
+you keep to yourself, tick **Hard links instead of copies**: text files are still copied, everything else becomes
+a **hard link** (the same file on disk under a second name) - no extra disk space, Explorer still shows full
+sizes, and deleting the new mod folder never touches the game. Do not overwrite a linked texture in place from
+an image editor.
