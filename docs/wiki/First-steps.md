@@ -29,7 +29,9 @@ are found on Load and fixed with a yes.
 **Start the game** (the green button at the bottom right, beside Tools) starts the game with the mod that is
 loaded: its own start script, else the line the engine's own start scripts use (`REX.exe -mod:<name>`, `-bi` /
 `-alx` for the expansions, `M2EX.exe --features.mod=mods/<name>`). Apply your changes first - the game reads the
-files on disk; the button names any change not written yet.
+files on disk; the button names any change not written yet. Before it starts the game it checks: a start script
+that starts an exe the game folder lacks is refused in plain words, a Medieval II `.cfg` that does not name the
+mod's folder is asked about, and a 32-bit game exe that can use only 2 GB of memory is noted in the status line.
 
 Text files are copied; everything else is a **hard link**: the same file on disk under a second name. Explorer
 shows tens of thousands of files at full size, but they take no extra disk space, and deleting the new mod
