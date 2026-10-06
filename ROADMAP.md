@@ -237,6 +237,7 @@ timeline
 - 📦 Delete a mod's folder from Tools (asked twice; never the game's own data)
 - 📦 Forts and watchtowers drawn as a stone castle and a wooden lookout
 - 📦 Barbarian Invasion: a new faction's campaign-map figures recoloured; Rome: a faction that comes by an event comes as a horde
+- 📦 Bigger map (x3) step by step: grid, smoothing, heights, rivers, objects - each checked, the map fixed by hand between them
 - 📦 Where a building can be built / where a unit is recruited (windows of their own in the editors); taking a region tag off lists what stops working; town names never cover each other
 - 📦 Save the campaign map as a picture; Find matches the names players read
 - 📦 Check mod files checks the building tree's shape (chains twice, missing levels, upgrades / convert_to / requirements naming nothing)

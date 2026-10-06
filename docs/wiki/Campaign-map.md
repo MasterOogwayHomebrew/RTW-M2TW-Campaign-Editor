@@ -244,9 +244,16 @@ removes it). Towns the mod's own campaign script renames are shown grey and are 
 ## Make the map 3 x bigger
 
 **Bigger map (x3)...** (top row) turns every tile into a 3 x 3 block (both games). Its window says the map's
-size now and after, asks for its values - fields for the hills and mountains (times higher), the smoothing of the lines (coast, rivers drawn as sea, borders, ground, climates: 1 smooth as water finds its level - the default, 0.67 lighter, 0 winding with every old tile's corner kept), narrow rivers kept open, crags on mountains, river valleys and volcano cones; each shows its default and range, a ? says what was tried in the game, **Back to the defaults** resets them; the shore by the water is the games' own and is not among them - and writes when you press **Make the map 3 x bigger** (a backup
-first; it takes a minute or two and says what it is doing). **Show every change...** lists every file first.
-When it is done, **Put the old map back** undoes it at once (later: Tools > Restore a backup...). Towns, ports, armies,
+size now and after, asks for its values - fields for the hills and mountains (times higher), the smoothing of the lines (coast, rivers drawn as sea, borders, ground, climates: 1 smooth as water finds its level - the default, 0.67 lighter, 0 winding with every old tile's corner kept), narrow rivers kept open, crags on mountains, river valleys and volcano cones; each shows its default and range, a ? says what was tried in the game, **Back to the defaults** resets them; the shore by the water is the games' own and is not among them - and leads through **five steps**, one press each (**Do step N**): 1 the grid (every tile a 3 x 3 block, everything on
+the map moved to its block's middle), 2 smoothing (coast, region borders - a border along a river stays on it -,
+ground, climates), 3 heights (every sea point under the water and no land point under it: no saw teeth, no holes;
+the ground's sea follows), 4 rivers (one pixel wide, on land only, ending on the last land tile at the water),
+5 objects (towns, ports, armies, agents, fleets, resources on tiles they may stand on). Each step is written with
+a backup and checked; between the steps the map is in the Map editor - look at it and fix what you want by hand
+(borders after step 2, the coast before step 3, the ground after step 3), then the next step. Steps 2 and 3 take a
+minute or two. The window may be closed between the steps: opened again it goes on where it stopped. **Show every
+change...** lists the next step's files first; **Put the old map back** undoes every step at once (later: Tools >
+Restore a backup...). Towns, ports, armies,
 agents, fleets, resources, forts, watchtowers, wonders and event positions keep their places; every town keeps its
 own region all round it, every port stands on the shore touching the sea and its region; the coast winds with bays
 and capes, not in squares, and the heights follow the same coast; the borders between regions wind too, and every
