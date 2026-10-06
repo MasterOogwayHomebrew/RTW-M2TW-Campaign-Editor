@@ -237,6 +237,7 @@ timeline
 - 📦 Delete a mod's folder from Tools (asked twice; never the game's own data)
 - 📦 Forts and watchtowers drawn as a stone castle and a wooden lookout
 - 📦 Barbarian Invasion: a new faction's campaign-map figures recoloured; Rome: a faction that comes by an event comes as a horde
+- 📦 Is this faction complete? (Check mod files with a faction picked): every file that names every other faction but not this one
 - 📦 Map size: grow the map at any edge by whole tiles (deep sea) or cut it; towns, armies, resources, events and scripts move with it
 - 📦 Check mod files lists the problems worst first, by when the game would meet them, each with a button to the place that fixes it
 - 📦 Start the game checks first: a missing exe refused, a Medieval II .cfg not naming the mod asked about
