@@ -17,7 +17,8 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
 - A town or character sign grows as the mouse comes near it - softly, the nearer the bigger, and from further away
   when the map is zoomed far out (the signs are small then), so the mouse need not hit the sign itself.
 - Wheel zooms (to the point under the mouse), right drag moves the map (everywhere; a right click without moving opens the menu) - past its edges too: the map is a free canvas with an empty field around it, and zooms out smaller than the window; **Fit** puts it back in the middle.
-- **Find**: type part of a name - a town (also the name shown for its owner), a port, a general, agent or
+- **Find**: type part of a name - a town or region by its file name or the name players read in the game (also
+  the name shown for its owner), a port, a general, agent or
   fleet, a unit in an army (e.g. "hastati"), a fort, a resource. Pick a hit (click, or Down then Enter) and
   the map zooms in close on it and a ring blinks round it for a few seconds ([video](https://youtu.be/6WAdnGovGzA)).
 - **The legend is a palette**: the signs on a button (+) are tools - click one (it turns yellow), then click
