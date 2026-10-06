@@ -19,6 +19,10 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   change, file by file, before it is added. Written on Apply with a backup.
 - **Bring from another mod...** copies units or building chains from another mod of the same game, step by
   step, with everything they need - see [[Move units and buildings between mods]].
+- **Where it can be built...** (a building) / **Where it is recruited...** (a unit): a window of its own - the
+  regions whose land lets each level be built (from the goods and region tags its requirement asks for; NOWHERE in
+  red), and every building level that recruits the unit, its pool in plain words, its requirement and a button that
+  opens that building.
 - **Add line...** / **x**: add or remove lines (never beyond what the mod already does, never the lines every
   unit or level has).
 - **Tied to it** shows who owns and recruits a unit, what requires a building.
