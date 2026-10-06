@@ -277,6 +277,9 @@ The campaign's scripts follow too: every place on the campaign map in `campaign_
 Past 510 tiles the original exes need REX / M2EX.
 The map's real size is shown under the map, bottom left.
 
+**Save picture...** under the map saves the whole map as it is drawn now - the layers, colours and borders that
+are on, 8 pixels a tile, not the signs - as a PNG or TGA picture (for a forum post or a plan).
+
 ## Grow or cut the map at its edges
 
 **Change size...** beside the map's size under the map adds rows or columns of tiles at any edge - left, right,
