@@ -19,9 +19,14 @@ and Medieval II).
 - **Heights** (`map_heights.tga`): a spray brush. Hold the left button: the land under the brush rises
   (**Raise**) or sinks (**Lower**) the more the longer you hold; the middle of the brush does the most, the
   edge fades out. **Smooth** evens out bumps, **Level to height** brings the land towards the height set
-  beside it (a right click picks a tile's own height). The **strength** slider sets how fast. While this mode
-  is on the map shows the heights as the file has them: land grey - black low, white high (brightened a
-  little so the low land is not all black) - and the sea blue. Only land is changed; the coast stays.
+  beside it (a right click is an eyedropper: it picks the height of the point under the mouse). The
+  **strength** slider sets how fast. The heights picture has 2 x 2 points a tile (it is 2 x the map + 1 wide)
+  and the map shows them as they are; **brush size 1 is one point**, each size one point wider. The line under
+  the map gives the point under the mouse exactly: land - its grey (0 = the lowest land, still above the
+  water) and about how many metres; water - its blue and the sea floor's depth (the water's surface is 0); and
+  what `map_heights.hgt` holds there. While this mode is on the map shows the heights as the file has them:
+  land grey - black low, white high (brightened a little so the low land is not all black) - and the sea blue.
+  Only land is changed; the coast stays.
 
 **Find** above the map finds a town, port or character by name. Left drag paints (brush 1-12), right click picks the ground of a tile, right drag moves the map, **Grid** on
 or off.
