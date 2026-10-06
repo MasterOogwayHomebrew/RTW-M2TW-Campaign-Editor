@@ -287,6 +287,10 @@ The map's real size is shown under the map, bottom left.
 **Save picture...** under the map saves the whole map as it is drawn now - the layers, colours and borders that
 are on, 8 pixels a tile, not the signs - as a PNG or TGA picture (for a forum post or a plan).
 
+## Mercenaries by region
+
+**Mercenaries:** **Mercenaries...** (top row), or a right click on the map > **Mercenaries for hire in <region>...**, shows the campaign's mercenary pools (`descr_mercenaries.txt`) - a pool is a group of regions that share one hire list. Pick a pool: its regions are selected on the map (Select switches on, they show yellow), so they are changed the map's own way - a box adds, Shift + box takes away - and **Take the map's selection** gives the pool exactly that (**Add the map's selection** only adds). **New pool from the map's selection** (also the map's right click with Select: **New mercenary pool from the selected regions...**) makes a pool of them; a region stands in one pool only, so it leaves its old one (a pool left without a region goes). Each unit for hire shows its numbers in plain words - how many at the start, at most, how fast they come back (one every N turns), the price, the experience, and in Medieval II the years, religions, crusading and events it needs; pick one to change them, **Add** another mercenary of the mod (units with `mercenary_unit`), take one out, rename or delete a pool. A mistake the game would stumble on is said in red; **Show every change...**, then **Write it in** (a backup first; lines not changed stay as they were).
+
 ## Grow or cut the map at its edges
 
 **Change size...** beside the map's size under the map adds rows or columns of tiles at any edge - left, right,
