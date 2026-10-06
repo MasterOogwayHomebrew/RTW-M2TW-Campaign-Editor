@@ -124,7 +124,7 @@ timeline
 - ✅ Settlement names by the owner's culture (REX / M2EX rename a town when it changes hands); the map shows the new owner's name at once; every town's names in one table *(in-game ✓ on Medieval II with M2EX; [video](https://youtu.be/umwRyWkHoDE))*
 - 📦 Big maps load (a tester's map of 5456 x 2464 tiles)
 - 📦 Forts and watchtowers shown on the map; no one is placed on them
-- ✅ Make the campaign map 3 x bigger (alpha): everything on the map moved with it, rivers 1 pixel, the relief smooth *(in-game ✓ alpha; [video](https://youtu.be/kkfI-WulRmU))*
+- ✅ Make the campaign map 3 x bigger (alpha): everything on the map moved with it, rivers 1 pixel, the relief smooth *(in-game ✓ alpha; [video](https://youtu.be/kkfI-WulRmU); Rome with REX, the newest rules: in-game ✓ from a report)*
 
 ### Characters
 - 📦 Character editor for any faction: names, ages, traits with levels, ancillaries
