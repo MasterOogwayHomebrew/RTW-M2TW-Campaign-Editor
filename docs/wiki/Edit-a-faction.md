@@ -22,7 +22,7 @@ The rebels are never playable and have no capital, leader or heir.
 ## Units & armies
 
 - A town's garrison opens as it stands now (marked *unchanged* until you click a card).
-- The faction's armies, fleets and agents already on the map: change units, **Remove** an agent, captain or
+- The faction's armies, fleets and agents already on the map: change units, remove (right click its row) an agent, captain or
   admiral (never a family member).
 - **+ Army**, **+ Agent**, **+ Fleet** add new characters; **Place on map** puts them on a tile.
 
