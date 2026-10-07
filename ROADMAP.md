@@ -161,7 +161,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- (nothing yet)
+- 📦 Module builder: ELSE, all / any / none of the conditions and NOT, FOR EACH town / army / faction - the control blocks of Scratch
 
 ## 🧪 Being tested in the game now (newest first)
 

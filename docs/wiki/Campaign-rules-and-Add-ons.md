@@ -82,7 +82,12 @@ and M2EX (Medieval II) run the same script, so one module works in both games; t
   town, a building is finished, a unit is trained, a battle ends (for each general in it), a town riots, rebels or
   grows to its next level, a faction is destroyed, a faction gets a new leader, a son comes of age. Under it the
   window says what the event brings along (a faction, a town, a general, the town's old owner, a unit).
-- **IF** - only when all of these hold: the faction is the player / a computer faction / one of the factions you pick;
+- **FOR EACH** (under WHEN, like Scratch's *repeat*): **once** (what happened), or **for each town of** / **for each
+  army of** the faction it happened to, the player or a faction you name, or **for each faction** (not the rebels).
+  Everything below is then done once for each of them in turn, and *the town*, *the general*, *the faction* of the
+  lines below is that one - "every turn, each of my towns but the capital gets 100 people".
+- **IF** - **only when** *all of these are true* (and), *any one of these is true* (or) or *none of these is true*;
+  **not** in front of a line turns that line round. The lines: the faction is the player / a computer faction / one of the factions you pick;
   its money; its number of towns; the turn (or every N turns); a chance in percent; the town's people; the town is
   one of those you pick; the town is the faction's capital; the town has a building of a chain; the town's old owner.
 - **DO** - in this order: give money (below 0 takes it) to the faction, the old owner, the player, the rebels or a
@@ -92,6 +97,8 @@ and M2EX (Medieval II) run the same script, so one module works in both games; t
   game's own message scroll (title and text); write a line in the game's log; run a console command (for experts).
   In the log line and the console command `{town}`, `{faction}`, `{owner}`, `{general}`, `{turn}` and `{people}` are
   filled in.
+- **ELSE** - the actions done when the IF does **not** hold (the same list as DO): "if the town has a barracks, a
+  free unit; else 500 denarii towards one".
 
 **The engines' own lists** - for those who know them: **a game condition (any of the engine's)** takes any line of
 the engines' condition list (`FactionType england`, `Trait GoodCommander > 0`, `not I_TurnNumber < 3`...), checked
