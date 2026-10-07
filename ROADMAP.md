@@ -159,7 +159,8 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-Nothing yet - everything built so far came out in 0.30.0.
+- 📦 One write for the session: the town and character windows keep their changes for Apply; one Apply writes everything waiting, one Undo puts it all back
+- 📦 Fixes: Module builder / Add-ons on a Medieval II game with packed data; a long set-up list on Load scrolls and closes
 
 ## 🧪 Being tested in the game now (newest first)
 

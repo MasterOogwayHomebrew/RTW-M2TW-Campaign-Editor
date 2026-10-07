@@ -47,8 +47,9 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   game's pictures, a level picked per chain, checked the way the game checks it: too small a town, a castle-only
   building in a city, one temple per town) - and **Garrison** - the Units & armies tab's card picker (click a card to
   add it, a garrison card to take it out; **Suggest** picks units the owner trains there; a named character keeps
-  his bodyguard; a town nobody holds gets a captain). **Preview**, **Write it in** (a backup first). Another town
-  opens in the same window. The right click's *Edit this town in Edit faction* still opens its owner in Edit faction.
+  his bodyguard; a town nobody holds gets a captain). **Preview**, then **Keep for Apply**: the changes go into the
+  session's list and **Apply changes** in the main window writes them with everything else waiting, in one go (one
+  backup set, one **Undo this write**). Another town opens in the same window. The right click's *Edit this town in Edit faction* still opens its owner in Edit faction.
 - **Right click on the map**: on a town - **Give this town to** any faction (written with the next Apply; its
   characters go to the old owner's other towns, a captain's garrison goes with it); on a free tile - **New army /
   agent / fleet here** with the land's owner already picked (a new army's **Make him a general** gives him the
