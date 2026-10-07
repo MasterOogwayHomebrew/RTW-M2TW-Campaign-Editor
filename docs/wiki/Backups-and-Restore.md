@@ -4,7 +4,9 @@ Every **Apply** first saves the files it changes in `CampaignEditor_backups` nex
 write. **Tools -> Restore a backup...** puts them back **byte for byte** and removes what that write created.
 The list shows each write by date, faction and number of files, newest first. Pick the one to go back to and
 **Undo back to here** undoes it and every write after it in one go (newest first, as they must be); pick the
-lowest line to get the files back as they were before the tool's first write.
+lowest line to get the files back as they were before the tool's first write. A backup that was put back
+(Restore or **Undo this write**) is deleted - it holds nothing the files do not have now; the `*_restored` folders
+older versions left are taken away when the mod is loaded.
 
 - **Preview changes** shows every file and line before anything is written.
 - **Undo** / **Redo** (Ctrl+Z, Ctrl+Y) step back through what you did in the window before Apply.
