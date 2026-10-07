@@ -49,8 +49,8 @@ both games: `export_descr_character_traits.txt` and `export_descr_ancillaries.tx
   a new trait yet: give it to characters in the Character editor.
 - Preview, then **Keep for Apply** (written by **Apply changes** in the main window, a backup first). The texts go into `text/english/export_VnVs.txt` /
   `export_ancillaries.txt`; where Medieval II keeps a table only compiled (`.strings.bin`), a `.txt` is made from
-  it. Preview says when a `.strings.bin` lies beside it: if the game shows the old text, remove that file so the
-  game builds it again (not removed by the editor on its own - not checked in the game yet).
+  it. A `.strings.bin` beside a changed text is taken away (backed up): Medieval II would read it instead of the new
+  text, and builds it again from the text.
 
 ## Portraits
 

@@ -147,7 +147,9 @@ Forts, watchtowers and wonders need no mode of their own - everything is in the 
 **New**: click *a fort* or *a watchtower* in the legend, then a land tile on the map. **Move**: drag one to another
 tile (land, no town, port or other fort there). **Remove**: right click it -
 **Delete from the map**. A new one copies the line of the nearest one the campaign already has (only the tile
-changes); a campaign with none (vanilla Rome and Medieval II) gets it written in the regions section. Written with
+changes); a campaign with none (vanilla Rome and Medieval II) gets it written in the regions section. In that
+section (Barbarian Invasion's watchtowers) a new or moved one always goes under the block of the region its tile
+lies in - the game skips one written under another region. Written with
 Preview / Apply, backed up like every change.
 
 ## New regions
