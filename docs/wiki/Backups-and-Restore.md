@@ -6,7 +6,9 @@ The list shows each write by date, faction and number of files, newest first. Pi
 **Undo back to here** undoes it and every write after it in one go (newest first, as they must be); pick the
 lowest line to get the files back as they were before the tool's first write. A backup that was put back
 (Restore or **Undo this write**) is deleted - it holds nothing the files do not have now; the `*_restored` folders
-older versions left are taken away when the mod is loaded.
+older versions left are taken away when the mod is loaded. **Tools > Settings > Folders > Delete this mod's
+backups...** deletes every backup of the loaded mod after a question: the files stay as they are, only the way back
+goes.
 
 - **Preview changes** shows every file and line before anything is written.
 - **Undo** / **Redo** (Ctrl+Z, Ctrl+Y) step back through what you did in the window before Apply.

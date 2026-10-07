@@ -159,6 +159,10 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Edit faction > Rename...: a faction's code name changed in every file at once
+- 📦 Hover a unit or a building in any list: its card; a click on a column heading sorts any table
+- 📦 One language in every window (Preview / Write it in / Keep for Apply, Enter and Esc, answers in words); the right mouse button takes things out of lists
+- 📦 Backups: one put back is deleted (no more `_restored` folders); Settings can delete all of a mod's backups
 - 📦 Every window keeps its changes for one Apply (Mercenaries, Events, Campaign rules, Traits, Many towns, Recolour)
 - 📦 Mods that hold only the files they change load (the rest read from the game's data, as the game does); changes go into the mod as its own copies
 - 📦 Fixes from the in-game test runs: Medieval II diplomacy written in its own form (and old lines put right on Load), new texts seen in Medieval II (the old compiled `.strings.bin` taken away), Module builder message pictures, BI bad harvests and watchtowers follow their regions, Sack Settlement ignores revolts, storms only at sea
