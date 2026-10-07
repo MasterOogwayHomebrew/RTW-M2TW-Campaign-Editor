@@ -85,7 +85,7 @@ timeline
         0.28 : The bigger map smooth - coast, relief 3x higher, its heights file : Land and sea brush - a new island
         0.29 : Recolour every faction picture : Faction emblem from one picture : Buildings and garrisons for many towns : Natural edges on the bigger map : Raze Settlement for Medieval II (0.29.1) : Fixes from reports - bigger map rules, all-or-nothing writes, new factions' buttons, the editor into the game folder (0.29.2)
     section Days 5 - 9 - the Map editor, step by step
-        0.30 : Map editor - select, give, delete, a town window : Bigger map step by step (beta) : Map size + / - : Mercenaries : Module builder and Avoid Growth : Start the game : Check mod files by when it breaks : Undo this write : Credits
+        0.30 : Map editor - select, give, delete, a town window : Bigger map step by step (beta) : Map size + / - : Mercenaries : Module builder and Avoid Growth : Start the game : Check mod files by when it breaks : Undo this write : Credits : One write for the session, fixes for packed Medieval II games (0.30.1)
 ```
 
 | Area | Confirmed in game | Released | Being tested | Next |
@@ -97,7 +97,7 @@ timeline
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | religions, campaign rules, add-ons, module builder | vassals (`client_of`), window in other languages |
 | Safety | - | preview, backup, byte-exact restore, Check mod files, report a bug in one click, settings | pack check | signed exe |
 
-## What it does now (0.30.0)
+## What it does now (0.30.1)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -159,11 +159,12 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- 📦 One write for the session: the town and character windows keep their changes for Apply; one Apply writes everything waiting, one Undo puts it all back
-- 📦 Fixes: Module builder / Add-ons on a Medieval II game with packed data; a long set-up list on Load scrolls and closes
+Nothing yet - everything built so far came out in 0.30.1.
 
 ## 🧪 Being tested in the game now (newest first)
 
+- 🧪 One write for the session: the town and character windows keep their changes for Apply; one Apply writes everything waiting; Undo takes back the last part or the whole write (0.30.1)
+- 🧪 Fixes: Module builder / Add-ons on a Medieval II game with packed data; a long set-up list on Load scrolls and closes (0.30.1)
 - ✅ Religions in Barbarian Invasion: a new belief (`descr_beliefs.txt`, its pips and texts); the test mod gives it temples of its own (0.30.0) *(in-game ✓ from a tester)*
 - 🧪 Bigger map (x3): the values in fields of their own (heights, smoothing of the lines, narrow rivers, crags, valleys, volcanoes) with their defaults, what was tried, and a reset; the shore by the water the games' own (no teeth on diagonal coasts) (0.30.0)
 - 🧪 Map > New army: Make him a general (his bodyguard leads the army) (0.30.0)
