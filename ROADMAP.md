@@ -243,7 +243,7 @@ timeline
 - 📦 Check mod files checks the building tree's shape (chains twice, missing levels, upgrades / convert_to / requirements naming nothing)
 - 📦 Is this faction complete? (Check mod files with a faction picked): every file that names every other faction but not this one
 - 📦 Map size: grow the map at any edge by whole tiles (deep sea) or cut it; towns, armies, resources, events and scripts move with it
-- 📦 Mercenaries: pools of regions picked on the map the Select way, their units' numbers in plain words, new pools, units added / taken out
+- 📦 Mercenaries: a region's hire list made the garrison way (cards), pools of regions picked on the map the Select way, their units' numbers in plain words, new pools, units added / taken out
 - 📦 Check mod files lists the problems worst first, by when the game would meet them, each with a button to the place that fixes it
 - 📦 Start the game checks first: a missing exe refused, a Medieval II .cfg not naming the mod asked about
 - 📦 Bigger map (x3): no water wedges or foam-ringed squares on the coast, no land bridges over navigable rivers, river mouths ending on the land at the water (never on it), small islands and lakes round, shallow sea along every coast, no cliffs or beach (painted by hand where wanted), mountains only where the heights stand high
