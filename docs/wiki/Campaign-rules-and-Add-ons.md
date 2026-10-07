@@ -86,8 +86,9 @@ right clicked) to take it out. **Look: Lists** shows the same module as one bloc
 **Module builder...** (top row) or **Add-ons > New module (no code)...** puts an add-on together from blocks. REX (Rome)
 and M2EX (Medieval II) run the same script, so one module works in both games; the original exes run no scripts.
 
-- **WHEN** - what happens in the game: a faction's turn starts, a town's turn starts (each town), a general takes a
-  town, a building is finished, a unit is trained, a battle ends (for each general in it), a town riots, rebels or
+- **WHEN** - what happens in the game: **the player's turn starts** (once a turn - new modules start with it),
+  **every faction's turn starts** (once for each faction in turn, about twenty times a round - with 'the faction is
+  the player' it is the same as the first), a town's turn starts (each town), a general takes a town, a building is finished, a unit is trained, a battle ends (for each general in it), a town riots, rebels or
   grows to its next level, a faction is destroyed, a faction gets a new leader, a son comes of age. Under it the
   window says what the event brings along (a faction, a town, a general, the town's old owner, a unit).
 - **FOR EACH** (under WHEN, like Scratch's *repeat*): **once** (what happened), or **for each town of** / **for each

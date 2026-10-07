@@ -12,6 +12,10 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   description for a culture or a faction (**Texts for**; * = it has texts of its own). The game shows the
   faction's texts first, else its culture's, else the plain ones; a change is written to `export_buildings.txt`
   on Apply, with a backup. Both games.
+- **Pictures as the game shows them**: a unit's card and its description picture come from a faction that owns it
+  (or the mercenaries' folder) - when there is none, the box says so; a building level opens on a **Culture** that
+  builds it, and a culture that never builds it is marked *(never builds it)* (the game has only stand-in texts for
+  it). The hover cards in every list show the same pictures.
 - **Import...** puts a picture in the right size and format in the right place.
 - **New unit / New building step by step...** makes a new one from an existing one that surely works in the game,
   in steps you can go back and forth between: names and the texts players read, who owns the unit (or may build

@@ -26,7 +26,8 @@ are found on Load and fixed with a yes.
 - **Rome / REX:** `<game>\<name>\`, started by `Start_<name>.bat` (`-mod:<name>`).
 - **Medieval II:** `<game>\mods\<name>\` with `<name>.cfg`, started by `Start_<name>.bat` (under M2EX: `M2EX.exe --features.mod=mods/<name>`).
 
-**Start the game** (the green button at the bottom right, beside Tools) starts the game with the mod that is
+**Start the game** (the green button at the bottom right, beside Tools) says what it starts - *Start Rome - CE_Test*,
+or in amber *Start Rome - no mod* when the game's own data is loaded - and starts the game with the mod that is
 loaded: its own start script, else the line the engine's own start scripts use (`REX.exe -mod:<name>`, `-bi` /
 `-alx` for the expansions, `M2EX.exe --features.mod=mods/<name>`). Apply your changes first - the game reads the
 files on disk; the button names any change not written yet. Before it starts the game it checks: a start script

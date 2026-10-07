@@ -162,7 +162,13 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- (nothing yet)
+- 📦 Module builder: WHEN 'the player's turn starts (once a turn)' - the default for new modules; 'every faction's turn starts' says plainly that it comes for each faction
+- 📦 Fix: closing the editor never ends in a Windows error box
+- 📦 Unit cards and building pictures as the game shows them, in every window (one lookup for all; checked over every unit and building of Rome, BI and Medieval II)
+- 📦 Start the game names the mod it starts (amber without one); the test mod is offered to be started at once; its modules act only in the test mod
+- 📦 Avoid Growth: only on the Construction tab, in Rome looking like Automanage; forts and watchtowers keep a tile from towns and from each other
+- 📦 Fix: plain Rome is never given a faction that starts dead (the game stopped reading descr_strat there: empty rebel towns, no diplomacy)
+- 📦 Fixes: painting on the Terrain tab right after Apply; ports for regions without one; an add-on's old copy outside script\modules is shown, moved or taken out
 
 ## 🧪 Being tested in the game now (newest first)
 
