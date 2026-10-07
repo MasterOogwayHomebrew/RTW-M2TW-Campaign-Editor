@@ -162,6 +162,7 @@ timeline
 ## 📦 Built, comes with the next release
 
 - 📦 Module builder: ELSE, all / any / none of the conditions and NOT, FOR EACH town / army / faction - the control blocks of Scratch
+- 📦 Module builder looks like Scratch: coloured blocks dragged into each other (the old lists one click away)
 
 ## 🧪 Being tested in the game now (newest first)
 

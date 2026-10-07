@@ -75,6 +75,14 @@ in** removes them all with one press.
 > **Experimental** (a red line at the top of the window): try it at your own risk - a backup is made first and Restore
 > undoes it. If you tried it, please send a report (Report a bug / Suggest).
 
+**Look: Blocks (like Scratch)** (the first look) shows the module as blocks that fit into each other: on the left the
+kinds of blocks in coloured groups - events (yellow, WHEN), control (orange: FOR EACH, IF ... ELSE), conditions
+(green), actions (blue); drag one into its place in the module (a red line shows where it goes) or click it to put it
+in at the end. A block of the module is dragged by its dots to another place, or back onto the blocks on the left (or
+right clicked) to take it out. **Look: Lists** shows the same module as one block under another.
+
+![Module builder - blocks](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/module_builder_blocks.png)
+
 **Module builder...** (top row) or **Add-ons > New module (no code)...** puts an add-on together from blocks. REX (Rome)
 and M2EX (Medieval II) run the same script, so one module works in both games; the original exes run no scripts.
 
