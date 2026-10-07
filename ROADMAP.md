@@ -10,7 +10,7 @@ author in one click ([video](https://youtu.be/7MbYR9ywNsI)). That is the fastest
 
 ## 🗺️ Rescale the whole campaign map 3 x
 
-**Bigger map (x3)...** (top row) (alpha), Rome (REX) and Medieval II (M2EX). Each tile of
+**Bigger map (x3)...** (top row) (beta), Rome (REX) and Medieval II (M2EX). Each tile of
 `map_regions.tga` becomes a 3 x 3 block; everything tied to the map is converted with it:
 
 - **Positions** (`descr_strat.txt`, `descr_events.txt`, ...): towns, characters, fleets, resources, forts,
@@ -89,7 +89,7 @@ timeline
 | Area | Confirmed in game | Released | Being tested | Next |
 |---|---|---|---|---|
 | Factions | new faction, faction limit, edit, garrisons, mod folder | settlement size, rebels, diplomacy, roster | alliances and wars at the start, victory conditions, building chains kept whole | the new factions' AI |
-| Campaign map | tiles, moving towns, new regions, terrain, heights, find, town names, map 3x bigger (alpha) | resources, climates, forts, big maps | the bigger map smooth (coast, heights, natural edges), many towns at once, land and sea brush, wonders, events, right-click menu, drop into a town | flat plains and sharp peaks, borders drawn by the tool, a map from the real world |
+| Campaign map | tiles, moving towns, new regions, terrain, heights, find, town names, map 3x bigger (beta) | resources, climates, forts, big maps | the bigger map smooth (coast, heights, natural edges), many towns at once, land and sea brush, wonders, events, right-click menu, drop into a town | flat plains and sharp peaks, borders drawn by the tool, a map from the real world |
 | Characters | - | name lists | character panel, traits and retinue, family tree, portraits | - |
 | Units, buildings, art | faction art | editors, unit packs, modeldb, REX abilities | recolour of every faction picture, faction emblem, battle banners from a white banner (both games), units and buildings brought from another mod, replace a model, 3D view of Rome and Medieval II models, new unit / building step by step, unit voices | M2EX monster units |
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | religions, campaign rules, add-ons, module builder | vassals (`client_of`), window in other languages |
@@ -124,7 +124,7 @@ timeline
 - ✅ Settlement names by the owner's culture (REX / M2EX rename a town when it changes hands); the map shows the new owner's name at once; every town's names in one table *(in-game ✓ on Medieval II with M2EX; [video](https://youtu.be/umwRyWkHoDE))*
 - 📦 Big maps load (a tester's map of 5456 x 2464 tiles)
 - 📦 Forts and watchtowers shown on the map; no one is placed on them
-- ✅ Make the campaign map 3 x bigger (alpha): everything on the map moved with it, rivers 1 pixel, the relief smooth *(in-game ✓ alpha; [video](https://youtu.be/kkfI-WulRmU); Rome with REX, the newest rules: in-game ✓ from a report)*
+- ✅ Make the campaign map 3 x bigger (beta): everything on the map moved with it, rivers 1 pixel, the relief smooth *(in-game ✓ alpha; [video](https://youtu.be/kkfI-WulRmU); Rome with REX, the newest rules: in-game ✓ from a report)*
 
 ### Characters
 - 📦 Character editor for any faction: names, ages, traits with levels, ancillaries
