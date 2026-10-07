@@ -86,6 +86,8 @@ timeline
         0.29 : Recolour every faction picture : Faction emblem from one picture : Buildings and garrisons for many towns : Natural edges on the bigger map : Raze Settlement for Medieval II (0.29.1) : Fixes from reports - bigger map rules, all-or-nothing writes, new factions' buttons, the editor into the game folder (0.29.2)
     section Days 5 - 9 - the Map editor, step by step
         0.30 : Map editor - select, give, delete, a town window : Bigger map step by step (beta) : Map size + / - : Mercenaries : Module builder and Avoid Growth : Start the game : Check mod files by when it breaks : Undo this write : Credits : One write for the session, fixes for packed Medieval II games (0.30.1)
+    section Day 10 - one language, fixes from the testers
+        0.31 : Every window one write : Mods holding only their changes : Rename a faction : Cards on hover, tables sorted : Enter / Esc and answers in words : Fixes from the in-game test runs
 ```
 
 | Area | Confirmed in game | Released | Being tested | Next |
@@ -97,7 +99,7 @@ timeline
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | religions, campaign rules, add-ons, module builder | vassals (`client_of`), window in other languages |
 | Safety | - | preview, backup, byte-exact restore, Check mod files, report a bug in one click, settings | pack check | signed exe |
 
-## What it does now (0.30.1)
+## What it does now (0.31.0)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -159,16 +161,17 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- 📦 Edit faction > Rename...: a faction's code name changed in every file at once
-- 📦 Hover a unit or a building in any list: its card; a click on a column heading sorts any table
-- 📦 One language in every window (Preview / Write it in / Keep for Apply, Enter and Esc, answers in words); the right mouse button takes things out of lists
-- 📦 Backups: one put back is deleted (no more `_restored` folders); Settings can delete all of a mod's backups
-- 📦 Every window keeps its changes for one Apply (Mercenaries, Events, Campaign rules, Traits, Many towns, Recolour)
-- 📦 Mods that hold only the files they change load (the rest read from the game's data, as the game does); changes go into the mod as its own copies
-- 📦 Fixes from the in-game test runs: Medieval II diplomacy written in its own form (and old lines put right on Load), new texts seen in Medieval II (the old compiled `.strings.bin` taken away), Module builder message pictures, BI bad harvests and watchtowers follow their regions, Sack Settlement ignores revolts, storms only at sea
+- (nothing yet)
 
 ## 🧪 Being tested in the game now (newest first)
 
+- 🧪 Edit faction > Rename...: a faction's code name changed in every file at once (0.31.0)
+- 🧪 Hover a unit or a building in any list: its card; a click on a column heading sorts any table (0.31.0)
+- 🧪 One language in every window (Preview / Write it in / Keep for Apply, Enter and Esc, answers in words); the right mouse button takes things out of lists (0.31.0)
+- 🧪 Backups: one put back is deleted (no more `_restored` folders); Settings can delete all of a mod's backups (0.31.0)
+- 🧪 Every window keeps its changes for one Apply (Mercenaries, Events, Campaign rules, Traits, Many towns, Recolour) (0.31.0)
+- 🧪 Mods that hold only the files they change load (the rest read from the game's data, as the game does); changes go into the mod as its own copies (0.31.0)
+- 🧪 Fixes from the in-game test runs: Medieval II diplomacy written in its own form (and old lines put right on Load), new texts seen in Medieval II (the old compiled `.strings.bin` taken away), Module builder message pictures, BI bad harvests and watchtowers follow their regions, Sack Settlement ignores revolts, storms only at sea (0.31.0)
 - 🧪 One write for the session: the town and character windows keep their changes for Apply; one Apply writes everything waiting; Undo takes back the last part or the whole write (0.30.1)
 - 🧪 Fixes: Module builder / Add-ons on a Medieval II game with packed data; a long set-up list on Load scrolls and closes (0.30.1)
 - ✅ Religions in Barbarian Invasion: a new belief (`descr_beliefs.txt`, its pips and texts); the test mod gives it temples of its own (0.30.0) *(in-game ✓ from a tester)*
