@@ -88,6 +88,7 @@ timeline
         0.30 : Map editor - select, give, delete, a town window : Bigger map step by step (beta) : Map size + / - : Mercenaries : Module builder and Avoid Growth : Start the game : Check mod files by when it breaks : Undo this write : Credits : One write for the session, fixes for packed Medieval II games (0.30.1)
     section Day 10 - one language, fixes from the testers
         0.31 : Every window one write : Mods holding only their changes : Rename a faction : Cards on hover, tables sorted : Enter / Esc and answers in words : Fixes from the in-game test runs
+        0.32 : Module builder like Scratch - blocks dragged into each other : ELSE, any / none / not, FOR EACH town, army, faction
 ```
 
 | Area | Confirmed in game | Released | Being tested | Next |
@@ -99,7 +100,7 @@ timeline
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | religions, campaign rules, add-ons, module builder | vassals (`client_of`), window in other languages |
 | Safety | - | preview, backup, byte-exact restore, Check mod files, report a bug in one click, settings | pack check | signed exe |
 
-## What it does now (0.31.0)
+## What it does now (0.32.0)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -161,11 +162,12 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- 📦 Module builder: ELSE, all / any / none of the conditions and NOT, FOR EACH town / army / faction - the control blocks of Scratch
-- 📦 Module builder looks like Scratch: coloured blocks dragged into each other (the old lists one click away)
+- (nothing yet)
 
 ## 🧪 Being tested in the game now (newest first)
 
+- 🧪 Module builder: ELSE, all / any / none of the conditions and NOT, FOR EACH town / army / faction - the control blocks of Scratch (0.32.0)
+- 🧪 Module builder looks like Scratch: coloured blocks dragged into each other (the old lists one click away) (0.32.0)
 - 🧪 Edit faction > Rename...: a faction's code name changed in every file at once (0.31.0)
 - 🧪 Hover a unit or a building in any list: its card; a click on a column heading sorts any table (0.31.0)
 - 🧪 One language in every window (Preview / Write it in / Keep for Apply, Enter and Esc, answers in words); the right mouse button takes things out of lists (0.31.0)
