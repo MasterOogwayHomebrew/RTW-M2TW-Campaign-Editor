@@ -130,7 +130,7 @@ banners (`royal_banner_<faction>`) and crusade / order banners are not made here
 
 ## Recolour all its pictures
 
-**Recolour all its pictures...** (on the Art tab, also in **Tools**) moves every picture of the faction that
+**Recolour all its pictures...** (on the Art tab, also **Recolour...** in the top row - a list at the window's top picks the faction) moves every picture of the faction that
 carries its colours to new ones: unit cards and info pictures, the units' battle textures, weapons and shields and the faction's own siege engine (Medieval II's carroccio) and far-away sprites,
 the campaign-map figures (generals, agents, admirals), the faction symbol's texture, the menu buttons and symbols,
 banners (Rome's standards, Medieval II's battle banners), the flag on its towns in battle (Rome), captain cards and
