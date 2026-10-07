@@ -49,6 +49,13 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   on or off. Rome: in the T pose (arms out) or as the file stands (**Pose**); a chariot unit on its chariot with its
   horses and crew in the places `descr_mount.txt` gives; a siege engine unit's engine (`descr_engines.txt`) whole,
   with its own texture.
+- **Your own files...** (beside Replace model) puts files you made in another program in place of the model's: a
+  texture for every faction or one faction (PNG, TGA, DDS, JPG - converted to the game's form, Rome `.tga.dds`,
+  Medieval II `.texture`; sides of 64, 128, 256...), Medieval II's weapons and shields texture, and the model file
+  itself (Rome `.cas`, Medieval II `.mesh` - several files are its detail levels, closest first; it keeps the old
+  model's skeleton). Every file gets a name of its own beside the old ones and the lines are written; when other
+  units use the same model, this unit gets a model of its own (a copy), so they keep their look. Far away the game
+  still draws the old model's sprites. Preview, a backup, Undo this write.
 
   ![View in 3D](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/view_in_3d.png)
   ![View in 3D, Rome](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/view_in_3d_rome.png)

@@ -162,6 +162,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Your own files for a unit's battle model (both games): your texture (every faction or one), Medieval II's weapons texture and your own .cas / .mesh put in, converted, named and written; a model of its own when other units share it
 - 📦 Module builder: WHEN 'the player's turn starts (once a turn)' - the default for new modules; 'every faction's turn starts' says plainly that it comes for each faction
 - 📦 Fix: closing the editor never ends in a Windows error box
 - 📦 Unit cards and building pictures as the game shows them, in every window (one lookup for all; checked over every unit and building of Rome, BI and Medieval II)
