@@ -159,6 +159,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Every window keeps its changes for one Apply (Mercenaries, Events, Campaign rules, Traits, Many towns, Recolour)
 - 📦 Mods that hold only the files they change load (the rest read from the game's data, as the game does); changes go into the mod as its own copies
 
 ## 🧪 Being tested in the game now (newest first)

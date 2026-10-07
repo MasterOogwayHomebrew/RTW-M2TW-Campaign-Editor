@@ -164,7 +164,7 @@ from the faction's colours.
   England's old banners); crusade and military order banners stay as they are.
 - What most factions that do not wear the colour have the same (a bronze star, a wooden pole, a face) is never
   recoloured.
-- **Write it** writes each file in its own format (TGA of the same depth, DDS with its compression and mipmaps,
+- **Keep for Apply** puts them in the session's list; **Apply changes** in the main window writes each file in its own format (TGA of the same depth, DDS with its compression and mipmaps,
   Medieval II's `.texture`) with one backup; Restore gives every file back.
 
 ## Not yet

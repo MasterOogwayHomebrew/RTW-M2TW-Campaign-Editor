@@ -47,7 +47,7 @@ both games: `export_descr_character_traits.txt` and `export_descr_ancillaries.tx
 - **New trait / New ancillary (a copy of the picked one)...**: written at once as a copy under the new name - a
   trait's levels and text keys renamed after it, the texts copied - then edited like the others. No trigger gives
   a new trait yet: give it to characters in the Character editor.
-- Preview, then **Write it in** (a backup first). The texts go into `text/english/export_VnVs.txt` /
+- Preview, then **Keep for Apply** (written by **Apply changes** in the main window, a backup first). The texts go into `text/english/export_VnVs.txt` /
   `export_ancillaries.txt`; where Medieval II keeps a table only compiled (`.strings.bin`), a `.txt` is made from
   it. Preview says when a `.strings.bin` lies beside it: if the game shows the old text, remove that file so the
   game builds it again (not removed by the editor on its own - not checked in the game yet).
