@@ -28,6 +28,15 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   pick its battle model (and what it rides), its owners, the building levels that train it (the first guess:
   where this mod trains such units most) and its pictures - without pictures the editor draws plain cards with the
   unit's initials. A siege crew, a ship, an elephant or a chariot is still made as a copy.
+- A building chain can start from **nothing** too (New building step by step > Start from: *Nothing*): say what
+  it is for - soldiers, money or food, order and learning, a temple, something else - and how many levels
+  (Medieval II: for cities or castles). Each level's town size, cost and turns start at what is usual for such
+  buildings in this mod, with the effects most of them have. The Levels step shows every level side by side:
+  change any number, add any effect this mod's buildings use (named in plain words), right click an effect's
+  name to take it out. Then the units it trains (from the level you pick, at every level after it - only units
+  someone who builds it may own), its names and texts, and its pictures: yours, or plain ones the editor draws
+  with the level's initials for every culture that builds it (Medieval II also the small picture of the
+  construction queue).
 - **Bring from another mod...** copies units or building chains from another mod of the same game, step by
   step, with everything they need - see [[Move units and buildings between mods]].
 - **Where it can be built...** (a building) / **Where it is recruited...** (a unit): a window of its own - the

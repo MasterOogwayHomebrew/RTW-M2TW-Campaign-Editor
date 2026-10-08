@@ -162,6 +162,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 A new building from nothing (both games): say what it is for and how many levels, every line written with the mod's usual numbers for such buildings; levels side by side, any effect the mod uses, the units it trains, plain pictures drawn
 - 📦 A new unit from nothing (both games): say what kind it is, the editor writes every line with the mod's usual numbers for such a unit; you set each one, its model, owners, where it is trained; plain cards drawn when you have none
 - 📦 Your own files for a unit's battle model (both games): your texture (every faction or one), Medieval II's weapons texture and your own .cas / .mesh put in, converted, named and written; a model of its own when other units share it
 - 📦 Module builder: WHEN 'the player's turn starts (once a turn)' - the default for new modules; 'every faction's turn starts' says plainly that it comes for each faction
