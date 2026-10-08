@@ -21,7 +21,12 @@ are found on Load and fixed with a yes.
 ## A separate mod folder (recommended)
 
 **New mod folder...** after loading the mod you build on makes a copy of it next to it (for example
-`HLR_Saba`) with its own start file. Your base mod is never touched.
+`HLR_Saba`) with its own start file. Your base mod is never touched. On the **plain game** it makes a **thin** mod
+instead: nothing is copied (made at once, no disk space) - the mod holds only what you change and the game reads every
+other file from its own `data`; the editor puts a game file into it the first time you change it (the whole map folder,
+all but `map.rwm`, the first time you change the map - the game then builds its map again there). Before the first
+write into the game's own data or a mod it did not make, the editor asks once: *Make my own mod folder* or *Write
+here*.
 
 - **Rome / REX:** `<game>\<name>\`, started by `Start_<name>.bat` (`-mod:<name>`).
 - **Medieval II:** `<game>\mods\<name>\` with `<name>.cfg`, started by `Start_<name>.bat` (under M2EX: `M2EX.exe --features.mod=mods/<name>`).
@@ -34,7 +39,8 @@ files on disk; the button names any change not written yet. Before it starts the
 that starts an exe the game folder lacks is refused in plain words, a Medieval II `.cfg` that does not name the
 mod's folder is asked about, and a 32-bit game exe that can use only 2 GB of memory is noted in the status line.
 
-Every file is copied, so the new mod stands on its own - to share, to zip, to change in any program. For a mod
+A mod built on another mod (HLR) holds all of it - the game reads one mod folder, never a chain. Every file is
+copied, so the new mod stands on its own - to share, to zip, to change in any program. For a mod
 you keep to yourself, tick **Hard links instead of copies**: text files are still copied, everything else becomes
 a **hard link** (the same file on disk under a second name) - no extra disk space, Explorer still shows full
 sizes, and deleting the new mod folder never touches the game. Do not overwrite a linked texture in place from
