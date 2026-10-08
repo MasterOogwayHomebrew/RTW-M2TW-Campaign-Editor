@@ -166,6 +166,7 @@ timeline
 
 - 📦 New mod folder on the plain game makes a thin mod (only what you change; the whole map folder at the first map change); the editor asks once before writing into a mod it did not make
 - 📦 Recolour: an area of like colour painted with one click (a quick select beside the brush)
+- 📦 Recolour into black / white looks like the game's own: a battle texture starts from the nearest-coloured faction's texture of the model (the artist's black / white, folds and faces kept)
 - 📦 The test mod's report lists the steps to look at in the game first, the ones already seen working below
 - 📦 A deleted town's region can stay as a wasteland (Rome with REX, Medieval II with M2EX): nobody's land, no neighbour grows; right click its land to give it its town again; a map cut leaves one too
 - 📦 Faster on a big mod: many towns deleted at once (21 s -> under 2 s on HLR), the town window about 5 times faster and smaller (it remembers its size)

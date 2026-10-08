@@ -151,6 +151,13 @@ from the faction's colours.
   France's white) have no hue: they change only on unit cards and battle textures, where the other factions'
   copies show which parts are the faction's; on symbols (each faction's is another drawing) they stay. Faces and
   hands are never taken for a red or yellow coat.
+- **Into black / white**: a colour has no hue to move into black or white, so a battle texture made black / white
+  starts from the same model's texture of the faction whose colours are nearest (Medieval II: Sicily's grey and
+  white, the rebels' grey, Scotland's white...) - the game's artist's own black and white cloth, folds and faces kept
+  - and only what still differs is recoloured; the faction's own copy is made from it (that faction's heraldry comes
+  along - paint over it with the touch-ups if it should go). The window says 'made from ...'s texture' under such a
+  picture. Where no such texture exists the colours are made black / white as the artists do it: black at their
+  darkness with every fold kept, white at their lightness.
 - **Touch up by hand**: paint on the 'after' picture what the test missed (a red line, a rim) with *new primary
   colour* / *new secondary colour*, or give pixels back with *keep as it was*; brush size in the picture's pixels,
   wheel to zoom, right drag to move. **Area of like colour** (beside the brush): a click takes the whole patch of the
