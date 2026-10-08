@@ -164,7 +164,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- (nothing yet)
+- 📦 A new version of the editor is seen on every start (and every 6 hours while it is open): the GitHub button turns green with its number
 
 ## 🧪 Being tested in the game now (newest first)
 
