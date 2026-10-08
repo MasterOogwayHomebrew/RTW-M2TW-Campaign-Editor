@@ -79,6 +79,14 @@ town (it would die as the campaign loads), a region a faction rises in by an eve
 (the lines are listed - change them first), an island with no land neighbour. The names lookup and the names
 texts keep the old names (an unused name harms nothing).
 
+**Merge regions** (the switch on the map's bar - for a map with more regions than you want): only the regions'
+borders and the town names are drawn meanwhile. Click the region that **stays** (yellow), then its neighbour that
+**goes** (red) - a click on a third region makes that one the red, a click on a picked one drops it, **Clear** starts
+again - and **Merge them** under the map: the red region's town and region go from every file as above and all its
+land (and port) becomes the yellow one's; the yellow region stays as it is. Written at once with a backup (Undo this
+write, Tools > Restore); the switch stays on for the next pair, and off again everything shows as before. The same
+refusals as deleting a town (the two must touch; a faction's last town, an event region, a town a script names).
+
 ## Towns and characters
 
 - A click on a town adds it to **Chosen** or takes it out.
@@ -214,18 +222,24 @@ favour) stay as they are - Preview says so.
 
 **New religion...** (Map tab, Regions) adds a religion of your own - e.g. Judaism - everywhere the game needs
 it: descr_religions.txt (its name and symbol), descr_religions_lookup.txt, text/religions.txt (without its
-text the game crashes silently), its symbol in ui/pips (your picture as a 24-bit TGA, or a copy of another
-religion's), and every region's religions line at 0 %. Then give it its share per region with **Religions...**
-(each region adds up to 100) and, if you like, the factions that follow it. The game takes at most 9 religions
-(vanilla has 5). Temples, priests and traits of its own are not made - Preview says which files still name
-only the old religions.
+text the game crashes silently), its symbol in ui/pips, and every region's religions line at 0 %. It needs no
+other religion: its symbol is **drawn by the editor** (its first letter on a disc of the colour you pick, in the
+size of the game's own symbols) unless you take a copy of another religion's or a picture of yours. **Temples of
+its own** (levels, 0 = none) makes a temple chain for it from nothing - `temple_<name>`, its `religion` line naming
+the new faith, each level with the usual numbers of the mod's temples (another religion's own lines such as the
+Pope's favour left out), built by the factions you pick, plain pictures drawn. Then give it its share per region
+with **Religions...** (each region adds up to 100) and, if you like, the factions that follow it. The game takes
+at most 9 religions (vanilla has 5; REX / M2EX: no limit). Priests and traits of its own are not made - Preview
+says which files still name only the old religions.
 
 **Barbarian Invasion** (Rome's official expansion, and every mod made from it) has religions too - its beliefs
 (Christianity, Paganism, Zoroastrianism). **New religion...** there writes a new belief into `descr_beliefs.txt` (its
-tag, its three pips - the order and unrest pips copied from the belief picked, the level pip your picture - and its
-name, order and unrest texts in `text/expanded_bi.txt`). Barbarian Invasion has no region shares and no faction
-religion line: a town follows a belief through the buildings that carry it (`religious_belief <tag> <n>` - give a
-temple chain the new tag in the Building editor) and its characters' traits. Plain Rome has no religions.
+tag, its three pips - drawn by the editor as the game draws its own: the symbol, and the same full-size symbol with the
+game's own green arrow up (order) or red arrow down (unrest) laid on it at the bottom right; or the order and unrest pips copied from the belief picked and the level pip
+your picture - and its name, order and unrest texts in `text/expanded_bi.txt`). Barbarian Invasion has no region
+shares and no faction religion line: a town follows a belief through the buildings that carry it (`religious_belief
+<tag> <n>`) and its characters' traits - **Temples of its own** makes such a temple chain from nothing, each level
+carrying the new belief at the strength the mod's temples give. Plain Rome has no religions.
 
 ## Settlement names by culture (REX / M2EX)
 
@@ -301,11 +315,16 @@ are on, 8 pixels a tile, not the signs - as a PNG or TGA picture (for a forum po
 **Change size...** beside the map's size under the map adds rows or columns of tiles at any edge - left, right,
 top, bottom - as deep sea (the map's own deepest water, in every picture: regions, heights and `map_heights.hgt`,
 ground, climates, features, fog, roughness, the campaign's `disasters.tga` and radar maps when they are the map's
-size), or cuts them off with a number below 0. Paint land on the new water with the Map editor and the Terrain tab.
+size), or cuts them off with a number below 0. **Drag the edges on the map itself**: while the window is open the
+map's edges are an orange frame with a grip on each side - drag one out and the new sea shows blue, drag it in and
+the part cut off shows dark; the window's numbers follow the mouse (typed numbers move the frame too). Paint land on
+the new water with the Map editor and the Terrain tab.
 Towns, ports, armies, agents, resources, forts, events and the campaign's scripts move with the map (grown at the
 left or the bottom, every place moves by as many tiles); distances and rectangle sizes in scripts stay.
-`descr_terrain.txt` gets the new size and `map.rwm` goes. A cut that would leave a town, a port, an army, a
-resource, a fort or an event's place off the map is refused, each named with its file and line. One backup; **Put
+`descr_terrain.txt` gets the new size and `map.rwm` goes. What would be left off the map by a cut - a town, a port,
+an army, an agent, a resource, a fort, an event's place or a script's tile - is ringed red on the map and named in
+the window with its file and line as soon as the edge moves; move or delete it first (or cut less) - such a cut is
+refused, with a message, and nothing is written. One backup; **Put
 the old map back** undoes it. Lua / Squirrel scripts are listed to check by hand, as with the bigger map.
 
 ## Wonders (Rome)
