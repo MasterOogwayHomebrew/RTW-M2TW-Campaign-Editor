@@ -42,7 +42,9 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   own opens in Units & armies); **on a fort**, the army that holds it (a fort has no buildings - an empty one says how
   to man it: drag an army onto it).
 - **A double click on a town** (or the right click's **This town...**) opens the town's own window, both games, any
-  owner (the Map editor too): its **owner** (hand it to another faction), **city or castle** (Medieval II), **level**,
+  owner (the Map editor too). A region with no town in descr_strat.txt (the rebel village the game makes by itself)
+  shows a short note instead, with an owner to pick and **Write its town** (the rebels too) - after the next Apply it
+  opens like any town. Otherwise the window holds: its **owner** (hand it to another faction), **city or castle** (Medieval II), **level**,
   **population**, and two tabs that switch the same window: **Buildings** - the Buildings tab's own editor (the
   game's pictures, a level picked per chain, checked the way the game checks it: too small a town, a castle-only
   building in a city, one temple per town) - and **Garrison** - the Units & armies tab's card picker (click a card to
@@ -71,20 +73,33 @@ bodyguard), a character to delete him, an empty tile for a new army, agent or fl
 wonders and regions work as on the Map tab. **Preview**, then **Apply changes** (a backup first; Restore puts every
 byte back). New faction / Edit faction show all the tabs again; the map's changes stay until written.
 
-**Delete a town with its region**: right click the town > **Delete this town with its region...**. Its land (and
-its port) becomes the neighbour's it shares the longest border with - or pick another neighbour, in the window or on
-the map (while the window is open the map shows the town's region red, the one taking its land yellow and the other
-neighbours green; click a green one) - and every file
-that ties them follows: its block of `descr_regions.txt`, its settlement in `descr_strat.txt` (the owner's next
+**Delete a town with its region**: right click the town > **Delete this town with its region...**. The window asks
+where its land goes:
+
+- **stays as a wasteland** (Rome with REX, Medieval II with M2EX - the default there): the region and its land stay,
+  nobody's - no town, no owner, no rebels, no economy; the AI never goes for it, no victory counts it, no neighbour
+  grows, armies can still walk over it. Its line in `descr_regions.txt` says `wasteland` where the town's name stood
+  (the engines' own way), its town pixel takes the region's colour. An island can go too. The map shows it grey while
+  the window is open. **The way back**: right click its land > **Give it its town here...** - its name, the name
+  players see and its owner; a village is written on that tile as the game makes it.
+- **goes to a neighbour** (the only way of the original exes): its land (and its port) becomes the neighbour's it
+  shares the longest border with - or pick another neighbour, in the window or on the map (while the window is open
+  the map shows the town's region red, the one taking its land yellow and the other neighbours green; click a green
+  one).
+
+Either way every file that ties them follows: its block of `descr_regions.txt`, its settlement in `descr_strat.txt` (the owner's next
 town becomes its capital; the rebels in the town go with it, a faction's characters there stay in the field), the
 mercenary pools, the win conditions and Medieval II's music lists, in every campaign that uses the same map;
-`map.rwm` is removed. Written at once after **Preview**, with a backup. Refused in plain words: a faction's last
+its block of the regions section at the end of `descr_strat.txt` (roads, forts, watchtowers: handed to the
+neighbour's block, or gone with a wasteland - the game takes forts only in a region with a town); `map.rwm` is
+removed. Written at once after **Preview**, with a backup. Refused in plain words: a faction's last
 town (it would die as the campaign loads), a region a faction rises in by an event, a town a campaign script names
 (the lines are listed - change them first), an island with no land neighbour. The names lookup and the names
 texts keep the old names (an unused name harms nothing).
 
 **Many towns at once**: switch **Select** on, select the towns (a box, or clicks), right click > **Delete the N
-selected town(s) with their regions...**. The window lists each town with the region its land goes to - the
+selected town(s) with their regions...**. The same choice: their regions stay as wastelands (with an engine), or the
+window lists each town with the region its land goes to - the
 neighbour that stays it shares the longest border with; a region surrounded only by regions deleted with it follows
 them. On the map: red = goes, yellow = takes land; pick a row (or click a red region) and it turns orange, its
 neighbours that could take its land green - click one to give it the land. The same refusals as above (a faction's
@@ -184,7 +199,7 @@ Tick **Regions**: every region in its own colour.
    labels, the settlement, `map.rwm` removed.
 
 A new region is in the towns list at once: a new faction can start there, and an edited one can take it, all
-in one Apply. **Edit region...** opens a region's data again. For a region of the map it holds both names of the region and its town: the names players see (written to the campaign's `<campaign>_regions_and_settlement_names.txt` with the next Apply) and the names in the files (changed at once in every file that names them, with a backup - asked first). **Rename...** beside the towns list on the Faction tab (or a right click on a town there) opens the same window.
+in one Apply. **Edit region...** opens a region's data again. For a region of the map it holds its **Owner** at the start (who holds the town in descr_strat.txt - a change is written with the next Apply, as *Give this town to*; a region with no town in descr_strat.txt, the rebel village the game makes by itself, gets its town written for the owner picked, the rebels too) and both names of the region and its town: the names players see (written to the campaign's `<campaign>_regions_and_settlement_names.txt` with the next Apply) and the names in the files (changed at once in every file that names them, with a backup - asked first). **Rename...** beside the towns list on the Faction tab (or a right click on a town there) opens the same window.
 
 **Settlements tab:** every region and its town, both names. **Rename in the files...** (also on the Map: Edit regions, right click the region, then **Edit region...**) changes the system names (`Latium`, `Rome`) everywhere the mod uses them - descr_regions, descr_strat, the names lookup and texts of every language, mercenaries, win conditions, campaign scripts, trait and ancillary conditions - as whole words; comments, descriptions, lines naming a faction of the same name and people's names (descr_names, names.txt, a character named like the town) stay. Preview first, a backup, `map.rwm` removed. Tip: keep the name players see and the name in the files alike.
 
@@ -334,15 +349,21 @@ Towns, ports, armies, agents, resources, forts, events and the campaign's script
 left or the bottom, every place moves by as many tiles); distances and rectangle sizes in scripts stay.
 `descr_terrain.txt` gets the new size and `map.rwm` goes. What stands on the part cut off - a town, a port, an army,
 an agent, a fleet, a resource, a fort, an event's place or a script's tile - is ringed red on the map and named in the
-window as soon as the edge moves. **Write it in** then asks first: *Delete them and cut* takes them off with the cut -
-a town goes with its region from every file (the part of its land that stays joins the neighbour region that stays),
-armies, agents, fleets, resources, forts, watchtowers and events placed there are deleted, and family members (the
-leader, the heir, the family tree) are never deleted: they move to the nearest town their faction keeps. *Not now*
-writes nothing - move what you want to keep off the cut part on the map, Apply, then cut. What cannot go is said
-before any question and nothing is written: a faction's last town, a town or region the campaign's script names (the
-script would stop), a family member whose faction keeps no town to go to. Lines of the campaign's scripts that name
-tiles there are listed to change by hand. One backup; **Put
-the old map back** undoes it. Lua / Squirrel scripts are listed to check by hand, as with the bigger map.
+window as soon as the edge moves. **Keep for Apply** then asks first: *Keep the cut for Apply* takes them off with
+the cut - a town goes with its region from every file (the part of its land that stays joins the neighbour region that
+stays), armies, agents, fleets, resources, forts, watchtowers, events placed there and the rebels standing there are
+deleted, and family members (the leader, the heir, the family tree) are never deleted: they move to the nearest town
+their faction keeps. **A faction left without any town leaves this campaign** with all its people - its place in the
+faction lists, its diplomacy, its victory conditions and the events that make it rise go too - but it stays in the
+mod (its units, pictures and other campaigns keep it), as both games' own prologue campaigns leave most factions out.
+**Nothing is written until Apply changes** (bottom left): the cut is made at the write, after every other change
+waiting, so you can still move what you want to keep off the cut part, or give such a faction a town that stays (right
+click a town > *Give this town to*) - then it stays in the campaign and its family moves into that town. *Not now*
+keeps nothing. What cannot go is said before any question: a town or region the campaign's script names (the script
+would stop), a family member whose faction keeps a town but no room near it. Lines of the campaign's scripts that name
+tiles or the faction leaving are listed to change by hand. One backup; **Undo this write** (beside the status line)
+or Tools > Restore a backup gives it all back. Lua / Squirrel scripts are listed to check by hand, as with the bigger
+map.
 
 ## Wonders (Rome)
 

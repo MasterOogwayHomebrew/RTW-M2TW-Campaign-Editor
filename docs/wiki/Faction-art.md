@@ -153,7 +153,10 @@ from the faction's colours.
   hands are never taken for a red or yellow coat.
 - **Touch up by hand**: paint on the 'after' picture what the test missed (a red line, a rim) with *new primary
   colour* / *new secondary colour*, or give pixels back with *keep as it was*; brush size in the picture's pixels,
-  wheel to zoom, right drag to move. The touch-ups go with Write it.
+  wheel to zoom, right drag to move. **Area of like colour** (beside the brush): a click takes the whole patch of the
+  picture's own colour joined to that point - a hood, a shield's field - and paints it at once; *alike* says how far a
+  colour may differ and still belong; *keep as it was* + a click gives an area back. The touch-ups go with Keep for
+  Apply.
 - Every picture with before / after; untick the ones to keep. A picture other factions use too: when a line of
   the game's files names it (a campaign-map figure, a loading logo), the faction gets a copy of its own, recoloured,
   and its line points at it. A unit's battle texture (and Medieval II's weapons and shields) is NEVER recoloured
