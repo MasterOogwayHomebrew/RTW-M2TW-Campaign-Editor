@@ -21,6 +21,13 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   in steps you can go back and forth between: names and the texts players read, who owns the unit (or may build
   the chain), its main numbers (men, attack, armour, cost...), pictures of your own, and last everything it will
   change, file by file, before it is added. Written on Apply with a backup.
+- A unit can also start from **nothing** (New unit step by step > Start from: *Nothing*): say what it is - foot
+  soldiers who fight hand to hand, with spears, or who shoot / throw; horsemen who charge or who shoot - and the
+  editor writes every line itself, in the form this mod's units of that kind have. Each number starts at what is
+  usual for such a unit in this mod (the middle of them all) and is shown with the mod's lowest and highest;
+  pick its battle model (and what it rides), its owners, the building levels that train it (the first guess:
+  where this mod trains such units most) and its pictures - without pictures the editor draws plain cards with the
+  unit's initials. A siege crew, a ship, an elephant or a chariot is still made as a copy.
 - **Bring from another mod...** copies units or building chains from another mod of the same game, step by
   step, with everything they need - see [[Move units and buildings between mods]].
 - **Where it can be built...** (a building) / **Where it is recruited...** (a unit): a window of its own - the
