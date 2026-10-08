@@ -195,6 +195,8 @@ Tick **Regions**: every region in its own colour.
 2. Paint its land with a left drag (brush 1-6 tiles). Right click a region to paint with that one - the same
    brush moves the border between two existing regions.
 3. **Place its town** (and **Place its port** on the coast).
+   For a region of the map picked in *Paint with* the same buttons move its town or port to the tile
+   clicked; a wasteland gets its town there (then its port).
 4. **Preview** lists everything written: `map_regions.tga`, `descr_regions.txt`, the name lookup, the region
    labels, the settlement, `map.rwm` removed.
 
