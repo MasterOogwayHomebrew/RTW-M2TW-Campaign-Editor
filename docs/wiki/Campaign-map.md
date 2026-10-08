@@ -321,10 +321,16 @@ the part cut off shows dark; the window's numbers follow the mouse (typed number
 the new water with the Map editor and the Terrain tab.
 Towns, ports, armies, agents, resources, forts, events and the campaign's scripts move with the map (grown at the
 left or the bottom, every place moves by as many tiles); distances and rectangle sizes in scripts stay.
-`descr_terrain.txt` gets the new size and `map.rwm` goes. What would be left off the map by a cut - a town, a port,
-an army, an agent, a resource, a fort, an event's place or a script's tile - is ringed red on the map and named in
-the window with its file and line as soon as the edge moves; move or delete it first (or cut less) - such a cut is
-refused, with a message, and nothing is written. One backup; **Put
+`descr_terrain.txt` gets the new size and `map.rwm` goes. What stands on the part cut off - a town, a port, an army,
+an agent, a fleet, a resource, a fort, an event's place or a script's tile - is ringed red on the map and named in the
+window as soon as the edge moves. **Write it in** then asks first: *Delete them and cut* takes them off with the cut -
+a town goes with its region from every file (the part of its land that stays joins the neighbour region that stays),
+armies, agents, fleets, resources, forts, watchtowers and events placed there are deleted, and family members (the
+leader, the heir, the family tree) are never deleted: they move to the nearest town their faction keeps. *Not now*
+writes nothing - move what you want to keep off the cut part on the map, Apply, then cut. What cannot go is said
+before any question and nothing is written: a faction's last town, a town or region the campaign's script names (the
+script would stop), a family member whose faction keeps no town to go to. Lines of the campaign's scripts that name
+tiles there are listed to change by hand. One backup; **Put
 the old map back** undoes it. Lua / Squirrel scripts are listed to check by hand, as with the bigger map.
 
 ## Wonders (Rome)

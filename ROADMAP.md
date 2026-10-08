@@ -163,7 +163,7 @@ timeline
 ## 📦 Built, comes with the next release
 
 - 📦 Merge regions on the map (both games): click the region that stays, then its neighbour that goes - its land joins the first, everything tied to it follows
-- 📦 Map size by dragging the map's edges (both games): out adds deep sea, in cuts tiles off (shown dark); what stands on the part cut off is ringed red on the map before anything is written
+- 📦 Map size by dragging the map's edges (both games): out adds deep sea, in cuts tiles off (shown dark); what stands on the part cut off is ringed red on the map and goes with the cut after a question (family members move to their faction's nearest town)
 - 📦 A new religion from nothing (Medieval II, Barbarian Invasion): its symbol drawn by the editor, temples of its own made from nothing
 - 📦 A new building from nothing (both games): say what it is for and how many levels, every line written with the mod's usual numbers for such buildings; levels side by side, any effect the mod uses, the units it trains, plain pictures drawn
 - 📦 A new unit from nothing (both games): say what kind it is, the editor writes every line with the mod's usual numbers for such a unit; you set each one, its model, owners, where it is trained; plain cards drawn when you have none
