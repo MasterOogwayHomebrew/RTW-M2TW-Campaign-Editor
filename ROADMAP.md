@@ -89,18 +89,20 @@ timeline
     section Day 10 - one language, fixes from the testers
         0.31 : Every window one write : Mods holding only their changes : Rename a faction : Cards on hover, tables sorted : Enter / Esc and answers in words : Fixes from the in-game test runs
         0.32 : Module builder like Scratch - blocks dragged into each other : ELSE, any / none / not, FOR EACH town, army, faction
+    section Day 11 - from nothing, the map's shape by hand
+        0.33 : Units, buildings and religions from nothing : Your own files for a battle model : Map size by dragging its edges : Merge regions : Many towns deleted at once : A town's own garrison : Recolour never over the original : Cards and pictures as the game shows them
 ```
 
 | Area | Confirmed in game | Released | Being tested | Next |
 |---|---|---|---|---|
 | Factions | new faction, faction limit, edit, garrisons, mod folder | settlement size, rebels, diplomacy, roster | alliances and wars at the start, victory conditions, building chains kept whole | the new factions' AI |
-| Campaign map | tiles, moving towns, new regions, terrain, heights, find, town names, map 3x bigger (beta) | resources, climates, forts, big maps | the bigger map smooth (coast, heights, natural edges), many towns at once, land and sea brush, wonders, events, right-click menu, drop into a town | flat plains and sharp peaks, borders drawn by the tool, a map from the real world |
+| Campaign map | tiles, moving towns, new regions, terrain, heights, find, town names, map 3x bigger (beta) | resources, climates, forts, big maps | the bigger map smooth (coast, heights, natural edges), many towns at once, land and sea brush, wonders, events, right-click menu, drop into a town, map size by dragging its edges, merge regions, many towns deleted at once | flat plains and sharp peaks, borders drawn by the tool, a map from the real world |
 | Characters | - | name lists | character panel, traits and retinue, family tree, portraits | - |
-| Units, buildings, art | faction art | editors, unit packs, modeldb, REX abilities | recolour of every faction picture, faction emblem, battle banners from a white banner (both games), units and buildings brought from another mod, replace a model, 3D view of Rome and Medieval II models, new unit / building step by step, unit voices | M2EX monster units |
+| Units, buildings, art | faction art | editors, unit packs, modeldb, REX abilities | recolour of every faction picture, faction emblem, battle banners from a white banner (both games), units and buildings brought from another mod, replace a model, your own model files, 3D view of Rome and Medieval II models, new unit / building step by step or from nothing, unit voices | M2EX monster units |
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | religions, campaign rules, add-ons, module builder | vassals (`client_of`), window in other languages |
 | Safety | - | preview, backup, byte-exact restore, Check mod files, report a bug in one click, settings | pack check | signed exe |
 
-## What it does now (0.32.0)
+## What it does now (0.33.0)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -162,27 +164,28 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- 📦 A region with no town of its own (the game's rebel village): its town window writes the town for an owner picked (the rebels too); Edit region shows and changes the owner
-- 📦 Sack Settlement (Medieval II): the Raze button's words in the game's own Verdana, no hover text, the capture scroll one button taller (the button stays under Exterminate if the game keeps the size); Avoid Growth's words in Verdana too
-- 📦 Merge regions on the map (both games): click the region that stays, then its neighbour that goes - its land joins the first, everything tied to it follows
-- 📦 Many towns deleted with their regions at once (the map's Select, both games): each region's land to a neighbour that stays, shown on the map (red goes, yellow takes land, green could) - a click picks another neighbour; one write, one Undo
-- 📦 Map size by dragging the map's edges (both games): out adds deep sea, in cuts tiles off (shown dark); what stands on the part cut off is ringed red on the map and goes with the cut after a question (family members move to their faction's nearest town)
-- 📦 A new religion from nothing (Medieval II, Barbarian Invasion): its symbol drawn by the editor, temples of its own made from nothing
-- 📦 A new building from nothing (both games): say what it is for and how many levels, every line written with the mod's usual numbers for such buildings; levels side by side, any effect the mod uses, the units it trains, plain pictures drawn
-- 📦 A new unit from nothing (both games): say what kind it is, the editor writes every line with the mod's usual numbers for such a unit; you set each one, its model, owners, where it is trained; plain cards drawn when you have none
-- 📦 Your own files for a unit's battle model (both games): your texture (every faction or one), Medieval II's weapons texture and your own .cas / .mesh put in, converted, named and written; a model of its own when other units share it
-- 📦 Module builder: WHEN 'the player's turn starts (once a turn)' - the default for new modules; 'every faction's turn starts' says plainly that it comes for each faction
-- 📦 Fix: Recolour never writes over an original battle texture - it copies it, recolours the copy and points the faction's line at it; a faction with a texture but no weapons texture gets that line (Medieval II men like bare skeletons in battle), Load offers it for the whole mod
-- 📦 A town's own garrison with no captain (`garrisoned_army` in the town's block - some mods use it for every town): read, shown in the town window and the garrison editor, changed in place, checked
-- 📦 Fix: closing the editor never ends in a Windows error box
-- 📦 Unit cards and building pictures as the game shows them, in every window (one lookup for all; checked over every unit and building of Rome, BI and Medieval II)
-- 📦 Start the game names the mod it starts (amber without one); the test mod is offered to be started at once; its modules act only in the test mod
-- 📦 Avoid Growth: only on the Construction tab, in Rome looking like Automanage; forts and watchtowers keep a tile from towns and from each other
-- 📦 Fix: plain Rome is never given a faction that starts dead (the game stopped reading descr_strat there: empty rebel towns, no diplomacy)
-- 📦 Fixes: painting on the Terrain tab right after Apply; ports for regions without one; an add-on's old copy outside script\modules is shown, moved or taken out
+- (nothing yet)
 
 ## 🧪 Being tested in the game now (newest first)
 
+- 🧪 A region with no town of its own (the game's rebel village): its town window writes the town for an owner picked (the rebels too); Edit region shows and changes the owner (0.33.0)
+- 🧪 Sack Settlement (Medieval II): the Raze button's words in the game's own Verdana, no hover text, the capture scroll one button taller (the button stays under Exterminate if the game keeps the size); Avoid Growth's words in Verdana too (0.33.0)
+- 🧪 Merge regions on the map (both games): click the region that stays, then its neighbour that goes - its land joins the first, everything tied to it follows (0.33.0)
+- 🧪 Many towns deleted with their regions at once (the map's Select, both games): each region's land to a neighbour that stays, shown on the map (red goes, yellow takes land, green could) - a click picks another neighbour; one write, one Undo (0.33.0)
+- 🧪 Map size by dragging the map's edges (both games): out adds deep sea, in cuts tiles off (shown dark); what stands on the part cut off is ringed red on the map and goes with the cut after a question (family members move to their faction's nearest town) (0.33.0)
+- 🧪 A new religion from nothing (Medieval II, Barbarian Invasion): its symbol drawn by the editor, temples of its own made from nothing (0.33.0)
+- 🧪 A new building from nothing (both games): say what it is for and how many levels, every line written with the mod's usual numbers for such buildings; levels side by side, any effect the mod uses, the units it trains, plain pictures drawn (0.33.0)
+- 🧪 A new unit from nothing (both games): say what kind it is, the editor writes every line with the mod's usual numbers for such a unit; you set each one, its model, owners, where it is trained; plain cards drawn when you have none (0.33.0)
+- 🧪 Your own files for a unit's battle model (both games): your texture (every faction or one), Medieval II's weapons texture and your own .cas / .mesh put in, converted, named and written; a model of its own when other units share it (0.33.0)
+- 🧪 Module builder: WHEN 'the player's turn starts (once a turn)' - the default for new modules; 'every faction's turn starts' says plainly that it comes for each faction (0.33.0)
+- 🧪 Fix: Recolour never writes over an original battle texture - it copies it, recolours the copy and points the faction's line at it; a faction with a texture but no weapons texture gets that line (Medieval II men like bare skeletons in battle), Load offers it for the whole mod (0.33.0)
+- 🧪 A town's own garrison with no captain (`garrisoned_army` in the town's block - some mods use it for every town): read, shown in the town window and the garrison editor, changed in place, checked (0.33.0)
+- 🧪 Fix: closing the editor never ends in a Windows error box (0.33.0)
+- 🧪 Unit cards and building pictures as the game shows them, in every window (one lookup for all; checked over every unit and building of Rome, BI and Medieval II) (0.33.0)
+- 🧪 Start the game names the mod it starts (amber without one); the test mod is offered to be started at once; its modules act only in the test mod (0.33.0)
+- 🧪 Avoid Growth: only on the Construction tab, in Rome looking like Automanage; forts and watchtowers keep a tile from towns and from each other (0.33.0)
+- 🧪 Fix: plain Rome is never given a faction that starts dead (the game stopped reading descr_strat there: empty rebel towns, no diplomacy) (0.33.0)
+- 🧪 Fixes: painting on the Terrain tab right after Apply; ports for regions without one; an add-on's old copy outside script\modules is shown, moved or taken out (0.33.0)
 - 🧪 Module builder: ELSE, all / any / none of the conditions and NOT, FOR EACH town / army / faction - the control blocks of Scratch (0.32.0)
 - 🧪 Module builder looks like Scratch: coloured blocks dragged into each other (the old lists one click away) (0.32.0)
 - 🧪 Edit faction > Rename...: a faction's code name changed in every file at once (0.31.0)
