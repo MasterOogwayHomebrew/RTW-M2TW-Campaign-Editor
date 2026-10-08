@@ -73,20 +73,33 @@ bodyguard), a character to delete him, an empty tile for a new army, agent or fl
 wonders and regions work as on the Map tab. **Preview**, then **Apply changes** (a backup first; Restore puts every
 byte back). New faction / Edit faction show all the tabs again; the map's changes stay until written.
 
-**Delete a town with its region**: right click the town > **Delete this town with its region...**. Its land (and
-its port) becomes the neighbour's it shares the longest border with - or pick another neighbour, in the window or on
-the map (while the window is open the map shows the town's region red, the one taking its land yellow and the other
-neighbours green; click a green one) - and every file
-that ties them follows: its block of `descr_regions.txt`, its settlement in `descr_strat.txt` (the owner's next
+**Delete a town with its region**: right click the town > **Delete this town with its region...**. The window asks
+where its land goes:
+
+- **stays as a wasteland** (Rome with REX, Medieval II with M2EX - the default there): the region and its land stay,
+  nobody's - no town, no owner, no rebels, no economy; the AI never goes for it, no victory counts it, no neighbour
+  grows, armies can still walk over it. Its line in `descr_regions.txt` says `wasteland` where the town's name stood
+  (the engines' own way), its town pixel takes the region's colour. An island can go too. The map shows it grey while
+  the window is open. **The way back**: right click its land > **Give it its town here...** - its name, the name
+  players see and its owner; a village is written on that tile as the game makes it.
+- **goes to a neighbour** (the only way of the original exes): its land (and its port) becomes the neighbour's it
+  shares the longest border with - or pick another neighbour, in the window or on the map (while the window is open
+  the map shows the town's region red, the one taking its land yellow and the other neighbours green; click a green
+  one).
+
+Either way every file that ties them follows: its block of `descr_regions.txt`, its settlement in `descr_strat.txt` (the owner's next
 town becomes its capital; the rebels in the town go with it, a faction's characters there stay in the field), the
 mercenary pools, the win conditions and Medieval II's music lists, in every campaign that uses the same map;
-`map.rwm` is removed. Written at once after **Preview**, with a backup. Refused in plain words: a faction's last
+its block of the regions section at the end of `descr_strat.txt` (roads, forts, watchtowers: handed to the
+neighbour's block, or gone with a wasteland - the game takes forts only in a region with a town); `map.rwm` is
+removed. Written at once after **Preview**, with a backup. Refused in plain words: a faction's last
 town (it would die as the campaign loads), a region a faction rises in by an event, a town a campaign script names
 (the lines are listed - change them first), an island with no land neighbour. The names lookup and the names
 texts keep the old names (an unused name harms nothing).
 
 **Many towns at once**: switch **Select** on, select the towns (a box, or clicks), right click > **Delete the N
-selected town(s) with their regions...**. The window lists each town with the region its land goes to - the
+selected town(s) with their regions...**. The same choice: their regions stay as wastelands (with an engine), or the
+window lists each town with the region its land goes to - the
 neighbour that stays it shares the longest border with; a region surrounded only by regions deleted with it follows
 them. On the map: red = goes, yellow = takes land; pick a row (or click a red region) and it turns orange, its
 neighbours that could take its land green - click one to give it the land. The same refusals as above (a faction's

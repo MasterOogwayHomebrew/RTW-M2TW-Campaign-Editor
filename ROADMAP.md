@@ -164,6 +164,8 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 A deleted town's region can stay as a wasteland (Rome with REX, Medieval II with M2EX): nobody's land, no neighbour grows; right click its land to give it its town again; a map cut leaves one too
+- 📦 Faster on a big mod: many towns deleted at once (21 s -> under 2 s on HLR), the town window about 5 times faster and smaller (it remembers its size)
 - 📦 Map size: a cut that takes a faction's last town takes the faction out of this campaign (it stays in the mod); the cut waits for Apply, so a town given meanwhile keeps the faction
 - 📦 A new version of the editor is seen on every start (and every 6 hours while it is open): the GitHub button turns green with its number
 
