@@ -163,6 +163,7 @@ timeline
 ## 📦 Built, comes with the next release
 
 - 📦 Merge regions on the map (both games): click the region that stays, then its neighbour that goes - its land joins the first, everything tied to it follows
+- 📦 Many towns deleted with their regions at once (the map's Select, both games): each region's land to a neighbour that stays, shown on the map (red goes, yellow takes land, green could) - a click picks another neighbour; one write, one Undo
 - 📦 Map size by dragging the map's edges (both games): out adds deep sea, in cuts tiles off (shown dark); what stands on the part cut off is ringed red on the map and goes with the cut after a question (family members move to their faction's nearest town)
 - 📦 A new religion from nothing (Medieval II, Barbarian Invasion): its symbol drawn by the editor, temples of its own made from nothing
 - 📦 A new building from nothing (both games): say what it is for and how many levels, every line written with the mod's usual numbers for such buildings; levels side by side, any effect the mod uses, the units it trains, plain pictures drawn
@@ -170,6 +171,7 @@ timeline
 - 📦 Your own files for a unit's battle model (both games): your texture (every faction or one), Medieval II's weapons texture and your own .cas / .mesh put in, converted, named and written; a model of its own when other units share it
 - 📦 Module builder: WHEN 'the player's turn starts (once a turn)' - the default for new modules; 'every faction's turn starts' says plainly that it comes for each faction
 - 📦 Fix: Recolour never writes over an original battle texture - it copies it, recolours the copy and points the faction's line at it; a faction with a texture but no weapons texture gets that line (Medieval II men like bare skeletons in battle), Load offers it for the whole mod
+- 📦 A town's own garrison with no captain (`garrisoned_army` in the town's block - some mods use it for every town): read, shown in the town window and the garrison editor, changed in place, checked
 - 📦 Fix: closing the editor never ends in a Windows error box
 - 📦 Unit cards and building pictures as the game shows them, in every window (one lookup for all; checked over every unit and building of Rome, BI and Medieval II)
 - 📦 Start the game names the mod it starts (amber without one); the test mod is offered to be started at once; its modules act only in the test mod

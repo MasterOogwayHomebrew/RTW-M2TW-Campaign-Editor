@@ -47,7 +47,9 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   game's pictures, a level picked per chain, checked the way the game checks it: too small a town, a castle-only
   building in a city, one temple per town) - and **Garrison** - the Units & armies tab's card picker (click a card to
   add it, a garrison card to take it out; **Suggest** picks units the owner trains there; a named character keeps
-  his bodyguard; a town nobody holds gets a captain). **Preview**, then **Keep for Apply**: the changes go into the
+  his bodyguard; a town nobody holds gets a captain; a town whose garrison is written in its own block -
+  `garrisoned_army`, no captain, as some mods do for every town - shows that garrison and keeps it there; a town
+  with nobody on its tile says who stands next to it, outside the walls). **Preview**, then **Keep for Apply**: the changes go into the
   session's list and **Apply changes** in the main window writes them with everything else waiting, in one go (one
   backup set, one **Undo this write**). Another town opens in the same window. The right click's *Edit this town in Edit faction* still opens its owner in Edit faction.
 - **Right click on the map**: on a town - **Give this town to** any faction (written with the next Apply; its
@@ -70,7 +72,9 @@ wonders and regions work as on the Map tab. **Preview**, then **Apply changes** 
 byte back). New faction / Edit faction show all the tabs again; the map's changes stay until written.
 
 **Delete a town with its region**: right click the town > **Delete this town with its region...**. Its land (and
-its port) becomes the neighbour's it shares the longest border with - or pick another neighbour - and every file
+its port) becomes the neighbour's it shares the longest border with - or pick another neighbour, in the window or on
+the map (while the window is open the map shows the town's region red, the one taking its land yellow and the other
+neighbours green; click a green one) - and every file
 that ties them follows: its block of `descr_regions.txt`, its settlement in `descr_strat.txt` (the owner's next
 town becomes its capital; the rebels in the town go with it, a faction's characters there stay in the field), the
 mercenary pools, the win conditions and Medieval II's music lists, in every campaign that uses the same map;
@@ -78,6 +82,13 @@ mercenary pools, the win conditions and Medieval II's music lists, in every camp
 town (it would die as the campaign loads), a region a faction rises in by an event, a town a campaign script names
 (the lines are listed - change them first), an island with no land neighbour. The names lookup and the names
 texts keep the old names (an unused name harms nothing).
+
+**Many towns at once**: switch **Select** on, select the towns (a box, or clicks), right click > **Delete the N
+selected town(s) with their regions...**. The window lists each town with the region its land goes to - the
+neighbour that stays it shares the longest border with; a region surrounded only by regions deleted with it follows
+them. On the map: red = goes, yellow = takes land; pick a row (or click a red region) and it turns orange, its
+neighbours that could take its land green - click one to give it the land. The same refusals as above (a faction's
+last towns counted together). One write, one backup: **Undo this write** puts all of them back.
 
 **Merge regions** (the switch on the map's bar - for a map with more regions than you want): only the regions'
 borders and the town names are drawn meanwhile. Click the region that **stays** (yellow), then its neighbour that
