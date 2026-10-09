@@ -1,6 +1,6 @@
 # Edit a faction
 
-**Edit faction** at the top, then pick the faction. The window fills with what it is now; change what you
+**Faction editor** at the top, its **Edit faction** tab (the first), then pick the faction. The window fills with what it is now; change what you
 want. Untouched fields and towns stay exactly as they are.
 
 **The rebels** (`slave`) are in the list too: their armies, fleets, agents, garrisons, towns, buildings and

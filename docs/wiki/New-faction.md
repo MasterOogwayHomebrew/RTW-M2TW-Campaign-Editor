@@ -5,7 +5,7 @@ the game at once, so you can test every change after that straight away. The tem
 
 ## Steps
 
-1. **New faction** at the top, load the mod, pick the campaign.
+1. **Faction editor** at the top, its **New faction** tab; load the mod, pick the campaign.
 2. **Template**: the faction to copy. The new one gets its culture, units, buildings, character models, name
    lists, trait triggers and pictures.
 3. **Internal name**: lower case, no spaces, for example `epirus`.
