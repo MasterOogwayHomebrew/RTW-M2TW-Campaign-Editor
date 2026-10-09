@@ -60,6 +60,7 @@ bailey, a village city none). Only the kind's own buildings are offered afterwar
   factions takes many at once: drag over the rows, Shift-click a run, **Tick all shown** (with Find), **tick a whole
   group** (every region a faction holds), or **On the map...** - click towns there, their regions turn yellow.
 - **Art**: see [[Faction art]].
+- **Models**: who is shown by which figure on the campaign map, their textures, 3D - see [[Faction art]].
 - **Roster**: give or take units and building levels - see [[Units and buildings]].
 - **Family**: characters, traits, the family tree - see [[Characters and portraits]].
 

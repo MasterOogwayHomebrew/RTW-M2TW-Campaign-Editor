@@ -1,7 +1,11 @@
 # Faction art
 
 The **Art** tab lists every picture of the faction - buttons, symbols, the loading-screen logo, banners, the
-captain's card, the victory maps - each with where the game shows it and what it needs (size and format).
+captain's card, the victory maps - each with where the game shows it and what it needs (size and format), sorted
+into tabs: **Icons and buttons** (logos, campaign-menu buttons, symbols, the loading-screen logo), **Flags and
+banners** (banners, standards, the flag symbol, the 3D symbol's texture, the flag on the towns), **Maps** (the
+victory-conditions maps) and **Other** (captain's cards and portraits...), each with how many it holds. The
+figures on the campaign map and their textures are on the **Models** tab (below).
 
 The two pictures of the campaign-select screen - **the map with the faction's land lit** (`map_<faction>.tga`
 in the campaign folder) and **the leader's face** (`leader_pic_<faction>.tga`, Rome) - sit on the **Edit
@@ -52,15 +56,16 @@ first. The logos need REX with `sprite_format xml` in the mod's own `descr_caps_
 on the engine's default `sd`; Load offers to copy the game's): the original game
 reads binary sprite sheets that cannot take new sprites, and the Art tab says so.
 
-## Figures on the campaign map
+## Figures on the campaign map - the Models tab
 
-At the top of the Art tab: every character type of the faction (named character, general, admiral, spy, assassin,
+On the **Models** tab (beside Art): every character type of the faction (named character, general, admiral, spy, assassin,
 diplomat - and on Medieval II princess, merchant, priest / bishop / cardinal ...) with the figure that shows it on
 the campaign map - a strat model of `descr_model_strat.txt`, named per faction in `descr_character.txt`. Pick
 another model in the list, **3D** shows it with the faction's texture; Preview, then Apply writes it. A faction
 that shares its entry with others (`faction a, b`) gets an entry of its own, the others keep theirs. A model the
 faction has no texture in gets a texture line (the model's first picture); after Apply its picture is listed
-below to **Replace...** like any other. The figures' textures are Art pictures too ("campaign map figure: ..."),
+below to **Replace...** like any other. Below the figures: their textures ("campaign map figure: ..."), each with
+**3D**, **Replace...** and **Save a copy...**,
 and a new faction gets copies of its own of the template's (`diplomat_macedon` -> `diplomat_epirus`), so
 replacing them never changes the template's. Both games.
 
