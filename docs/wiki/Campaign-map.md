@@ -201,7 +201,7 @@ Tick **Regions**: every region in its own colour.
    labels, the settlement, `map.rwm` removed.
 
 A new region is in the towns list at once: a new faction can start there, and an edited one can take it, all
-in one Apply. **Edit region...** opens a region's data again. For a region of the map it holds its **Owner** at the start (who holds the town in descr_strat.txt - a change is written with the next Apply, as *Give this town to*; a region with no town in descr_strat.txt, the rebel village the game makes by itself, gets its town written for the owner picked, the rebels too) and both names of the region and its town: the names players see (written to the campaign's `<campaign>_regions_and_settlement_names.txt` with the next Apply) and the names in the files (changed at once in every file that names them, with a backup - asked first). **Rename...** beside the towns list on the Faction tab (or a right click on a town there) opens the same window.
+in one Apply. **Edit region...** opens a region's data again. For a region of the map it holds its **Owner** at the start (who holds the town in descr_strat.txt - a change is written with the next Apply, as *Give this town to*; a region with no town in descr_strat.txt, the rebel village the game makes by itself, gets its town written for the owner picked, the rebels too) and both names of the region and its town: the names players see (written to the campaign's `<campaign>_regions_and_settlement_names.txt` with the next Apply) and the names in the files (changed at once in every file that names them, with a backup - asked first). **Rename...** beside the towns list on the Edit / New faction tab (or a right click on a town there) opens the same window.
 
 **Settlements tab:** every region and its town, both names. **Rename in the files...** (also on the Map: Edit regions, right click the region, then **Edit region...**) changes the system names (`Latium`, `Rome`) everywhere the mod uses them - descr_regions, descr_strat, the names lookup and texts of every language, mercenaries, win conditions, campaign scripts, trait and ancillary conditions - as whole words; comments, descriptions, lines naming a faction of the same name and people's names (descr_names, names.txt, a character named like the town) stay. Preview first, a backup, `map.rwm` removed. Tip: keep the name players see and the name in the files alike.
 
@@ -271,7 +271,7 @@ carrying the new belief at the strength the mod's temples give. Plain Rome has n
 
 ## Settlement names by culture (REX / M2EX)
 
-**Names by culture...** (next to *Edit region...* on the Faction tab, and on the Map's region bar) gives a town a
+**Names by culture...** (next to *Edit region...* on the Edit / New faction tab, and on the Map's region bar) gives a town a
 name for each culture of its owner, plus a name for every other culture. The engine (REX on Rome, M2EX on
 Medieval II) renames the town when it changes
 hands - as soon as a general takes it, and at each of its owner's turns. The tool writes it into the campaign's
@@ -279,10 +279,10 @@ hands - as soon as a general takes it, and at each of its owner's turns. The too
 tool's block), with a backup like every write. Needs REX (Rome) or M2EX (Medieval II). Checked in the game on Medieval II with M2EX
 ([video](https://youtu.be/umwRyWkHoDE)).
 
-The window shows it at once: take a town for a faction (on the Faction tab or by clicking it on the Map) and its
+The window shows it at once: take a town for a faction (on the Edit / New faction tab or by clicking it on the Map) and its
 label on the map changes to the name for that faction's culture; the towns list shows the name a town has now.
 
-**All towns' names...** (on the Faction tab, in the per-town dialog and under **Tools**) shows every town in one
+**All towns' names...** (on the Edit / New faction tab, in the per-town dialog and under **Tools**) shows every town in one
 table: one column per culture plus *every other*, the owner, its culture and the name shown now. Sort by any
 column, filter by a culture (towns with or without a name for it), by the owner's culture, by what waits for Apply,
 or search. Double click a culture's cell to type a name in place (Enter keeps it, Esc drops it, an empty cell

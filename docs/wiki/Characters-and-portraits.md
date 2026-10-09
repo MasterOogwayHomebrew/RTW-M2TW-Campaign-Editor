@@ -6,7 +6,7 @@ Everyone of the faction: the characters on the map (with traits and ancillaries)
 map. The family tree is drawn the way the game shows it: husband and wife side by side, their children below,
 the leader and heir marked; people tied to no one stand under "Not on the tree", and a faction with several
 families shows each as its own tree. The list and the person are on the left, the tree on the right (on the
-Faction tab too). The **Character editor** at the top does the same for any faction, rebels too.
+Edit faction tab too). The **Character editor** at the top does the same for any faction, rebels too.
 
 - Click a person to edit: name (from the faction's name lists - the game crashes on a name without a text),
   age, sex (off the map), traits with their level, ancillaries.

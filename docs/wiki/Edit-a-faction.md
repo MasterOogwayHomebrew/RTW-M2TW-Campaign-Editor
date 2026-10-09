@@ -8,7 +8,7 @@ units are edited like any faction's. A rebel has a `sub_faction` - the faction w
 uses: **+ Army** asks for it (**Rebels of**), a captain for an empty rebel town takes the nearest rebel's.
 The rebels are never playable and have no capital, leader or heir.
 
-## Faction tab
+## Edit faction tab (the faction itself)
 
 - Names, tooltip and campaign-screen text, colours, AI, money (denari), playable.
 - **Rename...** beside the internal name changes the faction's code name (`egypt` -> `kemet`) in every file of the
@@ -51,8 +51,8 @@ bailey, a village city none). Only the kind's own buildings are offered afterwar
 - **Diplomacy**: per faction the **Status at the start** (neutral, **alliance** or **war** on the first turn, both
   games) and the AI feeling both ways (Rome: a number, lower is better, `600 (enemies)`; Medieval II: -1.0 to 1.0).
   A status pulls the feelings along; hover a column's **?**.
-- **Family tree**: the button at the top of the Faction tab opens it in the form's place.
-- **Victory** (on the Faction tab, under the leader): regions to hold, how many to take, factions to outlive, Rome's
+- **Family tree**: the button at the top of the Edit / New faction tab opens it in the form's place.
+- **Victory** (on the Edit / New faction tab, under the leader): regions to hold, how many to take, factions to outlive, Rome's
   goal (be emperor / take Rome) - for the long and the short campaign. Only the player needs them, but a playable
   faction without them, or naming a region that does not exist, can crash the game. The list of regions or
   factions takes many at once: drag over the rows, Shift-click a run, **Tick all shown** (with Find), **tick a whole
@@ -62,6 +62,6 @@ bailey, a village city none). Only the kind's own buildings are offered afterwar
 - **Family**: characters, traits, the family tree - see [[Characters and portraits]].
 
 **Preview changes**, then **Apply changes**. One Apply writes every tab at once, with a backup. Picking
-another faction with changes not written asks: apply them, drop them, or stay. **Edit faction** and **New faction**
-sit on the row of the tabs; going to the Map editor, the other one or any other editor drops nothing - each keeps
+another faction with changes not written asks: apply them, drop them, or stay. **New faction** and **Edit faction**
+are the first two tabs (Edit faction is the old Faction tab); going to the Map editor, the other one or any other editor drops nothing - each keeps
 its work not written yet until you come back.

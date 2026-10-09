@@ -142,7 +142,7 @@ from the faction's colours.
 - **From the colours of**: the colours the pictures carry now. For a faction cloned from a template it finds the
   template by itself (its cards are copies of the template's); otherwise the faction's own. Click a colour to pick
   another.
-- **to**: the faction's own primary and secondary colour from `descr_sm_factions.txt` (the Faction tab sets them),
+- **to**: the faction's own primary and secondary colour from `descr_sm_factions.txt` (the Edit / New faction tab sets them),
   or any picked here.
 - A part counts as the faction's colour when it is coloured and its hue is near the old colour. Where the same
   picture exists for other factions (a unit card, a battle texture), only what differs between them changes - faces,
