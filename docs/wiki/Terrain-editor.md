@@ -46,7 +46,11 @@ or off.
   depth). The coast round the painted tiles is drawn the way the games' own maps are: on a smooth curve between
   the tiles (half a tile fine), not in tile-sized steps - a one-tile islet stays a small oval, a one-tile strait
   stays open, and every tile stays what you painted. The minimap (radar_map1 / radar_map2.tga) is drawn again on the
-  changed tiles from the nearest tile of the same ground. New land joins the region of the
+  changed tiles from the nearest tile of the same ground. **Smooth the coast** puts an old stepped coast under the
+  brush on that curve (no tile changes). **The coast pen** (land point / water point) draws the coast by hand on
+  the heights' points - a tile is 3 x 3 of them, its middle its own, the sides and corners shared with its
+  neighbours; the map is shown point by point while the pen is picked, and touching a tile's middle turns the whole
+  tile. New land joins the region of the
   nearest land, or the one picked in *new land joins*; move borders later on the Map (Regions). Refused: drowning a
   town, port, character, fort or resource, a region's last land, a river (rub it out first) or a port's last land.
   The Ground brush keeps land as land and sea as sea.
