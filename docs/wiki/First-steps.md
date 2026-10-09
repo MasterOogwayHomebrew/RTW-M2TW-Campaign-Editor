@@ -11,6 +11,8 @@
 Every change waits until you press **Preview changes** (shows every file and line) and **Apply changes**
 (writes it, with a backup). **Undo** / **Redo** step back through what you did in the window.
 
+**No scrollbars**: every list, table, page and read-only text scrolls by the mouse wheel, by **dragging** it with the left button (it follows the mouse, up / down and left / right) and by the **middle button**: press the wheel and move the mouse - the further from where you pressed, the faster it scrolls, both ways (held: it stops when you let go; a click: it goes on until the next click or Esc). A text you can type in keeps the left drag for selecting words. The map is as before (the right button moves it).
+
 ## Medieval II
 
 Medieval II keeps most data in `packs`. Load the game folder (or a Kingdoms campaign's folder, such as `mods/british_isles`) and the tool offers to

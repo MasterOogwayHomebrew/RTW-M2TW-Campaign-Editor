@@ -167,6 +167,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 No scrollbars: lists, tables and pages scroll by a left drag (both ways) and the middle button's autoscroll
 - 📦 New mod folder on the plain game makes a thin mod (only what you change; the whole map folder at the first map change); the editor asks once before writing into a mod it did not make
 - 📦 Recolour: an area of like colour painted with one click (a quick select beside the brush)
 - 📦 Recolour into black / white looks like the game's own: a battle texture starts from the nearest-coloured faction's texture of the model (the artist's black / white, folds and faces kept)
