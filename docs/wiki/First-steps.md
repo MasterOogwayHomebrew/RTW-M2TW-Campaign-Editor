@@ -6,7 +6,7 @@
    itself; **Mod** at the top lists every mod of the game folder.
 3. Pick the **campaign** (usually `imperial_campaign`).
 4. Choose the work at the top: **Map editor** (its **Terrain** tab paints the ground, rivers and climates, its
-   **Coast & heights** tab the coast and the heights), **New faction**, **Edit faction**, **Unit editor**, **Building editor** or **Character editor**.
+   **Coast & heights** tab the coast and the heights), **Faction editor** (its tabs **Edit faction** and **New faction**), **Unit editor**, **Building editor** or **Character editor**.
 
 Every change waits until you press **Preview changes** (shows every file and line) and **Apply changes**
 (writes it, with a backup). **Undo** / **Redo** step back through what you did in the window.
