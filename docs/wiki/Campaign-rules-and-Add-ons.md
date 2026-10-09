@@ -51,7 +51,8 @@ load every `.nut` in `script/modules` by themselves. The script is kept in the e
 UPPER_CASE `local NAME = value` lines at the top (true / false = a tick, a whole number, a number like 3.0, "text", a list
 `["a", "b"]`, a set `{ a = true }`), with the `//` comment beside or above each as its help. Put it in, Update, Take
 it out work as for the built-in ones (a backup each time). **Share...** saves it as a zip (with your settings or as
-it came) plus a README - give it to others. **Remove from the list** forgets an added one. Only add scripts from
+it came) plus a README - give it to others. **Delete from the editor...** deletes an added one (or a module made in the Module builder) from the editor's list
+- and, when it is put into the loaded game, asks whether to take it out of the game too. Only add scripts from
 people you trust: a script runs inside the game.
 
 For authors, optional header lines make it nicer: `// @title Border Tolls`, `// @game rome|medieval2|both`,
