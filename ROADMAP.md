@@ -170,7 +170,7 @@ timeline
 - 📦 Recolour into black / white looks like the game's own: a battle texture starts from the nearest-coloured faction's texture of the model (the artist's black / white, folds and faces kept)
 - 📦 The test mod's report lists the steps to look at in the game first, the ones already seen working below
 - 📦 Terrain: Land and sea makes a smooth coast like the games' own (half-tile curve, islets and straits kept); the brush outline follows while painting
-- 📦 Terrain: 'Smooth the coast' brush and the coast pen (by point, the map shown by point)
+- 📦 Terrain: the shape brush - a coast drawn where you want it, smooth in the game (heights by distance from the edge, exact in map_heights.hgt); 'Smooth the coast' rounds a coast as a shape; the map by points + the Shore line as the game draws it; the coast pen
 - 📦 Terrain: find ground on the wrong side of the coast (land texture on the water, holes of sea in the land) and put it right under the heights; the Ground brush stays on its side of the waterline; the beach painted on land, as in both games
 - 📦 Terrain: the minimap follows painted land, sea and ground (drawn from the nearest tile of the same ground)
 - 📦 Map size: no black band after a grow (the fog's frame moves to the new edge); the minimap's border and sea follow

@@ -37,7 +37,23 @@ or off.
 
 ## What it keeps safe
 
-- **Land and sea**: turn sea into land (a new island, a longer coast) or land into sea (a bay, a strait). Land and
+- **How the game draws a coast** (why a coast painted by tiles looks like stairs): a tile is one pixel of
+  `map_regions.tga`; the heights (`map_heights.tga`, and `map_heights.hgt`, which the game reads) have a point at every
+  tile's middle, side and corner. The game cuts every square of four points into two triangles and lays the water at
+  height 0, so the shore runs where the height crosses 0 between a land and a water point - where exactly, the two
+  numbers decide. The same numbers everywhere let the shore run only along the points' grid and its diagonals (steps
+  at 90 and 45 degrees); the games' own coasts are smooth because their heights change smoothly near the water.
+- **The shape brush** (Land and sea, *shape brush: land / water* - the first pick): draw the coast where you want
+  it, round like a paint brush and not tied to the tiles. The brush keeps the coast as a shape and sets the heights
+  near the water by their distance from its edge, on one slope on both sides - so the game's shore falls exactly
+  on the edge you drew. The exact heights go into `map_heights.hgt`. The tiles follow by their middles (new land
+  joins the region of the nearest land, or the one in *new land joins*), the ground follows point by point (shallow
+  water along the new shore), and a town, port, character, fort, resource or river keeps a little land round it.
+  **Smooth the coast** rounds the coast under the brush the same way - the longer you hold, the smoother (a stepped
+  coast becomes a curve; small capes and bays ease out). While these brushes are picked the map is shown **by
+  points** (land grey, water blue, each point centred on its place), and close up a light **Shore line** shows the
+  shore exactly as the game will draw it (in every mode of the tab; the tick is beside *Find ground...*).
+- **Land and sea** (*Land* / *Sea*, by tile): turn sea into land (a new island, a longer coast) or land into sea (a bay, a strait). Land and
   sea are written in three places that must agree, so each tile changes all of them: `map_regions.tga` (the
   region's colour or the sea's), `map_ground_types.tga` (a land ground like its neighbours', or shallow sea; new land gets a ring of shallow sea:
   the 8 sea tiles round it that are deeper turn shallow) and
@@ -46,8 +62,7 @@ or off.
   depth). The coast round the painted tiles is drawn the way the games' own maps are: on a smooth curve between
   the tiles (half a tile fine), not in tile-sized steps - a one-tile islet stays a small oval, a one-tile strait
   stays open, and every tile stays what you painted. The minimap (radar_map1 / radar_map2.tga) is drawn again on the
-  changed tiles from the nearest tile of the same ground. **Smooth the coast** puts an old stepped coast under the
-  brush on that curve (no tile changes). **The coast pen** (land point / water point) draws the coast by hand on
+  changed tiles from the nearest tile of the same ground. **The coast pen** (land point / water point) draws the coast by hand on
   the heights' points - a tile is 3 x 3 of them, its middle its own, the sides and corners shared with its
   neighbours; the map is shown point by point while the pen is picked, and touching a tile's middle turns the whole
   tile. New land joins the region of the
