@@ -64,8 +64,8 @@ the campaign map - a strat model of `descr_model_strat.txt`, named per faction i
 another model in the list, **3D** shows it with the faction's texture; Preview, then Apply writes it. A faction
 that shares its entry with others (`faction a, b`) gets an entry of its own, the others keep theirs. A model the
 faction has no texture in gets a texture line (the model's first picture); after Apply its picture is listed
-below to **Replace...** like any other. Below the figures: their textures ("campaign map figure: ..."), each with
-**3D**, **Replace...** and **Save a copy...**,
+to **Replace...** like any other. Each type is ONE card: its name, the figure's list, **3D**, and the figure's
+texture ("campaign map figure: ...") with **Replace...** and **Save a copy...** under them,
 and a new faction gets copies of its own of the template's (`diplomat_macedon` -> `diplomat_epirus`), so
 replacing them never changes the template's. Both games.
 
