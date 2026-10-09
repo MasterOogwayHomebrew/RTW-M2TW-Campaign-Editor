@@ -1,6 +1,9 @@
 # Terrain editor
 
-The **Terrain** tab of the **Map editor** (beside its Map) paints the campaign map itself, tile by tile.
+The **Terrain** and **Coast & heights** tabs of the **Map editor** (beside its Map) paint the campaign map itself:
+**Terrain** has Ground, Rivers / cliffs / volcanoes and Climates, **Coast & heights** everything of `map_heights` -
+Land and sea (the coast) and Heights. They are one editor shown in two tabs: one Undo / Redo, one Apply. The Map
+tab's own switches (Layers, Colours, Edit regions, Select, Merge regions, Legend, Find) are not shown here.
 
 **Videos:** [editing rivers, fords, cliffs](https://youtu.be/z0T723riXaU) · [editing a height map](https://youtu.be/mTdRAWympuw) (both checked in the game on Rome
 and Medieval II).
