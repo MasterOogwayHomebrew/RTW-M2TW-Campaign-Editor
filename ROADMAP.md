@@ -169,6 +169,7 @@ timeline
 - 📦 Recolour into black / white looks like the game's own: a battle texture starts from the nearest-coloured faction's texture of the model (the artist's black / white, folds and faces kept)
 - 📦 The test mod's report lists the steps to look at in the game first, the ones already seen working below
 - 📦 Terrain: Land and sea makes a smooth coast like the games' own (half-tile curve, islets and straits kept); the brush outline follows while painting
+- 📦 Terrain: the minimap follows painted land, sea and ground (drawn from the nearest tile of the same ground)
 - 📦 Map size: no black band after a grow (the fog's frame moves to the new edge); the minimap's border and sea follow
 - 📦 Terrain: impassable land, always black (REX / M2EX's impassable_shrouded) - for a wasteland's land hidden for good
 - 📦 A bug report carries the list of the mod's files (names, sizes, dates, new / other size than the game's - no contents)
