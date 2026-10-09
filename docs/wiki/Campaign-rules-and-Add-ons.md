@@ -39,7 +39,9 @@ the game's copy with your changes. The game reads the rules on the next start.
 
 The **Add-ons** button beside the editors lists ready-made scripts that add something new to the game. Pick the
 settings, **Preview**, **Put it in** - a backup is made first. **Update it** changes the settings later, **Take it
-out** removes it.
+out** removes it. An add-on in the game that an earlier version of the editor put in is marked **(old)** in the
+list, and **Load** offers to put every such one in again in this version with the settings it has (one yes, a
+backup first) - an older Avoid Growth or Sack Settlement could draw the game's script console in its own font.
 
 ### Anyone's add-on (Add an add-on...)
 
