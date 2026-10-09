@@ -110,6 +110,7 @@ timeline
 - ✅ Faction limit known and raised (REX / M2EX `max_factions`) *(in-game ✓ on Rome + REX)*
 - ✅ Edit an existing faction: names, texts, colours, AI, money, playable, towns taken or given, capital, leader and heir *(in-game ✓)*
 - ✅ Garrisons and buildings per town, with the game's own cards and pictures *(in-game ✓)*
+- 📦 A faction with no town at the start (REX / M2EX: can_homeless); fewer made-up limits (recruitment slots, 99 levels, climate on sea, spin box caps)
 - 📦 Settlement level and population (the governor's building follows the size)
 - 📦 The rebels edited like any faction: armies, fleets, garrisons, towns, units (each rebel with its `sub_faction`)
 - 📦 Diplomacy: attitudes and starting relations with every other faction
