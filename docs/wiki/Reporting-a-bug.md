@@ -11,6 +11,8 @@ When the game crashes, the tool shows an error, or something looks wrong, please
    does not like), every error and warning line of the middle, and its end.
    The editor's log also holds a short picture of the loaded mod (its factions, towns, map size, which files are
    its own - counts and names, no files), so the author sees what the mod is.
+   With a mod loaded, `mod_files.txt` goes too (untick it to leave it out): the list of the mod's files - name,
+   size, date, and whether the game has the file with the same size - never their contents.
    **Anonymous**: before anything leaves, the logs lose your Windows user name (also inside folder paths), the
    computer's name, e-mail addresses, Steam IDs, IP addresses and the player's name of REX's crash report; add
    your own words to hide (your nick). **Show what is sent** shows every line that goes. The contact field is
