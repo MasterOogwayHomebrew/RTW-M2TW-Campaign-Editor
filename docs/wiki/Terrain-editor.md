@@ -8,7 +8,9 @@ and Medieval II).
 - **Ground**: low / medium / high fertility, wilderness, sparse and dense forest, hills, mountains, high
   mountains, swamp, and the three kinds of sea; **impassable land** and **impassable sea** (no army walks or sails
   there - Medieval II, whose map is full of them; Rome only with REX, which knows these ground types - not yet
-  tried in the game on Rome).
+  tried in the game on Rome); **impassable land, always black** (never walked and never seen - for the land of a
+  wasteland you want hidden for good; Rome with REX and Medieval II with M2EX, whose ground type
+  impassable_shrouded it is - not yet tried in the game).
 - **Rivers, cliffs, volcanoes...**: rivers, fords (the tiles where armies cross a river), river sources, cliffs,
   volcanoes, land bridges (Medieval II: armies walk across a narrow strait like the Bosporus - a straight strip of 3
   tiles: land, sea, land; Preview names a bent or broken one), or

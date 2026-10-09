@@ -168,6 +168,7 @@ timeline
 - 📦 Recolour: an area of like colour painted with one click (a quick select beside the brush)
 - 📦 Recolour into black / white looks like the game's own: a battle texture starts from the nearest-coloured faction's texture of the model (the artist's black / white, folds and faces kept)
 - 📦 The test mod's report lists the steps to look at in the game first, the ones already seen working below
+- 📦 Terrain: impassable land, always black (REX / M2EX's impassable_shrouded) - for a wasteland's land hidden for good
 - 📦 A bug report carries the list of the mod's files (names, sizes, dates, new / other size than the game's - no contents)
 - 📦 A deleted town's region can stay as a wasteland (Rome with REX, Medieval II with M2EX): nobody's land, no neighbour grows; right click its land to give it its town again; a map cut leaves one too
 - 📦 Faster on a big mod: many towns deleted at once (21 s -> under 2 s on HLR), the town window about 5 times faster and smaller (it remembers its size)
