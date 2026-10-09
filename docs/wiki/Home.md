@@ -30,8 +30,8 @@ All on my YouTube channel **[Pfadfinder](https://www.youtube.com/channel/UC8j5rv
 |---|---|
 | ![Edit a faction](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/edit_faction.png) | ![The campaign map](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/map.png) |
 | **Edit a faction** | **The campaign map** |
-| ![Terrain editor](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/terrain_editor.png) | ![Unit editor](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/unit_editor.png) |
-| **Terrain editor** | **Unit editor: model and voice** |
+| ![Terrain editor](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/terrain_editor.png) | ![Units](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/unit_editor.png) |
+| **Terrain editor** | **Units: model and voice** |
 
 ## Made to be easy
 

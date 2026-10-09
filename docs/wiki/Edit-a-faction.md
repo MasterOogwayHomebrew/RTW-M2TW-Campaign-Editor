@@ -1,11 +1,11 @@
 # Edit a faction
 
-**Faction editor** at the top, its **Edit faction** tab (the first), then pick the faction. The window fills with what it is now; change what you
+**Factions** at the top, its **Edit faction** tab (the first), then pick the faction. The window fills with what it is now; change what you
 want. Untouched fields and towns stay exactly as they are.
 
 **The rebels** (`slave`) are in the list too: their armies, fleets, agents, garrisons, towns, buildings and
 units are edited like any faction's. A rebel has a `sub_faction` - the faction whose look and name list it
-uses: a new rebel army (Map editor, right click) asks for it, a captain for an empty rebel town takes the nearest rebel's.
+uses: a new rebel army (Maps, right click) asks for it, a captain for an empty rebel town takes the nearest rebel's.
 The rebels are never playable and have no capital, leader or heir.
 
 ## Edit faction tab (the faction itself)
@@ -15,7 +15,7 @@ The rebels are never playable and have no capital, leader or heir.
   mod at once: the campaign, units, buildings, names, banners, models, texts' keys; its pictures are copied under
   the new name. Scripts that name it are listed, not changed (code is changed by hand). One write, one backup -
   **Undo this write** puts it all back.
-- **Towns**: **Towns on the map...** opens the Map editor - a click on a town adds it (their rebels leave; another
+- **Towns**: **Towns on the map...** opens Maps - a click on a town adds it (their rebels leave; another
   owner's characters go to its other towns), another click takes it out to give it to the faction in **Removed
   towns go to** (rebels by default); **Done** brings you back, nothing lost. **Capital on the map...**: one click.
 - **Capital** puts that town first in the faction's block.
@@ -29,7 +29,7 @@ The rebels are never playable and have no capital, leader or heir.
 - A town's garrison opens as it stands now (marked *unchanged* until you click a card).
 - The faction's armies, fleets and agents already on the map: change units, remove (right click its row) an agent, captain or
   admiral (never a family member).
-- New armies, agents and fleets: the Map editor (right click the map); a double click on a row opens the Map
+- New armies, agents and fleets: Maps (right click the map); a double click on a row opens the Map
   editor on it.
 
 ## Buildings
@@ -65,5 +65,5 @@ bailey, a village city none). Only the kind's own buildings are offered afterwar
 
 **Preview changes**, then **Apply changes**. One Apply writes every tab at once, with a backup. Picking
 another faction with changes not written asks: apply them, drop them, or stay. **New faction** and **Edit faction**
-are the first two tabs (Edit faction is the old Faction tab); going to the Map editor, the other one or any other editor drops nothing - each keeps
+are the first two tabs (Edit faction is the old Faction tab); going to Maps, the other one or any other editor drops nothing - each keeps
 its work not written yet until you come back.

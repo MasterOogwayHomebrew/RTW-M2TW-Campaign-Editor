@@ -5,7 +5,7 @@ the game at once, so you can test every change after that straight away. The tem
 
 ## Steps
 
-1. **Faction editor** at the top, its **New faction** tab; load the mod, pick the campaign.
+1. **Factions** at the top, its **New faction** tab; load the mod, pick the campaign.
 2. **Template**: the faction to copy. The new one gets its culture, units, buildings, character models, name
    lists, trait triggers and pictures.
 3. **Internal name**: lower case, no spaces, for example `epirus`.
@@ -15,7 +15,7 @@ the game at once, so you can test every change after that straight away. The tem
    used); Events... (top row) changes it afterwards.
 4. **Name (full)**, **Name (short)**, **Adjective**: for example `Kingdom of Epirus`, `Epirus`, `Epirote`.
    The copied texts use them ("Epirote Spy", "Your forces attack an army of Epirus").
-5. **Starting settlements**: **Towns on the map...** (under Capital) opens the Map editor - click the towns, **Done**
+5. **Starting settlements**: **Towns on the map...** (under Capital) opens Maps - click the towns, **Done**
    brings you back (nothing lost); **Capital on the map...** picks the capital with one click. A double click (or **Rename...**) changes the names players see of a region and its town. A new region painted on the [[Campaign map]] can be a starting town too.
 6. **Leader** (and the heir if you like): a first name and surname **from the faction's name list** - the
    game crashes on a name that has no text, so the tool only accepts listed names. The new faction copies the

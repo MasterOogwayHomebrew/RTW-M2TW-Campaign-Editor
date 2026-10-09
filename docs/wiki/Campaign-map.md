@@ -12,7 +12,7 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
 - **Delete from the map** (right click): a resource, a fort, a watchtower or a wonder goes with its line; a
   character of any faction goes with everything under him (his army or fleet); one placed but not written yet is
   simply taken out. Refused, in plain words: a faction's leader or heir, and a member of the family tree (take him
-  off the tree in the Character editor first). A town is not deleted alone - every region of the map needs its
+  off the tree in Characters first). A town is not deleted alone - every region of the map needs its
   town; give it to another faction instead (**Give this town to**).
 - A town or character sign grows as the mouse comes near it - softly, the nearer the bigger, and from further away
   when the map is zoomed far out (the signs are small then), so the mouse need not hit the sign itself.
@@ -42,7 +42,7 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   own opens in Units & armies); **on a fort**, the army that holds it (a fort has no buildings - an empty one says how
   to man it: drag an army onto it).
 - **A double click on a town** (or the right click's **This town...**) opens the town's own window, both games, any
-  owner (the Map editor too). A region with no town in descr_strat.txt (the rebel village the game makes by itself)
+  owner (Maps too). A region with no town in descr_strat.txt (the rebel village the game makes by itself)
   shows a short note instead, with an owner to pick and **Write its town** (the rebels too) - after the next Apply it
   opens like any town. Otherwise the window holds: its **owner** (hand it to another faction), **city or castle** (Medieval II), **level**,
   **population**, and two tabs that switch the same window: **Buildings** - the Buildings tab's own editor (the
@@ -64,9 +64,9 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
 - The line under the map describes the tile under the mouse: region, owner, ground, and whether an army may
   stand there.
 
-## Map editor
+## Maps
 
-**Map editor** (the first button of the top row) shows the map alone - no faction to pick, every faction alike:
+**Maps** (the first button of the top row) shows the map alone - no faction to pick, every faction alike:
 drag any faction's towns, ports, armies, agents and fleets with the left button; right click a town to give it to
 any faction, an army or a fleet for **Its units...** (the card picker in a window of its own - a general keeps his
 bodyguard), a character to delete him, an empty tile for a new army, agent or fleet of any faction. Resources, forts,
@@ -115,7 +115,7 @@ refusals as deleting a town (the two must touch; a faction's last town, an event
 
 ## Towns and characters
 
-- Picking a faction's towns (**Towns on the map...** in the Faction editor): a click on a town adds it or takes it
+- Picking a faction's towns (**Towns on the map...** in Factions): a click on a town adds it or takes it
   out, **Done** goes back.
 - A left drag moves characters, towns and ports. The target turns green or red: an
   army needs land it may stand on (no sea, mountains, dense forest, river, ford or cliff) or a town no other
@@ -297,7 +297,7 @@ the map moved to its block's middle), 2 smoothing (coast, region borders - a bor
 ground, climates), 3 heights (every sea point under the water and no land point under it: no saw teeth, no holes;
 the ground's sea follows), 4 rivers (one pixel wide, on land only, ending on the last land tile at the water),
 5 objects (towns, ports, armies, agents, fleets, resources on tiles they may stand on). Each step is written with
-a backup and checked; between the steps the map is in the Map editor - look at it and fix what you want by hand
+a backup and checked; between the steps the map is in Maps - look at it and fix what you want by hand
 (borders after step 2, the coast before step 3, the ground after step 3), then the next step. Steps 2 and 3 take a
 minute or two. The window may be closed between the steps: opened again it goes on where it stopped. **Show every
 change...** lists the next step's files first; **Put the old map back** undoes every step at once (later: Tools >
@@ -319,7 +319,7 @@ removed. One backup; Put the old map back (or Restore) gives it all back.
 
 **Look it over yourself.** The new map is drawn from the old one by rules, and no rule gets every map 100 % right -
 here and there a coast, a river or a border can come out a pixel off. When the map is written, a message says what
-to look at in the Map editor and in the game: coasts and river mouths (a stray pixel of land in the water or of water
+to look at in Maps and in the game: coasts and river mouths (a stray pixel of land in the water or of water
 on the land), navigable rivers and narrow straits (still open), borders along rivers, every port on the coast, every
 town with its own land round it, mountains and passes. Small things are quick to fix by hand: the Map tab's
 **Paint with** brush for borders, the Terrain tab's Land and sea, heights and ground brushes for the rest. The
@@ -347,7 +347,7 @@ ground, climates, features, fog, roughness, the campaign's `disasters.tga` and r
 size), or cuts them off with a number below 0. **Drag the edges on the map itself**: while the window is open the
 map's edges are an orange frame with a grip on each side - drag one out and the new sea shows blue, drag it in and
 the part cut off shows dark; the window's numbers follow the mouse (typed numbers move the frame too). Paint land on
-the new water with the Map editor and the Terrain tab.
+the new water with Maps and the Terrain tab.
 Towns, ports, armies, agents, resources, forts, events and the campaign's scripts move with the map (grown at the
 left or the bottom, every place moves by as many tiles); distances and rectangle sizes in scripts stay.
 `descr_terrain.txt` gets the new size and `map.rwm` goes. What stands on the part cut off - a town, a port, an army,
