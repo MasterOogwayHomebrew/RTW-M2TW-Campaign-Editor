@@ -1,8 +1,13 @@
 # Faction art
 
 The **Art** tab lists every picture of the faction - buttons, symbols, the loading-screen logo, banners, the
-captain's card, the leader picture, the campaign-select map - each with where the game shows it and what it
-needs (size and format).
+captain's card, the victory maps - each with where the game shows it and what it needs (size and format).
+
+The two pictures of the campaign-select screen - **the map with the faction's land lit** (`map_<faction>.tga`
+in the campaign folder) and **the leader's face** (`leader_pic_<faction>.tga`, Rome) - sit on the **Edit
+faction / New faction** tab beside the description, as the game shows them; Replace... there works as below.
+In Rome only a faction with a `leader_pic_<faction>.tga` shows a face on that screen (vanilla: the three Roman
+families); vanilla Medieval II has no such picture.
 
 ## Replacing a picture
 

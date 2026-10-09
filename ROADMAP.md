@@ -110,6 +110,7 @@ timeline
 - ✅ Faction limit known and raised (REX / M2EX `max_factions`) *(in-game ✓ on Rome + REX)*
 - ✅ Edit an existing faction: names, texts, colours, AI, money, playable, towns taken or given, capital, leader and heir *(in-game ✓)*
 - ✅ Garrisons and buildings per town, with the game's own cards and pictures *(in-game ✓)*
+- 📦 The campaign-select map and the leader's face on the faction tab, beside the description (Replace... there)
 - 📦 Add-on: Upkeep x 2 - every unit's upkeep multiplied, put in and taken out (any mod, both games)
 - 📦 A faction with no town at the start (REX / M2EX: can_homeless); fewer made-up limits (recruitment slots, 99 levels, climate on sea, spin box caps)
 - 📦 Settlement level and population (the governor's building follows the size)
