@@ -62,4 +62,6 @@ bailey, a village city none). Only the kind's own buildings are offered afterwar
 - **Family**: characters, traits, the family tree - see [[Characters and portraits]].
 
 **Preview changes**, then **Apply changes**. One Apply writes every tab at once, with a backup. Picking
-another faction with changes not written asks: apply them, drop them, or stay.
+another faction with changes not written asks: apply them, drop them, or stay. **Edit faction** and **New faction**
+sit on the row of the tabs; going to the Map editor, the other one or any other editor drops nothing - each keeps
+its work not written yet until you come back.
