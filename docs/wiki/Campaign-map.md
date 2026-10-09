@@ -39,7 +39,9 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   out** or **Take an agent out** (each agent there by name and what he is), then click a free tile (Esc or a right
   click stops).
 - **A double click on an army or a fleet** opens its units (any faction's in a window of its own; in Edit faction your
-  own opens in Units & armies); **on a fort**, the army that holds it (a fort has no buildings - an empty one says how
+  own opens in Units & armies) - **Suggest** there draws an army at random from the units the faction trains (a
+  fleet: its ships) by the numbers beside it: how many units, their upkeep together at most (0: no limit; kept for
+  next time); **on a fort**, the army that holds it (a fort has no buildings - an empty one says how
   to man it: drag an army onto it).
 - **A double click on a town** (or the right click's **This town...**) opens the town's own window, both games, any
   owner (Maps too). A region with no town in descr_strat.txt (the rebel village the game makes by itself)
@@ -48,7 +50,7 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   **population**, and two tabs that switch the same window: **Buildings** - the Buildings tab's own editor (the
   game's pictures, a level picked per chain, checked the way the game checks it: too small a town, a castle-only
   building in a city, one temple per town) - and **Garrison** - the Units & armies tab's card picker (click a card to
-  add it, a garrison card to take it out; **Suggest** picks units the owner trains there; a named character keeps
+  add it, a garrison card to take it out; **Suggest** picks units the owner trains there - how many and the upkeep limit beside it; a named character keeps
   his bodyguard; a town nobody holds gets a captain; a town whose garrison is written in its own block -
   `garrisoned_army`, no captain, as some mods do for every town - shows that garrison and keeps it there; a town
   with nobody on its tile says who stands next to it, outside the walls). **Preview**, then **Keep for Apply**: the changes go into the
