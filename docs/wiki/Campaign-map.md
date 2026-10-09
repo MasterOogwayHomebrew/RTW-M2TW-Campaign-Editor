@@ -32,7 +32,7 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   army or fleet (its general's bodyguard) and is written with the next Apply.
   While a sign is picked it rides under the mouse (framed green where it may go, red where not - the reason beside
   it). Click the button again to stop; hiding the legend puts the picked sign down too. The legend is open on the
-  first start (**Legend** on the bar hides it).
+  first start (**Signs and tools** on the bar hides it; it scrolls by the wheel or a drag).
   Every named character shows as a general's flag, as in the game (family members too); an army in a town stands as a flag on the town's roof (no army, no flag). Towns, ports and characters grow under the mouse.
 - **An army in a town** is one flag on the town's roof - part of the town's sign (a square cloth with a triangle cut
   into its right edge, at the sign's upper right corner); it is not dragged: right click the town > **Take the army
@@ -59,8 +59,10 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   agent / fleet here** with the land's owner already picked (a new army's **Make him a general** gives him the
   faction's general's bodyguard as his first unit - a general with his own name, not a captain); on a new character
   not written yet - **Take it out**.
-- **Colours** (on the map's bar, also in Layers): one colour mode at a time - **Political** (the owners), **Diplomacy** (how the faction stands towards each owner), **Religion** (Medieval II: each region in its main religion's colour, paler where the majority is small; the legend counts the regions), **None** (the ground only).
-- **Layers**: borders, town names, ports, characters, resources, relief, rivers, a tile grid when zoomed in.
+- **Layers** (a panel under its button - it stays open while you tick, a second press or a click aside closes it):
+  **Colours**, one mode at a time - **Political** (the owners), **Diplomacy** (how the faction stands towards each owner), **Religion** (Medieval II: each region in its main religion's colour, paler where the majority is small; the legend counts the regions), **None** (the ground only);
+  **Shown**: borders, town names, characters, resources, relief, rivers, a tile grid when zoomed in. Ports are
+  always drawn.
 - The line under the map describes the tile under the mouse: region, owner, ground, and whether an army may
   stand there.
 
@@ -291,7 +293,7 @@ removes it). Towns the mod's own campaign script renames are shown grey and are 
 
 ## Make the map 3 x bigger
 
-**Bigger map (x3)...** (top row) turns every tile into a 3 x 3 block (both games). Its window says the map's
+**Bigger map (x3)...** (on the map's bar, beside the zoom) turns every tile into a 3 x 3 block (both games). Its window says the map's
 size now and after, asks for its values - fields for the hills and mountains (times higher), the smoothing of the lines (coast, rivers drawn as sea, borders, ground, climates: 1 smooth as water finds its level - the default, 0.67 lighter, 0 winding with every old tile's corner kept), narrow rivers kept open, crags on mountains, river valleys and volcano cones; each shows its default and range, a ? says what was tried in the game, **Back to the defaults** resets them; the shore by the water is the games' own and is not among them - and leads through **five steps**, one press each (**Do step N**): 1 the grid (every tile a 3 x 3 block, everything on
 the map moved to its block's middle), 2 smoothing (coast, region borders - a border along a river stays on it -,
 ground, climates), 3 heights (every sea point under the water and no land point under it: no saw teeth, no holes;
