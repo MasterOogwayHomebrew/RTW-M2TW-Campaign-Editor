@@ -27,7 +27,8 @@ author in one click ([video](https://youtu.be/7MbYR9ywNsI)). That is the fastest
   (or keep the old heights - a choice in the window). The sea ground types follow the heights' new coast.
 - **Rivers**: 1 pixel wide (the game crashes on a 2-pixel river), drawn the way rivers run - bends rounded, gentle
   meanders on straight runs; a river mouth runs on to the new coast and stops there (none on the sea).
-- **Beach**: one tile wide along the new coast, as in the games' own maps.
+- **No beach and no cliffs** are written on the bigger map (both looked wrong in the game) - paint them with the
+  Terrain editor where wanted.
 - **Ground and climates by tile**: every new tile the ground type and climate of the old tile it lies in, the edges
   between kinds winding, no 3 x 3 steps.
 - **Pictures**: `map_trade_routes`, fog, roughness, disasters and radar maps scaled with exact colours.
@@ -170,6 +171,7 @@ timeline
 - 📦 The test mod's report lists the steps to look at in the game first, the ones already seen working below
 - 📦 Terrain: Land and sea makes a smooth coast like the games' own (half-tile curve, islets and straits kept); the brush outline follows while painting
 - 📦 Terrain: 'Smooth the coast' brush and the coast pen (by point, the map shown by point)
+- 📦 Terrain: find ground on the wrong side of the coast (land texture on the water, holes of sea in the land) and put it right under the heights; the Ground brush stays on its side of the waterline; the beach painted on land, as in both games
 - 📦 Terrain: the minimap follows painted land, sea and ground (drawn from the nearest tile of the same ground)
 - 📦 Map size: no black band after a grow (the fog's frame moves to the new edge); the minimap's border and sea follow
 - 📦 Terrain: impassable land, always black (REX / M2EX's impassable_shrouded) - for a wasteland's land hidden for good

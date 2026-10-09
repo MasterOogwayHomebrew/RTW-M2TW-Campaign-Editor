@@ -6,7 +6,7 @@ The **Terrain** tab of the **Map editor** (beside its Map) paints the campaign m
 and Medieval II).
 
 - **Ground**: low / medium / high fertility, wilderness, sparse and dense forest, hills, mountains, high
-  mountains, swamp, and the three kinds of sea; **impassable land** and **impassable sea** (no army walks or sails
+  mountains, swamp, beach (land: both games lay it on the land tiles along the coast), and the three kinds of sea; **impassable land** and **impassable sea** (no army walks or sails
   there - Medieval II, whose map is full of them; Rome only with REX, which knows these ground types - not yet
   tried in the game on Rome); **impassable land, always black** (never walked and never seen - for the land of a
   wasteland you want hidden for good; Rome with REX and Medieval II with M2EX, whose ground type
@@ -53,7 +53,15 @@ or off.
   tile. New land joins the region of the
   nearest land, or the one picked in *new land joins*; move borders later on the Map (Regions). Refused: drowning a
   town, port, character, fort or resource, a region's last land, a river (rub it out first) or a port's last land.
-  The Ground brush keeps land as land and sea as sea.
+  The Ground brush keeps land as land and sea as sea, and on the coast it paints only the points on its own side of
+  the waterline (a tile's 3 x 3 block reaches over the coast, which runs between the tiles) - no land texture on the
+  water, no holes of sea in the land.
+- **Find ground on the wrong side of the coast** (under the Land and sea brushes): rings every point where the
+  ground (`map_ground_types.tga`) and the heights (`map_heights.tga`) disagree - a land ground on the water or a sea
+  ground in the land - and says how many of each; on a yes each point takes the ground round it on its own side.
+  The heights lead and are not changed; kept until Apply, **Undo stroke** takes it back. The games' own maps have
+  next to none (Rome 0, Medieval II 18 by lakes in the hills), so what it finds is most likely a mod's own painting
+  or an older editor's.
 - Nothing the game refuses is put under a town, port or character.
 - **Rivers**: the game follows a river side to side from where it joins the sea, a river source or another
   river, and stops where two river tiles touch only by a corner - everything past that point is not drawn.
