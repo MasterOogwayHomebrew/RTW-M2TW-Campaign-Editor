@@ -115,7 +115,8 @@ refusals as deleting a town (the two must touch; a faction's last town, an event
 
 ## Towns and characters
 
-- A click on a town adds it to **Chosen** or takes it out.
+- Picking a faction's towns (**Towns on the map...** in the Faction editor): a click on a town adds it or takes it
+  out, **Done** goes back.
 - A left drag moves characters, towns and ports. The target turns green or red: an
   army needs land it may stand on (no sea, mountains, dense forest, river, ford or cliff) or a town no other
   army holds; a fleet needs sea; an agent any land.

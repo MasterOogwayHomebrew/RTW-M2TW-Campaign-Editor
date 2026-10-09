@@ -15,13 +15,13 @@ the game at once, so you can test every change after that straight away. The tem
    used); Events... (top row) changes it afterwards.
 4. **Name (full)**, **Name (short)**, **Adjective**: for example `Kingdom of Epirus`, `Epirus`, `Epirote`.
    The copied texts use them ("Epirote Spy", "Your forces attack an army of Epirus").
-5. **Starting settlements**: filter by owner (for example `slave` for rebel towns), **Add >** (or Enter) to add,
-   pick the capital. A double click (or **Rename...**) changes the names players see of a region and its town. A new region painted on the [[Campaign map]] can be a starting town too.
+5. **Starting settlements**: **Towns on the map...** (under Capital) opens the Map editor - click the towns, **Done**
+   brings you back (nothing lost); **Capital on the map...** picks the capital with one click. A double click (or **Rename...**) changes the names players see of a region and its town. A new region painted on the [[Campaign map]] can be a starting town too.
 6. **Leader** (and the heir if you like): a first name and surname **from the faction's name list** - the
    game crashes on a name that has no text, so the tool only accepts listed names. The new faction copies the
    template's list, or has one of its own: **Name list...** (below).
 7. **Victory** (under the leader): what the player must do to win - starts as the template's.
-   The other tabs if you want: garrisons, buildings, map, diplomacy (alliances and wars at the start), [[Faction art]].
+   The other tabs if you want: garrisons, buildings, diplomacy (alliances and wars at the start), [[Faction art]].
 8. **Preview changes**, then **Create faction**.
 9. Start a **new** campaign - old saves do not know the faction.
 

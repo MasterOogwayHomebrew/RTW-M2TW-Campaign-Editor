@@ -5,7 +5,7 @@ want. Untouched fields and towns stay exactly as they are.
 
 **The rebels** (`slave`) are in the list too: their armies, fleets, agents, garrisons, towns, buildings and
 units are edited like any faction's. A rebel has a `sub_faction` - the faction whose look and name list it
-uses: **+ Army** asks for it (**Rebels of**), a captain for an empty rebel town takes the nearest rebel's.
+uses: a new rebel army (Map editor, right click) asks for it, a captain for an empty rebel town takes the nearest rebel's.
 The rebels are never playable and have no capital, leader or heir.
 
 ## Edit faction tab (the faction itself)
@@ -15,8 +15,9 @@ The rebels are never playable and have no capital, leader or heir.
   mod at once: the campaign, units, buildings, names, banners, models, texts' keys; its pictures are copied under
   the new name. Scripts that name it are listed, not changed (code is changed by hand). One write, one backup -
   **Undo this write** puts it all back.
-- **Towns**: add towns to **Chosen** to take them (their rebels leave; another owner's characters go to its
-  other towns); take towns out to give them to the faction in **Removed towns go to** (rebels by default).
+- **Towns**: **Towns on the map...** opens the Map editor - a click on a town adds it (their rebels leave; another
+  owner's characters go to its other towns), another click takes it out to give it to the faction in **Removed
+  towns go to** (rebels by default); **Done** brings you back, nothing lost. **Capital on the map...**: one click.
 - **Capital** puts that town first in the faction's block.
 - **Leader** and **heir**: new names (from the faction's name list) and ages.
 - **Name list...**: the faction's men's names, surnames and women's names, typed in three steps (see
@@ -28,7 +29,8 @@ The rebels are never playable and have no capital, leader or heir.
 - A town's garrison opens as it stands now (marked *unchanged* until you click a card).
 - The faction's armies, fleets and agents already on the map: change units, remove (right click its row) an agent, captain or
   admiral (never a family member).
-- **+ Army**, **+ Agent**, **+ Fleet** add new characters; **Place on map** puts them on a tile.
+- New armies, agents and fleets: the Map editor (right click the map); a double click on a row opens the Map
+  editor on it.
 
 ## Buildings
 
