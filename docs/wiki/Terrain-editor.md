@@ -26,7 +26,8 @@ and Medieval II).
   edge fades out. **Smooth** evens out bumps, **Level to height** brings the land towards the height set
   beside it (a right click is an eyedropper: it picks the height of the point under the mouse). The
   **strength** slider sets how fast. The heights picture has 2 x 2 points a tile (it is 2 x the map + 1 wide)
-  and the map shows them as they are; **brush size 1 is one point**, each size one point wider. The line under
+  and the map shows them as they are; **brush size n is n points across**, round and snapped to the points like a pixel-art pencil (1 = one point,
+  2 = a square of 2 x 2, 3 = 3 x 3, 4 = a round 4 x 4...; up to 24); the outline shows exactly the points it takes. The line under
   the map gives the point under the mouse exactly: land - its grey (0 = the lowest land, still above the
   water) and about how many metres; water - its blue and the sea floor's depth (the water's surface is 0); and
   what `map_heights.hgt` holds there. While this mode is on the map shows the heights as the file has them:
