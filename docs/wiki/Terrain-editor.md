@@ -44,7 +44,8 @@ or off.
   numbers decide. The same numbers everywhere let the shore run only along the points' grid and its diagonals (steps
   at 90 and 45 degrees); the games' own coasts are smooth because their heights change smoothly near the water.
 - **The shape brush** (Land and sea, *shape brush: land / water* - the first pick): draw the coast where you want
-  it, round like a paint brush and not tied to the tiles. The brush keeps the coast as a shape and sets the heights
+  it, round like a paint brush and not tied to the tiles - at every size, size 1 too, its circle is centred on
+  the mouse. The brush keeps the coast as a shape and sets the heights
   near the water by their distance from its edge, on one slope on both sides - so the game's shore falls exactly
   on the edge you drew. The exact heights go into `map_heights.hgt`. The tiles follow by their middles (new land
   joins the region of the nearest land, or the one in *new land joins*), the ground follows point by point (shallow
