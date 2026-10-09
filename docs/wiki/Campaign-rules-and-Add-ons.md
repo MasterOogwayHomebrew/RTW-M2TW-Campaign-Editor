@@ -148,6 +148,15 @@ undoes it); **Share...** saves it as a zip. A saved module opens in the builder 
 Module builder...**. Each time it acts, the game's log (`system.log.txt`) gets a line starting with its name, like
 `[HELP_WHEN_BROKE]`.
 
+### Upkeep x 2 (both games, no engine needed)
+
+No more huge armies in every town: every unit's upkeep in `export_descr_unit.txt` is multiplied (x 2 by default -
+1.5, 3, any number). The game reads the upkeep from that file, so the recruitment scroll and the army cards show
+the real, higher numbers - only a big income keeps a big army. It works on any mod of both games and needs no
+script. **Take it out** puts back exactly the old numbers (they are kept in `CampaignEditor_upkeep.json` beside the
+file); a unit you changed since stays as you made it and is named. Putting it in again with another number starts
+from the old numbers, not from the doubled ones.
+
 ### Sack Settlement (Rome + REX)
 
 A 4th choice on the capture scroll, under Occupy / Enslave / Exterminate. The town is exterminated the game's own
