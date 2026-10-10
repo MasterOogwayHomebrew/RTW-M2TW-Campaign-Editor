@@ -49,7 +49,7 @@ backup first) - an older Avoid Growth or Sack Settlement could draw the game's s
 
 **Add an add-on...** takes a Squirrel script (`.nut`) or a zip with one - REX (Rome) and M2EX (Medieval II) both
 load every `.nut` in `script/modules` by themselves. The script is kept in the editor's own folder
-(`CampaignEditor_addons` beside the exe) and shown in the list; its settings are found by themselves: the
+(`CampaignEditor\CampaignEditor_addons` beside the exe) and shown in the list; its settings are found by themselves: the
 UPPER_CASE `local NAME = value` lines at the top (true / false = a tick, a whole number, a number like 3.0, "text", a list
 `["a", "b"]`, a set `{ a = true }`), with the `//` comment beside or above each as its help. Put it in, Update, Take
 it out work as for the built-in ones (a backup each time). **Share...** saves it as a zip (with your settings or as

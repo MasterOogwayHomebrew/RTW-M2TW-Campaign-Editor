@@ -17,15 +17,18 @@ It then finds the game and every mod in it by itself (Rome: `<game>\<mod>`, Medi
 and whether REX / M2EX is installed (the status line says so after Load). Have both games? Load a mod of the
 other one once with **Browse...** - from then on the Mod list shows the mods of both.
 
-Beside the exe it keeps two things of its own:
+Beside the exe, in a folder of its own - `CampaignEditor` (not among the game's files) - it keeps what is its own:
 
 - `CampaignEditor_settings.json` - what it remembers between starts;
 - `CampaignEditor_logs` - its log (`CampaignEditor.log`), the logs zips, and `sessions`: on every close the
   session's log and a copy of the game's newest `system.log.txt` (as `game_system.log.txt` - the game's own log, its
   errors are the game's, not the editor's) are saved there by themselves. **Report a bug** sends them.
 
-**An update** is simply the new exe in the same place; the settings stay. An older version's
-`RTW-M2TW-Campaign-Editor-files` folder is moved in by itself.
+- `CampaignEditor_addons` - add-ons you added.
+
+**An update** is simply the new exe in the same place; the settings stay. Versions up to 0.33 kept these files right
+beside the exe: there they keep working, and the editor asks once whether to move them into `CampaignEditor` (a
+yes moves them, nothing lost). An older version's `RTW-M2TW-Campaign-Editor-files` folder is moved in by itself.
 
 ## Going back to an older version
 

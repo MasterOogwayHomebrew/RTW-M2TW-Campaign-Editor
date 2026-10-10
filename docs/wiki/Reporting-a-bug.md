@@ -19,7 +19,7 @@ When the game crashes, the tool shows an error, or something looks wrong, please
    optional; with **remember it** ticked (the default) every next report fills it in by itself - it is kept in
    Tools > Settings > Reports too, and unticking it forgets it.
    Rather send it yourself? **Tools -> Save logs (zip)** (or Save as zip in the report window) - the same logs, the
-   names cut out, saved in `CampaignEditor_logs` next to the exe.
+   names cut out, saved in `CampaignEditor\CampaignEditor_logs` next to the exe.
 2. **A video or a screenshot** of what you did and what went wrong.
 3. Which game and mod (Rome / REX / BI / Medieval II / M2EX, the mod's name) and the editor's version (in the
    window's title).
