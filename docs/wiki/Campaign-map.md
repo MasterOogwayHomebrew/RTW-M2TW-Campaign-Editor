@@ -245,7 +245,7 @@ resources are the ones on its land; **Region tags (hidden resources)...** edits 
 
 ## Medieval II
 
-Religions per region (**Religions...**); castles; agents such as merchants, priests and princesses.
+Religions per region (a town's right click on the Map: **Religions of <town>...**; with **Select**, the same shares for every selected region at once: **Religions of the N selected regions...**; or the Religions work, several lines picked); castles; agents such as merchants, priests and princesses.
 
 **A faction's religion** (the Religion field of the Faction form) pulls what hangs on it along: the faction leaves
 the old faith's buildings (temples and that faith's guilds - the `religion X` chains of export_descr_buildings.txt,
@@ -254,7 +254,7 @@ of its own culture first, as a model), and its priest, bishop and cardinal on th
 faction's figures. Preview lists every line; units and traits of the old faith (crusaders, jihad, the Pope's
 favour) stay as they are - Preview says so.
 
-**New religion...** (Map tab, Regions) adds a religion of your own - e.g. Judaism - everywhere the game needs
+**New religion...** (a town's right click on the Map, or the Religions work) adds a religion of your own - e.g. Judaism - everywhere the game needs
 it: descr_religions.txt (its name and symbol), descr_religions_lookup.txt, text/religions.txt (without its
 text the game crashes silently), its symbol in ui/pips, and every region's religions line at 0 %. It needs no
 other religion: its symbol is **drawn by the editor** (its first letter on a disc of the colour you pick, in the
@@ -262,7 +262,7 @@ size of the game's own symbols) unless you take a copy of another religion's or 
 its own** (levels, 0 = none) makes a temple chain for it from nothing - `temple_<name>`, its `religion` line naming
 the new faith, each level with the usual numbers of the mod's temples (another religion's own lines such as the
 Pope's favour left out), built by the factions you pick, plain pictures drawn. Then give it its share per region
-with **Religions...** (each region adds up to 100) and, if you like, the factions that follow it. The game takes
+with **Religions of...** (each region adds up to 100) and, if you like, the factions that follow it. The game takes
 at most 9 religions (vanilla has 5; REX / M2EX: no limit). Priests and traits of its own are not made - Preview
 says which files still name only the old religions.
 
@@ -270,14 +270,16 @@ says which files still name only the old religions.
 (Christianity, Paganism, Zoroastrianism). **New religion...** there writes a new belief into `descr_beliefs.txt` (its
 tag, its three pips - drawn by the editor as the game draws its own: the symbol, and the same full-size symbol with the
 game's own green arrow up (order) or red arrow down (unrest) laid on it at the bottom right; or the order and unrest pips copied from the belief picked and the level pip
-your picture - and its name, order and unrest texts in `text/expanded_bi.txt`). Barbarian Invasion has no region
-shares and no faction religion line: a town follows a belief through the buildings that carry it (`religious_belief
-<tag> <n>`) and its characters' traits - **Temples of its own** makes such a temple chain from nothing, each level
-carrying the new belief at the strength the mod's temples give. Plain Rome has no religions.
+your picture - and its name, order and unrest texts in `text/expanded_bi.txt`). Each region starts with its
+shares of the beliefs - the last line of its block in `descr_regions.txt` (`pagan 90 christianity 10`, 100 in all) -
+set the same way as Medieval II's (**Religions of...**, one region or many); during the game the buildings that carry
+a belief (`religious_belief <tag> <n>`) and the characters' traits move them. Barbarian Invasion has no faction
+religion line. **Temples of its own** makes a temple chain for the new belief from nothing, each level carrying it at
+the strength the mod's temples give. Plain Rome has no religions.
 
 ## Settlement names by culture (REX / M2EX)
 
-**Names by culture...** (next to *Edit region...* on the Edit / New faction tab, and on the Map's region bar) gives a town a
+**Names by culture...** (next to *Edit region...* on the Edit / New faction tab, and a town's right click on the Map: **Names of <town> by culture...**) gives a town a
 name for each culture of its owner, plus a name for every other culture. The engine (REX on Rome, M2EX on
 Medieval II) renames the town when it changes
 hands - as soon as a general takes it, and at each of its owner's turns. The tool writes it into the campaign's
