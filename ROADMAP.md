@@ -168,6 +168,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 View in 3D: the rider sits on his horse in any animation and the horse plays the same move (Medieval II); a horse moves on its own bones; animations play smoothly at the game's speed
 - 📦 Battle models: a battle_models.modeldb with two numbers written without a space ('0-1') read as the game reads it; Check mod files names a faction's AI label the campaign AI file lacks, a governor's building that does not fit its town's size and a port with no sea beside it (Medieval II)
 - 📦 Models: two switches, Culture and Faction - every figure at once (with its colours)
 - 📦 The map names the man under the mouse beside it (a general's name, 'Captain <name>' for an army without one), as the game does
@@ -175,7 +176,7 @@ timeline
 - 📦 Religions of a town and of many selected regions at once from the Map's right click (Medieval II; Barbarian Invasion's beliefs per region too); Edit regions' bar shorter
 - 📦 New land that joins nobody: ONE common wasteland region for all the free land (Rome with REX, Medieval II with M2EX) - the Land / shape brushes' default, and the land a map cut leaves of a town it takes (it crashed Medieval II with M2EX) *(in-game ✓ a map cut with the wasteland on both games' own campaigns)*
 - 📦 Terrain: Pull and Push the coast (pull drags the coast with the mouse like a painter's liquify; push grows the land into the water or the water into the land)
-- 📦 A unit's card and description picture made from its 3D model (View in 3D > Make a card... / Make a picture...): the frame you pick, the game's framing, your own ground
+- 📦 A unit's card and description picture made from its 3D model (View in 3D > Make a card... / Make a picture...): the frame you pick, the game's framing, your own ground *(in-game ✓ a card and a picture replaced, Medieval II)*
 - 📦 The Module builder opens in the main window (a work like Maps), its unsaved module kept across works; View in 3D: scrub the animation frame by frame; Models lists only the type's own figures; mounts in their whole texture
 - 📦 View in 3D plays the model's animations from the game's packs (Rome, Barbarian Invasion, Medieval II): any move of its skeleton, Play / Pause, frame by frame - step 1 of the 'cards from the 3D model' road
 - 📦 Set-up fix: the engine's settings files go into a mod with every setting switched off (the mod runs as before - the game's copy made Medieval II with M2EX miss the mod's battle models); a mod with the game's `model_battle_source text` is put right on Load; Campaign rules shows switched-off settings
