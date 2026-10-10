@@ -168,7 +168,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- 📦 Models: every figure at once as a culture's or as another faction's (with its colours)
+- 📦 Models: two switches, Culture and Faction - every figure at once (with its colours)
 - 📦 The map names the man under the mouse beside it (a general's name, 'Captain <name>' for an army without one), as the game does
 - 📦 The editor's own files (settings, logs, add-ons) in a folder of their own, CampaignEditor, beside the exe - an older version's moved in after one question
 - 📦 Religions of a town and of many selected regions at once from the Map's right click (Medieval II; Barbarian Invasion's beliefs per region too); Edit regions' bar shorter

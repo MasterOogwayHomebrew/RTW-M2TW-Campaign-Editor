@@ -60,19 +60,19 @@ reads binary sprite sheets that cannot take new sprites, and the Art tab says so
 
 On the **Models** tab (beside Art): every character type of the faction (named character, general, admiral, spy, assassin,
 diplomat - and on Medieval II princess, merchant, priest / bishop / cardinal ...) with the figure that shows it on
-the campaign map - a strat model of `descr_model_strat.txt`, named per faction in `descr_character.txt`. Pick
-another model in the list, **3D** shows it with the faction's texture; Preview, then Apply writes it. A faction
+the campaign map - a strat model of `descr_model_strat.txt`, named per faction in `descr_character.txt`.
+**3D** shows it with the faction's texture; the switches below change them all, Preview, then Apply writes it. A faction
 that shares its entry with others (`faction a, b`) gets an entry of its own, the others keep theirs. A model the
-faction has no texture in gets a texture line (the model's first picture); after Apply its picture is listed
-to **Replace...** like any other. Each type is ONE card: its name, the figure's list, **3D**, and the figure's
+faction has no texture in gets a texture line (the picked faction's picture); after Apply its picture is listed
+to **Replace...** like any other. Each type is ONE card: its name, the figure, **3D**, and the figure's
 texture ("campaign map figure: ...") with **Replace...** and **Save a copy...** under them,
 and a new faction gets copies of its own of the template's (`diplomat_macedon` -> `diplomat_epirus`), so
 replacing them never changes the template's. Both games.
 
-**Every figure at once**: at the top of the tab, **Every figure as the culture** gives each character type the figure
-that culture's factions show most (with the texture of the first faction that shows it) - for a copy of a faction
-whose culture you changed; **or as the faction** takes another faction's figures with their textures (its colours).
-**As it was** takes them back; like a figure picked by hand they wait for Preview / Apply.
+**Every figure at once**: two switches at the top of the tab. **Culture** takes the figures and textures of that
+culture's first faction in the list - for a copy of a faction whose culture you changed; **Faction** takes the
+figures and textures (its colours) of the faction picked. **As it was** takes them back; they wait for Preview /
+Apply.
 
 ## Faction emblem - one picture everywhere
 
@@ -200,4 +200,4 @@ from the faction's colours.
 
 ## Not yet
 
-The strat-map symbol model; a new strat model from files of your own (the list offers the mod's own).
+The strat-map symbol model; a new strat model from files of your own.
