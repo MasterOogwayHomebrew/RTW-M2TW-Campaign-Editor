@@ -61,7 +61,7 @@ writes only the game or mod folder you load and its own two files beside the exe
 ## Without the exe (any OS)
 
 With Python 3.8 or newer: `python campaign_editor.py` from the repository (standard library; Pillow for the
-pictures: `pip install pillow`).
+pictures, NumPy for a quicker 3D view: `pip install pillow numpy`).
 
 **Linux** (Mint, Ubuntu, Debian...): the window needs tkinter and Pillow's Tk part, which the distribution
 ships apart from Python. Install them once, then start the tool with `python3`:

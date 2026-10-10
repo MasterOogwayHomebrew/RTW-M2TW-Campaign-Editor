@@ -168,7 +168,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- 📦 View in 3D: the rider sits on his horse in any animation and the horse plays the same move (Medieval II); a horse moves on its own bones; the weapons' own moves in the hand (a javelin thrown point first); animations play smoothly at the game's speed; the wheel turns a drop-down again where nothing scrolls
+- 📦 View in 3D: the rider sits on his horse in any animation and the horse plays the same move (Medieval II); a horse moves on its own bones; the weapons' own moves in the hand (a javelin thrown point first); animations play smoothly at the game's speed, in the whole texture (the 3D view on NumPy, about 5 x quicker); the wheel turns a drop-down again where nothing scrolls
 - 📦 Battle models: a battle_models.modeldb with two numbers written without a space ('0-1') read as the game reads it; Check mod files names a faction's AI label the campaign AI file lacks, a governor's building that does not fit its town's size and a port with no sea beside it (Medieval II)
 - 📦 Models: two switches, Culture and Faction - every figure at once (with its colours)
 - 📦 The map names the man under the mouse beside it (a general's name, 'Captain <name>' for an army without one), as the game does

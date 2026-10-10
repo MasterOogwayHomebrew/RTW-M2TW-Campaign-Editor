@@ -68,8 +68,8 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   dying... - the list `descr_skeleton.txt` gives it), read from the game's own animation packs
   (`data/animations/pack.idx` + `pack.dat` - Rome, Barbarian Invasion, Medieval II): **Play** / **Pause**, or drag
   the frame; a unit with two skeletons (a spear and a sword) picks one first. It plays at the game's speed and
-  smoothly - the moments between two frames are drawn between them (while it plays the man is drawn in his
-  texture's colours, quicker; paused, in the whole texture). Medieval II's horsemen: with no animation the rider
+  smoothly - the moments between two frames are drawn between them, in the whole texture (the 3D view works on
+  NumPy: a frame of a knight on his horse is drawn about five times quicker than before). Medieval II's horsemen: with no animation the rider
   stands in the T pose beside his horse (the horse in its standing pose); pick any animation and he sits in the
   saddle (where `descr_mount.txt`'s `rider_offset` puts him) and the horse plays the same move, as in the game -
   a horse's own View in 3D plays its moves on its own bones. The weapons and the shield take their own moves in
