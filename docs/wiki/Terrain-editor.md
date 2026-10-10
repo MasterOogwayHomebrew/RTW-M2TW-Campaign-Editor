@@ -52,12 +52,17 @@ or off.
   the mouse. The brush keeps the coast as a shape and sets the heights
   near the water by their distance from its edge, on one slope on both sides - so the game's shore falls exactly
   on the edge you drew. The exact heights go into `map_heights.hgt`. The tiles follow by their middles (new land
-  joins the region of the nearest land, or the one in *new land joins*), the ground follows point by point (shallow
+  joins the region picked in *new land joins* - see below), the ground follows point by point (shallow
   water along the new shore), and a town, port, character, fort, resource or river keeps a little land round it.
   **Smooth the coast** rounds the coast under the brush the same way - the longer you hold, the smoother (a stepped
   coast becomes a curve; small capes and bays ease out). While these brushes are picked the map is shown **by
   points** (land grey, water blue, each point centred on its place), and close up a light **Shore line** shows the
   shore exactly as the game will draw it (in every mode of the tab; the tick is beside *Find ground...*).
+- **Pull** and **Push** (beside the shape brush): *pull* grabs the coast under the brush and drags it with the mouse,
+  like a painter's liquify - the coast goes most in the brush's middle and softly less to its edge - so a cape or a
+  bay is drawn in one move; *push*, pressed on the land beside the coast, grows the land into the water (pressed on
+  the water: the water eats into the land), the longer you hold the further. The heights, the tiles and the ground
+  follow as with the shape brush.
 - **Land and sea** (*Land* / *Sea*, by tile): turn sea into land (a new island, a longer coast) or land into sea (a bay, a strait). Land and
   sea are written in three places that must agree, so each tile changes all of them: `map_regions.tga` (the
   region's colour or the sea's), `map_ground_types.tga` (a land ground like its neighbours', or shallow sea; new land gets a ring of shallow sea:
@@ -70,8 +75,13 @@ or off.
   changed tiles from the nearest tile of the same ground. **The coast pen** (land point / water point) draws the coast by hand on
   the heights' points - a tile is 3 x 3 of them, its middle its own, the sides and corners shared with its
   neighbours; the map is shown point by point while the pen is picked, and touching a tile's middle turns the whole
-  tile. New land joins the region of the
-  nearest land, or the one picked in *new land joins*; move borders later on the Map (Regions). Refused: drowning a
+  tile. **New land joins** (beside the brushes): **(nobody - the wasteland)** - with REX (Rome) or M2EX (Medieval
+  II), the default - keeps the land you paint nobody's: no town, no owner, no faction grows; all of it goes into ONE
+  wasteland region, `Wasteland`, made on Apply when the map has none (three lines in `descr_regions.txt`: its name,
+  `wasteland`, its colour; its name in the names text), and the next painting joins the same one (a map cut's
+  leftover land too). **(the nearest region)**: the region of the nearest land grows; or pick a region. The
+  original games know no wasteland, so there the choice is not offered. Move borders later on the Map (Regions).
+  Refused: drowning a
   town, port, character, fort or resource, a region's last land, a river (rub it out first) or a port's last land.
   The Ground brush keeps land as land and sea as sea, and on the coast it paints only the points on its own side of
   the waterline (a tile's 3 x 3 block reaches over the coast, which runs between the tiles) - no land texture on the

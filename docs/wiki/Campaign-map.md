@@ -358,8 +358,9 @@ left or the bottom, every place moves by as many tiles); distances and rectangle
 `descr_terrain.txt` gets the new size and `map.rwm` goes. What stands on the part cut off - a town, a port, an army,
 an agent, a fleet, a resource, a fort, an event's place or a script's tile - is ringed red on the map and named in the
 window as soon as the edge moves. **Keep for Apply** then asks first: *Keep the cut for Apply* takes them off with
-the cut - a town goes with its region from every file (the part of its land that stays is left as it is, with no
-region - paint it into the regions you want with Edit regions), armies, agents, fleets, resources, forts, watchtowers, events placed there and the rebels standing there are
+the cut - a town goes with its region from every file (the part of its land that stays goes to the common
+wasteland - nobody's land - with REX / M2EX, or to the neighbour region with the original game; land with no region
+would stop the game), armies, agents, fleets, resources, forts, watchtowers, events placed there and the rebels standing there are
 deleted, and family members (the leader, the heir, the family tree) are never deleted: they move to the nearest town
 their faction keeps. **A faction left without any town leaves this campaign** with all its people - its place in the
 faction lists, its diplomacy, its victory conditions and the events that make it rise go too - but it stays in the

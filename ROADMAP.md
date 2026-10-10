@@ -168,6 +168,8 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 New land that joins nobody: ONE common wasteland region for all the free land (Rome with REX, Medieval II with M2EX) - the Land / shape brushes' default, and the land a map cut leaves of a town it takes (it crashed Medieval II with M2EX)
+- 📦 Terrain: Pull and Push the coast (pull drags the coast with the mouse like a painter's liquify; push grows the land into the water or the water into the land)
 - 📦 A unit's card and description picture made from its 3D model (View in 3D > Make a card... / Make a picture...): the frame you pick, the game's framing, your own ground
 - 📦 The Module builder opens in the main window (a work like Maps), its unsaved module kept across works; View in 3D: scrub the animation frame by frame; Models lists only the type's own figures; mounts in their whole texture
 - 📦 View in 3D plays the model's animations from the game's packs (Rome, Barbarian Invasion, Medieval II): any move of its skeleton, Play / Pause, frame by frame - step 1 of the 'cards from the 3D model' road
@@ -186,7 +188,7 @@ timeline
 - 📦 Map size: no black band after a grow (the fog's frame moves to the new edge); the minimap's border and sea follow
 - 📦 Terrain: impassable land, always black (REX / M2EX's impassable_shrouded) - for a wasteland's land hidden for good
 - 📦 A bug report carries the list of the mod's files (names, sizes, dates, new / other size than the game's - no contents)
-- 📦 A deleted town's region can stay as a wasteland (Rome with REX, Medieval II with M2EX): nobody's land, no neighbour grows; right click its land to give it its town again; a map cut leaves one too
+- 📦 A deleted town's region can stay as a wasteland (Rome with REX, Medieval II with M2EX): nobody's land, no neighbour grows; right click its land to give it its town again; the land a map cut leaves goes to the one common wasteland
 - 📦 Faster on a big mod: many towns deleted at once (21 s -> under 2 s on HLR), the town window about 5 times faster and smaller (it remembers its size)
 - 📦 Map size: a cut that takes a faction's last town takes the faction out of this campaign (it stays in the mod); the cut waits for Apply, so a town given meanwhile keeps the faction
 - 📦 A new version of the editor is seen on every start (and every 6 hours while it is open): the GitHub button turns green with its number
