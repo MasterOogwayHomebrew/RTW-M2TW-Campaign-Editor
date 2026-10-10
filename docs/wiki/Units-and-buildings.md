@@ -1,6 +1,6 @@
 # Units and buildings
 
-## Unit editor and Building editor
+## Units and Buildings
 
 Every line of a unit (`export_descr_unit.txt`) or a building chain (`export_descr_buildings.txt`) as a field,
 with its pictures. The pictures, the battle model and the voice stay in view; the lines fold away behind
@@ -8,7 +8,7 @@ with its pictures. The pictures, the battle model and the voice stay in view; th
 **?** beside a line's name says what each of its values means - stat_pri's attack, charge bonus, missile, range,
 ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - from the game's own notes. The lists filter (**Show**: a faction, a culture, a category, mercenaries apart) and sort; drag the line between the list and the rest (its grip drawn in the text's colour) to make the list wider - the width is kept.
 
-- **Texts players read** (Building editor, under the pictures): a level's name, short description and
+- **Texts players read** (Buildings, under the pictures): a level's name, short description and
   description for a culture or a faction (**Texts for**; * = it has texts of its own). The game shows the
   faction's texts first, else its culture's, else the plain ones; a change is written to `export_buildings.txt`
   on Apply, with a backup. Both games.
@@ -64,7 +64,15 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   mouse - Medieval II's `.mesh` and Rome's `.cas` - with each faction's texture, the game's detail levels and weapons
   on or off. Rome: in the T pose (arms out) or as the file stands (**Pose**); a chariot unit on its chariot with its
   horses and crew in the places `descr_mount.txt` gives; a siege engine unit's engine (`descr_engines.txt`) whole,
-  with its own texture.
+  with its own texture. **Animation**: any move of the model's skeleton (stand, walk, run, attacks, shooting,
+  dying... - the list `descr_skeleton.txt` gives it), read from the game's own animation packs
+  (`data/animations/pack.idx` + `pack.dat` - Rome, Barbarian Invasion, Medieval II): **Play** / **Pause**, or drag
+  the frame; a unit with two skeletons (a spear and a sword) picks one first. The mount stays still for now.
+  **Make a card...** / **Make a picture...** (the unit's soldier model): the view as it stands - turned, zoomed, in
+  the frame picked - made into the unit's card or description picture, framed as the game's own (the card from the
+  head to the thighs, the picture the whole man; to the knees / waist; nearer, up / down, right / left), on a
+  see-through ground as the game's cards, a colour or a picture of your own. **Use it** waits for Preview / Apply
+  like **Import...** (every faction folder of the unit's card, a backup first); **Save a copy...** keeps a PNG.
 - **Your own files...** (beside Replace model) puts files you made in another program in place of the model's: a
   texture for every faction or one faction (PNG, TGA, DDS, JPG - converted to the game's form, Rome `.tga.dds`,
   Medieval II `.texture`; sides of 64, 128, 256...), Medieval II's weapons and shields texture, and the model file
@@ -85,8 +93,8 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
 
 ## Many towns at once
 
-A building level for many towns of any owner, or random garrisons under an upkeep limit: **Many towns...** (top
-row) - see [Campaign map: Select](Campaign-map#select-a-box-round-many-things-at-once).
+A building level for many towns of any owner, or random garrisons under an upkeep limit: the Map's **Select**, a box, then a right
+click (or **Many towns at once...** on Edit faction's Buildings tab) - see [Campaign map: Select](Campaign-map#select-a-box-round-many-things-at-once).
 
 **One temple per town**: the games take one temple chain (a name starting with `temple_`) per town - two in
 `descr_strat.txt` stop the game ("Settlement specified with multiple temple buildings"). The Buildings tab swaps the
@@ -101,7 +109,7 @@ that let the faction train it, and its cards.
 
 ## Unit packs
 
-**Export pack...** in the Unit editor puts a unit (or every unit the list shows) into one `.zip` with
+**Export pack...** in Units puts a unit (or every unit the list shows) into one `.zip` with
 everything it needs: models, textures, mount, engine or animal, cards, names and descriptions, recruit places.
 **Import pack...** in another mod **of the same game** shows the units with their names there (taken names get
 a free one), asks who owns them, and writes them with a backup. Nothing of the target mod is overwritten.

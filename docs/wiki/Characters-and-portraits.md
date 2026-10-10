@@ -1,12 +1,12 @@
 # Characters and portraits
 
-## Family tab (Edit faction) and Character editor
+## Family tab (Edit faction) and Characters
 
 Everyone of the faction: the characters on the map (with traits and ancillaries) and family members off the
 map. The family tree is drawn the way the game shows it: husband and wife side by side, their children below,
 the leader and heir marked; people tied to no one stand under "Not on the tree", and a faction with several
 families shows each as its own tree. The list and the person are on the left, the tree on the right (on the
-Faction tab too). The **Character editor** at the top does the same for any faction, rebels too.
+Edit faction tab too). The **Characters** at the top does the same for any faction, rebels too.
 
 - Click a person to edit: name (from the faction's name lists - the game crashes on a name without a text),
   age, sex (off the map), traits with their level, ancillaries.
@@ -18,7 +18,7 @@ Faction tab too). The **Character editor** at the top does the same for any fact
 - A renamed person is renamed on every line of the family tree.
 - The tree is checked before writing (a husband is a man, nobody is their own ancestor...).
 
-**The character panel** (Character editor, both games): on the right the picked person is shown the way the
+**The character panel** (Characters, both games): on the right the picked person is shown the way the
 game's character panel shows him - the portrait in a frame, name, who he is, age; the attributes as ten pips
 (Medieval II: Command, Chivalry or Dread, Loyalty - Authority for the leader and heir - and Piety; agents their
 own skill: Subterfuge, Influence, Charm, Finance, Piety; Rome: Command, Influence, Management), added up from the
@@ -32,7 +32,7 @@ family instead; the form on the left edits the rest (traits, retinue, portraits,
 
 ## Traits and retinue themselves
 
-**Traits and retinue...** (Character editor, top right; also Tools) edits the traits and ancillaries themselves,
+**Traits and retinue...** (Characters, top right; also Tools) edits the traits and ancillaries themselves,
 both games: `export_descr_character_traits.txt` and `export_descr_ancillaries.txt`.
 
 - **Traits**: pick one on the left (its name and the name players see; Find filters). Who can have it
@@ -46,7 +46,7 @@ both games: `export_descr_character_traits.txt` and `export_descr_ancillaries.tx
   other ancillaries is not changed: this one gets a picture of its own), the cultures it is barred to, its effects.
 - **New trait / New ancillary (a copy of the picked one)...**: written at once as a copy under the new name - a
   trait's levels and text keys renamed after it, the texts copied - then edited like the others. No trigger gives
-  a new trait yet: give it to characters in the Character editor.
+  a new trait yet: give it to characters in Characters.
 - Preview, then **Keep for Apply** (written by **Apply changes** in the main window, a backup first). The texts go into `text/english/export_VnVs.txt` /
   `export_ancillaries.txt`; where Medieval II keeps a table only compiled (`.strings.bin`), a `.txt` is made from
   it. A `.strings.bin` beside a changed text is taken away (backed up): Medieval II would read it instead of the new
@@ -64,7 +64,7 @@ both games: `export_descr_character_traits.txt` and `export_descr_ancillaries.tx
 
 ## Portrait library
 
-**Portrait library...** in the Character editor shows every portrait of a culture as the game keeps them.
+**Portrait library...** in Characters shows every portrait of a culture as the game keeps them.
 **Add portraits...** puts new ones into the pool: any PNG, JPG or TGA is made the size of the culture's own,
 under the next free number in every folder of the group (the same number is the same man young, old and
 dead; the dead one greyed unless you give one).

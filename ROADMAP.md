@@ -110,6 +110,7 @@ timeline
 - ✅ Faction limit known and raised (REX / M2EX `max_factions`) *(in-game ✓ on Rome + REX)*
 - ✅ Edit an existing faction: names, texts, colours, AI, money, playable, towns taken or given, capital, leader and heir *(in-game ✓)*
 - ✅ Garrisons and buildings per town, with the game's own cards and pictures *(in-game ✓)*
+- 📦 The campaign-select map and the leader's face on the faction tab, beside the description (Replace... there)
 - 📦 Add-on: Upkeep x 2 - every unit's upkeep multiplied, put in and taken out (any mod, both games)
 - 📦 A faction with no town at the start (REX / M2EX: can_homeless); fewer made-up limits (recruitment slots, 99 levels, climate on sea, spin box caps)
 - 📦 Settlement level and population (the governor's building follows the size)
@@ -167,6 +168,12 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 A unit's card and description picture made from its 3D model (View in 3D > Make a card... / Make a picture...): the frame you pick, the game's framing, your own ground
+- 📦 The Module builder opens in the main window (a work like Maps), its unsaved module kept across works; View in 3D: scrub the animation frame by frame; Models lists only the type's own figures; mounts in their whole texture
+- 📦 View in 3D plays the model's animations from the game's packs (Rome, Barbarian Invasion, Medieval II): any move of its skeleton, Play / Pause, frame by frame - step 1 of the 'cards from the 3D model' road
+- 📦 Set-up fix: the engine's settings files go into a mod with every setting switched off (the mod runs as before - the game's copy made Medieval II with M2EX miss the mod's battle models); a mod with the game's `model_battle_source text` is put right on Load; Campaign rules shows switched-off settings
+- 📦 Start Rome for a mod in `mods\<name>` (`-mod:mods/<name>`); the report window's text box grows
+- 📦 No scrollbars: lists, tables and pages scroll by a left drag (both ways) and the middle button's autoscroll
 - 📦 New mod folder on the plain game makes a thin mod (only what you change; the whole map folder at the first map change); the editor asks once before writing into a mod it did not make
 - 📦 Recolour: an area of like colour painted with one click (a quick select beside the brush)
 - 📦 Recolour into black / white looks like the game's own: a battle texture starts from the nearest-coloured faction's texture of the model (the artist's black / white, folds and faces kept)

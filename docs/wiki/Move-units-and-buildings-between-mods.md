@@ -8,7 +8,7 @@ Between the two games it is not possible - their models and files differ.
 
 ## Units - step by step
 
-1. Load **your** mod (the one that gets the units). Open **Unit editor** (top bar).
+1. Load **your** mod (the one that gets the units). Open **Units** (top bar).
 2. Press **Bring from another mod...** (top right of the editor).
 3. **From which mod**: pick it in the list of mods in your game folder, or **Browse...** to its `data` folder.
 4. **Which units**: tick them (Ctrl / Shift for more). **Find** and *only those this mod has not* help on a long list.
@@ -31,7 +31,7 @@ pictures for each new owner, its name and descriptions, and the recruit lines.
 
 ## Buildings - step by step
 
-The same window from the **Building editor**: **Bring from another mod...**
+The same window from the **Buildings**: **Bring from another mod...**
 
 1. **From which mod**, then **Which buildings**: tick the building chains. The chain clicked shows on the right:
    pick a level and a culture to see its pictures (in the town, when built), the name and description players
@@ -51,13 +51,13 @@ Left in, the game stops at start ("unrecognised hidden resource"); **Check mod f
 What comes along: the whole chain (levels, upgrades, capabilities, recruit lines), the names and descriptions of
 its levels for every culture, and the level pictures (`ui/<culture>/buildings/#<culture>_<level>.tga` and the
 `_constructed` ones). The warnings name a `requires` line or a city / castle partner (`convert_to`, Medieval II)
-that points at a building your mod has not - change those lines in the Building editor.
+that points at a building your mod has not - change those lines in Buildings.
 
 ## Good to know
 
 - **Not tested in the game for every mod**: a building or unit that depends on scripts, traits or resources of
   its own mod needs those too - the warnings name what the editor can see.
-- **To share units with other people**, use the Unit editor's **Export pack...** (one `.zip`) and **Import
+- **To share units with other people**, use Units' **Export pack...** (one `.zip`) and **Import
   pack...** on their side. **Tools > Check and install a pack** is something else: it checks a mod that says
   "copy this data folder over the game" before anything is copied.
 - A mistake? **Tools > Restore a backup...** gives every file back, byte for byte.

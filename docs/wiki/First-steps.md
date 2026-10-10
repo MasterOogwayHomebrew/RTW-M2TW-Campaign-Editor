@@ -5,11 +5,13 @@
    `...\Rome Total War Gold\HLR\data`, or the game's own `data`. Next time the tool opens the last mod by
    itself; **Mod** at the top lists every mod of the game folder.
 3. Pick the **campaign** (usually `imperial_campaign`).
-4. Choose the work at the top: **Map editor** (its **Terrain** tab paints the ground, rivers and climates, its
-   **Coast & heights** tab the coast and the heights), **Faction editor** (its tabs **Edit faction** and **New faction**), **Unit editor**, **Building editor** or **Character editor**.
+4. Choose the work at the top: **Maps** (its **Terrain** tab paints the ground, rivers and climates, its
+   **Coast & heights** tab the coast and the heights), **Factions** (its tabs **Edit faction** and **New faction**), **Units**, **Buildings** or **Characters**.
 
 Every change waits until you press **Preview changes** (shows every file and line) and **Apply changes**
 (writes it, with a backup). **Undo** / **Redo** step back through what you did in the window.
+
+**No scrollbars**: every list, table, page and read-only text scrolls by the mouse wheel, by **dragging** it with the left button (it follows the mouse, up / down and left / right) and by the **middle button**: press the wheel and move the mouse - the further from where you pressed, the faster it scrolls, both ways (held: it stops when you let go; a click: it goes on until the next click or Esc). A text you can type in keeps the left drag for selecting words. The map is as before (the right button moves it).
 
 ## Medieval II
 
@@ -33,7 +35,8 @@ here*.
 
 **Start the game** (the green button at the bottom right, beside Tools) says what it starts - *Start Rome - CE_Test*,
 or in amber *Start Rome - no mod* when the game's own data is loaded - and starts the game with the mod that is
-loaded: its own start script, else the line the engine's own start scripts use (`REX.exe -mod:<name>`, `-bi` /
+loaded: its own start script, else the line the engine's own start scripts use (`REX.exe -mod:<name>` - or
+`-mod:mods/<name>` for a mod in the game's `mods` folder -, `-bi` /
 `-alx` for the expansions, `M2EX.exe --features.mod=mods/<name>`). Apply your changes first - the game reads the
 files on disk; the button names any change not written yet. Before it starts the game it checks: a start script
 that starts an exe the game folder lacks is refused in plain words, a Medieval II `.cfg` that does not name the

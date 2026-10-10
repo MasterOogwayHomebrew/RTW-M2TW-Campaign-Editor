@@ -26,7 +26,9 @@ Every value of the campaign's settings files, by group, each with a plain explan
   the battle range disc and colours...) and `descr_caps_ex.txt` (feature switches: recruitment slots per town, sprite
   format, trade fleets, portrait pools, building downgrade / conversion of culture...), grouped by the file's own
   headings, each value explained by the comment the engine writes above it. The engines read these two from the mod
-  alone: a mod without them runs on the engine's defaults, and a change puts a copy in the mod.
+  alone: a mod without them runs on the engine's defaults, and a change puts a copy in the mod - with only the
+  changed line on and every other setting switched off (a `;` before it), so the mod keeps running as before. A
+  switched-off setting (`;key value`) is shown as such: the engine's default holds until you change it.
 
 **Find** looks through every file. A value that differs from the game's own shows the game's beside it, with
 **Reset**. Change values, **Preview**, then **Keep for Apply** (written by **Apply changes** in the main window with everything else waiting): only the value itself changes in the file (the rest
@@ -51,7 +53,8 @@ load every `.nut` in `script/modules` by themselves. The script is kept in the e
 UPPER_CASE `local NAME = value` lines at the top (true / false = a tick, a whole number, a number like 3.0, "text", a list
 `["a", "b"]`, a set `{ a = true }`), with the `//` comment beside or above each as its help. Put it in, Update, Take
 it out work as for the built-in ones (a backup each time). **Share...** saves it as a zip (with your settings or as
-it came) plus a README - give it to others. **Remove from the list** forgets an added one. Only add scripts from
+it came) plus a README - give it to others. **Delete from the editor...** deletes an added one (or a module made in the Module builder) from the editor's list
+- and, when it is put into the loaded game, asks whether to take it out of the game too. Only add scripts from
 people you trust: a script runs inside the game.
 
 For authors, optional header lines make it nicer: `// @title Border Tolls`, `// @game rome|medieval2|both`,
@@ -85,7 +88,7 @@ right clicked) to take it out. **Look: Lists** shows the same module as one bloc
 
 ![Module builder - blocks](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/module_builder_blocks.png)
 
-**Module builder...** (top row) or **Add-ons > New module (no code)...** puts an add-on together from blocks. REX (Rome)
+**Module builder** (top row - it opens in the main window, a module not saved yet stays while you look at other works) or **Add-ons > New module (no code)...** puts an add-on together from blocks. REX (Rome)
 and M2EX (Medieval II) run the same script, so one module works in both games; the original exes run no scripts.
 
 - **WHEN** - what happens in the game: **the player's turn starts** (once a turn - new modules start with it),
@@ -145,7 +148,7 @@ A trait for the conqueror, Avoid Growth for chosen towns. **Show the script** sh
 the names against the mod; **Save to my add-ons** keeps it in the Add-ons list; **Put it in the game** writes it into
 the game's `script/modules` and its messages into the mod's `text/custom_messages.txt` (a backup first - Restore
 undoes it); **Share...** saves it as a zip. A saved module opens in the builder again: **Add-ons > Change it in the
-Module builder...**. Each time it acts, the game's log (`system.log.txt`) gets a line starting with its name, like
+Module builder...**; a right click on one of your modules in the builder's list deletes it. Each time it acts, the game's log (`system.log.txt`) gets a line starting with its name, like
 `[HELP_WHEN_BROKE]`.
 
 ### Upkeep x 2 (both games, no engine needed)
