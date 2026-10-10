@@ -14,7 +14,9 @@ goes.
 - **Undo** / **Redo** (Ctrl+Z, Ctrl+Y) step back through what you did in the window before Apply.
 - **Check mod files** reads every file the tool uses and reports what it cannot make sense of; the deep check
   rehearses an edit and a new faction for every faction in memory. Nothing is written. The problems come worst first,
-  grouped by when the game would meet them, each with a button to the place that puts it right.
+  grouped by when the game would meet them, each with a button to the place that puts it right. Medieval II: a
+  faction's `ai_label` (in `descr_strat.txt`) that `descr_campaign_ai_db.xml` lacks is named - the game stops at the
+  campaign's start with "Could not link faction ... to AI label".
 - **Check mod files** with a faction picked also says whether it is **complete**: every file where every other
   faction is named and this one is not (the game or its screens would miss it), with a faction of its culture to
   copy the lines from; files most (not all) factions are named in are only noted - real factions go without them.
