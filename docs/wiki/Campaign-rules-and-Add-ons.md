@@ -148,7 +148,7 @@ A trait for the conqueror, Avoid Growth for chosen towns. **Show the script** sh
 the names against the mod; **Save to my add-ons** keeps it in the Add-ons list; **Put it in the game** writes it into
 the game's `script/modules` and its messages into the mod's `text/custom_messages.txt` (a backup first - Restore
 undoes it); **Share...** saves it as a zip. A saved module opens in the builder again: **Add-ons > Change it in the
-Module builder...**. Each time it acts, the game's log (`system.log.txt`) gets a line starting with its name, like
+Module builder...**; a right click on one of your modules in the builder's list deletes it. Each time it acts, the game's log (`system.log.txt`) gets a line starting with its name, like
 `[HELP_WHEN_BROKE]`.
 
 ### Upkeep x 2 (both games, no engine needed)
