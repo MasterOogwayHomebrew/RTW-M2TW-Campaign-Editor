@@ -92,18 +92,20 @@ timeline
         0.32 : Module builder like Scratch - blocks dragged into each other : ELSE, any / none / not, FOR EACH town, army, faction
     section Day 11 - from nothing, the map's shape by hand
         0.33 : Units, buildings and religions from nothing : Your own files for a battle model : Map size by dragging its edges : Merge regions : Many towns deleted at once : A town's own garrison : Recolour never over the original : Cards and pictures as the game shows them
+    section Days 12 - 13 - the models move, the map's free land
+        0.34 : Animations in View in 3D - riders on their horses, siege engines : Cards made from the 3D view : Wastelands - a deleted town's region, one common wasteland : Pull and Push the coast : Thin mods : Faster on big mods : Every picture big on a click
 ```
 
 | Area | Confirmed in game | Released | Being tested | Next |
 |---|---|---|---|---|
 | Factions | new faction, faction limit, edit, garrisons, mod folder | settlement size, rebels, diplomacy, roster | alliances and wars at the start, victory conditions, building chains kept whole | the new factions' AI |
-| Campaign map | tiles, moving towns, new regions, terrain, heights, find, town names, map 3x bigger (beta) | resources, climates, forts, big maps | the bigger map smooth (coast, heights, natural edges), many towns at once, land and sea brush, wonders, events, right-click menu, drop into a town, map size by dragging its edges, merge regions, many towns deleted at once | flat plains and sharp peaks, borders drawn by the tool, a map from the real world |
+| Campaign map | tiles, moving towns, new regions, terrain, heights, find, town names, map 3x bigger (beta) | resources, climates, forts, big maps | wastelands, pull and push the coast, the bigger map smooth (coast, heights, natural edges), many towns at once, land and sea brush, wonders, events, right-click menu, drop into a town, map size by dragging its edges, merge regions, many towns deleted at once | flat plains and sharp peaks, borders drawn by the tool, a map from the real world |
 | Characters | - | name lists | character panel, traits and retinue, family tree, portraits | - |
-| Units, buildings, art | faction art | editors, unit packs, modeldb, REX abilities | recolour of every faction picture, faction emblem, battle banners from a white banner (both games), units and buildings brought from another mod, replace a model, your own model files, 3D view of Rome and Medieval II models, new unit / building step by step or from nothing, unit voices | M2EX monster units |
+| Units, buildings, art | faction art | editors, unit packs, modeldb, REX abilities | recolour of every faction picture, faction emblem, battle banners from a white banner (both games), units and buildings brought from another mod, replace a model, your own model files, 3D view of Rome and Medieval II models with their animations, riders and siege engines, cards from the 3D view, new unit / building step by step or from nothing, unit voices | M2EX monster units |
 | Both games | Rome / BI / Alexander, city ↔ castle | Medieval II and Kingdoms | religions, campaign rules, add-ons, module builder | vassals (`client_of`), window in other languages |
 | Safety | - | preview, backup, byte-exact restore, Check mod files, report a bug in one click, settings | pack check | signed exe |
 
-## What it does now (0.33.0)
+## What it does now (0.34.0)
 
 ### Factions
 - ✅ New faction from a template: names, texts, colours, units, buildings, cards, name lists, traits, art *(in-game ✓)*
@@ -168,39 +170,45 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- 📦 View in 3D: the rider sits on his horse in any animation and the horse plays the same move (Medieval II; Rome's riders sit, the horse plays the same name or stands); Medieval II's siege engines in 3D; a knight's second weapon set with his second skeleton; the rider turns with a turning horse; a horse moves on its own bones; the weapons' own moves in the hand (a javelin thrown point first); animations play smoothly at the game's speed, in the whole texture (the 3D view on NumPy, about 5 x quicker); the wheel turns a drop-down again where nothing scrolls
-- 📦 Battle models: a battle_models.modeldb with two numbers written without a space ('0-1') read as the game reads it; Check mod files names a faction's AI label the campaign AI file lacks, a governor's building that does not fit its town's size and a port with no sea beside it (Medieval II)
-- 📦 Models: two switches, Culture and Faction - every figure at once (with its colours)
-- 📦 The map names the man under the mouse beside it (a general's name, 'Captain <name>' for an army without one), as the game does
-- 📦 The editor's own files (settings, logs, add-ons) in a folder of their own, CampaignEditor, beside the exe - an older version's moved in after one question
-- 📦 Religions of a town and of many selected regions at once from the Map's right click (Medieval II; Barbarian Invasion's beliefs per region too); Edit regions' bar shorter
-- 📦 New land that joins nobody: ONE common wasteland region for all the free land (Rome with REX, Medieval II with M2EX) - the Land / shape brushes' default, and the land a map cut leaves of a town it takes (it crashed Medieval II with M2EX) *(in-game ✓ a map cut with the wasteland on both games' own campaigns)*
-- 📦 Terrain: Pull and Push the coast (pull drags the coast with the mouse like a painter's liquify; push grows the land into the water or the water into the land)
-- 📦 A unit's card and description picture made from its 3D model (View in 3D > Make a card... / Make a picture...): the frame you pick, the game's framing, your own ground or the game's card ground, Medieval II's picture frame *(in-game ✓ a card and a picture replaced, Medieval II)*
-- 📦 The Module builder opens in the main window (a work like Maps), its unsaved module kept across works; View in 3D: scrub the animation frame by frame; Models lists only the type's own figures; mounts in their whole texture
-- 📦 View in 3D plays the model's animations from the game's packs (Rome, Barbarian Invasion, Medieval II): any move of its skeleton, Play / Pause, frame by frame - step 1 of the 'cards from the 3D model' road
-- 📦 Set-up fix: the engine's settings files go into a mod with every setting switched off (the mod runs as before - the game's copy made Medieval II with M2EX miss the mod's battle models); a mod with the game's `model_battle_source text` is put right on Load; Campaign rules shows switched-off settings
-- 📦 Start Rome for a mod in `mods\<name>` (`-mod:mods/<name>`); the report window's text box grows
-- 📦 No scrollbars: lists, tables and pages scroll by a left drag (both ways) and the middle button's autoscroll
-- 📦 New mod folder on the plain game makes a thin mod (only what you change; the whole map folder at the first map change); the editor asks once before writing into a mod it did not make
-- 📦 Recolour: an area of like colour painted with one click (a quick select beside the brush)
-- 📦 Recolour into black / white looks like the game's own: a battle texture starts from the nearest-coloured faction's texture of the model (the artist's black / white, folds and faces kept)
-- 📦 The test mod's report lists the steps to look at in the game first, the ones already seen working below
-- 📦 Terrain: Land and sea makes a smooth coast like the games' own (half-tile curve, islets and straits kept); the brush outline follows while painting
-- 📦 Add-ons: an older version in the game is found on Load and put right with one yes (settings kept); no more 'font autoscale' in the script console *(in-game ✓ from a report, Medieval II with M2EX)*
-- 📦 Terrain: the shape brush - a coast drawn where you want it, smooth in the game (heights by distance from the edge, exact in map_heights.hgt); 'Smooth the coast' rounds a coast as a shape; the map by points + the Shore line as the game draws it; the coast pen *(in-game ✓ from a report, Medieval II with M2EX)*
-- 📦 Terrain: find ground on the wrong side of the coast (land texture on the water, holes of sea in the land) and put it right under the heights; the Ground brush stays on its side of the waterline; the beach painted on land, as in both games
-- 📦 Terrain: the minimap follows painted land, sea and ground (drawn from the nearest tile of the same ground)
-- 📦 Map size: no black band after a grow (the fog's frame moves to the new edge); the minimap's border and sea follow
-- 📦 Terrain: impassable land, always black (REX / M2EX's impassable_shrouded) - for a wasteland's land hidden for good
-- 📦 A bug report carries the list of the mod's files (names, sizes, dates, new / other size than the game's - no contents)
-- 📦 A deleted town's region can stay as a wasteland (Rome with REX, Medieval II with M2EX): nobody's land, no neighbour grows; right click its land to give it its town again; the land a map cut leaves goes to the one common wasteland
-- 📦 Faster on a big mod: many towns deleted at once (21 s -> under 2 s on HLR), the town window about 5 times faster and smaller (it remembers its size)
-- 📦 Map size: a cut that takes a faction's last town takes the faction out of this campaign (it stays in the mod); the cut waits for Apply, so a town given meanwhile keeps the faction
-- 📦 A new version of the editor is seen on every start (and every 6 hours while it is open): the GitHub button turns green with its number
+- nothing yet
 
 ## 🧪 Being tested in the game now (newest first)
 
+- 🧪 ap cut / delete a town: a campaign script naming it is no refusal any more - its lists and one-line commands are commented out, its conditions named (Medieval II's right edge with Baghdad and Mosul can be cut) (0.34.0)
+- 🧪 edieval II: resources left on a wasteland's land - one question, delete them or keep them; a renamed faction followed in the campaign script; music for new regions; a later faction's message in the game's own form (0.34.0)
+- 🧪 very picture opens big on a click (Unit and Building editors too); View in 3D opens once a model, keeps its frame while it plays, the right button moves the view; a siege crew's dagger without a second weapon (0.34.0)
+- 🧪 he map shows a resource's name under the mouse; a ship unit's fleet in 3D; Show's faction gives the unit its colours (0.34.0)
+- 🧪 eports carry screenshots made smaller (a few fit the 4 MB) and say what of a big game log goes (0.34.0)
+- 🧪 iew in 3D: the rider sits on his horse in any animation and the horse plays the same move (Medieval II; Rome's riders sit, the horse plays the same name or stands); Medieval II's siege engines in 3D; a knight's second weapon set with his second skeleton; the rider turns with a turning horse; a horse moves on its own bones; the weapons' own moves in the hand (a javelin thrown point first); animations play smoothly at the game's speed, in the whole texture (the 3D view on NumPy, about 5 x quicker); the wheel turns a drop-down again where nothing scrolls (0.34.0)
+- 🧪 attle models: a battle_models.modeldb with two numbers written without a space ('0-1') read as the game reads it; Check mod files names a faction's AI label the campaign AI file lacks, a governor's building that does not fit its town's size and a port with no sea beside it (Medieval II) (0.34.0)
+- 🧪 odels: two switches, Culture and Faction - every figure at once (with its colours) (0.34.0)
+- 🧪 he map names the man under the mouse beside it (a general's name, 'Captain <name>' for an army without one), as the game does (0.34.0)
+- 🧪 he editor's own files (settings, logs, add-ons) in a folder of their own, CampaignEditor, beside the exe - an older version's moved in after one question (0.34.0)
+- 🧪 eligions of a town and of many selected regions at once from the Map's right click (Medieval II; Barbarian Invasion's beliefs per region too); Edit regions' bar shorter (0.34.0)
+- 🧪 ew land that joins nobody: ONE common wasteland region for all the free land (Rome with REX, Medieval II with M2EX) - the Land / shape brushes' default, and the land a map cut leaves of a town it takes (it crashed Medieval II with M2EX) *(in-game ✓ a map cut with the wasteland on both games' own campaigns)* (0.34.0)
+- 🧪 errain: Pull and Push the coast (pull drags the coast with the mouse like a painter's liquify; push grows the land into the water or the water into the land) (0.34.0)
+- 🧪  unit's card and description picture made from its 3D model (View in 3D > Make a card... / Make a picture...): the frame you pick, the game's framing, your own ground or the game's card ground, Medieval II's picture frame *(in-game ✓ a card and a picture replaced, Medieval II)* (0.34.0)
+- 🧪 he Module builder opens in the main window (a work like Maps), its unsaved module kept across works; View in 3D: scrub the animation frame by frame; Models lists only the type's own figures; mounts in their whole texture (0.34.0)
+- 🧪 iew in 3D plays the model's animations from the game's packs (Rome, Barbarian Invasion, Medieval II): any move of its skeleton, Play / Pause, frame by frame - step 1 of the 'cards from the 3D model' road (0.34.0)
+- 🧪 et-up fix: the engine's settings files go into a mod with every setting switched off (the mod runs as before - the game's copy made Medieval II with M2EX miss the mod's battle models); a mod with the game's `model_battle_source text` is put right on Load; Campaign rules shows switched-off settings (0.34.0)
+- 🧪 tart Rome for a mod in `mods\<name>` (`-mod:mods/<name>`); the report window's text box grows (0.34.0)
+- 🧪 o scrollbars: lists, tables and pages scroll by a left drag (both ways) and the middle button's autoscroll (0.34.0)
+- 🧪 ew mod folder on the plain game makes a thin mod (only what you change; the whole map folder at the first map change); the editor asks once before writing into a mod it did not make (0.34.0)
+- 🧪 ecolour: an area of like colour painted with one click (a quick select beside the brush) (0.34.0)
+- 🧪 ecolour into black / white looks like the game's own: a battle texture starts from the nearest-coloured faction's texture of the model (the artist's black / white, folds and faces kept) (0.34.0)
+- 🧪 he test mod's report lists the steps to look at in the game first, the ones already seen working below (0.34.0)
+- 🧪 errain: Land and sea makes a smooth coast like the games' own (half-tile curve, islets and straits kept); the brush outline follows while painting (0.34.0)
+- 🧪 dd-ons: an older version in the game is found on Load and put right with one yes (settings kept); no more 'font autoscale' in the script console *(in-game ✓ from a report, Medieval II with M2EX)* (0.34.0)
+- 🧪 errain: the shape brush - a coast drawn where you want it, smooth in the game (heights by distance from the edge, exact in map_heights.hgt); 'Smooth the coast' rounds a coast as a shape; the map by points + the Shore line as the game draws it; the coast pen *(in-game ✓ from a report, Medieval II with M2EX)* (0.34.0)
+- 🧪 errain: find ground on the wrong side of the coast (land texture on the water, holes of sea in the land) and put it right under the heights; the Ground brush stays on its side of the waterline; the beach painted on land, as in both games (0.34.0)
+- 🧪 errain: the minimap follows painted land, sea and ground (drawn from the nearest tile of the same ground) (0.34.0)
+- 🧪 ap size: no black band after a grow (the fog's frame moves to the new edge); the minimap's border and sea follow (0.34.0)
+- 🧪 errain: impassable land, always black (REX / M2EX's impassable_shrouded) - for a wasteland's land hidden for good (0.34.0)
+- 🧪  bug report carries the list of the mod's files (names, sizes, dates, new / other size than the game's - no contents) (0.34.0)
+- 🧪  deleted town's region can stay as a wasteland (Rome with REX, Medieval II with M2EX): nobody's land, no neighbour grows; right click its land to give it its town again; the land a map cut leaves goes to the one common wasteland (0.34.0)
+- 🧪 aster on a big mod: many towns deleted at once (21 s -> under 2 s on HLR), the town window about 5 times faster and smaller (it remembers its size) (0.34.0)
+- 🧪 ap size: a cut that takes a faction's last town takes the faction out of this campaign (it stays in the mod); the cut waits for Apply, so a town given meanwhile keeps the faction (0.34.0)
+- 🧪  new version of the editor is seen on every start (and every 6 hours while it is open): the GitHub button turns green with its number (0.34.0)
 - 🧪 A region with no town of its own (the game's rebel village): its town window writes the town for an owner picked (the rebels too); Edit region shows and changes the owner (0.33.0)
 - 🧪 Sack Settlement (Medieval II): the Raze button's words in the game's own Verdana, no hover text, the capture scroll one button taller (the button stays under Exterminate if the game keeps the size); Avoid Growth's words in Verdana too (0.33.0)
 - 🧪 Merge regions on the map (both games): click the region that stays, then its neighbour that goes - its land joins the first, everything tied to it follows (0.33.0)
