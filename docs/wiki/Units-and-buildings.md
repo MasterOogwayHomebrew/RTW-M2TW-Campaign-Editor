@@ -16,6 +16,9 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   (or the mercenaries' folder) - when there is none, the box says so; a building level opens on a **Culture** that
   builds it, and a culture that never builds it is marked *(never builds it)* (the game has only stand-in texts for
   it). The hover cards in every list show the same pictures.
+- **Click any picture** (a card, a building's picture, a texture beside the battle model) to look at it closely,
+  big in a window of its own. **View in 3D...** pressed again brings its open window forward; another model opens
+  beside it, to compare.
 - **Import...** puts a picture in the right size and format in the right place.
 - **New unit / New building step by step...** makes a new one from an existing one that surely works in the game,
   in steps you can go back and forth between: names and the texts players read, who owns the unit (or may build

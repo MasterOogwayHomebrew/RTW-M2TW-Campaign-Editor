@@ -8,7 +8,9 @@ When the game crashes, the tool shows an error, or something looks wrong, please
    `system.log.txt` and the newest REX crash report go to the author at once, no account needed, and you get a
    report number. The author's answer comes back to the editor (see *Answers to my reports* below). When the tool itself shows an error, it offers
    the same window. A long game log is cut to fit: its start (where the game reads the mod's files and says what it
-   does not like), every error and warning line of the middle, and its end.
+   does not like), every error and warning line of the middle, and its end - a game log of several MB goes as
+   about 100 KB. A big screenshot goes made smaller (a JPEG, at most 2560 pixels wide), so a few fit the 4 MB a
+   report can carry.
    The editor's log also holds a short picture of the loaded mod (its factions, towns, map size, which files are
    its own - counts and names, no files), so the author sees what the mod is.
    With a mod loaded, `mod_files.txt` goes too (untick it to leave it out): the list of the mod's files - name,

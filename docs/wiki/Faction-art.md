@@ -13,7 +13,7 @@ faction / New faction** tab under Victory; Replace... there works as below.
 In Rome only a faction with a `leader_pic_<faction>.tga` shows a face on that screen (vanilla: the three Roman
 families); vanilla Medieval II has no such picture.
 
-**Click any picture** to look at it closely: it opens big in a window of its own (the wheel zooms, drag to move,
+**Click any picture** (here, in the Unit and Building editors, a town's buildings) to look at it closely: it opens big in a window of its own (the wheel zooms, drag to move,
 a checkerboard shows where it is see-through; its file, size and format under it).
 
 ## Replacing a picture
