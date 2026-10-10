@@ -64,7 +64,10 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   mouse - Medieval II's `.mesh` and Rome's `.cas` - with each faction's texture, the game's detail levels and weapons
   on or off. Rome: in the T pose (arms out) or as the file stands (**Pose**); a chariot unit on its chariot with its
   horses and crew in the places `descr_mount.txt` gives; a siege engine unit's engine (`descr_engines.txt`) whole,
-  with its own texture.
+  with its own texture. **Animation**: any move of the model's skeleton (stand, walk, run, attacks, shooting,
+  dying... - the list `descr_skeleton.txt` gives it), read from the game's own animation packs
+  (`data/animations/pack.idx` + `pack.dat` - Rome, Barbarian Invasion, Medieval II): **Play** / **Pause**, or drag
+  the frame; a unit with two skeletons (a spear and a sword) picks one first. The mount stays still for now.
 - **Your own files...** (beside Replace model) puts files you made in another program in place of the model's: a
   texture for every faction or one faction (PNG, TGA, DDS, JPG - converted to the game's form, Rome `.tga.dds`,
   Medieval II `.texture`; sides of 64, 128, 256...), Medieval II's weapons and shields texture, and the model file

@@ -168,6 +168,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 View in 3D plays the model's animations from the game's packs (Rome, Barbarian Invasion, Medieval II): any move of its skeleton, Play / Pause, frame by frame - step 1 of the 'cards from the 3D model' road
 - 📦 Set-up fix: the engine's settings files go into a mod with every setting switched off (the mod runs as before - the game's copy made Medieval II with M2EX miss the mod's battle models); a mod with the game's `model_battle_source text` is put right on Load; Campaign rules shows switched-off settings
 - 📦 Start Rome for a mod in `mods\<name>` (`-mod:mods/<name>`); the report window's text box grows
 - 📦 No scrollbars: lists, tables and pages scroll by a left drag (both ways) and the middle button's autoscroll
