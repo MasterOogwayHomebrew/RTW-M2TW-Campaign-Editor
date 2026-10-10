@@ -88,7 +88,7 @@ right clicked) to take it out. **Look: Lists** shows the same module as one bloc
 
 ![Module builder - blocks](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/module_builder_blocks.png)
 
-**Module builder...** (top row) or **Add-ons > New module (no code)...** puts an add-on together from blocks. REX (Rome)
+**Module builder** (top row - it opens in the main window, a module not saved yet stays while you look at other works) or **Add-ons > New module (no code)...** puts an add-on together from blocks. REX (Rome)
 and M2EX (Medieval II) run the same script, so one module works in both games; the original exes run no scripts.
 
 - **WHEN** - what happens in the game: **the player's turn starts** (once a turn - new modules start with it),
