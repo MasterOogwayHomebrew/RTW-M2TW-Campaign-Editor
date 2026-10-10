@@ -98,9 +98,12 @@ mercenary pools, the win conditions and Medieval II's music lists, in every camp
 its block of the regions section at the end of `descr_strat.txt` (roads, forts, watchtowers: handed to the
 neighbour's block, or gone with a wasteland - the game takes forts only in a region with a town); `map.rwm` is
 removed. Written at once after **Preview**, with a backup. Refused in plain words: a faction's last
-town (it would die as the campaign loads), a region a faction rises in by an event, a town a campaign script names
-(the lines are listed - change them first), an island with no land neighbour. The names lookup and the names
-texts keep the old names (an unused name harms nothing).
+town (it would die as the campaign loads), a region a faction rises in by an event, an island with no land
+neighbour. A campaign script that names the town or region is no reason to refuse: its lines that only list the
+place (an invasion's `region` list) or flash it (`settlement_flash_start` / `stop`, `console_command`) are commented
+out with `;` in the same write - as the game's own authors took Tbilisi out of the Mongols' list - and a condition
+naming it (`if I_SettlementOwner ...`) is named in a warning to change by hand; an invasion left with no region is
+named too. The names lookup and the names texts keep the old names (an unused name harms nothing).
 
 **Many towns at once**: switch **Select** on, select the towns (a box, or clicks), right click > **Delete the N
 selected town(s) with their regions...**. The same choice: their regions stay as wastelands (with an engine), or the
@@ -116,7 +119,8 @@ borders and the town names are drawn meanwhile. Click the region that **stays** 
 again - and **Merge them** under the map: the red region's town and region go from every file as above and all its
 land (and port) becomes the yellow one's; the yellow region stays as it is. Written at once with a backup (Undo this
 write, Tools > Restore); the switch stays on for the next pair, and off again everything shows as before. The same
-refusals as deleting a town (the two must touch; a faction's last town, an event region, a town a script names).
+refusals as deleting a town (the two must touch; a faction's last town, an event region); script lines naming B are
+commented out as when deleting a town.
 
 ## Towns and characters
 
@@ -370,9 +374,10 @@ mod (its units, pictures and other campaigns keep it), as both games' own prolog
 **Nothing is written until Apply changes** (bottom left): the cut is made at the write, after every other change
 waiting, so you can still move what you want to keep off the cut part, or give such a faction a town that stays (right
 click a town > *Give this town to*) - then it stays in the campaign and its family moves into that town. *Not now*
-keeps nothing. What cannot go is said before any question: a town or region the campaign's script names (the script
-would stop), a family member whose faction keeps a town but no room near it. Lines of the campaign's scripts that name
-tiles or the faction leaving are listed to change by hand. One backup; **Undo this write** (beside the status line)
+keeps nothing. What cannot go is said before any question: a region a faction rises in by an event, a family member
+whose faction keeps a town but no room near it. Lines of the campaign's scripts that name a town or region cut are
+commented out as when deleting a town (Medieval II's right edge with Baghdad and Mosul can be cut); lines that name
+tiles, a condition naming a town cut, or the faction leaving are listed to change by hand. One backup; **Undo this write** (beside the status line)
 or Tools > Restore a backup gives it all back. Lua / Squirrel scripts are listed to check by hand, as with the bigger
 map.
 
