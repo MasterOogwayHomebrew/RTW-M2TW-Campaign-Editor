@@ -16,7 +16,8 @@ goes.
   rehearses an edit and a new faction for every faction in memory. Nothing is written. The problems come worst first,
   grouped by when the game would meet them, each with a button to the place that puts it right. Medieval II: a
   faction's `ai_label` (in `descr_strat.txt`) that `descr_campaign_ai_db.xml` lacks is named - the game stops at the
-  campaign's start with "Could not link faction ... to AI label".
+  campaign's start with "Could not link faction ... to AI label"; so are a governor's building that does not fit
+  its town's size (a castle's must be its level, a city's one below) and a port with no sea on any of its four sides.
 - **Check mod files** with a faction picked also says whether it is **complete**: every file where every other
   faction is named and this one is not (the game or its screens would miss it), with a faction of its culture to
   copy the lines from; files most (not all) factions are named in are only noted - real factions go without them.

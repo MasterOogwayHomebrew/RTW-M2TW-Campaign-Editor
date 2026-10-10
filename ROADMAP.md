@@ -168,7 +168,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
-- 📦 Battle models: a battle_models.modeldb with two numbers written without a space ('0-1') read as the game reads it; Check mod files names a faction's AI label the campaign AI file lacks (Medieval II)
+- 📦 Battle models: a battle_models.modeldb with two numbers written without a space ('0-1') read as the game reads it; Check mod files names a faction's AI label the campaign AI file lacks, a governor's building that does not fit its town's size and a port with no sea beside it (Medieval II)
 - 📦 Models: two switches, Culture and Faction - every figure at once (with its colours)
 - 📦 The map names the man under the mouse beside it (a general's name, 'Captain <name>' for an army without one), as the game does
 - 📦 The editor's own files (settings, logs, add-ons) in a folder of their own, CampaignEditor, beside the exe - an older version's moved in after one question
