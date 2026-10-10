@@ -69,6 +69,11 @@ texture ("campaign map figure: ...") with **Replace...** and **Save a copy...** 
 and a new faction gets copies of its own of the template's (`diplomat_macedon` -> `diplomat_epirus`), so
 replacing them never changes the template's. Both games.
 
+**Every figure at once**: at the top of the tab, **Every figure as the culture** gives each character type the figure
+that culture's factions show most (with the texture of the first faction that shows it) - for a copy of a faction
+whose culture you changed; **or as the faction** takes another faction's figures with their textures (its colours).
+**As it was** takes them back; like a figure picked by hand they wait for Preview / Apply.
+
 ## Faction emblem - one picture everywhere
 
 The faction's emblem is shown in many places, each in its own size: the campaign-menu buttons (small and big, each
