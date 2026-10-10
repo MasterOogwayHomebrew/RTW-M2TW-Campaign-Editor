@@ -65,7 +65,7 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
 - **Layers** (a panel under its button - it stays open while you tick, a second press or a click aside closes it):
   **Colours**, one mode at a time - **Political** (the owners), **Diplomacy** (how the faction stands towards each owner), **Religion** (Medieval II: each region in its main religion's colour, paler where the majority is small; the legend counts the regions), **None** (the ground only);
   **Shown**: borders, town names, characters, resources, relief, rivers, a tile grid when zoomed in. Ports are
-  always drawn.
+  always drawn. The mouse over a man shows his name beside it, over a resource its name as players see it.
 - The line under the map describes the tile under the mouse: region, owner, ground, and whether an army may
   stand there.
 
@@ -84,7 +84,9 @@ where its land goes:
 - **stays as a wasteland** (Rome with REX, Medieval II with M2EX - the default there): the region and its land stay,
   nobody's - no town, no owner, no rebels, no economy; the AI never goes for it, no victory counts it, no neighbour
   grows, armies can still walk over it. Its line in `descr_regions.txt` says `wasteland` where the town's name stood
-  (the engines' own way), its town pixel takes the region's colour. An island can go too. The map shows it grey while
+  (the engines' own way), its town pixel takes the region's colour. Medieval II takes no resource in a region
+  without a town (its log says the tile is invalid): when resources lie on that land, one question asks whether to
+  delete them or keep them (Check mod files names the ones kept). An island can go too. The map shows it grey while
   the window is open. **The way back**: right click its land > **Give it its town here...** - its name, the name
   players see and its owner; a village is written on that tile as the game makes it.
 - **goes to a neighbour** (the only way of the original exes): its land (and its port) becomes the neighbour's it

@@ -13,7 +13,7 @@ The rebels are never playable and have no capital, leader or heir.
 - Names, tooltip and campaign-screen text, colours, AI, money (denari), playable.
 - **Rename...** beside the internal name changes the faction's code name (`egypt` -> `kemet`) in every file of the
   mod at once: the campaign, units, buildings, names, banners, models, texts' keys; its pictures are copied under
-  the new name. Scripts that name it are listed, not changed (code is changed by hand). One write, one backup -
+  the new name. The campaign scripts (`campaign_script.txt`: `I_LocalFaction venice`...) follow too; Lua / Squirrel scripts that name it are listed, not changed (code is changed by hand). One write, one backup -
   **Undo this write** puts it all back.
 - **Towns**: **Towns on the map...** opens Maps - a click on a town adds it (their rebels leave; another
   owner's characters go to its other towns), another click takes it out to give it to the faction in **Removed
