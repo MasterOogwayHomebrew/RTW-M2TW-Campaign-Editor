@@ -196,7 +196,7 @@ Preview / Apply, backed up like every change.
 
 Tick **Regions**: every region in its own colour.
 
-1. **New region...**: names, builder, rebels, region tags (hidden resources), triumph, farming, owner,
+1. **New region...**: names, builder, rebels, region tags (hidden resources - picked from the mod's own under the arrow beside the box, a click adds or takes one out, or typed), triumph, farming, owner,
    settlement level. The tool picks an unused colour.
 2. Paint its land with a left drag (brush 1-6 tiles). Right click a region to paint with that one - the same
    brush moves the border between two existing regions.
