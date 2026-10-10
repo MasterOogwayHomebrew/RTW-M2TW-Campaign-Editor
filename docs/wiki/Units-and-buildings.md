@@ -68,6 +68,11 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   dying... - the list `descr_skeleton.txt` gives it), read from the game's own animation packs
   (`data/animations/pack.idx` + `pack.dat` - Rome, Barbarian Invasion, Medieval II): **Play** / **Pause**, or drag
   the frame; a unit with two skeletons (a spear and a sword) picks one first. The mount stays still for now.
+  **Make a card...** / **Make a picture...** (the unit's soldier model): the view as it stands - turned, zoomed, in
+  the frame picked - made into the unit's card or description picture, framed as the game's own (the card from the
+  head to the thighs, the picture the whole man; to the knees / waist; nearer, up / down, right / left), on a
+  see-through ground as the game's cards, a colour or a picture of your own. **Use it** waits for Preview / Apply
+  like **Import...** (every faction folder of the unit's card, a backup first); **Save a copy...** keeps a PNG.
 - **Your own files...** (beside Replace model) puts files you made in another program in place of the model's: a
   texture for every faction or one faction (PNG, TGA, DDS, JPG - converted to the game's form, Rome `.tga.dds`,
   Medieval II `.texture`; sides of 64, 128, 256...), Medieval II's weapons and shields texture, and the model file
