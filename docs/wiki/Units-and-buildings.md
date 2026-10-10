@@ -73,7 +73,8 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   stands in the T pose beside his horse (the horse in its standing pose); pick any animation and he sits in the
   saddle (where `descr_mount.txt`'s `rider_offset` puts him) and the horse plays the same move, as in the game -
   a horse's own View in 3D plays its moves on its own bones. The weapons and the shield take their own moves in
-  the hand (a javelin turns point first for the throw). Rome's horsemen still stand beside their mounts.
+  the hand (a javelin turns point first for the throw). Rome's horsemen ride too (the horse plays the move of the same name when it has one, else stands). A
+  siege engine unit's engine opens in 3D in both games.
   **Make a card...** / **Make a picture...** (the unit's soldier model): the view as it stands - turned, zoomed, in
   the frame picked - made into the unit's card or description picture, framed as the game's own (the card from the
   head to the thighs, the picture the whole man; to the knees / waist; nearer, up / down, right / left), on a
