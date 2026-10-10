@@ -168,6 +168,8 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Set-up fix: the engine's settings files go into a mod with every setting switched off (the mod runs as before - the game's copy made Medieval II with M2EX miss the mod's battle models); a mod with the game's `model_battle_source text` is put right on Load; Campaign rules shows switched-off settings
+- 📦 Start Rome for a mod in `mods\<name>` (`-mod:mods/<name>`); the report window's text box grows
 - 📦 No scrollbars: lists, tables and pages scroll by a left drag (both ways) and the middle button's autoscroll
 - 📦 New mod folder on the plain game makes a thin mod (only what you change; the whole map folder at the first map change); the editor asks once before writing into a mod it did not make
 - 📦 Recolour: an area of like colour painted with one click (a quick select beside the brush)

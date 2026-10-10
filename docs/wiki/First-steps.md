@@ -35,7 +35,8 @@ here*.
 
 **Start the game** (the green button at the bottom right, beside Tools) says what it starts - *Start Rome - CE_Test*,
 or in amber *Start Rome - no mod* when the game's own data is loaded - and starts the game with the mod that is
-loaded: its own start script, else the line the engine's own start scripts use (`REX.exe -mod:<name>`, `-bi` /
+loaded: its own start script, else the line the engine's own start scripts use (`REX.exe -mod:<name>` - or
+`-mod:mods/<name>` for a mod in the game's `mods` folder -, `-bi` /
 `-alx` for the expansions, `M2EX.exe --features.mod=mods/<name>`). Apply your changes first - the game reads the
 files on disk; the button names any change not written yet. Before it starts the game it checks: a start script
 that starts an exe the game folder lacks is refused in plain words, a Medieval II `.cfg` that does not name the

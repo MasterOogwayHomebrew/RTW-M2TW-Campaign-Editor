@@ -26,7 +26,9 @@ Every value of the campaign's settings files, by group, each with a plain explan
   the battle range disc and colours...) and `descr_caps_ex.txt` (feature switches: recruitment slots per town, sprite
   format, trade fleets, portrait pools, building downgrade / conversion of culture...), grouped by the file's own
   headings, each value explained by the comment the engine writes above it. The engines read these two from the mod
-  alone: a mod without them runs on the engine's defaults, and a change puts a copy in the mod.
+  alone: a mod without them runs on the engine's defaults, and a change puts a copy in the mod - with only the
+  changed line on and every other setting switched off (a `;` before it), so the mod keeps running as before. A
+  switched-off setting (`;key value`) is shown as such: the engine's default holds until you change it.
 
 **Find** looks through every file. A value that differs from the game's own shows the game's beside it, with
 **Reset**. Change values, **Preview**, then **Keep for Apply** (written by **Apply changes** in the main window with everything else waiting): only the value itself changes in the file (the rest
