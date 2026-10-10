@@ -168,6 +168,8 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 The map names the man under the mouse beside it (a general's name, 'Captain <name>' for an army without one), as the game does
+- 📦 The editor's own files (settings, logs, add-ons) in a folder of their own, CampaignEditor, beside the exe - an older version's moved in after one question
 - 📦 Religions of a town and of many selected regions at once from the Map's right click (Medieval II; Barbarian Invasion's beliefs per region too); Edit regions' bar shorter
 - 📦 New land that joins nobody: ONE common wasteland region for all the free land (Rome with REX, Medieval II with M2EX) - the Land / shape brushes' default, and the land a map cut leaves of a town it takes (it crashed Medieval II with M2EX)
 - 📦 Terrain: Pull and Push the coast (pull drags the coast with the mouse like a painter's liquify; push grows the land into the water or the water into the land)
