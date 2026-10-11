@@ -56,6 +56,15 @@ first. The logos need REX with `sprite_format xml` in the mod's own `descr_caps_
 on the engine's default `sd`; Load offers to copy the game's): the original game
 reads binary sprite sheets that cannot take new sprites, and the Art tab says so.
 
+**Medieval II (with M2EX)** works the same way: the faction logo (68 x 76, `ui/strategy.sd.xml`) and the small
+logo (32 x 32, `ui/shared.sd.xml`) - the shield in diplomacy, on the faction's scrolls and on its button. Both
+cards are always on the Art tab, also when the sprite `logo_index` names is on no sheet (the game then shows
+another faction's picture in its place - the card says so). A mod that reads the binary sheets (no
+`sprite_format xml` in its own `descr_caps_ex.txt`, as many big mods) shows **Own logos for this mod...** on the
+card: after a yes it writes that line (a backup first; **Undo this write** puts it back), and **Replace...** then
+gives the faction a logo of its own. Look the game's panels over once after the switch: every interface sprite
+comes from the `.sd.xml` sheets then.
+
 ## Figures on the campaign map - the Models tab
 
 On the **Models** tab (beside Art): every character type of the faction (named character, general, admiral, spy, assassin,
