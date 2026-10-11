@@ -170,6 +170,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 View in 3D: Medieval II's siege engines play standing, moving, loading and shooting with their crew at their places, each man in his own moves
 - 📦 Unit editor: the card, the description picture, the battle model and the voice in one row of alike frames (a second row on a narrow window); the explanations on a '?', problems in sight; Tied to it behind a button
 - 📦 Recolour... on a texture: one battle-model texture (Unit editor) or figure texture (Models tab) in the faction's colours
 - 📦 Models tab slimmer: each texture card its title and where it shows, the rest on '?'; the Culture / Faction switches taken out again
