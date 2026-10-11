@@ -91,6 +91,9 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   see-through ground as the game's cards, a colour, a picture of your own, or the game's own card ground (the
   campaign's or the battle's, of the faction's culture); a Medieval II picture can take the game's frame round it. **Use it** waits for Preview / Apply
   like **Import...** (every faction folder of the unit's card, a backup first); **Save a copy...** keeps a PNG.
+  The window stands beside the 3D view and follows it: turn the man or pick another frame there and the card is
+  taken again by itself (**Take the 3D view again** does it at once and says what it took). How much of him and
+  nearer / up / right are kept for the next unit (cards and pictures apart).
 - **Recolour...** under a texture: that one texture moved into the faction's colours (the recolour window, its
   list only this texture; the faction wearing it - the one picked in Show first). Where other factions wear the
   same file the faction gets a copy of its own. Keep for Apply, written with Apply.
