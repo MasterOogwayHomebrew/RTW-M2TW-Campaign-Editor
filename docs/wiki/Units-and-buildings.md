@@ -80,7 +80,9 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   saddle (where `descr_mount.txt`'s `rider_offset` puts him) and the horse plays the same move, as in the game -
   a horse's own View in 3D plays its moves on its own bones. The weapons and the shield take their own moves in
   the hand (a javelin turns point first for the throw). Rome's horsemen ride too (the horse plays the move of the same name when it has one, else stands). A
-  siege engine unit's engine opens in 3D in both games. Medieval II's siege engines play their own moves -
+  siege engine unit's engine opens in 3D in both games. Medieval II: a unit with armour upgrades (`armour_ug_models`)
+  picks each level's model under **Armour**; a shield worn on the back and in the hand shows once - on the back
+  with the first weapon (a crossbow), in the hand with the second. Medieval II's siege engines play their own moves -
   **standing**, **moving (pushed)**, **loading**, **shooting** (`descr_engine_skeleton.txt`, the loose files in
   `data/animations/engine`) - with their crew (**Its crew**, ticked) at the places the engine's reference points
   give, each man playing his moves for that state (`crew_animations` in `descr_engines.txt`): the catapult's arm

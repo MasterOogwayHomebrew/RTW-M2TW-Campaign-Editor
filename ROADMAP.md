@@ -170,6 +170,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 View in 3D: Medieval II's armour upgrades picked in the window; a shield worn two ways drawn once (on the back with the first weapon)
 - 📦 Special places: any campaign-map model on any tile with its own window on the game's scroll (picture, name, bonus, text, holder) and money a turn - REX / M2EX
 - 📦 Leader's and heir's titles on the faction tab (New and Edit, both games)
 - 📦 Make a card: beside the 3D view and following it; its framing kept for the next unit
