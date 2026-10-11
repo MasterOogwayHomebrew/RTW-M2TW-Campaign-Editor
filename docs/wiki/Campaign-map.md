@@ -9,6 +9,16 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   descriptions) with **View it in 3D**; **Put a wonder here** (right click on land) places one of the game's seven
   - Rome's exe and REX know no other types ("dont recognise this wonder type"), so a new wonder is one of them,
   its model, picture and texts changed if you like.
+- **Special places** (both games, with REX / M2EX): a right click on land > **Special place here...** - a model of
+  the campaign map (a tower, fort, keep, wonder, mine... any `.cas` under `models_strat`, or your own) drawn on that
+  tile by the engine, and a window of its own like a wonder's: its name on a hover, a double click opens it at the
+  screen's left on the game's own scroll (Medieval II's painted frame, Rome's rolled scroll) - its picture across
+  the whole width, its name, what it gives (one or two lines), its text, and at the foot who holds it now. A name
+  and a text are a must; the picture, what it gives and money a turn for its holder are yours to add. The window
+  shows the game's window as it will look. Its gold diamond on the map: a double click or a right click edits or
+  deletes it. **Keep for Apply**, then Apply writes it (one backup): the windows' pictures in `data/ui/ce_places`,
+  the model into the mod, and one script in the game's `script/modules` (`ce_places_<mod>.nut`) that runs only for
+  this mod.
 - **Delete from the map** (right click): a resource, a fort, a watchtower or a wonder goes with its line; a
   character of any faction goes with everything under him (his army or fleet); one placed but not written yet is
   simply taken out. Refused, in plain words: a faction's leader or heir, and a member of the family tree (take him
