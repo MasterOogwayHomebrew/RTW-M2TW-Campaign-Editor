@@ -16,7 +16,7 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   the whole width, its name, what it gives (one or two lines), its text, and at the foot who holds it now. A name
   and a text are a must; the picture, what it gives and money a turn for its holder are yours to add. The window
   shows the game's window as it will look. Its gold diamond on the map: a double click or a right click edits or
-  deletes it. **Keep for Apply**, then Apply writes it (one backup): the windows' pictures in `data/ui/ce_places`,
+  deletes it; drag it with the left button to move it to another tile. **Keep for Apply**, then Apply writes it (one backup): the windows' pictures in `data/ui/ce_places`,
   the model into the mod, and one script in the game's `script/modules` (`ce_places_<mod>.nut`) that runs only for
   this mod.
 - **Delete from the map** (right click): a resource, a fort, a watchtower or a wonder goes with its line; a
