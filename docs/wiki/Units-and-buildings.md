@@ -3,7 +3,9 @@
 ## Units and Buildings
 
 Every line of a unit (`export_descr_unit.txt`) or a building chain (`export_descr_buildings.txt`) as a field,
-with its pictures. The pictures, the battle model and the voice stay in view; the lines fold away behind
+with its pictures. The pictures, the battle model and the voice stay in view - on a unit four alike frames in one
+row (card, description picture, battle model, voice; a second row on a narrow window), the explanations on a
+**?** beside each title; the lines fold away behind
 **Every line of the block** (open it to change them; it stays open or closed as you left it). On a unit, the
 **?** beside a line's name says what each of its values means - stat_pri's attack, charge bonus, missile, range,
 ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - from the game's own notes. The lists filter (**Show**: a faction, a culture, a category, mercenaries apart) and sort; drag the line between the list and the rest (its grip drawn in the text's colour) to make the list wider - the width is kept.
@@ -48,7 +50,8 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   opens that building.
 - **Add line...** / **x**: add or remove lines (never beyond what the mod already does, never the lines every
   unit or level has).
-- **Tied to it** shows who owns and recruits a unit, what requires a building.
+- **Tied to it** (a button beside **Every line of the block**, folds away again) shows who owns and recruits a
+  unit, what requires a building.
 - **REX...** (next to a unit's attributes, stat_mental, stat_ground and weapon lines): tick the abilities REX adds,
   each with its effect in plain words - morale (expendable, steadfast, immune_to_psychology...), fatigue
   (relentless, inexhaustible...), charge (brace_for_charge, aggressive_push...), terrain (desert_raider,
