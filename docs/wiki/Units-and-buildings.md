@@ -87,6 +87,9 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   see-through ground as the game's cards, a colour, a picture of your own, or the game's own card ground (the
   campaign's or the battle's, of the faction's culture); a Medieval II picture can take the game's frame round it. **Use it** waits for Preview / Apply
   like **Import...** (every faction folder of the unit's card, a backup first); **Save a copy...** keeps a PNG.
+- **Recolour...** under a texture: that one texture moved into the faction's colours (the recolour window, its
+  list only this texture; the faction wearing it - the one picked in Show first). Where other factions wear the
+  same file the faction gets a copy of its own. Keep for Apply, written with Apply.
 - **Your own files...** (beside Replace model) puts files you made in another program in place of the model's: a
   texture for every faction or one faction (PNG, TGA, DDS, JPG - converted to the game's form, Rome `.tga.dds`,
   Medieval II `.texture`; sides of 64, 128, 256...), Medieval II's weapons and shields texture, and the model file
