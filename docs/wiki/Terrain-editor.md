@@ -34,7 +34,7 @@ and Medieval II).
   land grey - black low, white high (brightened a little so the low land is not all black) - and the sea blue.
   Only land is changed; the coast stays.
 
-**Find** above the map finds a town, port or character by name. Left drag paints (brush 1-12), right click picks the ground of a tile, right drag moves the map, **Grid** on
+**Find** above the map finds a town, port or character by name. Left drag paints (brush 1-12), right click picks the ground of a tile, right drag moves the map, **Rivers** (rivers, fords and cliffs over the ground - also on the map drawn point by point) and **Grid** on
 or off.
 
 ![Land and sea: a new island in the Black Sea](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/land_and_sea.png)
