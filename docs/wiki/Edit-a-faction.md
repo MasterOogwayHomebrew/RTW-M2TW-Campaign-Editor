@@ -20,6 +20,10 @@ The rebels are never playable and have no capital, leader or heir.
   towns go to** (rebels by default); **Done** brings you back, nothing lost. **Capital on the map...**: one click.
 - **Capital** puts that town first in the faction's block.
 - **Leader** and **heir**: new names (from the faction's name list) and ages.
+- **Leader's title** / **heir's**: what the game calls them - King, Duke, Emperor, Grand Prince... Medieval II:
+  only the word of 'King %S' / 'Prince %S' (`text/expanded.txt`, %S is his name) and the former leader's title
+  change; Rome: the whole leader's / heir's label (`expanded_bi.txt`). A mod whose texts are only in a
+  `.strings.bin` is told so in Preview.
 - **Name list...**: the faction's men's names, surnames and women's names, typed in three steps (see
   [[New faction]]). Names its characters and family already carry stay in the list (Preview says which) - the
   game crashes on a name that is in no list.

@@ -170,6 +170,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Leader's and heir's titles on the faction tab (New and Edit, both games)
 - 📦 Make a card: beside the 3D view and following it; its framing kept for the next unit
 - 📦 View in 3D: Medieval II's siege engines play standing, moving, loading and shooting with their crew at their places, each man in his own moves
 - 📦 Unit editor: the card, the description picture, the battle model and the voice in one row of alike frames (a second row on a narrow window); the explanations on a '?', problems in sight; Tied to it behind a button
