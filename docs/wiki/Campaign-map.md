@@ -215,7 +215,8 @@ Tick **Regions**: every region in its own colour.
 1. **New region...**: names, builder, rebels, region tags (hidden resources - picked from the mod's own under the arrow beside the box, a click adds or takes one out, or typed), triumph, farming, owner,
    settlement level. The tool picks an unused colour.
 2. Paint its land with a left drag (brush 1-6 tiles). Right click a region to paint with that one - the same
-   brush moves the border between two existing regions.
+   brush moves the border between two existing regions. **(sea)** at the end of *Paint with* paints the region
+   map's sea (a border cut into a sailable river); land that belongs to no region can be painted to a region.
 3. **Place its town** (and **Place its port** on the coast).
    For a region of the map picked in *Paint with* the same buttons move its town or port to the tile
    clicked; a wasteland gets its town there (then its port).
