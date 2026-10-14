@@ -38,10 +38,10 @@ yours changes. A chariot's body (Rome) names its texture inside its `.cas`, and 
 
 Skeletons (how the men move): a big mod (HLR, for one) has skeletons of its own in its own animation files
 (`data/animations`: pack.idx, pack.dat, skeletons.idx, skeletons.dat - the game loads one such set, the mod's own or
-the game's). In Rome, Barbarian Invasion and REX a brought unit's own skeletons come along with every animation they
+the game's). In both games (Rome, Barbarian Invasion, REX; Medieval II, M2EX) a brought unit's own skeletons come along with every animation they
 move by: your mod gets its own set - the one the game loaded for it, with them added (REX's `aninterp.cache` beside it
-is taken away; REX makes it again). Its men move as in their own mod. A skeleton that cannot come along (Medieval II,
-or a source with no set of its own) becomes your mod's nearest one (`fs_hc_spearman_classic` -> `fs_hc_spearman`),
+is taken away; REX makes it again). Its men move as in their own mod. A skeleton that cannot come along (a source with no
+set of its own) becomes your mod's nearest one (`fs_hc_spearman_classic` -> `fs_hc_spearman`),
 said in the WARNINGS - without it the game stops at start ("Unable to find skeleton"). **Check mod files** names any
 model whose skeleton the mod lacks.
 
