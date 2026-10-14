@@ -74,8 +74,9 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   not written yet - **Take it out**.
 - **Layers** (a panel under its button - it stays open while you tick, a second press or a click aside closes it):
   **Colours**, one mode at a time - **Political** (the owners), **Diplomacy** (how the faction stands towards each owner), **Religion** (Medieval II: each region in its main religion's colour, paler where the majority is small; the legend counts the regions), **None** (the ground only);
-  **Shown**: borders, town names, characters, resources, relief, rivers, a tile grid when zoomed in. Ports are
-  always drawn. The mouse over a man shows his name beside it, over a resource its name as players see it.
+  **Shown**: borders, towns and ports (their squares and anchors - off for a clean look at the land), town
+  names, the rebels' land coloured (it is barely tinted otherwise, so the factions stand out), characters,
+  resources, relief, rivers, a tile grid when zoomed in. The mouse over a man shows his name beside it, over a resource its name as players see it.
 - The line under the map describes the tile under the mouse: region, owner, ground, and whether an army may
   stand there.
 
