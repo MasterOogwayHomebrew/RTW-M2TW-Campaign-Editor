@@ -90,5 +90,5 @@ needs are copied under its own name (Epirus cloned from Macedon gets `standard_e
   changed in each version and what was tested in the game.
 - [README](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor#readme) - the full reference.
 
-The editor is free. If it saves you time, a coffee on [Ko-fi](https://ko-fi.com/pfadfinder) keeps new
-features coming.
+The editor is free. If it saves you time, a coffee on [Ko-fi](https://ko-fi.com/pfadfinder) or [GitHub Sponsors](https://github.com/sponsors/MasterOogwayHomebrew)
+keeps new features coming.
