@@ -239,7 +239,7 @@ never fires), its place (x, y; empty = a message only; **Show on the map**), the
 players see (`historic_events.txt`), the **picture players see** on the scroll (a historic event its own
 `ui/<culture>/eventpics/<event>.tga` - **Picture...** puts yours in for every culture, sized like the game's; a
 plague, volcano... shows its kind's `disaster_<kind>.tga` - **Picture...** replaces it for every event of that kind) and **what it does in the game** in plain words.
-**New event...**, a right click on an event removes it, **Preview**, **Keep for Apply** (written by **Apply changes** with the rest, a backup first). Below the
+**New event...**, a right click on an event removes it (Ctrl / Shift + click picks many; **Remove all...** takes every one out), **Preview**, **Keep for Apply** (written by **Apply changes** with the rest, a backup first). Below the
 list: **the factions that appear later** - they start dead (`dead_until_resurrected` in descr_strat.txt, no towns,
 no characters) and come in *by an event* (`emergent_faction` with a date and a region the rebels hold, as Barbarian Invasion's
 slavs - only those are offered), *as the shadow of a faction*
@@ -251,6 +251,12 @@ the Mongols and Timurids). **Change...** (or a double click) changes how a facti
 its partner, *may come back after it dies* (`re_emergent`), *lives without towns* (REX / M2EX's `can_homeless`: it stays in the game with no town instead of dying or becoming a horde); **Another faction...** makes a faction without towns
 and characters appear later. Written with Keep for Apply and Apply changes, every file in step (descr_sm_factions, descr_strat,
 descr_events).
+
+**Campaign script...** (the Events window's bottom bar, both games): the campaign's own `campaign_script.txt` piece
+by piece - each monitor (`monitor_event` / `monitor_conditions` ... `end_monitor`), loop, counter or command with the
+comment right above it, its code beside the list. Take any out: a right click (the picked ones), **Remove all...**
+for a mod made bare (an M2EX / REX mod that keeps only the map, factions and units). `script` / `end_script` stay, so
+the game still finds the file. Preview, Keep for Apply, Apply changes - a backup first.
 
 ## Resources
 

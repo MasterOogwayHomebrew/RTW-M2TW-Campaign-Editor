@@ -68,6 +68,8 @@ the game's `script/modules` - the editor's add-ons, Module builder modules, ones
 what each is and whether it runs. Pick one: change its settings (written into its own lines, the rest byte for
 byte), **Turn it off** (renamed `.nut.off`: kept, not run - **Turn it on** brings it back), **Delete it**, **Show the
 code**, **Open the folder**. Every change lists what it does, asks first and makes a backup (Tools > Restore a backup).
+Ctrl / Shift + click picks several scripts - **Delete the N picked...** deletes them; **Delete them all...** under
+the list takes every one out (one write, one backup).
 
 The test mod (Tools > Test mod) puts its add-ons and modules into the game's `script/modules` too - they stay there
 when you throw the test mod's folder away. Each carries a mark at its end; **Take out every script the test mod put
