@@ -207,6 +207,7 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 - 📦 Bring units from another mod: a Faction pick; a file of the same name with other content brought under its own name (chariots no longer the Britons'); buildings show another culture's picture when theirs has none (from reports)
 - 📦 Bigger map (x3): lines and rivers bent by the old map's own relief (capes on ridges, bays in valleys, rivers on the lower side), no golden-ratio waves (from a report)
 - 📦 Bring units from another mod: a building this mod lacks comes along with its unit; New unit: your own texture / model file in the window itself (from reports)
+- 📦 Bring buildings from another mod (Rome / BI / REX): the building keeps its look in towns on the battle map - town-plan places, battle building, items and models come along (from a report)
 - 📦 Bring units from another mod: the list sorts (name, kind, owner, cost), the unit under the mouse shows without ticking it, the first step in a window as small as it needs (from reports)
 - 📦 View in 3D: Medieval II's armour upgrades picked in the window; a shield worn two ways drawn once (on the back with the first weapon)
 - ✅ Special places: any campaign-map model on any tile with its own window on the game's scroll (picture, name, bonus, text, holder) and money a turn, its diamond dragged to move it - REX / M2EX

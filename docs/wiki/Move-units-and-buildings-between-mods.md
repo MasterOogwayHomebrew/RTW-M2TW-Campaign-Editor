@@ -60,7 +60,10 @@ Left in, the game stops at start ("unrecognised hidden resource"); **Check mod f
 
 What comes along: the whole chain (levels, upgrades, capabilities, recruit lines), the names and descriptions of
 its levels for every culture, and the level pictures (`ui/<culture>/buildings/#<culture>_<level>.tga` and the
-`_constructed` ones). The warnings name a `requires` line or a city / castle partner (`convert_to`, Medieval II)
+`_constructed` ones), and - Rome, Barbarian Invasion, REX - its look in a town on the battle map: its places in
+`descr_settlement_plan.txt` (each into the slot of the same name in your plan), its battle buildings
+(`descr_building_battle/dbb_campaign_editor.txt`), their items and models (`descr_items/di_campaign_editor.txt`;
+`descr_items.db` is removed, the game writes it again). The warnings name a `requires` line or a city / castle partner (`convert_to`, Medieval II)
 that points at a building your mod has not - change those lines in Buildings.
 
 ## Good to know
