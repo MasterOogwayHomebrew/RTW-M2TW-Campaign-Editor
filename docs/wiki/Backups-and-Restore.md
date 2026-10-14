@@ -22,7 +22,9 @@ goes.
   unlockable / nonplayable lists, `event` lines in `descr_strat.txt`, a family member off the map the game leaves
   out (a woman with no husband or father, a child with no father), a building factions list without its last comma,
   a recruit line for a unit the unit file lacks and a faction that may build a level but not the one below it (these
-  two not with REX). A unit without an ownership line is only a note: the games give it to every faction.
+  two not with REX). Every unit is checked as the games read it: its lines, its owners, and without REX / M2EX
+  its men (Rome 6-60, Medieval II 4-100, others 1-300), extras (300), officers (3) and Rome's attributes. A unit
+  without an ownership line is only a note: the games give it to every faction.
 - **Check mod files** with a faction picked also says whether it is **complete**: every file where every other
   faction is named and this one is not (the game or its screens would miss it), with a faction of its culture to
   copy the lines from; files most (not all) factions are named in are only noted - real factions go without them.
