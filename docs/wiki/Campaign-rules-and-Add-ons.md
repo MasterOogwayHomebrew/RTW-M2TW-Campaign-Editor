@@ -208,6 +208,23 @@ city it is: put it on auto-manage and forget it. Untick it to let the town grow 
   while the game starts up); in the console `sq ::avoid_growth_list()` lists the ticked towns and
   `sq ::avoid_growth_probe()` what the settlement scroll reports.
 
+### Recruitment Order (Rome with REX, Medieval II with M2EX)
+
+A town's recruitment panel in a fixed order: infantry, then missiles (archers, slingers, skirmishers), animal
+handlers, cavalry, siege, ships - in each kind **the dearest first** (the strongest top left) or **the cheapest
+first** (**In each kind**).
+
+- Why a script: the game sorts the panel itself by each unit's custom-battle price (the 6th number of
+  `stat_cost`), the smallest first - the order of the recruit lines in `export_descr_buildings.txt` does not count.
+  During your turn the add-on gives every unit that number in the order above (1, 2, 3...); before every battle,
+  at the end of your turn and when the campaign closes it puts the real numbers back, so battles, autoresolve,
+  custom battles and the computer's turns use the real ones. Nothing is written into the mod's files or the saved
+  game - take the add-on out and everything is as before.
+- Ships always stand after the land units and agents last: the game keeps those groups apart.
+- One script for both games, in the game's `script/modules`. Its `[ORDER]` lines show in the script console; in the
+  console `sq ::recruit_order_list()` lists the order and `sq ::recruit_order_off()` puts the real numbers back
+  until your next turn.
+
 ### Player Diplomacy (Rome + REX)
 
 The computer's factions stop attacking you when it makes no sense - only how they treat **you** changes, their wars

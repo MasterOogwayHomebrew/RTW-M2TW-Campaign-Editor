@@ -123,11 +123,13 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
 
 **Tools > Sort the recruitment panel (strongest first)...** puts every building level's recruit lines in one order:
 infantry, then missiles (archers, slingers, skirmishers), animal handlers, cavalry, siege, ships - the dearest first
-in each kind, so the panel's top left shows the strongest unit. The game lists a town's units in the order of these
-lines in `export_descr_buildings.txt`, so it is set once: every town, every unit added later and old saves follow it.
-Only the recruit lines change places (agents, bonuses and comments stay); Preview shows every level, Apply writes it
-with a backup. A town recruiting from several buildings shows each building's units in this order; how the game
-joins the buildings, the game decides.
+in each kind. Only the recruit lines change places (agents, bonuses and comments stay); Preview shows every level,
+Apply writes it with a backup.
+
+What the game does with it: the panel is sorted by the game itself, by each unit's custom-battle price (the 6th
+number of `stat_cost`), the smallest first - the line order does not decide it. With REX it only orders units of the
+same price; on the original exes even that is shuffled. To get the panel in this order in the game, use the add-on
+**Recruitment Order** (Rome with REX, Medieval II with M2EX - Rules and scripts > Add-ons).
 
 ## Many towns at once
 
