@@ -67,7 +67,9 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   session's list and **Apply changes** in the main window writes them with everything else waiting, in one go (one
   backup set, one **Undo this write**). Another town opens in the same window. The right click's *Edit this town in Edit faction* still opens its owner in Edit faction.
 - **Right click on the map**: on a town - **Give this town to** any faction (written with the next Apply; its
-  characters go to the old owner's other towns, a captain's garrison goes with it); on a free tile - **New army /
+  characters go to the old owner's other towns, a captain's garrison goes with it; a town left empty - the rebels'
+  garrison leaves with them - gets 3 to 6 of its new owner's units drawn at random, their upkeep together at most
+  750, so you need not fill it by hand); on a free tile - **New army /
   agent / fleet here** with the land's owner already picked (a new army's **Make him a general** gives him the
   faction's general's bodyguard as his first unit and writes him as a named character outside the family tree - a
   general with his own name and a star on the map, not a captain; Rome's rebels keep a captain); on a new character
@@ -177,8 +179,8 @@ right, with **What happens** in each:
   allow (tick the box to put it in anyway - the game loads such a building, the owner just cannot build it again),
   a port building where the town has no port on the map. **Take a building out** removes a chain. The governor's
   building (walls / castle) follows the town's level and is not offered.
-- **Garrisons**: units per town *from 2 to 6* (any range up to 20) and the upkeep they may cost together per town
-  (500, 1000... - empty for no limit). **Draw the garrisons** picks them at random from the units each owner may
+- **Garrisons**: units per town *from 3 to 6* (any range up to 20) and the upkeep they may cost together per town
+  (750 at first; 1000... - empty for no limit). **Draw the garrisons** picks them at random from the units each owner may
   recruit (its `ownership` and a recruit line of some building; generals' bodyguards and - unless ticked - siege
   engines left out); a rebel town draws from its region's rebel type (`descr_rebel_factions.txt` - the units the game
   itself raises there in a revolt; without one, from the rebel armies nearest to it), so a Gallic town gets Gallic
