@@ -27,7 +27,7 @@ Between the two games it is not possible - their models and files differ.
    finish by hand. **Write it into this mod** makes one backup first; **Tools > Restore a backup...** undoes it.
 
 What comes along: the unit's lines, its battle models (Medieval II: in `descr_model_battle.txt` *and*
-`battle_models.modeldb`), mount, engine or animal, the projectiles it fires (`descr_projectile_new.txt` in Rome,
+`battle_models.modeldb`), mount, engine (with its own skeleton and animation files) or animal, its ship type, Medieval II's mounted engine, the projectiles it fires (`descr_projectile_new.txt` in Rome,
 `descr_projectile.txt` in Medieval II), every mesh / texture / sprite they name, its cards and info
 pictures for each new owner, its name and descriptions, the recruit lines, and its own name call in battle (the
 voice file's lines naming it, with their sound files - new files of their own; a culture / accent and class your
