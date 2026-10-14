@@ -204,7 +204,7 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 - 📦 Bigger map (x3): the minimap keeps its size; maps saved as colour-mapped TGAs open; Map > Layers: towns on / off, rebel land coloured
 - 📦 Bigger map (x3): no sea ground on the land (light blue teeth along the coast, ports seeming in the water), every river reaching the sea by one pixel (from reports)
 - 📦 Terrain editor: land and sea painted tile by tile with the ground brush; rivers always shown while painting them; Layers close on a second press; Report a bug packs its logs without freezing (from reports)
-- 📦 Bring units from another mod: a Faction pick; a file of the same name with other content brought under its own name (chariots no longer the Britons'); buildings show another culture's picture when theirs has none (from reports)
+- 📦 Bring units from another mod: a Faction pick; a file of the same name with other content brought under its own name (chariots no longer the Britons'; a chariot's body wears its own mod's look for each new owner); buildings show another culture's picture when theirs has none (from reports)
 - 📦 Bigger map (x3): lines and rivers bent by the old map's own relief (capes on ridges, bays in valleys, rivers on the lower side), no golden-ratio waves (from a report)
 - 📦 Bring units from another mod: a building this mod lacks comes along with its unit; New unit: your own texture / model file in the window itself (from reports)
 - 📦 Bring buildings from another mod (Rome / BI / REX): the building keeps its look in towns on the battle map - town-plan places, battle building, items and models come along (from a report)

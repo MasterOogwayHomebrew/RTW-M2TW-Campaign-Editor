@@ -32,10 +32,12 @@ What comes along: the unit's lines, its battle models (Medieval II: in `descr_mo
 pictures for each new owner, its name and descriptions, and the recruit lines. A file your mod (or the game under
 it) already has under the same name but with other content - a chariot's texture, say - comes in under a name of its
 own (`..._2`), with a model of its own pointing at it: the brought unit keeps the other mod's look and nothing of
-yours changes.
+yours changes. A chariot's body (Rome) names its texture inside its `.cas`, and the game gives a faction its own
+`<name>_<faction>` texture when there is one: the brought chariot's look goes in under that name for each new owner
+(your other factions' chariots keep theirs; a faction that already has its own keeps it).
 
-Not brought yet: a building's look in the town on the battle map (its place in the town plans and its battle
-models) - a brought building shows the game's stand-in model there.
+Not brought yet: Medieval II's town plans (a building's look in the town on the battle map is brought in Rome,
+Barbarian Invasion and REX).
 
 ![Step 5: where the brought units are recruited in your mod](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/bring_units.png)
 
