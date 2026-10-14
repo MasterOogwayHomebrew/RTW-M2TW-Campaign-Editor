@@ -45,6 +45,10 @@ map (Medieval II), the drawing goes where the map lies in them. A faction with n
 **Draw one from the map**. It waits for Apply like any picture (Keep the current one takes it back); a new faction
 otherwise keeps a copy of its template's, and every other faction's map stays the original.
 
+Beside the map: the **leader's face** the screen shows - the faction's own `leader_pic_<faction>.tga` where it has
+one (Rome's Roman families), else its faction leader's portrait (his own, or the one of his culture's portraits for
+his age the game picks from); change it in Characters.
+
 ## Flag symbol and faction logos (Rome)
 
 Three pictures of a Rome faction do not live in files of their own but on sheets shared by every faction:
