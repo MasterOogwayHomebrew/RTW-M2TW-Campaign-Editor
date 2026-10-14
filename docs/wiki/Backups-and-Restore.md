@@ -18,6 +18,11 @@ goes.
   faction's `ai_label` (in `descr_strat.txt`) that `descr_campaign_ai_db.xml` lacks is named - the game stops at the
   campaign's start with "Could not link faction ... to AI label"; so are a governor's building that does not fit
   its town's size (a castle's must be its level, a city's one below) and a port with no sea on any of its four sides.
+  Both games: what the games' own readers refuse, in their words - a faction block missing from the playable /
+  unlockable / nonplayable lists, `event` lines in `descr_strat.txt`, a family member off the map the game leaves
+  out (a woman with no husband or father, a child with no father), a building factions list without its last comma,
+  a recruit line for a unit the unit file lacks and a faction that may build a level but not the one below it (these
+  two not with REX). A unit without an ownership line is only a note: the games give it to every faction.
 - **Check mod files** with a faction picked also says whether it is **complete**: every file where every other
   faction is named and this one is not (the game or its screens would miss it), with a faction of its culture to
   copy the lines from; files most (not all) factions are named in are only noted - real factions go without them.
