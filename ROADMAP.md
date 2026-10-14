@@ -199,6 +199,7 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 
 ## 📦 Built, comes with the next release
 
+- 📦 Draw from the map: the faction-select map from the campaign map - relief, rivers, the faction's land one solid patch
 - 📦 Tools > Sort the recruitment panel: infantry, missiles, handlers, cavalry, siege, ships - the dearest first
 - 📦 Bigger map (x3): the minimap keeps its size; maps saved as colour-mapped TGAs open; Map > Layers: towns on / off, rebel land coloured
 - 📦 Bigger map (x3): no sea ground on the land (light blue teeth along the coast, ports seeming in the water), every river reaching the sea by one pixel (from reports)

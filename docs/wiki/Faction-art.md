@@ -37,8 +37,13 @@ There is no *Remove*: without its pictures the game shows errors and a placehold
 
 ## The campaign-select map
 
-Put away for now: a new faction keeps a copy of its template's `map_<faction>.tga` and every other faction's
-map stays the original. Drawing a new one from the faction's towns will come back in a later release.
+The map on the faction-select screen (`map_<faction>.tga`) sits on the faction tab beside the description, with
+the leader's face. **Draw from the map** under it makes a new one from the campaign map itself: the ground with
+its relief and rivers, no signs or names, and the faction's land - its towns as given on the Map - one solid
+patch in its primary colour, no borders inside it. Where the campaign's other select maps have a frame round the
+map (Medieval II), the drawing goes where the map lies in them. A faction with no select map of its own gets
+**Draw one from the map**. It waits for Apply like any picture (Keep the current one takes it back); a new faction
+otherwise keeps a copy of its template's, and every other faction's map stays the original.
 
 ## Flag symbol and faction logos (Rome)
 
