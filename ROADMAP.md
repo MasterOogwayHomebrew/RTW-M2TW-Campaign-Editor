@@ -170,6 +170,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Bring units from another mod: a building this mod lacks comes along with its unit; New unit: your own texture / model file in the window itself (from reports)
 - 📦 Bring units from another mod: the list sorts (name, kind, owner, cost), the unit under the mouse shows without ticking it, the first step in a window as small as it needs (from reports)
 - 📦 View in 3D: Medieval II's armour upgrades picked in the window; a shield worn two ways drawn once (on the back with the first weapon)
 - 📦 Special places: any campaign-map model on any tile with its own window on the game's scroll (picture, name, bonus, text, holder) and money a turn, its diamond dragged to move it - REX / M2EX

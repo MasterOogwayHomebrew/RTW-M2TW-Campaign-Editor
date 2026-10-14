@@ -18,9 +18,11 @@ Between the two games it is not possible - their models and files differ.
    *Card / text name* is the unit's `dictionary`: it names its card pictures and its texts (letters, digits, `_`).
 6. **Who has them**: the factions - or whole cultures - of your mod that may recruit them. The other mod's owners
    your mod has too are picked already.
-7. **Where they are recruited**: only the units come over, never a building. One line per unit: *the same buildings
-   as in the other mod* (the levels your mod has under the same names - listed under it), any building level of
-   **your** mod (e.g. your own barracks), or *not recruited there*.
+7. **Where they are recruited**: one line per unit: *the same buildings as in the other mod* (the levels your mod
+   has under the same names - listed under it), any building level of **your** mod (e.g. your own barracks), *not
+   recruited there*, or - when your mod has no such building at all - *bring its building too*: the whole chain
+   comes along (its levels, names, descriptions and pictures), built by the same owners, recruiting the units you
+   bring (its lines for units your mod lacks are left out, said in Check and write).
 8. **Check and write**: every file and line it will write. Read the **WARNINGS** at the end - they say what to
    finish by hand. **Write it into this mod** makes one backup first; **Tools > Restore a backup...** undoes it.
 

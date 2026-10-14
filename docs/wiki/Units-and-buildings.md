@@ -25,7 +25,9 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
 - **New unit / New building step by step...** makes a new one from an existing one that surely works in the game,
   in steps you can go back and forth between: names and the texts players read, who owns the unit (or may build
   the chain), its main numbers (men, attack, armour, cost...), pictures of your own, and last everything it will
-  change, file by file, before it is added. Written on Apply with a backup.
+  change, file by file, before it is added. Written on Apply with a backup. Under *How it looks* a new unit takes
+  **your own files** at once - a texture, Medieval II's weapons and shields texture, the model file itself (`.cas` /
+  `.mesh`): it gets a model of its own, the units of the old model keep their look (as **Your own files...** below).
 - A unit can also start from **nothing** (New unit step by step > Start from: *Nothing*): say what it is - foot
   soldiers who fight hand to hand, with spears, or who shoot / throw; horsemen who charge or who shoot - and the
   editor writes every line itself, in the form this mod's units of that kind have. Each number starts at what is
