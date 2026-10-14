@@ -200,7 +200,7 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 ## 📦 Built, comes with the next release
 
 - 📦 Draw from the map: the faction-select map from the campaign map - relief, rivers, the faction's land one solid patch
-- 📦 Bring units (both games): the unit's own skeletons and animations come along into your mod's animation set
+- 📦 Bring units (both games): its name call in battle with its sounds; the unit's own skeletons and animations come along into your mod's animation set
 - 📦 Add-on Recruitment Order (both games): the recruitment panel in order - infantry, missiles, cavalry, siege, ships, the dearest first
 - 📦 Tools > Sort the recruitment panel: the recruit lines in that order in the files (the game sorts the panel by price; with REX the lines order units of one price)
 - 📦 Bigger map (x3): the minimap keeps its size; maps saved as colour-mapped TGAs open; Map > Layers: towns on / off, rebel land coloured

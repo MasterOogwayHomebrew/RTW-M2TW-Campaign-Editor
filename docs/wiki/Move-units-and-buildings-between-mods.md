@@ -29,7 +29,9 @@ Between the two games it is not possible - their models and files differ.
 What comes along: the unit's lines, its battle models (Medieval II: in `descr_model_battle.txt` *and*
 `battle_models.modeldb`), mount, engine or animal, the projectiles it fires (`descr_projectile_new.txt` in Rome,
 `descr_projectile.txt` in Medieval II), every mesh / texture / sprite they name, its cards and info
-pictures for each new owner, its name and descriptions, and the recruit lines. A file your mod (or the game under
+pictures for each new owner, its name and descriptions, the recruit lines, and its own name call in battle (the
+voice file's lines naming it, with their sound files - new files of their own; a culture / accent and class your
+mod's voice file lacks is said in the WARNINGS). A file your mod (or the game under
 it) already has under the same name but with other content - a chariot's texture, say - comes in under a name of its
 own (`..._2`), with a model of its own pointing at it: the brought unit keeps the other mod's look and nothing of
 yours changes. A chariot's body (Rome) names its texture inside its `.cas`, and the game gives a faction its own
