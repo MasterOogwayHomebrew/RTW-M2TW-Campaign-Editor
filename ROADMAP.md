@@ -53,50 +53,77 @@ from a template - texts, units, buildings, start towns, leader. Rome only, comma
 
 The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campaign editor for two games.
 
-```mermaid
-timeline
-    title RTW & M2TW Campaign Editor - the road so far
-    section Day 1 - Rome and REX
-        0.1 : New faction from a template : Separate mod folder
-        0.2 : Resources on the map : Tile rules for armies
-        0.3 : Unit and building editors
-        0.4 : Faction art : Map legend : Campaign-select map
-        0.5 : Roster : Renames followed everywhere
-        0.6 : Map by tiles : Medieval II unpacked by the tool : Dark theme
-        0.7 : Unit packs (export / import)
-    section Day 2 - characters, terrain, Medieval II
-        0.8 - 0.9 : Family tree : Character editor : Portraits
-        0.10 : Terrain editor
-        0.11 : Faction limit known (REX / M2EX)
-        0.12 : Flags and logos : Climates : Restore to any backup
-        0.13 - 0.14 : Town names by culture : Own name lists
-        0.15 : Medieval II city / castle
-        0.16 : battle_models.modeldb
-        0.17 : recruit_pool : REX brackets : Forts : Rebels editable
-    section Day 3 - community knowledge, models, packs
-        0.18 : New religion (Medieval II) : Heights brush : Find on the map : GPL-3.0
-        0.19 : Replace a battle model : 3D view of unit models : Unit voices : Pack check before install : Big maps 10x lighter
-        0.20 : Report a bug in one click : Settlements tab : 3D view of Rome models too : Campaign rules : Add-ons
-        0.21 : Volcanoes and land bridges : Forts and watchtowers on the map : Main window reorganised
-    section Day 4 - a living campaign map, both games
-        0.22 : Character panel as in the game : Traits and retinue : Events and later factions : Religion map
-        0.23 : Alliances and wars at the start : Victory conditions : Diplomacy in plain words
-        0.24 : Campaign map 3x bigger (alpha) : Settings window
-        0.25 : Smooth relief on the bigger map : Wonders on the map
-        0.26 : Right-click menu on the map : Search in Units and armies : Building chains kept whole
-        0.27 : Units and buildings brought from another mod, step by step
-        0.28 : The bigger map smooth - coast, relief 3x higher, its heights file : Land and sea brush - a new island
-        0.29 : Recolour every faction picture : Faction emblem from one picture : Buildings and garrisons for many towns : Natural edges on the bigger map : Raze Settlement for Medieval II (0.29.1) : Fixes from reports - bigger map rules, all-or-nothing writes, new factions' buttons, the editor into the game folder (0.29.2)
-    section Days 5 - 9 - the Map editor, step by step
-        0.30 : Map editor - select, give, delete, a town window : Bigger map step by step (beta) : Map size + / - : Mercenaries : Module builder and Avoid Growth : Start the game : Check mod files by when it breaks : Undo this write : Credits : One write for the session, fixes for packed Medieval II games (0.30.1)
-    section Day 10 - one language, fixes from the testers
-        0.31 : Every window one write : Mods holding only their changes : Rename a faction : Cards on hover, tables sorted : Enter / Esc and answers in words : Fixes from the in-game test runs
-        0.32 : Module builder like Scratch - blocks dragged into each other : ELSE, any / none / not, FOR EACH town, army, faction
-    section Day 11 - from nothing, the map's shape by hand
-        0.33 : Units, buildings and religions from nothing : Your own files for a battle model : Map size by dragging its edges : Merge regions : Many towns deleted at once : A town's own garrison : Recolour never over the original : Cards and pictures as the game shows them
-    section Days 12 - 13 - the models move, the map's free land
-        0.34 : Animations in View in 3D - riders on their horses, siege engines : Cards made from the 3D view : Wastelands - a deleted town's region, one common wasteland : Pull and Push the coast : Thin mods : Faster on big mods : Every picture big on a click
-```
+**Day 1 - Rome and REX**
+
+| Version | What came |
+|---|---|
+| 0.1 | New faction from a template · Separate mod folder |
+| 0.2 | Resources on the map · Tile rules for armies |
+| 0.3 | Unit and building editors |
+| 0.4 | Faction art · Map legend · Campaign-select map |
+| 0.5 | Roster · Renames followed everywhere |
+| 0.6 | Map by tiles · Medieval II unpacked by the tool · Dark theme |
+| 0.7 | Unit packs (export / import) |
+
+**Day 2 - characters, terrain, Medieval II**
+
+| Version | What came |
+|---|---|
+| 0.8 - 0.9 | Family tree · Character editor · Portraits |
+| 0.10 | Terrain editor |
+| 0.11 | Faction limit known (REX / M2EX) |
+| 0.12 | Flags and logos · Climates · Restore to any backup |
+| 0.13 - 0.14 | Town names by culture · Own name lists |
+| 0.15 | Medieval II city / castle |
+| 0.16 | battle_models.modeldb |
+| 0.17 | recruit_pool · REX brackets · Forts · Rebels editable |
+
+**Day 3 - community knowledge, models, packs**
+
+| Version | What came |
+|---|---|
+| 0.18 | New religion (Medieval II) · Heights brush · Find on the map · GPL-3.0 |
+| 0.19 | Replace a battle model · 3D view of unit models · Unit voices · Pack check before install · Big maps 10x lighter |
+| 0.20 | Report a bug in one click · Settlements tab · 3D view of Rome models too · Campaign rules · Add-ons |
+| 0.21 | Volcanoes and land bridges · Forts and watchtowers on the map · Main window reorganised |
+
+**Day 4 - a living campaign map, both games**
+
+| Version | What came |
+|---|---|
+| 0.22 | Character panel as in the game · Traits and retinue · Events and later factions · Religion map |
+| 0.23 | Alliances and wars at the start · Victory conditions · Diplomacy in plain words |
+| 0.24 | Campaign map 3x bigger (alpha) · Settings window |
+| 0.25 | Smooth relief on the bigger map · Wonders on the map |
+| 0.26 | Right-click menu on the map · Search in Units and armies · Building chains kept whole |
+| 0.27 | Units and buildings brought from another mod, step by step |
+| 0.28 | The bigger map smooth - coast, relief 3x higher, its heights file · Land and sea brush - a new island |
+| 0.29 | Recolour every faction picture · Faction emblem from one picture · Buildings and garrisons for many towns · Natural edges on the bigger map · Raze Settlement for Medieval II (0.29.1) · Fixes from reports - bigger map rules, all-or-nothing writes, new factions' buttons, the editor into the game folder (0.29.2) |
+
+**Days 5 - 9 - the Map editor, step by step**
+
+| Version | What came |
+|---|---|
+| 0.30 | Map editor - select, give, delete, a town window · Bigger map step by step (beta) · Map size + / - · Mercenaries · Module builder and Avoid Growth · Start the game · Check mod files by when it breaks · Undo this write · Credits · One write for the session, fixes for packed Medieval II games (0.30.1) |
+
+**Day 10 - one language, fixes from the testers**
+
+| Version | What came |
+|---|---|
+| 0.31 | Every window one write · Mods holding only their changes · Rename a faction · Cards on hover, tables sorted · Enter / Esc and answers in words · Fixes from the in-game test runs |
+| 0.32 | Module builder like Scratch - blocks dragged into each other · ELSE, any / none / not, FOR EACH town, army, faction |
+
+**Day 11 - from nothing, the map's shape by hand**
+
+| Version | What came |
+|---|---|
+| 0.33 | Units, buildings and religions from nothing · Your own files for a battle model · Map size by dragging its edges · Merge regions · Many towns deleted at once · A town's own garrison · Recolour never over the original · Cards and pictures as the game shows them |
+
+**Days 12 - 13 - the models move, the map's free land**
+
+| Version | What came |
+|---|---|
+| 0.34 | Animations in View in 3D - riders on their horses, siege engines · Cards made from the 3D view · Wastelands - a deleted town's region, one common wasteland · Pull and Push the coast · Thin mods · Faster on big mods · Every picture big on a click |
 
 | Area | Confirmed in game | Released | Being tested | Next |
 |---|---|---|---|---|
@@ -172,6 +199,8 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Tools > Sort the recruitment panel: infantry, missiles, handlers, cavalry, siege, ships - the dearest first
+- 📦 Bigger map (x3): the minimap keeps its size; maps saved as colour-mapped TGAs open; Map > Layers: towns on / off, rebel land coloured
 - 📦 Bigger map (x3): no sea ground on the land (light blue teeth along the coast, ports seeming in the water), every river reaching the sea by one pixel (from reports)
 - 📦 Terrain editor: land and sea painted tile by tile with the ground brush; rivers always shown while painting them; Layers close on a second press; Report a bug packs its logs without freezing (from reports)
 - 📦 Bring units from another mod: a Faction pick; a file of the same name with other content brought under its own name (chariots no longer the Britons'); buildings show another culture's picture when theirs has none (from reports)
