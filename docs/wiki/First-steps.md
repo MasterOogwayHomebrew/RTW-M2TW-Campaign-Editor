@@ -11,7 +11,7 @@
 Every change waits until you press **Preview changes** (shows every file and line) and **Apply changes**
 (writes it, with a backup). **Undo** / **Redo** step back through what you did in the window.
 
-**Scrolling**: every list, table, page and read-only text has its scrollbar, and also scrolls by the mouse wheel, by **dragging** it with the left button (it follows the mouse, up / down and left / right) and by the **middle button**: press the wheel and move the mouse - the further from where you pressed, the faster it scrolls, both ways (held: it stops when you let go; a click: it goes on until the next click or Esc). A text you can type in keeps the left drag for selecting words. The map is as before (the right button moves it).
+**Scrolling**: long lists, tables and pages show a scrollbar; every list, table, page and read-only text also scrolls by the mouse wheel, by **dragging** it with the left button (it follows the mouse, up / down and left / right) and by the **middle button**: press the wheel and move the mouse - the further from where you pressed, the faster it scrolls, both ways (held: it stops when you let go; a click: it goes on until the next click or Esc). A text you can type in keeps the left drag for selecting words. The map is as before (the right button moves it).
 
 ## Medieval II
 
