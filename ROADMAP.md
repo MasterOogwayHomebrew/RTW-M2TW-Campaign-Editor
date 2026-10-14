@@ -16,8 +16,10 @@ author in one click ([video](https://youtu.be/7MbYR9ywNsI)). That is the fastest
 - **Positions** (`descr_strat.txt`, `descr_events.txt`, ...): towns, characters, fleets, resources, forts,
   watchtowers, wonders and event places go to the middle of their new block.
 - **Coast and borders**: natural - the coastline winds with bays and capes and the borders between regions wind
-  too, instead of 3 x 3 squares and straight 45-degree cuts (two waves whose sizes stand in the golden ratio bend
-  them, so the pattern never repeats; the same map always comes out alike); every block's middle keeps its old
+  too, instead of 3 x 3 squares and straight 45-degree cuts (the old map's own relief bends
+  them - a cape where a ridge comes down to the sea, a bay where a valley does, a river on the lower side of its
+  valley - with a fractal coast's small detail, rougher where the land is steep; the same map always comes out
+  alike); every block's middle keeps its old
   value, so nothing changes under a town, army or resource, and every region stays in as many pieces as before. Ports stay on the shore pixel of their own region.
 - **Heights**: `map_heights` the natural way - bent with the ground, crags on the mountains, rivers in their
   valleys, no slope steeper than the old map's steepest - along the new coast, and
@@ -170,6 +172,7 @@ timeline
 
 ## 📦 Built, comes with the next release
 
+- 📦 Bigger map (x3): lines and rivers bent by the old map's own relief (capes on ridges, bays in valleys, rivers on the lower side), no golden-ratio waves (from a report)
 - 📦 Bring units from another mod: a building this mod lacks comes along with its unit; New unit: your own texture / model file in the window itself (from reports)
 - 📦 Bring units from another mod: the list sorts (name, kind, owner, cost), the unit under the mouse shows without ticking it, the first step in a window as small as it needs (from reports)
 - 📦 View in 3D: Medieval II's armour upgrades picked in the window; a shield worn two ways drawn once (on the back with the first weapon)
