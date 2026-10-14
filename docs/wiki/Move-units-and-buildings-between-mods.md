@@ -27,7 +27,8 @@ Between the two games it is not possible - their models and files differ.
    finish by hand. **Write it into this mod** makes one backup first; **Tools > Restore a backup...** undoes it.
 
 What comes along: the unit's lines, its battle models (Medieval II: in `descr_model_battle.txt` *and*
-`battle_models.modeldb`), mount, engine or animal, every mesh / texture / sprite they name, its cards and info
+`battle_models.modeldb`), mount, engine or animal, the projectiles it fires (`descr_projectile_new.txt` in Rome,
+`descr_projectile.txt` in Medieval II), every mesh / texture / sprite they name, its cards and info
 pictures for each new owner, its name and descriptions, and the recruit lines. A file your mod (or the game under
 it) already has under the same name but with other content - a chariot's texture, say - comes in under a name of its
 own (`..._2`), with a model of its own pointing at it: the brought unit keeps the other mod's look and nothing of
