@@ -36,6 +36,12 @@ yours changes. A chariot's body (Rome) names its texture inside its `.cas`, and 
 `<name>_<faction>` texture when there is one: the brought chariot's look goes in under that name for each new owner
 (your other factions' chariots keep theirs; a faction that already has its own keeps it).
 
+Skeletons (how the men move): a big mod (HLR, for one) has skeletons of its own in its own animation files. A brought
+model naming a skeleton your mod lacks gets your mod's nearest one (`fs_hc_spearman_classic` -> `fs_hc_spearman`,
+`fs_s1_gladius` -> `fs_swordsman`), said in the WARNINGS - without it the game stops at start ("Unable to find
+skeleton"). The men then move with your mod's animations. **Check mod files** names any model whose skeleton the
+mod lacks.
+
 Not brought yet: Medieval II's town plans (a building's look in the town on the battle map is brought in Rome,
 Barbarian Invasion and REX).
 
