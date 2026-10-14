@@ -221,9 +221,10 @@ first** (**In each kind**).
   custom battles and the computer's turns use the real ones. Nothing is written into the mod's files or the saved
   game - take the add-on out and everything is as before.
 - Ships always stand after the land units and agents last: the game keeps those groups apart.
-- Medieval II also keeps its own kind blocks in the panel (infantry, missile infantry, cavalry, missile cavalry,
-  handlers, siege, ships) unless `descr_campaign_db.xml` has `recruitment_sort_simple` true - the order then holds
-  inside each block.
+- Medieval II splits the panel into its own kind blocks (infantry, missile infantry, cavalry, missile cavalry,
+  handlers, siege, ships); **Medieval II: one panel for every kind** (on by default) switches the game's
+  `recruitment_sort_simple` on while it runs (M2EX; `descr_campaign_db.xml` stays as it is), so the whole panel
+  follows the order.
 - One script for both games, in the game's `script/modules`. Its `[ORDER]` lines show in the script console; in the
   console `sq ::recruit_order_list()` lists the order and `sq ::recruit_order_off()` puts the real numbers back
   until your next turn.
