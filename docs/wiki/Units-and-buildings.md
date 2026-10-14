@@ -122,7 +122,7 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
 ## The recruitment panel in order
 
 **Tools > Sort the recruitment panel (strongest first)...** puts every building level's recruit lines in one order:
-infantry, then missiles (archers, slingers, skirmishers), animal handlers, cavalry, siege, ships - the dearest first
+infantry, then missiles (archers, slingers, skirmishers), cavalry, siege, ships - the dearest first
 in each kind. Only the recruit lines change places (agents, bonuses and comments stay); Preview shows every level,
 Apply writes it with a backup.
 
