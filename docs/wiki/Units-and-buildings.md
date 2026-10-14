@@ -119,6 +119,16 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   other units; a new unit gets one), and `data/sounds/events.dat` / `events.idx` are removed with a backup - the game
   builds them again from the texts on the next start. The voice class is the `voice_type` line.
 
+## The recruitment panel in order
+
+**Tools > Sort the recruitment panel (strongest first)...** puts every building level's recruit lines in one order:
+infantry, then missiles (archers, slingers, skirmishers), animal handlers, cavalry, siege, ships - the dearest first
+in each kind, so the panel's top left shows the strongest unit. The game lists a town's units in the order of these
+lines in `export_descr_buildings.txt`, so it is set once: every town, every unit added later and old saves follow it.
+Only the recruit lines change places (agents, bonuses and comments stay); Preview shows every level, Apply writes it
+with a backup. A town recruiting from several buildings shows each building's units in this order; how the game
+joins the buildings, the game decides.
+
 ## Many towns at once
 
 A building level for many towns of any owner, or random garrisons under an upkeep limit: the Map's **Select**, a box, then a right
