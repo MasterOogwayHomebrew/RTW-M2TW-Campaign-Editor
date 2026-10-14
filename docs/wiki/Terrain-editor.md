@@ -13,11 +13,14 @@ and Medieval II).
   there - Medieval II, whose map is full of them; Rome only with REX, which knows these ground types - not yet
   tried in the game on Rome); **impassable land, always black** (never walked and never seen - for the land of a
   wasteland you want hidden for good; Rome with REX and Medieval II with M2EX, whose ground type
-  impassable_shrouded it is - not yet tried in the game).
+  impassable_shrouded it is - not yet tried in the game). A sea ground painted on land turns the tile into sea, a
+  land ground on the sea turns it into land - tile by tile, its region and heights with it, as *Land and sea*'s
+  Land / Sea brush does.
 - **Rivers, cliffs, volcanoes...**: rivers, fords (the tiles where armies cross a river), river sources, cliffs,
   volcanoes, land bridges (Medieval II: armies walk across a narrow strait like the Bosporus - a straight strip of 3
   tiles: land, sea, land; Preview names a bent or broken one), or
-  nothing to rub one out.
+  nothing to rub one out. In this mode the rivers, fords, cliffs and volcanoes are always drawn (the **Rivers** tick
+  is for the other modes).
 - **Climates**: the mod's own climates (`descr_climates.txt`, in its colours) - what grows on the campaign
   and battle maps, the snow in winter, the heat that tires men in battle. While this mode is on the map shows
   each land tile in its climate's colour. The sea keeps its climate. A new climate of your own is not in yet.

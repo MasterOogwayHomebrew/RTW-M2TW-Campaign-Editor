@@ -11,8 +11,8 @@ Between the two games it is not possible - their models and files differ.
 1. Load **your** mod (the one that gets the units). Open **Units** (top bar).
 2. Press **Bring from another mod...** (top right of the editor).
 3. **From which mod**: pick it in the list of mods in your game folder, or **Browse...** to its `data` folder.
-4. **Which units**: tick them (Ctrl / Shift for more). **Find**, *only those this mod has not* and **Sort** (by name,
-   kind, owner or cost) help on a long list. The unit under the mouse - or the one clicked last - shows on the right
+4. **Which units**: tick them (Ctrl / Shift for more). **Sort** (by name, kind, owner or cost), **Faction** (only the
+   units that faction or culture may own), **Find** and *only those this mod has not* help on a long list. The unit under the mouse - or the one clicked last - shows on the right
    as the game shows it: its card, name, description and numbers.
 5. **Names here**: the name each unit gets in your mod. A name your mod already has gets a free one (`... 2`).
    *Card / text name* is the unit's `dictionary`: it names its card pictures and its texts (letters, digits, `_`).
@@ -28,7 +28,13 @@ Between the two games it is not possible - their models and files differ.
 
 What comes along: the unit's lines, its battle models (Medieval II: in `descr_model_battle.txt` *and*
 `battle_models.modeldb`), mount, engine or animal, every mesh / texture / sprite they name, its cards and info
-pictures for each new owner, its name and descriptions, and the recruit lines.
+pictures for each new owner, its name and descriptions, and the recruit lines. A file your mod (or the game under
+it) already has under the same name but with other content - a chariot's texture, say - comes in under a name of its
+own (`..._2`), with a model of its own pointing at it: the brought unit keeps the other mod's look and nothing of
+yours changes.
+
+Not brought yet: a building's look in the town on the battle map (its place in the town plans and its battle
+models) - a brought building shows the game's stand-in model there.
 
 ![Step 5: where the brought units are recruited in your mod](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/bring_units.png)
 
