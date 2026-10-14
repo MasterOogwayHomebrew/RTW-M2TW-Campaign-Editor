@@ -11,8 +11,9 @@ Between the two games it is not possible - their models and files differ.
 1. Load **your** mod (the one that gets the units). Open **Units** (top bar).
 2. Press **Bring from another mod...** (top right of the editor).
 3. **From which mod**: pick it in the list of mods in your game folder, or **Browse...** to its `data` folder.
-4. **Which units**: tick them (Ctrl / Shift for more). **Find** and *only those this mod has not* help on a long list.
-   The unit clicked shows on the right as the game shows it: its card, name, description and numbers.
+4. **Which units**: tick them (Ctrl / Shift for more). **Find**, *only those this mod has not* and **Sort** (by name,
+   kind, owner or cost) help on a long list. The unit under the mouse - or the one clicked last - shows on the right
+   as the game shows it: its card, name, description and numbers.
 5. **Names here**: the name each unit gets in your mod. A name your mod already has gets a free one (`... 2`).
    *Card / text name* is the unit's `dictionary`: it names its card pictures and its texts (letters, digits, `_`).
 6. **Who has them**: the factions - or whole cultures - of your mod that may recruit them. The other mod's owners
