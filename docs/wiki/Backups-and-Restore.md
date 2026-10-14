@@ -25,6 +25,9 @@ goes.
   two not with REX). Every unit is checked as the games read it: its lines, its owners, and without REX / M2EX
   its men (Rome 6-60, Medieval II 4-100, others 1-300), extras (300), officers (3) and Rome's attributes. A unit
   without an ownership line is only a note: the games give it to every faction.
+  Also from the games' readers: pikes without phalanx, a unit with none of square / horde / phalanx, a projectile
+  that does not exist, a building upgrade pointing down, a wrong settlement_min, a port building with no port on the
+  map; notes for a misspelt word in a faction's first lines, a resource on sea, units without their own card.
 - **Check mod files** with a faction picked also says whether it is **complete**: every file where every other
   faction is named and this one is not (the game or its screens would miss it), with a faction of its culture to
   copy the lines from; files most (not all) factions are named in are only noted - real factions go without them.
