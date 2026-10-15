@@ -375,6 +375,25 @@ are on, 8 pixels a tile, not the signs - as a PNG or TGA picture (for a forum po
 
 **Mercenaries:** **Mercenaries...** (top row), or a right click on the map > **Mercenaries for hire in <region>...**, shows who is for hire where (`descr_mercenaries.txt`), in two tabs. **For hire in a region** (the right click opens it on that region) makes the region's list the way a garrison is made: the mercenaries' cards on the left - a click adds one - and the units for hire there on the right - a click picks one for its numbers, a right click takes it out. A region shares its list with the other regions of its pool; the tab says which, and **A list of its own** takes the region out of the pool with a copy of the list (a region in no pool gets its own list with the first card). **Pools** - a pool is a group of regions that share one hire list. Pick a pool: its regions are selected on the map (Select switches on, they show yellow), so they are changed the map's own way - a box adds, Shift + box takes away - and **Take the map's selection** gives the pool exactly that (**Add the map's selection** only adds). **New pool from the map's selection** (also the map's right click with Select: **New mercenary pool from the selected regions...**) makes a pool of them; a region stands in one pool only, so it leaves its old one (a pool left without a region goes). Each unit for hire shows its numbers in plain words - how many at the start, at most, how fast they come back (one every N turns), the price, the experience, and in Medieval II the years, religions, crusading and events it needs; pick one to change them, **Add** another mercenary of the mod (units with `mercenary_unit`), take one out, rename or delete a pool. A mistake the game would stumble on is said in red; **Preview**, then **Keep for Apply** (the changes go into the session's list; **Apply changes** in the main window writes them with everything else waiting - one backup set, **Undo this write** puts them back); lines not changed stay as they were.
 
+## Rebels
+
+**Rebels...** (top row, beside Mercenaries), or a right click on the map > **Rebels in <region>...** (with Select on:
+**Rebel type for the N selected region(s)...**), shows who rises when a region revolts. Each region names a **rebel
+type** (`descr_regions.txt`); a type lists the units the game raises for it (`descr_rebel_factions.txt`) and the name
+players read (`text/rebel_faction_descr.txt`); brigands and pirates are types too. Two tabs:
+
+- **Rebel types**: the types on the left (a search box above), the picked one on the right - the name players read,
+  its kind (`peasant_revolt`, `brigands`, `pirates`, `gladiator_revolt`), the chance, the text key and its units
+  (**Add** one from the list - the rebels' own units first; a right click takes one out; the same unit twice is raised
+  more often). **New type...**, **Copy this type...**, **Rename...** (its regions follow) and, set apart, **Delete
+  this type...** (its regions get the type you pick in its place). **Show its regions on the map** selects them.
+- **Regions**: every region with its town, owner and rebel type, a filter by faction; pick rows (Ctrl / Shift + click,
+  or **Pick the map's selection**) and **Give it** a type.
+
+A mistake the game would stumble on (a unit the mod lacks, a type with no unit, a name of two words) is said in red;
+**Preview**, then **Keep for Apply**, then **Apply changes** writes it with a backup; types not changed keep their
+lines byte for byte. Without REX / M2EX a type takes up to 20 unit types (said); with them, no limit.
+
 ## Grow or cut the map at its edges
 
 **Change size...** beside the map's size under the map adds rows or columns of tiles at any edge - left, right,
