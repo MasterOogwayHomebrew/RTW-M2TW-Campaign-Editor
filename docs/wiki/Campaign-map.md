@@ -141,9 +141,11 @@ commented out as when deleting a town.
 
 - Picking a faction's towns (**Towns on the map...** in Factions): a click on a town adds it or takes it
   out, **Done** goes back.
+- **Every faction's capital** (its first town in `descr_strat.txt`) shows a star inside its square in place of the
+  town hall - light on a dark colour, dark on a light one.
 - **What Apply will write is on the map before it**: the towns picked for a new (or edited) faction stand in its
-  colour with a dashed orange ring, its capital under a gold star, its garrisons as a flag on the roof - and so do
-  a town given or a garrison changed in a town window or Many towns, kept for Apply. The legend explains both signs.
+  colour, their regions yellow as a selection is, its capital with the star, its garrisons as a flag on the roof -
+  and so do a town given or a garrison changed in a town window or Many towns, kept for Apply.
 - A left drag moves characters, towns and ports. The target turns green or red: an
   army needs land it may stand on (no sea, mountains, dense forest, river, ford or cliff) or a town no other
   army holds; a fleet needs sea; an agent any land.

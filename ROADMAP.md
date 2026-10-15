@@ -200,8 +200,8 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 ## 📦 Built, comes with the next release
 
 - 📦 Rebels... (both games): rebel types - their units, kind, chance, the name players read - new, copied, renamed, deleted; which regions have which type, many at once, a faction filter (from a report)
-- 📦 The map shows what Apply will write before it: a new faction's towns and capital, garrisons, towns given in other windows (from reports)
-- 📦 Unit cards and description pictures for one faction or all owners; New unit step by step: the pictures shown, View in 3D with Make a card; Recolour while a new faction is being made (from reports)
+- 📦 The map shows what Apply will write before it (regions yellow as a selection): a new faction's towns, garrisons, towns given in other windows; every capital a star in its square (from reports)
+- 📦 Unit cards and description pictures for each faction on its own; New unit step by step: the pictures shown, View in 3D with Make a card; Recolour while a new faction is being made (from reports)
 - 📦 Draw from the map: the faction-select map from the campaign map - relief, rivers, the faction's land one solid patch
 - 📦 Bring units (both games): its name call in battle with its sounds; the unit's own skeletons and animations come along into your mod's animation set
 - 📦 Add-on Recruitment Order (both games): the recruitment panel in order - infantry, missiles, cavalry, siege, ships, the dearest first
