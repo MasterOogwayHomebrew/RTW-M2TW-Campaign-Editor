@@ -276,8 +276,11 @@ with no picture of their own) show as frames with their words.
 
 - Click a piece to pick it; drag it to move it; drag the yellow corner to size it; the arrow keys nudge it (Shift: 10
   pixels).
-- On the right: its place, size, the page it opens, its words (text key) and tooltip.
-- **Copy** makes the next numbered piece - the game finds many pieces by their numbers, so more faction buttons on the
+- A right click on a piece: **Place and size...**, the page it opens, its words (text key) and tooltip, Copy, Rename,
+  Remove, Open the page. The line under the screen says what the picked piece is.
+- The words are drawn in the game's own letters: its `.cuf` fonts, or under REX / M2EX the TrueType fonts
+  `descr_font_db.txt` names.
+- **Copy** (right click) makes the next numbered piece - the game finds many pieces by their numbers, so more faction buttons on the
   faction-select screen start with a copy of the last one. **Rename...** and **Remove** beside it.
 - A double click on a button (or **Open its page**) goes to the page it opens, as in the game.
 - **Undo** / **Redo**; **Preview** lists the change; **Keep for Apply**, then Apply changes writes it with a backup.
