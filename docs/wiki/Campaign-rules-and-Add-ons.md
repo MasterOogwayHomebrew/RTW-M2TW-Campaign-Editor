@@ -269,7 +269,7 @@ in. Vanilla Medieval II runs no scripts - the add-on does nothing there.
 
 ## Interface - the game's menu screens
 
-**Interface...** (top row, beside Events) shows every page of the game's menus - Rome, Barbarian Invasion and
+**Interface** (top row, beside Events - shown in the main window, like the Module builder) shows every page of the game's menus - Rome, Barbarian Invasion and
 Alexander's `data/menu/Rome.lnt`, Medieval II's `data/menu/mtw2.lnt` - on the 1024 x 768 layout the game uses, with
 the pictures from `data/menu/textures` and the words from `menu_english.txt`. Pieces the game draws itself (buttons
 with no picture of their own) show as frames with their words.
