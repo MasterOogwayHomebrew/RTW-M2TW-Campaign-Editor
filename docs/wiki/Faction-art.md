@@ -40,7 +40,7 @@ There is no *Remove*: without its pictures the game shows errors and a placehold
 The map on the faction-select screen (`map_<faction>.tga`) sits on the faction tab beside the description, with
 the leader's face. **Draw from the map** under it makes a new one from the campaign map itself, seen from above in
 the game's own ground textures (relief, rivers, a sea with deep water and turquoise shallows), no signs or names, and
-the faction's land - its towns as given on the Map - filled with its primary colour at 75 % (the land shows
+the faction's land - its towns as given on the Map - filled with its primary colour at 50 % (the land shows
 through), no borders inside it, and a crisp, smooth line round its outside (no tile steps, no town dots) - dark
 round a bright colour, light round a dark one (as the map's signs). Where the campaign's other select maps have a frame round the
 map (Medieval II), the drawing goes where the map lies in them and fills only the inside of the frame - the frame
