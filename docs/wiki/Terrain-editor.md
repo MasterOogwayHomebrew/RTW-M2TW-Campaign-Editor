@@ -63,6 +63,15 @@ above: the ground's textures, the relief, the rivers and a sea with deep water a
 coast. Each picture keeps its own size (the original Rome program crashes on a too big `radar_map1`) and its
 border lines (Medieval II's blue line along the top and the right). It waits for Apply like any change.
 
+**Game's editor...** opens the campaign in the game's own campaign-map editor, beside this one. That editor opens
+only campaigns in `campaign/custom/`, so **Open in the game's editor** copies the campaign to
+`campaign/custom/ce_<campaign>/` and starts the game in it - Rome with REX and Medieval II with M2EX straight in the
+editor; the plain games only show their editor in the menus, and the window says where to click. Edit there, Save,
+close the game, then **Take the changes back**: the files it saved go back into your campaign, the `script` line it
+drops is put back, `map.rwm` is removed (the game builds it again) and anything it dropped (factions, towns,
+characters fewer than before) is listed. **Remove the copy** takes the custom copy out. Every step makes a backup.
+Not tried in the game yet.
+
 ## What it keeps safe
 
 - **How the game draws a coast** (why a coast painted by tiles looks like stairs): a tile is one pixel of
