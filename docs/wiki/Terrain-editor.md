@@ -63,6 +63,9 @@ above: the ground's textures, the relief, the rivers and a sea with deep water a
 coast. Each picture keeps its own size (the original Rome program crashes on a too big `radar_map1`) and its
 border lines (Medieval II's blue line along the top and the right). It waits for Apply like any change.
 
+**Own minimap...** puts a picture of your own (.tga, .png, .jpg...) in its place, fitted the same way into each
+minimap picture - its size and border kept. Restore takes it back.
+
 **Game's editor...** opens the campaign in the game's own campaign-map editor, beside this one. That editor opens
 only campaigns in `campaign/custom/`, so **Open in the game's editor** copies the campaign to
 `campaign/custom/ce_<campaign>/` and starts the game in it - Medieval II with M2EX straight in the editor; Rome (with
