@@ -9,8 +9,10 @@ the game at once, so you can test every change after that straight away. The tem
 2. **Template**: the faction to copy. The new one gets its culture, units, buildings, character models, name
    lists, trait triggers and pictures.
    **From another mod...** (under it): take a faction of another mod of the same game instead - pick the mod
-   (it is only read) and the faction. The window fills with its names, colours and descriptions; the template
-   becomes your faction of the same culture (change it if you like). Apply brings what is the faction's own: its
+   (it is only read) and the faction. The window fills with its names, colours and descriptions. It is made
+   **from zero**: the Template row says so and is locked - a faction of your mod of the same culture only gives it
+   its lines in the game's lists, nothing of it is seen, and its select map is drawn from your map in its colour.
+   Apply brings what is the faction's own: its
    units (with their models, cards and recruit lines; a unit your mod has just the same is shared), its name
    lists, its figures on the campaign map and in battle, its banners, flags, icons and pictures. Its leader and
    heir fill the window; on Apply its whole family (generals with their bodyguards, wives, children, the family
