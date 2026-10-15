@@ -94,7 +94,10 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   head to the thighs, the picture the whole man; to the knees / waist; nearer, up / down, right / left), on a
   see-through ground as the game's cards, a colour, a picture of your own, or the game's own card ground (the
   campaign's or the battle's, of the faction's culture); a Medieval II picture can take the game's frame round it. **Use it** waits for Preview / Apply
-  like **Import...** (every faction folder of the unit's card, a backup first); **Save a copy...** keeps a PNG.
+  like **Import...** (the faction folders **Pictures for** names, a backup first); **Save a copy...** keeps a PNG.
+  **Pictures for** (a unit with more than one owner): **All owners** - one card / description picture in every
+  owner's folder - or one faction, which gets a picture of its own while the others keep theirs (the game reads
+  each faction's own ui/units/<faction> and ui/unit_info/<faction>).
   The window stands beside the 3D view and follows it: turn the man or pick another frame there and the card is
   taken again by itself (**Take the 3D view again** does it at once and says what it took). How much of him and
   nearer / up / right are kept for the next unit (cards and pictures apart).
