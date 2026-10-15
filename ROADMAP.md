@@ -199,6 +199,7 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 
 ## 📦 Built, comes with the next release
 
+- 📦 Maps > 3D: the campaign map in 3D in the game's own ground textures, the brushes' work seen at once
 - 📦 Bring units: everything the target lacks - the voices of its class, its fire arrows and their effects, its skeletons' lines
 - 📦 Rebels... (both games): rebel types - their units, kind, chance, the name players read - new, copied, renamed, deleted; which regions have which type, many at once, a faction filter (from a report)
 - 📦 The map shows what Apply will write before it (regions yellow as a selection): a new faction's towns, garrisons, towns given in other windows; every capital a star in its square (from reports)
