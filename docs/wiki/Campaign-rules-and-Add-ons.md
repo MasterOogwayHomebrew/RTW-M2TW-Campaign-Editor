@@ -21,7 +21,7 @@ Every value of the campaign's settings files, by group, each with a plain explan
   `descr_diplomacy.xml`: what each offer costs and how it moves standing. `descr_recruitment.xml`.
 - **Rome under REX** - `descr_settlement_mechanics.xml`: the people each settlement level starts with, needs to grow,
   and holds at most; the weights of the town scroll lines.
-- **REX / M2EX** - `descr_unit_sizes.txt`: the Unit size choices in the options (soldiers x this number).
+- **REX / M2EX** - `descr_unit_sizes.txt`: the Unit size choices in the options (soldiers x this number; with REX the choice is on the options' **Controls** page, not Video).
 - **REX / M2EX engine settings** - `descr_ex.txt` (sound, camera, max factions, bribery, hordes, ages and the family,
   the battle range disc and colours...) and `descr_caps_ex.txt` (feature switches: recruitment slots per town, sprite
   format, trade fleets, portrait pools, building downgrade / conversion of culture...), grouped by the file's own
