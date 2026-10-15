@@ -52,7 +52,7 @@ and did not write yet is there - the tab makes its picture again when you open i
 at any time). The right button dragged moves over the map, the wheel held down and dragged turns and tilts the view, the wheel turned goes nearer or farther,
 the arrow keys (or W A S D) move too; **Heights x** makes the relief taller or flatter (only in this view);
 **Whole map** puts the view back. What stands on the map is there in the game's own models (**Models** switches
-them off): each town in its level's model of its owner's culture, ports, forts, watchtowers, the resources, and the
+them off): each town in its level's model of its owner's culture (each part in its own texture) with the walls of the defences built there, ports (the quay and its ships), forts, watchtowers, the resources, and the
 armies, fleets and agents in their faction's texture, standing in their own standing move from the game's animations;
 a hill in front hides what is behind it.
 
