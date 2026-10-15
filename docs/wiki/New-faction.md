@@ -12,8 +12,10 @@ the game at once, so you can test every change after that straight away. The tem
    (it is only read) and the faction. The window fills with its names, colours and descriptions; the template
    becomes your faction of the same culture (change it if you like). Apply brings what is the faction's own: its
    units (with their models, cards and recruit lines; a unit your mod has just the same is shared), its name
-   lists, its figures on the campaign map and in battle, its banners, flags, icons and pictures; its leader's army
-   and garrisons are of its own units. Its towns, scripts and events do not come - pick its towns on your map.
+   lists, its figures on the campaign map and in battle, its banners, flags, icons and pictures. Its leader and
+   heir fill the window; on Apply its whole family (generals with their bodyguards, wives, children, the family
+   tree) stands by the capital you pick, and its towns' garrisons are 3-6 of its own units, drawn as for an empty
+   town. Its armies, towns, scripts and events do not come - pick its towns on your map.
    **Forget it** makes it a plain copy of the template again.
 3. **Internal name**: lower case, no spaces, for example `epirus`.
    **Comes into the campaign**: *on the map from the start* (the usual), or later - *by an event* (a date and a

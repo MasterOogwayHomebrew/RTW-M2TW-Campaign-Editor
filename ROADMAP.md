@@ -199,7 +199,7 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 
 ## 📦 Built, comes with the next release
 
-- 📦 New faction > From another mod: a whole faction of another mod brought - units, names, figures on the map and in battle, flags, icons, pictures; armies and garrisons of its own units
+- 📦 New faction > From another mod: a whole faction of another mod brought - units, names, family by the capital, figures on the map and in battle, flags, icons, pictures; garrisons of its own units
 - 📦 Maps > 3D: the campaign map in 3D in the game's own ground textures and models (towns, ports, forts, resources, armies, agents), the brushes' work seen at once
 - 📦 Bring units: everything the target lacks - the voices of its class, its fire arrows and their effects, its skeletons' lines
 - 📦 Rebels... (both games): rebel types - their units, kind, chance, the name players read - new, copied, renamed, deleted; which regions have which type, many at once, a faction filter (from a report)
