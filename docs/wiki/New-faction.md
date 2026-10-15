@@ -10,8 +10,9 @@ the game at once, so you can test every change after that straight away. The tem
    lists, trait triggers and pictures.
    **From another mod...** (under it): take a faction of another mod of the same game instead - pick the mod
    (it is only read) and the faction. The window fills with its names, colours and descriptions. It is made
-   **from zero**: the Template row says so and is locked - a faction of your mod of the same culture only gives it
-   its lines in the game's lists, nothing of it is seen, and its select map is a stand-in - your map with no land
+   **from zero**: the Template row and the template's options are put away - a faction of your mod of the same
+   culture only gives it its lines in the game's lists, inside, nothing of it is seen (its relations start neutral,
+   its own pictures come along), and its select map is a stand-in - your map with no land
    lit - until you give it towns and press Art's **Draw from the map**.
    Apply brings what is the faction's own: its
    units (with their models, cards and recruit lines; a unit your mod has just the same is shared), its name
