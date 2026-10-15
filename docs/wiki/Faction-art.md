@@ -62,26 +62,24 @@ Three pictures of a Rome faction do not live in files of their own but on sheets
 - **Faction logo** (the faction button at the bottom right of the campaign map, diplomacy) and the **small
   faction logo** - sprites named by `logo_index` / `small_logo_index`.
 
-A **new faction gets its own**: a free flag slot and, under REX, logo sprites on a page of their own
-(`ui/roman/interface/faction_logo_<faction>.tga`), the template's pictures copied in - so replacing them never
+A **new faction gets its own**: a free flag slot and logo sprites on a page of their own
+(`ui/<culture>/interface/faction_logo_<faction>.tga`), the template's pictures copied in - so replacing them never
 changes the template's. **Replace...** on an existing faction that shares its slot or sprite does the same
-first. A logo of its own needs REX with `sprite_format xml` in the mod's own `descr_caps_ex.txt` (a mod without
-one runs on the engine's default `sd`; Load offers to copy the game's). On the binary sprite sheets (the original
-games, or an engine on `sd`) no sprite can be added, so **Replace...** paints the new picture into the logo's own
-place on the game's page instead - on the mod's copy of that page in every culture's `interface` folder - and the
-game shows it. When the mod gives that place to other factions too, the faction first moves to a logo place no
-faction of the mod uses (the logo of a faction the mod left out), so the others keep theirs - a new faction made
-without REX gets its own logos this way as well. Only when no place is free does the shared one change for all, and
-the card says so. The **Faction emblem** button changes these logos the same way.
+first; the factions that shared it get a page of their own with the old picture, so they keep it. This works with
+or without REX: under REX with `sprite_format xml` the sprite goes into the `.sd.xml` text sheet; on the original
+games (or an engine on `sd`) the editor writes the game's own binary sprite list (`ui/strat3.rsd`,
+`ui/shared2.rsd`) in the mod - a page with its click mask and the sprite on it - and puts the page into every
+culture's `interface` folder that held the old one. The **Faction emblem** button makes these logos the same way.
 
 **Medieval II (with M2EX)** works the same way: the faction logo (68 x 76, `ui/strategy.sd.xml`) and the small
 logo (32 x 32, `ui/shared.sd.xml`) - the shield in diplomacy, on the faction's scrolls and on its button. Both
 cards are always on the Art tab, also when the sprite `logo_index` names is on no sheet (the game then shows
 another faction's picture in its place - the card says so). A mod that reads the binary sheets (no
-`sprite_format xml` in its own `descr_caps_ex.txt`, as many big mods) shows **Own logos for this mod...** on the
-card: after a yes it writes that line (a backup first; **Undo this write** puts it back), and **Replace...** then
-gives the faction a logo of its own. Without it, **Replace...** paints into the logo's place on the page, as in Rome. Look the game's panels over once after the switch: every interface sprite
-comes from the `.sd.xml` sheets then.
+`sprite_format xml` in its own `descr_caps_ex.txt`, as many big mods, and the game without M2EX) gets its logos
+in the game's binary sprite lists (`ui/strategy.sd`, `ui/shared.sd`), as in Rome. Only where the editor finds no
+sprite list it can add to does the card offer **Own logos for this mod...** (M2EX): after a yes it writes that
+line (a backup first; **Undo this write** puts it back), and every interface sprite comes from the `.sd.xml`
+sheets then.
 
 ## Figures on the campaign map - the Models tab
 
