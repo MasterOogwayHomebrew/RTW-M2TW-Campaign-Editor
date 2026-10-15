@@ -481,7 +481,6 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 | The window in other languages, picked at the first start: Spanish, French, German, Italian, Russian, Turkish (asked on Discord); hover texts in place of long labels so longer words fit | Time; translators to check the words |
 | More of REX's settings in plain words (sprites, arrow visibility, fort upkeep, trade fleets...) - the engine files `descr_ex.txt` / `descr_caps_ex.txt` are in Campaign rules already | Time |
 | The AI's war plans (`invade_*` in descr_campaign_ai_db.xml) explained in plain words on the Faction tab | Time |
-| Open the mod in the game's own campaign-map editor (`REX.exe -strat_ed=a`, M2EX) | Time |
 | 3D for everything: buildings, strat-map models, wonders, ships, agents - viewed, replaced and saved (both games); custom models placed on the map, a mode for wonders | Time |
 
 ## 💡 Later

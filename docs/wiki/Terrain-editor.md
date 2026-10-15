@@ -65,8 +65,9 @@ border lines (Medieval II's blue line along the top and the right). It waits for
 
 **Game's editor...** opens the campaign in the game's own campaign-map editor, beside this one. That editor opens
 only campaigns in `campaign/custom/`, so **Open in the game's editor** copies the campaign to
-`campaign/custom/ce_<campaign>/` and starts the game in it - Rome with REX and Medieval II with M2EX straight in the
-editor; the plain games only show their editor in the menus, and the window says where to click. Edit there, Save,
+`campaign/custom/ce_<campaign>/` and starts the game in it - Medieval II with M2EX straight in the editor; Rome (with
+REX too, which has no switch for it) and plain Medieval II only show their editor in the menus, and the window says
+where to click. Edit there, Save,
 close the game, then **Take the changes back**: the files it saved go back into your campaign, the `script` line it
 drops is put back, `map.rwm` is removed (the game builds it again) and anything it dropped (factions, towns,
 characters fewer than before) is listed. **Remove the copy** takes the custom copy out. Every step makes a backup.
