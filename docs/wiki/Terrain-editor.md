@@ -67,7 +67,8 @@ border lines (Medieval II's blue line along the top and the right). It waits for
 only campaigns in `campaign/custom/`, so **Open in the game's editor** copies the campaign to
 `campaign/custom/ce_<campaign>/` and starts the game in it - Medieval II with M2EX straight in the editor; Rome (with
 REX too, which has no switch for it) and plain Medieval II only show their editor in the menus, and the window says
-where to click. Edit there, Save,
+where to click (Rome: OPTIONS > EDITORS > PROVINCIAL CAMPAIGN EDITOR - not the BATTLEFIELD EDITOR beside it). While
+the copy is there, Rome lists it in its PROVINCIAL CAMPAIGN menu too; **Remove the copy** takes it out. Edit there, Save,
 close the game, then **Take the changes back**: the files it saved go back into your campaign, the `script` line it
 drops is put back, `map.rwm` is removed (the game builds it again) and anything it dropped (factions, towns,
 characters fewer than before) is listed. **Remove the copy** takes the custom copy out. Every step makes a backup.
