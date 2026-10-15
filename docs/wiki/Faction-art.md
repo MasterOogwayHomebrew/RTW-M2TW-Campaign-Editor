@@ -69,8 +69,10 @@ first. A logo of its own needs REX with `sprite_format xml` in the mod's own `de
 one runs on the engine's default `sd`; Load offers to copy the game's). On the binary sprite sheets (the original
 games, or an engine on `sd`) no sprite can be added, so **Replace...** paints the new picture into the logo's own
 place on the game's page instead - on the mod's copy of that page in every culture's `interface` folder - and the
-game shows it. When that place is shared with other factions, their logo changes too, and the card says so. The
-**Faction emblem** button changes these logos the same way.
+game shows it. When the mod gives that place to other factions too, the faction first moves to a logo place no
+faction of the mod uses (the logo of a faction the mod left out), so the others keep theirs - a new faction made
+without REX gets its own logos this way as well. Only when no place is free does the shared one change for all, and
+the card says so. The **Faction emblem** button changes these logos the same way.
 
 **Medieval II (with M2EX)** works the same way: the faction logo (68 x 76, `ui/strategy.sd.xml`) and the small
 logo (32 x 32, `ui/shared.sd.xml`) - the shield in diplomacy, on the faction's scrolls and on its button. Both
