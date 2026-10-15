@@ -17,8 +17,8 @@ Every change waits until you press **Preview changes** (shows every file and lin
 
 Medieval II keeps most data in `packs`. Load the game folder (or a Kingdoms campaign's folder, such as `mods/british_isles`) and the tool offers to
 unpack it with the game's own unpacker (the campaign's own `unpack_britannia.bat` and the like for a campaign; it copies the two DLLs the unpacker needs, `msvcp71.dll` and `msvcr71.dll`, next to it). Set-up
-problems that stop the game from starting (M2EX's `vegetation_source text` without the raw vegetation maps)
-are found on Load and fixed with a yes.
+problems that stop the game from starting (M2EX's `vegetation_source text` without the raw vegetation maps; in both games a
+character's name that no list of `descr_names.txt` has any more) are found on Load and fixed with a yes.
 
 ## A separate mod folder (recommended)
 
