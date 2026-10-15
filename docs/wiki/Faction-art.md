@@ -50,7 +50,8 @@ otherwise keeps a copy of its template's, and every other faction's map stays th
 
 Beside the map: the **leader's face** the screen shows - the faction's own `leader_pic_<faction>.tga` where it has
 one (Rome's Roman families), else its faction leader's portrait (his own, or the one of his culture's portraits for
-his age the game picks from); change it in Characters.
+his age the game picks from); change it in Characters, or press **Replace...** under it: any picture becomes the
+faction's own `leader_pic_<faction>.tga` in the campaign folder (both games read it first).
 
 ## Flag symbol and faction logos (Rome)
 
