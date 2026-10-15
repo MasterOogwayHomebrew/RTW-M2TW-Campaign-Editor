@@ -28,6 +28,8 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   change, file by file, before it is added. Written on Apply with a backup. Under *How it looks* a new unit takes
   **your own files** at once - a texture, Medieval II's weapons and shields texture, the model file itself (`.cas` /
   `.mesh`): it gets a model of its own, the units of the old model keep their look (as **Your own files...** below).
+  The **Pictures** step shows the card and description picture the new unit will have (yours, else the copied
+  unit's) and **View in 3D...** of its soldiers with **Make a card...** / **Make a picture...**, as in the editor.
 - A unit can also start from **nothing** (New unit step by step > Start from: *Nothing*): say what it is - foot
   soldiers who fight hand to hand, with spears, or who shoot / throw; horsemen who charge or who shoot - and the
   editor writes every line itself, in the form this mod's units of that kind have. Each number starts at what is
