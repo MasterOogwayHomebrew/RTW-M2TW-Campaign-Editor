@@ -105,6 +105,11 @@ bucket** fills one; **Undo**, **Fit again**, **Start over**. **Next** makes all 
 - the button states are made the way the mod's own are: mouse over brighter, greyed out grey and darker (by as much
   as the faction's old pictures show), selected brighter with a glow round the new shape in the old glow's colour;
 - a picture the faction shares with another (a loading logo) becomes a copy of its own, its line pointed at it;
+- **from white templates (Rome)**: the **flag on its towns in battle**, the **3D symbol on the campaign map** and
+  the **captains' cards and portraits** are each made from a clean white template - the game's blank white banner
+  (the routing one), its square flag, or the old card with its flag's cloth made that white cloth (the pole,
+  fringe and frame kept) - dyed in the faction's colours with the symbol on it; the dead captain's card is that
+  one in grey. The routing flag and the rebels' flag are never changed;
 - **the symbol on the flags and banners (Rome)**: the flag symbol on the campaign map gets the symbol alone (no
   disc, no ground), and the faction's **battle banners** (its own standard texture and its allies') are made new
   from the game's own **blank white banner** (the cloth a routing unit carries - Roman, barbarian or eastern,
