@@ -128,7 +128,7 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
 
 The game sorts a town's recruitment panel itself, by each unit's custom-battle price (the 6th number of `stat_cost`),
 the smallest first - the order of the recruit lines in `export_descr_buildings.txt` does not decide it. For the panel
-in the order infantry, missiles, cavalry, siege, ships (the dearest first in each), put in the add-on **Recruitment
+in the order infantry, missiles, cavalry, missile cavalry, siege, ships (the dearest first in each), put in the add-on **Recruitment
 Order** (Rome with REX, Medieval II with M2EX - Rules and scripts > Add-ons).
 
 ## Many towns at once
