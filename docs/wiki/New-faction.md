@@ -8,6 +8,13 @@ the game at once, so you can test every change after that straight away. The tem
 1. **Factions** at the top, its **New faction** tab; load the mod, pick the campaign.
 2. **Template**: the faction to copy. The new one gets its culture, units, buildings, character models, name
    lists, trait triggers and pictures.
+   **From another mod...** (under it): take a faction of another mod of the same game instead - pick the mod
+   (it is only read) and the faction. The window fills with its names, colours and descriptions; the template
+   becomes your faction of the same culture (change it if you like). Apply brings what is the faction's own: its
+   units (with their models, cards and recruit lines; a unit your mod has just the same is shared), its name
+   lists, its figures on the campaign map and in battle, its banners, flags, icons and pictures; its leader's army
+   and garrisons are of its own units. Its towns, scripts and events do not come - pick its towns on your map.
+   **Forget it** makes it a plain copy of the template again.
 3. **Internal name**: lower case, no spaces, for example `epirus`.
    **Comes into the campaign**: *on the map from the start* (the usual), or later - *by an event* (a date and a
    region the rebels hold - in another faction's region the game kills it as the campaign loads), *as the shadow of a faction* (its civil war) or *splitting off a faction in a revolt* - all three only in Barbarian Invasion and Medieval II: plain Rome, also with REX, stops reading descr_strat.txt at a faction that starts dead (the rebels' garrisons and the diplomacy are lost), so there only *on the map* is offered. A faction that
