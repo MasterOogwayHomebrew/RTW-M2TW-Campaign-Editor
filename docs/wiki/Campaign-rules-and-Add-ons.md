@@ -265,3 +265,23 @@ It goes into the game's `script/modules`, where M2EX's own scripts load it for e
 reports and `sq ::raze_ui_fonts()` the game's fonts. An older version's Lua copy
 (`eopData/eopScripts/raze_settlement.lua` and its line in `luaPluginScript.lua`) is taken out when this one is put
 in. Vanilla Medieval II runs no scripts - the add-on does nothing there.
+
+
+## Interface - the game's menu screens
+
+**Interface...** (top row, beside Events) shows every page of the game's menus - Rome, Barbarian Invasion and
+Alexander's `data/menu/Rome.lnt`, Medieval II's `data/menu/mtw2.lnt` - on the 1024 x 768 layout the game uses, with
+the pictures from `data/menu/textures` and the words from `menu_english.txt`. Pieces the game draws itself (buttons
+with no picture of their own) show as frames with their words.
+
+- Click a piece to pick it; drag it to move it; drag the yellow corner to size it; the arrow keys nudge it (Shift: 10
+  pixels).
+- On the right: its place, size, the page it opens, its words (text key) and tooltip.
+- **Copy** makes the next numbered piece - the game finds many pieces by their numbers, so more faction buttons on the
+  faction-select screen start with a copy of the last one. **Rename...** and **Remove** beside it.
+- A double click on a button (or **Open its page**) goes to the page it opens, as in the game.
+- **Undo** / **Redo**; **Preview** lists the change; **Keep for Apply**, then Apply changes writes it with a backup.
+  Only the lines changed are written; Restore takes it back.
+
+Medieval II keeps its menu pictures in its packs: unpacked they show, else the pieces show as frames.
+The idea and the first map of the file's format come from Wholesome Queen's *RTW Sprite & HUD Studio*.
