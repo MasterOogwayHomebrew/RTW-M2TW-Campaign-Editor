@@ -166,6 +166,9 @@ the campaign-map figures (generals, agents, admirals), the faction symbol's text
 banners (Rome's standards, Medieval II's battle banners), the flag on its towns in battle (Rome), captain cards and
 the loading-screen symbol. Both games. The campaign map's flags over armies and towns are painted by the game itself
 from the faction's colours.
+While a **new** faction is being made (not created yet), Recolour shows its template's pictures - the ones it
+will get as copies - with the new faction's colours as the target; kept, they are recoloured on its own copies by the
+same **Apply changes** that creates it (brush touch-ups come after it is created).
 
 ![Recolour: England's red and yellow to green and gold](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/recolour.png)
 
