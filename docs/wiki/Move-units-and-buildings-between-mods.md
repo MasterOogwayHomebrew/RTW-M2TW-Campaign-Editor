@@ -37,7 +37,7 @@ arrows (or any burning shot) come with their projectile, and the effects its pro
 explosions, the effects those are made of and their textures - go into your mod's effect files where it lacks them
 (an effect of yours with that name is kept). A file your mod (or the game under
 it) already has under the same name but with other content - a chariot's texture, say - comes in under a name of its
-own (`..._2`), with a model of its own pointing at it: the brought unit keeps the other mod's look and nothing of
+own (`..._2`), with a model of its own pointing at it (an engine's skeleton too, when your mod has one of that name with other lines or other animation files): the brought unit keeps the other mod's look and nothing of
 yours changes. A chariot's body (Rome) names its texture inside its `.cas`, and the game gives a faction its own
 `<name>_<faction>` texture when there is one: the brought chariot's look goes in under that name for each new owner
 (your other factions' chariots keep theirs; a faction that already has its own keeps it).
