@@ -49,10 +49,12 @@ or off.
 (**Winter** takes the second column), lit by the relief of `map_heights.tga`, the water by its depth, the rivers of
 `map_features.tga`. It reads the same pictures the Terrain and Coast & heights brushes paint into, so what you painted
 and did not write yet is there - the tab makes its picture again when you open it after a change (**Draw it again**
-at any time). Left drag moves over the map, right drag turns and looks up or down, the wheel goes nearer or farther,
+at any time). The right button dragged moves over the map, the wheel held down and dragged turns and tilts the view, the wheel turned goes nearer or farther,
 the arrow keys (or W A S D) move too; **Heights x** makes the relief taller or flatter (only in this view);
-**Whole map** puts the view back. The game's own 3D map has trees, towns and its own light on top - this shows the
-ground they stand on.
+**Whole map** puts the view back. What stands on the map is there in the game's own models (**Models** switches
+them off): each town in its level's model of its owner's culture, ports, forts, watchtowers, the resources, and the
+armies, fleets and agents in their faction's texture, standing in their own standing move from the game's animations;
+a hill in front hides what is behind it.
 
 ## What it keeps safe
 
