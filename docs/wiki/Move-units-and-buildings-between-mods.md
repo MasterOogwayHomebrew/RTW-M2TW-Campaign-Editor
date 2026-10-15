@@ -30,8 +30,12 @@ What comes along: the unit's lines, its battle models (Medieval II: in `descr_mo
 `battle_models.modeldb`), mount, engine (with its own skeleton and animation files) or animal, its ship type, Medieval II's mounted engine, the projectiles it fires (`descr_projectile_new.txt` in Rome,
 `descr_projectile.txt` in Medieval II), every mesh / texture / sprite they name, its cards and info
 pictures for each new owner, its name and descriptions, the recruit lines, and its own name call in battle (the
-voice file's lines naming it, with their sound files - new files of their own; a culture / accent and class your
-mod's voice file lacks is said in the WARNINGS). A file your mod (or the game under
+voice file's lines naming it, with their sound files - new files of their own). The voices of its class (its
+`voice_type`) come along too where your mod's voice file lacks that class for the new owners' culture / accent: the
+class's lines with their sound files (other units' name calls in it left out), so the unit is never silent. Its fire
+arrows (or any burning shot) come with their projectile, and the effects its projectiles show - fire trails,
+explosions, the effects those are made of and their textures - go into your mod's effect files where it lacks them
+(an effect of yours with that name is kept). A file your mod (or the game under
 it) already has under the same name but with other content - a chariot's texture, say - comes in under a name of its
 own (`..._2`), with a model of its own pointing at it: the brought unit keeps the other mod's look and nothing of
 yours changes. A chariot's body (Rome) names its texture inside its `.cas`, and the game gives a faction its own
@@ -41,7 +45,7 @@ yours changes. A chariot's body (Rome) names its texture inside its `.cas`, and 
 Skeletons (how the men move): a big mod (HLR, for one) has skeletons of its own in its own animation files
 (`data/animations`: pack.idx, pack.dat, skeletons.idx, skeletons.dat - the game loads one such set, the mod's own or
 the game's). In both games (Rome, Barbarian Invasion, REX; Medieval II, M2EX) a brought unit's own skeletons come along with every animation they
-move by: your mod gets its own set - the one the game loaded for it, with them added (REX's `aninterp.cache` beside it
+move by: your mod gets its own set - the one the game loaded for it, with them added, and their lines in `descr_skeleton.txt` (so a rebuild of the animation files keeps them) (REX's `aninterp.cache` beside it
 is taken away; REX makes it again). Its men move as in their own mod. A skeleton that cannot come along (a source with no
 set of its own) becomes your mod's nearest one (`fs_hc_spearman_classic` -> `fs_hc_spearman`),
 said in the WARNINGS - without it the game stops at start ("Unable to find skeleton"). **Check mod files** names any
