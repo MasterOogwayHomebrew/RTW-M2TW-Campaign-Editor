@@ -54,7 +54,14 @@ the arrow keys (or W A S D) move too; **Heights x** makes the relief taller or f
 **Whole map** puts the view back. What stands on the map is there in the game's own models (**Models** switches
 them off): each town in its level's model of its owner's culture (each part in its own texture) with the walls of the defences built there, ports (the quay and its ships), forts, watchtowers, the resources, and the
 armies, fleets and agents in their faction's texture, standing in their own standing move from the game's animations;
-a hill in front hides what is behind it.
+a hill in front hides what is behind it. The grounds' textures blend softly into each other and the rivers are
+rounded, as the game lays them - no squares or pixel steps.
+
+**Make the minimap from it** draws the campaign's minimap again - `radar_map1.tga` / `radar_map2.tga` (and
+`map_radar2.tga` where there is one), the small map in the game's bottom-left corner - from this map seen from
+above: the ground's textures, the relief, the rivers and a sea with deep water and turquoise shallows along the
+coast. Each picture keeps its own size (the original Rome program crashes on a too big `radar_map1`) and its
+border lines (Medieval II's blue line along the top and the right). It waits for Apply like any change.
 
 ## What it keeps safe
 

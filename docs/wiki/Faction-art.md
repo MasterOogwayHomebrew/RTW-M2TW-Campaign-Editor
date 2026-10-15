@@ -38,10 +38,11 @@ There is no *Remove*: without its pictures the game shows errors and a placehold
 ## The campaign-select map
 
 The map on the faction-select screen (`map_<faction>.tga`) sits on the faction tab beside the description, with
-the leader's face. **Draw from the map** under it makes a new one from the campaign map itself: the ground with
-its relief and rivers, no signs or names, and the faction's land - its towns as given on the Map - one solid
-patch in its primary colour, no borders inside it, and a line round its outside - dark round a bright colour,
-light round a dark one (as the map's signs). Where the campaign's other select maps have a frame round the
+the leader's face. **Draw from the map** under it makes a new one from the campaign map itself, seen from above in
+the game's own ground textures (relief, rivers, a sea with deep water and turquoise shallows), no signs or names, and
+the faction's land - its towns as given on the Map - filled with its primary colour at 75 % (the land shows
+through), no borders inside it, and a crisp, smooth line round its outside (no tile steps, no town dots) - dark
+round a bright colour, light round a dark one (as the map's signs). Where the campaign's other select maps have a frame round the
 map (Medieval II), the drawing goes where the map lies in them. A faction with no select map of its own gets
 **Draw one from the map**. It waits for Apply like any picture (Keep the current one takes it back); a new faction
 otherwise keeps a copy of its template's, and every other faction's map stays the original.

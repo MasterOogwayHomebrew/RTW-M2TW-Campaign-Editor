@@ -199,6 +199,7 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 
 ## 📦 Built, comes with the next release
 
+- 📦 The minimap drawn from the map (textures, relief, rivers, a painted sea); the faction-select map from the same picture, land at 75 % with a smooth outline; 3D map textures blended
 - 📦 An army's units: its general shown as his portrait card, as in the game
 - 📦 New faction > From another mod: a whole faction of another mod brought - units, names, family by the capital, figures on the map and in battle, flags, icons, pictures; garrisons of its own units
 - 📦 Maps > 3D: the campaign map in 3D in the game's own ground textures and models (towns, ports, forts, resources, armies, agents), the brushes' work seen at once
