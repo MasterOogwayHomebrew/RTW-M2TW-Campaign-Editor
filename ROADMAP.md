@@ -199,12 +199,18 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 
 ## 📦 Built, comes with the next release
 
+- 📦 Maps > 3D: the campaign map in 3D in the game's own ground textures and models (towns, ports, forts, resources, armies, agents), the brushes' work seen at once
+- 📦 Bring units: everything the target lacks - the voices of its class, its fire arrows and their effects, its skeletons' lines
+- 📦 Rebels... (both games): rebel types - their units, kind, chance, the name players read - new, copied, renamed, deleted; which regions have which type, many at once, a faction filter (from a report)
+- 📦 The map shows what Apply will write before it (regions yellow as a selection): a new faction's towns, garrisons, towns given in other windows; every capital a star in its square (from reports)
+- 📦 Unit cards and description pictures for each faction on its own; New unit step by step: the pictures shown, View in 3D with Make a card; Recolour while a new faction is being made (from reports)
 - 📦 Draw from the map: the faction-select map from the campaign map - relief, rivers, the faction's land one solid patch
-- 📦 Tools > Sort the recruitment panel: infantry, missiles, handlers, cavalry, siege, ships - the dearest first
+- 📦 Bring units (both games): its name call in battle with its sounds; the unit's own skeletons and animations come along into your mod's animation set
+- 📦 Add-on Recruitment Order (both games): the recruitment panel in order - infantry, missiles, cavalry, siege, ships, the dearest first
 - 📦 Bigger map (x3): the minimap keeps its size; maps saved as colour-mapped TGAs open; Map > Layers: towns on / off, rebel land coloured
 - 📦 Bigger map (x3): no sea ground on the land (light blue teeth along the coast, ports seeming in the water), every river reaching the sea by one pixel (from reports)
 - 📦 Terrain editor: land and sea painted tile by tile with the ground brush; rivers always shown while painting them; Layers close on a second press; Report a bug packs its logs without freezing (from reports)
-- 📦 Bring units from another mod: a Faction pick; a file of the same name with other content brought under its own name (chariots no longer the Britons'; a chariot's body wears its own mod's look for each new owner); buildings show another culture's picture when theirs has none (from reports)
+- 📦 Bring units from another mod: a Faction pick; a file of the same name with other content brought under its own name (chariots no longer the Britons'; a chariot's body wears its own mod's look for each new owner; a model whose skeleton the mod lacks takes the mod's nearest, no crash at start); buildings show another culture's picture when theirs has none (from reports)
 - 📦 Bigger map (x3): lines and rivers bent by the old map's own relief (capes on ridges, bays in valleys, rivers on the lower side), no golden-ratio waves (from a report)
 - 📦 Bring units from another mod: a building this mod lacks comes along with its unit; New unit: your own texture / model file in the window itself (from reports)
 - 📦 Bring buildings from another mod (Rome / BI / REX): the building keeps its look in towns on the battle map - town-plan places, battle building, items and models come along (from a report)
@@ -269,7 +275,7 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 - 🧪 Fix: closing the editor never ends in a Windows error box (0.33.0)
 - 🧪 Unit cards and building pictures as the game shows them, in every window (one lookup for all; checked over every unit and building of Rome, BI and Medieval II) (0.33.0)
 - ✅ Start the game names the mod it starts (amber without one); the test mod is offered to be started at once; its modules act only in the test mod (0.33.0)
-- 🧪 Avoid Growth: only on the Construction tab, in Rome looking like Automanage; forts and watchtowers keep a tile from towns and from each other (0.33.0)
+- ✅ Avoid Growth: only on the Construction tab, in Rome looking like Automanage; forts and watchtowers keep a tile from towns and from each other (0.33.0) *(in-game ✓ on Rome + REX: the tick in Rome's look, a town held at its ceiling; REX's scroll does not say which tab is open, so there the tick shows on every tab)*
 - ✅ Fix: plain Rome is never given a faction that starts dead (the game stopped reading descr_strat there: empty rebel towns, no diplomacy) (0.33.0)
 - 🧪 Fixes: painting on the Terrain tab right after Apply; ports for regions without one; an add-on's old copy outside script\modules is shown, moved or taken out (0.33.0)
 - ✅ Module builder: ELSE, all / any / none of the conditions and NOT, FOR EACH town / army / faction - the control blocks of Scratch (0.32.0)
@@ -390,7 +396,7 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 - 🧪 Reports find the game's log in every mod folder, and say how to switch it on (0.29.0)
 - 🧪 Terrain editor: Land and sea - a new island, a bay, a strait (regions, ground, heights and map_heights.hgt changed together) (0.28.0)
 - 🧪 The bigger map, second alpha: smooth coast, heights 3 x higher in proportion (or as they were), map_heights.hgt rebuilt at the new size, rivers as staircases running on to the new coast (0.28.0)
-- 🧪 Bring units and buildings from another mod, step by step (Unit and Building editors), with a wiki guide (0.27.0)
+- ✅ Bring units and buildings from another mod, step by step (Unit and Building editors), with a wiki guide (0.27.0) *(in-game ✓ on Rome + REX: 12 units brought from Barbarian Invasion, fought in battle)*
 - 🧪 Map: a right-click menu (a town's garrison and buildings, open a character, a new army / agent / fleet on that tile); a character dropped on a town's sign goes into the town (0.26.0)
 - 🧪 Roster: a building level pulls its chain along (lower levels given with it, higher ones taken with it) (0.26.0)
 - 🧪 Search on the Units & armies tab: towns by name, armies by name or by a unit inside them (asked in a report) (0.26.0)
@@ -422,7 +428,7 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 - 🧪 **Report a bug / Suggest** (one click, anonymous): ideas too (0.20.1); the logs, a few words and screenshots go to the author through a small relay - no account, no key inside the exe; names cut out first, everything shown before it goes (0.20.0)
 - ✅ Settlements tab: every region and town, the names players see, owners, names by culture; rename a region and its town in the files everywhere the mod names them (0.20.0) *(in-game ✓: renamed towns on Medieval II + M2EX and Barbarian Invasion + REX - from the in-game tester)*
 - ✅ Campaign rules (Tools): every value of the campaign's settings files with a plain explanation - Medieval II's campaign_db, town growth / order / income, diplomacy, recruitment; Rome + REX the people each town level needs; the Unit size choices (0.20.0) *(in-game ✓: read and played on Medieval II + M2EX and Rome + REX - from the in-game tester)*
-- 🧪 Add-ons: Sack Settlement for Rome + REX with who may sack (only the player, everyone, hordes, picked factions); the kept buildings and rebel units picked from the mod's own (0.20.0)
+- ✅ Add-ons: Sack Settlement for Rome + REX with who may sack (only the player, everyone, hordes, picked factions); the kept buildings and rebel units picked from the mod's own (0.20.0) *(in-game ✓ on Rome + REX: a town sacked - its buildings torn down, the reward paid, the ruins and a rebel garrison to the rebels)*
 - 🧪 View in 3D for Rome's .cas models (every vanilla unit, mount and animal), both games take missing model files from the game's data; weapons off no longer hides the legs, detail levels in order (0.20.0)
 - ✅ Tools: New religion / Religions of a region (Medieval II); a Medieval II clone's texts say "the Kingdom of Jerusalem" right (0.20.0)
 - 🧪 Hear a unit and give it a voice (Unit editor, Voice in battle): its name call and orders played from the game's packs, your own .wav as its name call (0.19.2)

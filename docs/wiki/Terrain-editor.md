@@ -42,6 +42,20 @@ or off.
 
 ![Land and sea: a new island in the Black Sea](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/land_and_sea.png)
 
+## The map in 3D
+
+**Maps > 3D** shows the campaign map in 3D, laid with the game's own ground textures: for each climate
+(`map_climates.tga`) and kind of ground (`map_ground_types.tga`) the texture `descr_aerial_map_ground_types.txt` names
+(**Winter** takes the second column), lit by the relief of `map_heights.tga`, the water by its depth, the rivers of
+`map_features.tga`. It reads the same pictures the Terrain and Coast & heights brushes paint into, so what you painted
+and did not write yet is there - the tab makes its picture again when you open it after a change (**Draw it again**
+at any time). The right button dragged moves over the map, the wheel held down and dragged turns and tilts the view, the wheel turned goes nearer or farther,
+the arrow keys (or W A S D) move too; **Heights x** makes the relief taller or flatter (only in this view);
+**Whole map** puts the view back. What stands on the map is there in the game's own models (**Models** switches
+them off): each town in its level's model of its owner's culture (each part in its own texture) with the walls of the defences built there, ports (the quay and its ships), forts, watchtowers, the resources, and the
+armies, fleets and agents in their faction's texture, standing in their own standing move from the game's animations;
+a hill in front hides what is behind it.
+
 ## What it keeps safe
 
 - **How the game draws a coast** (why a coast painted by tiles looks like stairs): a tile is one pixel of

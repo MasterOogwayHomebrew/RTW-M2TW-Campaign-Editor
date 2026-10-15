@@ -6,7 +6,7 @@ Every line of a unit (`export_descr_unit.txt`) or a building chain (`export_desc
 with its pictures. The pictures, the battle model and the voice stay in view - on a unit four alike frames in one
 row (card, description picture, battle model, voice; a second row on a narrow window), the explanations on a
 **?** beside each title; the lines fold away behind
-**Every line of the block** (open it to change them; it stays open or closed as you left it). On a unit, the
+**Stats** - every line of the block (open it to change them; it stays open or closed as you left it). On a unit, the
 **?** beside a line's name says what each of its values means - stat_pri's attack, charge bonus, missile, range,
 ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - from the game's own notes. The lists filter (**Show**: a faction, a culture, a category, mercenaries apart) and sort; drag the line between the list and the rest (its grip drawn in the text's colour) to make the list wider - the width is kept.
 
@@ -28,6 +28,8 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   change, file by file, before it is added. Written on Apply with a backup. Under *How it looks* a new unit takes
   **your own files** at once - a texture, Medieval II's weapons and shields texture, the model file itself (`.cas` /
   `.mesh`): it gets a model of its own, the units of the old model keep their look (as **Your own files...** below).
+  The **Pictures** step shows the card and description picture the new unit will have (yours, else the copied
+  unit's) and **View in 3D...** of its soldiers with **Make a card...** / **Make a picture...**, as in the editor.
 - A unit can also start from **nothing** (New unit step by step > Start from: *Nothing*): say what it is - foot
   soldiers who fight hand to hand, with spears, or who shoot / throw; horsemen who charge or who shoot - and the
   editor writes every line itself, in the form this mod's units of that kind have. Each number starts at what is
@@ -52,7 +54,7 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   opens that building.
 - **Add line...** / **x**: add or remove lines (never beyond what the mod already does, never the lines every
   unit or level has).
-- **Tied to it** (a button beside **Every line of the block**, folds away again) shows who owns and recruits a
+- **Tied to it** (a button beside **Stats**, folds away again) shows who owns and recruits a
   unit, what requires a building.
 - **REX...** (next to a unit's attributes, stat_mental, stat_ground and weapon lines): tick the abilities REX adds,
   each with its effect in plain words - morale (expendable, steadfast, immune_to_psychology...), fatigue
@@ -94,7 +96,10 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   head to the thighs, the picture the whole man; to the knees / waist; nearer, up / down, right / left), on a
   see-through ground as the game's cards, a colour, a picture of your own, or the game's own card ground (the
   campaign's or the battle's, of the faction's culture); a Medieval II picture can take the game's frame round it. **Use it** waits for Preview / Apply
-  like **Import...** (every faction folder of the unit's card, a backup first); **Save a copy...** keeps a PNG.
+  like **Import...** (the faction **Pictures for** names, a backup first); **Save a copy...** keeps a PNG.
+  **Pictures for** (a unit with more than one owner): the faction whose card / description picture is shown and
+  put in - each faction has its own (the game reads ui/units/<faction> and ui/unit_info/<faction>); the other
+  owners keep theirs.
   The window stands beside the 3D view and follows it: turn the man or pick another frame there and the card is
   taken again by itself (**Take the 3D view again** does it at once and says what it took). How much of him and
   nearer / up / right are kept for the next unit (cards and pictures apart).
@@ -121,13 +126,10 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
 
 ## The recruitment panel in order
 
-**Tools > Sort the recruitment panel (strongest first)...** puts every building level's recruit lines in one order:
-infantry, then missiles (archers, slingers, skirmishers), animal handlers, cavalry, siege, ships - the dearest first
-in each kind, so the panel's top left shows the strongest unit. The game lists a town's units in the order of these
-lines in `export_descr_buildings.txt`, so it is set once: every town, every unit added later and old saves follow it.
-Only the recruit lines change places (agents, bonuses and comments stay); Preview shows every level, Apply writes it
-with a backup. A town recruiting from several buildings shows each building's units in this order; how the game
-joins the buildings, the game decides.
+The game sorts a town's recruitment panel itself, by each unit's custom-battle price (the 6th number of `stat_cost`),
+the smallest first - the order of the recruit lines in `export_descr_buildings.txt` does not decide it. For the panel
+in the order infantry, missiles, cavalry, siege, ships (the dearest first in each), put in the add-on **Recruitment
+Order** (Rome with REX, Medieval II with M2EX - Rules and scripts > Add-ons).
 
 ## Many towns at once
 

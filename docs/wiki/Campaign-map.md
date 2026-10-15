@@ -67,7 +67,9 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   session's list and **Apply changes** in the main window writes them with everything else waiting, in one go (one
   backup set, one **Undo this write**). Another town opens in the same window. The right click's *Edit this town in Edit faction* still opens its owner in Edit faction.
 - **Right click on the map**: on a town - **Give this town to** any faction (written with the next Apply; its
-  characters go to the old owner's other towns, a captain's garrison goes with it); on a free tile - **New army /
+  characters go to the old owner's other towns, a captain's garrison goes with it; a town left empty - the rebels'
+  garrison leaves with them - gets 3 to 6 of its new owner's units drawn at random, their upkeep together at most
+  750, so you need not fill it by hand); on a free tile - **New army /
   agent / fleet here** with the land's owner already picked (a new army's **Make him a general** gives him the
   faction's general's bodyguard as his first unit and writes him as a named character outside the family tree - a
   general with his own name and a star on the map, not a captain; Rome's rebels keep a captain); on a new character
@@ -139,6 +141,11 @@ commented out as when deleting a town.
 
 - Picking a faction's towns (**Towns on the map...** in Factions): a click on a town adds it or takes it
   out, **Done** goes back.
+- **Every faction's capital** (its first town in `descr_strat.txt`) shows a star inside its square in place of the
+  town hall - light on a dark colour, dark on a light one.
+- **What Apply will write is on the map before it**: the towns picked for a new (or edited) faction stand in its
+  colour, their regions yellow as a selection is, its capital with the star, its garrisons as a flag on the roof -
+  and so do a town given or a garrison changed in a town window or Many towns, kept for Apply.
 - A left drag moves characters, towns and ports. The target turns green or red: an
   army needs land it may stand on (no sea, mountains, dense forest, river, ford or cliff) or a town no other
   army holds; a fleet needs sea; an agent any land.
@@ -177,8 +184,8 @@ right, with **What happens** in each:
   allow (tick the box to put it in anyway - the game loads such a building, the owner just cannot build it again),
   a port building where the town has no port on the map. **Take a building out** removes a chain. The governor's
   building (walls / castle) follows the town's level and is not offered.
-- **Garrisons**: units per town *from 2 to 6* (any range up to 20) and the upkeep they may cost together per town
-  (500, 1000... - empty for no limit). **Draw the garrisons** picks them at random from the units each owner may
+- **Garrisons**: units per town *from 3 to 6* (any range up to 20) and the upkeep they may cost together per town
+  (750 at first; 1000... - empty for no limit). **Draw the garrisons** picks them at random from the units each owner may
   recruit (its `ownership` and a recruit line of some building; generals' bodyguards and - unless ticked - siege
   engines left out); a rebel town draws from its region's rebel type (`descr_rebel_factions.txt` - the units the game
   itself raises there in a revolt; without one, from the rebel armies nearest to it), so a Gallic town gets Gallic
@@ -369,6 +376,25 @@ are on, 8 pixels a tile, not the signs - as a PNG or TGA picture (for a forum po
 ## Mercenaries by region
 
 **Mercenaries:** **Mercenaries...** (top row), or a right click on the map > **Mercenaries for hire in <region>...**, shows who is for hire where (`descr_mercenaries.txt`), in two tabs. **For hire in a region** (the right click opens it on that region) makes the region's list the way a garrison is made: the mercenaries' cards on the left - a click adds one - and the units for hire there on the right - a click picks one for its numbers, a right click takes it out. A region shares its list with the other regions of its pool; the tab says which, and **A list of its own** takes the region out of the pool with a copy of the list (a region in no pool gets its own list with the first card). **Pools** - a pool is a group of regions that share one hire list. Pick a pool: its regions are selected on the map (Select switches on, they show yellow), so they are changed the map's own way - a box adds, Shift + box takes away - and **Take the map's selection** gives the pool exactly that (**Add the map's selection** only adds). **New pool from the map's selection** (also the map's right click with Select: **New mercenary pool from the selected regions...**) makes a pool of them; a region stands in one pool only, so it leaves its old one (a pool left without a region goes). Each unit for hire shows its numbers in plain words - how many at the start, at most, how fast they come back (one every N turns), the price, the experience, and in Medieval II the years, religions, crusading and events it needs; pick one to change them, **Add** another mercenary of the mod (units with `mercenary_unit`), take one out, rename or delete a pool. A mistake the game would stumble on is said in red; **Preview**, then **Keep for Apply** (the changes go into the session's list; **Apply changes** in the main window writes them with everything else waiting - one backup set, **Undo this write** puts them back); lines not changed stay as they were.
+
+## Rebels
+
+**Rebels...** (top row, beside Mercenaries), or a right click on the map > **Rebels in <region>...** (with Select on:
+**Rebel type for the N selected region(s)...**), shows who rises when a region revolts. Each region names a **rebel
+type** (`descr_regions.txt`); a type lists the units the game raises for it (`descr_rebel_factions.txt`) and the name
+players read (`text/rebel_faction_descr.txt`); brigands and pirates are types too. Two tabs:
+
+- **Rebel types**: the types on the left (a search box above), the picked one on the right - the name players read,
+  its kind (`peasant_revolt`, `brigands`, `pirates`, `gladiator_revolt`), the chance, the text key and its units
+  (**Add** one from the list - the rebels' own units first; a right click takes one out; the same unit twice is raised
+  more often). **New type...**, **Copy this type...**, **Rename...** (its regions follow) and, set apart, **Delete
+  this type...** (its regions get the type you pick in its place). **Show its regions on the map** selects them.
+- **Regions**: every region with its town, owner and rebel type, a filter by faction; pick rows (Ctrl / Shift + click,
+  or **Pick the map's selection**) and **Give it** a type.
+
+A mistake the game would stumble on (a unit the mod lacks, a type with no unit, a name of two words) is said in red;
+**Preview**, then **Keep for Apply**, then **Apply changes** writes it with a backup; types not changed keep their
+lines byte for byte. Without REX / M2EX a type takes up to 20 unit types (said); with them, no limit.
 
 ## Grow or cut the map at its edges
 
