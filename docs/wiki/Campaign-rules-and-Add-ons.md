@@ -278,6 +278,9 @@ with no picture of their own) show as frames with their words.
   pixels).
 - A right click on a piece: **Place and size...**, the page it opens, its words (text key) and tooltip, Copy, Rename,
   Remove, Open the page. The line under the screen says what the picked piece is.
+- Tick boxes, drop-downs, text boxes, lists and sliders - the pieces the game draws itself - are drawn the way
+  the game draws them, from its own parts in `data/menu` (`buttons_composite2`, `slider_composite2`, the gold
+  frames). **Frames of every piece** shows each piece's box.
 - The words are drawn in the game's own letters: its `.cuf` fonts, or under REX / M2EX the TrueType fonts
   `descr_font_db.txt` names.
 - **Copy** (right click) makes the next numbered piece - the game finds many pieces by their numbers, so more faction buttons on the
