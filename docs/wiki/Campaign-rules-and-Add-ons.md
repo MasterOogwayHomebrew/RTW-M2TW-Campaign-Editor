@@ -286,6 +286,10 @@ with no picture of their own) show as frames with their words.
 - **Copy** (right click) makes the next numbered piece - the game finds many pieces by their numbers, so more faction buttons on the
   faction-select screen start with a copy of the last one. **Rename...** and **Remove** beside it.
 - A double click on a button (or **Open its page**) goes to the page it opens, as in the game.
+- A button under the mouse shows its **mouse over** picture and white words, as in the game; **Buttons shown** draws
+  every button in one state (normal, mouse over, pressed, ticked). A right click > **Pictures of its states...** sets
+  the picture (texture and region) of each state, adds a state or takes one out - every piece drawn with the same UI
+  object changes with it.
 - **Undo** / **Redo**; **Preview** lists the change; **Keep for Apply**, then Apply changes writes it with a backup.
   Only the lines changed are written; Restore takes it back.
 
