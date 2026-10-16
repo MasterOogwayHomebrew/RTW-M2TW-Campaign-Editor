@@ -49,7 +49,8 @@ point for every pixel of `map_heights.tga`, each point laid with the ground pict
 and kind of ground (`map_ground_types.tga`) take in `descr_aerial_map_ground_types.txt` (**Winter** takes the second
 column), each half-tile square blending the pictures of its four corners through the game's own painted masks
 (`terrain/aerial_map/template_weights`), the pictures lying on the world as the game lays them (`texture_density`), the
-light of `descr_strategy_lighting.txt`, and the sea as one sheet at height 0 in `water_surface.tga` with the game's
+light of `descr_strategy_lighting.txt` (with REX / M2EX their `descr_strategy_lighting_ex.txt`, added up in linear
+light as the engines do), and the sea as one sheet at height 0 in `water_surface.tga` with the game's
 waves and sky. Along the coast lie the game's beach strip (`terrain/aerial_map/sea/beach_strip.tga`) and its wet
 sand and surf (`surf2b.tga`), traced where the ground crosses height 0 as the game traces them, the surf rolling in
 every five seconds (none on river and cliff tiles, as in the game). **Layers** shows or leaves out the sea (left out,
