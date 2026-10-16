@@ -211,6 +211,7 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 - 📦 Interface: buttons' states (both games) - mouse over shown under the mouse, all pressed / ticked on a switch, each state's picture set, added, taken out
 - 📦 Check mod files (both games): a texture named inside a campaign-map model (.cas) that is not there - the game stops as the campaign loads
 - 📦 Check mod files (Medieval II): battle_models.modeldb names whose count is not their length, two models of one name
+- 📦 Check mod files (both games): files named in the banners / standards / projectile files not there or on a drive letter; events without their words
 - 📦 Interface > Sprite sheets (both games): every sprite of the sheets the game reads (binary or .sd.xml), page and culture, Find, saved as PNG
 - 📦 Rebels... (both games): rebel types - their units, kind, chance, the name players read - new, copied, renamed, deleted; which regions have which type, many at once, a faction filter (from a report)
 - 📦 The map shows what Apply will write before it (regions yellow as a selection): a new faction's towns, garrisons, towns given in other windows; every capital a star in its square (from reports)

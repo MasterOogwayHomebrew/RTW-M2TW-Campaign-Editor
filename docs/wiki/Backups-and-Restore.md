@@ -32,7 +32,9 @@ goes.
   `descr_model_strat.txt` with no texture line of its own) that is not there is named too - both games stop as the
   campaign loads with "Failed to find texture". Medieval II's `battle_models.modeldb`: a name whose number before
   it is not its length (a space too many or too few by hand - the game reads the file by those numbers) is a fault,
-  two models of one name a note.
+  two models of one name a note. A file the banners, standards or projectile files name that is not there, or is
+  written as a whole path on one PC (`C:\...`), is named; an event without its words in `historic_events.txt` is a
+  note (the game shows its scroll empty).
 - **Check mod files** with a faction picked also says whether it is **complete**: every file where every other
   faction is named and this one is not (the game or its screens would miss it), with a faction of its culture to
   copy the lines from; files most (not all) factions are named in are only noted - real factions go without them.
