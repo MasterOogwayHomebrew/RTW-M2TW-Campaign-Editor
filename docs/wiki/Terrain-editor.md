@@ -50,7 +50,7 @@ or off.
 `map_features.tga`. It reads the same pictures the Terrain and Coast & heights brushes paint into, so what you painted
 and did not write yet is there - the tab makes its picture again when you open it after a change (**Draw it again**
 at any time). The right button dragged moves over the map, the wheel held down and dragged turns and tilts the view, the wheel turned goes nearer or farther,
-the arrow keys (or W A S D) move too; **Heights x** makes the relief taller or flatter (only in this view);
+the arrow keys (or W A S D) move too; the relief stands as high as in the game;
 **Whole map** puts the view back. What stands on the map is there in the game's own models (**Models** switches
 them off): each town in its level's model of its owner's culture (each part in its own texture) with the walls of the defences built there, ports (the quay and its ships), forts, watchtowers, the resources, and the
 armies, fleets and agents in their faction's texture, standing in their own standing move from the game's animations;
@@ -74,19 +74,6 @@ border lines (Medieval II's blue line along the top and the right). It waits for
 **Own minimap...** puts a picture of your own (.tga, .png, .jpg...) in its place, fitted the same way into each
 minimap picture - its size and border kept. Restore takes it back.
 
-**Game's editor...** opens the campaign in the game's own campaign-map editor, beside this one. That editor opens
-only campaigns in `campaign/custom/`, so **Open in the game's editor** copies the campaign to
-`campaign/custom/ce_<campaign>/` and starts the game in it - Medieval II with M2EX straight in the editor
-(`--editor.campaign`). The games' own menus cannot open the campaign editor (its menu page is switched off in their
-code), so Rome is started with its own exe and the editor's switch: `RomeTW.exe` (`RomeTW-BI.exe` for Barbarian
-Invasion) `-enable_editor -strat_ed:ce_<campaign>` - never REX, which knows no such switch (REX of 2026-10-05). A mod
-made for REX only may not start on the plain game: try the game's own campaign first. After a try the window reads
-the game's log and says whether the editor opened. While
-the copy is there, Rome lists it in its PROVINCIAL CAMPAIGN menu too; **Remove the copy** takes it out. Edit there, Save,
-close the game, then **Take the changes back**: the files it saved go back into your campaign, the `script` line it
-drops is put back, `map.rwm` is removed (the game builds it again) and anything it dropped (factions, towns,
-characters fewer than before) is listed. **Remove the copy** takes the custom copy out. Every step makes a backup.
-Tried in Rome with REX of 2026-10-05: no way in; the plain game's exe not tried yet.
 
 ## What it keeps safe
 
