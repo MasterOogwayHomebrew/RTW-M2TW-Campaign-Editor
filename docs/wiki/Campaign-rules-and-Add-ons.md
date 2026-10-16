@@ -293,8 +293,12 @@ with no picture of their own) show as frames with their words.
   every button in one state (normal, mouse over, pressed, ticked). A right click > **Pictures of its states...** sets
   the picture (texture and region) of each state, adds a state or takes one out - every piece drawn with the same UI
   object changes with it.
-- **Undo** / **Redo**; **Preview** lists the change; **Keep for Apply**, then Apply changes writes it with a backup.
-  Only the lines changed are written; Restore takes it back.
+- The main window's **Undo** / **Redo** (and Ctrl+Z / Ctrl+Y) step its changes, **Preview changes** lists them,
+  **Apply changes** writes them with a backup - the same buttons as for every work, none of its own. Only the lines
+  changed are written; Restore takes it back. The **?** beside Fit holds this help.
+- The menu backdrop: Rome, Alexander and Medieval II play a video there (`Dump0000.m1v` / `Dump0000.bik`, named in the
+  layout file), so the screen shows a dark area with the video's name instead of the still picture under it;
+  Barbarian Invasion shows its picture.
 
 Medieval II keeps its menu pictures in its packs: unpacked they show, else the pieces show as frames.
 ### Sprite sheets

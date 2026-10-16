@@ -207,7 +207,7 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 - 📦 New faction > From another mod: a whole faction of another mod brought - units, names, family by the capital, figures on the map and in battle, flags, icons, pictures; garrisons of its own units
 - 📦 Maps > 3D: the campaign map in 3D in the game's own ground textures and models (towns, ports, forts, resources, armies, agents), the brushes' work seen at once
 - 📦 Bring units: everything the target lacks - the voices of its class, its fire arrows and their effects, its skeletons' lines
-- 📦 Interface... (both games): the game's menu screens drawn as the game lays them out - pieces moved, sized, copied, renamed, removed; their words, tooltips and the page they open (the menu layout file written byte-exact)
+- ✅ Interface... (both games): the game's menu screens drawn as the game lays them out - pieces moved, sized, copied, renamed, removed; their words, tooltips and the page they open (the menu layout file written byte-exact) *(in-game ✓ on Rome + REX: a piece moved, its picture and click area moved with it)*
 - 📦 Interface: buttons' states (both games) - mouse over shown under the mouse, all pressed / ticked on a switch, each state's picture set, added, taken out
 - 📦 Check mod files (both games): a texture named inside a campaign-map model (.cas) that is not there - the game stops as the campaign loads
 - 📦 Check mod files (Medieval II): battle_models.modeldb names whose count is not their length, two models of one name
