@@ -95,7 +95,10 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   the frame picked - made into the unit's card or description picture, framed as the game's own (the card from the
   head to the thighs, the picture the whole man; to the knees / waist; nearer, up / down, right / left), on a
   see-through ground as the game's cards, a colour, a picture of your own, or the game's own card ground (the
-  campaign's or the battle's, of the faction's culture); a Medieval II picture can take the game's frame round it. **Use it** waits for Preview / Apply
+  campaign's or the battle's, of the faction's culture; for a picture the game's scroll paper it is shown on in the
+  unit's details); a Medieval II picture can take the game's frame round it. **Size** beside the title: the mod's own
+  size, or x2, x3, x4 for sharper cards and pictures (kept for the next unit; look at them in the game). Cards and
+  pictures each keep their own ground and size. **Use it** waits for Preview / Apply
   like **Import...** (the faction **Pictures for** names, a backup first); **Save a copy...** keeps a PNG.
   **Pictures for** (a unit with more than one owner): the faction whose card / description picture is shown and
   put in - each faction has its own (the game reads ui/units/<faction> and ui/unit_info/<faction>); the other
