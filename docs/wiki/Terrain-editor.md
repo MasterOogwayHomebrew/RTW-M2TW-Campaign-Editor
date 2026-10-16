@@ -68,14 +68,16 @@ minimap picture - its size and border kept. Restore takes it back.
 
 **Game's editor...** opens the campaign in the game's own campaign-map editor, beside this one. That editor opens
 only campaigns in `campaign/custom/`, so **Open in the game's editor** copies the campaign to
-`campaign/custom/ce_<campaign>/` and starts the game in it - Medieval II with M2EX straight in the editor; Rome is
-started WITHOUT REX (its plain RomeTW.exe / RomeTW-BI.exe beside REX: REX's menus only list the custom campaigns), and
-Rome and plain Medieval II only show their editor in the menus - the window says where to click (Rome: OPTIONS > EDITORS > PROVINCIAL CAMPAIGN EDITOR - not the BATTLEFIELD EDITOR beside it). While
+`campaign/custom/ce_<campaign>/` and starts the game in it - Medieval II with M2EX straight in the editor
+(`--editor.campaign`). The games' own menus cannot open the campaign editor (its menu page is switched off in their
+code), so Rome needs a start switch too: Rome with REX gets `-enable_editor -strat_ed:custom/ce_<campaign>`, but REX of
+2026-10-05 knows no such switch yet and opens its main menu - after a try the window reads the game's log and says
+plainly whether the editor opened. While
 the copy is there, Rome lists it in its PROVINCIAL CAMPAIGN menu too; **Remove the copy** takes it out. Edit there, Save,
 close the game, then **Take the changes back**: the files it saved go back into your campaign, the `script` line it
 drops is put back, `map.rwm` is removed (the game builds it again) and anything it dropped (factions, towns,
 characters fewer than before) is listed. **Remove the copy** takes the custom copy out. Every step makes a backup.
-Not tried in the game yet.
+Tried in Rome with REX of 2026-10-05: the game opened its main menu (no way in yet); Medieval II with M2EX not tried yet.
 
 ## What it keeps safe
 
