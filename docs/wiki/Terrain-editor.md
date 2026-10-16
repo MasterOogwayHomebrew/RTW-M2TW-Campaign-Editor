@@ -44,26 +44,19 @@ or off.
 
 ## The map in 3D
 
-**Maps > 3D** shows the campaign map in 3D, laid with the game's own ground textures: for each climate
-(`map_climates.tga`) and kind of ground (`map_ground_types.tga`) the texture `descr_aerial_map_ground_types.txt` names
-(**Winter** takes the second column), lit by the relief of `map_heights.tga`, the water by its depth, the rivers of
-`map_features.tga`. It reads the same pictures the Terrain and Coast & heights brushes paint into, so what you painted
-and did not write yet is there - the tab makes its picture again when you open it after a change (**Draw it again**
-at any time). The right button dragged moves over the map, the wheel held down and dragged turns and tilts the view, the wheel turned goes nearer or farther,
-the arrow keys (or W A S D) move too; the relief stands as high as in the game;
-**Whole map** puts the view back. What stands on the map is there in the game's own models (**Models** switches
-them off): each town in its level's model of its owner's culture (each part in its own texture) with the walls of the defences built there, ports (the quay and its ships), forts, watchtowers, the resources, and the
-armies, fleets and agents in their faction's texture, standing in their own standing move from the game's animations;
-a hill in front hides what is behind it. The grounds' textures blend softly into each other and the rivers are
-rounded, as the game lays them - no squares or pixel steps.
-
-**Graphics card** (ticked by itself): the graphics card draws the map the way the games themselves draw it - one
-point for every pixel of `map_heights.tga`, each half-tile square blending the ground pictures of its four corners
-through the game's own painted masks (`terrain/aerial_map/template_weights`), the pictures lying on the world as the
-game lays them (`texture_density`), the light of `descr_strategy_lighting.txt`, and the sea as one sheet at height 0
-in `water_surface.tga` with the game's waves and sky. Unticked - or on a PC whose graphics card gives no OpenGL 3.3 -
-the older picture is shown, with the models on it (the graphics card draws them, the coast's beach and surf, the
-mountains', rivers' and trees' models in later versions).
+**Maps > 3D** shows the campaign map in 3D, drawn by the graphics card the way the games themselves draw it: one
+point for every pixel of `map_heights.tga`, each point laid with the ground picture its climate (`map_climates.tga`)
+and kind of ground (`map_ground_types.tga`) take in `descr_aerial_map_ground_types.txt` (**Winter** takes the second
+column), each half-tile square blending the pictures of its four corners through the game's own painted masks
+(`terrain/aerial_map/template_weights`), the pictures lying on the world as the game lays them (`texture_density`), the
+light of `descr_strategy_lighting.txt`, and the sea as one sheet at height 0 in `water_surface.tga` with the game's
+waves and sky. It reads the same pictures the Terrain and Coast & heights brushes paint into, so what you painted and
+did not write yet is there - the tab makes the map again when you open it after a change (**Draw it again** at any
+time). The right button dragged moves over the map, the wheel held down and dragged turns and tilts the view, the
+wheel turned goes nearer or farther, the arrow keys (or W A S D) move too; the relief stands as high as in the game;
+**Whole map** puts the view back. It needs a graphics card with OpenGL 3.3 (any from the last fifteen years); without
+one the bar says why. The coast's beach and surf, the mountains', rivers' and trees' models, the towns and armies
+come in later versions.
 
 **Make the minimap from it** draws the campaign's minimap again - `radar_map1.tga` / `radar_map2.tga` (and
 `map_radar2.tga` where there is one), the small map in the game's bottom-left corner - from this map seen from
