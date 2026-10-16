@@ -57,6 +57,14 @@ armies, fleets and agents in their faction's texture, standing in their own stan
 a hill in front hides what is behind it. The grounds' textures blend softly into each other and the rivers are
 rounded, as the game lays them - no squares or pixel steps.
 
+**Graphics card** (ticked by itself): the graphics card draws the map the way the games themselves draw it - one
+point for every pixel of `map_heights.tga`, each half-tile square blending the ground pictures of its four corners
+through the game's own painted masks (`terrain/aerial_map/template_weights`), the pictures lying on the world as the
+game lays them (`texture_density`), the light of `descr_strategy_lighting.txt`, and the sea as one sheet at height 0
+in `water_surface.tga` with the game's waves and sky. Unticked - or on a PC whose graphics card gives no OpenGL 3.3 -
+the older picture is shown, with the models on it (the graphics card draws them, the coast's beach and surf, the
+mountains', rivers' and trees' models in later versions).
+
 **Make the minimap from it** draws the campaign's minimap again - `radar_map1.tga` / `radar_map2.tga` (and
 `map_radar2.tga` where there is one), the small map in the game's bottom-left corner - from this map seen from
 above: the ground's textures, the relief, the rivers and a sea with deep water and turquoise shallows along the
