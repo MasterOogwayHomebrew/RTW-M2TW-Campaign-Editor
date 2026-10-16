@@ -32,7 +32,7 @@ family instead; the form on the left edits the rest (traits, retinue, portraits,
 
 ## Traits and retinue themselves
 
-**Traits and retinue...** (Characters, top right; also Tools) edits the traits and ancillaries themselves,
+**Traits and retinue** (Characters, top right; also Tools) edits the traits and ancillaries themselves,
 both games: `export_descr_character_traits.txt` and `export_descr_ancillaries.txt`.
 
 - **Traits**: pick one on the left (its name and the name players see; Find filters). Who can have it
