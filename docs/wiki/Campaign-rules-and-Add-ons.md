@@ -276,6 +276,7 @@ Alexander's `data/menu/Rome.lnt`, Medieval II's `data/menu/mtw2.lnt` - on the 10
 the pictures from `data/menu/textures` and the words from `menu_english.txt`. Pieces the game draws itself (buttons
 with no picture of their own) show as frames with their words.
 
+- The wheel zooms round the mouse, the held wheel (middle button) moves the screen, **Fit** shows it whole again.
 - Click a piece to pick it; drag it to move it; drag the yellow corner to size it; the arrow keys nudge it (Shift: 10
   pixels).
 - A right click on a piece: **Place and size...**, the page it opens, its words (text key) and tooltip, Copy, Rename,
