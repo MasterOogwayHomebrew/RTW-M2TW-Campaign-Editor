@@ -210,8 +210,10 @@ city it is: put it on auto-manage and forget it. Untick it to let the town grow 
 
 ### Recruitment Order (Rome with REX, Medieval II with M2EX)
 
-A town's recruitment panel in a fixed order: infantry (animal handlers with it), then missiles (archers, slingers,
-skirmishers), cavalry, missile cavalry (horse archers, chariots with bows or javelins), siege, ships - in each kind **the dearest first** (the strongest top left) or **the cheapest
+A town's recruitment panel in a fixed order: infantry, then missiles (archers, slingers, skirmishers), cavalry,
+missile cavalry (horse archers, skirmisher horse), chariots (those that charge, then those with bows or javelins),
+elephants (the same way), animals (war dogs, pigs), siege, ships - chariots and elephants are told by their
+mount's class in `descr_mount.txt` - in each kind **the dearest first** (the strongest top left) or **the cheapest
 first** (**In each kind**).
 
 - Why a script: the game sorts the panel itself by each unit's custom-battle price (the 6th number of

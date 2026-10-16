@@ -215,7 +215,7 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 - 📦 Unit cards and description pictures for each faction on its own; New unit step by step: the pictures shown, View in 3D with Make a card; Recolour while a new faction is being made (from reports)
 - 📦 Draw from the map: the faction-select map from the campaign map - relief, rivers, the faction's land one solid patch
 - 📦 Bring units (both games): its name call in battle with its sounds; the unit's own skeletons and animations come along into your mod's animation set
-- 📦 Add-on Recruitment Order (both games): the recruitment panel in order - infantry, missiles, cavalry, siege, ships, the dearest first
+- 📦 Add-on Recruitment Order (both games): the recruitment panel in order - infantry, missiles, cavalry, missile cavalry, chariots, elephants, war dogs and pigs, siege, ships, the dearest first
 - 📦 Bigger map (x3): the minimap keeps its size; maps saved as colour-mapped TGAs open; Map > Layers: towns on / off, rebel land coloured
 - 📦 Bigger map (x3): no sea ground on the land (light blue teeth along the coast, ports seeming in the water), every river reaching the sea by one pixel (from reports)
 - 📦 Terrain editor: land and sea painted tile by tile with the ground brush; rivers always shown while painting them; Layers close on a second press; Report a bug packs its logs without freezing (from reports)
