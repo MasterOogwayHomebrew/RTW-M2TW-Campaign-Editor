@@ -58,6 +58,9 @@ the sea floor shows) and the beach and surf, and lets the surf stand still. It r
 did not write yet is there - the tab makes the map again when you open it after a change (**Draw it again** at any
 time). The right button dragged moves over the map, the wheel held down and dragged turns and tilts the view, the
 wheel turned goes nearer or farther, the arrow keys (or W A S D) move too; the relief stands as high as in the game;
+**Heights brush** paints the relief right on the 3D map: a circle lies on the ground under the mouse, the left
+button raises (or lowers, smooths, levels - **brush**) the land under it while you hold it, Ctrl + the wheel or
+`[` and `]` change its size. It is the same brush as Coast & heights: its strokes, Undo and Apply are shared.
 **Whole map** puts the view back. It needs a graphics card with OpenGL 3.3 (any from the last fifteen years); without
 one the bar says why. The mountains', rivers' and trees' models, the towns and armies come in later versions.
 
