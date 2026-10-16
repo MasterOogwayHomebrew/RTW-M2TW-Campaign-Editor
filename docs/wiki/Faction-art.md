@@ -225,7 +225,7 @@ same **Apply changes** that creates it (brush touch-ups come after it is created
   England's old banners); crusade and military order banners stay as they are.
 - What most factions that do not wear the colour have the same (a bronze star, a wooden pole, a face) is never
   recoloured.
-- **Keep for Apply** puts them in the session's list; **Apply changes** in the main window writes each file in its own format (TGA of the same depth, DDS with its compression and mipmaps,
+- They wait in the session's list by itself; **Apply changes** in the main window writes each file in its own format (TGA of the same depth, DDS with its compression and mipmaps,
   Medieval II's `.texture`) with one backup; Restore gives every file back.
 
 ## Not yet

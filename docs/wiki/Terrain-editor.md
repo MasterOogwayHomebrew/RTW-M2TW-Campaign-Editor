@@ -127,7 +127,7 @@ Not tried in the game yet.
 - **Find ground on the wrong side of the coast** (under the Land and sea brushes): rings every point where the
   ground (`map_ground_types.tga`) and the heights (`map_heights.tga`) disagree - a land ground on the water or a sea
   ground in the land - and says how many of each; on a yes each point takes the ground round it on its own side.
-  The heights lead and are not changed; kept until Apply, **Undo stroke** takes it back. The games' own maps have
+  The heights lead and are not changed; kept until Apply, **Undo** (bottom, or Ctrl+Z) takes it back. The games' own maps have
   next to none (Rome 0, Medieval II 18 by lakes in the hills), so what it finds is most likely a mod's own painting
   or an older editor's.
 - Nothing the game refuses is put under a town, port or character.
@@ -148,4 +148,4 @@ Heights brush there too.
 
 *Confirmed in the game on Rome (0.10.0): the campaign loads and the painted ground and rivers are drawn.*
 
-**Undo stroke / Redo stroke** (also the bottom Undo / Redo and Ctrl+Z / Ctrl+Y) step through your strokes.
+The bottom **Undo / Redo** (or Ctrl+Z / Ctrl+Y) step through your strokes.

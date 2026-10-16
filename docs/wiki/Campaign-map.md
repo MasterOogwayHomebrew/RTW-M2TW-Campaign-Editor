@@ -16,7 +16,7 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   the whole width, its name, what it gives (one or two lines), its text, and at the foot who holds it now. A name
   and a text are a must; the picture, what it gives and money a turn for its holder are yours to add. The window
   shows the game's window as it will look. Its gold diamond on the map: a double click or a right click edits or
-  deletes it; drag it with the left button to move it to another tile. **Keep for Apply**, then Apply writes it (one backup): the windows' pictures in `data/ui/ce_places`,
+  deletes it; drag it with the left button to move it to another tile. Every change waits for Apply, which writes it (one backup): the windows' pictures in `data/ui/ce_places`,
   the model into the mod, and one script in the game's `script/modules` (`ce_places_<mod>.nut`) that runs only for
   this mod.
 - **Delete from the map** (right click): a resource, a fort, a watchtower or a wonder goes with its line; a
@@ -63,7 +63,7 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   add it, a garrison card to take it out; **Suggest** picks units the owner trains there - how many and the upkeep limit beside it; a named character keeps
   his bodyguard; a town nobody holds gets a captain; a town whose garrison is written in its own block -
   `garrisoned_army`, no captain, as some mods do for every town - shows that garrison and keeps it there; a town
-  with nobody on its tile says who stands next to it, outside the walls). **Preview**, then **Keep for Apply**: the changes go into the
+  with nobody on its tile says who stands next to it, outside the walls). every change waits for **Apply changes** by itself: the changes go into the
   session's list and **Apply changes** in the main window writes them with everything else waiting, in one go (one
   backup set, one **Undo this write**). Another town opens in the same window. The right click's *Edit this town in Edit faction* still opens its owner in Edit faction.
 - **Right click on the map**: on a town - **Give this town to** any faction (written with the next Apply; its
@@ -198,7 +198,7 @@ right, with **What happens** in each:
   Draw again for others. They join the army that holds the town, or replace its units (a general keeps his
   bodyguard); a town nobody holds gets a captain.
 
-**Preview** shows every line, **Keep for Apply** puts it in the session's list; **Apply changes** in the main window
+Every change waits in the session's list by itself; **Apply changes** in the main window
 writes `descr_strat.txt` with everything else waiting, with a backup - Undo this write / Restore gives it back.
 
 ## Forts
@@ -247,7 +247,7 @@ never fires), its place (x, y; empty = a message only; **Show on the map**), the
 players see (`historic_events.txt`), the **picture players see** on the scroll (a historic event its own
 `ui/<culture>/eventpics/<event>.tga` - **Picture...** puts yours in for every culture, sized like the game's; a
 plague, volcano... shows its kind's `disaster_<kind>.tga` - **Picture...** replaces it for every event of that kind) and **what it does in the game** in plain words.
-**New event...**, a right click on an event removes it (Ctrl / Shift + click picks many; **Remove all...** takes every one out), **Preview**, **Keep for Apply** (written by **Apply changes** with the rest, a backup first). Below the
+**New event...**, a right click on an event removes it (Ctrl / Shift + click picks many; **Remove all...** takes every one out), every change waits for **Apply changes** by itself (written with the rest, a backup first). Below the
 list: **the factions that appear later** - they start dead (`dead_until_resurrected` in descr_strat.txt, no towns,
 no characters) and come in *by an event* (`emergent_faction` with a date and a region the rebels hold, as Barbarian Invasion's
 slavs - only those are offered), *as the shadow of a faction*
@@ -257,14 +257,14 @@ also with REX, stops reading descr_strat.txt at a faction that starts dead and c
 one on a faction; Load offers to take such a line out of a plain Rome mod); the campaign script lines that wake one are shown too (Medieval II:
 the Mongols and Timurids). **Change...** (or a double click) changes how a faction comes in - its date and region,
 its partner, *may come back after it dies* (`re_emergent`), *lives without towns* (REX / M2EX's `can_homeless`: it stays in the game with no town instead of dying or becoming a horde); **Another faction...** makes a faction without towns
-and characters appear later. Written with Keep for Apply and Apply changes, every file in step (descr_sm_factions, descr_strat,
+and characters appear later. Written with Apply changes, every file in step (descr_sm_factions, descr_strat,
 descr_events).
 
 **Campaign script...** (the Events window's bottom bar, both games): the campaign's own `campaign_script.txt` piece
 by piece - each monitor (`monitor_event` / `monitor_conditions` ... `end_monitor`), loop, counter or command with the
 comment right above it, its code beside the list. Take any out: a right click (the picked ones), **Remove all...**
 for a mod made bare (an M2EX / REX mod that keeps only the map, factions and units). `script` / `end_script` stay, so
-the game still finds the file. Preview, Keep for Apply, Apply changes - a backup first.
+the game still finds the file. Every change waits for Apply changes - a backup first.
 
 ## Resources
 
@@ -375,7 +375,7 @@ are on, 8 pixels a tile, not the signs - as a PNG or TGA picture (for a forum po
 
 ## Mercenaries by region
 
-**Mercenaries:** **Mercenaries...** (top row), or a right click on the map > **Mercenaries for hire in <region>...**, shows who is for hire where (`descr_mercenaries.txt`), in two tabs. **For hire in a region** (the right click opens it on that region) makes the region's list the way a garrison is made: the mercenaries' cards on the left - a click adds one - and the units for hire there on the right - a click picks one for its numbers, a right click takes it out. A region shares its list with the other regions of its pool; the tab says which, and **A list of its own** takes the region out of the pool with a copy of the list (a region in no pool gets its own list with the first card). **Pools** - a pool is a group of regions that share one hire list. Pick a pool: its regions are selected on the map (Select switches on, they show yellow), so they are changed the map's own way - a box adds, Shift + box takes away - and **Take the map's selection** gives the pool exactly that (**Add the map's selection** only adds). **New pool from the map's selection** (also the map's right click with Select: **New mercenary pool from the selected regions...**) makes a pool of them; a region stands in one pool only, so it leaves its old one (a pool left without a region goes). Each unit for hire shows its numbers in plain words - how many at the start, at most, how fast they come back (one every N turns), the price, the experience, and in Medieval II the years, religions, crusading and events it needs; pick one to change them, **Add** another mercenary of the mod (units with `mercenary_unit`), take one out, rename or delete a pool. A mistake the game would stumble on is said in red; **Preview**, then **Keep for Apply** (the changes go into the session's list; **Apply changes** in the main window writes them with everything else waiting - one backup set, **Undo this write** puts them back); lines not changed stay as they were.
+**Mercenaries:** **Mercenaries...** (top row), or a right click on the map > **Mercenaries for hire in <region>...**, shows who is for hire where (`descr_mercenaries.txt`), in two tabs. **For hire in a region** (the right click opens it on that region) makes the region's list the way a garrison is made: the mercenaries' cards on the left - a click adds one - and the units for hire there on the right - a click picks one for its numbers, a right click takes it out. A region shares its list with the other regions of its pool; the tab says which, and **A list of its own** takes the region out of the pool with a copy of the list (a region in no pool gets its own list with the first card). **Pools** - a pool is a group of regions that share one hire list. Pick a pool: its regions are selected on the map (Select switches on, they show yellow), so they are changed the map's own way - a box adds, Shift + box takes away - and **Take the map's selection** gives the pool exactly that (**Add the map's selection** only adds). **New pool from the map's selection** (also the map's right click with Select: **New mercenary pool from the selected regions...**) makes a pool of them; a region stands in one pool only, so it leaves its old one (a pool left without a region goes). Each unit for hire shows its numbers in plain words - how many at the start, at most, how fast they come back (one every N turns), the price, the experience, and in Medieval II the years, religions, crusading and events it needs; pick one to change them, **Add** another mercenary of the mod (units with `mercenary_unit`), take one out, rename or delete a pool. A mistake the game would stumble on is said in red; every change waits for **Apply changes** by itself (the changes go into the session's list; **Apply changes** in the main window writes them with everything else waiting - one backup set, **Undo this write** puts them back); lines not changed stay as they were.
 
 ## Rebels
 
@@ -393,7 +393,7 @@ players read (`text/rebel_faction_descr.txt`); brigands and pirates are types to
   or **Pick the map's selection**) and **Give it** a type.
 
 A mistake the game would stumble on (a unit the mod lacks, a type with no unit, a name of two words) is said in red;
-**Preview**, then **Keep for Apply**, then **Apply changes** writes it with a backup; types not changed keep their
+every change waits for **Apply changes** by itself, which writes it with a backup; types not changed keep their
 lines byte for byte. Without REX / M2EX a type takes up to 20 unit types (said); with them, no limit.
 
 ## Grow or cut the map at its edges
@@ -409,7 +409,7 @@ Towns, ports, armies, agents, resources, forts, events and the campaign's script
 left or the bottom, every place moves by as many tiles); distances and rectangle sizes in scripts stay.
 `descr_terrain.txt` gets the new size and `map.rwm` goes. What stands on the part cut off - a town, a port, an army,
 an agent, a fleet, a resource, a fort, an event's place or a script's tile - is ringed red on the map and named in the
-window as soon as the edge moves. **Keep for Apply** then asks first: *Keep the cut for Apply* takes them off with
+window as soon as the edge moves. **Set this size** then asks first: *Keep the cut for Apply* takes them off with
 the cut - a town goes with its region from every file (the part of its land that stays goes to the common
 wasteland - nobody's land - with REX / M2EX, or to the neighbour region with the original game; land with no region
 would stop the game), armies, agents, fleets, resources, forts, watchtowers, events placed there and the rebels standing there are

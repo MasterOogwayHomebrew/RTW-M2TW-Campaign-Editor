@@ -31,7 +31,7 @@ Every value of the campaign's settings files, by group, each with a plain explan
   switched-off setting (`;key value`) is shown as such: the engine's default holds until you change it.
 
 **Find** looks through every file. A value that differs from the game's own shows the game's beside it, with
-**Reset**. Change values, **Preview**, then **Keep for Apply** (written by **Apply changes** in the main window with everything else waiting): only the value itself changes in the file (the rest
+**Reset**. Change values - every change waits for **Apply changes** by itself (written by **Apply changes** in the main window with everything else waiting): only the value itself changes in the file (the rest
 stays byte for byte), with a backup - Tools > Restore a backup undoes it. A mod without its own copy of a file gets
 the game's copy with your changes. The game reads the rules on the next start.
 
