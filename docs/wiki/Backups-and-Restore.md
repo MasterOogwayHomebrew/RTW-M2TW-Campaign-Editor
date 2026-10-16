@@ -26,7 +26,9 @@ goes.
   its men (Rome 6-60, Medieval II 4-100, others 1-300), extras (300), officers (3) and Rome's attributes. A unit
   without an ownership line is only a note: the games give it to every faction.
   Also from the games' readers: pikes without phalanx, a unit with none of square / horde / phalanx, a projectile
-  that does not exist, a building upgrade pointing down, a wrong settlement_min, a port building with no port on the
+  that does not exist, a unit line its kind does not take (a mount on foot soldiers, two of mount / engine / animal,
+  a handler with no animal), a mount descr_mount.txt lacks, a missile with under 2 arrows (Rome: or under 20 m of
+  range; with REX only 0), a building upgrade pointing down, a wrong settlement_min, a port building with no port on the
   map; notes for a misspelt word in a faction's first lines, a resource on sea, units without their own card.
   A texture named inside a campaign-map model (`.cas` of a resource, a settlement, a faction symbol, or a model in
   `descr_model_strat.txt` with no texture line of its own) that is not there is named too - both games stop as the
