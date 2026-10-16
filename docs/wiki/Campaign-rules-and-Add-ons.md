@@ -290,4 +290,12 @@ with no picture of their own) show as frames with their words.
   Only the lines changed are written; Restore takes it back.
 
 Medieval II keeps its menu pictures in its packs: unpacked they show, else the pieces show as frames.
+### Sprite sheets
+
+The second tab of **Interface** shows every sprite sheet in the mod's `ui` folder (Rome `strat3`, `shared2`, `battle3`...,
+Medieval II `strategy`, `shared`, `battle`...) as the game reads it: the binary `.rsd` / `.sd` on the plain games, the
+`.sd.xml` under REX / M2EX with `sprite_format xml`. Pick a sheet, a page and a culture: the page's picture shows with
+the box of every sprite on it; the mouse over a box names it. **Find** looks through every sheet. A double click opens a
+sprite big; its right click saves it, or the whole page, as a PNG. Nothing here writes the mod.
+
 The idea and the first map of the file's format come from Wholesome Queen's *RTW Sprite & HUD Studio*.
