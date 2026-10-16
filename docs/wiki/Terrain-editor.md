@@ -51,7 +51,9 @@ column), each half-tile square blending the pictures of its four corners through
 (`terrain/aerial_map/template_weights`), the pictures lying on the world as the game lays them (`texture_density`), the
 light of `descr_strategy_lighting.txt`, and the sea as one sheet at height 0 in `water_surface.tga` with the game's
 waves and sky. Along the coast lie the game's beach strip (`terrain/aerial_map/sea/beach_strip.tga`) and its wet
-sand and surf (`surf2b.tga`), traced where the ground crosses height 0 as the game traces them. It reads the same pictures the Terrain and Coast & heights brushes paint into, so what you painted and
+sand and surf (`surf2b.tga`), traced where the ground crosses height 0 as the game traces them, the surf rolling in
+every five seconds (none on river and cliff tiles, as in the game). **Layers** shows or leaves out the sea (left out,
+the sea floor shows) and the beach and surf, and lets the surf stand still. It reads the same pictures the Terrain and Coast & heights brushes paint into, so what you painted and
 did not write yet is there - the tab makes the map again when you open it after a change (**Draw it again** at any
 time). The right button dragged moves over the map, the wheel held down and dragged turns and tilts the view, the
 wheel turned goes nearer or farther, the arrow keys (or W A S D) move too; the relief stands as high as in the game;
