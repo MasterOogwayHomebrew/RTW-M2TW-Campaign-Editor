@@ -28,6 +28,9 @@ goes.
   Also from the games' readers: pikes without phalanx, a unit with none of square / horde / phalanx, a projectile
   that does not exist, a building upgrade pointing down, a wrong settlement_min, a port building with no port on the
   map; notes for a misspelt word in a faction's first lines, a resource on sea, units without their own card.
+  A texture named inside a campaign-map model (`.cas` of a resource, a settlement, a faction symbol, or a model in
+  `descr_model_strat.txt` with no texture line of its own) that is not there is named too - both games stop as the
+  campaign loads with "Failed to find texture".
 - **Check mod files** with a faction picked also says whether it is **complete**: every file where every other
   faction is named and this one is not (the game or its screens would miss it), with a faction of its culture to
   copy the lines from; files most (not all) factions are named in are only noted - real factions go without them.

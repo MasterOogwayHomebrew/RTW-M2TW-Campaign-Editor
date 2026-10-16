@@ -209,6 +209,7 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 - 📦 Bring units: everything the target lacks - the voices of its class, its fire arrows and their effects, its skeletons' lines
 - 📦 Interface... (both games): the game's menu screens drawn as the game lays them out - pieces moved, sized, copied, renamed, removed; their words, tooltips and the page they open (the menu layout file written byte-exact)
 - 📦 Interface: buttons' states (both games) - mouse over shown under the mouse, all pressed / ticked on a switch, each state's picture set, added, taken out
+- 📦 Check mod files (both games): a texture named inside a campaign-map model (.cas) that is not there - the game stops as the campaign loads
 - 📦 Interface > Sprite sheets (both games): every sprite of the sheets the game reads (binary or .sd.xml), page and culture, Find, saved as PNG
 - 📦 Rebels... (both games): rebel types - their units, kind, chance, the name players read - new, copied, renamed, deleted; which regions have which type, many at once, a faction filter (from a report)
 - 📦 The map shows what Apply will write before it (regions yellow as a selection): a new faction's towns, garrisons, towns given in other windows; every capital a star in its square (from reports)
