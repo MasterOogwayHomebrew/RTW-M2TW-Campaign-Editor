@@ -205,7 +205,7 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 - 📦 An army's units: its general shown as his portrait card, as in the game
 - 📦 New faction > From another mod: a whole faction of another mod brought - units, names, family by the capital, figures on the map and in battle, flags, icons, pictures; garrisons of its own units
 - 📦 Maps > 3D: the campaign map in 3D in the game's own ground textures and models (towns, ports, forts, resources, armies, agents), the brushes' work seen at once
-- 📦 Maps > 3D on the graphics card: drawn the way the games draw it - the game's ground blend, light and sea sheet, the beach and surf along the coast, the game's mountains, hills, volcanoes, rivers, cliffs and trees (next: towns and armies as the game's models, painting in 3D)
+- 📦 Maps > 3D on the graphics card: drawn the way the games draw it - the game's ground blend, light and sea sheet, the beach and surf along the coast, the game's mountains, hills, volcanoes, rivers, cliffs and trees, the towns, ports, resources and armies as the game's models (next: roads, region borders, painting in 3D)
 - 📦 Bring units: everything the target lacks - the voices of its class, its fire arrows and their effects, its skeletons' lines
 - ✅ Interface... (both games): the game's menu screens drawn as the game lays them out - pieces moved, sized, copied, renamed, removed; their words, tooltips and the page they open (the menu layout file written byte-exact) *(in-game ✓ on Rome + REX: a piece moved, its picture and click area moved with it)*
 - 📦 Interface: buttons' states (both games) - mouse over shown under the mouse, all pressed / ticked on a switch, each state's picture set, added, taken out
