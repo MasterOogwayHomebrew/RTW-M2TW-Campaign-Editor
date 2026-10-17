@@ -72,7 +72,11 @@ so the same kinds stand on the same tiles but not always the same piece. The **c
 `map_features.tga` is yellow on land beside the sea - walls, corners, outcrops, pillars and bridges by the sea around
 each tile, an end piece where a cliff line stops; none within 2 tiles of a river or a town, as in the game. Their
 rock faces look at the sea, so from the land side you see their tops; a north-facing face lies in the shade, as the
-game's sun shines from the south. **Layers** shows or leaves each out. The trees, the towns and armies come in later
+game's sun shines from the south. The **trees** grow on the forest tiles of `map_ground_types.tga`: 3 trees on a
+sparse forest tile, a dense one filled with trees and a canopy that joins its dense neighbours - the models of each
+climate named on the `strategy` lines of `descr_climates.txt` (winter's where the climate has them), leaning with the
+wind while **The surf and the trees move** is ticked. The game rolls its own dice for their spots, so the forests
+match the game's but not tree for tree. **Layers** shows or leaves each out. The towns and armies come in later
 versions.
 
 **Make the minimap from it** draws the campaign's minimap again - `radar_map1.tga` / `radar_map2.tga` (and
