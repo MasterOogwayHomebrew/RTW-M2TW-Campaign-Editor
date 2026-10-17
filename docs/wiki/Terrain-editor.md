@@ -79,7 +79,8 @@ wind while **The surf and the trees move** is ticked. The game rolls its own dic
 match the game's but not tree for tree. What `descr_strat.txt` puts on the map stands there as the game's own
 models: each **town** by its level and its owner's culture with the walls it has built, its **port** looking out to
 the sea, forts and watchtowers, the **resources**, and every **army, agent and fleet** off the towns in its
-faction's model and colours, standing as in the game and facing you. **Layers** shows or leaves each out.
+faction's model and colours, standing on the ground, turned as the game draws them. What you add, move or take
+away on the Map (or keep in another window) shows here before you write it. **Layers** shows or leaves each out.
 
 **Make the minimap from it** draws the campaign's minimap again - `radar_map1.tga` / `radar_map2.tga` (and
 `map_radar2.tga` where there is one), the small map in the game's bottom-left corner - from this map seen from
