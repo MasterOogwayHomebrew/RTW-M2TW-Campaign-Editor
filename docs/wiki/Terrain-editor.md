@@ -65,9 +65,11 @@ button raises (or lowers, smooths, levels - **brush**) the land under it while y
 one the bar says why. The game's own **mountains, hills and volcanoes** stand on it too
 (`descr_aerial_map_tile_models.txt`, the models in `terrain/aerial_map/tile_models`), placed as the game places them:
 high mountains fitted with the game's pieces of four tiles, 2 x 2 hills and single ones, a volcano round a red pixel of
-`map_features.tga` - the game picks the pieces with its own dice, so the same kinds stand on the same tiles but not
-always the same piece. **Layers** shows or leaves them out. The rivers', cliffs' and trees' models, the towns and
-armies come in later versions.
+`map_features.tga`, the **rivers** routed from each white source along the blue (and cyan ford) pixels as the game
+routes them - joins, splits, bends, fords, the long straight runs winding between three lanes - their water the sea's
+look with the game's `water.tga` flowing over it, fading out at the sea. The game picks some pieces with its own dice,
+so the same kinds stand on the same tiles but not always the same piece. **Layers** shows or leaves each out. The
+cliffs' and trees' models, the towns and armies come in later versions.
 
 **Make the minimap from it** draws the campaign's minimap again - `radar_map1.tga` / `radar_map2.tga` (and
 `map_radar2.tga` where there is one), the small map in the game's bottom-left corner - from this map seen from
