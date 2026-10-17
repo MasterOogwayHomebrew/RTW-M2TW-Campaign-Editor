@@ -235,6 +235,7 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 - 📦 Leader's and heir's titles on the faction tab (New and Edit, both games)
 - 📦 Make a card: beside the 3D view and following it; its framing kept for the next unit
 - 📦 View in 3D: Medieval II's siege engines play standing, moving, loading and shooting with their crew at their places, each man in his own moves
+- 📦 Interface drawn by the graphics card; dragging a piece no longer lags
 - 📦 View in 3D: Rome's siege engines with their crew at the engine's own places; elephants (both games) with their whole crew on them
 - 📦 Unit editor: the card, the description picture, the battle model and the voice in one row of alike frames (a second row on a narrow window); the explanations on a '?', problems in sight; Tied to it behind a button
 - 📦 Recolour... on a texture: one battle-model texture (Unit editor) or figure texture (Models tab) in the faction's colours

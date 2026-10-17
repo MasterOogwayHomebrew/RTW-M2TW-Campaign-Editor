@@ -275,6 +275,7 @@ in. Vanilla Medieval II runs no scripts - the add-on does nothing there.
 Alexander's `data/menu/Rome.lnt`, Medieval II's `data/menu/mtw2.lnt` - on the 1024 x 768 layout the game uses, with
 the pictures from `data/menu/textures` and the words from `menu_english.txt`. Pieces the game draws itself (buttons
 with no picture of their own) show as frames with their words.
+The page is drawn by the graphics card where it gives OpenGL 3.3 (else as before), so dragging, zooming and moving it stay smooth.
 
 - The wheel zooms round the mouse, the held wheel (middle button) moves the screen, **Fit** shows it whole again.
 - Click a piece to pick it; drag it to move it; drag the yellow corner to size it; the arrow keys nudge it (Shift: 10
