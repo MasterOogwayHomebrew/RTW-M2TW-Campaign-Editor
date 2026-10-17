@@ -80,7 +80,12 @@ match the game's but not tree for tree. What `descr_strat.txt` puts on the map s
 models: each **town** by its level and its owner's culture with the walls it has built, its **port** looking out to
 the sea, forts and watchtowers, the **resources**, and every **army, agent and fleet** off the towns in its
 faction's model and colours, standing on the ground, turned as the game draws them. What you add, move or take
-away on the Map (or keep in another window) shows here before you write it. **Layers** shows or leaves each out.
+away on the Map (or keep in another window) shows here before you write it. The **roads** run from town to town
+between neighbouring regions, at the level of each town's road building (dirt, paved, highway - none without one),
+crossing rivers only at fords, winding and forking as the game draws them; which tiles they take is our own
+reckoning (the game's is not known), so a road may take another way than in the game. The **region borders** run
+along every region's edge in its owner's colours - wide between two owners, thin within one owner's land, none
+along the coast. **Layers** shows or leaves each out.
 
 **Make the minimap from it** draws the campaign's minimap again - `radar_map1.tga` / `radar_map2.tga` (and
 `map_radar2.tga` where there is one), the small map in the game's bottom-left corner - from this map seen from
