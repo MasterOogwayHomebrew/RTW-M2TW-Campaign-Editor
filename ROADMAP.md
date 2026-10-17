@@ -210,6 +210,7 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 - 📦 Bring units: everything the target lacks - the voices of its class, its fire arrows and their effects, its skeletons' lines
 - ✅ Interface... (both games): the game's menu screens drawn as the game lays them out - pieces moved, sized, copied, renamed, removed; their words, tooltips and the page they open (the menu layout file written byte-exact) *(in-game ✓ on Rome + REX: a piece moved, its picture and click area moved with it)*
 - 📦 Interface: buttons' states (both games) - mouse over shown under the mouse, all pressed / ticked on a switch, each state's picture set, added, taken out
+- 📦 Interface: own pictures (both games) - Replace picture... with a file or the Picture library (the game's pieces + your own), what the piece does kept; Back to the game's picture; checks for a missing region and a page too big for the game's sheet (next: the menus drawn by the graphics card)
 - 📦 Check mod files (both games): a texture named inside a campaign-map model (.cas) that is not there - the game stops as the campaign loads
 - 📦 Check mod files (Medieval II): battle_models.modeldb names whose count is not their length, two models of one name
 - 📦 Check mod files (both games): files named in the banners / standards / projectile files not there or on a drive letter; events without their words

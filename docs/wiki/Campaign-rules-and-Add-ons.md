@@ -293,6 +293,16 @@ with no picture of their own) show as frames with their words.
   every button in one state (normal, mouse over, pressed, ticked). A right click > **Pictures of its states...** sets
   the picture (texture and region) of each state, adds a state or takes one out - every piece drawn with the same UI
   object changes with it.
+- **Replace picture...** (right click) gives a piece a picture of your own and keeps what it does - the page it opens,
+  its words, its tooltip (the game keeps a piece's behaviour apart from its picture). Each of its states (normal,
+  mouse over, pressed...) takes a picture file of any kind or a picture of the **Picture library**; the files are
+  fitted into the piece's size and written as one TGA under `data/menu/ce_ui/` (the game reads TGA only). Only this
+  piece changes - it gets its own copy of the picture's description - or, if you choose, every piece drawn with the
+  same picture. **Back to the game's picture** undoes it; an own picture no piece shows any more is taken out at
+  Apply. The **Picture library** shows every picture of the game's menu sheets and your own pictures (kept in the
+  editor's own folder for every mod - **Add pictures...**, a right click takes one out); a click gives it to the
+  piece. Check mod files says when a picture names a region no sheet has (the game stops there) and when one page's
+  pictures are too many for the sheet the game packs them into (Rome 2048 x 2048, Medieval II 4096 x 2048).
 - The main window's **Undo** / **Redo** (and Ctrl+Z / Ctrl+Y) step its changes, **Preview changes** lists them,
   **Apply changes** writes them with a backup - the same buttons as for every work, none of its own. Only the lines
   changed are written; Restore takes it back. The **?** beside Fit holds this help.
