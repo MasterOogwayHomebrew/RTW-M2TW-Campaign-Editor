@@ -199,6 +199,7 @@ The first nine days (0.1.0 → 0.30.0): from a one-mod faction cloner to a campa
 
 ## 📦 Built, comes with the next release
 
+- 📦 New / Edit faction: Culture - one line written, the game follows (towns, portraits, buildings, units); what changes said first
 - 📦 Faction emblem (Rome): town flags in battle, the 3D campaign-map symbol, captains' cards and portraits from white templates; routing / rebel flags untouched
 - 📦 Faction emblem (Medieval II): the battle banner sheet from the white template of the mod's sheets, the symbol on every banner shape
 - 📦 The minimap drawn from the map (textures, relief, rivers, a painted sea); the faction-select map from the same picture, land at 75 % with a smooth outline; 3D map textures blended
