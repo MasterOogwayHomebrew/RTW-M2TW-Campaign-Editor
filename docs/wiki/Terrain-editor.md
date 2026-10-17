@@ -68,8 +68,12 @@ high mountains fitted with the game's pieces of four tiles, 2 x 2 hills and sing
 `map_features.tga`, the **rivers** routed from each white source along the blue (and cyan ford) pixels as the game
 routes them - joins, splits, bends, fords, the long straight runs winding between three lanes - their water the sea's
 look with the game's `water.tga` flowing over it, fading out at the sea. The game picks some pieces with its own dice,
-so the same kinds stand on the same tiles but not always the same piece. **Layers** shows or leaves each out. The
-cliffs' and trees' models, the towns and armies come in later versions.
+so the same kinds stand on the same tiles but not always the same piece. The **cliffs** stand where
+`map_features.tga` is yellow on land beside the sea - walls, corners, outcrops, pillars and bridges by the sea around
+each tile, an end piece where a cliff line stops; none within 2 tiles of a river or a town, as in the game. Their
+rock faces look at the sea, so from the land side you see their tops; a north-facing face lies in the shade, as the
+game's sun shines from the south. **Layers** shows or leaves each out. The trees, the towns and armies come in later
+versions.
 
 **Make the minimap from it** draws the campaign's minimap again - `radar_map1.tga` / `radar_map2.tga` (and
 `map_radar2.tga` where there is one), the small map in the game's bottom-left corner - from this map seen from
