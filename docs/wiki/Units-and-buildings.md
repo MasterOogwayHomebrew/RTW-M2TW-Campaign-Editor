@@ -74,7 +74,9 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   gives OpenGL 3.3, else as before) turns the model with the mouse - Medieval II's `.mesh` and Rome's `.cas` - with each faction's texture, the game's detail levels and weapons
   on or off. Rome: in the T pose (arms out) or as the file stands (**Pose**); a chariot unit on its chariot with its
   horses and crew in the places `descr_mount.txt` gives; a siege engine unit's engine (`descr_engines.txt`) whole,
-  with its own texture. **Animation**: any move of the model's skeleton (stand, walk, run, attacks, shooting,
+  with its own texture and its crew (**Its crew**) standing at the engine's `engine_station` places. An elephant unit
+  (both games) carries its whole crew - **On its elephant, the whole crew**: one man at each `rider_offset` place of
+  `descr_mount.txt` (the driver on the neck, the rest in the tower). **Animation**: any move of the model's skeleton (stand, walk, run, attacks, shooting,
   dying... - the list `descr_skeleton.txt` gives it), read from the game's own animation packs
   (`data/animations/pack.idx` + `pack.dat` - Rome, Barbarian Invasion, Medieval II): **Play** / **Pause**, or drag
   the frame; a unit with two skeletons (a spear and a sword) picks one first. It plays at the game's speed and
