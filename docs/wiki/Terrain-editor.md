@@ -57,7 +57,10 @@ every five seconds (none on river and cliff tiles, as in the game). **Layers** s
 the sea floor shows) and the beach and surf, and lets the surf stand still. It reads the same pictures the Terrain and Coast & heights brushes paint into, so what you painted and
 did not write yet is there - the tab makes the map again when you open it after a change (**Draw it again** at any
 time). The right button dragged moves over the map, the wheel held down and dragged turns and tilts the view, the
-wheel turned goes nearer or farther, the arrow keys (or W A S D) move too; the relief stands as high as in the game;
+wheel turned goes nearer or farther, the arrow keys (or W A S D) move too; the left button carries an army, agent or fleet to another
+tile as on the Map - a white frame lies on the tile it goes to, the Map's own check refuses a tile the game would not
+take, and the move is the Map's (Undo, Preview, Apply); an army in a town stands on its roofs, as in the game's own
+editor; the relief stands as high as in the game;
 **Heights brush** paints the relief right on the 3D map: a circle lies on the ground under the mouse, Ctrl + the
 wheel or `[` and `]` change its size. Two ways (**brush**): **Grab and drag**, the game's own - press the left
 button where the land should rise or sink and move the mouse up or down while holding it, the land under the circle
