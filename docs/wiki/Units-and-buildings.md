@@ -117,8 +117,8 @@ ammunition..., stat_cost's turns, price, upkeep..., every word of attributes - f
   units use the same model, this unit gets a model of its own (a copy), so they keep their look. Far away the game
   still draws the old model's sprites. Preview, a backup, Undo this write.
 
-  ![View in 3D](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/view_in_3d.png)
-  ![View in 3D, Rome](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/view_in_3d_rome.png)
+  ![View in 3D](https://raw.githubusercontent.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/main/docs/images/view_in_3d.png)
+  ![View in 3D, Rome](https://raw.githubusercontent.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/main/docs/images/view_in_3d_rome.png)
 - **Voice in battle** (units, both games): what the unit says, for each accent (Medieval II,
   `descr_sounds_accents.txt`) or culture (Rome) of its owners. **Play** plays its own name call ("Khan's Guard!")
   or any of its orders, straight from the game's sound packs (`data/sounds/*.idx` / `.dat`; a loose file of the same

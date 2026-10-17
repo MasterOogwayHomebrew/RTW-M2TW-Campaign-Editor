@@ -2,7 +2,7 @@
 
 ## Campaign rules (the Campaign rules... button, top row)
 
-![Campaign rules](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/campaign_rules.png)
+![Campaign rules](https://raw.githubusercontent.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/main/docs/images/campaign_rules.png)
 
 > **Experimental** (a red line at the top of the window): try it at your own risk - a backup is made first and Restore
 > undoes it. If you tried it, please send a report (Report a bug / Suggest).
@@ -37,7 +37,7 @@ the game's copy with your changes. The game reads the rules on the next start.
 
 ## Add-ons
 
-![Add-ons](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/addons_sack_settlement.png)
+![Add-ons](https://raw.githubusercontent.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/main/docs/images/addons_sack_settlement.png)
 
 The **Add-ons** button beside the editors lists ready-made scripts that add something new to the game. Pick the
 settings, **Preview**, **Put it in** - a backup is made first. **Update it** changes the settings later, **Take it
@@ -77,7 +77,7 @@ in** removes them all with one press.
 
 ### Module builder (your own add-on, no code)
 
-![Module builder](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/module_builder.png)
+![Module builder](https://raw.githubusercontent.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/main/docs/images/module_builder.png)
 
 > **Experimental** (a red line at the top of the window): try it at your own risk - a backup is made first and Restore
 > undoes it. If you tried it, please send a report (Report a bug / Suggest).
@@ -88,7 +88,7 @@ kinds of blocks in coloured groups - events (yellow, WHEN), control (orange: FOR
 in at the end. A block of the module is dragged by its dots to another place, or back onto the blocks on the left (or
 right clicked) to take it out. **Look: Lists** shows the same module as one block under another.
 
-![Module builder - blocks](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/module_builder_blocks.png)
+![Module builder - blocks](https://raw.githubusercontent.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/main/docs/images/module_builder_blocks.png)
 
 **Module builder** (top row - it opens in the main window, a module not saved yet stays while you look at other works) or **Add-ons > New module (no code)...** puts an add-on together from blocks. REX (Rome)
 and M2EX (Medieval II) run the same script, so one module works in both games; the original exes run no scripts.

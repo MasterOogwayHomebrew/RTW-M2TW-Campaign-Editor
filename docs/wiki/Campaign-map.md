@@ -177,7 +177,7 @@ The same window is in **Tools** and on the Buildings tab (**Many towns at once..
 left - filter them by owner, level, city / castle (Medieval II) or name, **Add all shown** - the chosen ones on the
 right, with **What happens** in each:
 
-![Garrisons for many towns](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/many_towns.png)
+![Garrisons for many towns](https://raw.githubusercontent.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/main/docs/images/many_towns.png)
 
 - **A building**: pick the chain and level. A town that has the chain gets it raised (never lowered, unless you pick
   *set it to this level*). Left out, with the reason: a town too small for the level (`settlement_min`), a castle's
@@ -365,8 +365,8 @@ town with its own land round it, mountains and passes. Small things are quick to
 message also lists what the editor could not do itself (script lines with tiles it cannot read for sure, a port it
 could not place).
 
-![The coast of Italy made 3 x bigger: before (squares), after (smooth)](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/bigger_map_coast.png)
-![Regions 3 x bigger: in squares (left), the natural way - winding coast and borders (right)](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/bigger_map_natural.png)
+![The coast of Italy made 3 x bigger: before (squares), after (smooth)](https://raw.githubusercontent.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/main/docs/images/bigger_map_coast.png)
+![Regions 3 x bigger: in squares (left), the natural way - winding coast and borders (right)](https://raw.githubusercontent.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/main/docs/images/bigger_map_natural.png)
 The campaign's scripts follow too: every place on the campaign map in `campaign_script.txt` (spawned armies and characters, `reposition_character`, `move`, the camera, `reveal_tile`, forts and resources made by `console_command`, 'near a tile' distances, 'in a rectangle' sizes) goes to its block; battle positions in the same script stay. Lines the editor cannot read for sure, and Lua / Squirrel scripts that place things by tile (not the engines' own interface scripts), are listed to check by hand.
 Past 510 tiles the original exes need REX / M2EX.
 The map's real size is shown under the map, bottom left.

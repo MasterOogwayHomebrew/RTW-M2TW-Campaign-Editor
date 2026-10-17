@@ -56,7 +56,7 @@ model whose skeleton the mod lacks.
 Not brought yet: Medieval II's town plans (a building's look in the town on the battle map is brought in Rome,
 Barbarian Invasion and REX).
 
-![Step 5: where the brought units are recruited in your mod](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/bring_units.png)
+![Step 5: where the brought units are recruited in your mod](https://raw.githubusercontent.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/main/docs/images/bring_units.png)
 
 ## Buildings - step by step
 

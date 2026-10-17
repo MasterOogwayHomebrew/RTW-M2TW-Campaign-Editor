@@ -1,9 +1,9 @@
 # Installing
 
-> ⚠️ **Only download the editor from this repository's [Releases](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/releases) page** (or a link the author posted or approved). Never take the exe - or a "fixed" / "patched" copy of it - from another site, a file-sharing link or someone in a chat, and don't pass it on that way: a copy from elsewhere can be changed to harm your PC. Share the link to the Releases page instead.
+> ⚠️ **Only download the editor from this repository's [Releases](https://github.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/releases) page** (or a link the author posted or approved). Never take the exe - or a "fixed" / "patched" copy of it - from another site, a file-sharing link or someone in a chat, and don't pass it on that way: a copy from elsewhere can be changed to harm your PC. Share the link to the Releases page instead.
 
 1. Download `RTW-M2TW-Campaign-Editor.exe` from
-   [Releases](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/releases). No install needed.
+   [Releases](https://github.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/releases). No install needed.
 2. Put it into the **game's folder** - beside `RomeTW.exe` / `medieval2.exe` (where REX or M2EX goes too).
 3. Start it from there, or make a shortcut to it (on the desktop or anywhere).
 
@@ -33,7 +33,7 @@ yes moves them, nothing lost). An older version's `RTW-M2TW-Campaign-Editor-file
 ## Going back to an older version
 
 Something wrong with a new version? Every version stays on the
-[Releases](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/releases) page: download the one you
+[Releases](https://github.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/releases) page: download the one you
 want and put its exe in place of the new one. Nothing else needs to change:
 
 - **your mods** stay as they are - the exe is not part of them;

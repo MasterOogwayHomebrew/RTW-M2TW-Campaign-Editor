@@ -6,7 +6,7 @@ game's or a mod's own data files, shows every change before writing it, keeps a 
 for byte.
 
 **Download:** the latest `RTW-M2TW-Campaign-Editor.exe` from
-[Releases](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/releases) (only from there - see [[Installing]]) ·
+[Releases](https://github.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/releases) (only from there - see [[Installing]]) ·
 **▶ Video:** [what the editor does, in a few minutes](https://www.youtube.com/watch?v=m1sCPg-Lzsw) ·
 **💬 Discord:** [questions, ideas, news](https://discord.gg/uqA9MEn4Z)
 
@@ -28,9 +28,9 @@ All on my YouTube channel **[Pfadfinder](https://www.youtube.com/channel/UC8j5rv
 
 | | |
 |---|---|
-| ![Edit a faction](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/edit_faction.png) | ![The campaign map](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/map.png) |
+| ![Edit a faction](https://raw.githubusercontent.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/main/docs/images/edit_faction.png) | ![The campaign map](https://raw.githubusercontent.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/main/docs/images/map.png) |
 | **Edit a faction** | **The campaign map** |
-| ![Terrain editor](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/terrain_editor.png) | ![Units](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/unit_editor.png) |
+| ![Terrain editor](https://raw.githubusercontent.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/main/docs/images/terrain_editor.png) | ![Units](https://raw.githubusercontent.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/main/docs/images/unit_editor.png) |
 | **Terrain editor** | **Units: model and voice** |
 
 ## Made to be easy
@@ -53,7 +53,7 @@ and the formats for you:
 Something confusing or hard to find? That counts as a bug too - tell us ([[Reporting a bug]]).
 
 **Made a mod with it?** Please say so where you share the mod and link to the editor - one line is enough:
-`Made with the RTW & M2TW Campaign Editor: https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor`
+`Made with the RTW & M2TW Campaign Editor: https://github.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor`
 (a request, not a condition - thank you!).
 
 ## Start here
@@ -84,11 +84,11 @@ needs are copied under its own name (Epirus cloned from Macedon gets `standard_e
 
 ## What is where
 
-- [ROADMAP](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/blob/main/ROADMAP.md) - what it
+- [ROADMAP](https://github.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/blob/main/ROADMAP.md) - what it
   does, what is being tested, what comes next.
-- [CHANGELOG](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/blob/main/CHANGELOG.md) - what
+- [CHANGELOG](https://github.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/blob/main/CHANGELOG.md) - what
   changed in each version and what was tested in the game.
-- [README](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor#readme) - the full reference.
+- [README](https://github.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor#readme) - the full reference.
 
-The editor is free. If it saves you time, a coffee on [Ko-fi](https://ko-fi.com/pfadfinder) or [GitHub Sponsors](https://github.com/sponsors/MasterOogwayHomebrew)
+The editor is free. If it saves you time, a coffee on [Ko-fi](https://ko-fi.com/pfadfinder) or [GitHub Sponsors](https://github.com/sponsors/Pfadfinder-Adam)
 keeps new features coming.

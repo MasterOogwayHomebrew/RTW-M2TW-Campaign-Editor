@@ -104,7 +104,7 @@ square or not at all; the **ground** fills the shape behind it (clear, the facti
 any colour); the **magic wand** clears an area of like colour with one click (a white background), the **paint
 bucket** fills one; **Undo**, **Fit again**, **Start over**. **Next** makes all of them from it:
 
-![One emblem made into every place](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/emblem.png)
+![One emblem made into every place](https://raw.githubusercontent.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/main/docs/images/emblem.png)
 
 - each picture keeps its size and format, the emblem fitted where the old one sat (the margins stay clear);
 - the button states are made the way the mod's own are: mouse over brighter, greyed out grey and darker (by as much
@@ -185,7 +185,7 @@ While a **new** faction is being made (not created yet), Recolour shows its temp
 will get as copies - with the new faction's colours as the target; kept, they are recoloured on its own copies by the
 same **Apply changes** that creates it (brush touch-ups come after it is created).
 
-![Recolour: England's red and yellow to green and gold](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/recolour.png)
+![Recolour: England's red and yellow to green and gold](https://raw.githubusercontent.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/main/docs/images/recolour.png)
 
 - **From the colours of**: the colours the pictures carry now. For a faction cloned from a template it finds the
   template by itself (its cards are copies of the template's); otherwise the faction's own. Click a colour to pick

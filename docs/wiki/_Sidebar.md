@@ -25,4 +25,4 @@
 - [[Backups and Restore]]
 - [[Reporting a bug]]
 - [Discord](https://discord.gg/uqA9MEn4Z)
-- [Credits](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/blob/main/CREDITS.md)
+- [Credits](https://github.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/blob/main/CREDITS.md)

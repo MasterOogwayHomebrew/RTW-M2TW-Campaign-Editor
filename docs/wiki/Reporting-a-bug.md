@@ -26,7 +26,7 @@ When the game crashes, the tool shows an error, or something looks wrong, please
 3. Which game and mod (Rome / REX / BI / Medieval II / M2EX, the mod's name) and the editor's version (in the
    window's title).
 
-Send them as a [GitHub issue](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/issues) or on
+Send them as a [GitHub issue](https://github.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/issues) or on
 Discord. With the logs the cause is usually found and fixed the same day: they name the file, the line and the
 game's own error.
 
@@ -34,7 +34,7 @@ Video: [how to send a bug report and a suggestion](https://youtu.be/7MbYR9ywNsI)
 
 Every report - bug or idea - arrives as its own numbered entry with its logs and is read:
 
-![Reports and ideas sent from the editor](https://raw.githubusercontent.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/main/docs/images/reports.png)
+![Reports and ideas sent from the editor](https://raw.githubusercontent.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/main/docs/images/reports.png)
 
 ## Answers to my reports
 
@@ -55,7 +55,7 @@ them. Switch the start-up look off in Tools > Settings > Reports.
 the same way (no logs needed).
 
 **Security problems**: see
-[SECURITY.md](https://github.com/MasterOogwayHomebrew/RTW-M2TW-Campaign-Editor/blob/main/SECURITY.md) - report
+[SECURITY.md](https://github.com/Pfadfinder-Adam/RTW-M2TW-Campaign-Editor/blob/main/SECURITY.md) - report
 them privately, not in an issue.
 
 ## Read the game's log yourself
