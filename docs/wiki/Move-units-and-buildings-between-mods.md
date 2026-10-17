@@ -13,7 +13,9 @@ Between the two games it is not possible - their models and files differ.
 3. **From which mod**: pick it in the list of mods in your game folder, or **Browse...** to its `data` folder.
 4. **Which units**: tick them (Ctrl / Shift for more). **Sort** (by name, kind, owner or cost), **Faction** (only the
    units that faction or culture may own), **Find** and *only those this mod has not* help on a long list. The unit under the mouse - or the one clicked last - shows on the right
-   as the game shows it: its card, name, description and numbers.
+   as the game shows it: its card, name, description and numbers, and buttons that show its men and each officer in 3D.
+   A faction picked in **Faction** is also the look the units bring (their textures and cards): Gallic units picked under
+   *gauls* come in the gauls' colours, not in the colours of the first faction on their ownership line.
 5. **Names here**: the name each unit gets in your mod. A name your mod already has gets a free one (`... 2`).
    *Card / text name* is the unit's `dictionary`: it names its card pictures and its texts (letters, digits, `_`).
 6. **Who has them**: the factions - or whole cultures - of your mod that may recruit them. The other mod's owners
