@@ -31,6 +31,7 @@ Big maps load too - a tester's mod with a map of 5456 x 2464 tiles (map_regions.
   the name shown for its owner), a port, a general, agent or
   fleet, a unit in an army (e.g. "hastati"), a fort, a resource. Pick a hit (click, or Down then Enter) and
   the map zooms in close on it and a ring blinks round it for a few seconds ([video](https://youtu.be/6WAdnGovGzA)).
+- **The side column**: the map's switches (Layers, Edit regions, Select...), its zoom and the legend stand in a column on the right of the map, so the map has the whole height of the window (the Terrain, Coast and heights and 3D tabs keep their brushes there too).
 - **The legend is a palette**: the signs on a button (+) are tools - click one (it turns yellow), then click
   the map to make one there: a **town** (first its region's names; then the click puts the town and the land
   around it becomes the new region's - paint more with a left drag), a **port** (click a coastal land tile: the
