@@ -58,9 +58,15 @@ the sea floor shows) and the beach and surf, and lets the surf stand still. It r
 did not write yet is there - the tab makes the map again when you open it after a change (**Draw it again** at any
 time). The right button dragged moves over the map, the wheel held down and dragged turns and tilts the view, the
 wheel turned goes nearer or farther, the arrow keys (or W A S D) move too; the relief stands as high as in the game;
-**Heights brush** paints the relief right on the 3D map: a circle lies on the ground under the mouse, the left
-button raises (or lowers, smooths, levels - **brush**) the land under it while you hold it, Ctrl + the wheel or
-`[` and `]` change its size. It is the same brush as Coast & heights: its strokes, Undo and Apply are shared.
+**Heights brush** paints the relief right on the 3D map: a circle lies on the ground under the mouse, Ctrl + the
+wheel or `[` and `]` change its size. Two ways (**brush**): **Grab and drag**, the game's own - press the left
+button where the land should rise or sink and move the mouse up or down while holding it, the land under the circle
+goes with it at once, most in the middle, as smooth as the mouse; or **Spray** - the left button raises (or lowers,
+smooths, levels) the land while you hold it. Both work on the water too, as in the game, where the water is only a
+sheet at height 0: press on the sea and lift its floor - out of the water it becomes land (its tile joins the region
+picked in *new land joins*, else the nearest; its ground follows), and land pushed under becomes water; never under a
+town, port or character (the bar says why). The heights are kept exactly (`map_heights.hgt`, no 29-metre steps). It
+is the same editor as Coast & heights: its strokes, Undo and Apply are shared.
 **Whole map** puts the view back. It needs a graphics card with OpenGL 3.3 (any from the last fifteen years); without
 one the bar says why. The game's own **mountains, hills and volcanoes** stand on it too
 (`descr_aerial_map_tile_models.txt`, the models in `terrain/aerial_map/tile_models`), placed as the game places them:
