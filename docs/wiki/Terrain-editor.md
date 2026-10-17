@@ -62,7 +62,12 @@ wheel turned goes nearer or farther, the arrow keys (or W A S D) move too; the r
 button raises (or lowers, smooths, levels - **brush**) the land under it while you hold it, Ctrl + the wheel or
 `[` and `]` change its size. It is the same brush as Coast & heights: its strokes, Undo and Apply are shared.
 **Whole map** puts the view back. It needs a graphics card with OpenGL 3.3 (any from the last fifteen years); without
-one the bar says why. The mountains', rivers' and trees' models, the towns and armies come in later versions.
+one the bar says why. The game's own **mountains, hills and volcanoes** stand on it too
+(`descr_aerial_map_tile_models.txt`, the models in `terrain/aerial_map/tile_models`), placed as the game places them:
+high mountains fitted with the game's pieces of four tiles, 2 x 2 hills and single ones, a volcano round a red pixel of
+`map_features.tga` - the game picks the pieces with its own dice, so the same kinds stand on the same tiles but not
+always the same piece. **Layers** shows or leaves them out. The rivers', cliffs' and trees' models, the towns and
+armies come in later versions.
 
 **Make the minimap from it** draws the campaign's minimap again - `radar_map1.tga` / `radar_map2.tga` (and
 `map_radar2.tga` where there is one), the small map in the game's bottom-left corner - from this map seen from
